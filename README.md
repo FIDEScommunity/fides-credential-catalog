@@ -1,4 +1,4 @@
-# credential_catalog
+# FIDES Credential Catalog
 
 Copyright [2024] [Credenco B.V.]
 
