@@ -1,0 +1,11 @@
+.headerMenu .p-submenu-list{
+    background-color: transparent;
+}
+.headerMenu .p-menuitem-text {
+    background-color: transparent;
+    color: white !important;
+}
+.headerMenu .p-menuitem-content {
+    background-color: transparent;
+    color: white !important;
+}

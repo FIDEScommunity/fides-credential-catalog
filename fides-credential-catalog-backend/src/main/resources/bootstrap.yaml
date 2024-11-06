@@ -1,0 +1,9 @@
+# We need this file in order to load the secrets and configmap properly.
+# https://cloud.spring.io/spring-cloud-static/spring-cloud-kubernetes/2.1.0.RC1/single/spring-cloud-kubernetes.html
+spring:
+  cloud:
+    kubernetes:
+      secrets:
+        enabled: false
+      config:
+        enabled: false

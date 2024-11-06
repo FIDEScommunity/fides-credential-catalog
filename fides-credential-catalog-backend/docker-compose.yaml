@@ -1,0 +1,10 @@
+services:
+  fides_credential_catalog-db:
+    image: mysql:latest
+    environment:
+      - 'MYSQL_DATABASE=fides_credential_catalog'
+      - 'MYSQL_PASSWORD=my_password'
+      - 'MYSQL_ROOT_PASSWORD=my_password'
+      - 'MYSQL_USER=credential_catalog_user'
+    ports:
+      - '3310:3306'

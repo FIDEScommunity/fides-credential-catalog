@@ -1,0 +1,11 @@
+.p-multiselect-label {
+    display: flex;
+}
+
+.p-multiselect-label input[type="checkbox"] {
+    display: none;
+}
+
+.language-input-item .p-checkbox {
+    display: none;
+}

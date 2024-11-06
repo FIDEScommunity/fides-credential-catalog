@@ -1,0 +1,61 @@
+spring:
+  application:
+    name: credential-catalog-backend
+
+  datasource:
+    url: from_profile
+    username: from_profile
+    password: from_profile
+  flyway:
+    url: from_profile
+    user: from_profile
+    password: from_profile
+  jpa:
+    open-in-view: true
+    show-sql: false
+  mvc:
+    format:
+      date: yyyy-MM-dd
+    static-path-pattern: /api/static/**
+  docker.compose.lifecycle-management: start_only
+  threads:
+    virtual:
+      enabled: true
+  data:
+    web:
+      pageable:
+        max-page-size: 1000
+management:
+  endpoint:
+    restart:
+      enabled: true
+    health:
+      probes:
+        enabled: true
+      livenessState:
+        enabled: true
+      readinessState:
+        enabled: true
+  endpoints:
+    web:
+      exposure:
+        include: "restart,health"
+    restart:
+      enabled: true
+    shutdown:
+      enabled: true
+  server:
+    port: 9187
+
+jwt:
+  paths-to-ignore: /webpublic/**,/public/**
+springdoc:
+  swagger-ui:
+    path: /api/public/swagger-ui
+  api-docs:
+    path: /api/public/api-docs
+  packages-to-scan: community.fides.credentialcatalog.backend.rest.api
+
+iam.usermanagement:
+  serverUrl: "https://iam.credenco.com"
+  username: fides_backend_user

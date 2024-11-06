@@ -1,0 +1,38 @@
+.text-to-html p {
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+.text-to-html li[data-list="ordered"] {
+    list-style-type: unset;
+}
+.text-to-html li[data-list="bullet"] {
+    list-style-type: disc;
+}
+.ql-indent-1 {
+    margin-left: 1em;
+}
+.ql-indent-2 {
+    margin-left: 2em;
+}
+.ql-indent-3 {
+    margin-left: 3em;
+}
+.ql-indent-4 {
+    margin-left: 4em;
+}
+.ql-indent-5 {
+    margin-left: 5em;
+}
+.ql-indent-6 {
+    margin-left: 6em;
+}
+.ql-indent-7 {
+    margin-left: 7em;
+}
+.ql-indent-8 {
+    margin-left: 8em;
+}
+.ql-indent-9 {
+    margin-left: 9em;
+}

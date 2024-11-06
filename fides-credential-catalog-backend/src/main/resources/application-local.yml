@@ -1,0 +1,33 @@
+spring:
+  application:
+    name: webwallet-backend
+
+  datasource:
+    url: jdbc:mysql://localhost:3309/fides_credential_catalog
+    username: root
+    password: my_password
+  flyway:
+    url: jdbc:mysql://localhost:3309/fides_credential_catalog
+    user: root
+    password: my_password
+  security.oauth2.resourceserver.jwt.issuer-uri: https://iam.acc.credenco.com/realms/fides
+  docker:
+    compose:
+      enabled: true
+      lifecycle-management: start_only
+  threads:
+    virtual:
+      enabled: true
+management:
+  server:
+    port: 9188
+server:
+  port: 8088
+logging:
+  level:
+    org:
+      keycloak: DEBUG
+
+iam.usermanagement:
+  serverUrl: "https://iam.acc.credenco.com"
+  password: <copy_from_acc_secret>
