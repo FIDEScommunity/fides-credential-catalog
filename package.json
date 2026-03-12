@@ -1,0 +1,34 @@
+{
+  "name": "fides-credential-catalog",
+  "version": "0.1.0",
+  "description": "FIDES Community Credential Catalog - Discover credential definitions and schema metadata",
+  "main": "dist/index.js",
+  "scripts": {
+    "crawl": "tsx src/crawler/index.ts",
+    "build": "tsc",
+    "dev": "tsx watch src/crawler/index.ts",
+    "validate": "ajv validate --spec=draft2020 -c ajv-formats -s schemas/credential-catalog.schema.json -d 'community-catalogs/**/credential-catalog.json'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/FIDEScommunity/fides-credential-catalog.git"
+  },
+  "keywords": [
+    "verifiable-credentials",
+    "credential-catalog",
+    "schema",
+    "fides"
+  ],
+  "author": "FIDES Community",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "ajv": "^8.12.0",
+    "ajv-formats": "^2.1.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "ajv-cli": "^5.0.0",
+    "tsx": "^4.6.2",
+    "typescript": "^5.3.2"
+  }
+}

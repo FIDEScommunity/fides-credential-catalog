@@ -1,0 +1,37 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+*.code-workspace
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Logs
+*.log
+npm-debug.log*
+
+# TypeScript cache
+*.tsbuildinfo
+
+# Test output
+coverage/
+.nyc_output/
+
+# Temporary files
+tmp/
+temp/
+
+# WordPress plugin local data and zips (plugin fetches from GitHub)
+wordpress-plugin/*/data/
+wordpress-plugin/*.zip
