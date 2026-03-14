@@ -3,7 +3,7 @@
  * Plugin Name: FIDES Credential Catalog
  * Plugin URI: https://github.com/FIDEScommunity/fides-credential-catalog
  * Description: Display an interactive catalog of credentials with search and filters.
- * Version: 0.1.0
+ * Version: 0.2.3
  * Author: FIDES Community
  * Author URI: https://fides.community
  * License: Apache-2.0
@@ -46,7 +46,12 @@ function fides_credential_catalog_enqueue_assets() {
             'fides_credential_catalog_rp_data_url',
             'https://raw.githubusercontent.com/FIDEScommunity/fides-rp-catalog/main/data/aggregated.json'
         ),
-        'rpCatalogUrl' => get_option('fides_credential_catalog_rp_catalog_url', 'https://fides.community/community-tools/relying-party-catalog/')
+        'rpCatalogUrl' => get_option('fides_credential_catalog_rp_catalog_url', 'https://fides.community/community-tools/relying-party-catalog/'),
+        'issuerAggregatedUrl' => get_option(
+            'fides_credential_catalog_issuer_data_url',
+            'https://raw.githubusercontent.com/FIDEScommunity/fides-issuer-catalog/main/data/aggregated.json'
+        ),
+        'issuerCatalogUrl' => get_option('fides_credential_catalog_issuer_catalog_url', 'https://fides.community/community-tools/issuer-catalog/')
     ));
 }
 add_action('wp_enqueue_scripts', 'fides_credential_catalog_enqueue_assets');

@@ -563,7 +563,7 @@
     const attributes = Array.isArray(selectedCredential.attributes) ? selectedCredential.attributes : [];
     const currentTheme = root.getAttribute("data-theme") || "dark";
 
-    const MAX_VISIBLE = 3;
+    const MAX_VISIBLE = 2;
     const visibleIssuers = issuerItems.slice(0, MAX_VISIBLE);
     const hiddenIssuers = issuerItems.length - visibleIssuers.length;
     const visibleRPs = rpItems.slice(0, MAX_VISIBLE);
@@ -632,9 +632,12 @@
                       </div>
                       <div class="fides-eco-entities">
                         ${visibleIssuers.length > 0
-                          ? visibleIssuers.map((i) => renderEcoTag(i, config.issuerCatalogUrl, "issuer", "fides-eco-tag-green")).join("")
+                          ? (hiddenIssuers > 0
+                              ? visibleIssuers.slice(0, -1).map((i) => renderEcoTag(i, config.issuerCatalogUrl, "issuer", "fides-eco-tag-green")).join("") +
+                                `<div class="fides-eco-tag-last-row">${renderEcoTag(visibleIssuers[visibleIssuers.length - 1], config.issuerCatalogUrl, "issuer", "fides-eco-tag-green")}<span class="fides-eco-more">+ ${hiddenIssuers} more</span></div>`
+                              : visibleIssuers.map((i) => renderEcoTag(i, config.issuerCatalogUrl, "issuer", "fides-eco-tag-green")).join("")
+                            )
                           : `<p class="fides-modal-empty">No issuers found.</p>`}
-                        ${hiddenIssuers > 0 ? `<span class="fides-eco-more">+ ${hiddenIssuers} more</span>` : ""}
                       </div>
                     </div>
 
@@ -657,9 +660,12 @@
                       </div>
                       <div class="fides-eco-entities">
                         ${visibleRPs.length > 0
-                          ? visibleRPs.map((rp) => renderEcoTag(rp, config.rpCatalogUrl, "rp", "fides-eco-tag-blue")).join("")
+                          ? (hiddenRPs > 0
+                              ? visibleRPs.slice(0, -1).map((rp) => renderEcoTag(rp, config.rpCatalogUrl, "rp", "fides-eco-tag-blue")).join("") +
+                                `<div class="fides-eco-tag-last-row">${renderEcoTag(visibleRPs[visibleRPs.length - 1], config.rpCatalogUrl, "rp", "fides-eco-tag-blue")}<span class="fides-eco-more">+ ${hiddenRPs} more</span></div>`
+                              : visibleRPs.map((rp) => renderEcoTag(rp, config.rpCatalogUrl, "rp", "fides-eco-tag-blue")).join("")
+                            )
                           : `<p class="fides-modal-empty">No relying parties found.</p>`}
-                        ${hiddenRPs > 0 ? `<span class="fides-eco-more">+ ${hiddenRPs} more</span>` : ""}
                       </div>
                     </div>
                   </div>

@@ -1525,8 +1525,41 @@ a.fides-tag.wallet-link svg {
 .fides-eco-entities {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: stretch;
   gap: 0.35rem;
+}
+
+.fides-eco-entities .fides-eco-tag {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  display: block;
+  max-width: 100%;
+}
+
+/* Last tag + "more" are wrapped together in a row */
+.fides-eco-tag-last-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.35rem;
+  min-width: 0;
+}
+
+.fides-eco-tag-last-row .fides-eco-tag {
+  flex: 0 1 auto;
+  min-width: 0;
+  max-width: 160px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.fides-eco-tag-last-row .fides-eco-more {
+  flex-shrink: 0;
+  white-space: nowrap;
+  margin-top: 0;
+  padding: 0.2rem 0.1rem;
 }
 
 .fides-eco-entity {
@@ -1540,6 +1573,7 @@ a.fides-tag.wallet-link svg {
   padding: 0.3rem 0.4rem;
   transition: background 0.15s, color 0.15s;
   overflow: hidden;
+  max-width: 130px;
 }
 
 a.fides-eco-entity:hover {
@@ -1576,9 +1610,11 @@ a.fides-eco-entity svg {
   font-size: 0.75rem;
   color: var(--fides-accent);
   padding: 0.2rem 0.4rem;
-  margin-top: 0.1rem;
+  margin-top: 0;
   font-weight: 500;
   cursor: default;
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 
 .fides-eco-arrow {
