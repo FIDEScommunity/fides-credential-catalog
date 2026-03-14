@@ -15,6 +15,7 @@
   color: var(--fides-text-primary);
   padding: 1rem;
   border-radius: var(--fides-radius);
+  overflow-x: hidden;
 }
 
 .fides-credential-catalog[data-theme="light"] {
@@ -599,7 +600,7 @@
 }
 
 .fides-credential-updated {
-  margin: 0 0 0.75rem;
+  margin: 0 0 0.2rem;
   color: var(--fides-text-muted);
   font-size: 0.75rem;
   line-height: 1.3;
@@ -676,12 +677,92 @@ a.fides-tag.wallet-link svg {
   height: 12px;
 }
 
+.fides-tag-empty {
+  font-size: 0.75rem;
+  color: var(--fides-text-muted);
+}
+
+.fides-credential-date-id {
+  margin-bottom: 1rem;
+}
+
+.fides-credential-card-identifier {
+  margin: 0;
+  font-size: 0.75rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  color: var(--fides-text-secondary);
+}
+
+.fides-credential-card-identifier-label {
+  font-family: inherit;
+  font-size: 0.75rem;
+  font-weight: 400;
+  color: var(--fides-text-muted);
+  flex-shrink: 0;
+}
+
+.fides-credential-card-identifier-value {
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--fides-accent);
+  letter-spacing: 0.01em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  min-width: 0;
+}
+
+.fides-credential-counts {
+  display: flex;
+  gap: 0;
+  margin-top: auto;
+  border: 1px solid var(--fides-border);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.fides-credential-count-item {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.2rem;
+  padding: 0.625rem 0.5rem;
+  background: var(--fides-bg-secondary);
+}
+
+.fides-credential-count-item + .fides-credential-count-item {
+  border-left: 1px solid var(--fides-border);
+}
+
+.fides-credential-count-number {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1;
+  color: var(--fides-text-primary);
+}
+
+.fides-credential-count-label {
+  font-size: 0.625rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--fides-text-muted);
+  font-weight: 600;
+  text-align: center;
+}
+
 .fides-credential-footer {
   padding: 0.75rem 1.25rem;
   border-top: 1px solid var(--fides-border);
   display: flex;
   flex-wrap: nowrap;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   gap: 0.5rem;
   min-height: 2.5rem;
@@ -753,7 +834,21 @@ a.fides-tag.wallet-link svg {
   margin: 0.5rem 0;
 }
 
+/* CSS variables must be re-declared on the overlay since it now lives in document.body */
 .fides-modal-overlay {
+  --fides-bg-primary: #0f172a;
+  --fides-bg-secondary: #1e293b;
+  --fides-bg-card: rgba(30, 41, 59, 0.8);
+  --fides-text-primary: #f1f5f9;
+  --fides-text-secondary: #94a3b8;
+  --fides-text-muted: #64748b;
+  --fides-border: rgba(255, 255, 255, 0.1);
+  --fides-accent: #3b82f6;
+  --fides-accent-hover: #60a5fa;
+  --fides-radius: 12px;
+  --fides-radius-lg: 16px;
+  font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  color: var(--fides-text-primary);
   position: fixed;
   top: 0;
   left: 0;
@@ -789,7 +884,9 @@ a.fides-tag.wallet-link svg {
   max-width: 900px;
   width: 95%;
   max-height: 90vh;
-  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
   background: var(--fides-bg-secondary);
   border-radius: var(--fides-radius-lg);
   border: 1px solid var(--fides-border, rgba(255, 255, 255, 0.1));
@@ -803,6 +900,7 @@ a.fides-tag.wallet-link svg {
   justify-content: space-between;
   padding: 1.5rem 1.5rem 1rem;
   border-bottom: 1px solid var(--fides-border);
+  flex-shrink: 0;
 }
 
 .fides-modal-header-content {
@@ -937,6 +1035,8 @@ a.fides-tag.wallet-link svg {
 
 .fides-modal-body {
   padding: 1.25rem 1.5rem 1.5rem;
+  overflow-y: auto;
+  flex: 1;
 }
 
 .fides-modal-badges {
@@ -1164,6 +1264,31 @@ a.fides-tag.wallet-link svg {
   color: var(--fides-accent);
 }
 
+/* Theme variable overrides for the overlay (now lives outside .fides-credential-catalog) */
+.fides-modal-overlay[data-theme="light"] {
+  --fides-bg-primary: #f8fafc;
+  --fides-bg-secondary: #ffffff;
+  --fides-bg-card: #ffffff;
+  --fides-text-primary: #1e293b;
+  --fides-text-secondary: #475569;
+  --fides-text-muted: #94a3b8;
+  --fides-border: rgba(0, 0, 0, 0.1);
+  --fides-accent: #3b82f6;
+  --fides-accent-hover: #60a5fa;
+}
+
+.fides-modal-overlay[data-theme="fides"] {
+  --fides-bg-primary: #EAEAEE;
+  --fides-bg-secondary: #ffffff;
+  --fides-bg-card: #ffffff;
+  --fides-text-primary: #000000;
+  --fides-text-secondary: #374151;
+  --fides-text-muted: #6b7280;
+  --fides-border: rgba(0, 0, 0, 0.12);
+  --fides-accent: #0A6EF3;
+  --fides-accent-hover: #0858c4;
+}
+
 .fides-modal-overlay[data-theme="fides"] .fides-modal,
 .fides-modal-overlay[data-theme="light"] .fides-modal {
   background: #ffffff;
@@ -1202,6 +1327,11 @@ a.fides-tag.wallet-link svg {
   color: #6b7280;
 }
 
+.fides-attributes-table-wrap {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
 .fides-attributes-table {
   width: 100%;
   border-collapse: collapse;
@@ -1222,6 +1352,581 @@ a.fides-tag.wallet-link svg {
   text-transform: uppercase;
   color: var(--fides-text-muted);
 }
+
+.fides-attributes-table .fides-col-required {
+  width: 2rem;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.fides-attributes-table .fides-col-type {
+  width: 6rem;
+  white-space: nowrap;
+}
+
+/* Modal intro */
+.fides-modal-intro {
+  padding-bottom: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.fides-modal-badge-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.625rem;
+}
+
+.fides-modal-badge-format {
+  background: rgba(10, 110, 243, 0.08);
+  border-color: rgba(10, 110, 243, 0.2);
+  color: var(--fides-accent);
+}
+
+/* Section wrapper (ecosystem model) */
+.fides-modal-section {
+  margin-bottom: 1.25rem;
+}
+
+.fides-modal-section-header {
+  cursor: default !important;
+  pointer-events: none;
+}
+
+.fides-modal-ecosystem-body {
+  padding: 0 !important;
+  display: block !important;
+  border-top: none !important;
+}
+
+/* Ecosystem flow */
+.fides-modal-ecosystem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+  width: 100%;
+  padding: 0.5rem;
+  background: var(--fides-bg-primary);
+  border-radius: 0 0 8px 8px;
+}
+
+.fides-eco-wallet-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.fides-eco-wallet-box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  padding: 0.4rem 1.25rem;
+  min-width: 200px;
+  background: var(--fides-bg-secondary);
+  border: 1px solid var(--fides-border);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.fides-eco-wallet-box:hover {
+  border-color: var(--fides-accent);
+  box-shadow: 0 0 0 3px rgba(59,130,246,0.08);
+}
+
+.fides-eco-wallet-label {
+  font-size: 0.8125rem;
+  color: var(--fides-text-secondary);
+  font-weight: 500;
+}
+
+.fides-eco-wallet-count {
+  font-size: 0.9375rem;
+  font-weight: 700;
+  color: var(--fides-text-primary);
+  line-height: 1;
+}
+
+.fides-eco-wallet-connector {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--fides-text-muted);
+  line-height: 1;
+  margin: 0.25rem 0;
+}
+
+.fides-eco-wallet-connector svg {
+  width: 18px;
+  height: 18px;
+}
+
+.fides-eco-main-row {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr auto 1fr;
+  align-items: stretch;
+  gap: 0.375rem;
+  width: 100%;
+}
+
+.fides-eco-col {
+  padding: 0.625rem 0.75rem;
+  min-width: 0;
+}
+
+.fides-eco-col-side {
+  background: var(--fides-bg-secondary);
+  border: 1px solid var(--fides-border);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.fides-eco-col-side:hover {
+  border-color: var(--fides-accent);
+  box-shadow: 0 0 0 3px rgba(59,130,246,0.08);
+}
+
+.fides-eco-col-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+.fides-eco-col-header {
+  display: flex;
+  align-items: baseline;
+  gap: 0.35rem;
+  margin-bottom: 0.5rem;
+  padding-bottom: 0.375rem;
+  border-bottom: 1px solid var(--fides-border);
+}
+
+.fides-eco-count {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--fides-text-primary);
+  line-height: 1;
+}
+
+.fides-eco-label {
+  font-size: 0.6875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: 600;
+  color: var(--fides-text-muted);
+}
+
+.fides-eco-entities {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.35rem;
+}
+
+.fides-eco-entity {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.8125rem;
+  color: var(--fides-text-secondary);
+  text-decoration: none;
+  border-radius: 6px;
+  padding: 0.3rem 0.4rem;
+  transition: background 0.15s, color 0.15s;
+  overflow: hidden;
+}
+
+a.fides-eco-entity:hover {
+  background: rgba(59, 130, 246, 0.08);
+  color: var(--fides-accent);
+}
+
+a.fides-eco-entity svg {
+  flex-shrink: 0;
+  opacity: 0.5;
+}
+
+.fides-eco-entity-icon {
+  flex-shrink: 0;
+  display: flex;
+  color: var(--fides-text-muted);
+}
+
+.fides-eco-entity-icon svg {
+  width: 14px;
+  height: 14px;
+}
+
+.fides-eco-entity-name {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.fides-eco-more {
+  display: inline-block;
+  font-size: 0.75rem;
+  color: var(--fides-accent);
+  padding: 0.2rem 0.4rem;
+  margin-top: 0.1rem;
+  font-weight: 500;
+  cursor: default;
+}
+
+.fides-eco-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  color: var(--fides-text-muted);
+  flex-shrink: 0;
+}
+
+.fides-eco-arrow svg {
+  width: 18px;
+  height: 18px;
+  transform: rotate(-90deg);
+}
+
+.fides-eco-arrow-right svg {
+  transform: rotate(-90deg);
+}
+
+.fides-eco-center-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0.4rem;
+  background: var(--fides-bg-primary);
+  border: 2px solid var(--fides-accent);
+  border-radius: 10px;
+  padding: 0.625rem 0.875rem;
+  width: 100%;
+  box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.08);
+}
+
+.fides-eco-center-icon {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  background: linear-gradient(135deg, var(--fides-accent, #3b82f6), #8b5cf6);
+  color: #fff;
+  flex-shrink: 0;
+  margin-bottom: 0.2rem;
+}
+
+.fides-eco-center-icon svg {
+  width: 20px;
+  height: 20px;
+  color: #fff;
+}
+
+.fides-eco-center-name {
+  margin: 0;
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: var(--fides-text-primary);
+  line-height: 1.3;
+}
+
+.fides-eco-center-authority {
+  margin: 0;
+  font-size: 0.75rem;
+  color: var(--fides-text-muted);
+}
+
+.fides-eco-center-format {
+  display: inline-block;
+  margin-top: 0.35rem;
+  font-size: 0.6875rem;
+  font-weight: 600;
+  color: var(--fides-accent);
+  border: 1px solid var(--fides-accent);
+  border-radius: 9999px;
+  padding: 0.1rem 0.5rem;
+  letter-spacing: 0.02em;
+  background: transparent;
+}
+
+/* Accordion */
+.fides-accordion {
+  border: 1px solid var(--fides-border);
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 0.75rem;
+}
+
+.fides-accordion-header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 1rem;
+  background: var(--fides-bg-secondary);
+  border: none;
+  cursor: pointer;
+  color: var(--fides-text-primary);
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-align: left;
+  gap: 0.5rem;
+  transition: background 0.15s;
+}
+
+.fides-accordion-header:hover {
+  background: rgba(59, 130, 246, 0.05);
+}
+
+.fides-accordion-title {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.fides-accordion-title svg {
+  color: var(--fides-text-muted);
+  flex-shrink: 0;
+}
+
+.fides-accordion-count {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(59, 130, 246, 0.12);
+  color: var(--fides-accent);
+  border-radius: 9999px;
+  font-size: 0.6875rem;
+  font-weight: 700;
+  padding: 0.1rem 0.45rem;
+  line-height: 1.4;
+}
+
+.fides-accordion-chevron {
+  display: flex;
+  color: var(--fides-text-muted);
+  transition: transform 0.2s ease;
+  flex-shrink: 0;
+}
+
+.fides-accordion-chevron svg {
+  width: 16px;
+  height: 16px;
+}
+
+.fides-accordion.is-open .fides-accordion-chevron {
+  transform: rotate(180deg);
+}
+
+.fides-accordion-body {
+  display: none;
+  padding: 0.75rem 1rem 1rem;
+  border-top: 1px solid var(--fides-border);
+}
+
+.fides-accordion.is-open .fides-accordion-body {
+  display: block;
+}
+
+.fides-attributes-table code {
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+  font-size: 0.8rem;
+  color: var(--fides-accent);
+  background: rgba(59, 130, 246, 0.07);
+  padding: 0.1rem 0.3rem;
+  border-radius: 4px;
+}
+
+.fides-attr-type {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+  color: #7c3aed;
+  background: rgba(124, 58, 237, 0.07);
+  padding: 0.1rem 0.35rem;
+  border-radius: 4px;
+  white-space: nowrap;
+}
+
+.fides-attr-required {
+  text-align: center;
+  color: #16a34a;
+  font-weight: 600;
+  font-size: 0.875rem;
+}
+
+/* Eco tags — standalone style, independent of .fides-tag */
+.fides-eco-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  font-size: 0.75rem;
+  border-radius: 6px;
+  padding: 0.25rem 0.5rem;
+  border-width: 1px;
+  border-style: solid;
+  cursor: default;
+  text-decoration: none;
+}
+
+a.fides-eco-tag {
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+}
+
+.fides-eco-tag svg {
+  width: 11px;
+  height: 11px;
+  flex-shrink: 0;
+}
+
+.fides-eco-tag-green {
+  background: rgba(22, 163, 74, 0.1) !important;
+  color: #16a34a !important;
+  border-color: rgba(22, 163, 74, 0.3) !important;
+}
+
+a.fides-eco-tag-green:hover {
+  background: rgba(22, 163, 74, 0.18) !important;
+}
+
+.fides-eco-tag-blue {
+  background: rgba(10, 110, 243, 0.08) !important;
+  color: #2563eb !important;
+  border-color: rgba(10, 110, 243, 0.3) !important;
+}
+
+a.fides-eco-tag-blue:hover {
+  background: rgba(10, 110, 243, 0.15) !important;
+}
+
+/* Schema type tag in details */
+.fides-tag-schema {
+  background: rgba(245, 158, 11, 0.1);
+  color: #b45309;
+  border-color: rgba(245, 158, 11, 0.25);
+}
+
+/* Key:value 2-column layout for Other details */
+.fides-details-kv {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 2.5rem;
+  row-gap: 0;
+}
+
+.fides-kv-row {
+  display: grid;
+  grid-template-columns: 9rem 1fr;
+  align-items: baseline;
+  gap: 0.5rem;
+  padding: 0.45rem 0;
+  min-width: 0;
+}
+
+.fides-kv-row-wide {
+  grid-column: 1 / -1;
+  grid-template-columns: 9rem 1fr;
+}
+
+.fides-kv-key {
+  font-size: 0.8125rem;
+  font-weight: 500;
+  color: var(--fides-text-muted);
+  white-space: nowrap;
+}
+
+.fides-kv-key::after {
+  content: ":";
+}
+
+.fides-kv-val {
+  font-size: 0.8125rem;
+  color: var(--fides-text-secondary);
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+
+/* Inline link in detail rows */
+.fides-modal-link-inline {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.2rem;
+  font-size: 0.8125rem;
+  color: var(--fides-accent);
+  text-decoration: none;
+}
+
+.fides-modal-link-inline:hover {
+  color: var(--fides-accent);
+  text-decoration: underline;
+  opacity: 0.8;
+}
+
+.fides-modal-link-inline svg {
+  width: 11px;
+  height: 11px;
+  flex-shrink: 0;
+}
+
+
+/* Light/fides theme overrides for new elements */
+.fides-modal-overlay[data-theme="fides"] .fides-modal-ecosystem,
+.fides-modal-overlay[data-theme="light"] .fides-modal-ecosystem {
+  background: #ffffff;
+}
+
+.fides-modal-overlay[data-theme="fides"] .fides-eco-col-side,
+.fides-modal-overlay[data-theme="light"] .fides-eco-col-side,
+.fides-modal-overlay[data-theme="fides"] .fides-eco-wallet-box,
+.fides-modal-overlay[data-theme="light"] .fides-eco-wallet-box {
+  background: #f8fafc;
+  border-color: #e2e8f0;
+}
+
+.fides-modal-overlay[data-theme="fides"] .fides-eco-center-card,
+.fides-modal-overlay[data-theme="light"] .fides-eco-center-card {
+  background: #ffffff;
+}
+
+.fides-modal-overlay[data-theme="fides"] .fides-accordion,
+.fides-modal-overlay[data-theme="light"] .fides-accordion {
+  border-color: #e2e8f0;
+}
+
+.fides-modal-overlay[data-theme="fides"] .fides-accordion-header,
+.fides-modal-overlay[data-theme="light"] .fides-accordion-header {
+  background: #f8fafc;
+  color: #1e293b;
+}
+
+.fides-modal-overlay[data-theme="fides"] .fides-modal-section-header,
+.fides-modal-overlay[data-theme="light"] .fides-modal-section-header {
+  background: #f8fafc !important;
+}
+
+.fides-modal-overlay[data-theme="fides"] .fides-accordion-body,
+.fides-modal-overlay[data-theme="light"] .fides-accordion-body {
+  border-top-color: #e2e8f0;
+}
+
 
 /* Toast notification — identical to wallet catalog */
 .fides-toast {
@@ -1357,6 +2062,7 @@ a.fides-tag.wallet-link svg {
 
   .fides-main-layout {
     flex-direction: column;
+    overflow: hidden;
   }
 
   /* Sidebar becomes a fixed overlay/drawer */
@@ -1368,6 +2074,7 @@ a.fides-tag.wallet-link svg {
     right: 0;
     bottom: 0;
     width: 100% !important;
+    min-width: 0 !important;
     max-height: calc(100vh - 100px);
     border: none !important;
     border-radius: 0 !important;
@@ -1420,6 +2127,19 @@ a.fides-tag.wallet-link svg {
     display: block;
   }
 
+  .fides-sort-label {
+    display: none !important;
+  }
+
+  .fides-results-bar {
+    justify-content: flex-end;
+  }
+
+  .fides-mobile-filter-toggle {
+    width: 100%;
+    justify-content: center;
+  }
+
 }
 
 @media (max-width: 760px) {
@@ -1444,5 +2164,136 @@ a.fides-tag.wallet-link svg {
 
   .fides-modal-info-blocks {
     grid-template-columns: 1fr;
+  }
+
+  /* Modal sizing on tablet/mobile */
+  .fides-modal {
+    width: 100%;
+    max-height: 95vh;
+    border-radius: 12px 12px 0 0;
+  }
+
+  .fides-modal-overlay {
+    align-items: flex-end;
+  }
+
+  .fides-modal-header {
+    padding: 1rem 1rem 0.75rem;
+  }
+
+  .fides-modal-body {
+    padding: 1rem;
+  }
+
+  /* Ecosystem main row: stack vertically on mobile */
+  .fides-eco-main-row {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto auto;
+  }
+
+  /* Arrows: rotate 90° so they point downward */
+  .fides-eco-arrow {
+    transform: rotate(90deg);
+    justify-self: center;
+    padding: 0;
+  }
+
+  .fides-eco-col-center {
+    border-left: none;
+    border-right: none;
+    border-top: 1px solid var(--fides-border);
+    border-bottom: 1px solid var(--fides-border);
+  }
+
+  /* Other details: single column on tablet */
+  .fides-details-kv {
+    grid-template-columns: 1fr;
+  }
+
+  .fides-kv-row-wide {
+    grid-column: 1;
+  }
+
+  /* Attributes table: allow field name to wrap on tablet */
+  .fides-attributes-table code {
+    white-space: normal;
+    word-break: break-word;
+  }
+}
+
+@media (max-width: 480px) {
+  /* KPI row: single column */
+  .fides-kpi-row {
+    grid-template-columns: 1fr;
+  }
+
+  /* Card: no min-height, more compact */
+  .fides-credential-card {
+    min-height: unset;
+  }
+
+  /* Modal: full screen */
+  .fides-modal {
+    border-radius: 0;
+    max-height: 100vh;
+  }
+
+  .fides-modal-overlay {
+    align-items: stretch;
+  }
+
+  .fides-modal-header {
+    padding: 0.875rem 0.875rem 0.625rem;
+  }
+
+  .fides-modal-header-icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
+  }
+
+  .fides-modal-header-icon img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .fides-modal-title {
+    font-size: 1rem;
+  }
+
+  .fides-modal-body {
+    padding: 0.875rem;
+  }
+
+  .fides-eco-col {
+    padding: 0.75rem;
+  }
+
+  .fides-eco-center-card {
+    padding: 0.875rem 1rem;
+  }
+
+  .fides-accordion-header {
+    padding: 0.625rem 0.875rem;
+  }
+
+  .fides-accordion-body {
+    padding: 0.75rem 0.875rem;
+  }
+
+  /* Attributes table: allow field name to wrap on mobile */
+  .fides-attributes-table code {
+    white-space: normal;
+    word-break: break-all;
+  }
+
+  .fides-attributes-table .fides-col-type {
+    width: auto;
+  }
+
+  /* Hide Type and Required columns on very small screens to save space */
+  .fides-attributes-table .fides-col-type,
+  .fides-attributes-table .fides-col-required {
+    display: none;
   }
 }

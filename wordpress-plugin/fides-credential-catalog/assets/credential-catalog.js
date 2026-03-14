@@ -5,6 +5,13 @@
   const root = document.getElementById("fides-credential-catalog-root");
   if (!root) return;
 
+  const VC_FORMAT_LABELS = {
+    'sd_jwt_vc': 'SD-JWT VC',
+    'vcdm_1_1':  'JWT-VC',
+    'vcdm_2_0':  'JSON-LD VC',
+    'mdoc':      'mDL/mDoc',
+  };
+
   const settings = {
     showFilters: root.dataset.showFilters !== "false",
     showSearch: root.dataset.showSearch !== "false",
@@ -18,6 +25,8 @@
     xSmall: '<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg>',
     xLarge: '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg>',
     chevronDown: '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"></path></svg>',
+    chevronUp: '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"></path></svg>',
+    wallet: '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12V7H5a2 2 0 0 1 0-4h14v4"/><path d="M3 5v14a2 2 0 0 0 2 2h16v-5"/><path d="M18 12a2 2 0 0 0 0 4h4v-4Z"/></svg>',
     eye: '<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg>',
     share: '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" x2="15.42" y1="13.51" y2="17.49"/><line x1="15.41" x2="8.59" y1="6.51" y2="10.49"/></svg>',
     fileCheck: '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="m9 15 2 2 4-4"/></svg>',
@@ -39,6 +48,7 @@
 
   let credentials = [];
   let rpUsageMap = new Map();
+  let issuerUsageMap = new Map();
   let selectedCredential = null;
   let sortBy = "lastUpdated";
 
@@ -231,6 +241,62 @@
       rpUsageMap = map;
     } catch (_) {
       rpUsageMap = new Map();
+    }
+  }
+
+  async function loadIssuerUsage() {
+    const issuerSources = [
+      config.issuerAggregatedUrl,
+      `${config.pluginUrl || ""}data/issuer-aggregated.json`
+    ].filter(Boolean);
+
+    let data = null;
+    for (const source of issuerSources) {
+      try {
+        data = await loadJson(source);
+        if (data?.issuers?.length) break;
+      } catch (_) {
+        // Try next source.
+      }
+    }
+    if (!data) return;
+
+    try {
+      const issuers = Array.isArray(data.issuers) ? data.issuers : [];
+
+      // Build a lookup from nativeIdentifier → credential.id for vct-based fallback matching
+      const vctToCredentialId = new Map();
+      for (const cred of credentials) {
+        if (cred.nativeIdentifier) {
+          vctToCredentialId.set(cred.nativeIdentifier, cred.id);
+        }
+      }
+
+      const map = new Map();
+      const addToMap = (credentialId, issuer) => {
+        const existing = map.get(credentialId) || [];
+        if (!existing.some((e) => e.id === issuer.id)) {
+          existing.push({
+            id: issuer.id,
+            name: issuer.displayName || issuer.organization?.name || issuer.id
+          });
+        }
+        map.set(credentialId, existing);
+      };
+
+      for (const issuer of issuers) {
+        const configs = Array.isArray(issuer.credentialConfigurations) ? issuer.credentialConfigurations : [];
+        for (const cc of configs) {
+          if (cc.credentialCatalogRef?.id) {
+            addToMap(cc.credentialCatalogRef.id, issuer);
+          } else if (cc.vct && vctToCredentialId.has(cc.vct)) {
+            addToMap(vctToCredentialId.get(cc.vct), issuer);
+          }
+        }
+      }
+      issuerUsageMap = map;
+    } catch (_) {
+      issuerUsageMap = new Map();
     }
   }
 
@@ -447,9 +513,9 @@
   }
 
   function renderCredentialCard(credential) {
-    const rpItems = rpUsageMap.get(credential.id) || [];
-    const rpLinks = rpItems.slice(0, 3);
-    const hiddenRpCount = Math.max(0, rpItems.length - rpLinks.length);
+    const issuerCount = issuerUsageMap.get(credential.id)?.length ?? 0;
+    const rpCount = rpUsageMap.get(credential.id)?.length ?? 0;
+
     const activityLabel = isWithinLastDays(credential.firstSeenAt, 30)
       ? formatDateLabel(credential.firstSeenAt, "Added")
       : formatDateLabel(credential.updatedAt, "Updated");
@@ -465,34 +531,25 @@
             <div class="fides-credential-meta-row">
               <p class="fides-credential-provider">${escapeHtml(credential.authority?.name || "Unknown authority")}</p>
             </div>
-            <p class="fides-credential-identifier" title="Identifier: ${escapeHtml(credential.nativeIdentifier || credential.id)}">${escapeHtml(credential.nativeIdentifier || credential.id)}</p>
           </div>
         </header>
         <div class="fides-credential-body">
-          ${activityLabel ? `<p class="fides-credential-updated">${escapeHtml(activityLabel)}</p>` : ""}
-          ${credential.shortDescription ? `<p class="fides-credential-description">${escapeHtml(credential.shortDescription)}</p>` : ""}
-          <div class="fides-credential-section">
-            <h4>CREDENTIAL PROFILE</h4>
-            <div class="fides-tags">
-              <span class="fides-tag">${escapeHtml(credential.vcFormat)}</span>
-            </div>
+          <div class="fides-credential-date-id">
+            ${activityLabel ? `<p class="fides-credential-updated">${escapeHtml(activityLabel)}</p>` : ""}
+            ${credential.nativeIdentifier ? `<p class="fides-credential-card-identifier" title="${escapeHtml(credential.nativeIdentifier)}"><span class="fides-credential-card-identifier-label">ID</span><span class="fides-credential-card-identifier-value">${escapeHtml(credential.nativeIdentifier)}</span></p>` : ""}
           </div>
-          <div class="fides-credential-section">
-            <h4>USED BY RELYING PARTIES</h4>
-            <div class="fides-tags">
-              ${rpLinks.map((rp) => {
-                const separator = (config.rpCatalogUrl || "").includes("?") ? "&" : "?";
-                const href = `${config.rpCatalogUrl || "#"}${separator}rp=${encodeURIComponent(rp.id)}`;
-                return `<a href="${escapeHtml(href)}" target="_blank" rel="noopener" class="fides-tag wallet-link" onclick="event.stopPropagation();">${escapeHtml(rp.name)} ${icons.externalLinkSmall}</a>`;
-              }).join("")}
-              ${hiddenRpCount > 0 ? `<span class="fides-tag">+${hiddenRpCount}</span>` : ""}
+          <div class="fides-credential-counts">
+            <div class="fides-credential-count-item">
+              <span class="fides-credential-count-number">${issuerCount}</span>
+              <span class="fides-credential-count-label">${issuerCount === 1 ? "Issuer" : "Issuers"}</span>
+            </div>
+            <div class="fides-credential-count-item">
+              <span class="fides-credential-count-number">${rpCount}</span>
+              <span class="fides-credential-count-label">${rpCount === 1 ? "Relying party" : "Relying parties"}</span>
             </div>
           </div>
         </div>
         <footer class="fides-credential-footer">
-          <div class="fides-credential-links">
-            ${credential.schemaUrl ? `<a href="${escapeHtml(credential.schemaUrl)}" target="_blank" rel="noopener noreferrer" class="fides-credential-link">Open schema</a>` : ""}
-          </div>
           <span class="fides-view-details">${icons.eye} View details</span>
         </footer>
       </article>
@@ -501,13 +558,30 @@
 
   function renderModal() {
     if (!selectedCredential) return "";
-    const rpLinks = rpUsageMap.get(selectedCredential.id) || [];
+    const rpItems = rpUsageMap.get(selectedCredential.id) || [];
+    const issuerItems = issuerUsageMap.get(selectedCredential.id) || [];
     const attributes = Array.isArray(selectedCredential.attributes) ? selectedCredential.attributes : [];
     const currentTheme = root.getAttribute("data-theme") || "dark";
+
+    const MAX_VISIBLE = 3;
+    const visibleIssuers = issuerItems.slice(0, MAX_VISIBLE);
+    const hiddenIssuers = issuerItems.length - visibleIssuers.length;
+    const visibleRPs = rpItems.slice(0, MAX_VISIBLE);
+    const hiddenRPs = rpItems.length - visibleRPs.length;
+
+    const renderEcoTag = (item, catalogUrl, paramKey, colorClass) => {
+      const separator = (catalogUrl || "").includes("?") ? "&" : "?";
+      const href = catalogUrl ? `${catalogUrl.replace(/\/$/, "")}${separator}${paramKey}=${encodeURIComponent(item.id)}` : null;
+      const inner = `${escapeHtml(item.name)}${href ? " " + icons.externalLinkSmall : ""}`;
+      return href
+        ? `<a href="${escapeHtml(href)}" target="_blank" rel="noopener" class="fides-eco-tag ${colorClass}" onclick="event.stopPropagation();">${inner}</a>`
+        : `<span class="fides-eco-tag ${colorClass}">${inner}</span>`;
+    };
 
     return `
       <div class="fides-modal-overlay" id="fides-modal-overlay" data-theme="${currentTheme}">
         <div class="fides-modal" role="dialog" aria-modal="true" aria-labelledby="fides-modal-title">
+
           <div class="fides-modal-header">
             <div class="fides-modal-header-content">
               <div class="fides-modal-logo-placeholder">
@@ -516,7 +590,6 @@
               <div class="fides-modal-title-wrap">
                 <h2 class="fides-modal-title" id="fides-modal-title">${escapeHtml(selectedCredential.displayName)}</h2>
                 <p class="fides-modal-provider">${icons.building} ${escapeHtml(selectedCredential.authority?.name || "Unknown authority")}</p>
-                <p class="fides-modal-identifier" title="${escapeHtml(selectedCredential.nativeIdentifier || selectedCredential.id)}">${escapeHtml(selectedCredential.nativeIdentifier || selectedCredential.id)}</p>
               </div>
             </div>
             <div class="fides-modal-header-actions">
@@ -526,80 +599,162 @@
               <button class="fides-modal-close" id="fides-modal-close" aria-label="Close modal">${icons.xLarge}</button>
             </div>
           </div>
+
           <div class="fides-modal-body">
-            ${selectedCredential.shortDescription ? `<div class="fides-modal-section fides-modal-section-first"><p class="fides-modal-description">${escapeHtml(selectedCredential.shortDescription)}</p></div>` : ""}
-            <div class="fides-modal-info-blocks">
-              <div class="fides-modal-info-block">
-                <h4 class="fides-modal-section-title">${icons.fileCheck} Credential details</h4>
-                  <dl class="fides-modal-details">
-                    <div class="fides-modal-detail-row">
-                      <dt>Subject Type</dt>
-                      <dd><span class="fides-tag">${escapeHtml(selectedCredential.subjectType)}</span></dd>
-                    </div>
-                    <div class="fides-modal-detail-row">
-                      <dt>VC Format</dt>
-                      <dd><span class="fides-tag">${escapeHtml(selectedCredential.vcFormat)}</span></dd>
-                    </div>
-                    ${selectedCredential.schemaType ? `<div class="fides-modal-detail-row">
-                      <dt>Schema Type</dt>
-                      <dd><span class="fides-tag">${escapeHtml(selectedCredential.schemaType)}</span></dd>
-                    </div>` : ""}
-                    <div class="fides-modal-detail-row">
-                      <dt>Version</dt>
-                      <dd>${escapeHtml(selectedCredential.version || "n/a")}</dd>
-                    </div>
-                    <div class="fides-modal-detail-row">
-                      <dt>Updated</dt>
-                      <dd>${escapeHtml(formatDateLabel(selectedCredential.updatedAt, "").trim() || "-")}</dd>
-                    </div>
-                  </dl>
-              </div>
 
-              <div class="fides-modal-info-block">
-                <h4 class="fides-modal-section-title">${icons.building} Used by relying parties</h4>
-                ${
-                  rpLinks.length > 0
-                    ? `<div class="fides-tags">${rpLinks
-                        .map((rp) => {
-                          const separator = (config.rpCatalogUrl || "").includes("?") ? "&" : "?";
-                          const href = `${config.rpCatalogUrl || "#"}${separator}rp=${encodeURIComponent(rp.id)}`;
-                          return `<a href="${escapeHtml(href)}" target="_blank" rel="noopener" class="fides-tag wallet-link">${escapeHtml(rp.name)} ${icons.externalLinkSmall}</a>`;
-                        })
-                        .join(" ")}</div>`
-                    : `<p class="fides-modal-empty">No relying party references found.</p>`
-                }
+            <!-- Intro: description only -->
+            ${selectedCredential.shortDescription ? `<div class="fides-modal-intro"><p class="fides-modal-description">${escapeHtml(selectedCredential.shortDescription)}</p></div>` : ""}
+
+            <!-- Ecosystem flow -->
+            <div class="fides-accordion fides-modal-section">
+              <div class="fides-accordion-header fides-modal-section-header">
+                <span class="fides-accordion-title">${icons.wallet} FIDES Ecosystem Model</span>
+              </div>
+              <div class="fides-accordion-body fides-modal-ecosystem-body">
+
+                <!-- Personal Wallets (top) -->
+                <div class="fides-modal-ecosystem">
+                  <div class="fides-eco-wallet-row">
+                    <div class="fides-eco-wallet-box">
+                      <span class="fides-eco-wallet-count">—</span>
+                      <span class="fides-eco-wallet-label">Personal Wallets</span>
+                    </div>
+                  </div>
+
+                  <div class="fides-eco-wallet-connector">${icons.chevronUp}</div>
+
+                  <!-- Main row: Issuers → Credential → Relying Parties -->
+                  <div class="fides-eco-main-row">
+                    <div class="fides-eco-col fides-eco-col-side">
+                      <div class="fides-eco-col-header">
+                        <span class="fides-eco-count">${issuerItems.length}</span>
+                        <span class="fides-eco-label">${issuerItems.length === 1 ? "Issuer" : "Issuers"}</span>
+                      </div>
+                      <div class="fides-eco-entities">
+                        ${visibleIssuers.length > 0
+                          ? visibleIssuers.map((i) => renderEcoTag(i, config.issuerCatalogUrl, "issuer", "fides-eco-tag-green")).join("")
+                          : `<p class="fides-modal-empty">No issuers found.</p>`}
+                        ${hiddenIssuers > 0 ? `<span class="fides-eco-more">+ ${hiddenIssuers} more</span>` : ""}
+                      </div>
+                    </div>
+
+                    <div class="fides-eco-arrow">${icons.chevronDown}</div>
+
+                    <div class="fides-eco-col fides-eco-col-center">
+                      <div class="fides-eco-center-card">
+                        <div class="fides-eco-center-icon">${getSubjectTypeIcon(selectedCredential.subjectType)}</div>
+                        <p class="fides-eco-center-name">${escapeHtml(selectedCredential.displayName)}</p>
+                        <p class="fides-eco-center-authority">${escapeHtml(selectedCredential.authority?.name || "")}</p>
+                      </div>
+                    </div>
+
+                    <div class="fides-eco-arrow fides-eco-arrow-right">${icons.chevronDown}</div>
+
+                    <div class="fides-eco-col fides-eco-col-side">
+                      <div class="fides-eco-col-header">
+                        <span class="fides-eco-count">${rpItems.length}</span>
+                        <span class="fides-eco-label">${rpItems.length === 1 ? "Relying party" : "Relying parties"}</span>
+                      </div>
+                      <div class="fides-eco-entities">
+                        ${visibleRPs.length > 0
+                          ? visibleRPs.map((rp) => renderEcoTag(rp, config.rpCatalogUrl, "rp", "fides-eco-tag-blue")).join("")
+                          : `<p class="fides-modal-empty">No relying parties found.</p>`}
+                        ${hiddenRPs > 0 ? `<span class="fides-eco-more">+ ${hiddenRPs} more</span>` : ""}
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="fides-eco-wallet-connector">${icons.chevronUp}</div>
+
+                  <!-- Business Wallets (bottom) -->
+                  <div class="fides-eco-wallet-row">
+                    <div class="fides-eco-wallet-box">
+                      <span class="fides-eco-wallet-count">—</span>
+                      <span class="fides-eco-wallet-label">Business Wallets</span>
+                    </div>
+                  </div>
+                </div>
+
               </div>
             </div>
 
-            <div class="fides-modal-section">
-              <h4 class="fides-modal-section-title">${icons.shield} Schema links</h4>
-              <div class="fides-modal-links">
-                ${selectedCredential.schemaUrl ? `<a href="${escapeHtml(selectedCredential.schemaUrl)}" target="_blank" rel="noopener" class="fides-modal-link primary">${icons.fileCheck} Schema URL</a>` : ""}
-                ${selectedCredential.rulebookUrl ? `<a href="${escapeHtml(selectedCredential.rulebookUrl)}" target="_blank" rel="noopener" class="fides-modal-link">${icons.shield} Rulebook URL</a>` : ""}
-              </div>
-            </div>
-
-            <div class="fides-modal-info-block fides-modal-info-block-full">
-              <h4 class="fides-modal-section-title">${icons.fileCheck} Attributes (enriched from linked schema)</h4>
-              ${
-                attributes.length > 0
-                  ? `<table class="fides-attributes-table">
-                      <thead><tr><th>Name</th><th>Type</th><th>Required</th><th>Description</th></tr></thead>
+            <!-- Attributes accordion -->
+            <div class="fides-accordion" id="fides-accordion-data">
+              <button class="fides-accordion-header" type="button" aria-expanded="false">
+                <span class="fides-accordion-title">${icons.fileCheck} Attributes${attributes.length > 0 ? ` <span class="fides-accordion-count">${attributes.length}</span>` : ""}</span>
+                <span class="fides-accordion-chevron">${icons.chevronDown}</span>
+              </button>
+              <div class="fides-accordion-body">
+                ${attributes.length > 0
+                  ? `<div class="fides-attributes-table-wrap"><table class="fides-attributes-table">
+                      <thead><tr><th>Field name</th><th class="fides-col-type">Type</th><th class="fides-col-required" title="Required">✓</th><th>Description</th></tr></thead>
                       <tbody>
-                        ${attributes
-                          .map(
-                            (attr) => `<tr>
-                              <td>${escapeHtml(attr.name)}</td>
-                              <td>${escapeHtml(attr.type)}</td>
-                              <td>${attr.required ? "Yes" : "No"}</td>
-                              <td>${escapeHtml(attr.description || "")}</td>
-                            </tr>`
-                          )
-                          .join("")}
+                        ${attributes.map((attr) => `<tr>
+                          <td><code>${escapeHtml(attr.name)}</code></td>
+                          <td class="fides-col-type">${attr.type ? `<span class="fides-attr-type">${escapeHtml(attr.type)}</span>` : "—"}</td>
+                          <td class="fides-col-required fides-attr-required">${attr.required ? "✓" : ""}</td>
+                          <td>${escapeHtml(attr.description || "")}</td>
+                        </tr>`).join("")}
                       </tbody>
-                    </table>`
-                  : `<p class="fides-modal-empty">No attributes available from linked schema.</p>`
-              }
+                    </table></div>`
+                  : `<p class="fides-modal-empty">No attributes available from linked schema.</p>`}
+              </div>
+            </div>
+
+            <!-- Other details accordion (open by default) -->
+            <div class="fides-accordion is-open" id="fides-accordion-details">
+              <button class="fides-accordion-header" type="button" aria-expanded="true">
+                <span class="fides-accordion-title">${icons.shield} Other details</span>
+                <span class="fides-accordion-chevron">${icons.chevronDown}</span>
+              </button>
+              <div class="fides-accordion-body">
+                <div class="fides-details-kv">
+                  <!-- left col: row 1 -->
+                  <div class="fides-kv-row">
+                    <span class="fides-kv-key">Credential ID</span>
+                    <span class="fides-kv-val fides-modal-identifier" style="font-size:0.8125rem;">${escapeHtml(selectedCredential.nativeIdentifier || selectedCredential.id)}</span>
+                  </div>
+                  <!-- right col: row 1 -->
+                  ${selectedCredential.schemaType ? `<div class="fides-kv-row">
+                    <span class="fides-kv-key">Schema type</span>
+                    <span class="fides-kv-val">${escapeHtml(selectedCredential.schemaType)}${selectedCredential.schemaUrl ? ` <a href="${escapeHtml(selectedCredential.schemaUrl)}" target="_blank" rel="noopener" class="fides-modal-link-inline" onclick="event.stopPropagation();">${icons.externalLinkSmall} View schema</a>` : ""}</span>
+                  </div>` : selectedCredential.schemaUrl ? `<div class="fides-kv-row">
+                    <span class="fides-kv-key">Schema</span>
+                    <span class="fides-kv-val"><a href="${escapeHtml(selectedCredential.schemaUrl)}" target="_blank" rel="noopener" class="fides-modal-link-inline" onclick="event.stopPropagation();">${icons.externalLinkSmall} View schema</a></span>
+                  </div>` : `<div class="fides-kv-row">
+                    <span class="fides-kv-key">Schema</span>
+                    <span class="fides-kv-val">—</span>
+                  </div>`}
+                  <!-- left col: row 2 -->
+                  ${selectedCredential.vcFormat ? `<div class="fides-kv-row">
+                    <span class="fides-kv-key">Credential format</span>
+                    <span class="fides-kv-val">${escapeHtml(VC_FORMAT_LABELS[selectedCredential.vcFormat] || selectedCredential.vcFormat)}</span>
+                  </div>` : `<div class="fides-kv-row">
+                    <span class="fides-kv-key">Credential format</span>
+                    <span class="fides-kv-val">—</span>
+                  </div>`}
+                  <!-- right col: row 2 -->
+                  <div class="fides-kv-row">
+                    <span class="fides-kv-key">Version</span>
+                    <span class="fides-kv-val">${escapeHtml(selectedCredential.version || "—")}</span>
+                  </div>
+                  <!-- left col: row 3 -->
+                  <div class="fides-kv-row">
+                    <span class="fides-kv-key">Authority</span>
+                    <span class="fides-kv-val">${escapeHtml(selectedCredential.authority?.name || "—")}</span>
+                  </div>
+                  <!-- right col: row 3 -->
+                  <div class="fides-kv-row">
+                    <span class="fides-kv-key">Last updated</span>
+                    <span class="fides-kv-val">${escapeHtml(formatDateLabel(selectedCredential.updatedAt, "").trim() || "—")}</span>
+                  </div>
+                  ${selectedCredential.rulebookUrl ? `<!-- rulebook spans below if present -->
+                  <div class="fides-kv-row fides-kv-row-wide">
+                    <span class="fides-kv-key">Rulebook</span>
+                    <span class="fides-kv-val"><a href="${escapeHtml(selectedCredential.rulebookUrl)}" target="_blank" rel="noopener" class="fides-modal-link-inline" onclick="event.stopPropagation();">${icons.externalLinkSmall} View rulebook</a></span>
+                  </div>` : ""}
+                </div>
+              </div>
             </div>
 
           </div>
@@ -651,10 +806,28 @@
           </section>
         </div>
       </div>
-      ${renderModal()}
     `;
 
     bindEvents();
+
+    if (selectedCredential) {
+      openModal();
+    }
+  }
+
+  function openModal() {
+    closeModal();
+    const html = renderModal();
+    if (!html) return;
+    document.body.insertAdjacentHTML("beforeend", html);
+    document.body.style.overflow = "hidden";
+    bindModalBodyEvents();
+  }
+
+  function closeModal() {
+    const existing = document.getElementById("fides-modal-overlay");
+    if (existing) existing.remove();
+    document.body.style.overflow = "";
   }
 
   function renderCredentialGridOnly() {
@@ -868,19 +1041,22 @@
     }
 
     bindCredentialCardEvents();
+  }
 
-    const closeButton = root.querySelector("#fides-modal-close");
+  function bindModalBodyEvents() {
+    const closeButton = document.getElementById("fides-modal-close");
     if (closeButton) {
       closeButton.addEventListener("click", () => {
         selectedCredential = null;
         const url = new URL(window.location.href);
         url.searchParams.delete("credential");
         window.history.replaceState({}, "", url.toString());
+        closeModal();
         render();
       });
     }
 
-    const copyLinkButton = root.querySelector("#fides-modal-copy-link");
+    const copyLinkButton = document.getElementById("fides-modal-copy-link");
     if (copyLinkButton && selectedCredential) {
       copyLinkButton.addEventListener("click", (e) => {
         e.stopPropagation();
@@ -888,15 +1064,27 @@
       });
     }
 
-    const modalOverlay = root.querySelector("#fides-modal-overlay");
+    const modalOverlay = document.getElementById("fides-modal-overlay");
     if (modalOverlay) {
       modalOverlay.addEventListener("click", (event) => {
         if (event.target.id === "fides-modal-overlay") {
           selectedCredential = null;
+          const url = new URL(window.location.href);
+          url.searchParams.delete("credential");
+          window.history.replaceState({}, "", url.toString());
+          closeModal();
           render();
         }
       });
     }
+
+    document.querySelectorAll("#fides-modal-overlay .fides-accordion-header").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const accordion = btn.closest(".fides-accordion");
+        const isOpen = accordion.classList.toggle("is-open");
+        btn.setAttribute("aria-expanded", isOpen ? "true" : "false");
+      });
+    });
   }
 
   function bindCredentialCardEvents() {
@@ -907,7 +1095,7 @@
         const url = new URL(window.location.href);
         url.searchParams.set("credential", id || "");
         window.history.replaceState({}, "", url.toString());
-        render();
+        openModal();
       };
 
       card.addEventListener("click", (event) => {
@@ -945,7 +1133,7 @@
 
   async function init() {
     await loadCredentials();
-    await loadRPUsage();
+    await Promise.all([loadRPUsage(), loadIssuerUsage()]);
     openFromQueryParam();
     render();
   }
