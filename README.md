@@ -263,7 +263,7 @@ A serverless query API is available for apps that need server-side filter, pagin
 - **Endpoint:** `GET /api/public/credentialtype`
 - **OpenAPI:** `GET /api/public/api-docs`
 
-The API returns **credential definitions only** (schema URL, format, subject kind); issuer-related fields are omitted. For issuance URLs and issuer details, use the (future) Issuer Catalog API. Design choices, mapping, and deployment are documented in [docs/API.md](docs/API.md). Deploy the repo to Vercel to expose the API.
+The API returns **credential definitions only** (schema URL, format, subject kind); issuer-related fields are omitted. For issuance URLs and issuer details, use the (future) Issuer Catalog API. Design choices, mapping, and deployment are documented in [docs/API.md](docs/API.md). Deploy the repo to Vercel to expose the API. If the build fails on install, ensure **Vercel → Project Settings → Build & Development Settings → Install Command** is empty (so `vercel.json` is used).
 
 ## 🔗 Related Catalogs
 

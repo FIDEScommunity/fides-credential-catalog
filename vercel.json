@@ -1,6 +1,6 @@
 {
   "buildCommand": "echo 'No build step; API only'",
-  "installCommand": "npm install",
+  "installCommand": "npm ci",
   "framework": null,
   "outputDirectory": null,
   "rewrites": [],
