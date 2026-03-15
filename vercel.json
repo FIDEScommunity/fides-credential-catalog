@@ -2,7 +2,7 @@
   "buildCommand": "echo 'No build step; API only'",
   "installCommand": "npm ci",
   "framework": null,
-  "outputDirectory": null,
+  "outputDirectory": "public",
   "rewrites": [],
   "functions": {
     "api/**/*.ts": {
