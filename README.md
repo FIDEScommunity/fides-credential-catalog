@@ -19,6 +19,7 @@ The catalog is available as:
 - **Website** — Interactive catalog at [fides.community](https://fides.community)
 - **WordPress plugin** — Embed the catalog on your own site
 - **Machine-readable JSON** — `data/aggregated.json`
+- **Public API** — Serverless query API (`GET /api/public/credentialtype`) for filter, search, and pagination; see [docs/API.md](docs/API.md)
 
 ## 📁 Project Structure
 
@@ -141,6 +142,11 @@ Your PR will be automatically validated against the JSON Schema. To validate loc
 npm run validate
 ```
 
+### CI: validate and crawl
+
+- **On every PR/push** that touches `community-catalogs/**/credential-catalog.json` or `schemas/**`, the **validate** workflow runs and checks all catalog files against the schema (including the ID pattern).
+- **When a catalog file is merged to `main`**, the **crawl** workflow runs: it runs the crawler (enrichment from `schemaUrl`, git-based dates), updates `data/aggregated.json` and `data/credential-history-state.json`, and commits them. So the live catalog data is updated automatically after your PR is merged. The crawler also runs daily and can be triggered manually from the Actions tab.
+
 ## 🔍 Using the Catalog Data
 
 ### Direct JSON Access
@@ -249,6 +255,15 @@ cp data/aggregated.json wordpress-plugin/fides-credential-catalog/data/aggregate
 ```
 
 > Note: `wordpress-plugin/*/data/` is excluded from git via `.gitignore`.
+
+## 🌐 Public API (v2)
+
+A serverless query API is available for apps that need server-side filter, pagination, and a stable contract:
+
+- **Endpoint:** `GET /api/public/credentialtype`
+- **OpenAPI:** `GET /api/public/api-docs`
+
+The API returns **credential definitions only** (schema URL, format, subject kind); issuer-related fields are omitted. For issuance URLs and issuer details, use the (future) Issuer Catalog API. Design choices, mapping, and deployment are documented in [docs/API.md](docs/API.md). Deploy the repo to Vercel to expose the API.
 
 ## 🔗 Related Catalogs
 

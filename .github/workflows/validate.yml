@@ -1,0 +1,36 @@
+name: Validate Credential Catalogs
+
+on:
+  push:
+    paths:
+      - 'community-catalogs/**/credential-catalog.json'
+      - 'schemas/**'
+      - '.github/workflows/validate.yml'
+      - 'package.json'
+  pull_request:
+    paths:
+      - 'community-catalogs/**/credential-catalog.json'
+      - 'schemas/**'
+  workflow_dispatch:
+
+jobs:
+  validate:
+    name: Validate Schema
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Validate credential catalogs
+        run: |
+          echo "Validating credential catalogs against schema..."
+          npm run validate
+          echo "All credential catalogs are valid!"
