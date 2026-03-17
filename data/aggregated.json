@@ -1,8 +1,1794 @@
 {
   "schemaVersion": "1.0.0",
   "catalogType": "credential",
-  "lastUpdated": "2026-03-17T07:13:13.469Z",
+  "lastUpdated": "2026-03-17T09:32:29.024Z",
   "credentials": [
+    {
+      "id": "cred:eu:diploma-vc-sd-jwt:sd-jwt-vc",
+      "slug": "eu-diploma-vc-sd-jwt",
+      "displayName": "Diploma (SD-JWT VC)",
+      "shortDescription": "EUDI Wallet credential: Diploma (SD-JWT VC). Schema generated from issuer metadata.",
+      "authority": {
+        "name": "European Commission",
+        "url": "https://digital-strategy.ec.europa.eu/en/policies/eudi-wallet"
+      },
+      "subjectType": "Person",
+      "vcFormat": "sd_jwt_vc",
+      "nativeIdentifier": "urn:eu.europa.ec.eudi:diploma:1:1",
+      "nativeIdentifierType": "vct",
+      "schemaUrl": "https://raw.githubusercontent.com/FIDEScommunity/fides-credential-catalog/main/community-catalogs/eu/schemas/diploma-vc-sd-jwt.schema.json",
+      "schemaType": "JSON Schema",
+      "version": "1",
+      "tags": [
+        "eu",
+        "eudi",
+        "diploma"
+      ],
+      "provider": {
+        "name": "European Commission",
+        "website": "https://digital-strategy.ec.europa.eu/en/policies/eudi-wallet"
+      },
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
+      "source": "local",
+      "fetchedAt": "2026-03-17T09:32:29.024Z",
+      "updatedAt": "2026-03-17T09:29:34.000Z",
+      "firstSeenAt": "2026-03-17T09:29:34.000Z",
+      "attributes": [
+        {
+          "name": "identifier",
+          "type": "string",
+          "required": true,
+          "description": "Identifier"
+        },
+        {
+          "name": "scoped_affiliation",
+          "type": "string",
+          "required": true,
+          "description": "Scoped Affiliation"
+        },
+        {
+          "name": "personal_unique_code",
+          "type": "string",
+          "required": false,
+          "description": "Personal Unique Code"
+        },
+        {
+          "name": "personal_unique_id",
+          "type": "string",
+          "required": false,
+          "description": "Personal Unique ID"
+        },
+        {
+          "name": "home_organization",
+          "type": "string",
+          "required": false,
+          "description": "Home Organization"
+        },
+        {
+          "name": "family_name",
+          "type": "string",
+          "required": false,
+          "description": "Family Name"
+        },
+        {
+          "name": "first_name",
+          "type": "string",
+          "required": false,
+          "description": "First Name"
+        },
+        {
+          "name": "display_name",
+          "type": "string",
+          "required": false,
+          "description": "Display Name"
+        },
+        {
+          "name": "date_of_birth",
+          "type": "string",
+          "required": false,
+          "description": "Birth Date"
+        },
+        {
+          "name": "common_name",
+          "type": "string",
+          "required": false,
+          "description": "Birth Name"
+        },
+        {
+          "name": "email",
+          "type": "string",
+          "required": false,
+          "description": "Email"
+        },
+        {
+          "name": "principal_name",
+          "type": "string",
+          "required": false,
+          "description": "Principal Name"
+        },
+        {
+          "name": "primary_affiliation",
+          "type": "string",
+          "required": false,
+          "description": "Primary Affiliation"
+        },
+        {
+          "name": "affiliations",
+          "type": "string",
+          "required": false,
+          "description": "Affiliations"
+        },
+        {
+          "name": "assurance",
+          "type": "string",
+          "required": false,
+          "description": "Assurance"
+        },
+        {
+          "name": "image",
+          "type": "string",
+          "required": false,
+          "description": "Profile Image"
+        }
+      ]
+    },
+    {
+      "id": "cred:eu:ehic-sd-jwt-vc:sd-jwt-vc",
+      "slug": "eu-ehic-sd-jwt-vc",
+      "displayName": "EHIC (SD-JWT VC)",
+      "shortDescription": "EUDI Wallet credential: EHIC (SD-JWT VC). Schema generated from issuer metadata.",
+      "authority": {
+        "name": "European Commission",
+        "url": "https://digital-strategy.ec.europa.eu/en/policies/eudi-wallet"
+      },
+      "subjectType": "Person",
+      "vcFormat": "sd_jwt_vc",
+      "nativeIdentifier": "urn:eudi:ehic:1",
+      "nativeIdentifierType": "vct",
+      "schemaUrl": "https://raw.githubusercontent.com/FIDEScommunity/fides-credential-catalog/main/community-catalogs/eu/schemas/ehic-sd-jwt-vc.schema.json",
+      "schemaType": "JSON Schema",
+      "version": "1",
+      "tags": [
+        "eu",
+        "eudi",
+        "ehic"
+      ],
+      "provider": {
+        "name": "European Commission",
+        "website": "https://digital-strategy.ec.europa.eu/en/policies/eudi-wallet"
+      },
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
+      "source": "local",
+      "fetchedAt": "2026-03-17T09:32:29.024Z",
+      "updatedAt": "2026-03-17T09:29:34.000Z",
+      "firstSeenAt": "2026-03-17T09:29:34.000Z",
+      "attributes": [
+        {
+          "name": "personal_administrative_number",
+          "type": "string",
+          "required": true,
+          "description": "Personal Administrative Number"
+        },
+        {
+          "name": "issuing_authority",
+          "type": "object",
+          "required": true
+        },
+        {
+          "name": "issuing_country",
+          "type": "string",
+          "required": true,
+          "description": "Issuing Country"
+        },
+        {
+          "name": "date_of_expiry",
+          "type": "string",
+          "required": true,
+          "description": "Expiry date"
+        },
+        {
+          "name": "date_of_issuance",
+          "type": "string",
+          "required": true,
+          "description": "Issue date"
+        },
+        {
+          "name": "authentic_source",
+          "type": "object",
+          "required": true
+        },
+        {
+          "name": "starting_date",
+          "type": "string",
+          "required": true,
+          "description": "Starting Date"
+        },
+        {
+          "name": "ending_date",
+          "type": "string",
+          "required": true,
+          "description": "Ending Date"
+        }
+      ]
+    },
+    {
+      "id": "cred:eu:hiid-sd-jwt-vc:sd-jwt-vc",
+      "slug": "eu-hiid-sd-jwt-vc",
+      "displayName": "Health ID (SD-JWT VC)",
+      "shortDescription": "EUDI Wallet credential: Health ID (SD-JWT VC). Schema generated from issuer metadata.",
+      "authority": {
+        "name": "European Commission",
+        "url": "https://digital-strategy.ec.europa.eu/en/policies/eudi-wallet"
+      },
+      "subjectType": "Person",
+      "vcFormat": "sd_jwt_vc",
+      "nativeIdentifier": "urn:eu.europa.ec.eudi:hiid:1",
+      "nativeIdentifierType": "vct",
+      "schemaUrl": "https://raw.githubusercontent.com/FIDEScommunity/fides-credential-catalog/main/community-catalogs/eu/schemas/hiid-sd-jwt-vc.schema.json",
+      "schemaType": "JSON Schema",
+      "version": "1",
+      "tags": [
+        "eu",
+        "eudi",
+        "hiid"
+      ],
+      "provider": {
+        "name": "European Commission",
+        "website": "https://digital-strategy.ec.europa.eu/en/policies/eudi-wallet"
+      },
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
+      "source": "local",
+      "fetchedAt": "2026-03-17T09:32:29.024Z",
+      "updatedAt": "2026-03-17T09:29:34.000Z",
+      "firstSeenAt": "2026-03-17T09:29:34.000Z",
+      "attributes": [
+        {
+          "name": "health_insurance_id",
+          "type": "string",
+          "required": false,
+          "description": "Health Insurance ID"
+        },
+        {
+          "name": "patient_id",
+          "type": "string",
+          "required": false,
+          "description": "Patient ID"
+        },
+        {
+          "name": "tax_number",
+          "type": "string",
+          "required": false,
+          "description": "Tax Number"
+        },
+        {
+          "name": "one_time_token",
+          "type": "string",
+          "required": false,
+          "description": "One Time Token"
+        },
+        {
+          "name": "affiliation_country",
+          "type": "string",
+          "required": true,
+          "description": "Affiliation Country"
+        },
+        {
+          "name": "issuance_date",
+          "type": "string",
+          "required": true,
+          "description": "Issuance Date"
+        },
+        {
+          "name": "expiry_date",
+          "type": "string",
+          "required": true,
+          "description": "Expiry Date"
+        },
+        {
+          "name": "matching_institution-id",
+          "type": "string",
+          "required": false,
+          "description": "Matching Institution ID"
+        },
+        {
+          "name": "matching_registered_family_name",
+          "type": "string",
+          "required": false,
+          "description": "Matching Registered Family Name"
+        },
+        {
+          "name": "matching_registered_given_name",
+          "type": "string",
+          "required": false,
+          "description": "Matching Registered Given Name"
+        },
+        {
+          "name": "matching_resident_address",
+          "type": "string",
+          "required": false,
+          "description": "Matching Resident Address"
+        },
+        {
+          "name": "matching_birth_place",
+          "type": "string",
+          "required": false,
+          "description": "Mathing Birth Place"
+        },
+        {
+          "name": "matching_birth_date",
+          "type": "string",
+          "required": false,
+          "description": "Matching Birth Date"
+        },
+        {
+          "name": "issuing_authority",
+          "type": "string",
+          "required": true,
+          "description": "Issuing Authority"
+        },
+        {
+          "name": "document_number",
+          "type": "string",
+          "required": false,
+          "description": "Document Number"
+        },
+        {
+          "name": "administrative_number",
+          "type": "string",
+          "required": false,
+          "description": "Administrative_Number"
+        },
+        {
+          "name": "issuing_country",
+          "type": "string",
+          "required": true,
+          "description": "Issuing_Country"
+        },
+        {
+          "name": "issuing_jurisdiction",
+          "type": "string",
+          "required": false,
+          "description": "Issuing Jurisdiction"
+        }
+      ]
+    },
+    {
+      "id": "cred:eu:iban-sd-jwt-vc:sd-jwt-vc",
+      "slug": "eu-iban-sd-jwt-vc",
+      "displayName": "IBAN (SD-JWT VC)",
+      "shortDescription": "EUDI Wallet credential: IBAN (SD-JWT VC). Schema generated from issuer metadata.",
+      "authority": {
+        "name": "European Commission",
+        "url": "https://digital-strategy.ec.europa.eu/en/policies/eudi-wallet"
+      },
+      "subjectType": "Person",
+      "vcFormat": "sd_jwt_vc",
+      "nativeIdentifier": "urn:eu.europa.ec.eudi:iban:1",
+      "nativeIdentifierType": "vct",
+      "schemaUrl": "https://raw.githubusercontent.com/FIDEScommunity/fides-credential-catalog/main/community-catalogs/eu/schemas/iban-sd-jwt-vc.schema.json",
+      "schemaType": "JSON Schema",
+      "version": "1",
+      "tags": [
+        "eu",
+        "eudi",
+        "iban"
+      ],
+      "provider": {
+        "name": "European Commission",
+        "website": "https://digital-strategy.ec.europa.eu/en/policies/eudi-wallet"
+      },
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
+      "source": "local",
+      "fetchedAt": "2026-03-17T09:32:29.024Z",
+      "updatedAt": "2026-03-17T09:29:34.000Z",
+      "firstSeenAt": "2026-03-17T09:29:34.000Z",
+      "attributes": [
+        {
+          "name": "iban",
+          "type": "string",
+          "required": true,
+          "description": "IBAN"
+        },
+        {
+          "name": "national_account_number",
+          "type": "string",
+          "required": false,
+          "description": "National Account Number"
+        },
+        {
+          "name": "account_product",
+          "type": "string",
+          "required": false,
+          "description": "Account Product"
+        },
+        {
+          "name": "account_name",
+          "type": "string",
+          "required": false,
+          "description": "Account Name"
+        },
+        {
+          "name": "account_type",
+          "type": "string",
+          "required": false,
+          "description": "Account Type"
+        },
+        {
+          "name": "currency",
+          "type": "string",
+          "required": true,
+          "description": "Currency"
+        },
+        {
+          "name": "bank_account_status",
+          "type": "string",
+          "required": true,
+          "description": "Bank Account Status"
+        },
+        {
+          "name": "payment_possibility",
+          "type": "boolean",
+          "required": true,
+          "description": "Payment Possibility"
+        },
+        {
+          "name": "registered_family_name",
+          "type": "string",
+          "required": true,
+          "description": "Registered Family Name"
+        },
+        {
+          "name": "registered_given_name",
+          "type": "string",
+          "required": true,
+          "description": "Registered Given Name"
+        },
+        {
+          "name": "date_of_birth",
+          "type": "string",
+          "required": true,
+          "description": "Date of Birth"
+        },
+        {
+          "name": "account_holder_owner",
+          "type": "boolean",
+          "required": true,
+          "description": "Account Holder Owner"
+        },
+        {
+          "name": "coowner",
+          "type": "boolean",
+          "required": true,
+          "description": "Coowner"
+        },
+        {
+          "name": "disponent",
+          "type": "boolean",
+          "required": false,
+          "description": "Disponent"
+        },
+        {
+          "name": "issuing_organization",
+          "type": "string",
+          "required": true,
+          "description": "Issuing Organization"
+        },
+        {
+          "name": "national_bank_code",
+          "type": "string",
+          "required": false,
+          "description": "National Bank Code"
+        },
+        {
+          "name": "issuance_date",
+          "type": "string",
+          "required": true,
+          "description": "Issuance Date"
+        },
+        {
+          "name": "expiry_date",
+          "type": "string",
+          "required": true,
+          "description": "Expiry Date"
+        },
+        {
+          "name": "credential_type",
+          "type": "string",
+          "required": true,
+          "description": "Credential Type"
+        },
+        {
+          "name": "business_identifier_code",
+          "type": "string",
+          "required": true,
+          "description": "Bussiness Identifier Code"
+        }
+      ]
+    },
+    {
+      "id": "cred:eu:msisdn-sd-jwt-vc:sd-jwt-vc",
+      "slug": "eu-msisdn-sd-jwt-vc",
+      "displayName": "MSISDN (SD-JWT VC)",
+      "shortDescription": "EUDI Wallet credential: MSISDN (SD-JWT VC). Schema generated from issuer metadata.",
+      "authority": {
+        "name": "European Commission",
+        "url": "https://digital-strategy.ec.europa.eu/en/policies/eudi-wallet"
+      },
+      "subjectType": "Person",
+      "vcFormat": "sd_jwt_vc",
+      "nativeIdentifier": "urn:eu.europa.ec.eudi:msisdn:1",
+      "nativeIdentifierType": "vct",
+      "schemaUrl": "https://raw.githubusercontent.com/FIDEScommunity/fides-credential-catalog/main/community-catalogs/eu/schemas/msisdn-sd-jwt-vc.schema.json",
+      "schemaType": "JSON Schema",
+      "version": "1",
+      "tags": [
+        "eu",
+        "eudi",
+        "msisdn"
+      ],
+      "provider": {
+        "name": "European Commission",
+        "website": "https://digital-strategy.ec.europa.eu/en/policies/eudi-wallet"
+      },
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
+      "source": "local",
+      "fetchedAt": "2026-03-17T09:32:29.024Z",
+      "updatedAt": "2026-03-17T09:29:34.000Z",
+      "firstSeenAt": "2026-03-17T09:29:34.000Z",
+      "attributes": [
+        {
+          "name": "phone_number",
+          "type": "string",
+          "required": true,
+          "description": "Phone Number"
+        },
+        {
+          "name": "registered_family_name",
+          "type": "string",
+          "required": true,
+          "description": "Registered Family Name"
+        },
+        {
+          "name": "registered_given_name",
+          "type": "string",
+          "required": true,
+          "description": "Registered Given Name"
+        },
+        {
+          "name": "contract_owner",
+          "type": "boolean",
+          "required": true,
+          "description": "Contract Owner"
+        },
+        {
+          "name": "end_user",
+          "type": "boolean",
+          "required": true,
+          "description": "End User"
+        },
+        {
+          "name": "mobile_operator",
+          "type": "string",
+          "required": true,
+          "description": "Mobile Operator"
+        },
+        {
+          "name": "issuance_date",
+          "type": "string",
+          "required": true,
+          "description": "Issuance Date"
+        },
+        {
+          "name": "expiry_date",
+          "type": "string",
+          "required": true,
+          "description": "Expiry Date"
+        },
+        {
+          "name": "credential_type",
+          "type": "string",
+          "required": true,
+          "description": "Credential Type"
+        },
+        {
+          "name": "issuing_organization",
+          "type": "string",
+          "required": true,
+          "description": "Issuing Organization"
+        },
+        {
+          "name": "phone_number_in_use",
+          "type": "integer",
+          "required": false,
+          "description": "Phone Number in Use"
+        },
+        {
+          "name": "document_number",
+          "type": "string",
+          "required": false,
+          "description": "Document Number"
+        }
+      ]
+    },
+    {
+      "id": "cred:eu:pda1-sd-jwt-vc:sd-jwt-vc",
+      "slug": "eu-pda1-sd-jwt-vc",
+      "displayName": "PDA1 (SD-JWT VC)",
+      "shortDescription": "EUDI Wallet credential: PDA1 (SD-JWT VC). Schema generated from issuer metadata.",
+      "authority": {
+        "name": "European Commission",
+        "url": "https://digital-strategy.ec.europa.eu/en/policies/eudi-wallet"
+      },
+      "subjectType": "Person",
+      "vcFormat": "sd_jwt_vc",
+      "nativeIdentifier": "urn:eu.europa.ec.eudi:pda1:1",
+      "nativeIdentifierType": "vct",
+      "schemaUrl": "https://raw.githubusercontent.com/FIDEScommunity/fides-credential-catalog/main/community-catalogs/eu/schemas/pda1-sd-jwt-vc.schema.json",
+      "schemaType": "JSON Schema",
+      "version": "1",
+      "tags": [
+        "eu",
+        "eudi",
+        "pda1"
+      ],
+      "provider": {
+        "name": "European Commission",
+        "website": "https://digital-strategy.ec.europa.eu/en/policies/eudi-wallet"
+      },
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
+      "source": "local",
+      "fetchedAt": "2026-03-17T09:32:29.024Z",
+      "updatedAt": "2026-03-17T09:29:34.000Z",
+      "firstSeenAt": "2026-03-17T09:29:34.000Z",
+      "attributes": [
+        {
+          "name": "credential_holder",
+          "type": "object",
+          "required": true
+        },
+        {
+          "name": "social_security_pin",
+          "type": "string",
+          "required": true,
+          "description": "Social Security Pin"
+        },
+        {
+          "name": "employment_details",
+          "type": "object",
+          "required": true
+        },
+        {
+          "name": "places_of_work",
+          "type": "object",
+          "required": true
+        },
+        {
+          "name": "legislation",
+          "type": "object",
+          "required": true
+        },
+        {
+          "name": "status_confirmation",
+          "type": "string",
+          "required": true,
+          "description": "Status Confirmation"
+        },
+        {
+          "name": "document_id",
+          "type": "string",
+          "required": true,
+          "description": "Document ID"
+        },
+        {
+          "name": "competent_institution",
+          "type": "object",
+          "required": true
+        },
+        {
+          "name": "issuance_date",
+          "type": "string",
+          "required": true,
+          "description": "Issuance Date"
+        },
+        {
+          "name": "expiry_date",
+          "type": "string",
+          "required": true,
+          "description": "Expiry Date"
+        },
+        {
+          "name": "issuing_authority",
+          "type": "string",
+          "required": true,
+          "description": "Issuance Authority"
+        },
+        {
+          "name": "issuing_country",
+          "type": "string",
+          "required": true,
+          "description": "Issuing Country"
+        }
+      ]
+    },
+    {
+      "id": "cred:eu:pid-vc-sd-jwt:sd-jwt-vc",
+      "slug": "eu-pid-vc-sd-jwt",
+      "displayName": "PID (SD-JWT VC)",
+      "shortDescription": "EUDI Wallet credential: PID (SD-JWT VC). Schema generated from issuer metadata.",
+      "authority": {
+        "name": "European Commission",
+        "url": "https://digital-strategy.ec.europa.eu/en/policies/eudi-wallet"
+      },
+      "subjectType": "Person",
+      "vcFormat": "sd_jwt_vc",
+      "nativeIdentifier": "urn:eudi:pid:1",
+      "nativeIdentifierType": "vct",
+      "schemaUrl": "https://raw.githubusercontent.com/FIDEScommunity/fides-credential-catalog/main/community-catalogs/eu/schemas/pid-vc-sd-jwt.schema.json",
+      "schemaType": "JSON Schema",
+      "version": "1",
+      "tags": [
+        "eu",
+        "eudi",
+        "pid"
+      ],
+      "provider": {
+        "name": "European Commission",
+        "website": "https://digital-strategy.ec.europa.eu/en/policies/eudi-wallet"
+      },
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
+      "source": "local",
+      "fetchedAt": "2026-03-17T09:32:29.024Z",
+      "updatedAt": "2026-03-17T09:29:34.000Z",
+      "firstSeenAt": "2026-03-17T09:29:34.000Z",
+      "attributes": [
+        {
+          "name": "family_name",
+          "type": "string",
+          "required": true,
+          "description": "Family Name(s)"
+        },
+        {
+          "name": "given_name",
+          "type": "string",
+          "required": true,
+          "description": "Given Name(s)"
+        },
+        {
+          "name": "birthdate",
+          "type": "string",
+          "required": true,
+          "description": "Birth Date"
+        },
+        {
+          "name": "place_of_birth",
+          "type": "array",
+          "required": true,
+          "description": "Birth Place"
+        },
+        {
+          "name": "nationalities",
+          "type": "array",
+          "required": true,
+          "description": "Nationalities"
+        },
+        {
+          "name": "address",
+          "type": "object",
+          "required": false
+        },
+        {
+          "name": "personal_administrative_number",
+          "type": "string",
+          "required": false,
+          "description": "Personal Administrative Number"
+        },
+        {
+          "name": "picture",
+          "type": "string",
+          "required": false,
+          "description": "Portrait Image"
+        },
+        {
+          "name": "birth_family_name",
+          "type": "string",
+          "required": false,
+          "description": "Birth Family Name(s)"
+        },
+        {
+          "name": "birth_given_name",
+          "type": "string",
+          "required": false,
+          "description": "Birth Given Name(s)"
+        },
+        {
+          "name": "sex",
+          "type": "integer",
+          "required": false,
+          "description": "Sex"
+        },
+        {
+          "name": "email_address",
+          "type": "string",
+          "required": false,
+          "description": "Email Address"
+        },
+        {
+          "name": "mobile_phone_number",
+          "type": "string",
+          "required": false,
+          "description": "Mobile Phone Number"
+        },
+        {
+          "name": "date_of_issuance",
+          "type": "string",
+          "required": true,
+          "description": "Issuance Date"
+        },
+        {
+          "name": "date_of_expiry",
+          "type": "string",
+          "required": true,
+          "description": "Expiry Date"
+        },
+        {
+          "name": "issuing_authority",
+          "type": "string",
+          "required": true,
+          "description": "Issuance Authority"
+        },
+        {
+          "name": "document_number",
+          "type": "string",
+          "required": false,
+          "description": "Document Number"
+        },
+        {
+          "name": "trust_anchor",
+          "type": "string",
+          "required": false,
+          "description": "Trust Anchor"
+        },
+        {
+          "name": "issuing_country",
+          "type": "string",
+          "required": true,
+          "description": "Issuing Country"
+        },
+        {
+          "name": "issuing_jurisdiction",
+          "type": "string",
+          "required": false,
+          "description": "Issuing Jurisdiction"
+        }
+      ]
+    },
+    {
+      "id": "cred:eu:por-sd-jwt-vc:sd-jwt-vc",
+      "slug": "eu-por-sd-jwt-vc",
+      "displayName": "Power Of Representation (SD-JWT VC)",
+      "shortDescription": "EUDI Wallet credential: Power Of Representation (SD-JWT VC). Schema generated from issuer metadata.",
+      "authority": {
+        "name": "European Commission",
+        "url": "https://digital-strategy.ec.europa.eu/en/policies/eudi-wallet"
+      },
+      "subjectType": "Person",
+      "vcFormat": "sd_jwt_vc",
+      "nativeIdentifier": "urn:eu.europa.ec.eudi:por:1",
+      "nativeIdentifierType": "vct",
+      "schemaUrl": "https://raw.githubusercontent.com/FIDEScommunity/fides-credential-catalog/main/community-catalogs/eu/schemas/por-sd-jwt-vc.schema.json",
+      "schemaType": "JSON Schema",
+      "version": "1",
+      "tags": [
+        "eu",
+        "eudi",
+        "por"
+      ],
+      "provider": {
+        "name": "European Commission",
+        "website": "https://digital-strategy.ec.europa.eu/en/policies/eudi-wallet"
+      },
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
+      "source": "local",
+      "fetchedAt": "2026-03-17T09:32:29.024Z",
+      "updatedAt": "2026-03-17T09:29:34.000Z",
+      "firstSeenAt": "2026-03-17T09:29:34.000Z",
+      "attributes": [
+        {
+          "name": "legal_person_identifier",
+          "type": "string",
+          "required": true,
+          "description": "Legal Person Identifier"
+        },
+        {
+          "name": "legal_name",
+          "type": "string",
+          "required": true,
+          "description": "Legal Name"
+        },
+        {
+          "name": "full_powers",
+          "type": "boolean",
+          "required": true,
+          "description": "Full Powers"
+        },
+        {
+          "name": "eService",
+          "type": "string",
+          "required": false,
+          "description": "eService"
+        },
+        {
+          "name": "effective_from_date",
+          "type": "string",
+          "required": true,
+          "description": "Effective From Date"
+        },
+        {
+          "name": "effective_until_date",
+          "type": "string",
+          "required": false,
+          "description": "Effective Until Date"
+        },
+        {
+          "name": "issuance_date",
+          "type": "string",
+          "required": true,
+          "description": "Issuance Date"
+        },
+        {
+          "name": "expiry_date",
+          "type": "string",
+          "required": true,
+          "description": "Expiry Date"
+        },
+        {
+          "name": "issuing_authority",
+          "type": "string",
+          "required": true,
+          "description": "Issuing Authority"
+        },
+        {
+          "name": "issuing_jurisdiction",
+          "type": "string",
+          "required": false,
+          "description": "Issuing Jurisdiction"
+        },
+        {
+          "name": "issuing_country",
+          "type": "string",
+          "required": true,
+          "description": "Issuing Country"
+        }
+      ]
+    },
+    {
+      "id": "cred:eu:tax-residency-vc-sd-jwt:sd-jwt-vc",
+      "slug": "eu-tax-residency-vc-sd-jwt",
+      "displayName": "Tax Residency (SD-JWT VC)",
+      "shortDescription": "EUDI Wallet credential: Tax Residency (SD-JWT VC). Schema generated from issuer metadata.",
+      "authority": {
+        "name": "European Commission",
+        "url": "https://digital-strategy.ec.europa.eu/en/policies/eudi-wallet"
+      },
+      "subjectType": "Person",
+      "vcFormat": "sd_jwt_vc",
+      "nativeIdentifier": "urn:eu.europa.ec.eudi:tax:1:1",
+      "nativeIdentifierType": "vct",
+      "schemaUrl": "https://raw.githubusercontent.com/FIDEScommunity/fides-credential-catalog/main/community-catalogs/eu/schemas/tax-residency-vc-sd-jwt.schema.json",
+      "schemaType": "JSON Schema",
+      "version": "1",
+      "tags": [
+        "eu",
+        "eudi",
+        "tax"
+      ],
+      "provider": {
+        "name": "European Commission",
+        "website": "https://digital-strategy.ec.europa.eu/en/policies/eudi-wallet"
+      },
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
+      "source": "local",
+      "fetchedAt": "2026-03-17T09:32:29.024Z",
+      "updatedAt": "2026-03-17T09:29:34.000Z",
+      "firstSeenAt": "2026-03-17T09:29:34.000Z",
+      "attributes": [
+        {
+          "name": "taxpayer_type",
+          "type": "string",
+          "required": true,
+          "description": "Taxpayer type"
+        },
+        {
+          "name": "name",
+          "type": "string",
+          "required": true,
+          "description": "Name"
+        },
+        {
+          "name": "date_of_birth",
+          "type": "string",
+          "required": true,
+          "description": "Birth Date"
+        },
+        {
+          "name": "address",
+          "type": "string",
+          "required": true,
+          "description": "Address"
+        },
+        {
+          "name": "identification_number",
+          "type": "string",
+          "required": true,
+          "description": "Identification Number"
+        },
+        {
+          "name": "legal_framework",
+          "type": "string",
+          "required": false,
+          "description": "Legal Framework"
+        },
+        {
+          "name": "source_country_competent_authority",
+          "type": "string",
+          "required": false,
+          "description": "Source Country Competent Authority"
+        },
+        {
+          "name": "start_date_of_residency_requested_period",
+          "type": "string",
+          "required": true,
+          "description": "Start Date Residency"
+        },
+        {
+          "name": "end_date_of_residency_requested_period",
+          "type": "string",
+          "required": true,
+          "description": "End Date Residency"
+        }
+      ]
+    },
+    {
+      "id": "cred:eu:tax-sd-jwt-vc:sd-jwt-vc",
+      "slug": "eu-tax-sd-jwt-vc",
+      "displayName": "Tax Number (SD-JWT VC)",
+      "shortDescription": "EUDI Wallet credential: Tax Number (SD-JWT VC). Schema generated from issuer metadata.",
+      "authority": {
+        "name": "European Commission",
+        "url": "https://digital-strategy.ec.europa.eu/en/policies/eudi-wallet"
+      },
+      "subjectType": "Person",
+      "vcFormat": "sd_jwt_vc",
+      "nativeIdentifier": "urn:eu.europa.ec.eudi:tax:1",
+      "nativeIdentifierType": "vct",
+      "schemaUrl": "https://raw.githubusercontent.com/FIDEScommunity/fides-credential-catalog/main/community-catalogs/eu/schemas/tax-sd-jwt-vc.schema.json",
+      "schemaType": "JSON Schema",
+      "version": "1",
+      "tags": [
+        "eu",
+        "eudi",
+        "tax"
+      ],
+      "provider": {
+        "name": "European Commission",
+        "website": "https://digital-strategy.ec.europa.eu/en/policies/eudi-wallet"
+      },
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
+      "source": "local",
+      "fetchedAt": "2026-03-17T09:32:29.024Z",
+      "updatedAt": "2026-03-17T09:29:34.000Z",
+      "firstSeenAt": "2026-03-17T09:29:34.000Z",
+      "attributes": [
+        {
+          "name": "tax_number",
+          "type": "string",
+          "required": true,
+          "description": "Tax Number"
+        },
+        {
+          "name": "affiliation_country",
+          "type": "string",
+          "required": true,
+          "description": "Affiliation Country"
+        },
+        {
+          "name": "registered_given_name",
+          "type": "string",
+          "required": true,
+          "description": "Registered Given Name"
+        },
+        {
+          "name": "registered_family_name",
+          "type": "string",
+          "required": true,
+          "description": "Registered Family Name"
+        },
+        {
+          "name": "resident_address",
+          "type": "string",
+          "required": true,
+          "description": "Resident Address"
+        },
+        {
+          "name": "birth_date",
+          "type": "string",
+          "required": true,
+          "description": "Birth Date"
+        },
+        {
+          "name": "church_tax_ID",
+          "type": "string",
+          "required": false,
+          "description": "Church Tax ID"
+        },
+        {
+          "name": "iban",
+          "type": "string",
+          "required": false,
+          "description": "IBAN"
+        },
+        {
+          "name": "credential_type",
+          "type": "string",
+          "required": true,
+          "description": "Credential Type"
+        },
+        {
+          "name": "issuance_date",
+          "type": "string",
+          "required": true,
+          "description": "Issuance Date"
+        },
+        {
+          "name": "expiry_date",
+          "type": "string",
+          "required": true,
+          "description": "Expiry Date"
+        },
+        {
+          "name": "issuing_authority",
+          "type": "string",
+          "required": true,
+          "description": "Issuing Authority"
+        },
+        {
+          "name": "issuing_jurisdiction",
+          "type": "string",
+          "required": false,
+          "description": "Issuing Jurisdiction"
+        },
+        {
+          "name": "issuing_country",
+          "type": "string",
+          "required": true,
+          "description": "Issuing Country"
+        }
+      ]
+    },
+    {
+      "id": "cred:eu:cor-mdoc:mdoc",
+      "slug": "eu-cor-mdoc",
+      "displayName": "Certificate of Residence (MSO Mdoc)",
+      "shortDescription": "EUDI Wallet credential: Certificate of Residence (MSO Mdoc). Schema generated from issuer metadata.",
+      "authority": {
+        "name": "European Commission",
+        "url": "https://digital-strategy.ec.europa.eu/en/policies/eudi-wallet"
+      },
+      "subjectType": "Person",
+      "vcFormat": "mdoc",
+      "nativeIdentifier": "eu.europa.ec.eudi.cor.1",
+      "nativeIdentifierType": "docType",
+      "schemaUrl": "https://raw.githubusercontent.com/FIDEScommunity/fides-credential-catalog/main/community-catalogs/eu/schemas/cor-mdoc.schema.json",
+      "schemaType": "JSON Schema",
+      "version": "1",
+      "tags": [
+        "eu",
+        "eudi",
+        "mdoc",
+        "cor"
+      ],
+      "provider": {
+        "name": "European Commission",
+        "website": "https://digital-strategy.ec.europa.eu/en/policies/eudi-wallet"
+      },
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
+      "source": "local",
+      "fetchedAt": "2026-03-17T09:32:29.024Z",
+      "updatedAt": "2026-03-17T09:29:34.000Z",
+      "firstSeenAt": "2026-03-17T09:29:34.000Z",
+      "attributes": [
+        {
+          "name": "eu.europa.ec.eudi.cor.1",
+          "type": "object",
+          "required": false
+        }
+      ]
+    },
+    {
+      "id": "cred:eu:ehic-mdoc:mdoc",
+      "slug": "eu-ehic-mdoc",
+      "displayName": "EHIC (MSO Mdoc)",
+      "shortDescription": "EUDI Wallet credential: EHIC (MSO Mdoc). Schema generated from issuer metadata.",
+      "authority": {
+        "name": "European Commission",
+        "url": "https://digital-strategy.ec.europa.eu/en/policies/eudi-wallet"
+      },
+      "subjectType": "Person",
+      "vcFormat": "mdoc",
+      "nativeIdentifier": "eu.europa.ec.eudi.ehic.1",
+      "nativeIdentifierType": "docType",
+      "schemaUrl": "https://raw.githubusercontent.com/FIDEScommunity/fides-credential-catalog/main/community-catalogs/eu/schemas/ehic-mdoc.schema.json",
+      "schemaType": "JSON Schema",
+      "version": "1",
+      "tags": [
+        "eu",
+        "eudi",
+        "mdoc",
+        "ehic"
+      ],
+      "provider": {
+        "name": "European Commission",
+        "website": "https://digital-strategy.ec.europa.eu/en/policies/eudi-wallet"
+      },
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
+      "source": "local",
+      "fetchedAt": "2026-03-17T09:32:29.024Z",
+      "updatedAt": "2026-03-17T09:29:34.000Z",
+      "firstSeenAt": "2026-03-17T09:29:34.000Z",
+      "attributes": [
+        {
+          "name": "eu.europa.ec.eudi.ehic.1",
+          "type": "object",
+          "required": false
+        }
+      ]
+    },
+    {
+      "id": "cred:eu:employee-mdoc:mdoc",
+      "slug": "eu-employee-mdoc",
+      "displayName": "Employee ID (MSO Mdoc)",
+      "shortDescription": "EUDI Wallet credential: Employee ID (MSO Mdoc). Schema generated from issuer metadata.",
+      "authority": {
+        "name": "European Commission",
+        "url": "https://digital-strategy.ec.europa.eu/en/policies/eudi-wallet"
+      },
+      "subjectType": "Person",
+      "vcFormat": "mdoc",
+      "nativeIdentifier": "eu.europa.ec.eudi.employee.1",
+      "nativeIdentifierType": "docType",
+      "schemaUrl": "https://raw.githubusercontent.com/FIDEScommunity/fides-credential-catalog/main/community-catalogs/eu/schemas/employee-mdoc.schema.json",
+      "schemaType": "JSON Schema",
+      "version": "1",
+      "tags": [
+        "eu",
+        "eudi",
+        "mdoc",
+        "employee"
+      ],
+      "provider": {
+        "name": "European Commission",
+        "website": "https://digital-strategy.ec.europa.eu/en/policies/eudi-wallet"
+      },
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
+      "source": "local",
+      "fetchedAt": "2026-03-17T09:32:29.024Z",
+      "updatedAt": "2026-03-17T09:29:34.000Z",
+      "firstSeenAt": "2026-03-17T09:29:34.000Z",
+      "attributes": [
+        {
+          "name": "eu.europa.ec.eudi.employee.1",
+          "type": "object",
+          "required": false
+        }
+      ]
+    },
+    {
+      "id": "cred:eu:hiid-mdoc:mdoc",
+      "slug": "eu-hiid-mdoc",
+      "displayName": "Health ID (MSO Mdoc)",
+      "shortDescription": "EUDI Wallet credential: Health ID (MSO Mdoc). Schema generated from issuer metadata.",
+      "authority": {
+        "name": "European Commission",
+        "url": "https://digital-strategy.ec.europa.eu/en/policies/eudi-wallet"
+      },
+      "subjectType": "Person",
+      "vcFormat": "mdoc",
+      "nativeIdentifier": "eu.europa.ec.eudi.hiid.1",
+      "nativeIdentifierType": "docType",
+      "schemaUrl": "https://raw.githubusercontent.com/FIDEScommunity/fides-credential-catalog/main/community-catalogs/eu/schemas/hiid-mdoc.schema.json",
+      "schemaType": "JSON Schema",
+      "version": "1",
+      "tags": [
+        "eu",
+        "eudi",
+        "mdoc",
+        "hiid"
+      ],
+      "provider": {
+        "name": "European Commission",
+        "website": "https://digital-strategy.ec.europa.eu/en/policies/eudi-wallet"
+      },
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
+      "source": "local",
+      "fetchedAt": "2026-03-17T09:32:29.024Z",
+      "updatedAt": "2026-03-17T09:29:34.000Z",
+      "firstSeenAt": "2026-03-17T09:29:34.000Z",
+      "attributes": [
+        {
+          "name": "eu.europa.ec.eudi.hiid.1",
+          "type": "object",
+          "required": false
+        }
+      ]
+    },
+    {
+      "id": "cred:eu:iban-mdoc:mdoc",
+      "slug": "eu-iban-mdoc",
+      "displayName": "IBAN (MSO Mdoc)",
+      "shortDescription": "EUDI Wallet credential: IBAN (MSO Mdoc). Schema generated from issuer metadata.",
+      "authority": {
+        "name": "European Commission",
+        "url": "https://digital-strategy.ec.europa.eu/en/policies/eudi-wallet"
+      },
+      "subjectType": "Person",
+      "vcFormat": "mdoc",
+      "nativeIdentifier": "eu.europa.ec.eudi.iban.1",
+      "nativeIdentifierType": "docType",
+      "schemaUrl": "https://raw.githubusercontent.com/FIDEScommunity/fides-credential-catalog/main/community-catalogs/eu/schemas/iban-mdoc.schema.json",
+      "schemaType": "JSON Schema",
+      "version": "1",
+      "tags": [
+        "eu",
+        "eudi",
+        "mdoc",
+        "iban"
+      ],
+      "provider": {
+        "name": "European Commission",
+        "website": "https://digital-strategy.ec.europa.eu/en/policies/eudi-wallet"
+      },
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
+      "source": "local",
+      "fetchedAt": "2026-03-17T09:32:29.024Z",
+      "updatedAt": "2026-03-17T09:29:34.000Z",
+      "firstSeenAt": "2026-03-17T09:29:34.000Z",
+      "attributes": [
+        {
+          "name": "eu.europa.ec.eudi.iban.1",
+          "type": "object",
+          "required": false
+        }
+      ]
+    },
+    {
+      "id": "cred:eu:loyalty-mdoc:mdoc",
+      "slug": "eu-loyalty-mdoc",
+      "displayName": "Loyalty (MSO Mdoc)",
+      "shortDescription": "EUDI Wallet credential: Loyalty (MSO Mdoc). Schema generated from issuer metadata.",
+      "authority": {
+        "name": "European Commission",
+        "url": "https://digital-strategy.ec.europa.eu/en/policies/eudi-wallet"
+      },
+      "subjectType": "Person",
+      "vcFormat": "mdoc",
+      "nativeIdentifier": "eu.europa.ec.eudi.loyalty.1",
+      "nativeIdentifierType": "docType",
+      "schemaUrl": "https://raw.githubusercontent.com/FIDEScommunity/fides-credential-catalog/main/community-catalogs/eu/schemas/loyalty-mdoc.schema.json",
+      "schemaType": "JSON Schema",
+      "version": "1",
+      "tags": [
+        "eu",
+        "eudi",
+        "mdoc",
+        "loyalty"
+      ],
+      "provider": {
+        "name": "European Commission",
+        "website": "https://digital-strategy.ec.europa.eu/en/policies/eudi-wallet"
+      },
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
+      "source": "local",
+      "fetchedAt": "2026-03-17T09:32:29.024Z",
+      "updatedAt": "2026-03-17T09:29:34.000Z",
+      "firstSeenAt": "2026-03-17T09:29:34.000Z",
+      "attributes": [
+        {
+          "name": "eu.europa.ec.eudi.loyalty.1",
+          "type": "object",
+          "required": false
+        }
+      ]
+    },
+    {
+      "id": "cred:eu:mdl-mdoc:mdoc",
+      "slug": "eu-mdl-mdoc",
+      "displayName": "mDL (MSO Mdoc)",
+      "shortDescription": "EUDI Wallet credential: mDL (MSO Mdoc). Schema generated from issuer metadata.",
+      "authority": {
+        "name": "European Commission",
+        "url": "https://digital-strategy.ec.europa.eu/en/policies/eudi-wallet"
+      },
+      "subjectType": "Person",
+      "vcFormat": "mdoc",
+      "nativeIdentifier": "org.iso.18013.5.1.mDL",
+      "nativeIdentifierType": "docType",
+      "schemaUrl": "https://raw.githubusercontent.com/FIDEScommunity/fides-credential-catalog/main/community-catalogs/eu/schemas/mdl-mdoc.schema.json",
+      "schemaType": "JSON Schema",
+      "version": "1",
+      "tags": [
+        "eu",
+        "eudi",
+        "mdoc",
+        "mdl"
+      ],
+      "provider": {
+        "name": "European Commission",
+        "website": "https://digital-strategy.ec.europa.eu/en/policies/eudi-wallet"
+      },
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
+      "source": "local",
+      "fetchedAt": "2026-03-17T09:32:29.024Z",
+      "updatedAt": "2026-03-17T09:29:34.000Z",
+      "firstSeenAt": "2026-03-17T09:29:34.000Z",
+      "attributes": [
+        {
+          "name": "org.iso.18013.5.1",
+          "type": "object",
+          "required": false
+        }
+      ]
+    },
+    {
+      "id": "cred:eu:msisdn-mdoc:mdoc",
+      "slug": "eu-msisdn-mdoc",
+      "displayName": "MSISDN (MSO Mdoc)",
+      "shortDescription": "EUDI Wallet credential: MSISDN (MSO Mdoc). Schema generated from issuer metadata.",
+      "authority": {
+        "name": "European Commission",
+        "url": "https://digital-strategy.ec.europa.eu/en/policies/eudi-wallet"
+      },
+      "subjectType": "Person",
+      "vcFormat": "mdoc",
+      "nativeIdentifier": "eu.europa.ec.eudi.msisdn.1",
+      "nativeIdentifierType": "docType",
+      "schemaUrl": "https://raw.githubusercontent.com/FIDEScommunity/fides-credential-catalog/main/community-catalogs/eu/schemas/msisdn-mdoc.schema.json",
+      "schemaType": "JSON Schema",
+      "version": "1",
+      "tags": [
+        "eu",
+        "eudi",
+        "mdoc",
+        "msisdn"
+      ],
+      "provider": {
+        "name": "European Commission",
+        "website": "https://digital-strategy.ec.europa.eu/en/policies/eudi-wallet"
+      },
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
+      "source": "local",
+      "fetchedAt": "2026-03-17T09:32:29.024Z",
+      "updatedAt": "2026-03-17T09:29:34.000Z",
+      "firstSeenAt": "2026-03-17T09:29:34.000Z",
+      "attributes": [
+        {
+          "name": "eu.europa.ec.eudi.msisdn.1",
+          "type": "object",
+          "required": false
+        }
+      ]
+    },
+    {
+      "id": "cred:eu:pda1-mdoc:mdoc",
+      "slug": "eu-pda1-mdoc",
+      "displayName": "PDA1 (MSO Mdoc)",
+      "shortDescription": "EUDI Wallet credential: PDA1 (MSO Mdoc). Schema generated from issuer metadata.",
+      "authority": {
+        "name": "European Commission",
+        "url": "https://digital-strategy.ec.europa.eu/en/policies/eudi-wallet"
+      },
+      "subjectType": "Person",
+      "vcFormat": "mdoc",
+      "nativeIdentifier": "eu.europa.ec.eudi.pda1.1",
+      "nativeIdentifierType": "docType",
+      "schemaUrl": "https://raw.githubusercontent.com/FIDEScommunity/fides-credential-catalog/main/community-catalogs/eu/schemas/pda1-mdoc.schema.json",
+      "schemaType": "JSON Schema",
+      "version": "1",
+      "tags": [
+        "eu",
+        "eudi",
+        "mdoc",
+        "pda1"
+      ],
+      "provider": {
+        "name": "European Commission",
+        "website": "https://digital-strategy.ec.europa.eu/en/policies/eudi-wallet"
+      },
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
+      "source": "local",
+      "fetchedAt": "2026-03-17T09:32:29.024Z",
+      "updatedAt": "2026-03-17T09:29:34.000Z",
+      "firstSeenAt": "2026-03-17T09:29:34.000Z",
+      "attributes": [
+        {
+          "name": "eu.europa.ec.eudi.pda1.1",
+          "type": "object",
+          "required": false
+        }
+      ]
+    },
+    {
+      "id": "cred:eu:photoid-mdoc:mdoc",
+      "slug": "eu-photoid-mdoc",
+      "displayName": "Photo ID (MSO Mdoc)",
+      "shortDescription": "EUDI Wallet credential: Photo ID (MSO Mdoc). Schema generated from issuer metadata.",
+      "authority": {
+        "name": "European Commission",
+        "url": "https://digital-strategy.ec.europa.eu/en/policies/eudi-wallet"
+      },
+      "subjectType": "Person",
+      "vcFormat": "mdoc",
+      "nativeIdentifier": "org.iso.23220.2.photoid.1",
+      "nativeIdentifierType": "docType",
+      "schemaUrl": "https://raw.githubusercontent.com/FIDEScommunity/fides-credential-catalog/main/community-catalogs/eu/schemas/photoid-mdoc.schema.json",
+      "schemaType": "JSON Schema",
+      "version": "1",
+      "tags": [
+        "eu",
+        "eudi",
+        "mdoc",
+        "photoid"
+      ],
+      "provider": {
+        "name": "European Commission",
+        "website": "https://digital-strategy.ec.europa.eu/en/policies/eudi-wallet"
+      },
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
+      "source": "local",
+      "fetchedAt": "2026-03-17T09:32:29.024Z",
+      "updatedAt": "2026-03-17T09:29:34.000Z",
+      "firstSeenAt": "2026-03-17T09:29:34.000Z",
+      "attributes": [
+        {
+          "name": "org.iso.23220.photoid.1",
+          "type": "object",
+          "required": false
+        }
+      ]
+    },
+    {
+      "id": "cred:eu:pid-mdoc:mdoc",
+      "slug": "eu-pid-mdoc",
+      "displayName": "PID (MSO Mdoc)",
+      "shortDescription": "EUDI Wallet credential: PID (MSO Mdoc). Schema generated from issuer metadata.",
+      "authority": {
+        "name": "European Commission",
+        "url": "https://digital-strategy.ec.europa.eu/en/policies/eudi-wallet"
+      },
+      "subjectType": "Person",
+      "vcFormat": "mdoc",
+      "nativeIdentifier": "eu.europa.ec.eudi.pid.1",
+      "nativeIdentifierType": "docType",
+      "schemaUrl": "https://raw.githubusercontent.com/FIDEScommunity/fides-credential-catalog/main/community-catalogs/eu/schemas/pid-mdoc.schema.json",
+      "schemaType": "JSON Schema",
+      "version": "1",
+      "tags": [
+        "eu",
+        "eudi",
+        "mdoc",
+        "pid"
+      ],
+      "provider": {
+        "name": "European Commission",
+        "website": "https://digital-strategy.ec.europa.eu/en/policies/eudi-wallet"
+      },
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
+      "source": "local",
+      "fetchedAt": "2026-03-17T09:32:29.024Z",
+      "updatedAt": "2026-03-17T09:29:34.000Z",
+      "firstSeenAt": "2026-03-17T09:29:34.000Z",
+      "attributes": [
+        {
+          "name": "eu.europa.ec.eudi.pid.1",
+          "type": "object",
+          "required": false
+        }
+      ]
+    },
+    {
+      "id": "cred:eu:pid-mdoc-deferred-mdoc:mdoc",
+      "slug": "eu-pid-mdoc-deferred-mdoc",
+      "displayName": "PID (MSO Mdoc Deferred)",
+      "shortDescription": "EUDI Wallet credential: PID (MSO Mdoc Deferred). Schema generated from issuer metadata.",
+      "authority": {
+        "name": "European Commission",
+        "url": "https://digital-strategy.ec.europa.eu/en/policies/eudi-wallet"
+      },
+      "subjectType": "Person",
+      "vcFormat": "mdoc",
+      "nativeIdentifier": "eu.europa.ec.eudi.pid.1",
+      "nativeIdentifierType": "docType",
+      "schemaUrl": "https://raw.githubusercontent.com/FIDEScommunity/fides-credential-catalog/main/community-catalogs/eu/schemas/pid-mdoc-deferred-mdoc.schema.json",
+      "schemaType": "JSON Schema",
+      "version": "1",
+      "tags": [
+        "eu",
+        "eudi",
+        "mdoc",
+        "pid-mdoc-deferred"
+      ],
+      "provider": {
+        "name": "European Commission",
+        "website": "https://digital-strategy.ec.europa.eu/en/policies/eudi-wallet"
+      },
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
+      "source": "local",
+      "fetchedAt": "2026-03-17T09:32:29.024Z",
+      "updatedAt": "2026-03-17T09:29:34.000Z",
+      "firstSeenAt": "2026-03-17T09:29:34.000Z",
+      "attributes": [
+        {
+          "name": "eu.europa.ec.eudi.pid.1",
+          "type": "object",
+          "required": false
+        }
+      ]
+    },
+    {
+      "id": "cred:eu:por-mdoc:mdoc",
+      "slug": "eu-por-mdoc",
+      "displayName": "Power Of Representation (MSO Mdoc)",
+      "shortDescription": "EUDI Wallet credential: Power Of Representation (MSO Mdoc). Schema generated from issuer metadata.",
+      "authority": {
+        "name": "European Commission",
+        "url": "https://digital-strategy.ec.europa.eu/en/policies/eudi-wallet"
+      },
+      "subjectType": "Person",
+      "vcFormat": "mdoc",
+      "nativeIdentifier": "eu.europa.ec.eudi.por.1",
+      "nativeIdentifierType": "docType",
+      "schemaUrl": "https://raw.githubusercontent.com/FIDEScommunity/fides-credential-catalog/main/community-catalogs/eu/schemas/por-mdoc.schema.json",
+      "schemaType": "JSON Schema",
+      "version": "1",
+      "tags": [
+        "eu",
+        "eudi",
+        "mdoc",
+        "por"
+      ],
+      "provider": {
+        "name": "European Commission",
+        "website": "https://digital-strategy.ec.europa.eu/en/policies/eudi-wallet"
+      },
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
+      "source": "local",
+      "fetchedAt": "2026-03-17T09:32:29.024Z",
+      "updatedAt": "2026-03-17T09:29:34.000Z",
+      "firstSeenAt": "2026-03-17T09:29:34.000Z",
+      "attributes": [
+        {
+          "name": "eu.europa.ec.eudi.por.1",
+          "type": "object",
+          "required": false
+        }
+      ]
+    },
+    {
+      "id": "cred:eu:seafarer-mdoc:mdoc",
+      "slug": "eu-seafarer-mdoc",
+      "displayName": "Seafarer (MSO Mdoc)",
+      "shortDescription": "EUDI Wallet credential: Seafarer (MSO Mdoc). Schema generated from issuer metadata.",
+      "authority": {
+        "name": "European Commission",
+        "url": "https://digital-strategy.ec.europa.eu/en/policies/eudi-wallet"
+      },
+      "subjectType": "Person",
+      "vcFormat": "mdoc",
+      "nativeIdentifier": "eu.europa.ec.eudi.seafarer.1",
+      "nativeIdentifierType": "docType",
+      "schemaUrl": "https://raw.githubusercontent.com/FIDEScommunity/fides-credential-catalog/main/community-catalogs/eu/schemas/seafarer-mdoc.schema.json",
+      "schemaType": "JSON Schema",
+      "version": "1",
+      "tags": [
+        "eu",
+        "eudi",
+        "mdoc",
+        "seafarer"
+      ],
+      "provider": {
+        "name": "European Commission",
+        "website": "https://digital-strategy.ec.europa.eu/en/policies/eudi-wallet"
+      },
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
+      "source": "local",
+      "fetchedAt": "2026-03-17T09:32:29.024Z",
+      "updatedAt": "2026-03-17T09:29:34.000Z",
+      "firstSeenAt": "2026-03-17T09:29:34.000Z",
+      "attributes": [
+        {
+          "name": "eu.europa.ec.eudi.seafarer.1",
+          "type": "object",
+          "required": false
+        }
+      ]
+    },
+    {
+      "id": "cred:eu:tax-mdoc:mdoc",
+      "slug": "eu-tax-mdoc",
+      "displayName": "Tax Number (MSO Mdoc)",
+      "shortDescription": "EUDI Wallet credential: Tax Number (MSO Mdoc). Schema generated from issuer metadata.",
+      "authority": {
+        "name": "European Commission",
+        "url": "https://digital-strategy.ec.europa.eu/en/policies/eudi-wallet"
+      },
+      "subjectType": "Person",
+      "vcFormat": "mdoc",
+      "nativeIdentifier": "eu.europa.ec.eudi.tax.1",
+      "nativeIdentifierType": "docType",
+      "schemaUrl": "https://raw.githubusercontent.com/FIDEScommunity/fides-credential-catalog/main/community-catalogs/eu/schemas/tax-mdoc.schema.json",
+      "schemaType": "JSON Schema",
+      "version": "1",
+      "tags": [
+        "eu",
+        "eudi",
+        "mdoc",
+        "tax"
+      ],
+      "provider": {
+        "name": "European Commission",
+        "website": "https://digital-strategy.ec.europa.eu/en/policies/eudi-wallet"
+      },
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
+      "source": "local",
+      "fetchedAt": "2026-03-17T09:32:29.024Z",
+      "updatedAt": "2026-03-17T09:29:34.000Z",
+      "firstSeenAt": "2026-03-17T09:29:34.000Z",
+      "attributes": [
+        {
+          "name": "eu.europa.ec.eudi.tax.1",
+          "type": "object",
+          "required": false
+        }
+      ]
+    },
+    {
+      "id": "cred:eu:reservation-mdoc:mdoc",
+      "slug": "eu-reservation-mdoc",
+      "displayName": "Reservation",
+      "shortDescription": "EUDI Wallet credential: Reservation. Schema generated from issuer metadata.",
+      "authority": {
+        "name": "European Commission",
+        "url": "https://digital-strategy.ec.europa.eu/en/policies/eudi-wallet"
+      },
+      "subjectType": "Person",
+      "vcFormat": "mdoc",
+      "nativeIdentifier": "org.iso.18013.5.1.reservation",
+      "nativeIdentifierType": "docType",
+      "schemaUrl": "https://raw.githubusercontent.com/FIDEScommunity/fides-credential-catalog/main/community-catalogs/eu/schemas/reservation-mdoc.schema.json",
+      "schemaType": "JSON Schema",
+      "version": "1",
+      "tags": [
+        "eu",
+        "eudi",
+        "mdoc",
+        "reservation"
+      ],
+      "provider": {
+        "name": "European Commission",
+        "website": "https://digital-strategy.ec.europa.eu/en/policies/eudi-wallet"
+      },
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
+      "source": "local",
+      "fetchedAt": "2026-03-17T09:32:29.024Z",
+      "updatedAt": "2026-03-17T09:29:34.000Z",
+      "firstSeenAt": "2026-03-17T09:29:34.000Z",
+      "attributes": [
+        {
+          "name": "org.iso.18013.5.reservation.1",
+          "type": "object",
+          "required": false
+        }
+      ]
+    },
     {
       "id": "cred:fides:lpid:sd-jwt-vc",
       "slug": "fides-lpid-sd-jwt-vc",
@@ -29,7 +1815,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-17T07:13:13.469Z",
+      "fetchedAt": "2026-03-17T09:32:29.024Z",
       "updatedAt": "2026-03-12T00:00:00.000Z",
       "firstSeenAt": "2026-03-12T00:00:00.000Z",
       "attributes": [
@@ -120,7 +1906,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-17T07:13:13.469Z",
+      "fetchedAt": "2026-03-17T09:32:29.024Z",
       "updatedAt": "2026-03-12T00:00:00.000Z",
       "firstSeenAt": "2026-03-12T00:00:00.000Z",
       "attributes": [
@@ -206,7 +1992,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-17T07:13:13.469Z",
+      "fetchedAt": "2026-03-17T09:32:29.024Z",
       "updatedAt": "2026-03-12T00:00:00.000Z",
       "firstSeenAt": "2026-03-12T00:00:00.000Z",
       "attributes": [
@@ -272,7 +2058,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-17T07:13:13.469Z",
+      "fetchedAt": "2026-03-17T09:32:29.024Z",
       "updatedAt": "2026-03-12T00:00:00.000Z",
       "firstSeenAt": "2026-03-12T00:00:00.000Z",
       "attributes": [
@@ -339,7 +2125,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-17T07:13:13.469Z",
+      "fetchedAt": "2026-03-17T09:32:29.024Z",
       "updatedAt": "2026-03-12T00:00:00.000Z",
       "firstSeenAt": "2026-03-12T00:00:00.000Z",
       "attributes": [
@@ -386,7 +2172,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-17T07:13:13.469Z",
+      "fetchedAt": "2026-03-17T09:32:29.024Z",
       "updatedAt": "2026-03-12T00:00:00.000Z",
       "firstSeenAt": "2026-03-12T00:00:00.000Z",
       "attributes": [
@@ -471,7 +2257,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-17T07:13:13.469Z",
+      "fetchedAt": "2026-03-17T09:32:29.024Z",
       "updatedAt": "2026-03-12T00:00:00.000Z",
       "firstSeenAt": "2026-03-12T00:00:00.000Z",
       "attributes": []
@@ -502,7 +2288,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-17T07:13:13.469Z",
+      "fetchedAt": "2026-03-17T09:32:29.024Z",
       "updatedAt": "2026-03-12T00:00:00.000Z",
       "firstSeenAt": "2026-03-12T00:00:00.000Z",
       "attributes": []
@@ -534,7 +2320,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-17T07:13:13.469Z",
+      "fetchedAt": "2026-03-17T09:32:29.024Z",
       "updatedAt": "2026-03-12T00:00:00.000Z",
       "firstSeenAt": "2026-03-12T00:00:00.000Z",
       "attributes": [
@@ -717,7 +2503,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-17T07:13:13.469Z",
+      "fetchedAt": "2026-03-17T09:32:29.024Z",
       "updatedAt": "2026-03-12T00:00:00.000Z",
       "firstSeenAt": "2026-03-12T00:00:00.000Z",
       "attributes": [
@@ -810,7 +2596,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-17T07:13:13.469Z",
+      "fetchedAt": "2026-03-17T09:32:29.024Z",
       "updatedAt": "2026-03-12T00:00:00.000Z",
       "firstSeenAt": "2026-03-12T00:00:00.000Z",
       "attributes": [
@@ -855,7 +2641,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-17T07:13:13.469Z",
+      "fetchedAt": "2026-03-17T09:32:29.024Z",
       "updatedAt": "2026-03-12T00:00:00.000Z",
       "firstSeenAt": "2026-03-12T00:00:00.000Z",
       "attributes": [
@@ -960,7 +2746,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-17T07:13:13.469Z",
+      "fetchedAt": "2026-03-17T09:32:29.024Z",
       "updatedAt": "2026-03-12T00:00:00.000Z",
       "firstSeenAt": "2026-03-12T00:00:00.000Z",
       "attributes": [
@@ -1023,7 +2809,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-17T07:13:13.469Z",
+      "fetchedAt": "2026-03-17T09:32:29.024Z",
       "updatedAt": "2026-03-12T00:00:00.000Z",
       "firstSeenAt": "2026-03-12T00:00:00.000Z",
       "attributes": [
@@ -1102,7 +2888,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-17T07:13:13.469Z",
+      "fetchedAt": "2026-03-17T09:32:29.024Z",
       "updatedAt": "2026-03-12T00:00:00.000Z",
       "firstSeenAt": "2026-03-12T00:00:00.000Z",
       "attributes": [
@@ -1193,7 +2979,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-17T07:13:13.469Z",
+      "fetchedAt": "2026-03-17T09:32:29.024Z",
       "updatedAt": "2026-03-12T00:00:00.000Z",
       "firstSeenAt": "2026-03-12T00:00:00.000Z",
       "attributes": [
@@ -1231,18 +3017,19 @@
     }
   ],
   "stats": {
-    "totalCredentials": 16,
+    "totalCredentials": 42,
     "byFormat": {
-      "sd_jwt_vc": 16
+      "sd_jwt_vc": 26,
+      "mdoc": 16
     },
     "bySubjectType": {
-      "Person": 6,
+      "Person": 32,
       "Organization": 9,
       "Product": 1,
       "Dataset": 0,
       "Software": 0,
       "Document": 0
     },
-    "withSchemaAttributes": 14
+    "withSchemaAttributes": 40
   }
 }
