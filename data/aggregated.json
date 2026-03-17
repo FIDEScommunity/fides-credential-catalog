@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.0.0",
   "catalogType": "credential",
-  "lastUpdated": "2026-03-17T16:17:08.387Z",
+  "lastUpdated": "2026-03-17T16:20:45.672Z",
   "credentials": [
     {
       "id": "cred:eu:diploma-vc-sd-jwt:sd-jwt-vc",
@@ -30,7 +30,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-17T16:17:08.387Z",
+      "fetchedAt": "2026-03-17T16:20:45.672Z",
       "updatedAt": "2026-03-17T16:12:40.000Z",
       "firstSeenAt": "2026-03-17T09:29:34.000Z",
       "attributes": [
@@ -159,7 +159,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-17T16:17:08.387Z",
+      "fetchedAt": "2026-03-17T16:20:45.672Z",
       "updatedAt": "2026-03-17T16:12:40.000Z",
       "firstSeenAt": "2026-03-17T09:29:34.000Z",
       "attributes": [
@@ -238,7 +238,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-17T16:17:08.387Z",
+      "fetchedAt": "2026-03-17T16:20:45.672Z",
       "updatedAt": "2026-03-17T16:12:40.000Z",
       "firstSeenAt": "2026-03-17T09:29:34.000Z",
       "attributes": [
@@ -379,7 +379,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-17T16:17:08.387Z",
+      "fetchedAt": "2026-03-17T16:20:45.672Z",
       "updatedAt": "2026-03-17T16:12:40.000Z",
       "firstSeenAt": "2026-03-17T09:29:34.000Z",
       "attributes": [
@@ -532,7 +532,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-17T16:17:08.387Z",
+      "fetchedAt": "2026-03-17T16:20:45.672Z",
       "updatedAt": "2026-03-17T16:12:40.000Z",
       "firstSeenAt": "2026-03-17T09:29:34.000Z",
       "attributes": [
@@ -637,7 +637,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-17T16:17:08.387Z",
+      "fetchedAt": "2026-03-17T16:20:45.672Z",
       "updatedAt": "2026-03-17T16:12:40.000Z",
       "firstSeenAt": "2026-03-17T09:29:34.000Z",
       "attributes": [
@@ -737,7 +737,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-17T16:17:08.387Z",
+      "fetchedAt": "2026-03-17T16:20:45.672Z",
       "updatedAt": "2026-03-17T16:12:40.000Z",
       "firstSeenAt": "2026-03-17T09:29:34.000Z",
       "attributes": [
@@ -889,7 +889,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-17T16:17:08.387Z",
+      "fetchedAt": "2026-03-17T16:20:45.672Z",
       "updatedAt": "2026-03-17T16:12:40.000Z",
       "firstSeenAt": "2026-03-17T09:29:34.000Z",
       "attributes": [
@@ -988,7 +988,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-17T16:17:08.387Z",
+      "fetchedAt": "2026-03-17T16:20:45.672Z",
       "updatedAt": "2026-03-17T16:12:40.000Z",
       "firstSeenAt": "2026-03-17T09:29:34.000Z",
       "attributes": [
@@ -1075,7 +1075,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-17T16:17:08.387Z",
+      "fetchedAt": "2026-03-17T16:20:45.672Z",
       "updatedAt": "2026-03-17T16:12:40.000Z",
       "firstSeenAt": "2026-03-17T09:29:34.000Z",
       "attributes": [
@@ -1193,7 +1193,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-17T16:17:08.387Z",
+      "fetchedAt": "2026-03-17T16:20:45.672Z",
       "updatedAt": "2026-03-17T16:12:40.000Z",
       "firstSeenAt": "2026-03-17T09:29:34.000Z",
       "attributes": [
@@ -1232,7 +1232,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-17T16:17:08.387Z",
+      "fetchedAt": "2026-03-17T16:20:45.672Z",
       "updatedAt": "2026-03-17T16:12:40.000Z",
       "firstSeenAt": "2026-03-17T09:29:34.000Z",
       "attributes": [
@@ -1271,7 +1271,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-17T16:17:08.387Z",
+      "fetchedAt": "2026-03-17T16:20:45.672Z",
       "updatedAt": "2026-03-17T16:12:40.000Z",
       "firstSeenAt": "2026-03-17T09:29:34.000Z",
       "attributes": [
@@ -1310,7 +1310,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-17T16:17:08.387Z",
+      "fetchedAt": "2026-03-17T16:20:45.672Z",
       "updatedAt": "2026-03-17T16:12:40.000Z",
       "firstSeenAt": "2026-03-17T09:29:34.000Z",
       "attributes": [
@@ -1349,7 +1349,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-17T16:17:08.387Z",
+      "fetchedAt": "2026-03-17T16:20:45.672Z",
       "updatedAt": "2026-03-17T16:12:40.000Z",
       "firstSeenAt": "2026-03-17T09:29:34.000Z",
       "attributes": [
@@ -1388,7 +1388,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-17T16:17:08.387Z",
+      "fetchedAt": "2026-03-17T16:20:45.672Z",
       "updatedAt": "2026-03-17T16:12:40.000Z",
       "firstSeenAt": "2026-03-17T09:29:34.000Z",
       "attributes": [
@@ -1427,7 +1427,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-17T16:17:08.387Z",
+      "fetchedAt": "2026-03-17T16:20:45.672Z",
       "updatedAt": "2026-03-17T16:12:40.000Z",
       "firstSeenAt": "2026-03-17T09:29:34.000Z",
       "attributes": [
@@ -1466,7 +1466,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-17T16:17:08.387Z",
+      "fetchedAt": "2026-03-17T16:20:45.672Z",
       "updatedAt": "2026-03-17T16:12:40.000Z",
       "firstSeenAt": "2026-03-17T09:29:34.000Z",
       "attributes": [
@@ -1505,7 +1505,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-17T16:17:08.387Z",
+      "fetchedAt": "2026-03-17T16:20:45.672Z",
       "updatedAt": "2026-03-17T16:12:40.000Z",
       "firstSeenAt": "2026-03-17T09:29:34.000Z",
       "attributes": [
@@ -1544,7 +1544,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-17T16:17:08.387Z",
+      "fetchedAt": "2026-03-17T16:20:45.672Z",
       "updatedAt": "2026-03-17T16:12:40.000Z",
       "firstSeenAt": "2026-03-17T09:29:34.000Z",
       "attributes": [
@@ -1583,7 +1583,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-17T16:17:08.387Z",
+      "fetchedAt": "2026-03-17T16:20:45.672Z",
       "updatedAt": "2026-03-17T16:12:40.000Z",
       "firstSeenAt": "2026-03-17T09:29:34.000Z",
       "attributes": [
@@ -1622,7 +1622,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-17T16:17:08.387Z",
+      "fetchedAt": "2026-03-17T16:20:45.672Z",
       "updatedAt": "2026-03-17T16:12:40.000Z",
       "firstSeenAt": "2026-03-17T09:29:34.000Z",
       "attributes": [
@@ -1661,7 +1661,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-17T16:17:08.387Z",
+      "fetchedAt": "2026-03-17T16:20:45.672Z",
       "updatedAt": "2026-03-17T16:12:40.000Z",
       "firstSeenAt": "2026-03-17T09:29:34.000Z",
       "attributes": [
@@ -1700,7 +1700,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-17T16:17:08.387Z",
+      "fetchedAt": "2026-03-17T16:20:45.672Z",
       "updatedAt": "2026-03-17T16:12:40.000Z",
       "firstSeenAt": "2026-03-17T09:29:34.000Z",
       "attributes": [
@@ -1739,7 +1739,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-17T16:17:08.387Z",
+      "fetchedAt": "2026-03-17T16:20:45.672Z",
       "updatedAt": "2026-03-17T16:12:40.000Z",
       "firstSeenAt": "2026-03-17T09:29:34.000Z",
       "attributes": [
@@ -1778,7 +1778,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-17T16:17:08.387Z",
+      "fetchedAt": "2026-03-17T16:20:45.672Z",
       "updatedAt": "2026-03-17T16:12:40.000Z",
       "firstSeenAt": "2026-03-17T09:29:34.000Z",
       "attributes": [
@@ -1786,6 +1786,955 @@
           "name": "org.iso.18013.5.reservation.1",
           "type": "object",
           "required": false
+        }
+      ]
+    },
+    {
+      "id": "cred:ewc:pda1-sd-jwt:sd-jwt-vc",
+      "slug": "ewc-pda1-sd-jwt",
+      "displayName": "Portable Document A1 (SD-JWT VC)",
+      "shortDescription": "EWC issuer credential: Portable Document A1 (SD-JWT VC). Schema generated from issuer metadata.",
+      "authority": {
+        "name": "University of the Aegean / EWC",
+        "url": "https://dss.aegean.gr"
+      },
+      "subjectType": "Person",
+      "vcFormat": "sd_jwt_vc",
+      "nativeIdentifier": "VerifiablePortableDocumentA1SDJWT",
+      "nativeIdentifierType": "vct",
+      "schemaUrl": "https://raw.githubusercontent.com/FIDEScommunity/fides-credential-catalog/main/community-catalogs/ewc/schemas/pda1-sd-jwt.schema.json",
+      "schemaType": "JSON Schema",
+      "version": "1",
+      "tags": [
+        "ewc",
+        "pda1",
+        "social-security"
+      ],
+      "provider": {
+        "name": "University of the Aegean / EWC",
+        "website": "https://dss.aegean.gr"
+      },
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/ewc/credential-catalog.json",
+      "source": "local",
+      "fetchedAt": "2026-03-17T16:20:45.672Z",
+      "updatedAt": "2026-03-17T16:20:30.000Z",
+      "firstSeenAt": "2026-03-17T16:20:30.000Z",
+      "attributes": [
+        {
+          "name": "given_name",
+          "type": "string",
+          "required": false,
+          "description": "Given Name"
+        },
+        {
+          "name": "last_name",
+          "type": "string",
+          "required": false,
+          "description": "Surname"
+        }
+      ]
+    },
+    {
+      "id": "cred:ewc:pda2-sd-jwt:sd-jwt-vc",
+      "slug": "ewc-pda2-sd-jwt",
+      "displayName": "Portable Document A2 (SD-JWT VC)",
+      "shortDescription": "EWC issuer credential: Portable Document A2 (SD-JWT VC). Schema generated from issuer metadata.",
+      "authority": {
+        "name": "University of the Aegean / EWC",
+        "url": "https://dss.aegean.gr"
+      },
+      "subjectType": "Person",
+      "vcFormat": "sd_jwt_vc",
+      "nativeIdentifier": "VerifiablePortableDocumentA2SDJWT",
+      "nativeIdentifierType": "vct",
+      "schemaUrl": "https://raw.githubusercontent.com/FIDEScommunity/fides-credential-catalog/main/community-catalogs/ewc/schemas/pda2-sd-jwt.schema.json",
+      "schemaType": "JSON Schema",
+      "version": "1",
+      "tags": [
+        "ewc",
+        "pda2",
+        "social-security"
+      ],
+      "provider": {
+        "name": "University of the Aegean / EWC",
+        "website": "https://dss.aegean.gr"
+      },
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/ewc/credential-catalog.json",
+      "source": "local",
+      "fetchedAt": "2026-03-17T16:20:45.672Z",
+      "updatedAt": "2026-03-17T16:20:30.000Z",
+      "firstSeenAt": "2026-03-17T16:20:30.000Z",
+      "attributes": [
+        {
+          "name": "given_name",
+          "type": "string",
+          "required": false,
+          "description": "Given Name"
+        },
+        {
+          "name": "last_name",
+          "type": "string",
+          "required": false,
+          "description": "Surname"
+        }
+      ]
+    },
+    {
+      "id": "cred:ewc:id-card-jwt-vc:jwt-vc",
+      "slug": "ewc-id-card-jwt-vc",
+      "displayName": "Verifiable ID Card (JWT VC)",
+      "shortDescription": "EWC issuer credential: Verifiable ID Card (JWT VC). Schema generated from issuer metadata.",
+      "authority": {
+        "name": "University of the Aegean / EWC",
+        "url": "https://dss.aegean.gr"
+      },
+      "subjectType": "Person",
+      "vcFormat": "vcdm_1_1",
+      "nativeIdentifier": "VerifiableIdCard",
+      "nativeIdentifierType": "type",
+      "schemaUrl": "https://raw.githubusercontent.com/FIDEScommunity/fides-credential-catalog/main/community-catalogs/ewc/schemas/id-card-jwt-vc.schema.json",
+      "schemaType": "JSON Schema",
+      "version": "1",
+      "tags": [
+        "ewc",
+        "id-card",
+        "identity"
+      ],
+      "provider": {
+        "name": "University of the Aegean / EWC",
+        "website": "https://dss.aegean.gr"
+      },
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/ewc/credential-catalog.json",
+      "source": "local",
+      "fetchedAt": "2026-03-17T16:20:45.672Z",
+      "updatedAt": "2026-03-17T16:20:30.000Z",
+      "firstSeenAt": "2026-03-17T16:20:30.000Z",
+      "attributes": [
+        {
+          "name": "given_name",
+          "type": "string",
+          "required": false,
+          "description": "Given Name"
+        },
+        {
+          "name": "family_name",
+          "type": "string",
+          "required": false,
+          "description": "Surname"
+        },
+        {
+          "name": "birth_date",
+          "type": "string",
+          "required": false,
+          "description": "Birth Date"
+        },
+        {
+          "name": "age_over_18",
+          "type": "boolean",
+          "required": false,
+          "description": "Age Over 18"
+        },
+        {
+          "name": "issuance_date",
+          "type": "string",
+          "required": false,
+          "description": "Issuance Date"
+        },
+        {
+          "name": "expiry_date",
+          "type": "string",
+          "required": false,
+          "description": "Expiry Date"
+        },
+        {
+          "name": "issuing_authority",
+          "type": "string",
+          "required": false,
+          "description": "Issuing Authority"
+        },
+        {
+          "name": "issuing_country",
+          "type": "string",
+          "required": false,
+          "description": "Issuing Country"
+        }
+      ]
+    },
+    {
+      "id": "cred:ewc:pid-sd-jwt:sd-jwt-vc",
+      "slug": "ewc-pid-sd-jwt",
+      "displayName": "Person Identification Data (SD-JWT VC)",
+      "shortDescription": "EWC issuer credential: Person Identification Data (PID). Schema generated from issuer metadata.",
+      "authority": {
+        "name": "University of the Aegean / EWC",
+        "url": "https://dss.aegean.gr"
+      },
+      "subjectType": "Person",
+      "vcFormat": "sd_jwt_vc",
+      "nativeIdentifier": "VerifiablePIDSDJWT",
+      "nativeIdentifierType": "vct",
+      "schemaUrl": "https://raw.githubusercontent.com/FIDEScommunity/fides-credential-catalog/main/community-catalogs/ewc/schemas/pid-sd-jwt.schema.json",
+      "schemaType": "JSON Schema",
+      "version": "1",
+      "tags": [
+        "ewc",
+        "pid",
+        "identity"
+      ],
+      "provider": {
+        "name": "University of the Aegean / EWC",
+        "website": "https://dss.aegean.gr"
+      },
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/ewc/credential-catalog.json",
+      "source": "local",
+      "fetchedAt": "2026-03-17T16:20:45.672Z",
+      "updatedAt": "2026-03-17T16:20:30.000Z",
+      "firstSeenAt": "2026-03-17T16:20:30.000Z",
+      "attributes": [
+        {
+          "name": "given_name",
+          "type": "string",
+          "required": false,
+          "description": "Given Name"
+        },
+        {
+          "name": "family_name",
+          "type": "string",
+          "required": false,
+          "description": "Surname"
+        },
+        {
+          "name": "birth_date",
+          "type": "string",
+          "required": false,
+          "description": "Birth Date"
+        },
+        {
+          "name": "age_over_18",
+          "type": "boolean",
+          "required": false,
+          "description": "Age Over 18"
+        },
+        {
+          "name": "issuance_date",
+          "type": "string",
+          "required": false,
+          "description": "Issuance Date"
+        },
+        {
+          "name": "expiry_date",
+          "type": "string",
+          "required": false,
+          "description": "Expiry Date"
+        },
+        {
+          "name": "issuing_authority",
+          "type": "string",
+          "required": false,
+          "description": "Issuing Authority"
+        },
+        {
+          "name": "issuing_country",
+          "type": "string",
+          "required": false,
+          "description": "Issuing Country"
+        }
+      ]
+    },
+    {
+      "id": "cred:ewc:epassport-sd-jwt:sd-jwt-vc",
+      "slug": "ewc-epassport-sd-jwt",
+      "displayName": "ePassport (SD-JWT VC)",
+      "shortDescription": "EWC issuer credential: ePassport credential (SD-JWT VC). Schema generated from issuer metadata.",
+      "authority": {
+        "name": "University of the Aegean / EWC",
+        "url": "https://dss.aegean.gr"
+      },
+      "subjectType": "Person",
+      "vcFormat": "sd_jwt_vc",
+      "nativeIdentifier": "VerifiableePassportCredentialSDJWT",
+      "nativeIdentifierType": "vct",
+      "schemaUrl": "https://raw.githubusercontent.com/FIDEScommunity/fides-credential-catalog/main/community-catalogs/ewc/schemas/epassport-sd-jwt.schema.json",
+      "schemaType": "JSON Schema",
+      "version": "1",
+      "tags": [
+        "ewc",
+        "epassport",
+        "travel"
+      ],
+      "provider": {
+        "name": "University of the Aegean / EWC",
+        "website": "https://dss.aegean.gr"
+      },
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/ewc/credential-catalog.json",
+      "source": "local",
+      "fetchedAt": "2026-03-17T16:20:45.672Z",
+      "updatedAt": "2026-03-17T16:20:30.000Z",
+      "firstSeenAt": "2026-03-17T16:20:30.000Z",
+      "attributes": [
+        {
+          "name": "id",
+          "type": "string",
+          "required": false,
+          "description": "Identifier"
+        },
+        {
+          "name": "electronicPassport",
+          "type": "object",
+          "required": false,
+          "description": "Electronic Passport data including biographical and biometric data groups"
+        }
+      ]
+    },
+    {
+      "id": "cred:ewc:student-id-sd-jwt:sd-jwt-vc",
+      "slug": "ewc-student-id-sd-jwt",
+      "displayName": "Student ID (SD-JWT VC)",
+      "shortDescription": "EWC issuer credential: Student ID (SD-JWT VC). Schema generated from issuer metadata.",
+      "authority": {
+        "name": "University of the Aegean / EWC",
+        "url": "https://dss.aegean.gr"
+      },
+      "subjectType": "Person",
+      "vcFormat": "sd_jwt_vc",
+      "nativeIdentifier": "VerifiableStudentIDSDJWT",
+      "nativeIdentifierType": "vct",
+      "schemaUrl": "https://raw.githubusercontent.com/FIDEScommunity/fides-credential-catalog/main/community-catalogs/ewc/schemas/student-id-sd-jwt.schema.json",
+      "schemaType": "JSON Schema",
+      "version": "1",
+      "tags": [
+        "ewc",
+        "student-id",
+        "education"
+      ],
+      "provider": {
+        "name": "University of the Aegean / EWC",
+        "website": "https://dss.aegean.gr"
+      },
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/ewc/credential-catalog.json",
+      "source": "local",
+      "fetchedAt": "2026-03-17T16:20:45.672Z",
+      "updatedAt": "2026-03-17T16:20:30.000Z",
+      "firstSeenAt": "2026-03-17T16:20:30.000Z",
+      "attributes": [
+        {
+          "name": "identifier",
+          "type": "string",
+          "required": false,
+          "description": "Identifier"
+        },
+        {
+          "name": "schacPersonalUniqueCode",
+          "type": "string",
+          "required": false,
+          "description": "SCHAC Personal Unique Code"
+        },
+        {
+          "name": "schacPersonalUniqueID",
+          "type": "string",
+          "required": false,
+          "description": "SCHAC Personal Unique ID"
+        },
+        {
+          "name": "schacHomeOrganization",
+          "type": "string",
+          "required": false,
+          "description": "SCHAC Home Organization"
+        },
+        {
+          "name": "familyName",
+          "type": "string",
+          "required": false,
+          "description": "Family Name"
+        },
+        {
+          "name": "firstName",
+          "type": "string",
+          "required": false,
+          "description": "First Name"
+        },
+        {
+          "name": "displayName",
+          "type": "string",
+          "required": false,
+          "description": "Display Name"
+        },
+        {
+          "name": "dateOfBirth",
+          "type": "string",
+          "required": false,
+          "description": "Date of Birth"
+        },
+        {
+          "name": "mail",
+          "type": "string",
+          "required": false,
+          "description": "Email"
+        },
+        {
+          "name": "eduPersonPrincipalName",
+          "type": "string",
+          "required": false,
+          "description": "eduPerson Principal Name"
+        },
+        {
+          "name": "eduPersonPrimaryAffiliation",
+          "type": "string",
+          "required": false,
+          "description": "eduPerson Primary Affiliation"
+        }
+      ]
+    },
+    {
+      "id": "cred:ewc:ferry-boarding-pass-sd-jwt:sd-jwt-vc",
+      "slug": "ewc-ferry-boarding-pass-sd-jwt",
+      "displayName": "Ferry Boarding Pass (SD-JWT VC)",
+      "shortDescription": "EWC issuer credential: Ferry Boarding Pass (SD-JWT VC). Schema generated from issuer metadata.",
+      "authority": {
+        "name": "University of the Aegean / EWC",
+        "url": "https://dss.aegean.gr"
+      },
+      "subjectType": "Person",
+      "vcFormat": "sd_jwt_vc",
+      "nativeIdentifier": "VerifiableFerryBoardingPassCredentialSDJWT",
+      "nativeIdentifierType": "vct",
+      "schemaUrl": "https://raw.githubusercontent.com/FIDEScommunity/fides-credential-catalog/main/community-catalogs/ewc/schemas/ferry-boarding-pass-sd-jwt.schema.json",
+      "schemaType": "JSON Schema",
+      "version": "1",
+      "tags": [
+        "ewc",
+        "boarding-pass",
+        "travel",
+        "ferry"
+      ],
+      "provider": {
+        "name": "University of the Aegean / EWC",
+        "website": "https://dss.aegean.gr"
+      },
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/ewc/credential-catalog.json",
+      "source": "local",
+      "fetchedAt": "2026-03-17T16:20:45.672Z",
+      "updatedAt": "2026-03-17T16:20:30.000Z",
+      "firstSeenAt": "2026-03-17T16:20:30.000Z",
+      "attributes": [
+        {
+          "name": "identifier",
+          "type": "string",
+          "required": false,
+          "description": "Identifier"
+        },
+        {
+          "name": "ticketNumber",
+          "type": "string",
+          "required": false,
+          "description": "Ticket Number"
+        },
+        {
+          "name": "lastName",
+          "type": "string",
+          "required": false,
+          "description": "Last Name"
+        },
+        {
+          "name": "firstName",
+          "type": "string",
+          "required": false,
+          "description": "First Name"
+        },
+        {
+          "name": "seatType",
+          "type": "string",
+          "required": false,
+          "description": "Seat Type"
+        },
+        {
+          "name": "seatNumber",
+          "type": "string",
+          "required": false,
+          "description": "Seat Number"
+        },
+        {
+          "name": "departureDate",
+          "type": "string",
+          "required": false,
+          "description": "Departure Date"
+        },
+        {
+          "name": "arrivalPort",
+          "type": "string",
+          "required": false,
+          "description": "Arrival Port"
+        },
+        {
+          "name": "vesselDescription",
+          "type": "string",
+          "required": false,
+          "description": "Vessel Description"
+        }
+      ]
+    },
+    {
+      "id": "cred:ewc:vreceipt-sd-jwt:sd-jwt-vc",
+      "slug": "ewc-vreceipt-sd-jwt",
+      "displayName": "vReceipt (SD-JWT VC)",
+      "shortDescription": "EWC issuer credential: Verifiable Receipt (SD-JWT VC). Schema generated from issuer metadata.",
+      "authority": {
+        "name": "University of the Aegean / EWC",
+        "url": "https://dss.aegean.gr"
+      },
+      "subjectType": "Document",
+      "vcFormat": "sd_jwt_vc",
+      "nativeIdentifier": "VerifiablevReceiptSDJWT",
+      "nativeIdentifierType": "vct",
+      "schemaUrl": "https://raw.githubusercontent.com/FIDEScommunity/fides-credential-catalog/main/community-catalogs/ewc/schemas/vreceipt-sd-jwt.schema.json",
+      "schemaType": "JSON Schema",
+      "version": "1",
+      "tags": [
+        "ewc",
+        "receipt",
+        "payment"
+      ],
+      "provider": {
+        "name": "University of the Aegean / EWC",
+        "website": "https://dss.aegean.gr"
+      },
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/ewc/credential-catalog.json",
+      "source": "local",
+      "fetchedAt": "2026-03-17T16:20:45.672Z",
+      "updatedAt": "2026-03-17T16:20:30.000Z",
+      "firstSeenAt": "2026-03-17T16:20:30.000Z",
+      "attributes": [
+        {
+          "name": "purchase_receipt",
+          "type": "object",
+          "required": false,
+          "description": "Purchase receipt details including ID, amounts, and line items"
+        },
+        {
+          "name": "monetary_total",
+          "type": "object",
+          "required": false,
+          "description": "Monetary totals including payable and tax amounts"
+        },
+        {
+          "name": "tax_total",
+          "type": "object",
+          "required": false,
+          "description": "Tax total details"
+        },
+        {
+          "name": "payment_means",
+          "type": "object",
+          "required": false,
+          "description": "Payment method details"
+        },
+        {
+          "name": "party_name",
+          "type": "object",
+          "required": false,
+          "description": "Business name"
+        }
+      ]
+    },
+    {
+      "id": "cred:ewc:pid-eudi-sd-jwt:sd-jwt-vc",
+      "slug": "ewc-pid-eudi-sd-jwt",
+      "displayName": "PID EUDI (SD-JWT VC)",
+      "shortDescription": "EWC issuer credential: Person Identification Data per EUDI spec (SD-JWT VC). Schema generated from issuer metadata.",
+      "authority": {
+        "name": "University of the Aegean / EWC",
+        "url": "https://dss.aegean.gr"
+      },
+      "subjectType": "Person",
+      "vcFormat": "sd_jwt_vc",
+      "nativeIdentifier": "urn:eu.europa.ec.eudi:pid:1",
+      "nativeIdentifierType": "vct",
+      "schemaUrl": "https://raw.githubusercontent.com/FIDEScommunity/fides-credential-catalog/main/community-catalogs/ewc/schemas/pid-eudi-sd-jwt.schema.json",
+      "schemaType": "JSON Schema",
+      "version": "1",
+      "tags": [
+        "ewc",
+        "pid",
+        "eudi",
+        "identity"
+      ],
+      "provider": {
+        "name": "University of the Aegean / EWC",
+        "website": "https://dss.aegean.gr"
+      },
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/ewc/credential-catalog.json",
+      "source": "local",
+      "fetchedAt": "2026-03-17T16:20:45.672Z",
+      "updatedAt": "2026-03-17T16:20:30.000Z",
+      "firstSeenAt": "2026-03-17T16:20:30.000Z",
+      "attributes": [
+        {
+          "name": "given_name",
+          "type": "string",
+          "required": false,
+          "description": "Given Name"
+        },
+        {
+          "name": "family_name",
+          "type": "string",
+          "required": false,
+          "description": "Surname"
+        },
+        {
+          "name": "birth_date",
+          "type": "string",
+          "required": false,
+          "description": "Birth Date"
+        },
+        {
+          "name": "age_over_18",
+          "type": "boolean",
+          "required": false,
+          "description": "Age Over 18"
+        },
+        {
+          "name": "issuance_date",
+          "type": "string",
+          "required": false,
+          "description": "Issuance Date"
+        },
+        {
+          "name": "expiry_date",
+          "type": "string",
+          "required": false,
+          "description": "Expiry Date"
+        },
+        {
+          "name": "issuing_authority",
+          "type": "string",
+          "required": false,
+          "description": "Issuing Authority"
+        },
+        {
+          "name": "issuing_country",
+          "type": "string",
+          "required": false,
+          "description": "Issuing Country"
+        }
+      ]
+    },
+    {
+      "id": "cred:ewc:pid-eudi-mdoc:mso-mdoc",
+      "slug": "ewc-pid-eudi-mdoc",
+      "displayName": "PID EUDI (MSO Mdoc)",
+      "shortDescription": "EWC issuer credential: Person Identification Data per EUDI spec (MSO Mdoc). Schema generated from issuer metadata.",
+      "authority": {
+        "name": "University of the Aegean / EWC",
+        "url": "https://dss.aegean.gr"
+      },
+      "subjectType": "Person",
+      "vcFormat": "mdoc",
+      "nativeIdentifier": "urn:eu.europa.ec.eudi:pid:1",
+      "nativeIdentifierType": "docType",
+      "schemaUrl": "https://raw.githubusercontent.com/FIDEScommunity/fides-credential-catalog/main/community-catalogs/ewc/schemas/pid-eudi-mdoc.schema.json",
+      "schemaType": "JSON Schema",
+      "version": "1",
+      "tags": [
+        "ewc",
+        "pid",
+        "eudi",
+        "mdoc"
+      ],
+      "provider": {
+        "name": "University of the Aegean / EWC",
+        "website": "https://dss.aegean.gr"
+      },
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/ewc/credential-catalog.json",
+      "source": "local",
+      "fetchedAt": "2026-03-17T16:20:45.672Z",
+      "updatedAt": "2026-03-17T16:20:30.000Z",
+      "firstSeenAt": "2026-03-17T16:20:30.000Z",
+      "attributes": [
+        {
+          "name": "given_name",
+          "type": "string",
+          "required": false,
+          "description": "Given Name"
+        },
+        {
+          "name": "family_name",
+          "type": "string",
+          "required": false,
+          "description": "Surname"
+        },
+        {
+          "name": "birth_date",
+          "type": "string",
+          "required": false,
+          "description": "Birth Date"
+        },
+        {
+          "name": "age_over_18",
+          "type": "boolean",
+          "required": false,
+          "description": "Age Over 18"
+        },
+        {
+          "name": "issuance_date",
+          "type": "string",
+          "required": false,
+          "description": "Issuance Date"
+        },
+        {
+          "name": "expiry_date",
+          "type": "string",
+          "required": false,
+          "description": "Expiry Date"
+        },
+        {
+          "name": "issuing_authority",
+          "type": "string",
+          "required": false,
+          "description": "Issuing Authority"
+        },
+        {
+          "name": "issuing_country",
+          "type": "string",
+          "required": false,
+          "description": "Issuing Country"
+        }
+      ]
+    },
+    {
+      "id": "cred:ewc:payment-wallet-attestation-sd-jwt:sd-jwt-vc",
+      "slug": "ewc-payment-wallet-attestation-sd-jwt",
+      "displayName": "Payment Wallet Attestation (SD-JWT VC)",
+      "shortDescription": "EWC issuer credential: Payment Wallet Attestation (SD-JWT VC). Schema generated from issuer metadata.",
+      "authority": {
+        "name": "University of the Aegean / EWC",
+        "url": "https://dss.aegean.gr"
+      },
+      "subjectType": "Person",
+      "vcFormat": "sd_jwt_vc",
+      "nativeIdentifier": "PaymentWalletAttestation",
+      "nativeIdentifierType": "vct",
+      "schemaUrl": "https://raw.githubusercontent.com/FIDEScommunity/fides-credential-catalog/main/community-catalogs/ewc/schemas/payment-wallet-attestation-sd-jwt.schema.json",
+      "schemaType": "JSON Schema",
+      "version": "1",
+      "tags": [
+        "ewc",
+        "payment",
+        "wallet-attestation"
+      ],
+      "provider": {
+        "name": "University of the Aegean / EWC",
+        "website": "https://dss.aegean.gr"
+      },
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/ewc/credential-catalog.json",
+      "source": "local",
+      "fetchedAt": "2026-03-17T16:20:45.672Z",
+      "updatedAt": "2026-03-17T16:20:30.000Z",
+      "firstSeenAt": "2026-03-17T16:20:30.000Z",
+      "attributes": [
+        {
+          "name": "id",
+          "type": "string",
+          "required": false,
+          "description": "Identifier"
+        },
+        {
+          "name": "fundingSource",
+          "type": "object",
+          "required": false,
+          "description": "Funding source details including type, card/IBAN info and scheme"
+        }
+      ]
+    },
+    {
+      "id": "cred:ewc:photo-id-sd-jwt:sd-jwt-vc",
+      "slug": "ewc-photo-id-sd-jwt",
+      "displayName": "Photo ID (SD-JWT VC)",
+      "shortDescription": "EWC issuer credential: Photo ID (SD-JWT VC). Schema generated from issuer metadata.",
+      "authority": {
+        "name": "University of the Aegean / EWC",
+        "url": "https://dss.aegean.gr"
+      },
+      "subjectType": "Person",
+      "vcFormat": "sd_jwt_vc",
+      "nativeIdentifier": "eu.europa.ec.eudi.photoid.1",
+      "nativeIdentifierType": "vct",
+      "schemaUrl": "https://raw.githubusercontent.com/FIDEScommunity/fides-credential-catalog/main/community-catalogs/ewc/schemas/photo-id-sd-jwt.schema.json",
+      "schemaType": "JSON Schema",
+      "version": "1",
+      "tags": [
+        "ewc",
+        "photo-id",
+        "identity"
+      ],
+      "provider": {
+        "name": "University of the Aegean / EWC",
+        "website": "https://dss.aegean.gr"
+      },
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/ewc/credential-catalog.json",
+      "source": "local",
+      "fetchedAt": "2026-03-17T16:20:45.672Z",
+      "updatedAt": "2026-03-17T16:20:30.000Z",
+      "firstSeenAt": "2026-03-17T16:20:30.000Z",
+      "attributes": [
+        {
+          "name": "iso23220",
+          "type": "object",
+          "required": false,
+          "description": "ISO/IEC 23220-1 identity data including name, birth date, portrait and document details"
+        },
+        {
+          "name": "photoid",
+          "type": "object",
+          "required": false,
+          "description": "Photo ID specific fields"
+        },
+        {
+          "name": "dtc",
+          "type": "object",
+          "required": false,
+          "description": "Digital Travel Credential data groups"
+        }
+      ]
+    },
+    {
+      "id": "cred:ewc:personal-contact-details-sd-jwt:sd-jwt-vc",
+      "slug": "ewc-personal-contact-details-sd-jwt",
+      "displayName": "Personal Contact Details (SD-JWT VC)",
+      "shortDescription": "EWC issuer credential: Personal Contact Details (SD-JWT VC). Schema generated from issuer metadata.",
+      "authority": {
+        "name": "University of the Aegean / EWC",
+        "url": "https://dss.aegean.gr"
+      },
+      "subjectType": "Person",
+      "vcFormat": "sd_jwt_vc",
+      "nativeIdentifier": "eu.europa.ec.eudi.pcd.1",
+      "nativeIdentifierType": "vct",
+      "schemaUrl": "https://raw.githubusercontent.com/FIDEScommunity/fides-credential-catalog/main/community-catalogs/ewc/schemas/personal-contact-details-sd-jwt.schema.json",
+      "schemaType": "JSON Schema",
+      "version": "1",
+      "tags": [
+        "ewc",
+        "contact-details"
+      ],
+      "provider": {
+        "name": "University of the Aegean / EWC",
+        "website": "https://dss.aegean.gr"
+      },
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/ewc/credential-catalog.json",
+      "source": "local",
+      "fetchedAt": "2026-03-17T16:20:45.672Z",
+      "updatedAt": "2026-03-17T16:20:30.000Z",
+      "firstSeenAt": "2026-03-17T16:20:30.000Z",
+      "attributes": [
+        {
+          "name": "surname",
+          "type": "string",
+          "required": false,
+          "description": "Family Name"
+        },
+        {
+          "name": "given_name",
+          "type": "string",
+          "required": false,
+          "description": "Given Name"
+        },
+        {
+          "name": "phone",
+          "type": "string",
+          "required": false,
+          "description": "Phone Number"
+        },
+        {
+          "name": "email_address",
+          "type": "string",
+          "required": false,
+          "description": "Email Address"
+        },
+        {
+          "name": "city_address",
+          "type": "string",
+          "required": false,
+          "description": "City Address"
+        },
+        {
+          "name": "street_address",
+          "type": "string",
+          "required": false,
+          "description": "Street Address"
+        },
+        {
+          "name": "country_address",
+          "type": "string",
+          "required": false,
+          "description": "Country Address"
+        }
+      ]
+    },
+    {
+      "id": "cred:ewc:loyalty-card-sd-jwt:sd-jwt-vc",
+      "slug": "ewc-loyalty-card-sd-jwt",
+      "displayName": "Loyalty Card (SD-JWT VC)",
+      "shortDescription": "EWC issuer credential: Loyalty Card (SD-JWT VC). Schema generated from issuer metadata.",
+      "authority": {
+        "name": "University of the Aegean / EWC",
+        "url": "https://dss.aegean.gr"
+      },
+      "subjectType": "Person",
+      "vcFormat": "sd_jwt_vc",
+      "nativeIdentifier": "LoyaltyCard",
+      "nativeIdentifierType": "vct",
+      "schemaUrl": "https://raw.githubusercontent.com/FIDEScommunity/fides-credential-catalog/main/community-catalogs/ewc/schemas/loyalty-card-sd-jwt.schema.json",
+      "schemaType": "JSON Schema",
+      "version": "1",
+      "tags": [
+        "ewc",
+        "loyalty-card"
+      ],
+      "provider": {
+        "name": "University of the Aegean / EWC",
+        "website": "https://dss.aegean.gr"
+      },
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/ewc/credential-catalog.json",
+      "source": "local",
+      "fetchedAt": "2026-03-17T16:20:45.672Z",
+      "updatedAt": "2026-03-17T16:20:30.000Z",
+      "firstSeenAt": "2026-03-17T16:20:30.000Z",
+      "attributes": [
+        {
+          "name": "customer.first_name",
+          "type": "string",
+          "required": false,
+          "description": "First Name"
+        },
+        {
+          "name": "customer.last_name",
+          "type": "string",
+          "required": false,
+          "description": "Last Name"
+        },
+        {
+          "name": "loyalty_card.id",
+          "type": "string",
+          "required": false,
+          "description": "Loyalty Card ID"
+        },
+        {
+          "name": "loyalty_card.issue_date",
+          "type": "string",
+          "required": false,
+          "description": "Issue Date"
+        },
+        {
+          "name": "organization.name",
+          "type": "string",
+          "required": false,
+          "description": "Organization Name"
+        },
+        {
+          "name": "credential.expiry_date",
+          "type": "string",
+          "required": false,
+          "description": "Expiry Date"
         }
       ]
     },
@@ -1815,7 +2764,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-17T16:17:08.387Z",
+      "fetchedAt": "2026-03-17T16:20:45.672Z",
       "updatedAt": "2026-03-12T00:00:00.000Z",
       "firstSeenAt": "2026-03-12T00:00:00.000Z",
       "attributes": [
@@ -1906,7 +2855,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-17T16:17:08.387Z",
+      "fetchedAt": "2026-03-17T16:20:45.672Z",
       "updatedAt": "2026-03-12T00:00:00.000Z",
       "firstSeenAt": "2026-03-12T00:00:00.000Z",
       "attributes": [
@@ -1992,7 +2941,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-17T16:17:08.387Z",
+      "fetchedAt": "2026-03-17T16:20:45.672Z",
       "updatedAt": "2026-03-12T00:00:00.000Z",
       "firstSeenAt": "2026-03-12T00:00:00.000Z",
       "attributes": [
@@ -2058,7 +3007,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-17T16:17:08.387Z",
+      "fetchedAt": "2026-03-17T16:20:45.672Z",
       "updatedAt": "2026-03-12T00:00:00.000Z",
       "firstSeenAt": "2026-03-12T00:00:00.000Z",
       "attributes": [
@@ -2125,7 +3074,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-17T16:17:08.387Z",
+      "fetchedAt": "2026-03-17T16:20:45.672Z",
       "updatedAt": "2026-03-12T00:00:00.000Z",
       "firstSeenAt": "2026-03-12T00:00:00.000Z",
       "attributes": [
@@ -2172,7 +3121,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-17T16:17:08.387Z",
+      "fetchedAt": "2026-03-17T16:20:45.672Z",
       "updatedAt": "2026-03-12T00:00:00.000Z",
       "firstSeenAt": "2026-03-12T00:00:00.000Z",
       "attributes": [
@@ -2257,7 +3206,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-17T16:17:08.387Z",
+      "fetchedAt": "2026-03-17T16:20:45.672Z",
       "updatedAt": "2026-03-12T00:00:00.000Z",
       "firstSeenAt": "2026-03-12T00:00:00.000Z",
       "attributes": []
@@ -2288,7 +3237,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-17T16:17:08.387Z",
+      "fetchedAt": "2026-03-17T16:20:45.672Z",
       "updatedAt": "2026-03-12T00:00:00.000Z",
       "firstSeenAt": "2026-03-12T00:00:00.000Z",
       "attributes": []
@@ -2320,7 +3269,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-17T16:17:08.387Z",
+      "fetchedAt": "2026-03-17T16:20:45.672Z",
       "updatedAt": "2026-03-12T00:00:00.000Z",
       "firstSeenAt": "2026-03-12T00:00:00.000Z",
       "attributes": [
@@ -2503,7 +3452,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-17T16:17:08.387Z",
+      "fetchedAt": "2026-03-17T16:20:45.672Z",
       "updatedAt": "2026-03-12T00:00:00.000Z",
       "firstSeenAt": "2026-03-12T00:00:00.000Z",
       "attributes": [
@@ -2596,7 +3545,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-17T16:17:08.387Z",
+      "fetchedAt": "2026-03-17T16:20:45.672Z",
       "updatedAt": "2026-03-12T00:00:00.000Z",
       "firstSeenAt": "2026-03-12T00:00:00.000Z",
       "attributes": [
@@ -2641,7 +3590,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-17T16:17:08.387Z",
+      "fetchedAt": "2026-03-17T16:20:45.672Z",
       "updatedAt": "2026-03-12T00:00:00.000Z",
       "firstSeenAt": "2026-03-12T00:00:00.000Z",
       "attributes": [
@@ -2746,7 +3695,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-17T16:17:08.387Z",
+      "fetchedAt": "2026-03-17T16:20:45.672Z",
       "updatedAt": "2026-03-12T00:00:00.000Z",
       "firstSeenAt": "2026-03-12T00:00:00.000Z",
       "attributes": [
@@ -2809,7 +3758,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-17T16:17:08.387Z",
+      "fetchedAt": "2026-03-17T16:20:45.672Z",
       "updatedAt": "2026-03-12T00:00:00.000Z",
       "firstSeenAt": "2026-03-12T00:00:00.000Z",
       "attributes": [
@@ -2888,7 +3837,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-17T16:17:08.387Z",
+      "fetchedAt": "2026-03-17T16:20:45.672Z",
       "updatedAt": "2026-03-12T00:00:00.000Z",
       "firstSeenAt": "2026-03-12T00:00:00.000Z",
       "attributes": [
@@ -2979,7 +3928,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-17T16:17:08.387Z",
+      "fetchedAt": "2026-03-17T16:20:45.672Z",
       "updatedAt": "2026-03-12T00:00:00.000Z",
       "firstSeenAt": "2026-03-12T00:00:00.000Z",
       "attributes": [
@@ -3017,19 +3966,20 @@
     }
   ],
   "stats": {
-    "totalCredentials": 42,
+    "totalCredentials": 56,
     "byFormat": {
-      "sd_jwt_vc": 26,
-      "mdoc": 16
+      "sd_jwt_vc": 38,
+      "mdoc": 17,
+      "vcdm_1_1": 1
     },
     "bySubjectType": {
-      "Person": 32,
+      "Person": 45,
       "Organization": 9,
       "Product": 1,
       "Dataset": 0,
       "Software": 0,
-      "Document": 0
+      "Document": 1
     },
-    "withSchemaAttributes": 40
+    "withSchemaAttributes": 54
   }
 }
