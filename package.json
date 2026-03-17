@@ -7,7 +7,10 @@
     "crawl": "tsx src/crawler/index.ts",
     "build": "tsc",
     "dev": "tsx watch src/crawler/index.ts",
-    "validate": "ajv validate --spec=draft2020 -c ajv-formats -s schemas/credential-catalog.schema.json -d 'community-catalogs/**/credential-catalog.json'"
+    "validate": "ajv validate --spec=draft2020 -c ajv-formats -s schemas/credential-catalog.schema.json -d 'community-catalogs/**/credential-catalog.json'",
+    "generate-eudi-schemas": "tsx scripts/generate-eudi-schemas.ts",
+    "copy-issuer-aggregated": "node scripts/copy-issuer-aggregated.js",
+    "copy-rp-aggregated": "node scripts/copy-rp-aggregated.js"
   },
   "repository": {
     "type": "git",

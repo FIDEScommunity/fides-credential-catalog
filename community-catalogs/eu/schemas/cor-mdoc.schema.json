@@ -1,0 +1,68 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "eu.europa.ec.eudi.cor.1": {
+      "type": "object",
+      "properties": {
+        "properties": {
+          "given_name": {
+            "type": "string",
+            "description": "Given Name"
+          },
+          "family_name": {
+            "type": "string",
+            "description": "Family Name"
+          },
+          "birth_date": {
+            "type": "string",
+            "format": "date",
+            "description": "Birth Date"
+          },
+          "residence_address": {
+            "type": "object",
+            "description": "Resident Address"
+          },
+          "gender": {
+            "type": "integer",
+            "minimum": 0,
+            "description": "Gender"
+          },
+          "birth_place": {
+            "type": "string",
+            "description": "Birth Place"
+          },
+          "nationality": {
+            "type": "string",
+            "description": "Nationality"
+          },
+          "arrival_date": {
+            "type": "string",
+            "format": "date",
+            "description": "Arrival Date"
+          },
+          "expiry_date": {
+            "type": "string",
+            "description": "Expiry Date"
+          },
+          "issuance_date": {
+            "type": "string",
+            "description": "Issuance Date"
+          },
+          "issuing_country": {
+            "type": "string",
+            "description": "Issuing Country"
+          },
+          "issuing_authority": {
+            "type": "string",
+            "description": "Issuing Authority"
+          }
+        }
+      }
+    }
+  },
+  "additionalProperties": true,
+  "$id": "https://eudi.example.org/schemas/cor-mdoc.schema.json",
+  "title": "Certificate of Residence (MSO Mdoc)",
+  "docType": "eu.europa.ec.eudi.cor.1"
+}

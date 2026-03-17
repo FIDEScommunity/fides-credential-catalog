@@ -49,6 +49,7 @@
   let credentials = [];
   let rpUsageMap = new Map();
   let issuerUsageMap = new Map();
+  let walletUsageMap = new Map();
   let selectedCredential = null;
   let sortBy = "lastUpdated";
 
@@ -61,8 +62,12 @@
     hasSchemaUrl: null,
     usedByRPsOnly: false,
     addedLast30Days: false,
-    updatedLast30Days: false
+    updatedLast30Days: false,
+    ids: []
   };
+
+  // IDs from ?credentials= URL param; preserved so the filter can be toggled back on
+  let originalCredentialIds = [];
   const filterGroupState = {
     vcFormat: true,
     subjectType: true,
@@ -226,21 +231,35 @@
       const data = await loadJson(config.rpAggregatedUrl);
       const relyingParties = Array.isArray(data.relyingParties) ? data.relyingParties : [];
       const credentialLookup = buildCredentialLookupMap();
-      const map = new Map();
+      const rpMap = new Map();
+      // Intermediate map: credentialId -> Map<walletCatalogId, {id, name}> to deduplicate wallets
+      const walletMapIntermediate = new Map();
       for (const rp of relyingParties) {
         const refs = extractCredentialRefs(rp, credentialLookup);
         for (const credentialId of refs) {
-          const existing = map.get(credentialId) || [];
-          existing.push({
-            id: rp.id,
-            name: rp.name || rp.id
-          });
-          map.set(credentialId, existing);
+          // RP usage
+          const existingRPs = rpMap.get(credentialId) || [];
+          existingRPs.push({ id: rp.id, name: rp.name || rp.id });
+          rpMap.set(credentialId, existingRPs);
+          // Wallet usage: collect unique wallets from this RP for this credential
+          if (Array.isArray(rp.supportedWallets)) {
+            const walletById = walletMapIntermediate.get(credentialId) || new Map();
+            for (const w of rp.supportedWallets) {
+              if (w && w.walletCatalogId && !walletById.has(w.walletCatalogId)) {
+                walletById.set(w.walletCatalogId, { id: w.walletCatalogId, name: w.name || w.walletCatalogId });
+              }
+            }
+            walletMapIntermediate.set(credentialId, walletById);
+          }
         }
       }
-      rpUsageMap = map;
+      rpUsageMap = rpMap;
+      walletUsageMap = new Map(
+        Array.from(walletMapIntermediate.entries()).map(([credId, wMap]) => [credId, Array.from(wMap.values())])
+      );
     } catch (_) {
       rpUsageMap = new Map();
+      walletUsageMap = new Map();
     }
   }
 
@@ -344,6 +363,9 @@
 
   function getFilteredCredentials() {
     let list = credentials.filter((credential) => {
+      // ID pre-filter (from ?credentials= URL param)
+      if (filters.ids.length > 0 && !filters.ids.includes(credential.id)) return false;
+
       const searchTarget = [
         credential.displayName,
         credential.shortDescription,
@@ -502,6 +524,11 @@
             <input type="checkbox" id="fides-used-by-rps" ${filters.usedByRPsOnly ? "checked" : ""}>
             <span>Used by relying parties<span class="fides-filter-option-count">(${filterFacets.usedByRPsOnly})</span></span>
           </label>
+          ${originalCredentialIds.length > 0 ? `
+          <label class="fides-filter-checkbox">
+            <input type="checkbox" data-filter="linkedCredentials" ${filters.ids.length > 0 ? "checked" : ""}>
+            <span>Linked credentials (${originalCredentialIds.length})</span>
+          </label>` : ''}
         </div>
         ${renderCheckboxGroup("VC format", "vcFormat", formatOptions, filterFacets)}
         ${renderCheckboxGroup("Subject type", "subjectType", subjectOptions, filterFacets)}
@@ -560,6 +587,7 @@
     if (!selectedCredential) return "";
     const rpItems = rpUsageMap.get(selectedCredential.id) || [];
     const issuerItems = issuerUsageMap.get(selectedCredential.id) || [];
+    const walletItems = walletUsageMap.get(selectedCredential.id) || [];
     const attributes = Array.isArray(selectedCredential.attributes) ? selectedCredential.attributes : [];
     const currentTheme = root.getAttribute("data-theme") || "dark";
 
@@ -572,9 +600,9 @@
     const renderEcoTag = (item, catalogUrl, paramKey, colorClass) => {
       const separator = (catalogUrl || "").includes("?") ? "&" : "?";
       const href = catalogUrl ? `${catalogUrl.replace(/\/$/, "")}${separator}${paramKey}=${encodeURIComponent(item.id)}` : null;
-      const inner = `${escapeHtml(item.name)}${href ? " " + icons.externalLinkSmall : ""}`;
+      const inner = escapeHtml(item.name);
       return href
-        ? `<a href="${escapeHtml(href)}" target="_blank" rel="noopener" class="fides-eco-tag ${colorClass}" onclick="event.stopPropagation();">${inner}</a>`
+        ? `<a href="${escapeHtml(href)}" class="fides-eco-tag ${colorClass}" onclick="event.stopPropagation();">${inner}</a>`
         : `<span class="fides-eco-tag ${colorClass}">${inner}</span>`;
     };
 
@@ -615,17 +643,24 @@
                 <!-- Personal Wallets (top) -->
                 <div class="fides-modal-ecosystem">
                   <div class="fides-eco-wallet-row">
-                    <div class="fides-eco-wallet-box">
-                      <span class="fides-eco-wallet-count">—</span>
-                      <span class="fides-eco-wallet-label">Personal Wallets</span>
-                    </div>
+                    ${walletItems.length > 0 && config.walletCatalogUrl
+                      ? `<a href="${escapeHtml(config.walletCatalogUrl.replace(/\/$/, '') + '/?wallets=' + walletItems.map(w => encodeURIComponent(w.id)).join(','))}" class="fides-eco-wallet-box fides-eco-wallet-box--link" onclick="event.stopPropagation();">
+                          <span class="fides-eco-wallet-count">${walletItems.length}</span>
+                          <span class="fides-eco-wallet-label">${walletItems.length === 1 ? "Personal Wallet" : "Personal Wallets"}</span>
+                        </a>`
+                      : `<div class="fides-eco-wallet-box">
+                          <span class="fides-eco-wallet-count">—</span>
+                          <span class="fides-eco-wallet-label">Personal Wallets</span>
+                        </div>`
+                    }
                   </div>
 
                   <div class="fides-eco-wallet-connector">${icons.chevronUp}</div>
 
                   <!-- Main row: Issuers → Credential → Relying Parties -->
                   <div class="fides-eco-main-row">
-                    <div class="fides-eco-col fides-eco-col-side">
+                    <div class="fides-eco-col fides-eco-col-side fides-eco-col-side--green"
+                      ${issuerItems.length > 0 && config.issuerCatalogUrl ? `data-href="${config.issuerCatalogUrl.replace(/\/$/, '')}/?issuers=${issuerItems.map(i => encodeURIComponent(i.id)).join(',')}"` : ''}>
                       <div class="fides-eco-col-header">
                         <span class="fides-eco-count">${issuerItems.length}</span>
                         <span class="fides-eco-label">${issuerItems.length === 1 ? "Issuer" : "Issuers"}</span>
@@ -653,7 +688,8 @@
 
                     <div class="fides-eco-arrow fides-eco-arrow-right">${icons.chevronDown}</div>
 
-                    <div class="fides-eco-col fides-eco-col-side">
+                    <div class="fides-eco-col fides-eco-col-side fides-eco-col-side--blue"
+                      ${rpItems.length > 0 && config.rpCatalogUrl ? `data-href="${config.rpCatalogUrl.replace(/\/$/, '')}/?rps=${rpItems.map(rp => encodeURIComponent(rp.id)).join(',')}"` : ''}>
                       <div class="fides-eco-col-header">
                         <span class="fides-eco-count">${rpItems.length}</span>
                         <span class="fides-eco-label">${rpItems.length === 1 ? "Relying party" : "Relying parties"}</span>
@@ -858,6 +894,7 @@
     count += filters.subjectType.length;
     count += filters.authority.length;
     count += filters.schemaType.length;
+    count += filters.ids.length;
     if (filters.hasSchemaUrl) count += 1;
     if (filters.usedByRPsOnly) count += 1;
     if (filters.addedLast30Days) count += 1;
@@ -916,6 +953,11 @@
         filters.usedByRPsOnly = false;
         filters.addedLast30Days = false;
         filters.updatedLast30Days = false;
+        filters.ids = [];
+        originalCredentialIds = [];
+        const url = new URL(window.location.href);
+        url.searchParams.delete('credentials');
+        history.replaceState(null, '', url.toString());
         render();
       });
     }
@@ -946,6 +988,14 @@
     if (usedByRpsInput) {
       usedByRpsInput.addEventListener("change", (event) => {
         filters.usedByRPsOnly = event.target.checked;
+        render();
+      });
+    }
+
+    const linkedCredentialsInput = root.querySelector('[data-filter="linkedCredentials"]');
+    if (linkedCredentialsInput) {
+      linkedCredentialsInput.addEventListener("change", (event) => {
+        filters.ids = event.target.checked ? [...originalCredentialIds] : [];
         render();
       });
     }
@@ -1084,6 +1134,14 @@
       });
     }
 
+    // Click handler for ecosystem column boxes with data-href (RP and issuer columns)
+    document.querySelectorAll("#fides-modal-overlay .fides-eco-col-side[data-href]").forEach((col) => {
+      col.addEventListener("click", (e) => {
+        if (e.target.closest("a")) return;
+        window.location.href = col.dataset.href;
+      });
+    });
+
     document.querySelectorAll("#fides-modal-overlay .fides-accordion-header").forEach((btn) => {
       btn.addEventListener("click", () => {
         const accordion = btn.closest(".fides-accordion");
@@ -1133,8 +1191,15 @@
   function openFromQueryParam() {
     const params = new URLSearchParams(window.location.search);
     const credentialId = params.get("credential");
-    if (!credentialId) return;
-    selectedCredential = credentials.find((credential) => credential.id === credentialId) || null;
+    if (credentialId) {
+      selectedCredential = credentials.find((credential) => credential.id === credentialId) || null;
+    }
+    const credentialsParam = params.get("credentials");
+    if (credentialsParam) {
+      const ids = credentialsParam.split(",").map((id) => decodeURIComponent(id.trim())).filter(Boolean);
+      originalCredentialIds = ids;
+      filters.ids = [...ids];
+    }
   }
 
   async function init() {

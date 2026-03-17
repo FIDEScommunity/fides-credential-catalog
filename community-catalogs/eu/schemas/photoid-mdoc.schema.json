@@ -1,0 +1,123 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "org.iso.23220.photoid.1": {
+      "type": "object",
+      "properties": {
+        "properties": {
+          "portrait": {
+            "type": "string",
+            "contentEncoding": "base64",
+            "contentMediaType": "image/jpeg",
+            "description": "Portrait Image"
+          },
+          "portrait_capture_date": {
+            "type": "string",
+            "format": "date",
+            "description": "Portrait Capture Date"
+          },
+          "family_name_unicode": {
+            "type": "string",
+            "description": "Family Name"
+          },
+          "given_name_unicode": {
+            "type": "string",
+            "description": "Given Name"
+          },
+          "family_name_latin1": {
+            "type": "string",
+            "description": "Family Name"
+          },
+          "given_name_latin1": {
+            "type": "string",
+            "description": "Given Name"
+          },
+          "birth_date": {
+            "type": "string",
+            "format": "date",
+            "description": "Date of Birth"
+          },
+          "age_over_18": {
+            "type": "string",
+            "description": "Age over 18"
+          },
+          "age_in_years": {
+            "type": "integer",
+            "minimum": 0,
+            "description": "Age in Years"
+          },
+          "age_birth_year": {
+            "type": "integer",
+            "minimum": 0,
+            "description": "Birth Year"
+          },
+          "birthplace": {
+            "type": "string",
+            "description": "Birthplace"
+          },
+          "name_at_birth": {
+            "type": "string",
+            "description": "Family Name at Birth"
+          },
+          "resident_address_unicode": {
+            "type": "string",
+            "description": "Resident Address"
+          },
+          "resident_city_unicode": {
+            "type": "string",
+            "description": "Resident City"
+          },
+          "resident_postal_code": {
+            "type": "string",
+            "description": "Resident Postal Code"
+          },
+          "resident_country": {
+            "type": "string",
+            "description": "Resident Country"
+          },
+          "resident_city_latin1": {
+            "type": "string",
+            "description": "Resident City"
+          },
+          "sex": {
+            "type": "string",
+            "description": "Sex"
+          },
+          "nationality": {
+            "type": "string",
+            "description": "Nationality"
+          },
+          "document_number": {
+            "type": "string",
+            "description": "Document Number"
+          },
+          "issuing_subdivision": {
+            "type": "string",
+            "description": "Issuing Subdivision"
+          },
+          "issuance_date": {
+            "type": "string",
+            "description": "Issuance Date"
+          },
+          "expiry_date": {
+            "type": "string",
+            "description": "Expiry Date"
+          },
+          "issuing_authority_unicode": {
+            "type": "string",
+            "description": "Issuing Authority"
+          },
+          "issuing_country": {
+            "type": "string",
+            "description": "Issuing Country"
+          }
+        }
+      }
+    }
+  },
+  "additionalProperties": true,
+  "$id": "https://eudi.example.org/schemas/photoid-mdoc.schema.json",
+  "title": "Photo ID (MSO Mdoc)",
+  "docType": "org.iso.23220.2.photoid.1"
+}

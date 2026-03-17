@@ -1,0 +1,84 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "personal_administrative_number": {
+      "type": "string",
+      "description": "Personal Administrative Number"
+    },
+    "issuing_authority": {
+      "type": "object",
+      "properties": {
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "Issuing Authority ID"
+          },
+          "name": {
+            "type": "string",
+            "description": "Issuing Authority Name"
+          }
+        }
+      },
+      "required": [
+        "id",
+        "name"
+      ]
+    },
+    "issuing_country": {
+      "type": "string",
+      "description": "Issuing Country"
+    },
+    "date_of_expiry": {
+      "type": "string",
+      "description": "Expiry date"
+    },
+    "date_of_issuance": {
+      "type": "string",
+      "description": "Issue date"
+    },
+    "authentic_source": {
+      "type": "object",
+      "properties": {
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "Authentic Source ID"
+          },
+          "name": {
+            "type": "string",
+            "description": "Authentic Source Name"
+          }
+        }
+      },
+      "required": [
+        "id",
+        "name"
+      ]
+    },
+    "starting_date": {
+      "type": "string",
+      "format": "date",
+      "description": "Starting Date"
+    },
+    "ending_date": {
+      "type": "string",
+      "format": "date",
+      "description": "Ending Date"
+    }
+  },
+  "additionalProperties": true,
+  "required": [
+    "personal_administrative_number",
+    "issuing_authority",
+    "issuing_country",
+    "date_of_expiry",
+    "date_of_issuance",
+    "authentic_source",
+    "starting_date",
+    "ending_date"
+  ],
+  "$id": "https://eudi.example.org/schemas/ehic-sd-jwt-vc.schema.json",
+  "title": "EHIC (SD-JWT VC)",
+  "vct": "urn:eudi:ehic:1"
+}

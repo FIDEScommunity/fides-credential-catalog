@@ -1,0 +1,58 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "taxpayer_type": {
+      "type": "string",
+      "description": "Taxpayer type"
+    },
+    "name": {
+      "type": "string",
+      "description": "Name"
+    },
+    "date_of_birth": {
+      "type": "string",
+      "format": "date",
+      "description": "Birth Date"
+    },
+    "address": {
+      "type": "string",
+      "description": "Address"
+    },
+    "identification_number": {
+      "type": "string",
+      "description": "Identification Number"
+    },
+    "legal_framework": {
+      "type": "string",
+      "description": "Legal Framework"
+    },
+    "source_country_competent_authority": {
+      "type": "string",
+      "description": "Source Country Competent Authority"
+    },
+    "start_date_of_residency_requested_period": {
+      "type": "string",
+      "format": "date",
+      "description": "Start Date Residency"
+    },
+    "end_date_of_residency_requested_period": {
+      "type": "string",
+      "format": "date",
+      "description": "End Date Residency"
+    }
+  },
+  "additionalProperties": true,
+  "required": [
+    "taxpayer_type",
+    "name",
+    "date_of_birth",
+    "address",
+    "identification_number",
+    "start_date_of_residency_requested_period",
+    "end_date_of_residency_requested_period"
+  ],
+  "$id": "https://eudi.example.org/schemas/tax-residency-vc-sd-jwt.schema.json",
+  "title": "Tax Residency (SD-JWT VC)",
+  "vct": "urn:eu.europa.ec.eudi:tax:1:1"
+}

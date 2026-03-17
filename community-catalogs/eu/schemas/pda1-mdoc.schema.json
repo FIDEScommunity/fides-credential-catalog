@@ -1,0 +1,65 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "eu.europa.ec.eudi.pda1.1": {
+      "type": "object",
+      "properties": {
+        "properties": {
+          "credential_holder": {
+            "type": "object",
+            "description": "Credential Holder"
+          },
+          "social_security_pin": {
+            "type": "string",
+            "description": "Social Security Pin"
+          },
+          "employment_details": {
+            "type": "object",
+            "description": "Employment Details"
+          },
+          "places_of_work": {
+            "type": "object",
+            "description": "Places of Work"
+          },
+          "legislation": {
+            "type": "object",
+            "description": "Legislation"
+          },
+          "status_confirmation": {
+            "type": "string",
+            "description": "Status Confirmation"
+          },
+          "document_id": {
+            "type": "string",
+            "description": "Document ID"
+          },
+          "competent_institution": {
+            "type": "object",
+            "description": "Institution ID"
+          },
+          "issuance_date": {
+            "type": "string",
+            "description": "Issuance Date"
+          },
+          "expiry_date": {
+            "type": "string",
+            "description": "Expiry Date"
+          },
+          "issuing_authority": {
+            "type": "string",
+            "description": "Issuance Authority"
+          },
+          "issuing_country": {
+            "type": "string",
+            "description": "Issuing Country"
+          }
+        }
+      }
+    }
+  },
+  "additionalProperties": true,
+  "$id": "https://eudi.example.org/schemas/pda1-mdoc.schema.json",
+  "title": "PDA1 (MSO Mdoc)",
+  "docType": "eu.europa.ec.eudi.pda1.1"
+}

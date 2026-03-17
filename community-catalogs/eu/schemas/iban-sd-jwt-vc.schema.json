@@ -1,0 +1,107 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "iban": {
+      "type": "string",
+      "description": "IBAN"
+    },
+    "national_account_number": {
+      "type": "string",
+      "description": "National Account Number"
+    },
+    "account_product": {
+      "type": "string",
+      "description": "Account Product"
+    },
+    "account_name": {
+      "type": "string",
+      "description": "Account Name"
+    },
+    "account_type": {
+      "type": "string",
+      "description": "Account Type"
+    },
+    "currency": {
+      "type": "string",
+      "description": "Currency"
+    },
+    "bank_account_status": {
+      "type": "string",
+      "description": "Bank Account Status"
+    },
+    "payment_possibility": {
+      "type": "boolean",
+      "description": "Payment Possibility"
+    },
+    "registered_family_name": {
+      "type": "string",
+      "description": "Registered Family Name"
+    },
+    "registered_given_name": {
+      "type": "string",
+      "description": "Registered Given Name"
+    },
+    "date_of_birth": {
+      "type": "string",
+      "format": "date",
+      "description": "Date of Birth"
+    },
+    "account_holder_owner": {
+      "type": "boolean",
+      "description": "Account Holder Owner"
+    },
+    "coowner": {
+      "type": "boolean",
+      "description": "Coowner"
+    },
+    "disponent": {
+      "type": "boolean",
+      "description": "Disponent"
+    },
+    "issuing_organization": {
+      "type": "string",
+      "description": "Issuing Organization"
+    },
+    "national_bank_code": {
+      "type": "string",
+      "description": "National Bank Code"
+    },
+    "issuance_date": {
+      "type": "string",
+      "description": "Issuance Date"
+    },
+    "expiry_date": {
+      "type": "string",
+      "description": "Expiry Date"
+    },
+    "credential_type": {
+      "type": "string",
+      "description": "Credential Type"
+    },
+    "business_identifier_code": {
+      "type": "string",
+      "description": "Bussiness Identifier Code"
+    }
+  },
+  "additionalProperties": true,
+  "required": [
+    "iban",
+    "currency",
+    "bank_account_status",
+    "payment_possibility",
+    "registered_family_name",
+    "registered_given_name",
+    "date_of_birth",
+    "account_holder_owner",
+    "coowner",
+    "issuing_organization",
+    "issuance_date",
+    "expiry_date",
+    "credential_type",
+    "business_identifier_code"
+  ],
+  "$id": "https://eudi.example.org/schemas/iban-sd-jwt-vc.schema.json",
+  "title": "IBAN (SD-JWT VC)",
+  "vct": "urn:eu.europa.ec.eudi:iban:1"
+}

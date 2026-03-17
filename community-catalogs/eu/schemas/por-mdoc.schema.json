@@ -1,0 +1,63 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "eu.europa.ec.eudi.por.1": {
+      "type": "object",
+      "properties": {
+        "properties": {
+          "legal_person_identifier": {
+            "type": "string",
+            "description": "Legal Person Identifier"
+          },
+          "legal_name": {
+            "type": "string",
+            "description": "Legal Name"
+          },
+          "full_powers": {
+            "type": "boolean",
+            "description": "Full Powers"
+          },
+          "eService": {
+            "type": "string",
+            "description": "eService"
+          },
+          "effective_from_date": {
+            "type": "string",
+            "format": "date",
+            "description": "Effective From Date"
+          },
+          "effective_until_date": {
+            "type": "string",
+            "format": "date",
+            "description": "Effective Until Date"
+          },
+          "issuance_date": {
+            "type": "string",
+            "description": "Issuance Date"
+          },
+          "expiry_date": {
+            "type": "string",
+            "description": "Expiry Date"
+          },
+          "issuing_authority": {
+            "type": "string",
+            "description": "Issuing Authority"
+          },
+          "issuing_jurisdiction": {
+            "type": "string",
+            "description": "Issuing Jurisdiction"
+          },
+          "issuing_country": {
+            "type": "string",
+            "description": "Issuing Country"
+          }
+        }
+      }
+    }
+  },
+  "additionalProperties": true,
+  "$id": "https://eudi.example.org/schemas/por-mdoc.schema.json",
+  "title": "Power Of Representation (MSO Mdoc)",
+  "docType": "eu.europa.ec.eudi.por.1"
+}

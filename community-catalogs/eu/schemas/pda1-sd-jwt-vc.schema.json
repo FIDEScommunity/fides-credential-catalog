@@ -1,0 +1,240 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "credential_holder": {
+      "type": "object",
+      "properties": {
+        "properties": {
+          "family_name": {
+            "type": "string",
+            "description": "Family Name"
+          },
+          "given_name": {
+            "type": "string",
+            "description": "Given Name"
+          },
+          "birth_date": {
+            "type": "string",
+            "format": "date",
+            "description": "Birth Date"
+          }
+        }
+      },
+      "required": [
+        "family_name",
+        "given_name",
+        "birth_date"
+      ]
+    },
+    "social_security_pin": {
+      "type": "string",
+      "description": "Social Security Pin"
+    },
+    "employment_details": {
+      "type": "object",
+      "properties": {
+        "properties": {
+          "employment_type": {
+            "type": "string",
+            "description": "Employment Type"
+          },
+          "name": {
+            "type": "string",
+            "description": "Name"
+          },
+          "employer_id": {
+            "type": "string",
+            "description": "Employment ID"
+          },
+          "id_type": {
+            "type": "string",
+            "description": "ID Type"
+          },
+          "street": {
+            "type": "string",
+            "description": "Street"
+          },
+          "town": {
+            "type": "string",
+            "description": "Town"
+          },
+          "postal_code": {
+            "type": "string",
+            "description": "Postal Code"
+          },
+          "country_code": {
+            "type": "string",
+            "description": "Country Code"
+          }
+        }
+      },
+      "required": [
+        "employment_type",
+        "name",
+        "town",
+        "country_code"
+      ]
+    },
+    "places_of_work": {
+      "type": "object",
+      "properties": {
+        "properties": {
+          "place_of_work": {
+            "type": "object",
+            "description": "Place of Work"
+          },
+          "no_fixed_place": {
+            "type": "object",
+            "description": "No Fixed Place"
+          }
+        },
+        "place_of_work": {
+          "type": "object",
+          "properties": {
+            "properties": {
+              "company": {
+                "type": "string",
+                "description": "Company"
+              },
+              "flag_base_home_state": {
+                "type": "string",
+                "description": "Flag Base Home State"
+              },
+              "company_id": {
+                "type": "string",
+                "description": "Company ID"
+              },
+              "id_type": {
+                "type": "string",
+                "description": "ID Type"
+              },
+              "street": {
+                "type": "string",
+                "description": "Street"
+              },
+              "town": {
+                "type": "string",
+                "description": "Town"
+              },
+              "postal_code": {
+                "type": "string",
+                "description": "Postal Code"
+              },
+              "country_code": {
+                "type": "string",
+                "description": "Country Code"
+              }
+            }
+          }
+        },
+        "no_fixed_place": {
+          "type": "object",
+          "properties": {
+            "properties": {
+              "country_code": {
+                "type": "string",
+                "description": "Country Code"
+              }
+            }
+          }
+        }
+      }
+    },
+    "legislation": {
+      "type": "object",
+      "properties": {
+        "properties": {
+          "member_state": {
+            "type": "string",
+            "description": "Member State"
+          },
+          "transitional_rules": {
+            "type": "boolean",
+            "description": "Transitional Rules"
+          },
+          "starting_date": {
+            "type": "string",
+            "format": "date",
+            "description": "Starting Date"
+          },
+          "ending_date": {
+            "type": "string",
+            "format": "date",
+            "description": "Ending Date"
+          }
+        }
+      },
+      "required": [
+        "member_state",
+        "starting_date",
+        "ending_date"
+      ]
+    },
+    "status_confirmation": {
+      "type": "string",
+      "description": "Status Confirmation"
+    },
+    "document_id": {
+      "type": "string",
+      "description": "Document ID"
+    },
+    "competent_institution": {
+      "type": "object",
+      "properties": {
+        "properties": {
+          "institution_id": {
+            "type": "string",
+            "description": "Institution ID"
+          },
+          "institution_name": {
+            "type": "string",
+            "description": "Institution Name"
+          },
+          "country_code": {
+            "type": "string",
+            "description": "Country Code"
+          }
+        }
+      },
+      "required": [
+        "institution_id",
+        "country_code"
+      ]
+    },
+    "issuance_date": {
+      "type": "string",
+      "description": "Issuance Date"
+    },
+    "expiry_date": {
+      "type": "string",
+      "description": "Expiry Date"
+    },
+    "issuing_authority": {
+      "type": "string",
+      "description": "Issuance Authority"
+    },
+    "issuing_country": {
+      "type": "string",
+      "description": "Issuing Country"
+    }
+  },
+  "additionalProperties": true,
+  "required": [
+    "credential_holder",
+    "social_security_pin",
+    "employment_details",
+    "places_of_work",
+    "legislation",
+    "status_confirmation",
+    "document_id",
+    "competent_institution",
+    "issuance_date",
+    "expiry_date",
+    "issuing_authority",
+    "issuing_country"
+  ],
+  "$id": "https://eudi.example.org/schemas/pda1-sd-jwt-vc.schema.json",
+  "title": "PDA1 (SD-JWT VC)",
+  "vct": "urn:eu.europa.ec.eudi:pda1:1"
+}

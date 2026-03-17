@@ -1,0 +1,51 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "eu.europa.ec.eudi.employee.1": {
+      "type": "object",
+      "properties": {
+        "properties": {
+          "given_name": {
+            "type": "string",
+            "description": "Given Name(s)"
+          },
+          "family_name": {
+            "type": "string",
+            "description": "Family Name(s)"
+          },
+          "birth_date": {
+            "type": "string",
+            "format": "date",
+            "description": "Birth Date"
+          },
+          "employee_id": {
+            "type": "string",
+            "description": "Employee ID"
+          },
+          "employer_name": {
+            "type": "string",
+            "description": "Employer Name"
+          },
+          "employment_start_date": {
+            "type": "string",
+            "format": "date",
+            "description": "Employment Start Date"
+          },
+          "employment_type": {
+            "type": "string",
+            "description": "Employment Type"
+          },
+          "country_code": {
+            "type": "string",
+            "description": "Country Code"
+          }
+        }
+      }
+    }
+  },
+  "additionalProperties": true,
+  "$id": "https://eudi.example.org/schemas/employee-mdoc.schema.json",
+  "title": "Employee ID (MSO Mdoc)",
+  "docType": "eu.europa.ec.eudi.employee.1"
+}

@@ -3,7 +3,7 @@
  * Plugin Name: FIDES Credential Catalog
  * Plugin URI: https://github.com/FIDEScommunity/fides-credential-catalog
  * Description: Display an interactive catalog of credentials with search and filters.
- * Version: 0.2.3
+ * Version: 0.3.0
  * Author: FIDES Community
  * Author URI: https://fides.community
  * License: Apache-2.0
@@ -14,9 +14,29 @@ if (!defined('ABSPATH')) {
     exit;
 }
 
-define('FIDES_CREDENTIAL_CATALOG_VERSION', '0.1.0');
+define('FIDES_CREDENTIAL_CATALOG_VERSION', '0.3.0');
 define('FIDES_CREDENTIAL_CATALOG_PLUGIN_DIR', plugin_dir_path(__FILE__));
 define('FIDES_CREDENTIAL_CATALOG_PLUGIN_URL', plugin_dir_url(__FILE__));
+
+/**
+ * Detect if the site is running on a .local or localhost URL (local dev).
+ * When true, the plugin uses bundled data/aggregated.json and data/issuer-aggregated.json.
+ */
+function fides_credential_catalog_is_local_site() {
+    $host = '';
+    if (function_exists('get_site_url')) {
+        $url = get_site_url();
+        if (is_string($url)) {
+            $parsed = parse_url($url);
+            $host = isset($parsed['host']) ? $parsed['host'] : '';
+        }
+    }
+    if ($host === '' && !empty($_SERVER['HTTP_HOST'])) {
+        $host = (string) $_SERVER['HTTP_HOST'];
+    }
+    $host = strtolower(trim($host));
+    return ($host !== '' && (preg_match('/\.local$/i', $host) || $host === 'localhost'));
+}
 
 function fides_credential_catalog_enqueue_assets() {
     $style_path = FIDES_CREDENTIAL_CATALOG_PLUGIN_DIR . 'assets/style.css';
@@ -39,19 +59,36 @@ function fides_credential_catalog_enqueue_assets() {
         true
     );
 
-    wp_localize_script('fides-credential-catalog-script', 'fidesCredentialCatalog', array(
-        'pluginUrl' => FIDES_CREDENTIAL_CATALOG_PLUGIN_URL,
-        'githubDataUrl' => 'https://raw.githubusercontent.com/FIDEScommunity/fides-credential-catalog/main/data/aggregated.json',
-        'rpAggregatedUrl' => get_option(
-            'fides_credential_catalog_rp_data_url',
-            'https://raw.githubusercontent.com/FIDEScommunity/fides-rp-catalog/main/data/aggregated.json'
-        ),
-        'rpCatalogUrl' => get_option('fides_credential_catalog_rp_catalog_url', 'https://fides.community/community-tools/relying-party-catalog/'),
-        'issuerAggregatedUrl' => get_option(
+    $plugin_url = FIDES_CREDENTIAL_CATALOG_PLUGIN_URL;
+    $use_local = fides_credential_catalog_is_local_site();
+
+    $credential_data_url = $use_local
+        ? $plugin_url . 'data/aggregated.json'
+        : 'https://raw.githubusercontent.com/FIDEScommunity/fides-credential-catalog/main/data/aggregated.json';
+    $issuer_data_url = $use_local
+        ? $plugin_url . 'data/issuer-aggregated.json'
+        : get_option(
             'fides_credential_catalog_issuer_data_url',
             'https://raw.githubusercontent.com/FIDEScommunity/fides-issuer-catalog/main/data/aggregated.json'
-        ),
-        'issuerCatalogUrl' => get_option('fides_credential_catalog_issuer_catalog_url', 'https://fides.community/community-tools/issuer-catalog/')
+        );
+    $rp_data_url = $use_local
+        ? $plugin_url . 'data/rp-aggregated.json'
+        : get_option(
+            'fides_credential_catalog_rp_data_url',
+            'https://raw.githubusercontent.com/FIDEScommunity/fides-rp-catalog/main/data/aggregated.json'
+        );
+    $wallet_catalog_url = $use_local
+        ? rtrim(get_site_url(), '/') . '/community-tools/personal-wallets/'
+        : get_option('fides_credential_catalog_wallet_catalog_url', 'https://fides.community/community-tools/personal-wallets/');
+
+    wp_localize_script('fides-credential-catalog-script', 'fidesCredentialCatalog', array(
+        'pluginUrl' => $plugin_url,
+        'githubDataUrl' => $credential_data_url,
+        'rpAggregatedUrl' => $rp_data_url,
+        'rpCatalogUrl' => get_option('fides_credential_catalog_rp_catalog_url', 'https://fides.community/community-tools/relying-party-catalog/'),
+        'issuerAggregatedUrl' => $issuer_data_url,
+        'issuerCatalogUrl' => get_option('fides_credential_catalog_issuer_catalog_url', 'https://fides.community/community-tools/issuer-catalog/'),
+        'walletCatalogUrl' => $wallet_catalog_url
     ));
 }
 add_action('wp_enqueue_scripts', 'fides_credential_catalog_enqueue_assets');
@@ -106,6 +143,12 @@ function fides_credential_catalog_register_settings() {
         'default' => 'https://fides.community/community-tools/relying-party-catalog/',
         'sanitize_callback' => 'esc_url_raw'
     ));
+
+    register_setting('fides_credential_catalog_settings', 'fides_credential_catalog_wallet_catalog_url', array(
+        'type' => 'string',
+        'default' => 'https://wallets.fides.community',
+        'sanitize_callback' => 'esc_url_raw'
+    ));
 }
 add_action('admin_init', 'fides_credential_catalog_register_settings');
 
@@ -131,6 +174,14 @@ function fides_credential_catalog_settings_page() {
                     <td>
                         <input type="url" id="fides_credential_catalog_rp_catalog_url" name="fides_credential_catalog_rp_catalog_url"
                                value="<?php echo esc_attr(get_option('fides_credential_catalog_rp_catalog_url', 'https://fides.community/community-tools/relying-party-catalog/')); ?>"
+                               class="regular-text">
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row"><label for="fides_credential_catalog_wallet_catalog_url">Wallet Catalog Base URL</label></th>
+                    <td>
+                        <input type="url" id="fides_credential_catalog_wallet_catalog_url" name="fides_credential_catalog_wallet_catalog_url"
+                               value="<?php echo esc_attr(get_option('fides_credential_catalog_wallet_catalog_url', 'https://fides.community/community-tools/personal-wallets/')); ?>"
                                class="regular-text">
                     </td>
                 </tr>

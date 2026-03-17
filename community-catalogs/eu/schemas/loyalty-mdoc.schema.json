@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "eu.europa.ec.eudi.loyalty.1": {
+      "type": "object",
+      "properties": {
+        "properties": {
+          "given_name": {
+            "type": "string",
+            "description": "Given Name"
+          },
+          "family_name": {
+            "type": "string",
+            "description": "Family Name"
+          },
+          "company": {
+            "type": "string",
+            "description": "Loyalty Card Company"
+          },
+          "client_id": {
+            "type": "string",
+            "description": "Client ID"
+          },
+          "issuance_date": {
+            "type": "string",
+            "description": "Issuance Date"
+          },
+          "expiry_date": {
+            "type": "string",
+            "description": "Expiry Date"
+          }
+        }
+      }
+    }
+  },
+  "additionalProperties": true,
+  "$id": "https://eudi.example.org/schemas/loyalty-mdoc.schema.json",
+  "title": "Loyalty (MSO Mdoc)",
+  "docType": "eu.europa.ec.eudi.loyalty.1"
+}

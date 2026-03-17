@@ -1,0 +1,63 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "eu.europa.ec.eudi.ehic.1": {
+      "type": "object",
+      "properties": {
+        "properties": {
+          "credential_holder": {
+            "type": "object",
+            "description": "Credential Holder"
+          },
+          "subject": {
+            "type": "object",
+            "description": "Subject"
+          },
+          "social_security_pin": {
+            "type": "string",
+            "description": "Social Security Pin"
+          },
+          "starting_date": {
+            "type": "string",
+            "format": "date",
+            "description": "Starting Date"
+          },
+          "ending_date": {
+            "type": "string",
+            "format": "date",
+            "description": "Ending Date"
+          },
+          "document_id": {
+            "type": "string",
+            "description": "Document ID"
+          },
+          "competent_institution": {
+            "type": "object",
+            "description": "Institution ID"
+          },
+          "issuance_date": {
+            "type": "string",
+            "description": "Issuance Date"
+          },
+          "expiry_date": {
+            "type": "string",
+            "description": "Expiry Date"
+          },
+          "issuing_authority": {
+            "type": "string",
+            "description": "Issuance Authority"
+          },
+          "issuing_country": {
+            "type": "string",
+            "description": "Issuing Country"
+          }
+        }
+      }
+    }
+  },
+  "additionalProperties": true,
+  "$id": "https://eudi.example.org/schemas/ehic-mdoc.schema.json",
+  "title": "EHIC (MSO Mdoc)",
+  "docType": "eu.europa.ec.eudi.ehic.1"
+}

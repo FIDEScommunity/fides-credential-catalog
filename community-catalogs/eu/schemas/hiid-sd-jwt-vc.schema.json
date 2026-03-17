@@ -1,0 +1,90 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "health_insurance_id": {
+      "type": "string",
+      "description": "Health Insurance ID"
+    },
+    "patient_id": {
+      "type": "string",
+      "description": "Patient ID"
+    },
+    "tax_number": {
+      "type": "string",
+      "description": "Tax Number"
+    },
+    "one_time_token": {
+      "type": "string",
+      "description": "One Time Token"
+    },
+    "affiliation_country": {
+      "type": "string",
+      "description": "Affiliation Country"
+    },
+    "issuance_date": {
+      "type": "string",
+      "description": "Issuance Date"
+    },
+    "expiry_date": {
+      "type": "string",
+      "description": "Expiry Date"
+    },
+    "matching_institution-id": {
+      "type": "string",
+      "description": "Matching Institution ID"
+    },
+    "matching_registered_family_name": {
+      "type": "string",
+      "description": "Matching Registered Family Name"
+    },
+    "matching_registered_given_name": {
+      "type": "string",
+      "description": "Matching Registered Given Name"
+    },
+    "matching_resident_address": {
+      "type": "string",
+      "description": "Matching Resident Address"
+    },
+    "matching_birth_place": {
+      "type": "string",
+      "description": "Mathing Birth Place"
+    },
+    "matching_birth_date": {
+      "type": "string",
+      "format": "date",
+      "description": "Matching Birth Date"
+    },
+    "issuing_authority": {
+      "type": "string",
+      "description": "Issuing Authority"
+    },
+    "document_number": {
+      "type": "string",
+      "description": "Document Number"
+    },
+    "administrative_number": {
+      "type": "string",
+      "description": "Administrative_Number"
+    },
+    "issuing_country": {
+      "type": "string",
+      "description": "Issuing_Country"
+    },
+    "issuing_jurisdiction": {
+      "type": "string",
+      "description": "Issuing Jurisdiction"
+    }
+  },
+  "additionalProperties": true,
+  "required": [
+    "affiliation_country",
+    "issuance_date",
+    "expiry_date",
+    "issuing_authority",
+    "issuing_country"
+  ],
+  "$id": "https://eudi.example.org/schemas/hiid-sd-jwt-vc.schema.json",
+  "title": "Health ID (SD-JWT VC)",
+  "vct": "urn:eu.europa.ec.eudi:hiid:1"
+}

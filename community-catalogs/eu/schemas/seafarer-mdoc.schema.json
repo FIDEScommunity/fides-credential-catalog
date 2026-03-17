@@ -1,0 +1,94 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "eu.europa.ec.eudi.seafarer.1": {
+      "type": "object",
+      "properties": {
+        "properties": {
+          "family_name": {
+            "type": "string",
+            "description": "Family Name(s)"
+          },
+          "given_name": {
+            "type": "string",
+            "description": "Given Name(s)"
+          },
+          "birth_date": {
+            "type": "string",
+            "format": "date",
+            "description": "Birth Date"
+          },
+          "issue_date": {
+            "type": "string",
+            "description": "Date of issue"
+          },
+          "issue_place": {
+            "type": "string",
+            "description": "Place of Issue"
+          },
+          "expiry_date": {
+            "type": "string",
+            "description": "Expiry Date"
+          },
+          "issuing_country": {
+            "type": "string",
+            "description": "Issuing Country"
+          },
+          "issuing_authority": {
+            "type": "string",
+            "description": "Issuance Authority"
+          },
+          "issuing_authority_logo": {
+            "type": "string",
+            "description": "Issuance Authority Logo"
+          },
+          "document_name": {
+            "type": "string",
+            "description": "Document Name"
+          },
+          "document_number": {
+            "type": "string",
+            "description": "Document Number"
+          },
+          "portrait": {
+            "type": "string",
+            "contentEncoding": "base64",
+            "contentMediaType": "image/jpeg",
+            "description": "Portrait Image"
+          },
+          "capacities": {
+            "type": "object",
+            "description": "Capacities"
+          },
+          "family_name_issuing_officer": {
+            "type": "string",
+            "description": "Family Name Issuing Officer"
+          },
+          "given_name_issuing_officer": {
+            "type": "string",
+            "description": "Given Name Issuing Officer"
+          },
+          "signature_usual_mark_issuing_officer": {
+            "type": "string",
+            "contentEncoding": "base64",
+            "contentMediaType": "image/jpeg",
+            "description": "Issuing Officer Signature"
+          },
+          "title_issuing_officer": {
+            "type": "string",
+            "description": "Title Issuing Officer"
+          },
+          "stcw_code": {
+            "type": "string",
+            "description": "STCW Code"
+          }
+        }
+      }
+    }
+  },
+  "additionalProperties": true,
+  "$id": "https://eudi.example.org/schemas/seafarer-mdoc.schema.json",
+  "title": "Seafarer (MSO Mdoc)",
+  "docType": "eu.europa.ec.eudi.seafarer.1"
+}

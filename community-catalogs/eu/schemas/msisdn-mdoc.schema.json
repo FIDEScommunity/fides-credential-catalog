@@ -1,0 +1,66 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "eu.europa.ec.eudi.msisdn.1": {
+      "type": "object",
+      "properties": {
+        "properties": {
+          "phone_number": {
+            "type": "string",
+            "description": "Phone Number"
+          },
+          "registered_family_name": {
+            "type": "string",
+            "description": "Registered Family Name"
+          },
+          "registered_given_name": {
+            "type": "string",
+            "description": "Registered Given Name"
+          },
+          "contract_owner": {
+            "type": "boolean",
+            "description": "Contract Owner"
+          },
+          "end_user": {
+            "type": "boolean",
+            "description": "End User"
+          },
+          "mobile_operator": {
+            "type": "string",
+            "description": "Mobile Operator"
+          },
+          "issuance_date": {
+            "type": "string",
+            "description": "Issuance Date"
+          },
+          "expiry_date": {
+            "type": "string",
+            "description": "Expiry Date"
+          },
+          "credential_type": {
+            "type": "string",
+            "description": "Credential Type"
+          },
+          "issuing_organization": {
+            "type": "string",
+            "description": "Issuing Organization"
+          },
+          "phone_number_in_use": {
+            "type": "integer",
+            "minimum": 0,
+            "description": "Phone Number in Use"
+          },
+          "document_number": {
+            "type": "string",
+            "description": "Document Number"
+          }
+        }
+      }
+    }
+  },
+  "additionalProperties": true,
+  "$id": "https://eudi.example.org/schemas/msisdn-mdoc.schema.json",
+  "title": "MSISDN (MSO Mdoc)",
+  "docType": "eu.europa.ec.eudi.msisdn.1"
+}

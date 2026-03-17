@@ -1,0 +1,125 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "eu.europa.ec.eudi.pid.1": {
+      "type": "object",
+      "properties": {
+        "properties": {
+          "family_name": {
+            "type": "string",
+            "description": "Family Name(s)"
+          },
+          "given_name": {
+            "type": "string",
+            "description": "Given Name(s)"
+          },
+          "birth_date": {
+            "type": "string",
+            "format": "date",
+            "description": "Birth Date"
+          },
+          "family_name_birth": {
+            "type": "string",
+            "description": "Birth Family Name(s)"
+          },
+          "given_name_birth": {
+            "type": "string",
+            "description": "Birth Given Name(s)"
+          },
+          "place_of_birth": {
+            "type": "object",
+            "description": "Birth Place"
+          },
+          "resident_address": {
+            "type": "string",
+            "description": "Resident Address"
+          },
+          "resident_country": {
+            "type": "string",
+            "description": "Resident Country"
+          },
+          "resident_state": {
+            "type": "string",
+            "description": "Resident State"
+          },
+          "resident_city": {
+            "type": "string",
+            "description": "Resident City"
+          },
+          "resident_postal_code": {
+            "type": "string",
+            "description": "Resident Postal Code"
+          },
+          "resident_street": {
+            "type": "string",
+            "description": "Resident Street"
+          },
+          "resident_house_number": {
+            "type": "string",
+            "description": "Resident House Number"
+          },
+          "personal_administrative_number": {
+            "type": "string",
+            "description": "Personal Administrative Number"
+          },
+          "sex": {
+            "type": "integer",
+            "minimum": 0,
+            "description": "Sex"
+          },
+          "email_address": {
+            "type": "string",
+            "description": "Email Address"
+          },
+          "mobile_phone_number": {
+            "type": "string",
+            "description": "Mobile Phone Number"
+          },
+          "nationality": {
+            "type": "object",
+            "description": "Nationality"
+          },
+          "issuance_date": {
+            "type": "string",
+            "description": "Issuance Date"
+          },
+          "expiry_date": {
+            "type": "string",
+            "description": "Expiry Date"
+          },
+          "issuing_authority": {
+            "type": "string",
+            "description": "Issuance Authority"
+          },
+          "document_number": {
+            "type": "string",
+            "description": "Document Number"
+          },
+          "trust_anchor": {
+            "type": "string",
+            "description": "Trust Anchor"
+          },
+          "issuing_country": {
+            "type": "string",
+            "description": "Issuing Country"
+          },
+          "portrait": {
+            "type": "string",
+            "contentEncoding": "base64",
+            "contentMediaType": "image/jpeg",
+            "description": "Portrait Image"
+          },
+          "issuing_jurisdiction": {
+            "type": "string",
+            "description": "Issuing Jurisdiction"
+          }
+        }
+      }
+    }
+  },
+  "additionalProperties": true,
+  "$id": "https://eudi.example.org/schemas/pid-mdoc-deferred-mdoc.schema.json",
+  "title": "PID (MSO Mdoc Deferred)",
+  "docType": "eu.europa.ec.eudi.pid.1"
+}

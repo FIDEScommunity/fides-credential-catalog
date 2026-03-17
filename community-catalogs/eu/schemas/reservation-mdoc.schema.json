@@ -1,0 +1,73 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "org.iso.18013.5.reservation.1": {
+      "type": "object",
+      "properties": {
+        "properties": {
+          "booking_service_name": {
+            "type": "string",
+            "description": "The booking service providing the booking reservation."
+          },
+          "reservation_id": {
+            "type": "string",
+            "description": "The identifier of the booking reservation from the booking service."
+          },
+          "reservation_date": {
+            "type": "string",
+            "format": "date",
+            "description": "Date of the reservation."
+          },
+          "service_provider_name": {
+            "type": "string",
+            "description": "The name of the service provider (e.g. Hotel) the reservation refers to "
+          },
+          "location": {
+            "type": "string",
+            "description": "The location or place the reservation refers to (e.g. city, service provider place, etc.)"
+          },
+          "check_in_date": {
+            "type": "string",
+            "format": "date",
+            "description": "The check-in date for the reservation."
+          },
+          "check_out_date": {
+            "type": "string",
+            "format": "date",
+            "description": "The check-out date for the reservation."
+          },
+          "guests": {
+            "type": "string",
+            "description": "The guest of the reservation (num of adults, num of children, etc)."
+          },
+          "car_rental": {
+            "type": "boolean",
+            "description": "Indicates inclusion of car rental in the reservation."
+          },
+          "num_of_rooms": {
+            "type": "string",
+            "description": "The number of rooms the reservation refers to."
+          },
+          "family_name": {
+            "type": "string",
+            "description": "Current last name(s) or surname(s) of the holder. "
+          },
+          "given_name": {
+            "type": "string",
+            "description": "Current first name(s), including middle name(s), of the holder. "
+          },
+          "birth_date": {
+            "type": "string",
+            "format": "date",
+            "description": "Day, month, and year on which the holder was born."
+          }
+        }
+      }
+    }
+  },
+  "additionalProperties": true,
+  "$id": "https://eudi.example.org/schemas/reservation-mdoc.schema.json",
+  "title": "Reservation",
+  "docType": "org.iso.18013.5.1.reservation"
+}
