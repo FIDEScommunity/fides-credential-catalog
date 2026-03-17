@@ -1,0 +1,48 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$comment": "This schema was automatically generated from EWC issuer metadata and may be provisional or incomplete.",
+  "$id": "https://ewc.example.org/schemas/ferry-boarding-pass-sd-jwt.schema.json",
+  "title": "Ferry Boarding Pass (SD-JWT VC)",
+  "type": "object",
+  "properties": {
+    "identifier": {
+      "type": "string",
+      "description": "Identifier"
+    },
+    "ticketNumber": {
+      "type": "string",
+      "description": "Ticket Number"
+    },
+    "lastName": {
+      "type": "string",
+      "description": "Last Name"
+    },
+    "firstName": {
+      "type": "string",
+      "description": "First Name"
+    },
+    "seatType": {
+      "type": "string",
+      "description": "Seat Type"
+    },
+    "seatNumber": {
+      "type": "string",
+      "description": "Seat Number"
+    },
+    "departureDate": {
+      "type": "string",
+      "format": "date",
+      "description": "Departure Date"
+    },
+    "arrivalPort": {
+      "type": "string",
+      "description": "Arrival Port"
+    },
+    "vesselDescription": {
+      "type": "string",
+      "description": "Vessel Description"
+    }
+  },
+  "additionalProperties": true,
+  "vct": "VerifiableFerryBoardingPassCredentialSDJWT"
+}

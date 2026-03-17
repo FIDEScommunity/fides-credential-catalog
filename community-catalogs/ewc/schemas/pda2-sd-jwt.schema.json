@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$comment": "This schema was automatically generated from EWC issuer metadata and may be provisional or incomplete.",
+  "$id": "https://ewc.example.org/schemas/pda2-sd-jwt.schema.json",
+  "title": "Portable Document A2 (SD-JWT VC)",
+  "type": "object",
+  "properties": {
+    "given_name": {
+      "type": "string",
+      "description": "Given Name"
+    },
+    "last_name": {
+      "type": "string",
+      "description": "Surname"
+    }
+  },
+  "additionalProperties": true,
+  "vct": "VerifiablePortableDocumentA2SDJWT"
+}

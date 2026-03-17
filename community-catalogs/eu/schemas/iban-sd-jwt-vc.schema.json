@@ -103,5 +103,6 @@
   ],
   "$id": "https://eudi.example.org/schemas/iban-sd-jwt-vc.schema.json",
   "title": "IBAN (SD-JWT VC)",
-  "vct": "urn:eu.europa.ec.eudi:iban:1"
+  "vct": "urn:eu.europa.ec.eudi:iban:1",
+  "$comment": "This schema was automatically generated from EUDI issuer metadata and may be provisional or incomplete."
 }

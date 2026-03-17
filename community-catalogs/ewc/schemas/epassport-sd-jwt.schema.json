@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$comment": "This schema was automatically generated from EWC issuer metadata and may be provisional or incomplete.",
+  "$id": "https://ewc.example.org/schemas/epassport-sd-jwt.schema.json",
+  "title": "ePassport (SD-JWT VC)",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Identifier"
+    },
+    "electronicPassport": {
+      "type": "object",
+      "description": "Electronic Passport data including biographical and biometric data groups"
+    }
+  },
+  "additionalProperties": true,
+  "vct": "VerifiableePassportCredentialSDJWT"
+}

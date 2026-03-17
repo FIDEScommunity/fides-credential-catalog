@@ -121,5 +121,6 @@
   "additionalProperties": true,
   "$id": "https://eudi.example.org/schemas/pid-mdoc-deferred-mdoc.schema.json",
   "title": "PID (MSO Mdoc Deferred)",
-  "docType": "eu.europa.ec.eudi.pid.1"
+  "docType": "eu.europa.ec.eudi.pid.1",
+  "$comment": "This schema was automatically generated from EUDI issuer metadata and may be provisional or incomplete."
 }

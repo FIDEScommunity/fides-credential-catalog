@@ -69,5 +69,6 @@
   "additionalProperties": true,
   "$id": "https://eudi.example.org/schemas/reservation-mdoc.schema.json",
   "title": "Reservation",
-  "docType": "org.iso.18013.5.1.reservation"
+  "docType": "org.iso.18013.5.1.reservation",
+  "$comment": "This schema was automatically generated from EUDI issuer metadata and may be provisional or incomplete."
 }

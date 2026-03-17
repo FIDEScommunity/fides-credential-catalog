@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$comment": "This schema was automatically generated from EWC issuer metadata and may be provisional or incomplete.",
+  "$id": "https://ewc.example.org/schemas/photo-id-sd-jwt.schema.json",
+  "title": "Photo ID (SD-JWT VC)",
+  "type": "object",
+  "properties": {
+    "iso23220": {
+      "type": "object",
+      "description": "ISO/IEC 23220-1 identity data including name, birth date, portrait and document details"
+    },
+    "photoid": {
+      "type": "object",
+      "description": "Photo ID specific fields"
+    },
+    "dtc": {
+      "type": "object",
+      "description": "Digital Travel Credential data groups"
+    }
+  },
+  "additionalProperties": true,
+  "vct": "eu.europa.ec.eudi.photoid.1"
+}

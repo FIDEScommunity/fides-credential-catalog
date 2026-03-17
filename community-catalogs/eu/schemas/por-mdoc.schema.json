@@ -59,5 +59,6 @@
   "additionalProperties": true,
   "$id": "https://eudi.example.org/schemas/por-mdoc.schema.json",
   "title": "Power Of Representation (MSO Mdoc)",
-  "docType": "eu.europa.ec.eudi.por.1"
+  "docType": "eu.europa.ec.eudi.por.1",
+  "$comment": "This schema was automatically generated from EUDI issuer metadata and may be provisional or incomplete."
 }

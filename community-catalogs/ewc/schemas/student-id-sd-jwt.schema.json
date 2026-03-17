@@ -1,0 +1,56 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$comment": "This schema was automatically generated from EWC issuer metadata and may be provisional or incomplete.",
+  "$id": "https://ewc.example.org/schemas/student-id-sd-jwt.schema.json",
+  "title": "Student ID (SD-JWT VC)",
+  "type": "object",
+  "properties": {
+    "identifier": {
+      "type": "string",
+      "description": "Identifier"
+    },
+    "schacPersonalUniqueCode": {
+      "type": "string",
+      "description": "SCHAC Personal Unique Code"
+    },
+    "schacPersonalUniqueID": {
+      "type": "string",
+      "description": "SCHAC Personal Unique ID"
+    },
+    "schacHomeOrganization": {
+      "type": "string",
+      "description": "SCHAC Home Organization"
+    },
+    "familyName": {
+      "type": "string",
+      "description": "Family Name"
+    },
+    "firstName": {
+      "type": "string",
+      "description": "First Name"
+    },
+    "displayName": {
+      "type": "string",
+      "description": "Display Name"
+    },
+    "dateOfBirth": {
+      "type": "string",
+      "format": "date",
+      "description": "Date of Birth"
+    },
+    "mail": {
+      "type": "string",
+      "description": "Email"
+    },
+    "eduPersonPrincipalName": {
+      "type": "string",
+      "description": "eduPerson Principal Name"
+    },
+    "eduPersonPrimaryAffiliation": {
+      "type": "string",
+      "description": "eduPerson Primary Affiliation"
+    }
+  },
+  "additionalProperties": true,
+  "vct": "VerifiableStudentIDSDJWT"
+}

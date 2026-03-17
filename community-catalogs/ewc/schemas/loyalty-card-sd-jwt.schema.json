@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$comment": "This schema was automatically generated from EWC issuer metadata and may be provisional or incomplete.",
+  "$id": "https://ewc.example.org/schemas/loyalty-card-sd-jwt.schema.json",
+  "title": "Loyalty Card (SD-JWT VC)",
+  "type": "object",
+  "properties": {
+    "customer.first_name": {
+      "type": "string",
+      "description": "First Name"
+    },
+    "customer.last_name": {
+      "type": "string",
+      "description": "Last Name"
+    },
+    "loyalty_card.id": {
+      "type": "string",
+      "description": "Loyalty Card ID"
+    },
+    "loyalty_card.issue_date": {
+      "type": "string",
+      "format": "date",
+      "description": "Issue Date"
+    },
+    "organization.name": {
+      "type": "string",
+      "description": "Organization Name"
+    },
+    "credential.expiry_date": {
+      "type": "string",
+      "description": "Expiry Date"
+    }
+  },
+  "additionalProperties": true,
+  "vct": "LoyaltyCard"
+}

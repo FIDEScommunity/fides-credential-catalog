@@ -61,5 +61,6 @@
   "additionalProperties": true,
   "$id": "https://eudi.example.org/schemas/pda1-mdoc.schema.json",
   "title": "PDA1 (MSO Mdoc)",
-  "docType": "eu.europa.ec.eudi.pda1.1"
+  "docType": "eu.europa.ec.eudi.pda1.1",
+  "$comment": "This schema was automatically generated from EUDI issuer metadata and may be provisional or incomplete."
 }

@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$comment": "This schema was automatically generated from EWC issuer metadata and may be provisional or incomplete.",
+  "$id": "https://ewc.example.org/schemas/vreceipt-sd-jwt.schema.json",
+  "title": "vReceipt (SD-JWT VC)",
+  "type": "object",
+  "properties": {
+    "purchase_receipt": {
+      "type": "object",
+      "description": "Purchase receipt details including ID, amounts, and line items"
+    },
+    "monetary_total": {
+      "type": "object",
+      "description": "Monetary totals including payable and tax amounts"
+    },
+    "tax_total": {
+      "type": "object",
+      "description": "Tax total details"
+    },
+    "payment_means": {
+      "type": "object",
+      "description": "Payment method details"
+    },
+    "party_name": {
+      "type": "object",
+      "description": "Business name"
+    }
+  },
+  "additionalProperties": true,
+  "vct": "VerifiablevReceiptSDJWT"
+}

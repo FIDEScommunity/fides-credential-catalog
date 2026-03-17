@@ -139,5 +139,6 @@
   ],
   "$id": "https://eudi.example.org/schemas/pid-vc-sd-jwt.schema.json",
   "title": "PID (SD-JWT VC)",
-  "vct": "urn:eudi:pid:1"
+  "vct": "urn:eudi:pid:1",
+  "$comment": "This schema was automatically generated from EUDI issuer metadata and may be provisional or incomplete."
 }

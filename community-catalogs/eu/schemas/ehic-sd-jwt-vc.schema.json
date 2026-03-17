@@ -80,5 +80,6 @@
   ],
   "$id": "https://eudi.example.org/schemas/ehic-sd-jwt-vc.schema.json",
   "title": "EHIC (SD-JWT VC)",
-  "vct": "urn:eudi:ehic:1"
+  "vct": "urn:eudi:ehic:1",
+  "$comment": "This schema was automatically generated from EUDI issuer metadata and may be provisional or incomplete."
 }
