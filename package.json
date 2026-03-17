@@ -10,7 +10,8 @@
     "validate": "ajv validate --spec=draft2020 -c ajv-formats -s schemas/credential-catalog.schema.json -d 'community-catalogs/**/credential-catalog.json'",
     "generate-eudi-schemas": "tsx scripts/generate-eudi-schemas.ts",
     "copy-issuer-aggregated": "node scripts/copy-issuer-aggregated.js",
-    "copy-rp-aggregated": "node scripts/copy-rp-aggregated.js"
+    "copy-rp-aggregated": "node scripts/copy-rp-aggregated.js",
+    "check-links": "tsx scripts/check-links.ts"
   },
   "repository": {
     "type": "git",

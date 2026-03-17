@@ -1,0 +1,80 @@
+name: Check Links
+
+on:
+  schedule:
+    - cron: '0 2 * * 1'
+  workflow_dispatch:
+
+jobs:
+  check-links:
+    name: Linkcheck
+    runs-on: ubuntu-latest
+    if: github.repository == 'FIDEScommunity/fides-credential-catalog'
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run linkcheck
+        run: npm run check-links
+
+      - name: Upload linkcheck report
+        uses: actions/upload-artifact@v4
+        with:
+          name: Linkcheck report - ${{ github.run_id }}
+          path: |
+            data/linkcheck-report.json
+            data/linkcheck-summary.md
+
+      - name: Update Broken links report issue
+        if: always()
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const reportPath = 'data/linkcheck-report.json';
+            const summaryPath = 'data/linkcheck-summary.md';
+            let body = 'Weekly linkcheck run: ' + new Date().toISOString().slice(0, 10) + '\n\n';
+            if (fs.existsSync(reportPath)) {
+              const report = JSON.parse(fs.readFileSync(reportPath, 'utf8'));
+              body += `- Total URLs checked: ${report.totalUrls}\n`;
+              body += `- Broken: ${report.brokenCount}\n\n`;
+              if (fs.existsSync(summaryPath)) {
+                body += fs.readFileSync(summaryPath, 'utf8');
+              }
+            } else {
+              body += 'No report generated (run may have failed before writing).\n';
+            }
+            const { data: issues } = await github.rest.issues.listForRepo({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              state: 'open',
+            });
+            const title = 'Broken links report';
+            let issue = issues.find(i => i.title === title);
+            if (!issue) {
+              issue = await github.rest.issues.create({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                title,
+                body,
+              });
+              issue = issue.data;
+            } else {
+              await github.rest.issues.update({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: issue.number,
+                body,
+              });
+            }
+            console.log('Issue number:', issue.number);
