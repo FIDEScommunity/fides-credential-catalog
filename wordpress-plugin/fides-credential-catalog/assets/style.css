@@ -436,6 +436,26 @@
   opacity: 1;
 }
 
+.fides-filter-label-with-info {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  flex: 0 1 auto;
+  min-width: 0;
+}
+.fides-filter-label-with-info .fides-filter-label {
+  flex: 0 1 auto;
+  min-width: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.fides-filter-toggle-spacer {
+  flex: 1;
+  min-width: 0.5rem;
+}
+
 .fides-filter-label-toggle svg {
   transition: transform 0.2s;
   flex-shrink: 0;
@@ -443,6 +463,115 @@
 
 .fides-filter-group.collapsed .fides-filter-label-toggle svg {
   transform: rotate(-90deg);
+}
+
+/* Vocabulary (i) info button */
+.fides-vocab-info {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.25rem;
+  height: 1.25rem;
+  padding: 0;
+  margin: 0;
+  border: 1px solid var(--fides-border);
+  border-radius: 50%;
+  background: var(--fides-bg-secondary);
+  color: var(--fides-text-muted);
+  font-size: 0.7rem;
+  font-weight: 700;
+  font-style: normal;
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: color 0.2s, background 0.2s, border-color 0.2s, transform 0.15s;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
+}
+.fides-vocab-info:hover {
+  color: #fff;
+  background: var(--fides-accent);
+  border-color: var(--fides-accent);
+  transform: scale(1.05);
+}
+.fides-vocab-info:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px var(--fides-accent);
+}
+.fides-credential-catalog[data-theme="fides"] .fides-vocab-info:hover,
+.fides-credential-catalog[data-theme="light"] .fides-vocab-info:hover {
+  background: var(--fides-accent);
+  border-color: var(--fides-accent);
+  color: #fff;
+}
+
+/* Overlay backdrop */
+.fides-vocab-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 10000000;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+.fides-vocab-overlay.visible {
+  opacity: 1;
+}
+
+/* Vocabulary popup */
+.fides-vocab-popup {
+  position: fixed;
+  z-index: 10000001;
+  max-width: 480px;
+  max-height: 75vh;
+  overflow-y: auto;
+  padding: 1.125rem 1.375rem;
+  background: #ffffff;
+  color: #1e293b;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  font-size: 0.875rem;
+  line-height: 1.55;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12), 0 4px 12px rgba(0, 0, 0, 0.08);
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+.fides-vocab-popup.visible {
+  opacity: 1;
+}
+.fides-vocab-popup-title {
+  margin: 0 0 0.5rem 0;
+  color: #1e293b;
+}
+.fides-vocab-popup-intro {
+  margin: 0 0 0.875rem 0;
+  color: #475569;
+  font-size: 0.875rem;
+}
+.fides-vocab-popup-list {
+  margin: 0;
+  padding-left: 1.375rem;
+  color: #334155;
+}
+.fides-vocab-popup-list li {
+  margin-bottom: 0.5rem;
+}
+.fides-vocab-popup-list li:last-child {
+  margin-bottom: 0;
+}
+.fides-vocab-popup-list strong {
+  color: #1e293b;
+}
+
+@media (max-width: 520px) {
+  .fides-vocab-popup {
+    left: 1rem !important;
+    right: 1rem !important;
+    width: auto !important;
+    max-width: none !important;
+    max-height: 85vh;
+  }
 }
 
 .fides-filter-option-count {

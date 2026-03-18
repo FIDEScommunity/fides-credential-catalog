@@ -88,7 +88,9 @@ function fides_credential_catalog_enqueue_assets() {
         'rpCatalogUrl' => get_option('fides_credential_catalog_rp_catalog_url', 'https://fides.community/community-tools/relying-party-catalog/'),
         'issuerAggregatedUrl' => $issuer_data_url,
         'issuerCatalogUrl' => get_option('fides_credential_catalog_issuer_catalog_url', 'https://fides.community/community-tools/issuer-catalog/'),
-        'walletCatalogUrl' => $wallet_catalog_url
+        'walletCatalogUrl' => $wallet_catalog_url,
+        'vocabularyUrl' => 'https://raw.githubusercontent.com/FIDEScommunity/fides-interop-profiles/main/data/vocabulary.json',
+        'vocabularyFallbackUrl' => $plugin_url . 'assets/vocabulary.json',
     ));
 }
 add_action('wp_enqueue_scripts', 'fides_credential_catalog_enqueue_assets');

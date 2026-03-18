@@ -12,6 +12,13 @@
     'mdoc':      'mDL/mDoc',
   };
 
+  const CREDENTIAL_FILTER_TO_VOCAB = {
+    vcFormat:    'credentialFormat',
+    subjectType: 'subjectType',
+    authority:   'authority',
+    schemaType:  'schemaType',
+  };
+
   const settings = {
     showFilters: root.dataset.showFilters !== "false",
     showSearch: root.dataset.showSearch !== "false",
@@ -52,6 +59,7 @@
   let walletUsageMap = new Map();
   let selectedCredential = null;
   let sortBy = "lastUpdated";
+  let vocabulary = null;
 
   const filters = {
     search: "",
@@ -458,7 +466,7 @@
                 <input type="checkbox" data-filter-group="${escapeHtml(key)}" value="${escapeHtml(option)}" ${
                   selected.includes(option) ? "checked" : ""
                 }>
-                <span>${escapeHtml(option)}<span class="fides-filter-option-count">(${facets?.[key]?.[option] || 0})</span></span>
+                <span>${escapeHtml(VC_FORMAT_LABELS[option] || option)}<span class="fides-filter-option-count">(${facets?.[key]?.[option] || 0})</span></span>
               </label>
             `
           )
@@ -1149,6 +1157,8 @@
         btn.setAttribute("aria-expanded", isOpen ? "true" : "false");
       });
     });
+
+    initVocabularyInfo(root);
   }
 
   function bindCredentialCardEvents() {
@@ -1202,9 +1212,139 @@
     }
   }
 
+  async function loadVocabulary(primaryUrl, fallbackUrl) {
+    const tryLoad = async (url) => {
+      const res = await fetch(url);
+      if (!res.ok) throw new Error('HTTP ' + res.status);
+      const data = await res.json();
+      return data.terms || null;
+    };
+    if (primaryUrl) {
+      try { return await tryLoad(primaryUrl); } catch (e) { console.warn('Vocabulary load failed (primary):', e.message); }
+    }
+    if (fallbackUrl) {
+      try {
+        const terms = await tryLoad(fallbackUrl);
+        if (terms) console.log('Vocabulary loaded from fallback');
+        return terms;
+      } catch (e) { console.warn('Vocabulary load failed (fallback):', e.message); }
+    }
+    return null;
+  }
+
+  function hideVocabularyPopup() {
+    const overlay = document.querySelector('.fides-vocab-overlay');
+    const popup = document.querySelector('.fides-vocab-popup');
+    if (overlay) overlay.remove();
+    if (popup) popup.remove();
+  }
+
+  function showVocabularyPopup(button, groupEl, vocabKey) {
+    hideVocabularyPopup();
+    const groupTerm = vocabulary[vocabKey];
+    const categoryName = (groupEl.querySelector('.fides-filter-label') || {}).textContent?.trim() || '';
+    let html = '';
+    if (categoryName) html += '<p class="fides-vocab-popup-title"><strong>' + escapeHtml(categoryName) + '</strong></p>';
+    if (groupTerm && groupTerm.description) html += '<p class="fides-vocab-popup-intro">' + escapeHtml(groupTerm.description) + '</p>';
+    const optionsEl = groupEl.querySelector('.fides-filter-options');
+    if (optionsEl) {
+      const labels = optionsEl.querySelectorAll('label.fides-filter-checkbox');
+      if (labels.length > 0) {
+        const listItems = [];
+        labels.forEach((label) => {
+          const input = label.querySelector('input');
+          const value = input ? (input.dataset.value || input.value) : '';
+          const labelText = (label.querySelector('span') || label).textContent.trim();
+          const term = vocabulary[value] || null;
+          const desc = term && term.description ? escapeHtml(term.description) : '';
+          listItems.push({ labelText, desc });
+        });
+        const hasAnyOptionDesc = listItems.some((item) => item.desc);
+        if (hasAnyOptionDesc) {
+          html += '<ul class="fides-vocab-popup-list">';
+          listItems.forEach((item) => {
+            html += '<li><strong>' + escapeHtml(item.labelText) + '</strong>' + (item.desc ? ': ' + item.desc : '') + '</li>';
+          });
+          html += '</ul>';
+        }
+      }
+    }
+    if (!html) html = '<p>No description available.</p>';
+    const popup = document.createElement('div');
+    popup.className = 'fides-vocab-popup';
+    popup.setAttribute('role', 'dialog');
+    popup.setAttribute('aria-label', 'Filter explanation');
+    popup.innerHTML = html;
+    const overlay = document.createElement('div');
+    overlay.className = 'fides-vocab-overlay';
+    document.body.appendChild(overlay);
+    document.body.appendChild(popup);
+    const margin = 20;
+    const rect = button.getBoundingClientRect();
+    const w = window.innerWidth;
+    const h = window.innerHeight;
+    const pw = popup.offsetWidth;
+    const ph = popup.offsetHeight;
+    const left = Math.max(margin, Math.min(rect.right + 40, w - pw - margin));
+    const top = Math.max(margin, Math.min((h - ph) / 2, h - ph - margin));
+    popup.style.left = left + 'px';
+    popup.style.top = top + 'px';
+    setTimeout(() => { overlay.classList.add('visible'); popup.classList.add('visible'); }, 10);
+    const close = (e) => {
+      if (e && e.target.closest && e.target.closest('.fides-vocab-popup')) return;
+      hideVocabularyPopup();
+      document.removeEventListener('click', close, true);
+      document.removeEventListener('keydown', onKeydown);
+    };
+    function onKeydown(e) { if (e.key === 'Escape') close(); }
+    document.addEventListener('keydown', onKeydown);
+    setTimeout(() => document.addEventListener('click', close, true), 0);
+  }
+
+  function initVocabularyInfo(containerEl) {
+    if (!vocabulary) return;
+    hideVocabularyPopup();
+    containerEl.querySelectorAll('.fides-vocab-info').forEach((btn) => btn.remove());
+    containerEl.querySelectorAll('.fides-filter-group').forEach((groupEl) => {
+      const toggle = groupEl.querySelector('.fides-filter-label-toggle');
+      const labelSpan = toggle && toggle.querySelector('.fides-filter-label');
+      if (!toggle || !labelSpan) return;
+      const filterGroup = groupEl.dataset.filterGroup;
+      const vocabKey = CREDENTIAL_FILTER_TO_VOCAB[filterGroup] || filterGroup;
+      const infoBtn = document.createElement('button');
+      infoBtn.type = 'button';
+      infoBtn.className = 'fides-vocab-info';
+      infoBtn.dataset.group = vocabKey;
+      infoBtn.setAttribute('aria-label', 'Explain filter');
+      infoBtn.textContent = 'i';
+      infoBtn.addEventListener('click', function (e) {
+        e.preventDefault();
+        e.stopPropagation();
+        showVocabularyPopup(e.currentTarget, groupEl, vocabKey);
+      });
+      const parent = labelSpan.parentNode;
+      if (parent.classList && parent.classList.contains('fides-filter-label-with-info')) {
+        parent.appendChild(infoBtn);
+        return;
+      }
+      const wrapper = document.createElement('div');
+      wrapper.className = 'fides-filter-label-with-info';
+      parent.insertBefore(wrapper, labelSpan);
+      wrapper.appendChild(labelSpan);
+      wrapper.appendChild(infoBtn);
+      const spacer = document.createElement('span');
+      spacer.className = 'fides-filter-toggle-spacer';
+      spacer.setAttribute('aria-hidden', 'true');
+      parent.insertBefore(spacer, wrapper.nextSibling);
+    });
+  }
+
   async function init() {
     await loadCredentials();
     await Promise.all([loadRPUsage(), loadIssuerUsage()]);
+    if (config.vocabularyUrl || config.vocabularyFallbackUrl) {
+      vocabulary = await loadVocabulary(config.vocabularyUrl, config.vocabularyFallbackUrl);
+    }
     openFromQueryParam();
     render();
   }

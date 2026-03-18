@@ -1,0 +1,60 @@
+{
+  "$schema": "https://fides.community/schemas/vocabulary/v1",
+  "version": "1.0.0",
+  "terms": {
+    "credentialFormat": {
+      "description": "The technical format in which credentials are encoded. Different formats support different features like selective disclosure, privacy protection, or compatibility with specific standards."
+    },
+    "sd_jwt_vc": {
+      "description": "IETF JWT-based format allowing holders to selectively reveal only necessary claims using cryptographic hashing."
+    },
+    "mdoc": {
+      "description": "ISO (18013-5) binary (CBOR) format for mobile documents with strong authentication and selective disclosure."
+    },
+    "vcdm_1_1": {
+      "description": "W3C Verifiable Credential Data Model 1.1 using JSON Web Tokens for signing and verification."
+    },
+    "vcdm_2_0": {
+      "description": "W3C Verifiable Credential Data Model 2.0 with JSON-LD support for rich semantic data and linked data capabilities."
+    },
+    "acdc": {
+      "description": "Authentic Chained Data Container: a verifiable credential format based on KERI (Key Event Receipt Infrastructure) for self-certifying identifiers."
+    },
+    "other": {
+      "description": "A credential format not covered by the standard formats listed above."
+    },
+    "subjectType": {
+      "description": "The type of entity the credential is issued about. Indicates whether the credential describes a person, an organization, a product, or another type of entity."
+    },
+    "Person": {
+      "description": "The credential is issued about a natural person (individual human being)."
+    },
+    "Organization": {
+      "description": "The credential is issued about a legal entity such as a company, association, or government body."
+    },
+    "Product": {
+      "description": "The credential is issued about a physical or digital product."
+    },
+    "Dataset": {
+      "description": "The credential is issued about a dataset or data collection."
+    },
+    "Software": {
+      "description": "The credential is issued about a software application or system."
+    },
+    "Document": {
+      "description": "The credential is issued about a document or formal record."
+    },
+    "authority": {
+      "description": "The organization or body responsible for defining and governing the credential type. The authority determines the schema, rules, and trust framework that applies to the credential."
+    },
+    "schemaType": {
+      "description": "The format used to formally define the structure and constraints of the credential's claims, enabling machine-readable validation."
+    },
+    "JSON Schema": {
+      "description": "A vocabulary for annotating and validating JSON documents. Widely used to define the structure, types, and constraints of credential claims."
+    },
+    "OCA": {
+      "description": "Overlays Capture Architecture: a standardized method for defining the structure, semantics, and presentation of data. Enables multi-language support and machine-readable credential schemas."
+    }
+  }
+}
