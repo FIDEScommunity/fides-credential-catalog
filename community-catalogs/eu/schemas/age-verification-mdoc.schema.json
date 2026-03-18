@@ -1,0 +1,47 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$comment": "This schema was automatically generated from EUDI issuer metadata and may be provisional or incomplete.",
+  "$id": "https://eudi.example.org/schemas/age-verification-mdoc.schema.json",
+  "title": "Age Verification (MSO Mdoc)",
+  "type": "object",
+  "properties": {
+    "eu.europa.ec.av.1": {
+      "type": "object",
+      "properties": {
+        "properties": {
+          "age_over_18": {
+            "type": "boolean",
+            "description": "Age Over 18"
+          },
+          "age_over_21": {
+            "type": "boolean",
+            "description": "Age Over 21"
+          },
+          "age_in_years": {
+            "type": "integer",
+            "description": "Age in Years"
+          },
+          "age_birth_year": {
+            "type": "integer",
+            "description": "Year of Birth"
+          },
+          "expiry_date": {
+            "type": "string",
+            "format": "date",
+            "description": "Expiry Date"
+          },
+          "issuing_country": {
+            "type": "string",
+            "description": "Issuing Country"
+          },
+          "issuing_authority": {
+            "type": "string",
+            "description": "Issuing Authority"
+          }
+        }
+      }
+    }
+  },
+  "additionalProperties": true,
+  "docType": "eu.europa.ec.av.1"
+}

@@ -1,0 +1,52 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$comment": "This schema was automatically generated from EUDI issuer metadata and may be provisional or incomplete.",
+  "$id": "https://eudi.example.org/schemas/photoid-mdoc-alt.schema.json",
+  "title": "Photo ID (MSO Mdoc)",
+  "type": "object",
+  "properties": {
+    "org.iso.23220.photoid.1": {
+      "type": "object",
+      "properties": {
+        "properties": {
+          "given_name": {
+            "type": "string",
+            "description": "Given Name"
+          },
+          "family_name": {
+            "type": "string",
+            "description": "Family Name"
+          },
+          "birth_date": {
+            "type": "string",
+            "format": "date",
+            "description": "Birth Date"
+          },
+          "portrait": {
+            "type": "string",
+            "description": "Portrait (photo)"
+          },
+          "document_number": {
+            "type": "string",
+            "description": "Document Number"
+          },
+          "expiry_date": {
+            "type": "string",
+            "format": "date",
+            "description": "Expiry Date"
+          },
+          "issuing_country": {
+            "type": "string",
+            "description": "Issuing Country"
+          },
+          "issuing_authority": {
+            "type": "string",
+            "description": "Issuing Authority"
+          }
+        }
+      }
+    }
+  },
+  "additionalProperties": true,
+  "docType": "org.iso.23220.photoid.1"
+}

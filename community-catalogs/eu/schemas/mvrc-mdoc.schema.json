@@ -1,0 +1,56 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$comment": "This schema was automatically generated from EUDI issuer metadata and may be provisional or incomplete.",
+  "$id": "https://eudi.example.org/schemas/mvrc-mdoc.schema.json",
+  "title": "Vehicle Registration Certificate (MSO Mdoc)",
+  "type": "object",
+  "properties": {
+    "org.iso.7367.1.mVRC": {
+      "type": "object",
+      "properties": {
+        "properties": {
+          "registration_number": {
+            "type": "string",
+            "description": "Registration Number (License Plate)"
+          },
+          "vin": {
+            "type": "string",
+            "description": "Vehicle Identification Number (VIN)"
+          },
+          "make": {
+            "type": "string",
+            "description": "Make (Manufacturer)"
+          },
+          "model": {
+            "type": "string",
+            "description": "Model"
+          },
+          "registration_date": {
+            "type": "string",
+            "format": "date",
+            "description": "First Registration Date"
+          },
+          "expiry_date": {
+            "type": "string",
+            "format": "date",
+            "description": "Expiry Date"
+          },
+          "owner_id": {
+            "type": "string",
+            "description": "Owner Identifier"
+          },
+          "issuing_country": {
+            "type": "string",
+            "description": "Issuing Country"
+          },
+          "issuing_authority": {
+            "type": "string",
+            "description": "Issuing Authority"
+          }
+        }
+      }
+    }
+  },
+  "additionalProperties": true,
+  "docType": "org.iso.7367.1.mVRC"
+}
