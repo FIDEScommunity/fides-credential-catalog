@@ -69,6 +69,7 @@
     schemaType: [],
     hasSchemaUrl: null,
     usedByRPsOnly: false,
+    hasIssuersOnly: false,
     addedLast30Days: false,
     updatedLast30Days: false,
     ids: []
@@ -392,6 +393,7 @@
       if (filters.schemaType.length > 0 && !filters.schemaType.includes(credential.schemaType)) return false;
       if (filters.hasSchemaUrl === true && !credential.schemaUrl) return false;
       if (filters.usedByRPsOnly && !(rpUsageMap.get(credential.id) || []).length) return false;
+      if (filters.hasIssuersOnly && !(issuerUsageMap.get(credential.id) || []).length) return false;
       if (filters.addedLast30Days && !isWithinLastDays(credential.firstSeenAt, 30)) return false;
       if (filters.updatedLast30Days && !isWithinLastDays(credential.updatedAt, 30)) return false;
       return true;
@@ -411,35 +413,38 @@
 
   function computeMetrics() {
     const total = credentials.length;
-    let newLast30Days = 0;
-    let updatedLast30Days = 0;
+    let recentActivity = 0;
     let usedByRPs = 0;
+    const uniqueIssuerIds = new Set();
     for (const credential of credentials) {
-      if (isWithinLastDays(credential.firstSeenAt, 30)) newLast30Days += 1;
-      if (isWithinLastDays(credential.updatedAt, 30)) updatedLast30Days += 1;
+      if (isWithinLastDays(credential.firstSeenAt, 30) || isWithinLastDays(credential.updatedAt, 30)) recentActivity += 1;
       if ((rpUsageMap.get(credential.id) || []).length > 0) usedByRPs += 1;
+      for (const issuer of (issuerUsageMap.get(credential.id) || [])) {
+        uniqueIssuerIds.add(issuer.id);
+      }
     }
-    return { total, newLast30Days, updatedLast30Days, usedByRPs };
+    return { total, recentActivity, usedByRPs, issuers: uniqueIssuerIds.size };
   }
 
   function renderKpiCards(metrics) {
+    const recentActive = filters.addedLast30Days || filters.updatedLast30Days;
     return `
       <div class="fides-kpi-row">
         <button class="fides-kpi-card" data-kpi-action="reset">
           <span class="fides-kpi-value">${metrics.total}</span>
           <span class="fides-kpi-label">Credentials</span>
         </button>
-        <button class="fides-kpi-card ${filters.addedLast30Days ? "active" : ""}" data-kpi-action="toggle-added">
-          <span class="fides-kpi-value">${metrics.newLast30Days}</span>
-          <span class="fides-kpi-label">New last 30 days</span>
-        </button>
-        <button class="fides-kpi-card ${filters.updatedLast30Days ? "active" : ""}" data-kpi-action="toggle-updated">
-          <span class="fides-kpi-value">${metrics.updatedLast30Days}</span>
-          <span class="fides-kpi-label">Updated last 30 days</span>
+        <button class="fides-kpi-card ${filters.hasIssuersOnly ? "active" : ""}" data-kpi-action="toggle-issuer">
+          <span class="fides-kpi-value">${metrics.issuers}</span>
+          <span class="fides-kpi-label">Issuers</span>
         </button>
         <button class="fides-kpi-card ${filters.usedByRPsOnly ? "active" : ""}" data-kpi-action="toggle-used">
           <span class="fides-kpi-value">${metrics.usedByRPs}</span>
           <span class="fides-kpi-label">Used by relying parties</span>
+        </button>
+        <button class="fides-kpi-card ${recentActive ? "active" : ""}" data-kpi-action="toggle-recent">
+          <span class="fides-kpi-value">${metrics.recentActivity}</span>
+          <span class="fides-kpi-label">Updated last 30 days</span>
         </button>
       </div>
     `;
@@ -894,6 +899,7 @@
     filters.addedLast30Days = false;
     filters.updatedLast30Days = false;
     filters.usedByRPsOnly = false;
+    filters.hasIssuersOnly = false;
   }
 
   function getActiveFilterCount() {
@@ -905,6 +911,7 @@
     count += filters.ids.length;
     if (filters.hasSchemaUrl) count += 1;
     if (filters.usedByRPsOnly) count += 1;
+    if (filters.hasIssuersOnly) count += 1;
     if (filters.addedLast30Days) count += 1;
     if (filters.updatedLast30Days) count += 1;
     return count;
@@ -1030,12 +1037,14 @@
         if (action === "reset") {
           clearQuickFilters();
           sortBy = "lastUpdated";
-        } else if (action === "toggle-added") {
-          filters.addedLast30Days = !filters.addedLast30Days;
-        } else if (action === "toggle-updated") {
-          filters.updatedLast30Days = !filters.updatedLast30Days;
+        } else if (action === "toggle-issuer") {
+          filters.hasIssuersOnly = !filters.hasIssuersOnly;
         } else if (action === "toggle-used") {
           filters.usedByRPsOnly = !filters.usedByRPsOnly;
+        } else if (action === "toggle-recent") {
+          const recentActive = filters.addedLast30Days || filters.updatedLast30Days;
+          filters.addedLast30Days = !recentActive;
+          filters.updatedLast30Days = !recentActive;
         }
         render();
       });
@@ -1342,9 +1351,9 @@
   async function init() {
     await loadCredentials();
     await Promise.all([loadRPUsage(), loadIssuerUsage()]);
-    if (config.vocabularyUrl || config.vocabularyFallbackUrl) {
-      vocabulary = await loadVocabulary(config.vocabularyUrl, config.vocabularyFallbackUrl);
-    }
+    const primaryVocabUrl = config.vocabularyUrl || 'https://raw.githubusercontent.com/FIDEScommunity/fides-interop-profiles/main/data/vocabulary.json';
+    const fallbackVocabUrl = config.vocabularyFallbackUrl || (config.pluginUrl ? config.pluginUrl + 'assets/vocabulary.json' : null);
+    vocabulary = await loadVocabulary(primaryVocabUrl, fallbackVocabUrl);
     openFromQueryParam();
     render();
   }
