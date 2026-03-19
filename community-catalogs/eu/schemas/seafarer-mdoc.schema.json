@@ -90,6 +90,7 @@
   "additionalProperties": true,
   "$id": "https://eudi.example.org/schemas/seafarer-mdoc.schema.json",
   "title": "Seafarer (MSO Mdoc)",
+  "description": "EUDI Wallet credential: Seafarer (MSO Mdoc). Schema generated from issuer metadata.",
   "docType": "eu.europa.ec.eudi.seafarer.1",
   "$comment": "This schema was automatically generated from EUDI issuer metadata and may be provisional or incomplete."
 }

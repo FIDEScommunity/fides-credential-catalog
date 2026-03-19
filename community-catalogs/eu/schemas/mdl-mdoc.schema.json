@@ -152,6 +152,7 @@
   "additionalProperties": true,
   "$id": "https://eudi.example.org/schemas/mdl-mdoc.schema.json",
   "title": "mDL (MSO Mdoc)",
+  "description": "EUDI Wallet credential: mDL (MSO Mdoc). Schema generated from issuer metadata.",
   "docType": "org.iso.18013.5.1.mDL",
   "$comment": "This schema was automatically generated from EUDI issuer metadata and may be provisional or incomplete."
 }

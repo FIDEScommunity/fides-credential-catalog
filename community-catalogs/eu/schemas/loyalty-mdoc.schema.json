@@ -37,6 +37,7 @@
   "additionalProperties": true,
   "$id": "https://eudi.example.org/schemas/loyalty-mdoc.schema.json",
   "title": "Loyalty (MSO Mdoc)",
+  "description": "EUDI Wallet credential: Loyalty (MSO Mdoc). Schema generated from issuer metadata.",
   "docType": "eu.europa.ec.eudi.loyalty.1",
   "$comment": "This schema was automatically generated from EUDI issuer metadata and may be provisional or incomplete."
 }

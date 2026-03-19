@@ -119,6 +119,7 @@
   "additionalProperties": true,
   "$id": "https://eudi.example.org/schemas/photoid-mdoc.schema.json",
   "title": "Photo ID (MSO Mdoc)",
+  "description": "EUDI Wallet credential: Photo ID (MSO Mdoc). Schema generated from issuer metadata.",
   "docType": "org.iso.23220.2.photoid.1",
   "$comment": "This schema was automatically generated from EUDI issuer metadata and may be provisional or incomplete."
 }

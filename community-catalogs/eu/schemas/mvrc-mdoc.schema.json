@@ -3,6 +3,7 @@
   "$comment": "This schema was automatically generated from EUDI issuer metadata and may be provisional or incomplete.",
   "$id": "https://eudi.example.org/schemas/mvrc-mdoc.schema.json",
   "title": "Vehicle Registration Certificate (MSO Mdoc)",
+  "description": "ISO 7367 / EUDI Wallet credential: Mobile Vehicle Registration Certificate (mVRC). Contains vehicle and owner registration data.",
   "type": "object",
   "properties": {
     "org.iso.7367.1.mVRC": {

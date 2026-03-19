@@ -70,6 +70,7 @@
   "additionalProperties": true,
   "$id": "https://eudi.example.org/schemas/tax-mdoc.schema.json",
   "title": "Tax Number (MSO Mdoc)",
+  "description": "EUDI Wallet credential: Tax Number (MSO Mdoc). Schema generated from issuer metadata.",
   "docType": "eu.europa.ec.eudi.tax.1",
   "$comment": "This schema was automatically generated from EUDI issuer metadata and may be provisional or incomplete."
 }

@@ -62,6 +62,7 @@
   ],
   "$id": "https://eudi.example.org/schemas/por-sd-jwt-vc.schema.json",
   "title": "Power Of Representation (SD-JWT VC)",
+  "description": "EUDI Wallet credential: Power Of Representation (SD-JWT VC). Schema generated from issuer metadata.",
   "vct": "urn:eu.europa.ec.eudi:por:1",
   "$comment": "This schema was automatically generated from EUDI issuer metadata and may be provisional or incomplete."
 }

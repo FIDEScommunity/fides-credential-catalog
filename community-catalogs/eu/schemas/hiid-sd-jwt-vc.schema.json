@@ -86,6 +86,7 @@
   ],
   "$id": "https://eudi.example.org/schemas/hiid-sd-jwt-vc.schema.json",
   "title": "Health ID (SD-JWT VC)",
+  "description": "EUDI Wallet credential: Health ID (SD-JWT VC). Schema generated from issuer metadata.",
   "vct": "urn:eu.europa.ec.eudi:hiid:1",
   "$comment": "This schema was automatically generated from EUDI issuer metadata and may be provisional or incomplete."
 }

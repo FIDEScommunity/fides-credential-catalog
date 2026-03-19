@@ -69,6 +69,7 @@
   "additionalProperties": true,
   "$id": "https://eudi.example.org/schemas/reservation-mdoc.schema.json",
   "title": "Reservation",
+  "description": "EUDI Wallet credential: Reservation. Schema generated from issuer metadata.",
   "docType": "org.iso.18013.5.1.reservation",
   "$comment": "This schema was automatically generated from EUDI issuer metadata and may be provisional or incomplete."
 }

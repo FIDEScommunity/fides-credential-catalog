@@ -3,6 +3,7 @@
   "$comment": "This schema was automatically generated from EUDI issuer metadata and may be provisional or incomplete.",
   "$id": "https://eudi.example.org/schemas/photoid-mdoc-alt.schema.json",
   "title": "Photo ID (MSO Mdoc)",
+  "description": "ISO 23220 credential: Photo ID (MSO Mdoc). Contains identity and portrait data based on the ISO 23220 standard.",
   "type": "object",
   "properties": {
     "org.iso.23220.photoid.1": {

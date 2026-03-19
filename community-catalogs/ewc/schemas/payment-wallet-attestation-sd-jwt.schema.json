@@ -3,6 +3,7 @@
   "$comment": "This schema was automatically generated from EWC issuer metadata and may be provisional or incomplete.",
   "$id": "https://ewc.example.org/schemas/payment-wallet-attestation-sd-jwt.schema.json",
   "title": "Payment Wallet Attestation (SD-JWT VC)",
+  "description": "EWC issuer credential: Payment Wallet Attestation (SD-JWT VC). Schema generated from issuer metadata.",
   "type": "object",
   "properties": {
     "id": {

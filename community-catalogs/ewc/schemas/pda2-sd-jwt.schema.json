@@ -3,6 +3,7 @@
   "$comment": "This schema was automatically generated from EWC issuer metadata and may be provisional or incomplete.",
   "$id": "https://ewc.example.org/schemas/pda2-sd-jwt.schema.json",
   "title": "Portable Document A2 (SD-JWT VC)",
+  "description": "EWC issuer credential: Portable Document A2 (SD-JWT VC). Schema generated from issuer metadata.",
   "type": "object",
   "properties": {
     "given_name": {

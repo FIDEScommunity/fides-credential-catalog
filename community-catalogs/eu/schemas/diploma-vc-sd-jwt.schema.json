@@ -77,6 +77,7 @@
   ],
   "$id": "https://eudi.example.org/schemas/diploma-vc-sd-jwt.schema.json",
   "title": "Diploma (SD-JWT VC)",
+  "description": "EUDI Wallet credential: Diploma (SD-JWT VC). Schema generated from issuer metadata.",
   "vct": "urn:eu.europa.ec.eudi:diploma:1:1",
   "$comment": "This schema was automatically generated from EUDI issuer metadata and may be provisional or incomplete."
 }

@@ -3,6 +3,7 @@
   "$comment": "This schema was automatically generated from EWC issuer metadata and may be provisional or incomplete.",
   "$id": "https://ewc.example.org/schemas/pid-sd-jwt.schema.json",
   "title": "Person Identification Data (SD-JWT VC)",
+  "description": "EWC issuer credential: Person Identification Data (PID). Schema generated from issuer metadata.",
   "type": "object",
   "properties": {
     "given_name": {

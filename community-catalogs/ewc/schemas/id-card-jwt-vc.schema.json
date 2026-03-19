@@ -3,6 +3,7 @@
   "$comment": "This schema was automatically generated from EWC issuer metadata and may be provisional or incomplete.",
   "$id": "https://ewc.example.org/schemas/id-card-jwt-vc.schema.json",
   "title": "Verifiable ID Card (JWT VC)",
+  "description": "EWC issuer credential: Verifiable ID Card (JWT VC). Schema generated from issuer metadata.",
   "type": "object",
   "properties": {
     "given_name": {

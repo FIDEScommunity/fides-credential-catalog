@@ -86,6 +86,7 @@
   "additionalProperties": true,
   "$id": "https://eudi.example.org/schemas/hiid-mdoc.schema.json",
   "title": "Health ID (MSO Mdoc)",
+  "description": "EUDI Wallet credential: Health ID (MSO Mdoc). Schema generated from issuer metadata.",
   "docType": "eu.europa.ec.eudi.hiid.1",
   "$comment": "This schema was automatically generated from EUDI issuer metadata and may be provisional or incomplete."
 }

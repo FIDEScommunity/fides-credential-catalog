@@ -54,6 +54,7 @@
   ],
   "$id": "https://eudi.example.org/schemas/tax-residency-vc-sd-jwt.schema.json",
   "title": "Tax Residency (SD-JWT VC)",
+  "description": "EUDI Wallet credential: Tax Residency (SD-JWT VC). Schema generated from issuer metadata.",
   "vct": "urn:eu.europa.ec.eudi:tax:1:1",
   "$comment": "This schema was automatically generated from EUDI issuer metadata and may be provisional or incomplete."
 }

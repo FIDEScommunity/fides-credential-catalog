@@ -139,6 +139,7 @@
   ],
   "$id": "https://eudi.example.org/schemas/pid-vc-sd-jwt.schema.json",
   "title": "PID (SD-JWT VC)",
+  "description": "EUDI Wallet credential: PID (SD-JWT VC). Schema generated from issuer metadata.",
   "vct": "urn:eudi:pid:1",
   "$comment": "This schema was automatically generated from EUDI issuer metadata and may be provisional or incomplete."
 }

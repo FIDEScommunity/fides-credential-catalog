@@ -121,6 +121,7 @@
   "additionalProperties": true,
   "$id": "https://eudi.example.org/schemas/pid-mdoc.schema.json",
   "title": "PID (MSO Mdoc)",
+  "description": "EUDI Wallet credential: PID (MSO Mdoc). Schema generated from issuer metadata.",
   "docType": "eu.europa.ec.eudi.pid.1",
   "$comment": "This schema was automatically generated from EUDI issuer metadata and may be provisional or incomplete."
 }

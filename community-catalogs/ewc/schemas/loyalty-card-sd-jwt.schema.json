@@ -3,6 +3,7 @@
   "$comment": "This schema was automatically generated from EWC issuer metadata and may be provisional or incomplete.",
   "$id": "https://ewc.example.org/schemas/loyalty-card-sd-jwt.schema.json",
   "title": "Loyalty Card (SD-JWT VC)",
+  "description": "EWC issuer credential: Loyalty Card (SD-JWT VC). Schema generated from issuer metadata.",
   "type": "object",
   "properties": {
     "customer.first_name": {

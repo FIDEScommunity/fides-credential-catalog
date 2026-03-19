@@ -94,6 +94,7 @@
   "additionalProperties": true,
   "$id": "https://eudi.example.org/schemas/iban-mdoc.schema.json",
   "title": "IBAN (MSO Mdoc)",
+  "description": "EUDI Wallet credential: IBAN (MSO Mdoc). Schema generated from issuer metadata.",
   "docType": "eu.europa.ec.eudi.iban.1",
   "$comment": "This schema was automatically generated from EUDI issuer metadata and may be provisional or incomplete."
 }

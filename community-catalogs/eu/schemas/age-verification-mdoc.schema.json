@@ -3,6 +3,7 @@
   "$comment": "This schema was automatically generated from EUDI issuer metadata and may be provisional or incomplete.",
   "$id": "https://eudi.example.org/schemas/age-verification-mdoc.schema.json",
   "title": "Age Verification (MSO Mdoc)",
+  "description": "EUDI Wallet credential: Age Verification (MSO Mdoc). Proves the holder meets a minimum age threshold.",
   "type": "object",
   "properties": {
     "eu.europa.ec.av.1": {

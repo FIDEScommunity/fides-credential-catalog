@@ -3,6 +3,7 @@
   "$comment": "This schema was automatically generated from EWC issuer metadata and may be provisional or incomplete.",
   "$id": "https://ewc.example.org/schemas/pid-eudi-mdoc.schema.json",
   "title": "PID EUDI (MSO Mdoc)",
+  "description": "EWC issuer credential: Person Identification Data per EUDI spec (MSO Mdoc). Schema generated from issuer metadata.",
   "type": "object",
   "properties": {
     "given_name": {
