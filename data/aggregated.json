@@ -1,13 +1,12 @@
 {
   "schemaVersion": "1.0.0",
   "catalogType": "credential",
-  "lastUpdated": "2026-03-19T07:05:33.335Z",
+  "lastUpdated": "2026-03-19T15:40:09.915Z",
   "credentials": [
     {
       "id": "cred:eu:diploma-vc-sd-jwt:sd-jwt-vc",
       "slug": "eu-diploma-vc-sd-jwt",
       "displayName": "Diploma (SD-JWT VC)",
-      "shortDescription": "EUDI Wallet credential: Diploma (SD-JWT VC). Schema generated from issuer metadata.",
       "authority": {
         "name": "European Commission",
         "url": "https://digital-strategy.ec.europa.eu/en/policies/eudi-wallet"
@@ -30,8 +29,8 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-19T07:05:33.335Z",
-      "updatedAt": "2026-03-18T12:12:34.000Z",
+      "fetchedAt": "2026-03-19T15:40:09.915Z",
+      "updatedAt": "2026-03-19T15:39:51.000Z",
       "firstSeenAt": "2026-03-17T09:29:34.000Z",
       "attributes": [
         {
@@ -130,13 +129,13 @@
           "required": false,
           "description": "Profile Image"
         }
-      ]
+      ],
+      "schemaDescription": "EUDI Wallet credential: Diploma (SD-JWT VC). Schema generated from issuer metadata."
     },
     {
       "id": "cred:eu:ehic-sd-jwt-vc:sd-jwt-vc",
       "slug": "eu-ehic-sd-jwt-vc",
       "displayName": "EHIC (SD-JWT VC)",
-      "shortDescription": "EUDI Wallet credential: EHIC (SD-JWT VC). Schema generated from issuer metadata.",
       "authority": {
         "name": "European Commission",
         "url": "https://digital-strategy.ec.europa.eu/en/policies/eudi-wallet"
@@ -159,8 +158,8 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-19T07:05:33.335Z",
-      "updatedAt": "2026-03-18T12:12:34.000Z",
+      "fetchedAt": "2026-03-19T15:40:09.915Z",
+      "updatedAt": "2026-03-19T15:39:51.000Z",
       "firstSeenAt": "2026-03-17T09:29:34.000Z",
       "attributes": [
         {
@@ -209,13 +208,13 @@
           "required": true,
           "description": "Ending Date"
         }
-      ]
+      ],
+      "schemaDescription": "EUDI Wallet credential: EHIC (SD-JWT VC). Schema generated from issuer metadata."
     },
     {
       "id": "cred:eu:hiid-sd-jwt-vc:sd-jwt-vc",
       "slug": "eu-hiid-sd-jwt-vc",
       "displayName": "Health ID (SD-JWT VC)",
-      "shortDescription": "EUDI Wallet credential: Health ID (SD-JWT VC). Schema generated from issuer metadata.",
       "authority": {
         "name": "European Commission",
         "url": "https://digital-strategy.ec.europa.eu/en/policies/eudi-wallet"
@@ -238,8 +237,8 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-19T07:05:33.335Z",
-      "updatedAt": "2026-03-18T12:12:34.000Z",
+      "fetchedAt": "2026-03-19T15:40:09.915Z",
+      "updatedAt": "2026-03-19T15:39:51.000Z",
       "firstSeenAt": "2026-03-17T09:29:34.000Z",
       "attributes": [
         {
@@ -350,13 +349,13 @@
           "required": false,
           "description": "Issuing Jurisdiction"
         }
-      ]
+      ],
+      "schemaDescription": "EUDI Wallet credential: Health ID (SD-JWT VC). Schema generated from issuer metadata."
     },
     {
       "id": "cred:eu:iban-sd-jwt-vc:sd-jwt-vc",
       "slug": "eu-iban-sd-jwt-vc",
       "displayName": "IBAN (SD-JWT VC)",
-      "shortDescription": "EUDI Wallet credential: IBAN (SD-JWT VC). Schema generated from issuer metadata.",
       "authority": {
         "name": "European Commission",
         "url": "https://digital-strategy.ec.europa.eu/en/policies/eudi-wallet"
@@ -379,8 +378,8 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-19T07:05:33.335Z",
-      "updatedAt": "2026-03-18T12:12:34.000Z",
+      "fetchedAt": "2026-03-19T15:40:09.915Z",
+      "updatedAt": "2026-03-19T15:39:51.000Z",
       "firstSeenAt": "2026-03-17T09:29:34.000Z",
       "attributes": [
         {
@@ -503,13 +502,13 @@
           "required": true,
           "description": "Bussiness Identifier Code"
         }
-      ]
+      ],
+      "schemaDescription": "EUDI Wallet credential: IBAN (SD-JWT VC). Schema generated from issuer metadata."
     },
     {
       "id": "cred:eu:msisdn-sd-jwt-vc:sd-jwt-vc",
       "slug": "eu-msisdn-sd-jwt-vc",
       "displayName": "MSISDN (SD-JWT VC)",
-      "shortDescription": "EUDI Wallet credential: MSISDN (SD-JWT VC). Schema generated from issuer metadata.",
       "authority": {
         "name": "European Commission",
         "url": "https://digital-strategy.ec.europa.eu/en/policies/eudi-wallet"
@@ -532,8 +531,8 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-19T07:05:33.335Z",
-      "updatedAt": "2026-03-18T12:12:34.000Z",
+      "fetchedAt": "2026-03-19T15:40:09.915Z",
+      "updatedAt": "2026-03-19T15:39:51.000Z",
       "firstSeenAt": "2026-03-17T09:29:34.000Z",
       "attributes": [
         {
@@ -608,13 +607,13 @@
           "required": false,
           "description": "Document Number"
         }
-      ]
+      ],
+      "schemaDescription": "EUDI Wallet credential: MSISDN (SD-JWT VC). Schema generated from issuer metadata."
     },
     {
       "id": "cred:eu:pda1-sd-jwt-vc:sd-jwt-vc",
       "slug": "eu-pda1-sd-jwt-vc",
       "displayName": "PDA1 (SD-JWT VC)",
-      "shortDescription": "EUDI Wallet credential: PDA1 (SD-JWT VC). Schema generated from issuer metadata.",
       "authority": {
         "name": "European Commission",
         "url": "https://digital-strategy.ec.europa.eu/en/policies/eudi-wallet"
@@ -637,8 +636,8 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-19T07:05:33.335Z",
-      "updatedAt": "2026-03-18T12:12:34.000Z",
+      "fetchedAt": "2026-03-19T15:40:09.915Z",
+      "updatedAt": "2026-03-19T15:39:51.000Z",
       "firstSeenAt": "2026-03-17T09:29:34.000Z",
       "attributes": [
         {
@@ -708,13 +707,13 @@
           "required": true,
           "description": "Issuing Country"
         }
-      ]
+      ],
+      "schemaDescription": "EUDI Wallet credential: PDA1 (SD-JWT VC). Schema generated from issuer metadata."
     },
     {
       "id": "cred:eu:pid-vc-sd-jwt:sd-jwt-vc",
       "slug": "eu-pid-vc-sd-jwt",
       "displayName": "PID (SD-JWT VC)",
-      "shortDescription": "EUDI Wallet credential: PID (SD-JWT VC). Schema generated from issuer metadata.",
       "authority": {
         "name": "European Commission",
         "url": "https://digital-strategy.ec.europa.eu/en/policies/eudi-wallet"
@@ -737,8 +736,8 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-19T07:05:33.335Z",
-      "updatedAt": "2026-03-18T12:12:34.000Z",
+      "fetchedAt": "2026-03-19T15:40:09.915Z",
+      "updatedAt": "2026-03-19T15:39:51.000Z",
       "firstSeenAt": "2026-03-17T09:29:34.000Z",
       "attributes": [
         {
@@ -860,13 +859,13 @@
           "required": false,
           "description": "Issuing Jurisdiction"
         }
-      ]
+      ],
+      "schemaDescription": "EUDI Wallet credential: PID (SD-JWT VC). Schema generated from issuer metadata."
     },
     {
       "id": "cred:eu:por-sd-jwt-vc:sd-jwt-vc",
       "slug": "eu-por-sd-jwt-vc",
       "displayName": "Power Of Representation (SD-JWT VC)",
-      "shortDescription": "EUDI Wallet credential: Power Of Representation (SD-JWT VC). Schema generated from issuer metadata.",
       "authority": {
         "name": "European Commission",
         "url": "https://digital-strategy.ec.europa.eu/en/policies/eudi-wallet"
@@ -889,8 +888,8 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-19T07:05:33.335Z",
-      "updatedAt": "2026-03-18T12:12:34.000Z",
+      "fetchedAt": "2026-03-19T15:40:09.915Z",
+      "updatedAt": "2026-03-19T15:39:51.000Z",
       "firstSeenAt": "2026-03-17T09:29:34.000Z",
       "attributes": [
         {
@@ -959,13 +958,13 @@
           "required": true,
           "description": "Issuing Country"
         }
-      ]
+      ],
+      "schemaDescription": "EUDI Wallet credential: Power Of Representation (SD-JWT VC). Schema generated from issuer metadata."
     },
     {
       "id": "cred:eu:tax-residency-vc-sd-jwt:sd-jwt-vc",
       "slug": "eu-tax-residency-vc-sd-jwt",
       "displayName": "Tax Residency (SD-JWT VC)",
-      "shortDescription": "EUDI Wallet credential: Tax Residency (SD-JWT VC). Schema generated from issuer metadata.",
       "authority": {
         "name": "European Commission",
         "url": "https://digital-strategy.ec.europa.eu/en/policies/eudi-wallet"
@@ -988,8 +987,8 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-19T07:05:33.335Z",
-      "updatedAt": "2026-03-18T12:12:34.000Z",
+      "fetchedAt": "2026-03-19T15:40:09.915Z",
+      "updatedAt": "2026-03-19T15:39:51.000Z",
       "firstSeenAt": "2026-03-17T09:29:34.000Z",
       "attributes": [
         {
@@ -1046,13 +1045,13 @@
           "required": true,
           "description": "End Date Residency"
         }
-      ]
+      ],
+      "schemaDescription": "EUDI Wallet credential: Tax Residency (SD-JWT VC). Schema generated from issuer metadata."
     },
     {
       "id": "cred:eu:tax-sd-jwt-vc:sd-jwt-vc",
       "slug": "eu-tax-sd-jwt-vc",
       "displayName": "Tax Number (SD-JWT VC)",
-      "shortDescription": "EUDI Wallet credential: Tax Number (SD-JWT VC). Schema generated from issuer metadata.",
       "authority": {
         "name": "European Commission",
         "url": "https://digital-strategy.ec.europa.eu/en/policies/eudi-wallet"
@@ -1075,8 +1074,8 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-19T07:05:33.335Z",
-      "updatedAt": "2026-03-18T12:12:34.000Z",
+      "fetchedAt": "2026-03-19T15:40:09.915Z",
+      "updatedAt": "2026-03-19T15:39:51.000Z",
       "firstSeenAt": "2026-03-17T09:29:34.000Z",
       "attributes": [
         {
@@ -1163,13 +1162,13 @@
           "required": true,
           "description": "Issuing Country"
         }
-      ]
+      ],
+      "schemaDescription": "EUDI Wallet credential: Tax Number (SD-JWT VC). Schema generated from issuer metadata."
     },
     {
       "id": "cred:eu:cor-mdoc:mdoc",
       "slug": "eu-cor-mdoc",
       "displayName": "Certificate of Residence (MSO Mdoc)",
-      "shortDescription": "EUDI Wallet credential: Certificate of Residence (MSO Mdoc). Schema generated from issuer metadata.",
       "authority": {
         "name": "European Commission",
         "url": "https://digital-strategy.ec.europa.eu/en/policies/eudi-wallet"
@@ -1193,8 +1192,8 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-19T07:05:33.335Z",
-      "updatedAt": "2026-03-18T12:12:34.000Z",
+      "fetchedAt": "2026-03-19T15:40:09.915Z",
+      "updatedAt": "2026-03-19T15:39:51.000Z",
       "firstSeenAt": "2026-03-17T09:29:34.000Z",
       "attributes": [
         {
@@ -1202,13 +1201,13 @@
           "type": "object",
           "required": false
         }
-      ]
+      ],
+      "schemaDescription": "EUDI Wallet credential: Certificate of Residence (MSO Mdoc). Schema generated from issuer metadata."
     },
     {
       "id": "cred:eu:ehic-mdoc:mdoc",
       "slug": "eu-ehic-mdoc",
       "displayName": "EHIC (MSO Mdoc)",
-      "shortDescription": "EUDI Wallet credential: EHIC (MSO Mdoc). Schema generated from issuer metadata.",
       "authority": {
         "name": "European Commission",
         "url": "https://digital-strategy.ec.europa.eu/en/policies/eudi-wallet"
@@ -1232,8 +1231,8 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-19T07:05:33.335Z",
-      "updatedAt": "2026-03-18T12:12:34.000Z",
+      "fetchedAt": "2026-03-19T15:40:09.915Z",
+      "updatedAt": "2026-03-19T15:39:51.000Z",
       "firstSeenAt": "2026-03-17T09:29:34.000Z",
       "attributes": [
         {
@@ -1241,13 +1240,13 @@
           "type": "object",
           "required": false
         }
-      ]
+      ],
+      "schemaDescription": "EUDI Wallet credential: EHIC (MSO Mdoc). Schema generated from issuer metadata."
     },
     {
       "id": "cred:eu:employee-mdoc:mdoc",
       "slug": "eu-employee-mdoc",
       "displayName": "Employee ID (MSO Mdoc)",
-      "shortDescription": "EUDI Wallet credential: Employee ID (MSO Mdoc). Schema generated from issuer metadata.",
       "authority": {
         "name": "European Commission",
         "url": "https://digital-strategy.ec.europa.eu/en/policies/eudi-wallet"
@@ -1271,8 +1270,8 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-19T07:05:33.335Z",
-      "updatedAt": "2026-03-18T12:12:34.000Z",
+      "fetchedAt": "2026-03-19T15:40:09.915Z",
+      "updatedAt": "2026-03-19T15:39:51.000Z",
       "firstSeenAt": "2026-03-17T09:29:34.000Z",
       "attributes": [
         {
@@ -1280,13 +1279,13 @@
           "type": "object",
           "required": false
         }
-      ]
+      ],
+      "schemaDescription": "EUDI Wallet credential: Employee ID (MSO Mdoc). Schema generated from issuer metadata."
     },
     {
       "id": "cred:eu:hiid-mdoc:mdoc",
       "slug": "eu-hiid-mdoc",
       "displayName": "Health ID (MSO Mdoc)",
-      "shortDescription": "EUDI Wallet credential: Health ID (MSO Mdoc). Schema generated from issuer metadata.",
       "authority": {
         "name": "European Commission",
         "url": "https://digital-strategy.ec.europa.eu/en/policies/eudi-wallet"
@@ -1310,8 +1309,8 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-19T07:05:33.335Z",
-      "updatedAt": "2026-03-18T12:12:34.000Z",
+      "fetchedAt": "2026-03-19T15:40:09.915Z",
+      "updatedAt": "2026-03-19T15:39:51.000Z",
       "firstSeenAt": "2026-03-17T09:29:34.000Z",
       "attributes": [
         {
@@ -1319,13 +1318,13 @@
           "type": "object",
           "required": false
         }
-      ]
+      ],
+      "schemaDescription": "EUDI Wallet credential: Health ID (MSO Mdoc). Schema generated from issuer metadata."
     },
     {
       "id": "cred:eu:iban-mdoc:mdoc",
       "slug": "eu-iban-mdoc",
       "displayName": "IBAN (MSO Mdoc)",
-      "shortDescription": "EUDI Wallet credential: IBAN (MSO Mdoc). Schema generated from issuer metadata.",
       "authority": {
         "name": "European Commission",
         "url": "https://digital-strategy.ec.europa.eu/en/policies/eudi-wallet"
@@ -1349,8 +1348,8 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-19T07:05:33.335Z",
-      "updatedAt": "2026-03-18T12:12:34.000Z",
+      "fetchedAt": "2026-03-19T15:40:09.915Z",
+      "updatedAt": "2026-03-19T15:39:51.000Z",
       "firstSeenAt": "2026-03-17T09:29:34.000Z",
       "attributes": [
         {
@@ -1358,13 +1357,13 @@
           "type": "object",
           "required": false
         }
-      ]
+      ],
+      "schemaDescription": "EUDI Wallet credential: IBAN (MSO Mdoc). Schema generated from issuer metadata."
     },
     {
       "id": "cred:eu:loyalty-mdoc:mdoc",
       "slug": "eu-loyalty-mdoc",
       "displayName": "Loyalty (MSO Mdoc)",
-      "shortDescription": "EUDI Wallet credential: Loyalty (MSO Mdoc). Schema generated from issuer metadata.",
       "authority": {
         "name": "European Commission",
         "url": "https://digital-strategy.ec.europa.eu/en/policies/eudi-wallet"
@@ -1388,8 +1387,8 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-19T07:05:33.335Z",
-      "updatedAt": "2026-03-18T12:12:34.000Z",
+      "fetchedAt": "2026-03-19T15:40:09.915Z",
+      "updatedAt": "2026-03-19T15:39:51.000Z",
       "firstSeenAt": "2026-03-17T09:29:34.000Z",
       "attributes": [
         {
@@ -1397,13 +1396,13 @@
           "type": "object",
           "required": false
         }
-      ]
+      ],
+      "schemaDescription": "EUDI Wallet credential: Loyalty (MSO Mdoc). Schema generated from issuer metadata."
     },
     {
       "id": "cred:eu:mdl-mdoc:mdoc",
       "slug": "eu-mdl-mdoc",
       "displayName": "mDL (MSO Mdoc)",
-      "shortDescription": "EUDI Wallet credential: mDL (MSO Mdoc). Schema generated from issuer metadata.",
       "authority": {
         "name": "European Commission",
         "url": "https://digital-strategy.ec.europa.eu/en/policies/eudi-wallet"
@@ -1427,8 +1426,8 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-19T07:05:33.335Z",
-      "updatedAt": "2026-03-18T12:12:34.000Z",
+      "fetchedAt": "2026-03-19T15:40:09.915Z",
+      "updatedAt": "2026-03-19T15:39:51.000Z",
       "firstSeenAt": "2026-03-17T09:29:34.000Z",
       "attributes": [
         {
@@ -1436,13 +1435,13 @@
           "type": "object",
           "required": false
         }
-      ]
+      ],
+      "schemaDescription": "EUDI Wallet credential: mDL (MSO Mdoc). Schema generated from issuer metadata."
     },
     {
       "id": "cred:eu:msisdn-mdoc:mdoc",
       "slug": "eu-msisdn-mdoc",
       "displayName": "MSISDN (MSO Mdoc)",
-      "shortDescription": "EUDI Wallet credential: MSISDN (MSO Mdoc). Schema generated from issuer metadata.",
       "authority": {
         "name": "European Commission",
         "url": "https://digital-strategy.ec.europa.eu/en/policies/eudi-wallet"
@@ -1466,8 +1465,8 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-19T07:05:33.335Z",
-      "updatedAt": "2026-03-18T12:12:34.000Z",
+      "fetchedAt": "2026-03-19T15:40:09.915Z",
+      "updatedAt": "2026-03-19T15:39:51.000Z",
       "firstSeenAt": "2026-03-17T09:29:34.000Z",
       "attributes": [
         {
@@ -1475,13 +1474,13 @@
           "type": "object",
           "required": false
         }
-      ]
+      ],
+      "schemaDescription": "EUDI Wallet credential: MSISDN (MSO Mdoc). Schema generated from issuer metadata."
     },
     {
       "id": "cred:eu:pda1-mdoc:mdoc",
       "slug": "eu-pda1-mdoc",
       "displayName": "PDA1 (MSO Mdoc)",
-      "shortDescription": "EUDI Wallet credential: PDA1 (MSO Mdoc). Schema generated from issuer metadata.",
       "authority": {
         "name": "European Commission",
         "url": "https://digital-strategy.ec.europa.eu/en/policies/eudi-wallet"
@@ -1505,8 +1504,8 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-19T07:05:33.335Z",
-      "updatedAt": "2026-03-18T12:12:34.000Z",
+      "fetchedAt": "2026-03-19T15:40:09.915Z",
+      "updatedAt": "2026-03-19T15:39:51.000Z",
       "firstSeenAt": "2026-03-17T09:29:34.000Z",
       "attributes": [
         {
@@ -1514,13 +1513,13 @@
           "type": "object",
           "required": false
         }
-      ]
+      ],
+      "schemaDescription": "EUDI Wallet credential: PDA1 (MSO Mdoc). Schema generated from issuer metadata."
     },
     {
       "id": "cred:eu:photoid-mdoc:mdoc",
       "slug": "eu-photoid-mdoc",
       "displayName": "Photo ID (MSO Mdoc)",
-      "shortDescription": "EUDI Wallet credential: Photo ID (MSO Mdoc). Schema generated from issuer metadata.",
       "authority": {
         "name": "European Commission",
         "url": "https://digital-strategy.ec.europa.eu/en/policies/eudi-wallet"
@@ -1544,8 +1543,8 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-19T07:05:33.335Z",
-      "updatedAt": "2026-03-18T12:12:34.000Z",
+      "fetchedAt": "2026-03-19T15:40:09.915Z",
+      "updatedAt": "2026-03-19T15:39:51.000Z",
       "firstSeenAt": "2026-03-17T09:29:34.000Z",
       "attributes": [
         {
@@ -1553,13 +1552,13 @@
           "type": "object",
           "required": false
         }
-      ]
+      ],
+      "schemaDescription": "EUDI Wallet credential: Photo ID (MSO Mdoc). Schema generated from issuer metadata."
     },
     {
       "id": "cred:eu:pid-mdoc:mdoc",
       "slug": "eu-pid-mdoc",
       "displayName": "PID (MSO Mdoc)",
-      "shortDescription": "EUDI Wallet credential: PID (MSO Mdoc). Schema generated from issuer metadata.",
       "authority": {
         "name": "European Commission",
         "url": "https://digital-strategy.ec.europa.eu/en/policies/eudi-wallet"
@@ -1583,8 +1582,8 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-19T07:05:33.335Z",
-      "updatedAt": "2026-03-18T12:12:34.000Z",
+      "fetchedAt": "2026-03-19T15:40:09.915Z",
+      "updatedAt": "2026-03-19T15:39:51.000Z",
       "firstSeenAt": "2026-03-17T09:29:34.000Z",
       "attributes": [
         {
@@ -1592,13 +1591,13 @@
           "type": "object",
           "required": false
         }
-      ]
+      ],
+      "schemaDescription": "EUDI Wallet credential: PID (MSO Mdoc). Schema generated from issuer metadata."
     },
     {
       "id": "cred:eu:pid-mdoc-deferred-mdoc:mdoc",
       "slug": "eu-pid-mdoc-deferred-mdoc",
       "displayName": "PID (MSO Mdoc Deferred)",
-      "shortDescription": "EUDI Wallet credential: PID (MSO Mdoc Deferred). Schema generated from issuer metadata.",
       "authority": {
         "name": "European Commission",
         "url": "https://digital-strategy.ec.europa.eu/en/policies/eudi-wallet"
@@ -1622,8 +1621,8 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-19T07:05:33.335Z",
-      "updatedAt": "2026-03-18T12:12:34.000Z",
+      "fetchedAt": "2026-03-19T15:40:09.915Z",
+      "updatedAt": "2026-03-19T15:39:51.000Z",
       "firstSeenAt": "2026-03-17T09:29:34.000Z",
       "attributes": [
         {
@@ -1631,13 +1630,13 @@
           "type": "object",
           "required": false
         }
-      ]
+      ],
+      "schemaDescription": "EUDI Wallet credential: PID (MSO Mdoc Deferred). Schema generated from issuer metadata."
     },
     {
       "id": "cred:eu:por-mdoc:mdoc",
       "slug": "eu-por-mdoc",
       "displayName": "Power Of Representation (MSO Mdoc)",
-      "shortDescription": "EUDI Wallet credential: Power Of Representation (MSO Mdoc). Schema generated from issuer metadata.",
       "authority": {
         "name": "European Commission",
         "url": "https://digital-strategy.ec.europa.eu/en/policies/eudi-wallet"
@@ -1661,8 +1660,8 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-19T07:05:33.335Z",
-      "updatedAt": "2026-03-18T12:12:34.000Z",
+      "fetchedAt": "2026-03-19T15:40:09.915Z",
+      "updatedAt": "2026-03-19T15:39:51.000Z",
       "firstSeenAt": "2026-03-17T09:29:34.000Z",
       "attributes": [
         {
@@ -1670,13 +1669,13 @@
           "type": "object",
           "required": false
         }
-      ]
+      ],
+      "schemaDescription": "EUDI Wallet credential: Power Of Representation (MSO Mdoc). Schema generated from issuer metadata."
     },
     {
       "id": "cred:eu:seafarer-mdoc:mdoc",
       "slug": "eu-seafarer-mdoc",
       "displayName": "Seafarer (MSO Mdoc)",
-      "shortDescription": "EUDI Wallet credential: Seafarer (MSO Mdoc). Schema generated from issuer metadata.",
       "authority": {
         "name": "European Commission",
         "url": "https://digital-strategy.ec.europa.eu/en/policies/eudi-wallet"
@@ -1700,8 +1699,8 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-19T07:05:33.335Z",
-      "updatedAt": "2026-03-18T12:12:34.000Z",
+      "fetchedAt": "2026-03-19T15:40:09.915Z",
+      "updatedAt": "2026-03-19T15:39:51.000Z",
       "firstSeenAt": "2026-03-17T09:29:34.000Z",
       "attributes": [
         {
@@ -1709,13 +1708,13 @@
           "type": "object",
           "required": false
         }
-      ]
+      ],
+      "schemaDescription": "EUDI Wallet credential: Seafarer (MSO Mdoc). Schema generated from issuer metadata."
     },
     {
       "id": "cred:eu:tax-mdoc:mdoc",
       "slug": "eu-tax-mdoc",
       "displayName": "Tax Number (MSO Mdoc)",
-      "shortDescription": "EUDI Wallet credential: Tax Number (MSO Mdoc). Schema generated from issuer metadata.",
       "authority": {
         "name": "European Commission",
         "url": "https://digital-strategy.ec.europa.eu/en/policies/eudi-wallet"
@@ -1739,8 +1738,8 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-19T07:05:33.335Z",
-      "updatedAt": "2026-03-18T12:12:34.000Z",
+      "fetchedAt": "2026-03-19T15:40:09.915Z",
+      "updatedAt": "2026-03-19T15:39:51.000Z",
       "firstSeenAt": "2026-03-17T09:29:34.000Z",
       "attributes": [
         {
@@ -1748,13 +1747,13 @@
           "type": "object",
           "required": false
         }
-      ]
+      ],
+      "schemaDescription": "EUDI Wallet credential: Tax Number (MSO Mdoc). Schema generated from issuer metadata."
     },
     {
       "id": "cred:eu:reservation-mdoc:mdoc",
       "slug": "eu-reservation-mdoc",
       "displayName": "Reservation",
-      "shortDescription": "EUDI Wallet credential: Reservation. Schema generated from issuer metadata.",
       "authority": {
         "name": "European Commission",
         "url": "https://digital-strategy.ec.europa.eu/en/policies/eudi-wallet"
@@ -1778,8 +1777,8 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-19T07:05:33.335Z",
-      "updatedAt": "2026-03-18T12:12:34.000Z",
+      "fetchedAt": "2026-03-19T15:40:09.915Z",
+      "updatedAt": "2026-03-19T15:39:51.000Z",
       "firstSeenAt": "2026-03-17T09:29:34.000Z",
       "attributes": [
         {
@@ -1787,13 +1786,13 @@
           "type": "object",
           "required": false
         }
-      ]
+      ],
+      "schemaDescription": "EUDI Wallet credential: Reservation. Schema generated from issuer metadata."
     },
     {
       "id": "cred:eu:age-verification-mdoc:mdoc",
       "slug": "eu-age-verification-mdoc",
       "displayName": "Age Verification (MSO Mdoc)",
-      "shortDescription": "EUDI Wallet credential: Age Verification (MSO Mdoc). Proves the holder meets a minimum age threshold.",
       "authority": {
         "name": "European Commission",
         "url": "https://digital-strategy.ec.europa.eu/en/policies/eudi-wallet"
@@ -1817,8 +1816,8 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-19T07:05:33.335Z",
-      "updatedAt": "2026-03-18T12:12:34.000Z",
+      "fetchedAt": "2026-03-19T15:40:09.915Z",
+      "updatedAt": "2026-03-19T15:39:51.000Z",
       "firstSeenAt": "2026-03-18T12:12:34.000Z",
       "attributes": [
         {
@@ -1826,13 +1825,13 @@
           "type": "object",
           "required": false
         }
-      ]
+      ],
+      "schemaDescription": "EUDI Wallet credential: Age Verification (MSO Mdoc). Proves the holder meets a minimum age threshold."
     },
     {
       "id": "cred:eu:mvrc-mdoc:mdoc",
       "slug": "eu-mvrc-mdoc",
       "displayName": "Vehicle Registration Certificate (MSO Mdoc)",
-      "shortDescription": "ISO 7367 / EUDI Wallet credential: Mobile Vehicle Registration Certificate (mVRC). Contains vehicle and owner registration data.",
       "authority": {
         "name": "European Commission",
         "url": "https://digital-strategy.ec.europa.eu/en/policies/eudi-wallet"
@@ -1857,8 +1856,8 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-19T07:05:33.335Z",
-      "updatedAt": "2026-03-18T12:12:34.000Z",
+      "fetchedAt": "2026-03-19T15:40:09.915Z",
+      "updatedAt": "2026-03-19T15:39:51.000Z",
       "firstSeenAt": "2026-03-18T12:12:34.000Z",
       "attributes": [
         {
@@ -1866,13 +1865,13 @@
           "type": "object",
           "required": false
         }
-      ]
+      ],
+      "schemaDescription": "ISO 7367 / EUDI Wallet credential: Mobile Vehicle Registration Certificate (mVRC). Contains vehicle and owner registration data."
     },
     {
       "id": "cred:eu:photoid-mdoc-iso23220:mdoc",
       "slug": "eu-photoid-mdoc-iso23220",
       "displayName": "Photo ID (MSO Mdoc)",
-      "shortDescription": "ISO 23220 credential: Photo ID (MSO Mdoc). Contains identity and portrait data based on the ISO 23220 standard.",
       "authority": {
         "name": "European Commission",
         "url": "https://digital-strategy.ec.europa.eu/en/policies/eudi-wallet"
@@ -1897,8 +1896,8 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-19T07:05:33.335Z",
-      "updatedAt": "2026-03-18T12:12:34.000Z",
+      "fetchedAt": "2026-03-19T15:40:09.915Z",
+      "updatedAt": "2026-03-19T15:39:51.000Z",
       "firstSeenAt": "2026-03-18T12:12:34.000Z",
       "attributes": [
         {
@@ -1906,13 +1905,13 @@
           "type": "object",
           "required": false
         }
-      ]
+      ],
+      "schemaDescription": "ISO 23220 credential: Photo ID (MSO Mdoc). Contains identity and portrait data based on the ISO 23220 standard."
     },
     {
       "id": "cred:ewc:pda1-sd-jwt:sd-jwt-vc",
       "slug": "ewc-pda1-sd-jwt",
       "displayName": "Portable Document A1 (SD-JWT VC)",
-      "shortDescription": "EWC issuer credential: Portable Document A1 (SD-JWT VC). Schema generated from issuer metadata.",
       "authority": {
         "name": "University of the Aegean / EWC",
         "url": "https://dss.aegean.gr"
@@ -1935,8 +1934,8 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/ewc/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-19T07:05:33.335Z",
-      "updatedAt": "2026-03-17T16:20:30.000Z",
+      "fetchedAt": "2026-03-19T15:40:09.915Z",
+      "updatedAt": "2026-03-19T15:39:51.000Z",
       "firstSeenAt": "2026-03-17T16:20:30.000Z",
       "attributes": [
         {
@@ -1951,13 +1950,13 @@
           "required": false,
           "description": "Surname"
         }
-      ]
+      ],
+      "schemaDescription": "EWC issuer credential: Portable Document A1 (SD-JWT VC). Schema generated from issuer metadata."
     },
     {
       "id": "cred:ewc:pda2-sd-jwt:sd-jwt-vc",
       "slug": "ewc-pda2-sd-jwt",
       "displayName": "Portable Document A2 (SD-JWT VC)",
-      "shortDescription": "EWC issuer credential: Portable Document A2 (SD-JWT VC). Schema generated from issuer metadata.",
       "authority": {
         "name": "University of the Aegean / EWC",
         "url": "https://dss.aegean.gr"
@@ -1980,8 +1979,8 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/ewc/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-19T07:05:33.335Z",
-      "updatedAt": "2026-03-17T16:20:30.000Z",
+      "fetchedAt": "2026-03-19T15:40:09.915Z",
+      "updatedAt": "2026-03-19T15:39:51.000Z",
       "firstSeenAt": "2026-03-17T16:20:30.000Z",
       "attributes": [
         {
@@ -1996,13 +1995,13 @@
           "required": false,
           "description": "Surname"
         }
-      ]
+      ],
+      "schemaDescription": "EWC issuer credential: Portable Document A2 (SD-JWT VC). Schema generated from issuer metadata."
     },
     {
       "id": "cred:ewc:id-card-jwt-vc:jwt-vc",
       "slug": "ewc-id-card-jwt-vc",
       "displayName": "Verifiable ID Card (JWT VC)",
-      "shortDescription": "EWC issuer credential: Verifiable ID Card (JWT VC). Schema generated from issuer metadata.",
       "authority": {
         "name": "University of the Aegean / EWC",
         "url": "https://dss.aegean.gr"
@@ -2025,8 +2024,8 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/ewc/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-19T07:05:33.335Z",
-      "updatedAt": "2026-03-17T16:20:30.000Z",
+      "fetchedAt": "2026-03-19T15:40:09.915Z",
+      "updatedAt": "2026-03-19T15:39:51.000Z",
       "firstSeenAt": "2026-03-17T16:20:30.000Z",
       "attributes": [
         {
@@ -2077,13 +2076,13 @@
           "required": false,
           "description": "Issuing Country"
         }
-      ]
+      ],
+      "schemaDescription": "EWC issuer credential: Verifiable ID Card (JWT VC). Schema generated from issuer metadata."
     },
     {
       "id": "cred:ewc:pid-sd-jwt:sd-jwt-vc",
       "slug": "ewc-pid-sd-jwt",
       "displayName": "Person Identification Data (SD-JWT VC)",
-      "shortDescription": "EWC issuer credential: Person Identification Data (PID). Schema generated from issuer metadata.",
       "authority": {
         "name": "University of the Aegean / EWC",
         "url": "https://dss.aegean.gr"
@@ -2106,8 +2105,8 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/ewc/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-19T07:05:33.335Z",
-      "updatedAt": "2026-03-17T16:20:30.000Z",
+      "fetchedAt": "2026-03-19T15:40:09.915Z",
+      "updatedAt": "2026-03-19T15:39:51.000Z",
       "firstSeenAt": "2026-03-17T16:20:30.000Z",
       "attributes": [
         {
@@ -2158,13 +2157,13 @@
           "required": false,
           "description": "Issuing Country"
         }
-      ]
+      ],
+      "schemaDescription": "EWC issuer credential: Person Identification Data (PID). Schema generated from issuer metadata."
     },
     {
       "id": "cred:ewc:epassport-sd-jwt:sd-jwt-vc",
       "slug": "ewc-epassport-sd-jwt",
       "displayName": "ePassport (SD-JWT VC)",
-      "shortDescription": "EWC issuer credential: ePassport credential (SD-JWT VC). Schema generated from issuer metadata.",
       "authority": {
         "name": "University of the Aegean / EWC",
         "url": "https://dss.aegean.gr"
@@ -2187,8 +2186,8 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/ewc/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-19T07:05:33.335Z",
-      "updatedAt": "2026-03-17T16:20:30.000Z",
+      "fetchedAt": "2026-03-19T15:40:09.915Z",
+      "updatedAt": "2026-03-19T15:39:51.000Z",
       "firstSeenAt": "2026-03-17T16:20:30.000Z",
       "attributes": [
         {
@@ -2203,13 +2202,13 @@
           "required": false,
           "description": "Electronic Passport data including biographical and biometric data groups"
         }
-      ]
+      ],
+      "schemaDescription": "EWC issuer credential: ePassport credential (SD-JWT VC). Schema generated from issuer metadata."
     },
     {
       "id": "cred:ewc:student-id-sd-jwt:sd-jwt-vc",
       "slug": "ewc-student-id-sd-jwt",
       "displayName": "Student ID (SD-JWT VC)",
-      "shortDescription": "EWC issuer credential: Student ID (SD-JWT VC). Schema generated from issuer metadata.",
       "authority": {
         "name": "University of the Aegean / EWC",
         "url": "https://dss.aegean.gr"
@@ -2232,8 +2231,8 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/ewc/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-19T07:05:33.335Z",
-      "updatedAt": "2026-03-17T16:20:30.000Z",
+      "fetchedAt": "2026-03-19T15:40:09.915Z",
+      "updatedAt": "2026-03-19T15:39:51.000Z",
       "firstSeenAt": "2026-03-17T16:20:30.000Z",
       "attributes": [
         {
@@ -2302,13 +2301,13 @@
           "required": false,
           "description": "eduPerson Primary Affiliation"
         }
-      ]
+      ],
+      "schemaDescription": "EWC issuer credential: Student ID (SD-JWT VC). Schema generated from issuer metadata."
     },
     {
       "id": "cred:ewc:ferry-boarding-pass-sd-jwt:sd-jwt-vc",
       "slug": "ewc-ferry-boarding-pass-sd-jwt",
       "displayName": "Ferry Boarding Pass (SD-JWT VC)",
-      "shortDescription": "EWC issuer credential: Ferry Boarding Pass (SD-JWT VC). Schema generated from issuer metadata.",
       "authority": {
         "name": "University of the Aegean / EWC",
         "url": "https://dss.aegean.gr"
@@ -2332,8 +2331,8 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/ewc/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-19T07:05:33.335Z",
-      "updatedAt": "2026-03-17T16:20:30.000Z",
+      "fetchedAt": "2026-03-19T15:40:09.915Z",
+      "updatedAt": "2026-03-19T15:39:51.000Z",
       "firstSeenAt": "2026-03-17T16:20:30.000Z",
       "attributes": [
         {
@@ -2390,13 +2389,13 @@
           "required": false,
           "description": "Vessel Description"
         }
-      ]
+      ],
+      "schemaDescription": "EWC issuer credential: Ferry Boarding Pass (SD-JWT VC). Schema generated from issuer metadata."
     },
     {
       "id": "cred:ewc:vreceipt-sd-jwt:sd-jwt-vc",
       "slug": "ewc-vreceipt-sd-jwt",
       "displayName": "vReceipt (SD-JWT VC)",
-      "shortDescription": "EWC issuer credential: Verifiable Receipt (SD-JWT VC). Schema generated from issuer metadata.",
       "authority": {
         "name": "University of the Aegean / EWC",
         "url": "https://dss.aegean.gr"
@@ -2419,8 +2418,8 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/ewc/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-19T07:05:33.335Z",
-      "updatedAt": "2026-03-17T16:20:30.000Z",
+      "fetchedAt": "2026-03-19T15:40:09.915Z",
+      "updatedAt": "2026-03-19T15:39:51.000Z",
       "firstSeenAt": "2026-03-17T16:20:30.000Z",
       "attributes": [
         {
@@ -2453,13 +2452,13 @@
           "required": false,
           "description": "Business name"
         }
-      ]
+      ],
+      "schemaDescription": "EWC issuer credential: Verifiable Receipt (SD-JWT VC). Schema generated from issuer metadata."
     },
     {
       "id": "cred:ewc:pid-eudi-sd-jwt:sd-jwt-vc",
       "slug": "ewc-pid-eudi-sd-jwt",
       "displayName": "PID EUDI (SD-JWT VC)",
-      "shortDescription": "EWC issuer credential: Person Identification Data per EUDI spec (SD-JWT VC). Schema generated from issuer metadata.",
       "authority": {
         "name": "University of the Aegean / EWC",
         "url": "https://dss.aegean.gr"
@@ -2483,8 +2482,8 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/ewc/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-19T07:05:33.335Z",
-      "updatedAt": "2026-03-17T16:20:30.000Z",
+      "fetchedAt": "2026-03-19T15:40:09.915Z",
+      "updatedAt": "2026-03-19T15:39:51.000Z",
       "firstSeenAt": "2026-03-17T16:20:30.000Z",
       "attributes": [
         {
@@ -2535,13 +2534,13 @@
           "required": false,
           "description": "Issuing Country"
         }
-      ]
+      ],
+      "schemaDescription": "EWC issuer credential: Person Identification Data per EUDI spec (SD-JWT VC). Schema generated from issuer metadata."
     },
     {
       "id": "cred:ewc:pid-eudi-mdoc:mso-mdoc",
       "slug": "ewc-pid-eudi-mdoc",
       "displayName": "PID EUDI (MSO Mdoc)",
-      "shortDescription": "EWC issuer credential: Person Identification Data per EUDI spec (MSO Mdoc). Schema generated from issuer metadata.",
       "authority": {
         "name": "University of the Aegean / EWC",
         "url": "https://dss.aegean.gr"
@@ -2565,8 +2564,8 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/ewc/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-19T07:05:33.335Z",
-      "updatedAt": "2026-03-17T16:20:30.000Z",
+      "fetchedAt": "2026-03-19T15:40:09.915Z",
+      "updatedAt": "2026-03-19T15:39:51.000Z",
       "firstSeenAt": "2026-03-17T16:20:30.000Z",
       "attributes": [
         {
@@ -2617,13 +2616,13 @@
           "required": false,
           "description": "Issuing Country"
         }
-      ]
+      ],
+      "schemaDescription": "EWC issuer credential: Person Identification Data per EUDI spec (MSO Mdoc). Schema generated from issuer metadata."
     },
     {
       "id": "cred:ewc:payment-wallet-attestation-sd-jwt:sd-jwt-vc",
       "slug": "ewc-payment-wallet-attestation-sd-jwt",
       "displayName": "Payment Wallet Attestation (SD-JWT VC)",
-      "shortDescription": "EWC issuer credential: Payment Wallet Attestation (SD-JWT VC). Schema generated from issuer metadata.",
       "authority": {
         "name": "University of the Aegean / EWC",
         "url": "https://dss.aegean.gr"
@@ -2646,8 +2645,8 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/ewc/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-19T07:05:33.335Z",
-      "updatedAt": "2026-03-17T16:20:30.000Z",
+      "fetchedAt": "2026-03-19T15:40:09.915Z",
+      "updatedAt": "2026-03-19T15:39:51.000Z",
       "firstSeenAt": "2026-03-17T16:20:30.000Z",
       "attributes": [
         {
@@ -2662,13 +2661,13 @@
           "required": false,
           "description": "Funding source details including type, card/IBAN info and scheme"
         }
-      ]
+      ],
+      "schemaDescription": "EWC issuer credential: Payment Wallet Attestation (SD-JWT VC). Schema generated from issuer metadata."
     },
     {
       "id": "cred:ewc:photo-id-sd-jwt:sd-jwt-vc",
       "slug": "ewc-photo-id-sd-jwt",
       "displayName": "Photo ID (SD-JWT VC)",
-      "shortDescription": "EWC issuer credential: Photo ID (SD-JWT VC). Schema generated from issuer metadata.",
       "authority": {
         "name": "University of the Aegean / EWC",
         "url": "https://dss.aegean.gr"
@@ -2691,8 +2690,8 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/ewc/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-19T07:05:33.335Z",
-      "updatedAt": "2026-03-17T16:20:30.000Z",
+      "fetchedAt": "2026-03-19T15:40:09.915Z",
+      "updatedAt": "2026-03-19T15:39:51.000Z",
       "firstSeenAt": "2026-03-17T16:20:30.000Z",
       "attributes": [
         {
@@ -2713,13 +2712,13 @@
           "required": false,
           "description": "Digital Travel Credential data groups"
         }
-      ]
+      ],
+      "schemaDescription": "EWC issuer credential: Photo ID (SD-JWT VC). Schema generated from issuer metadata."
     },
     {
       "id": "cred:ewc:personal-contact-details-sd-jwt:sd-jwt-vc",
       "slug": "ewc-personal-contact-details-sd-jwt",
       "displayName": "Personal Contact Details (SD-JWT VC)",
-      "shortDescription": "EWC issuer credential: Personal Contact Details (SD-JWT VC). Schema generated from issuer metadata.",
       "authority": {
         "name": "University of the Aegean / EWC",
         "url": "https://dss.aegean.gr"
@@ -2741,8 +2740,8 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/ewc/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-19T07:05:33.335Z",
-      "updatedAt": "2026-03-17T16:20:30.000Z",
+      "fetchedAt": "2026-03-19T15:40:09.915Z",
+      "updatedAt": "2026-03-19T15:39:51.000Z",
       "firstSeenAt": "2026-03-17T16:20:30.000Z",
       "attributes": [
         {
@@ -2787,13 +2786,13 @@
           "required": false,
           "description": "Country Address"
         }
-      ]
+      ],
+      "schemaDescription": "EWC issuer credential: Personal Contact Details (SD-JWT VC). Schema generated from issuer metadata."
     },
     {
       "id": "cred:ewc:loyalty-card-sd-jwt:sd-jwt-vc",
       "slug": "ewc-loyalty-card-sd-jwt",
       "displayName": "Loyalty Card (SD-JWT VC)",
-      "shortDescription": "EWC issuer credential: Loyalty Card (SD-JWT VC). Schema generated from issuer metadata.",
       "authority": {
         "name": "University of the Aegean / EWC",
         "url": "https://dss.aegean.gr"
@@ -2815,8 +2814,8 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/ewc/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-19T07:05:33.335Z",
-      "updatedAt": "2026-03-17T16:20:30.000Z",
+      "fetchedAt": "2026-03-19T15:40:09.915Z",
+      "updatedAt": "2026-03-19T15:39:51.000Z",
       "firstSeenAt": "2026-03-17T16:20:30.000Z",
       "attributes": [
         {
@@ -2855,13 +2854,13 @@
           "required": false,
           "description": "Expiry Date"
         }
-      ]
+      ],
+      "schemaDescription": "EWC issuer credential: Loyalty Card (SD-JWT VC). Schema generated from issuer metadata."
     },
     {
       "id": "cred:fides:lpid:sd-jwt-vc",
       "slug": "fides-lpid-sd-jwt-vc",
       "displayName": "LPID Attestation",
-      "shortDescription": "Legal Person Identification credential.",
       "authority": {
         "name": "FIDES Labs",
         "url": "https://fides.community"
@@ -2883,8 +2882,8 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-19T07:05:33.335Z",
-      "updatedAt": "2026-03-12T00:00:00.000Z",
+      "fetchedAt": "2026-03-19T15:40:09.915Z",
+      "updatedAt": "2026-03-15T00:00:00.000Z",
       "firstSeenAt": "2026-03-12T00:00:00.000Z",
       "attributes": [
         {
@@ -2946,13 +2945,13 @@
           "required": false,
           "description": "Human-readable name of the authentic source that issued the instance."
         }
-      ]
+      ],
+      "schemaDescription": "This schema represents the claim set of an SD-JWT based Verifiable Credential for the LPID (Legal Person ID) attestation as a single, flat JSON object. It is derived from the EWC PID Rulebook and aligned with the IETF SD-JWT VC data model: generic SD-JWT VC claims (iss, sub, vct, iat, nbf, exp, jti, cnf) are defined alongside the domain-specific LPID claims. Implementations may conceptually treat this as a layered model (base + domain), but the structure is flat for systems that expect a single JSON Schema document, such as current organizational wallet templates."
     },
     {
       "id": "cred:fides:bri:sd-jwt-vc",
       "slug": "fides-bri-sd-jwt-vc",
       "displayName": "BRI Attestation",
-      "shortDescription": "Business/Income related attestation.",
       "authority": {
         "name": "FIDES Labs",
         "url": "https://fides.community"
@@ -2974,8 +2973,8 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-19T07:05:33.335Z",
-      "updatedAt": "2026-03-12T00:00:00.000Z",
+      "fetchedAt": "2026-03-19T15:40:09.915Z",
+      "updatedAt": "2026-03-15T00:00:00.000Z",
       "firstSeenAt": "2026-03-12T00:00:00.000Z",
       "attributes": [
         {
@@ -3032,13 +3031,13 @@
           "required": true,
           "description": "Income data as registered in the Dutch Basisregistratie Inkomen (BRI) for a specific year."
         }
-      ]
+      ],
+      "schemaDescription": "This schema represents the claim set of an SD-JWT based Verifiable Credential for the BRI (Income) attestation as a single, flat JSON object. It is derived from the BRI Rulebook (urn:eudi:nl:nl_bld_bri:1)"
     },
     {
       "id": "cred:fides:brp:sd-jwt-vc",
       "slug": "fides-brp-sd-jwt-vc",
       "displayName": "BRP Attestation",
-      "shortDescription": "Population registry attestation.",
       "authority": {
         "name": "FIDES Labs",
         "url": "https://fides.community"
@@ -3060,8 +3059,8 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-19T07:05:33.335Z",
-      "updatedAt": "2026-03-12T00:00:00.000Z",
+      "fetchedAt": "2026-03-19T15:40:09.915Z",
+      "updatedAt": "2026-03-15T00:00:00.000Z",
       "firstSeenAt": "2026-03-12T00:00:00.000Z",
       "attributes": [
         {
@@ -3098,13 +3097,13 @@
           "required": true,
           "description": "Name of the data providing entity"
         }
-      ]
+      ],
+      "schemaDescription": "This schema represents the claim set of an SD-JWT based Verifiable Credential for the BRP (Persons) attestation as a single, flat JSON object."
     },
     {
       "id": "cred:fides:company-roles:sd-jwt-vc",
       "slug": "fides-company-roles-sd-jwt-vc",
       "displayName": "Company Roles Attestation",
-      "shortDescription": "Roles of a natural person in relation to organizations.",
       "authority": {
         "name": "FIDES Labs",
         "url": "https://fides.community"
@@ -3126,8 +3125,8 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-19T07:05:33.335Z",
-      "updatedAt": "2026-03-12T00:00:00.000Z",
+      "fetchedAt": "2026-03-19T15:40:09.915Z",
+      "updatedAt": "2026-03-15T00:00:00.000Z",
       "firstSeenAt": "2026-03-12T00:00:00.000Z",
       "attributes": [
         {
@@ -3165,13 +3164,13 @@
           "required": true,
           "description": "EUID of the issuing authority"
         }
-      ]
+      ],
+      "schemaDescription": "This schema represents the claim set of an SD-JWT based Verifiable Credential for describing a natural person's roles in companies and the result of a board disqualification check."
     },
     {
       "id": "cred:fides:contact-details:sd-jwt-vc",
       "slug": "fides-contact-details-sd-jwt-vc",
       "displayName": "Contact Details",
-      "shortDescription": "Verified contact details attestation.",
       "authority": {
         "name": "FIDES Labs",
         "url": "https://fides.community"
@@ -3193,8 +3192,8 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-19T07:05:33.335Z",
-      "updatedAt": "2026-03-12T00:00:00.000Z",
+      "fetchedAt": "2026-03-19T15:40:09.915Z",
+      "updatedAt": "2026-03-15T00:00:00.000Z",
       "firstSeenAt": "2026-03-12T00:00:00.000Z",
       "attributes": [
         {
@@ -3212,13 +3211,13 @@
           "type": "object",
           "required": false
         }
-      ]
+      ],
+      "schemaDescription": "This schema represents the claim set of an SD-JWT based Verifiable Credential for Contact Details (verified email and phone number) attestation as a single, flat JSON object."
     },
     {
       "id": "cred:fides:einvoicing:sd-jwt-vc",
       "slug": "fides-einvoicing-sd-jwt-vc",
       "displayName": "eInvoice Attestation",
-      "shortDescription": "Electronic invoicing related attestation.",
       "authority": {
         "name": "FIDES Labs",
         "url": "https://fides.community"
@@ -3240,8 +3239,8 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-19T07:05:33.335Z",
-      "updatedAt": "2026-03-12T00:00:00.000Z",
+      "fetchedAt": "2026-03-19T15:40:09.915Z",
+      "updatedAt": "2026-03-15T00:00:00.000Z",
       "firstSeenAt": "2026-03-12T00:00:00.000Z",
       "attributes": [
         {
@@ -3297,13 +3296,13 @@
           "required": true,
           "description": "The original evidence documents, such as the UBL 2.0 invoice"
         }
-      ]
+      ],
+      "schemaDescription": "This schema represents the claim set of an SD-JWT based Verifiable Credential for the eInvoice attestation as a single, flat JSON object. It is based on UBL attributes and aligned with the IETF SD-JWT VC data model: generic SD-JWT VC claims (iss, sub, vct, iat, nbf, exp, jti, cnf) are defined alongside the domain-specific LPID claims. Implementations may conceptually treat this as a layered model (base + domain), but the structure is flat for systems that expect a single JSON Schema document, such as current organizational wallet templates."
     },
     {
       "id": "cred:fides:green-lane:sd-jwt-vc",
       "slug": "fides-green-lane-sd-jwt-vc",
       "displayName": "Green Lane Credential",
-      "shortDescription": "Green lane attestation for supply chain context.",
       "authority": {
         "name": "FIDES Labs",
         "url": "https://fides.community"
@@ -3325,8 +3324,8 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-19T07:05:33.335Z",
-      "updatedAt": "2026-03-12T00:00:00.000Z",
+      "fetchedAt": "2026-03-19T15:40:09.915Z",
+      "updatedAt": "2026-03-15T00:00:00.000Z",
       "firstSeenAt": "2026-03-12T00:00:00.000Z",
       "attributes": []
     },
@@ -3334,7 +3333,6 @@
       "id": "cred:fides:iban:sd-jwt-vc",
       "slug": "fides-iban-sd-jwt-vc",
       "displayName": "IBAN Attestation",
-      "shortDescription": "Bank account identifier attestation.",
       "authority": {
         "name": "FIDES Labs",
         "url": "https://fides.community"
@@ -3356,8 +3354,8 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-19T07:05:33.335Z",
-      "updatedAt": "2026-03-12T00:00:00.000Z",
+      "fetchedAt": "2026-03-19T15:40:09.915Z",
+      "updatedAt": "2026-03-15T00:00:00.000Z",
       "firstSeenAt": "2026-03-12T00:00:00.000Z",
       "attributes": []
     },
@@ -3365,7 +3363,6 @@
       "id": "cred:fides:iscc-sd:sd-jwt-vc",
       "slug": "fides-iscc-sd-sd-jwt-vc",
       "displayName": "ISCC Sustainability Declaration",
-      "shortDescription": "Clean fuel sustainability declaration credential.",
       "authority": {
         "name": "FIDES Labs",
         "url": "https://fides.community"
@@ -3388,8 +3385,8 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-19T07:05:33.335Z",
-      "updatedAt": "2026-03-12T00:00:00.000Z",
+      "fetchedAt": "2026-03-19T15:40:09.915Z",
+      "updatedAt": "2026-03-15T00:00:00.000Z",
       "firstSeenAt": "2026-03-12T00:00:00.000Z",
       "attributes": [
         {
@@ -3542,13 +3539,13 @@
           "required": false,
           "description": "Unit used for the GHG emission calculation for raw materials and intermediate products. Default is kgCO2eq/dry-ton."
         }
-      ]
+      ],
+      "schemaDescription": "Light variant of the Clean Fuel Sustainability Declaration (SD) JSON Schema. This version is intended for early pilots and prototypes and focuses on a minimal subset of fields that are most critical for linking SDs to PoS and to physical batches. It follows the same naming conventions as the full SD schema and the PoS schema."
     },
     {
       "id": "cred:fides:iscc-cert:sd-jwt-vc",
       "slug": "fides-iscc-cert-sd-jwt-vc",
       "displayName": "ISCC Certificate",
-      "shortDescription": "ISCC certificate credential for certification context.",
       "authority": {
         "name": "FIDES Labs",
         "url": "https://fides.community"
@@ -3571,8 +3568,8 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-19T07:05:33.335Z",
-      "updatedAt": "2026-03-12T00:00:00.000Z",
+      "fetchedAt": "2026-03-19T15:40:09.915Z",
+      "updatedAt": "2026-03-15T00:00:00.000Z",
       "firstSeenAt": "2026-03-12T00:00:00.000Z",
       "attributes": [
         {
@@ -3635,13 +3632,13 @@
           "required": true,
           "description": "Name of the ISCC-recognised Certification Body (CB) that issued this certificate."
         }
-      ]
+      ],
+      "schemaDescription": "A simplified ISCC certificate credential for demo purposes. Contains only essential information issued by an ISCC Certification Body (CB)."
     },
     {
       "id": "cred:fides:iscc-role:sd-jwt-vc",
       "slug": "fides-iscc-role-sd-jwt-vc",
       "displayName": "CFP Role Credential",
-      "shortDescription": "Supply-chain role credential for organizations.",
       "authority": {
         "name": "FIDES Labs",
         "url": "https://fides.community"
@@ -3664,8 +3661,8 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-19T07:05:33.335Z",
-      "updatedAt": "2026-03-12T00:00:00.000Z",
+      "fetchedAt": "2026-03-19T15:40:09.915Z",
+      "updatedAt": "2026-03-15T00:00:00.000Z",
       "firstSeenAt": "2026-03-12T00:00:00.000Z",
       "attributes": [
         {
@@ -3680,13 +3677,13 @@
           "required": true,
           "description": "One or more Clean Fuel Protocol roles assigned to the organization."
         }
-      ]
+      ],
+      "schemaDescription": "Domain model for a Clean Fuel Protocol Role Credential. This credential asserts one or more supply-chain roles for an organization. It follows the FIDES JSON Schema pattern: only credentialSubject fields are defined here."
     },
     {
       "id": "cred:fides:iscc-cb:sd-jwt-vc",
       "slug": "fides-iscc-cb-sd-jwt-vc",
       "displayName": "ISCC Certification Body Credential",
-      "shortDescription": "Recognition details of a certification body.",
       "authority": {
         "name": "FIDES Labs",
         "url": "https://fides.community"
@@ -3709,8 +3706,8 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-19T07:05:33.335Z",
-      "updatedAt": "2026-03-12T00:00:00.000Z",
+      "fetchedAt": "2026-03-19T15:40:09.915Z",
+      "updatedAt": "2026-03-15T00:00:00.000Z",
       "firstSeenAt": "2026-03-12T00:00:00.000Z",
       "attributes": [
         {
@@ -3785,13 +3782,13 @@
           "required": false,
           "description": "A public URL where ISCC certificates or audit information for this CB or its clients can be looked up. Optional. Example: https://certificates.iscc-system.org"
         }
-      ]
+      ],
+      "schemaDescription": "This schema defines a Verifiable Credential with the ISCC recognition details of a Certification Body (CB). It only contains domain-specific claims and is intended to be combined with a base SD-JWT VC layer by the wallet or ecosystem."
     },
     {
       "id": "cred:fides:iscc-rev-user:sd-jwt-vc",
       "slug": "fides-iscc-rev-user-sd-jwt-vc",
       "displayName": "NEa REV User Credential",
-      "shortDescription": "Credential proving registered REV user status.",
       "authority": {
         "name": "FIDES Labs",
         "url": "https://fides.community"
@@ -3814,8 +3811,8 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-19T07:05:33.335Z",
-      "updatedAt": "2026-03-12T00:00:00.000Z",
+      "fetchedAt": "2026-03-19T15:40:09.915Z",
+      "updatedAt": "2026-03-15T00:00:00.000Z",
       "firstSeenAt": "2026-03-12T00:00:00.000Z",
       "attributes": [
         {
@@ -3848,13 +3845,13 @@
           "required": false,
           "description": "Datum waarop de organisatie als REV-gebruiker is geregistreerd (DD-MM-YYYY)."
         }
-      ]
+      ],
+      "schemaDescription": "A minimal Verifiable Credential issued by the Dutch Emissions Authority (NEa) confirming that an organisation is a registered user of the Register Energie voor Vervoer (REV)."
     },
     {
       "id": "cred:fides:notary-incorporation:sd-jwt-vc",
       "slug": "fides-notary-incorporation-sd-jwt-vc",
       "displayName": "Notary Incorporation Attestation",
-      "shortDescription": "Credential related to notarial incorporation process.",
       "authority": {
         "name": "FIDES Labs",
         "url": "https://fides.community"
@@ -3877,8 +3874,8 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-19T07:05:33.335Z",
-      "updatedAt": "2026-03-12T00:00:00.000Z",
+      "fetchedAt": "2026-03-19T15:40:09.915Z",
+      "updatedAt": "2026-03-15T00:00:00.000Z",
       "firstSeenAt": "2026-03-12T00:00:00.000Z",
       "attributes": [
         {
@@ -3928,13 +3925,13 @@
           "required": true,
           "description": "Overview of the verified credentials the notary used."
         }
-      ]
+      ],
+      "schemaDescription": "An SD-JWT VC attesting that a notary verified a founder's data and used it to produce a notarial deed for the incorporation of a company."
     },
     {
       "id": "cred:fides:pid:sd-jwt-vc",
       "slug": "fides-pid-sd-jwt-vc",
       "displayName": "PID Attestation",
-      "shortDescription": "Person Identification Data credential.",
       "authority": {
         "name": "FIDES Labs",
         "url": "https://fides.community"
@@ -3956,8 +3953,8 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-19T07:05:33.335Z",
-      "updatedAt": "2026-03-12T00:00:00.000Z",
+      "fetchedAt": "2026-03-19T15:40:09.915Z",
+      "updatedAt": "2026-03-15T00:00:00.000Z",
       "firstSeenAt": "2026-03-12T00:00:00.000Z",
       "attributes": [
         {
@@ -4019,13 +4016,13 @@
           "required": false,
           "description": "Defines suspension and/or revocation details for the issued credential. Further redefined by the type extension"
         }
-      ]
+      ],
+      "schemaDescription": "This schema represents the claim set of an SD-JWT based Verifiable Credential for the PID (Person Identification Data) attestation as a single, flat JSON object. It is derived from the EWC PID Rulebook (WP3)"
     },
     {
       "id": "cred:fides:vat:sd-jwt-vc",
       "slug": "fides-vat-sd-jwt-vc",
       "displayName": "VAT Attestation",
-      "shortDescription": "VAT/tax registration related credential.",
       "authority": {
         "name": "FIDES Labs",
         "url": "https://fides.community"
@@ -4047,8 +4044,8 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-19T07:05:33.335Z",
-      "updatedAt": "2026-03-12T00:00:00.000Z",
+      "fetchedAt": "2026-03-19T15:40:09.915Z",
+      "updatedAt": "2026-03-15T00:00:00.000Z",
       "firstSeenAt": "2026-03-12T00:00:00.000Z",
       "attributes": [
         {
@@ -4081,13 +4078,13 @@
           "type": "string",
           "required": true
         }
-      ]
+      ],
+      "schemaDescription": "This schema represents the claim set of an SD-JWT based Verifiable Credential for the VAT (Tax) attestation as a single, flat JSON object. It is aligned with the IETF SD-JWT VC data model: generic SD-JWT VC claims (iss, sub, vct, iat, nbf, exp, jti, cnf) are defined alongside the domain-specific LPID claims. Implementations may conceptually treat this as a layered model (base + domain), but the structure is flat for systems that expect a single JSON Schema document, such as current organizational wallet templates."
     },
     {
       "id": "cred:fides:organization-profile:sd-jwt-vc",
       "slug": "fides-organization-profile-sd-jwt-vc",
       "displayName": "Organization Profile",
-      "shortDescription": "Verified organization profile credential including legal name, address, and contact details.",
       "authority": {
         "name": "FIDES Labs",
         "url": "https://fides.community"
@@ -4110,8 +4107,8 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-19T07:05:33.335Z",
-      "updatedAt": "2026-03-12T00:00:00.000Z",
+      "fetchedAt": "2026-03-19T15:40:09.915Z",
+      "updatedAt": "2026-03-15T00:00:00.000Z",
       "firstSeenAt": "2026-03-12T00:00:00.000Z",
       "attributes": [
         {
@@ -4180,7 +4177,6 @@
       "id": "cred:fides:criminal-record-check:sd-jwt-vc",
       "slug": "fides-criminal-record-check-sd-jwt-vc",
       "displayName": "Criminal Record Check",
-      "shortDescription": "Credential attesting the result of a criminal record background check.",
       "authority": {
         "name": "FIDES Labs",
         "url": "https://fides.community"
@@ -4203,8 +4199,8 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-19T07:05:33.335Z",
-      "updatedAt": "2026-03-12T00:00:00.000Z",
+      "fetchedAt": "2026-03-19T15:40:09.915Z",
+      "updatedAt": "2026-03-15T00:00:00.000Z",
       "firstSeenAt": "2026-03-12T00:00:00.000Z",
       "attributes": [
         {
@@ -4251,7 +4247,6 @@
       "id": "cred:fides:verified-employee:sd-jwt-vc",
       "slug": "fides-verified-employee-sd-jwt-vc",
       "displayName": "Verified Employee",
-      "shortDescription": "Credential attesting a person's employment status at an organization.",
       "authority": {
         "name": "FIDES Labs",
         "url": "https://fides.community"
@@ -4274,8 +4269,8 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-19T07:05:33.335Z",
-      "updatedAt": "2026-03-12T00:00:00.000Z",
+      "fetchedAt": "2026-03-19T15:40:09.915Z",
+      "updatedAt": "2026-03-15T00:00:00.000Z",
       "firstSeenAt": "2026-03-12T00:00:00.000Z",
       "attributes": [
         {
@@ -4306,7 +4301,6 @@
       "id": "cred:fides:higher-education-diploma:sd-jwt-vc",
       "slug": "fides-higher-education-diploma-sd-jwt-vc",
       "displayName": "Higher Education Diploma",
-      "shortDescription": "Credential attesting the award of a higher education diploma.",
       "authority": {
         "name": "FIDES Labs",
         "url": "https://fides.community"
@@ -4329,8 +4323,8 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-19T07:05:33.335Z",
-      "updatedAt": "2026-03-12T00:00:00.000Z",
+      "fetchedAt": "2026-03-19T15:40:09.915Z",
+      "updatedAt": "2026-03-15T00:00:00.000Z",
       "firstSeenAt": "2026-03-12T00:00:00.000Z",
       "attributes": [
         {
@@ -4375,7 +4369,6 @@
       "id": "cred:fides:iso-certificate:sd-jwt-vc",
       "slug": "fides-iso-certificate-sd-jwt-vc",
       "displayName": "ISO Certificate",
-      "shortDescription": "Credential attesting an ISO certification (e.g. ISO 14001) issued by an accredited certification body.",
       "authority": {
         "name": "FIDES Labs",
         "url": "https://fides.community"
@@ -4399,8 +4392,8 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-19T07:05:33.335Z",
-      "updatedAt": "2026-03-12T00:00:00.000Z",
+      "fetchedAt": "2026-03-19T15:40:09.915Z",
+      "updatedAt": "2026-03-15T00:00:00.000Z",
       "firstSeenAt": "2026-03-12T00:00:00.000Z",
       "attributes": [
         {
@@ -4464,7 +4457,6 @@
       "id": "cred:fides:upper-secondary-education:sd-jwt-vc",
       "slug": "fides-upper-secondary-education-sd-jwt-vc",
       "displayName": "Upper Secondary Education Certificate",
-      "shortDescription": "Credential attesting the award of an upper secondary education certificate.",
       "authority": {
         "name": "FIDES Labs",
         "url": "https://fides.community"
@@ -4487,8 +4479,8 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-19T07:05:33.335Z",
-      "updatedAt": "2026-03-12T00:00:00.000Z",
+      "fetchedAt": "2026-03-19T15:40:09.915Z",
+      "updatedAt": "2026-03-15T00:00:00.000Z",
       "firstSeenAt": "2026-03-12T00:00:00.000Z",
       "attributes": [
         {
