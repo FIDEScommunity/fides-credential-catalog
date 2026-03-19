@@ -2410,6 +2410,261 @@ a.fides-eco-tag-purple:hover {
   }
 }
 
+/* ============================================================
+ * VIEW TOGGLE — Generic pattern, reusable across catalog plugins
+ *
+ * How it works:
+ *  - renderViewToggle() injects .fides-view-toggle into the results bar.
+ *  - Clicking a button sets data-view="grid"|"list" on .fides-credential-grid
+ *    and re-renders the items with renderCredentialCard / renderCredentialRow.
+ *  - All visual differences are driven by [data-view="list"] selectors below.
+ *
+ * To reuse in another catalog:
+ *  1. Copy this entire block (VIEW TOGGLE START → VIEW TOGGLE END).
+ *  2. Replace ".fides-credential-" prefixes with your catalog's prefixes.
+ *  3. Adjust grid-template-columns to match your column count/widths.
+ *  4. The .fides-view-toggle / .fides-view-btn selectors are shared and
+ *     need no changes as long as you keep the same class names in your HTML.
+ * ============================================================ */
+
+/* ---- VIEW TOGGLE START ---- */
+
+.fides-view-toggle {
+  display: flex;
+  gap: 0.25rem;
+  background: var(--fides-bg-secondary);
+  padding: 0.25rem;
+  border-radius: 8px;
+  border: 1px solid var(--fides-border);
+  flex-shrink: 0;
+}
+
+.fides-view-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  padding: 0;
+  background: transparent;
+  border: none;
+  border-radius: 6px;
+  color: var(--fides-text-muted);
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+}
+
+.fides-view-btn:hover {
+  background: var(--fides-border);
+  color: var(--fides-text-primary);
+}
+
+.fides-view-btn.active {
+  background: var(--fides-accent);
+  color: #fff;
+}
+
+.fides-view-btn.active:hover {
+  background: var(--fides-accent-hover, var(--fides-accent));
+  color: #fff;
+}
+
+/* Hide toggle on mobile/tablet — list view is for larger screens only */
+@media (max-width: 1023px) {
+  .fides-view-toggle {
+    display: none;
+  }
+}
+
+/* ---- LIST VIEW ---- */
+
+/* Grid container switches from CSS grid to flex column in list mode */
+.fides-credential-grid[data-view="list"] {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  border: 1px solid var(--fides-border);
+  border-radius: var(--fides-radius);
+  overflow: hidden;
+}
+
+/*
+ * Column layout — 7 columns matching renderCredentialListHeader() and renderCredentialRow().
+ * If you add/remove a column, update this template AND both render functions.
+ */
+.fides-credential-list-header,
+.fides-credential-grid[data-view="list"] .fides-credential-card {
+  grid-template-columns: 32px 2fr 1.5fr 1fr 52px 52px 110px;
+  gap: 0.75rem;
+  padding: 0.625rem 1rem;
+}
+
+/* List header row */
+.fides-credential-list-header {
+  display: none;
+  align-items: center;
+  font-size: 0.6875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--fides-text-muted);
+  background: var(--fides-bg-secondary);
+  border-bottom: 1px solid var(--fides-border);
+}
+
+.fides-credential-grid[data-view="list"] .fides-credential-list-header {
+  display: grid;
+}
+
+.fides-list-col-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fides-list-col-center svg {
+  width: 13px;
+  height: 13px;
+}
+
+/* List row — overrides card styles */
+.fides-credential-grid[data-view="list"] .fides-credential-card {
+  display: grid;
+  align-items: center;
+  min-height: unset;
+  border-radius: 0;
+  border: none;
+  border-bottom: 1px solid var(--fides-border);
+  box-shadow: none;
+  animation: none;
+  background: var(--fides-bg-card);
+  transition: background 0.15s;
+}
+
+.fides-credential-grid[data-view="list"] .fides-credential-card:last-child {
+  border-bottom: none;
+}
+
+.fides-credential-grid[data-view="list"] .fides-credential-card:nth-child(even) {
+  background: var(--fides-bg-primary);
+}
+
+.fides-credential-grid[data-view="list"] .fides-credential-card:hover {
+  transform: none;
+  background: rgba(59, 130, 246, 0.04);
+  box-shadow: none;
+}
+
+/* ---- Row cell elements (hidden in grid mode, shown in list mode) ---- */
+
+.fides-row-icon,
+.fides-row-name,
+.fides-row-authority,
+.fides-row-format,
+.fides-row-count,
+.fides-row-updated {
+  display: none;
+}
+
+.fides-credential-grid[data-view="list"] .fides-row-icon,
+.fides-credential-grid[data-view="list"] .fides-row-name,
+.fides-credential-grid[data-view="list"] .fides-row-authority,
+.fides-credential-grid[data-view="list"] .fides-row-format,
+.fides-credential-grid[data-view="list"] .fides-row-count,
+.fides-credential-grid[data-view="list"] .fides-row-updated {
+  display: flex;
+  align-items: center;
+  min-width: 0;
+}
+
+/* Subject-type icon cell */
+.fides-row-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 7px;
+  background: var(--fides-bg-secondary);
+  border: 1px solid var(--fides-border);
+  color: var(--fides-accent);
+  flex-shrink: 0;
+  justify-content: center;
+}
+
+.fides-row-icon svg {
+  width: 16px;
+  height: 16px;
+}
+
+/* Name cell — flex column so the ID sits below the name */
+.fides-row-name {
+  flex-direction: column;
+  gap: 0;
+  overflow: hidden;
+  min-width: 0;
+}
+
+.fides-credential-grid[data-view="list"] .fides-row-name {
+  align-items: flex-start;
+}
+
+.fides-row-name-text {
+  font-size: 0.875rem;
+  font-weight: 600;
+  line-height: 1.2;
+  color: var(--fides-text-primary);
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.fides-row-name-id {
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+  font-size: 0.6875rem;
+  line-height: 1.2;
+  color: var(--fides-accent);
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+/* Authority cell */
+.fides-row-authority {
+  font-size: 0.8125rem;
+  color: var(--fides-text-secondary);
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  display: block;
+}
+
+/* Format cell (VC format, e.g. "SD-JWT VC") */
+.fides-row-format {
+  font-size: 0.8125rem;
+  color: var(--fides-text-secondary);
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+/* Count cells (issuers, relying parties) */
+.fides-row-count {
+  justify-content: center;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--fides-text-primary);
+}
+
+/* Updated cell */
+.fides-row-updated {
+  font-size: 0.75rem;
+  color: var(--fides-text-muted);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: block;
+}
+
+/* ---- VIEW TOGGLE END ---- */
+
 @media (max-width: 480px) {
   /* KPI row: single column */
   .fides-kpi-row {

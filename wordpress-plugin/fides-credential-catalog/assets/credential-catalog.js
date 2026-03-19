@@ -48,7 +48,9 @@
     subjectProduct: '<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3 8 4-8 4-8-4 8-4"></path><path d="m4 12 8 4 8-4"></path><path d="m4 17 8 4 8-4"></path></svg>',
     subjectDataset: '<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="8" ry="3"></ellipse><path d="M4 5v6c0 1.7 3.6 3 8 3s8-1.3 8-3V5"></path><path d="M4 11v6c0 1.7 3.6 3 8 3s8-1.3 8-3v-6"></path></svg>',
     subjectSoftware: '<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="13" rx="2"></rect><path d="M8 20h8"></path><path d="M12 17v3"></path></svg>',
-    subjectDocument: '<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H8a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V9z"></path><path d="M14 3v6h6"></path><path d="M10 13h6"></path><path d="M10 17h6"></path></svg>'
+    subjectDocument: '<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H8a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V9z"></path><path d="M14 3v6h6"></path><path d="M10 13h6"></path><path d="M10 17h6"></path></svg>',
+    viewGrid: '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>',
+    viewList: '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg>'
   };
 
   root.setAttribute("data-theme", settings.theme);
@@ -59,6 +61,21 @@
   let walletUsageMap = new Map();
   let selectedCredential = null;
   let sortBy = "lastUpdated";
+
+  /**
+   * VIEW TOGGLE STATE
+   * "grid" | "list" — persisted in localStorage key "fides-credential-view".
+   * - Grid mode: cards rendered by renderCredentialCard().
+   * - List mode: compact rows rendered by renderCredentialRow().
+   * Toggle is hidden on screens < 1024 px (always grid on mobile/tablet).
+   *
+   * To reuse this pattern in another catalog:
+   *  1. Copy renderViewToggle(), renderListHeader(), renderRow() and their CSS block.
+   *  2. Replace the localStorage key and CSS class prefixes.
+   *  3. Adjust the grid-template-columns to match your column count.
+   */
+  let viewMode = localStorage.getItem('fides-credential-view') || 'grid';
+
   let vocabulary = null;
 
   const filters = {
@@ -552,13 +569,95 @@
     `;
   }
 
-  function renderCredentialCard(credential) {
+  /**
+   * Shared display data for a credential item.
+   * Used by both renderCredentialCard() and renderCredentialRow() so that
+   * adding a new computed field only requires one change here.
+   */
+  function getCredentialDisplayData(credential) {
     const issuerCount = issuerUsageMap.get(credential.id)?.length ?? 0;
     const rpCount = rpUsageMap.get(credential.id)?.length ?? 0;
-
     const activityLabel = isWithinLastDays(credential.firstSeenAt, 30)
       ? formatDateLabel(credential.firstSeenAt, "Added")
       : formatDateLabel(credential.updatedAt, "Updated");
+    return { issuerCount, rpCount, activityLabel };
+  }
+
+  /**
+   * Renders the sticky column-header row for list view.
+   * Column order must stay in sync with the grid-template-columns in:
+   *   .fides-credential-grid[data-view="list"] .fides-credential-card  (CSS)
+   *   .fides-credential-list-header                                     (CSS)
+   */
+  function renderCredentialListHeader() {
+    return `
+      <div class="fides-credential-list-header" aria-hidden="true">
+        <div></div>
+        <div>Name</div>
+        <div>Authority</div>
+        <div>Format</div>
+        <div class="fides-list-col-center" title="Issuers">${icons.building}</div>
+        <div class="fides-list-col-center" title="Relying parties">${icons.shield}</div>
+        <div>Updated</div>
+      </div>
+    `;
+  }
+
+  /**
+   * Renders a compact list-row for a credential (used in list / table view).
+   * The outer element is the same .fides-credential-card as in grid mode so
+   * that bindCredentialCardEvents() works without any changes.
+   *
+   * If you add or remove a column, also update:
+   *  - renderCredentialListHeader()  — column header labels
+   *  - style.css: grid-template-columns in .fides-credential-list-header
+   *               and .fides-credential-grid[data-view="list"] .fides-credential-card
+   */
+  function renderCredentialRow(credential) {
+    const { issuerCount, rpCount, activityLabel } = getCredentialDisplayData(credential);
+    const formatLabel = escapeHtml(VC_FORMAT_LABELS[credential.vcFormat] || credential.vcFormat || '—');
+    return `
+      <article class="fides-credential-card" data-credential-id="${escapeHtml(credential.id)}" role="button" tabindex="0">
+        <div class="fides-row-icon" aria-hidden="true" title="${escapeHtml(credential.subjectType || 'Document')}">
+          ${getSubjectTypeIcon(credential.subjectType)}
+        </div>
+        <div class="fides-row-name">
+          <span class="fides-row-name-text" title="${escapeHtml(credential.displayName)}">${escapeHtml(credential.displayName)}</span>
+          ${credential.nativeIdentifier
+            ? `<span class="fides-row-name-id" title="${escapeHtml(credential.nativeIdentifier)}">${escapeHtml(credential.nativeIdentifier)}</span>`
+            : ''}
+        </div>
+        <div class="fides-row-authority" title="${escapeHtml(credential.authority?.name || '')}">${escapeHtml(credential.authority?.name || '—')}</div>
+        <div class="fides-row-format">${formatLabel}</div>
+        <div class="fides-row-count" title="${issuerCount} ${issuerCount === 1 ? 'issuer' : 'issuers'}">${issuerCount}</div>
+        <div class="fides-row-count" title="${rpCount} ${rpCount === 1 ? 'relying party' : 'relying parties'}">${rpCount}</div>
+        <div class="fides-row-updated">${escapeHtml(activityLabel || '—')}</div>
+      </article>
+    `;
+  }
+
+  /**
+   * Renders the grid/list toggle buttons for the results bar.
+   * Generic: only depends on the module-level `viewMode` variable and `icons`.
+   * The active button reflects the current viewMode.
+   */
+  function renderViewToggle() {
+    return `
+      <div class="fides-view-toggle" role="group" aria-label="View mode">
+        <button class="fides-view-btn${viewMode === 'grid' ? ' active' : ''}" data-view="grid"
+                aria-label="Grid view" aria-pressed="${viewMode === 'grid'}" title="Grid view">
+          ${icons.viewGrid}
+        </button>
+        <button class="fides-view-btn${viewMode === 'list' ? ' active' : ''}" data-view="list"
+                aria-label="List view" aria-pressed="${viewMode === 'list'}" title="List view">
+          ${icons.viewList}
+        </button>
+      </div>
+    `;
+  }
+
+  function renderCredentialCard(credential) {
+    const { issuerCount, rpCount, activityLabel } = getCredentialDisplayData(credential);
 
     return `
       <article class="fides-credential-card" data-credential-id="${escapeHtml(credential.id)}" role="button" tabindex="0">
@@ -719,7 +818,7 @@
                     </div>
                   </div>
 
-                  <div class="fides-eco-wallet-connector">${icons.chevronUp}</div>
+                  <div class="fides-eco-wallet-connector">${icons.chevronDown}</div>
 
                   <!-- Business Wallets (bottom) -->
                   <div class="fides-eco-wallet-row">
@@ -851,12 +950,16 @@
                   <span class="fides-filter-count ${getActiveFilterCount() > 0 ? "" : "hidden"}">${getActiveFilterCount() || 0}</span>
                 </button>
               ` : ""}
+              ${renderViewToggle()}
             </div>
             ${renderKpiCards(metrics)}
             <div class="fides-results">
-            <div class="fides-credential-grid" data-columns="${escapeHtml(settings.columns)}">
-              ${filtered.length > 0 ? filtered.map(renderCredentialCard).join("") : '<p class="fides-empty">No credentials found.</p>'}
-            </div>
+              <div class="fides-credential-grid" data-view="${viewMode}" data-columns="${escapeHtml(settings.columns)}">
+                ${viewMode === 'list' ? renderCredentialListHeader() : ''}
+                ${filtered.length > 0
+                  ? filtered.map(viewMode === 'list' ? renderCredentialRow : renderCredentialCard).join("")
+                  : '<p class="fides-empty">No credentials found.</p>'}
+              </div>
             </div>
           </section>
         </div>
@@ -889,9 +992,11 @@
     const grid = root.querySelector(".fides-credential-grid");
     if (!grid) return;
     const filtered = getFilteredCredentials();
-    grid.innerHTML = filtered.length > 0
-      ? filtered.map(renderCredentialCard).join("")
+    const header = viewMode === 'list' ? renderCredentialListHeader() : '';
+    const items = filtered.length > 0
+      ? filtered.map(viewMode === 'list' ? renderCredentialRow : renderCredentialCard).join("")
       : '<p class="fides-empty">No credentials found.</p>';
+    grid.innerHTML = header + items;
     bindCredentialCardEvents();
   }
 
@@ -1112,6 +1217,15 @@
         renderCredentialGridOnly();
       });
     }
+
+    // View toggle — switch between grid and list mode, persist preference
+    root.querySelectorAll('.fides-view-btn').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        viewMode = btn.getAttribute('data-view') || 'grid';
+        localStorage.setItem('fides-credential-view', viewMode);
+        render();
+      });
+    });
 
     bindCredentialCardEvents();
   }
