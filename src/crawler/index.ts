@@ -3,6 +3,7 @@ import path from "path";
 import { execFileSync } from "child_process";
 import Ajv2020 from "ajv/dist/2020.js";
 import addFormats from "ajv-formats";
+import yaml from "js-yaml";
 import type {
   AggregatedCredentialCatalog,
   CredentialCatalogFile,
@@ -87,13 +88,22 @@ function getTypeFromSchemaProperty(propertySchema: Record<string, unknown>): str
 }
 
 function extractAttributesFromSchema(schemaData: Record<string, unknown>): EnrichedAttribute[] {
-  const props = schemaData.properties;
+  const topProps = schemaData.properties as Record<string, unknown> | undefined;
+
+  // Prefer credentialSubject.properties when present (VCDM/YAML schemas)
+  const credentialSubject = topProps?.credentialSubject as Record<string, unknown> | undefined;
+  const subjectProps = credentialSubject?.properties as Record<string, unknown> | undefined;
+
+  const props = subjectProps ?? topProps;
   if (!props || typeof props !== "object" || Array.isArray(props)) return [];
 
-  const requiredRaw = schemaData.required;
-  const requiredSet = new Set<string>(
-    Array.isArray(requiredRaw) ? requiredRaw.filter((v): v is string => typeof v === "string") : []
-  );
+  // Required fields: check both root-level and credentialSubject-level
+  const rootRequired = schemaData.required;
+  const subjectRequired = credentialSubject?.required;
+  const requiredSet = new Set<string>([
+    ...(Array.isArray(rootRequired) ? rootRequired.filter((v): v is string => typeof v === "string") : []),
+    ...(Array.isArray(subjectRequired) ? subjectRequired.filter((v): v is string => typeof v === "string") : [])
+  ]);
 
   const attributes: EnrichedAttribute[] = [];
   for (const [name, value] of Object.entries(props)) {
@@ -117,9 +127,24 @@ interface SchemaFetchResult {
 
 async function fetchSchemaData(schemaUrl: string): Promise<SchemaFetchResult> {
   try {
-    const response = await fetch(schemaUrl, { headers: { Accept: "application/json" } });
+    const isYaml = /\.(yaml|yml)(\?.*)?$/i.test(schemaUrl);
+    const headers = isYaml
+      ? { Accept: "text/yaml, application/yaml, text/plain" }
+      : { Accept: "application/json" };
+
+    const response = await fetch(schemaUrl, { headers });
     if (!response.ok) return { attributes: [] };
-    const data = (await response.json()) as Record<string, unknown>;
+
+    let data: Record<string, unknown>;
+    if (isYaml) {
+      const text = await response.text();
+      data = yaml.load(text) as Record<string, unknown>;
+    } else {
+      data = (await response.json()) as Record<string, unknown>;
+    }
+
+    if (!data || typeof data !== "object") return { attributes: [] };
+
     return {
       attributes: extractAttributesFromSchema(data),
       description: typeof data.description === "string" ? data.description : undefined

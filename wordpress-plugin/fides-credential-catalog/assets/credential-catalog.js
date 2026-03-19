@@ -97,7 +97,6 @@
     subjectType: [],
     authority: [],
     schemaType: [],
-    hasSchemaUrl: null,
     usedByRPsOnly: false,
     hasIssuersOnly: false,
     addedLast30Days: false,
@@ -379,7 +378,6 @@
       subjectType: {},
       authority: {},
       schemaType: {},
-      hasSchemaUrl: 0,
       usedByRPsOnly: 0,
       addedLast30Days: 0,
       updatedLast30Days: 0
@@ -391,7 +389,6 @@
       const authorityName = credential.authority?.name || "Unknown";
       facets.authority[authorityName] = (facets.authority[authorityName] || 0) + 1;
       facets.schemaType[credential.schemaType] = (facets.schemaType[credential.schemaType] || 0) + 1;
-      if (credential.schemaUrl) facets.hasSchemaUrl += 1;
       if ((rpUsageMap.get(credential.id) || []).length > 0) facets.usedByRPsOnly += 1;
       if (isWithinLastDays(credential.firstSeenAt, 30)) facets.addedLast30Days += 1;
       if (isWithinLastDays(credential.updatedAt, 30)) facets.updatedLast30Days += 1;
@@ -422,7 +419,6 @@
       if (filters.subjectType.length > 0 && !filters.subjectType.includes(credential.subjectType)) return false;
       if (filters.authority.length > 0 && !filters.authority.includes(credential.authority?.name || "")) return false;
       if (filters.schemaType.length > 0 && !filters.schemaType.includes(credential.schemaType)) return false;
-      if (filters.hasSchemaUrl === true && !credential.schemaUrl) return false;
       if (filters.usedByRPsOnly && !(rpUsageMap.get(credential.id) || []).length) return false;
       if (filters.hasIssuersOnly && !(issuerUsageMap.get(credential.id) || []).length) return false;
       if (filters.addedLast30Days && !isWithinLastDays(credential.firstSeenAt, 30)) return false;
@@ -546,14 +542,6 @@
             <span>Added last 30 days<span class="fides-filter-option-count">(${filterFacets.addedLast30Days})</span></span>
           </label>
           <label class="fides-filter-checkbox">
-            <input type="checkbox" id="fides-updated-last-30" ${filters.updatedLast30Days ? "checked" : ""}>
-            <span>Updated last 30 days<span class="fides-filter-option-count">(${filterFacets.updatedLast30Days})</span></span>
-          </label>
-          <label class="fides-filter-checkbox">
-            <input type="checkbox" id="fides-has-schema-url" ${filters.hasSchemaUrl ? "checked" : ""}>
-            <span>Has schema URL<span class="fides-filter-option-count">(${filterFacets.hasSchemaUrl})</span></span>
-          </label>
-          <label class="fides-filter-checkbox">
             <input type="checkbox" id="fides-used-by-rps" ${filters.usedByRPsOnly ? "checked" : ""}>
             <span>Used by relying parties<span class="fides-filter-option-count">(${filterFacets.usedByRPsOnly})</span></span>
           </label>
@@ -599,9 +587,9 @@
         <div>Name</div>
         <div>Authority</div>
         <div>Format</div>
-        <div class="fides-list-col-center" title="Issuers">${icons.building}</div>
-        <div class="fides-list-col-center" title="Relying parties">${icons.shield}</div>
-        <div>Updated</div>
+        <div class="fides-list-col-right" title="Issuers">${icons.building}</div>
+        <div class="fides-list-col-right" title="Relying parties">${icons.shield}</div>
+        <div style="padding-left:0.75rem">Updated</div>
       </div>
     `;
   }
@@ -905,10 +893,36 @@
                     <span class="fides-kv-key">Last updated</span>
                     <span class="fides-kv-val">${escapeHtml(formatDateLabel(selectedCredential.updatedAt, "").trim() || "—")}</span>
                   </div>
-                  ${selectedCredential.rulebookUrl ? `<!-- rulebook spans below if present -->
+                  ${selectedCredential.rulebookUrl ? `
                   <div class="fides-kv-row fides-kv-row-wide">
                     <span class="fides-kv-key">Rulebook</span>
                     <span class="fides-kv-val"><a href="${escapeHtml(selectedCredential.rulebookUrl)}" target="_blank" rel="noopener" class="fides-modal-link-inline" onclick="event.stopPropagation();">${icons.externalLinkSmall} View rulebook</a></span>
+                  </div>` : ""}
+                  ${(selectedCredential.vocabularies?.length > 0) ? `
+                  <div class="fides-kv-row fides-kv-row-wide">
+                    <span class="fides-kv-key">${selectedCredential.vocabularies.length === 1 ? "Vocabulary" : "Vocabularies"}</span>
+                    <span class="fides-kv-val-stack">
+                      ${selectedCredential.vocabularies.map(v => {
+                        const href = v.authority?.url || v.url;
+                        return href
+                          ? `<a href="${escapeHtml(href)}" target="_blank" rel="noopener" class="fides-modal-link-inline" onclick="event.stopPropagation();">${icons.externalLinkSmall} ${escapeHtml(v.name)}</a>`
+                          : `<span>${escapeHtml(v.name)}</span>`;
+                      }).join("")}
+                    </span>
+                  </div>` : ""}
+                  ${(selectedCredential.extends?.length > 0) ? `
+                  <div class="fides-kv-row fides-kv-row-wide">
+                    <span class="fides-kv-key">Extends</span>
+                    <span class="fides-kv-val">
+                      ${selectedCredential.extends.map(ref => `<span class="fides-tag-chip">${escapeHtml(ref.displayName || ref.id)}</span>`).join(" ")}
+                    </span>
+                  </div>` : ""}
+                  ${(selectedCredential.tags?.length > 0) ? `
+                  <div class="fides-kv-row fides-kv-row-wide">
+                    <span class="fides-kv-key">Tags</span>
+                    <span class="fides-kv-val">
+                      ${selectedCredential.tags.map(t => `<span class="fides-tag-chip">${escapeHtml(t)}</span>`).join(" ")}
+                    </span>
                   </div>` : ""}
                 </div>
               </div>
@@ -1019,7 +1033,6 @@
     count += filters.authority.length;
     count += filters.schemaType.length;
     count += filters.ids.length;
-    if (filters.hasSchemaUrl) count += 1;
     if (filters.usedByRPsOnly) count += 1;
     if (filters.hasIssuersOnly) count += 1;
     if (filters.addedLast30Days) count += 1;
@@ -1101,14 +1114,6 @@
       });
     });
 
-    const hasSchemaUrlInput = root.querySelector("#fides-has-schema-url");
-    if (hasSchemaUrlInput) {
-      hasSchemaUrlInput.addEventListener("change", (event) => {
-        filters.hasSchemaUrl = event.target.checked;
-        render();
-      });
-    }
-
     const usedByRpsInput = root.querySelector("#fides-used-by-rps");
     if (usedByRpsInput) {
       usedByRpsInput.addEventListener("change", (event) => {
@@ -1129,14 +1134,6 @@
     if (addedLast30Input) {
       addedLast30Input.addEventListener("change", (event) => {
         filters.addedLast30Days = event.target.checked;
-        render();
-      });
-    }
-
-    const updatedLast30Input = root.querySelector("#fides-updated-last-30");
-    if (updatedLast30Input) {
-      updatedLast30Input.addEventListener("change", (event) => {
-        filters.updatedLast30Days = event.target.checked;
         render();
       });
     }

@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.0.0",
   "catalogType": "credential",
-  "lastUpdated": "2026-03-19T17:19:40.655Z",
+  "lastUpdated": "2026-03-19T21:12:58.861Z",
   "credentials": [
     {
       "id": "cred:eu:diploma-vc-sd-jwt:sd-jwt-vc",
@@ -27,9 +27,9 @@
         "name": "European Commission",
         "website": "https://digital-strategy.ec.europa.eu/en/policies/eudi-wallet"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-19T17:19:40.655Z",
+      "fetchedAt": "2026-03-19T21:12:58.861Z",
       "updatedAt": "2026-03-19T15:39:51.000Z",
       "firstSeenAt": "2026-03-17T09:29:34.000Z",
       "attributes": [
@@ -156,9 +156,9 @@
         "name": "European Commission",
         "website": "https://digital-strategy.ec.europa.eu/en/policies/eudi-wallet"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-19T17:19:40.655Z",
+      "fetchedAt": "2026-03-19T21:12:58.861Z",
       "updatedAt": "2026-03-19T15:39:51.000Z",
       "firstSeenAt": "2026-03-17T09:29:34.000Z",
       "attributes": [
@@ -235,9 +235,9 @@
         "name": "European Commission",
         "website": "https://digital-strategy.ec.europa.eu/en/policies/eudi-wallet"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-19T17:19:40.655Z",
+      "fetchedAt": "2026-03-19T21:12:58.861Z",
       "updatedAt": "2026-03-19T15:39:51.000Z",
       "firstSeenAt": "2026-03-17T09:29:34.000Z",
       "attributes": [
@@ -376,9 +376,9 @@
         "name": "European Commission",
         "website": "https://digital-strategy.ec.europa.eu/en/policies/eudi-wallet"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-19T17:19:40.655Z",
+      "fetchedAt": "2026-03-19T21:12:58.861Z",
       "updatedAt": "2026-03-19T15:39:51.000Z",
       "firstSeenAt": "2026-03-17T09:29:34.000Z",
       "attributes": [
@@ -529,9 +529,9 @@
         "name": "European Commission",
         "website": "https://digital-strategy.ec.europa.eu/en/policies/eudi-wallet"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-19T17:19:40.655Z",
+      "fetchedAt": "2026-03-19T21:12:58.861Z",
       "updatedAt": "2026-03-19T15:39:51.000Z",
       "firstSeenAt": "2026-03-17T09:29:34.000Z",
       "attributes": [
@@ -634,9 +634,9 @@
         "name": "European Commission",
         "website": "https://digital-strategy.ec.europa.eu/en/policies/eudi-wallet"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-19T17:19:40.655Z",
+      "fetchedAt": "2026-03-19T21:12:58.861Z",
       "updatedAt": "2026-03-19T15:39:51.000Z",
       "firstSeenAt": "2026-03-17T09:29:34.000Z",
       "attributes": [
@@ -734,9 +734,9 @@
         "name": "European Commission",
         "website": "https://digital-strategy.ec.europa.eu/en/policies/eudi-wallet"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-19T17:19:40.655Z",
+      "fetchedAt": "2026-03-19T21:12:58.861Z",
       "updatedAt": "2026-03-19T15:39:51.000Z",
       "firstSeenAt": "2026-03-17T09:29:34.000Z",
       "attributes": [
@@ -886,9 +886,9 @@
         "name": "European Commission",
         "website": "https://digital-strategy.ec.europa.eu/en/policies/eudi-wallet"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-19T17:19:40.655Z",
+      "fetchedAt": "2026-03-19T21:12:58.861Z",
       "updatedAt": "2026-03-19T15:39:51.000Z",
       "firstSeenAt": "2026-03-17T09:29:34.000Z",
       "attributes": [
@@ -985,9 +985,9 @@
         "name": "European Commission",
         "website": "https://digital-strategy.ec.europa.eu/en/policies/eudi-wallet"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-19T17:19:40.655Z",
+      "fetchedAt": "2026-03-19T21:12:58.861Z",
       "updatedAt": "2026-03-19T15:39:51.000Z",
       "firstSeenAt": "2026-03-17T09:29:34.000Z",
       "attributes": [
@@ -1072,9 +1072,9 @@
         "name": "European Commission",
         "website": "https://digital-strategy.ec.europa.eu/en/policies/eudi-wallet"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-19T17:19:40.655Z",
+      "fetchedAt": "2026-03-19T21:12:58.861Z",
       "updatedAt": "2026-03-19T15:39:51.000Z",
       "firstSeenAt": "2026-03-17T09:29:34.000Z",
       "attributes": [
@@ -1190,9 +1190,9 @@
         "name": "European Commission",
         "website": "https://digital-strategy.ec.europa.eu/en/policies/eudi-wallet"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-19T17:19:40.655Z",
+      "fetchedAt": "2026-03-19T21:12:58.861Z",
       "updatedAt": "2026-03-19T15:39:51.000Z",
       "firstSeenAt": "2026-03-17T09:29:34.000Z",
       "attributes": [
@@ -1229,9 +1229,9 @@
         "name": "European Commission",
         "website": "https://digital-strategy.ec.europa.eu/en/policies/eudi-wallet"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-19T17:19:40.655Z",
+      "fetchedAt": "2026-03-19T21:12:58.861Z",
       "updatedAt": "2026-03-19T15:39:51.000Z",
       "firstSeenAt": "2026-03-17T09:29:34.000Z",
       "attributes": [
@@ -1268,9 +1268,9 @@
         "name": "European Commission",
         "website": "https://digital-strategy.ec.europa.eu/en/policies/eudi-wallet"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-19T17:19:40.655Z",
+      "fetchedAt": "2026-03-19T21:12:58.861Z",
       "updatedAt": "2026-03-19T15:39:51.000Z",
       "firstSeenAt": "2026-03-17T09:29:34.000Z",
       "attributes": [
@@ -1307,9 +1307,9 @@
         "name": "European Commission",
         "website": "https://digital-strategy.ec.europa.eu/en/policies/eudi-wallet"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-19T17:19:40.655Z",
+      "fetchedAt": "2026-03-19T21:12:58.861Z",
       "updatedAt": "2026-03-19T15:39:51.000Z",
       "firstSeenAt": "2026-03-17T09:29:34.000Z",
       "attributes": [
@@ -1346,9 +1346,9 @@
         "name": "European Commission",
         "website": "https://digital-strategy.ec.europa.eu/en/policies/eudi-wallet"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-19T17:19:40.655Z",
+      "fetchedAt": "2026-03-19T21:12:58.861Z",
       "updatedAt": "2026-03-19T15:39:51.000Z",
       "firstSeenAt": "2026-03-17T09:29:34.000Z",
       "attributes": [
@@ -1385,9 +1385,9 @@
         "name": "European Commission",
         "website": "https://digital-strategy.ec.europa.eu/en/policies/eudi-wallet"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-19T17:19:40.655Z",
+      "fetchedAt": "2026-03-19T21:12:58.861Z",
       "updatedAt": "2026-03-19T15:39:51.000Z",
       "firstSeenAt": "2026-03-17T09:29:34.000Z",
       "attributes": [
@@ -1424,9 +1424,9 @@
         "name": "European Commission",
         "website": "https://digital-strategy.ec.europa.eu/en/policies/eudi-wallet"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-19T17:19:40.655Z",
+      "fetchedAt": "2026-03-19T21:12:58.861Z",
       "updatedAt": "2026-03-19T15:39:51.000Z",
       "firstSeenAt": "2026-03-17T09:29:34.000Z",
       "attributes": [
@@ -1463,9 +1463,9 @@
         "name": "European Commission",
         "website": "https://digital-strategy.ec.europa.eu/en/policies/eudi-wallet"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-19T17:19:40.655Z",
+      "fetchedAt": "2026-03-19T21:12:58.861Z",
       "updatedAt": "2026-03-19T15:39:51.000Z",
       "firstSeenAt": "2026-03-17T09:29:34.000Z",
       "attributes": [
@@ -1502,9 +1502,9 @@
         "name": "European Commission",
         "website": "https://digital-strategy.ec.europa.eu/en/policies/eudi-wallet"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-19T17:19:40.655Z",
+      "fetchedAt": "2026-03-19T21:12:58.861Z",
       "updatedAt": "2026-03-19T15:39:51.000Z",
       "firstSeenAt": "2026-03-17T09:29:34.000Z",
       "attributes": [
@@ -1541,9 +1541,9 @@
         "name": "European Commission",
         "website": "https://digital-strategy.ec.europa.eu/en/policies/eudi-wallet"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-19T17:19:40.655Z",
+      "fetchedAt": "2026-03-19T21:12:58.861Z",
       "updatedAt": "2026-03-19T15:39:51.000Z",
       "firstSeenAt": "2026-03-17T09:29:34.000Z",
       "attributes": [
@@ -1580,9 +1580,9 @@
         "name": "European Commission",
         "website": "https://digital-strategy.ec.europa.eu/en/policies/eudi-wallet"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-19T17:19:40.655Z",
+      "fetchedAt": "2026-03-19T21:12:58.861Z",
       "updatedAt": "2026-03-19T15:39:51.000Z",
       "firstSeenAt": "2026-03-17T09:29:34.000Z",
       "attributes": [
@@ -1619,9 +1619,9 @@
         "name": "European Commission",
         "website": "https://digital-strategy.ec.europa.eu/en/policies/eudi-wallet"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-19T17:19:40.655Z",
+      "fetchedAt": "2026-03-19T21:12:58.861Z",
       "updatedAt": "2026-03-19T15:39:51.000Z",
       "firstSeenAt": "2026-03-17T09:29:34.000Z",
       "attributes": [
@@ -1658,9 +1658,9 @@
         "name": "European Commission",
         "website": "https://digital-strategy.ec.europa.eu/en/policies/eudi-wallet"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-19T17:19:40.655Z",
+      "fetchedAt": "2026-03-19T21:12:58.861Z",
       "updatedAt": "2026-03-19T15:39:51.000Z",
       "firstSeenAt": "2026-03-17T09:29:34.000Z",
       "attributes": [
@@ -1697,9 +1697,9 @@
         "name": "European Commission",
         "website": "https://digital-strategy.ec.europa.eu/en/policies/eudi-wallet"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-19T17:19:40.655Z",
+      "fetchedAt": "2026-03-19T21:12:58.861Z",
       "updatedAt": "2026-03-19T15:39:51.000Z",
       "firstSeenAt": "2026-03-17T09:29:34.000Z",
       "attributes": [
@@ -1736,9 +1736,9 @@
         "name": "European Commission",
         "website": "https://digital-strategy.ec.europa.eu/en/policies/eudi-wallet"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-19T17:19:40.655Z",
+      "fetchedAt": "2026-03-19T21:12:58.861Z",
       "updatedAt": "2026-03-19T15:39:51.000Z",
       "firstSeenAt": "2026-03-17T09:29:34.000Z",
       "attributes": [
@@ -1775,9 +1775,9 @@
         "name": "European Commission",
         "website": "https://digital-strategy.ec.europa.eu/en/policies/eudi-wallet"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-19T17:19:40.655Z",
+      "fetchedAt": "2026-03-19T21:12:58.861Z",
       "updatedAt": "2026-03-19T15:39:51.000Z",
       "firstSeenAt": "2026-03-17T09:29:34.000Z",
       "attributes": [
@@ -1814,9 +1814,9 @@
         "name": "European Commission",
         "website": "https://digital-strategy.ec.europa.eu/en/policies/eudi-wallet"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-19T17:19:40.655Z",
+      "fetchedAt": "2026-03-19T21:12:58.861Z",
       "updatedAt": "2026-03-19T15:39:51.000Z",
       "firstSeenAt": "2026-03-18T12:12:34.000Z",
       "attributes": [
@@ -1854,9 +1854,9 @@
         "name": "European Commission",
         "website": "https://digital-strategy.ec.europa.eu/en/policies/eudi-wallet"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-19T17:19:40.655Z",
+      "fetchedAt": "2026-03-19T21:12:58.861Z",
       "updatedAt": "2026-03-19T15:39:51.000Z",
       "firstSeenAt": "2026-03-18T12:12:34.000Z",
       "attributes": [
@@ -1894,9 +1894,9 @@
         "name": "European Commission",
         "website": "https://digital-strategy.ec.europa.eu/en/policies/eudi-wallet"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-19T17:19:40.655Z",
+      "fetchedAt": "2026-03-19T21:12:58.861Z",
       "updatedAt": "2026-03-19T15:39:51.000Z",
       "firstSeenAt": "2026-03-18T12:12:34.000Z",
       "attributes": [
@@ -1932,9 +1932,9 @@
         "name": "University of the Aegean / EWC",
         "website": "https://dss.aegean.gr"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/ewc/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/ewc/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-19T17:19:40.655Z",
+      "fetchedAt": "2026-03-19T21:12:58.861Z",
       "updatedAt": "2026-03-19T15:39:51.000Z",
       "firstSeenAt": "2026-03-17T16:20:30.000Z",
       "attributes": [
@@ -1977,9 +1977,9 @@
         "name": "University of the Aegean / EWC",
         "website": "https://dss.aegean.gr"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/ewc/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/ewc/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-19T17:19:40.655Z",
+      "fetchedAt": "2026-03-19T21:12:58.861Z",
       "updatedAt": "2026-03-19T15:39:51.000Z",
       "firstSeenAt": "2026-03-17T16:20:30.000Z",
       "attributes": [
@@ -2022,9 +2022,9 @@
         "name": "University of the Aegean / EWC",
         "website": "https://dss.aegean.gr"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/ewc/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/ewc/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-19T17:19:40.655Z",
+      "fetchedAt": "2026-03-19T21:12:58.861Z",
       "updatedAt": "2026-03-19T15:39:51.000Z",
       "firstSeenAt": "2026-03-17T16:20:30.000Z",
       "attributes": [
@@ -2103,9 +2103,9 @@
         "name": "University of the Aegean / EWC",
         "website": "https://dss.aegean.gr"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/ewc/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/ewc/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-19T17:19:40.655Z",
+      "fetchedAt": "2026-03-19T21:12:58.861Z",
       "updatedAt": "2026-03-19T15:39:51.000Z",
       "firstSeenAt": "2026-03-17T16:20:30.000Z",
       "attributes": [
@@ -2184,9 +2184,9 @@
         "name": "University of the Aegean / EWC",
         "website": "https://dss.aegean.gr"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/ewc/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/ewc/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-19T17:19:40.655Z",
+      "fetchedAt": "2026-03-19T21:12:58.861Z",
       "updatedAt": "2026-03-19T15:39:51.000Z",
       "firstSeenAt": "2026-03-17T16:20:30.000Z",
       "attributes": [
@@ -2229,9 +2229,9 @@
         "name": "University of the Aegean / EWC",
         "website": "https://dss.aegean.gr"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/ewc/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/ewc/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-19T17:19:40.655Z",
+      "fetchedAt": "2026-03-19T21:12:58.861Z",
       "updatedAt": "2026-03-19T15:39:51.000Z",
       "firstSeenAt": "2026-03-17T16:20:30.000Z",
       "attributes": [
@@ -2329,9 +2329,9 @@
         "name": "University of the Aegean / EWC",
         "website": "https://dss.aegean.gr"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/ewc/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/ewc/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-19T17:19:40.655Z",
+      "fetchedAt": "2026-03-19T21:12:58.861Z",
       "updatedAt": "2026-03-19T15:39:51.000Z",
       "firstSeenAt": "2026-03-17T16:20:30.000Z",
       "attributes": [
@@ -2416,9 +2416,9 @@
         "name": "University of the Aegean / EWC",
         "website": "https://dss.aegean.gr"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/ewc/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/ewc/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-19T17:19:40.655Z",
+      "fetchedAt": "2026-03-19T21:12:58.861Z",
       "updatedAt": "2026-03-19T15:39:51.000Z",
       "firstSeenAt": "2026-03-17T16:20:30.000Z",
       "attributes": [
@@ -2480,9 +2480,9 @@
         "name": "University of the Aegean / EWC",
         "website": "https://dss.aegean.gr"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/ewc/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/ewc/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-19T17:19:40.655Z",
+      "fetchedAt": "2026-03-19T21:12:58.861Z",
       "updatedAt": "2026-03-19T15:39:51.000Z",
       "firstSeenAt": "2026-03-17T16:20:30.000Z",
       "attributes": [
@@ -2562,9 +2562,9 @@
         "name": "University of the Aegean / EWC",
         "website": "https://dss.aegean.gr"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/ewc/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/ewc/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-19T17:19:40.655Z",
+      "fetchedAt": "2026-03-19T21:12:58.861Z",
       "updatedAt": "2026-03-19T15:39:51.000Z",
       "firstSeenAt": "2026-03-17T16:20:30.000Z",
       "attributes": [
@@ -2643,9 +2643,9 @@
         "name": "University of the Aegean / EWC",
         "website": "https://dss.aegean.gr"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/ewc/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/ewc/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-19T17:19:40.655Z",
+      "fetchedAt": "2026-03-19T21:12:58.861Z",
       "updatedAt": "2026-03-19T15:39:51.000Z",
       "firstSeenAt": "2026-03-17T16:20:30.000Z",
       "attributes": [
@@ -2688,9 +2688,9 @@
         "name": "University of the Aegean / EWC",
         "website": "https://dss.aegean.gr"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/ewc/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/ewc/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-19T17:19:40.655Z",
+      "fetchedAt": "2026-03-19T21:12:58.861Z",
       "updatedAt": "2026-03-19T15:39:51.000Z",
       "firstSeenAt": "2026-03-17T16:20:30.000Z",
       "attributes": [
@@ -2738,9 +2738,9 @@
         "name": "University of the Aegean / EWC",
         "website": "https://dss.aegean.gr"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/ewc/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/ewc/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-19T17:19:40.655Z",
+      "fetchedAt": "2026-03-19T21:12:58.861Z",
       "updatedAt": "2026-03-19T15:39:51.000Z",
       "firstSeenAt": "2026-03-17T16:20:30.000Z",
       "attributes": [
@@ -2812,9 +2812,9 @@
         "name": "University of the Aegean / EWC",
         "website": "https://dss.aegean.gr"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/ewc/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/ewc/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-19T17:19:40.655Z",
+      "fetchedAt": "2026-03-19T21:12:58.861Z",
       "updatedAt": "2026-03-19T15:39:51.000Z",
       "firstSeenAt": "2026-03-17T16:20:30.000Z",
       "attributes": [
@@ -2880,9 +2880,9 @@
         "name": "FIDES Community",
         "website": "https://fides.community"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-19T17:19:40.655Z",
+      "fetchedAt": "2026-03-19T21:12:58.861Z",
       "updatedAt": "2026-03-15T00:00:00.000Z",
       "firstSeenAt": "2026-03-12T00:00:00.000Z",
       "attributes": [
@@ -2971,9 +2971,9 @@
         "name": "FIDES Community",
         "website": "https://fides.community"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-19T17:19:40.655Z",
+      "fetchedAt": "2026-03-19T21:12:58.861Z",
       "updatedAt": "2026-03-15T00:00:00.000Z",
       "firstSeenAt": "2026-03-12T00:00:00.000Z",
       "attributes": [
@@ -3057,9 +3057,9 @@
         "name": "FIDES Community",
         "website": "https://fides.community"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-19T17:19:40.655Z",
+      "fetchedAt": "2026-03-19T21:12:58.861Z",
       "updatedAt": "2026-03-15T00:00:00.000Z",
       "firstSeenAt": "2026-03-12T00:00:00.000Z",
       "attributes": [
@@ -3123,9 +3123,9 @@
         "name": "FIDES Community",
         "website": "https://fides.community"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-19T17:19:40.655Z",
+      "fetchedAt": "2026-03-19T21:12:58.861Z",
       "updatedAt": "2026-03-15T00:00:00.000Z",
       "firstSeenAt": "2026-03-12T00:00:00.000Z",
       "attributes": [
@@ -3190,9 +3190,9 @@
         "name": "FIDES Community",
         "website": "https://fides.community"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-19T17:19:40.655Z",
+      "fetchedAt": "2026-03-19T21:12:58.861Z",
       "updatedAt": "2026-03-15T00:00:00.000Z",
       "firstSeenAt": "2026-03-12T00:00:00.000Z",
       "attributes": [
@@ -3237,9 +3237,9 @@
         "name": "FIDES Community",
         "website": "https://fides.community"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-19T17:19:40.655Z",
+      "fetchedAt": "2026-03-19T21:12:58.861Z",
       "updatedAt": "2026-03-15T00:00:00.000Z",
       "firstSeenAt": "2026-03-12T00:00:00.000Z",
       "attributes": [
@@ -3322,9 +3322,9 @@
         "name": "FIDES Community",
         "website": "https://fides.community"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-19T17:19:40.655Z",
+      "fetchedAt": "2026-03-19T21:12:58.861Z",
       "updatedAt": "2026-03-15T00:00:00.000Z",
       "firstSeenAt": "2026-03-12T00:00:00.000Z",
       "attributes": []
@@ -3352,9 +3352,9 @@
         "name": "FIDES Community",
         "website": "https://fides.community"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-19T17:19:40.655Z",
+      "fetchedAt": "2026-03-19T21:12:58.861Z",
       "updatedAt": "2026-03-15T00:00:00.000Z",
       "firstSeenAt": "2026-03-12T00:00:00.000Z",
       "attributes": []
@@ -3383,9 +3383,9 @@
         "name": "FIDES Community",
         "website": "https://fides.community"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-19T17:19:40.655Z",
+      "fetchedAt": "2026-03-19T21:12:58.861Z",
       "updatedAt": "2026-03-15T00:00:00.000Z",
       "firstSeenAt": "2026-03-12T00:00:00.000Z",
       "attributes": [
@@ -3566,9 +3566,9 @@
         "name": "FIDES Community",
         "website": "https://fides.community"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-19T17:19:40.655Z",
+      "fetchedAt": "2026-03-19T21:12:58.861Z",
       "updatedAt": "2026-03-15T00:00:00.000Z",
       "firstSeenAt": "2026-03-12T00:00:00.000Z",
       "attributes": [
@@ -3659,9 +3659,9 @@
         "name": "FIDES Community",
         "website": "https://fides.community"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-19T17:19:40.655Z",
+      "fetchedAt": "2026-03-19T21:12:58.861Z",
       "updatedAt": "2026-03-15T00:00:00.000Z",
       "firstSeenAt": "2026-03-12T00:00:00.000Z",
       "attributes": [
@@ -3704,9 +3704,9 @@
         "name": "FIDES Community",
         "website": "https://fides.community"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-19T17:19:40.655Z",
+      "fetchedAt": "2026-03-19T21:12:58.861Z",
       "updatedAt": "2026-03-15T00:00:00.000Z",
       "firstSeenAt": "2026-03-12T00:00:00.000Z",
       "attributes": [
@@ -3809,9 +3809,9 @@
         "name": "FIDES Community",
         "website": "https://fides.community"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-19T17:19:40.655Z",
+      "fetchedAt": "2026-03-19T21:12:58.861Z",
       "updatedAt": "2026-03-15T00:00:00.000Z",
       "firstSeenAt": "2026-03-12T00:00:00.000Z",
       "attributes": [
@@ -3872,9 +3872,9 @@
         "name": "FIDES Community",
         "website": "https://fides.community"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-19T17:19:40.655Z",
+      "fetchedAt": "2026-03-19T21:12:58.861Z",
       "updatedAt": "2026-03-15T00:00:00.000Z",
       "firstSeenAt": "2026-03-12T00:00:00.000Z",
       "attributes": [
@@ -3951,70 +3951,107 @@
         "name": "FIDES Community",
         "website": "https://fides.community"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-19T17:19:40.655Z",
+      "fetchedAt": "2026-03-19T21:12:58.861Z",
       "updatedAt": "2026-03-15T00:00:00.000Z",
       "firstSeenAt": "2026-03-12T00:00:00.000Z",
       "attributes": [
         {
-          "name": "vct",
+          "name": "family_name",
           "type": "string",
+          "required": true
+        },
+        {
+          "name": "given_name",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "birthdate",
+          "type": "date",
+          "required": true
+        },
+        {
+          "name": "place_of_birth",
+          "type": "object",
           "required": false
         },
         {
-          "name": "issuing_authority",
-          "type": "string",
+          "name": "nationalities",
+          "type": "array",
           "required": true,
-          "description": "Name of issuer from the MS that issued the PID instance"
+          "description": "One or more alpha-2 country codes as specified in ISO 3166-1, representing the nationality of the user to whom the person identification data relates."
         },
         {
-          "name": "issuing_country",
-          "type": "string",
-          "required": false,
-          "description": "Alpha-2 country code, as defined in ISO 3166-1, of the issuing country or territory."
-        },
-        {
-          "name": "issuing_jurisdiction",
-          "type": "string",
-          "required": false,
-          "description": "As defined in ISO 3166-2:2020, of the issuing country or territory."
-        },
-        {
-          "name": "date_of_issuance",
-          "type": "string",
-          "required": false,
-          "description": "Date and possibly time of issuance of PID"
-        },
-        {
-          "name": "date_of_expiry",
-          "type": "unknown",
-          "required": true,
-          "description": "Date and possibly time of PID expiration"
-        },
-        {
-          "name": "document_number",
-          "type": "string",
-          "required": false,
-          "description": "A number for the person identification data, assigned by the provider of person identification data."
-        },
-        {
-          "name": "trust_anchor",
-          "type": "string",
-          "required": false,
-          "description": "This attribute indicates at least the URL at which a machine-readable version of the trust anchor to be used for verifying the PID can be found or looked up. Note: This attribute corresponds to the location meant in Annex V point h) or Annex VII point h) of the [European Digital Identity Regulation], which is mandatory for QEAAs. This PID Rulebook add this as an optional attribute for PIDs as well, so PID Providers are able to ensure that PIDs can be validated by Relying Parties in the same manner as QEAAs. (specified only in the ARF PID rulebook)."
-        },
-        {
-          "name": "credentialSubject",
+          "name": "address",
           "type": "object",
-          "required": true,
-          "description": "Attributes representing a Physical PID (this container object could be omitted?)"
+          "required": false
         },
         {
-          "name": "credentialStatus",
-          "type": "object",
+          "name": "birth_family_name",
+          "type": "string",
           "required": false,
-          "description": "Defines suspension and/or revocation details for the issued credential. Further redefined by the type extension"
+          "description": "Last name(s) or surname(s) of the person identification data user at the time of birth."
+        },
+        {
+          "name": "birth_given_name",
+          "type": "string",
+          "required": false,
+          "description": "First name(s), including middle name(s), of the person identification data user at the time of birth."
+        },
+        {
+          "name": "email",
+          "type": "string",
+          "required": false,
+          "description": "Electronic mail address of the user to whom the person identification data relates [in conformance with RFC 5322]."
+        },
+        {
+          "name": "phone_number",
+          "type": "string",
+          "required": false,
+          "description": "Mobile telephone number of the user to whom the person identification data relates, starting with the ‘+’ symbol as the international code prefix and the country code, followed by numbers only."
+        },
+        {
+          "name": "picture",
+          "type": "string",
+          "required": false,
+          "description": "Facial image of the wallet user compliant with ISO 19794-5 or ISO 39794 specifications.The image SHALL be encoded as binary data."
+        },
+        {
+          "name": "personal_administrative_number",
+          "type": "string",
+          "required": false,
+          "description": "A value assigned to the natural person that is unique among all personal administrative numbers issued by the provider of person identification data. Where Member States opt to include this attribute, they shall describe in their electronic identification schemes under which the person identification data is issued, the policy that they apply to the values of this attribute, including, where applicable, specific conditions for the processing of this value."
+        },
+        {
+          "name": "sex",
+          "type": "number",
+          "required": false,
+          "description": "Values shall be one of the following: 0 = not known; 1 = male; 2 = female; 3 = other; 4 = inter; 5 = diverse; 6 = open; 9 = not applicable. For values 0, 1, 2 and 9, ISO/IEC 5218 applies."
+        },
+        {
+          "name": "age_over_18",
+          "type": "boolean",
+          "required": false,
+          "description": "Attesting whether the User to whom the person identification data relates is currently an adult (true) or a minor (false). (specified only in the ARF PID rulebook)."
+        },
+        {
+          "name": "age_equal_or_over",
+          "type": "object",
+          "required": false
+        },
+        {
+          "name": "age_in_years",
+          "type": "number",
+          "required": false,
+          "description": "The current age of the User to whom the person identification data relates in years. (specified only in the ARF PID rulebook)."
+        },
+        {
+          "name": "age_birth_year",
+          "type": "number",
+          "required": false,
+          "description": "The year when the User to whom the person identification data relates was born. (specified only in the ARF PID rulebook)."
         }
       ],
       "schemaDescription": "This schema represents the claim set of an SD-JWT based Verifiable Credential for the PID (Person Identification Data) attestation as a single, flat JSON object. It is derived from the EWC PID Rulebook (WP3)"
@@ -4042,9 +4079,9 @@
         "name": "FIDES Community",
         "website": "https://fides.community"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-19T17:19:40.655Z",
+      "fetchedAt": "2026-03-19T21:12:58.861Z",
       "updatedAt": "2026-03-15T00:00:00.000Z",
       "firstSeenAt": "2026-03-12T00:00:00.000Z",
       "attributes": [
@@ -4105,9 +4142,9 @@
         "name": "FIDES Community",
         "website": "https://fides.community"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-19T17:19:40.655Z",
+      "fetchedAt": "2026-03-19T21:12:58.861Z",
       "updatedAt": "2026-03-15T00:00:00.000Z",
       "firstSeenAt": "2026-03-12T00:00:00.000Z",
       "attributes": [
@@ -4197,9 +4234,9 @@
         "name": "FIDES Community",
         "website": "https://fides.community"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-19T17:19:40.655Z",
+      "fetchedAt": "2026-03-19T21:12:58.861Z",
       "updatedAt": "2026-03-15T00:00:00.000Z",
       "firstSeenAt": "2026-03-12T00:00:00.000Z",
       "attributes": [
@@ -4267,9 +4304,9 @@
         "name": "FIDES Community",
         "website": "https://fides.community"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-19T17:19:40.655Z",
+      "fetchedAt": "2026-03-19T21:12:58.861Z",
       "updatedAt": "2026-03-15T00:00:00.000Z",
       "firstSeenAt": "2026-03-12T00:00:00.000Z",
       "attributes": [
@@ -4321,9 +4358,9 @@
         "name": "FIDES Community",
         "website": "https://fides.community"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-19T17:19:40.655Z",
+      "fetchedAt": "2026-03-19T21:12:58.861Z",
       "updatedAt": "2026-03-15T00:00:00.000Z",
       "firstSeenAt": "2026-03-12T00:00:00.000Z",
       "attributes": [
@@ -4390,9 +4427,9 @@
         "name": "FIDES Community",
         "website": "https://fides.community"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-19T17:19:40.655Z",
+      "fetchedAt": "2026-03-19T21:12:58.861Z",
       "updatedAt": "2026-03-15T00:00:00.000Z",
       "firstSeenAt": "2026-03-12T00:00:00.000Z",
       "attributes": [
@@ -4477,9 +4514,9 @@
         "name": "FIDES Community",
         "website": "https://fides.community"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-19T17:19:40.655Z",
+      "fetchedAt": "2026-03-19T21:12:58.861Z",
       "updatedAt": "2026-03-15T00:00:00.000Z",
       "firstSeenAt": "2026-03-12T00:00:00.000Z",
       "attributes": [
@@ -4555,9 +4592,9 @@
         "name": "UN/CEFACT",
         "website": "https://untp.unece.org"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/uncefact/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/uncefact/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-19T17:19:40.655Z",
+      "fetchedAt": "2026-03-19T21:12:58.861Z",
       "updatedAt": "2026-03-19T00:00:00.000Z",
       "firstSeenAt": "2026-03-19T00:00:00.000Z",
       "attributes": [
@@ -4639,9 +4676,9 @@
         "name": "UN/CEFACT",
         "website": "https://untp.unece.org"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/uncefact/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/uncefact/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-19T17:19:40.655Z",
+      "fetchedAt": "2026-03-19T21:12:58.861Z",
       "updatedAt": "2026-03-19T00:00:00.000Z",
       "firstSeenAt": "2026-03-19T00:00:00.000Z",
       "attributes": [
@@ -4723,9 +4760,9 @@
         "name": "UN/CEFACT",
         "website": "https://untp.unece.org"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/uncefact/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/uncefact/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-19T17:19:40.655Z",
+      "fetchedAt": "2026-03-19T21:12:58.861Z",
       "updatedAt": "2026-03-19T00:00:00.000Z",
       "firstSeenAt": "2026-03-19T00:00:00.000Z",
       "attributes": [
@@ -4807,9 +4844,9 @@
         "name": "UN/CEFACT",
         "website": "https://untp.unece.org"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/uncefact/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/uncefact/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-19T17:19:40.655Z",
+      "fetchedAt": "2026-03-19T21:12:58.861Z",
       "updatedAt": "2026-03-19T00:00:00.000Z",
       "firstSeenAt": "2026-03-19T00:00:00.000Z",
       "attributes": [
@@ -4891,9 +4928,9 @@
         "name": "UN/CEFACT",
         "website": "https://untp.unece.org"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/uncefact/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/uncefact/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-19T17:19:40.655Z",
+      "fetchedAt": "2026-03-19T21:12:58.861Z",
       "updatedAt": "2026-03-19T00:00:00.000Z",
       "firstSeenAt": "2026-03-19T00:00:00.000Z",
       "attributes": []
@@ -4932,12 +4969,170 @@
         "name": "UN/CEFACT",
         "website": "https://untp.unece.org"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/uncefact/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/uncefact/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-19T17:19:40.655Z",
+      "fetchedAt": "2026-03-19T21:12:58.861Z",
       "updatedAt": "2026-03-19T00:00:00.000Z",
       "firstSeenAt": "2026-03-19T00:00:00.000Z",
-      "attributes": []
+      "attributes": [
+        {
+          "name": "purchaseOrderNumber",
+          "type": "string",
+          "required": false,
+          "description": "Identifier assigned by the buyer to an order."
+        },
+        {
+          "name": "contractNumber",
+          "type": "string",
+          "required": false,
+          "description": "Identifier of a contract concluded between parties such as between buyer and seller."
+        },
+        {
+          "name": "invoiceNumber",
+          "type": "string",
+          "required": false,
+          "description": "Reference number to identify an invoice."
+        },
+        {
+          "name": "issueDate",
+          "type": "string",
+          "required": false,
+          "description": "Date that a document was issued and when appropriate, signed or otherwise authenticated."
+        },
+        {
+          "name": "invoiceDate",
+          "type": "string",
+          "required": false,
+          "description": "Date of issue of an invoice."
+        },
+        {
+          "name": "paymentDueDate",
+          "type": "string",
+          "required": false,
+          "description": "Date when an amount due should be made available to the creditor under the terms of payment."
+        },
+        {
+          "name": "billOfLadingNumber",
+          "type": "string",
+          "required": false,
+          "description": "Carrier-issued Bill of Lading or Waybill number for the shipment."
+        },
+        {
+          "name": "letterOfCreditNumber",
+          "type": "string",
+          "required": false,
+          "description": "Letter of Credit reference number if applicable for payment."
+        },
+        {
+          "name": "portOfEntry",
+          "type": "object",
+          "required": false,
+          "description": "Port where the goods will enter the destination country."
+        },
+        {
+          "name": "destinationCountry",
+          "type": "string",
+          "required": false,
+          "description": "Two-letter ISO 3166-1 alpha-2 country code for final destination."
+        },
+        {
+          "name": "buyer",
+          "type": "object",
+          "required": false,
+          "description": "Party to which merchandise or services are sold."
+        },
+        {
+          "name": "invoicee",
+          "type": "object",
+          "required": false,
+          "description": "Party to whom an invoice is issued."
+        },
+        {
+          "name": "consignee",
+          "type": "object",
+          "required": false,
+          "description": "Party to whom the goods are consigned (may differ from buyer)."
+        },
+        {
+          "name": "sellersBank",
+          "type": "object",
+          "required": false,
+          "description": "Bank designated by the seller to receive payment."
+        },
+        {
+          "name": "seller",
+          "type": "object",
+          "required": false,
+          "description": "Party selling merchandise or services to a buyer."
+        },
+        {
+          "name": "sellerBankAccountNumber",
+          "type": "string",
+          "required": false,
+          "description": "Identifier of an account with the bank designated to receive payment."
+        },
+        {
+          "name": "originalLoadingLocation",
+          "type": "object",
+          "required": false,
+          "description": "Seaport, airport, freight terminal, rail station or other location where the goods were first loaded onto the means of transport being utilised for their carriage."
+        },
+        {
+          "name": "originCountry",
+          "type": "object",
+          "required": false,
+          "description": "Name of the country in which the goods have been produced or manufactured, according to criteria laid down for the application of the Customs tariff or quantitative restrictions, or any measure related to trade."
+        },
+        {
+          "name": "tradeTermsConditionsDescription",
+          "type": "string",
+          "required": false,
+          "description": "Free form description of delivery or transport terms (Incoterms)."
+        },
+        {
+          "name": "tradeTermsConditionsCode",
+          "type": "string",
+          "required": false,
+          "description": "Code specifying the delivery or transport terms (Incoterms)."
+        },
+        {
+          "name": "paymentTerms",
+          "type": "string",
+          "required": false,
+          "description": "Identification of the terms of payment between the parties to a transaction (generic term)."
+        },
+        {
+          "name": "paymentMethod",
+          "type": "string",
+          "required": false,
+          "description": "Code specifying a method of payment."
+        },
+        {
+          "name": "itemsShipped",
+          "type": "array",
+          "required": false,
+          "description": "Invoice line items"
+        },
+        {
+          "name": "freightCost",
+          "type": "object",
+          "required": false,
+          "description": "Cost of freight/shipping charges."
+        },
+        {
+          "name": "insuranceCost",
+          "type": "object",
+          "required": false,
+          "description": "Cost of insurance for the shipment."
+        },
+        {
+          "name": "totalAmount",
+          "type": "object",
+          "required": false,
+          "description": "Total monetary amount charged in respect of one or more invoices."
+        }
+      ],
+      "schemaDescription": "A commercial document which consists of an itemized account of goods or services delivered, together with a demand for payment."
     },
     {
       "id": "cred:uncefact:bill-of-lading:vcdm-2-0",
@@ -4973,12 +5168,242 @@
         "name": "UN/CEFACT",
         "website": "https://untp.unece.org"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/uncefact/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/uncefact/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-19T17:19:40.655Z",
+      "fetchedAt": "2026-03-19T21:12:58.861Z",
       "updatedAt": "2026-03-19T00:00:00.000Z",
       "firstSeenAt": "2026-03-19T00:00:00.000Z",
-      "attributes": []
+      "attributes": [
+        {
+          "name": "billOfLadingNumber",
+          "type": "string",
+          "required": true,
+          "description": "Reference number to identify a document evidencing a transport contract."
+        },
+        {
+          "name": "documentIdentifier",
+          "type": "string",
+          "required": false,
+          "description": "Reference number identifying a specific document."
+        },
+        {
+          "name": "bookingReferenceNumber",
+          "type": "string",
+          "required": false,
+          "description": "Reference number assigned by a carrier to identify a specific consignment."
+        },
+        {
+          "name": "issueDate",
+          "type": "string",
+          "required": true,
+          "description": "Date that a document was issued."
+        },
+        {
+          "name": "consignmentLoadingDate",
+          "type": "string",
+          "required": false,
+          "description": "Date when a consignment is loaded onto a means of transport."
+        },
+        {
+          "name": "estimatedTimeOfDeparture",
+          "type": "string",
+          "required": false,
+          "description": "Date and time when a transport means is scheduled to depart."
+        },
+        {
+          "name": "estimatedTimeOfArrival",
+          "type": "string",
+          "required": false,
+          "description": "Date and time of the estimated arrival of means of transport."
+        },
+        {
+          "name": "consignor",
+          "type": "object",
+          "required": true,
+          "description": "Party consigning goods as stipulated in the transport contract."
+        },
+        {
+          "name": "consignee",
+          "type": "object",
+          "required": true,
+          "description": "Party to which goods are consigned."
+        },
+        {
+          "name": "notifyParty",
+          "type": "object",
+          "required": false,
+          "description": "Party to be notified."
+        },
+        {
+          "name": "carrier",
+          "type": "object",
+          "required": true,
+          "description": "Party providing the transport of goods between named points."
+        },
+        {
+          "name": "freightPayer",
+          "type": "object",
+          "required": false,
+          "description": "Party responsible for the payment of freight charges."
+        },
+        {
+          "name": "originalLoadingLocation",
+          "type": "object",
+          "required": true,
+          "description": "Location where the goods were first loaded onto the means of transport."
+        },
+        {
+          "name": "baseportUnloadingLocation",
+          "type": "object",
+          "required": true,
+          "description": "The place or port at which the cargo is discharged."
+        },
+        {
+          "name": "deliveryLocation",
+          "type": "object",
+          "required": false,
+          "description": "Location to which a consignment is to be delivered to the final consignee."
+        },
+        {
+          "name": "placeOfDeparture",
+          "type": "object",
+          "required": false,
+          "description": "Port from which a means of transport is scheduled to depart."
+        },
+        {
+          "name": "arrivalLocation",
+          "type": "object",
+          "required": false,
+          "description": "Port at which a means of transport is scheduled to arrive."
+        },
+        {
+          "name": "paymentLocation",
+          "type": "object",
+          "required": false,
+          "description": "Place where the payment has been or should be made."
+        },
+        {
+          "name": "placeOfIssue",
+          "type": "object",
+          "required": false,
+          "description": "Location where a document was issued."
+        },
+        {
+          "name": "conveyanceReferenceNumber",
+          "type": "string",
+          "required": false,
+          "description": "Identifier of a journey of a means of transport, for example voyage number."
+        },
+        {
+          "name": "transportMeansIdentifier",
+          "type": "string",
+          "required": false,
+          "description": "Name of a specific means of transport such as the vessel name."
+        },
+        {
+          "name": "transportMeansRegistration",
+          "type": "string",
+          "required": false,
+          "description": "Identifier of a specific means of transport."
+        },
+        {
+          "name": "containerSizeAndType",
+          "type": "string",
+          "required": false,
+          "description": "Code specifying the characteristics, i.e. size and type of a piece of transport equipment."
+        },
+        {
+          "name": "fullOrEmptyContainer",
+          "type": "string",
+          "required": false,
+          "description": "Code specifying how full a piece of transport equipment is (5=Full)."
+        },
+        {
+          "name": "transportEquipmentIdentifier",
+          "type": "string",
+          "required": false,
+          "description": "Identifier of a piece of transport equipment e.g. container."
+        },
+        {
+          "name": "sealIdentifier",
+          "type": "string",
+          "required": false,
+          "description": "The identification number of a seal affixed to a piece of transport equipment."
+        },
+        {
+          "name": "grossWeight",
+          "type": "object",
+          "required": false,
+          "description": "Total gross weight including packaging."
+        },
+        {
+          "name": "volume",
+          "type": "object",
+          "required": false,
+          "description": "Total volume measurement."
+        },
+        {
+          "name": "numberOfPackages",
+          "type": "number",
+          "required": false,
+          "description": "Number of packages."
+        },
+        {
+          "name": "descriptionOfGoods",
+          "type": "string",
+          "required": false,
+          "description": "Plain language description of the nature of a goods item."
+        },
+        {
+          "name": "consignmentSummaryDescription",
+          "type": "string",
+          "required": false,
+          "description": "Plain language description of a consignment in summary terms."
+        },
+        {
+          "name": "shippingMarks",
+          "type": "string",
+          "required": false,
+          "description": "Free form description of the marks and numbers on a transport unit or package."
+        },
+        {
+          "name": "transportContractConditions",
+          "type": "string",
+          "required": false,
+          "description": "Reference to carrier's conditions of carriage."
+        },
+        {
+          "name": "prepaidAmount",
+          "type": "object",
+          "required": false,
+          "description": "Monetary amount of charges which have been paid in advance."
+        },
+        {
+          "name": "collectCharges",
+          "type": "object",
+          "required": false,
+          "description": "Monetary amount of charges to be collected from the consignee."
+        },
+        {
+          "name": "contractNumber",
+          "type": "string",
+          "required": false,
+          "description": "Identifier of a contract concluded between parties."
+        },
+        {
+          "name": "ucr",
+          "type": "string",
+          "required": false,
+          "description": "Unique Consignment Reference identifying a particular consignment."
+        },
+        {
+          "name": "goods",
+          "type": "array",
+          "required": false,
+          "description": "Goods covered by the bill of lading"
+        }
+      ],
+      "schemaDescription": "A transport document issued by a carrier acknowledging receipt of cargo for shipment and evidencing the contract of carriage and title to the goods."
     }
   ],
   "stats": {
@@ -4997,6 +5422,6 @@
       "Software": 0,
       "Document": 4
     },
-    "withSchemaAttributes": 67
+    "withSchemaAttributes": 69
   }
 }
