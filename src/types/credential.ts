@@ -82,6 +82,8 @@ export interface NormalizedCredential extends CredentialEntry {
   updatedAt: string;
   firstSeenAt: string;
   attributes: EnrichedAttribute[];
+  /** Root-level description extracted from the credential JSON Schema (schema.description). */
+  schemaDescription?: string;
 }
 
 export interface AggregatedCredentialCatalog {

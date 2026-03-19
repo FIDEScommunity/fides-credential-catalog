@@ -110,14 +110,22 @@ function extractAttributesFromSchema(schemaData: Record<string, unknown>): Enric
   return attributes;
 }
 
-async function fetchSchemaAttributes(schemaUrl: string): Promise<EnrichedAttribute[]> {
+interface SchemaFetchResult {
+  attributes: EnrichedAttribute[];
+  description?: string;
+}
+
+async function fetchSchemaData(schemaUrl: string): Promise<SchemaFetchResult> {
   try {
     const response = await fetch(schemaUrl, { headers: { Accept: "application/json" } });
-    if (!response.ok) return [];
+    if (!response.ok) return { attributes: [] };
     const data = (await response.json()) as Record<string, unknown>;
-    return extractAttributesFromSchema(data);
+    return {
+      attributes: extractAttributesFromSchema(data),
+      description: typeof data.description === "string" ? data.description : undefined
+    };
   } catch {
-    return [];
+    return { attributes: [] };
   }
 }
 
@@ -184,7 +192,7 @@ async function crawl(): Promise<void> {
           gitLastCommitAt ??
           now;
         const firstSeenAt = historyState[historyKey]?.firstSeenAt ?? updatedAt;
-        const attributes = await fetchSchemaAttributes(credential.schemaUrl);
+        const schemaData = await fetchSchemaData(credential.schemaUrl);
 
         historyState[historyKey] = {
           firstSeenAt,
@@ -199,7 +207,8 @@ async function crawl(): Promise<void> {
           fetchedAt: now,
           updatedAt,
           firstSeenAt,
-          attributes
+          attributes: schemaData.attributes,
+          schemaDescription: schemaData.description
         });
       }
     } catch {

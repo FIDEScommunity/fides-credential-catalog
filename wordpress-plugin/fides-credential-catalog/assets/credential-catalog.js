@@ -407,10 +407,11 @@
 
       const searchTarget = [
         credential.displayName,
-        credential.shortDescription,
+        credential.schemaDescription || credential.shortDescription,
         credential.nativeIdentifier,
         credential.authority?.name,
-        ...(credential.tags || [])
+        ...(credential.tags || []),
+        ...(credential.attributes || []).map(a => a.name)
       ]
         .filter(Boolean)
         .join(" ")
@@ -745,7 +746,7 @@
           <div class="fides-modal-body">
 
             <!-- Intro: description only -->
-            ${selectedCredential.shortDescription ? `<div class="fides-modal-intro"><p class="fides-modal-description">${escapeHtml(selectedCredential.shortDescription)}</p></div>` : ""}
+            ${(selectedCredential.schemaDescription || selectedCredential.shortDescription) ? `<div class="fides-modal-intro"><p class="fides-modal-description">${escapeHtml(selectedCredential.schemaDescription || selectedCredential.shortDescription)}</p></div>` : ""}
 
             <!-- Ecosystem flow -->
             <div class="fides-accordion fides-modal-section">
