@@ -64,29 +64,39 @@
 .fides-results-bar {
   margin-bottom: 1rem;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
+  flex-wrap: wrap !important;
   gap: 0.5rem;
 }
 
+/* Push sort + filter toggle + view toggle to the right */
+.fides-results-bar .fides-sort-label {
+  margin-left: auto;
+}
+
 .fides-sort-label {
-  display: inline-flex;
+  display: flex;
   align-items: center;
   gap: 0.5rem;
   font-size: 0.875rem;
   color: var(--fides-text-secondary);
+  height: 2.25rem;
+  margin: 0;
+  padding: 0;
 }
 
 .fides-sort-select {
-  padding: 0.35rem 1.75rem 0.35rem 0.5rem;
+  height: 2.25rem;
+  padding: 0 1.75rem 0 0.5rem;
   font-size: 0.875rem;
-  line-height: 1.25;
+  line-height: 2.25rem;
   color: var(--fides-text-primary);
   background: var(--fides-bg-secondary);
   border: 1px solid var(--fides-border);
   border-radius: 6px;
   cursor: pointer;
+  box-sizing: border-box;
+  margin: 0;
 }
 
 .fides-kpi-row {
@@ -182,21 +192,42 @@
   gap: 0.625rem;
 }
 
-.fides-sidebar-search {
-  margin-bottom: 0.25rem;
-  padding-bottom: 0.75rem;
-  border-bottom: 1px solid var(--fides-border);
+/* Search input in the results bar (desktop) — grows to fill available space */
+.fides-topbar-search {
+  flex: 1;
+  min-width: 160px;
+  max-width: 480px;
+  height: 2.25rem;
 }
 
-.fides-sidebar-search .fides-search-input {
-  padding: 0.5rem 2.25rem 0.5rem 2.25rem !important;
+.fides-topbar-search .fides-search-input {
+  height: 2.25rem !important;
+  padding: 0 2.25rem 0 2.25rem !important;
   font-size: 0.875rem;
+  line-height: 1.25;
+  border-radius: 6px !important;
+  background: var(--fides-bg-card) !important;
+  box-sizing: border-box;
+  border: 1px solid var(--fides-border) !important;
+  border-bottom: 1px solid var(--fides-border) !important;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.fides-topbar-search .fides-search-input:focus,
+.fides-topbar-search .fides-search-input:focus-visible {
+  outline: none !important;
+  border-color: var(--fides-accent) !important;
+  border-bottom-color: var(--fides-accent) !important;
+  box-shadow: 0 0 0 3px rgba(10, 110, 243, 0.15) !important;
 }
 
 .fides-search-wrapper {
   position: relative;
   display: flex;
   align-items: center;
+  width: 100%;
+  height: 100%;
 }
 
 .fides-search-input {
@@ -2194,7 +2225,7 @@ a.fides-eco-tag-purple:hover {
 
 /* Mobile filter toggle button — hidden on desktop */
 .fides-mobile-filter-toggle {
-  display: none;
+  display: inline-flex;
   align-items: center;
   gap: 0.5rem;
   padding: 0.5rem 1rem;
@@ -2206,6 +2237,12 @@ a.fides-eco-tag-purple:hover {
   font-weight: 500;
   cursor: pointer;
   transition: all 0.2s;
+}
+
+@media (min-width: 1024px) {
+  .fides-mobile-filter-toggle {
+    display: none;
+  }
 }
 .fides-mobile-filter-toggle:hover {
   background: var(--fides-border);
@@ -2251,7 +2288,7 @@ a.fides-eco-tag-purple:hover {
 
   .fides-main-layout {
     flex-direction: column;
-    overflow: hidden;
+    overflow: visible;
   }
 
   /* Sidebar becomes a fixed overlay/drawer */
@@ -2309,24 +2346,19 @@ a.fides-eco-tag-purple:hover {
   }
 
   .fides-mobile-filter-toggle {
-    display: inline-flex;
-  }
-
-  .fides-mobile-search {
-    display: block;
+    flex: 0 0 100%;
+    justify-content: center;
   }
 
   .fides-sort-label {
     display: none !important;
   }
 
-  .fides-results-bar {
-    justify-content: flex-end;
-  }
-
-  .fides-mobile-filter-toggle {
-    width: 100%;
-    justify-content: center;
+  .fides-topbar-search {
+    flex: 0 0 100%;
+    max-width: none;
+    order: -1;
+    height: auto;
   }
 
 }
@@ -2431,20 +2463,24 @@ a.fides-eco-tag-purple:hover {
 
 .fides-view-toggle {
   display: flex;
+  align-items: center;
   gap: 0.25rem;
   background: var(--fides-bg-secondary);
-  padding: 0.25rem;
+  padding: 0 0.25rem;
   border-radius: 8px;
   border: 1px solid var(--fides-border);
   flex-shrink: 0;
+  height: 2.25rem;
+  box-sizing: border-box;
+  margin: 0;
 }
 
 .fides-view-btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 2rem;
-  height: 2rem;
+  width: 1.625rem;
+  height: 1.625rem;
   padding: 0;
   background: transparent;
   border: none;
@@ -2469,7 +2505,9 @@ a.fides-eco-tag-purple:hover {
   color: #fff;
 }
 
-/* Hide toggle on mobile/tablet — list view is for larger screens only */
+/* Hide toggle on mobile/tablet — list view is for larger screens only.
+   The JS effectiveView() helper ensures card HTML is rendered below 1024px,
+   so no CSS override for data-view="list" is needed here. */
 @media (max-width: 1023px) {
   .fides-view-toggle {
     display: none;

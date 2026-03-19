@@ -75,6 +75,19 @@
    *  3. Adjust the grid-template-columns to match your column count.
    */
   let viewMode = localStorage.getItem('fides-credential-view') || 'grid';
+  const LIST_BREAKPOINT = 1024;
+  function effectiveView() {
+    return window.innerWidth < LIST_BREAKPOINT ? 'grid' : viewMode;
+  }
+
+  let _lastEffective = effectiveView();
+  window.addEventListener('resize', () => {
+    const cur = effectiveView();
+    if (cur !== _lastEffective) {
+      _lastEffective = cur;
+      renderCredentialGridOnly();
+    }
+  });
 
   let vocabulary = null;
 
@@ -525,17 +538,6 @@
           </div>
         </div>
         <div class="fides-sidebar-content">
-        ${
-          settings.showSearch
-            ? `<div class="fides-sidebar-search">
-                <div class="fides-search-wrapper">
-                  <span class="fides-search-icon">${icons.search}</span>
-                  <input id="fides-search-input" class="fides-search-input" type="text" placeholder="Search..." value="${escapeHtml(filters.search)}">
-                  <button class="fides-search-clear ${filters.search ? "" : "hidden"}" id="fides-search-clear" type="button" aria-label="Clear search">${icons.xSmall}</button>
-                </div>
-              </div>`
-            : ""
-        }
         <div class="fides-quick-filters">
           <span class="fides-quick-filters-title">Quick filters</span>
           <label class="fides-filter-checkbox">
@@ -926,16 +928,16 @@
         <div class="fides-main-layout fides-main ${settings.showFilters ? "" : "no-filters"}">
           ${renderFiltersPanel()}
           <section class="fides-main-content">
-            ${settings.showSearch ? `
-              <div class="fides-mobile-search">
-                <div class="fides-search-wrapper">
-                  <span class="fides-search-icon">${icons.search}</span>
-                  <input id="fides-mobile-search-input" class="fides-search-input fides-mobile-search-input" type="text" placeholder="Search..." value="${escapeHtml(filters.search)}">
-                  <button class="fides-search-clear ${filters.search ? "" : "hidden"}" id="fides-mobile-search-clear" type="button" aria-label="Clear search">${icons.xSmall}</button>
-                </div>
-              </div>
-            ` : ""}
             <div class="fides-results-bar">
+              ${settings.showSearch ? `
+                <div class="fides-topbar-search">
+                  <div class="fides-search-wrapper">
+                    <span class="fides-search-icon">${icons.search}</span>
+                    <input id="fides-search-input" class="fides-search-input" type="text" placeholder="Search..." value="${escapeHtml(filters.search)}" autocomplete="off">
+                    <button class="fides-search-clear ${filters.search ? "" : "hidden"}" id="fides-search-clear" type="button" aria-label="Clear search">${icons.xSmall}</button>
+                  </div>
+                </div>
+              ` : ""}
               <label class="fides-sort-label" for="fides-sort-select">
                 <span class="fides-sort-text">Sort by:</span>
                 <select id="fides-sort-select" class="fides-sort-select">
@@ -954,10 +956,10 @@
             </div>
             ${renderKpiCards(metrics)}
             <div class="fides-results">
-              <div class="fides-credential-grid" data-view="${viewMode}" data-columns="${escapeHtml(settings.columns)}">
-                ${viewMode === 'list' ? renderCredentialListHeader() : ''}
+              <div class="fides-credential-grid" data-view="${effectiveView()}" data-columns="${escapeHtml(settings.columns)}">
+                ${effectiveView() === 'list' ? renderCredentialListHeader() : ''}
                 ${filtered.length > 0
-                  ? filtered.map(viewMode === 'list' ? renderCredentialRow : renderCredentialCard).join("")
+                  ? filtered.map(effectiveView() === 'list' ? renderCredentialRow : renderCredentialCard).join("")
                   : '<p class="fides-empty">No credentials found.</p>'}
               </div>
             </div>
@@ -991,10 +993,12 @@
   function renderCredentialGridOnly() {
     const grid = root.querySelector(".fides-credential-grid");
     if (!grid) return;
+    const ev = effectiveView();
+    grid.setAttribute('data-view', ev);
     const filtered = getFilteredCredentials();
-    const header = viewMode === 'list' ? renderCredentialListHeader() : '';
+    const header = ev === 'list' ? renderCredentialListHeader() : '';
     const items = filtered.length > 0
-      ? filtered.map(viewMode === 'list' ? renderCredentialRow : renderCredentialCard).join("")
+      ? filtered.map(ev === 'list' ? renderCredentialRow : renderCredentialCard).join("")
       : '<p class="fides-empty">No credentials found.</p>';
     grid.innerHTML = header + items;
     bindCredentialCardEvents();
@@ -1218,12 +1222,21 @@
       });
     }
 
-    // View toggle — switch between grid and list mode, persist preference
+    // View toggle — targeted update to avoid rebuilding the full results bar
     root.querySelectorAll('.fides-view-btn').forEach((btn) => {
       btn.addEventListener('click', () => {
-        viewMode = btn.getAttribute('data-view') || 'grid';
+        const newView = btn.getAttribute('data-view') || 'grid';
+        if (newView === viewMode) return;
+        viewMode = newView;
         localStorage.setItem('fides-credential-view', viewMode);
-        render();
+        root.querySelectorAll('.fides-view-btn').forEach((b) => {
+          const active = b.getAttribute('data-view') === viewMode;
+          b.classList.toggle('active', active);
+          b.setAttribute('aria-pressed', String(active));
+        });
+        const grid = root.querySelector('.fides-credential-grid');
+        if (grid) grid.setAttribute('data-view', viewMode);
+        renderCredentialGridOnly();
       });
     });
 
