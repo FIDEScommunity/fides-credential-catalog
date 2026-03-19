@@ -2286,6 +2286,10 @@ a.fides-eco-tag-purple:hover {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .fides-credential-catalog {
+    padding: 0.75rem;
+  }
+
   .fides-main-layout {
     flex-direction: column;
     overflow: visible;
@@ -2364,6 +2368,10 @@ a.fides-eco-tag-purple:hover {
 }
 
 @media (max-width: 760px) {
+  .fides-credential-catalog {
+    padding: 0.5rem;
+  }
+
   .fides-kpi-row {
     grid-template-columns: repeat(2, 1fr);
   }
