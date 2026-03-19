@@ -13,7 +13,7 @@
   font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   background: var(--fides-bg-primary);
   color: var(--fides-text-primary);
-  padding: 1rem;
+  padding: 2rem;
   border-radius: var(--fides-radius);
   overflow-x: hidden;
 }
@@ -2286,13 +2286,14 @@ a.fides-eco-tag-purple:hover {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .fides-credential-catalog {
-    padding: 0.75rem;
-  }
-
   .fides-main-layout {
     flex-direction: column;
+    align-items: stretch !important;
     overflow: visible;
+  }
+
+  .fides-credential-catalog .fides-main-layout.fides-main {
+    align-items: stretch !important;
   }
 
   /* Sidebar becomes a fixed overlay/drawer */
@@ -2368,10 +2369,6 @@ a.fides-eco-tag-purple:hover {
 }
 
 @media (max-width: 760px) {
-  .fides-credential-catalog {
-    padding: 0.5rem;
-  }
-
   .fides-kpi-row {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -2540,7 +2537,7 @@ a.fides-eco-tag-purple:hover {
  */
 .fides-credential-list-header,
 .fides-credential-grid[data-view="list"] .fides-credential-card {
-  grid-template-columns: 32px 2fr 1.5fr 1fr 52px 52px 110px;
+  grid-template-columns: 32px 2fr 1.5fr 1fr 52px 52px minmax(0, 110px);
   gap: 0.75rem;
   padding: 0.625rem 1rem;
 }
@@ -2573,7 +2570,23 @@ a.fides-eco-tag-purple:hover {
   height: 13px;
 }
 
+.fides-list-col-right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 0.5rem;
+}
+
+.fides-list-col-right svg {
+  width: 13px;
+  height: 13px;
+}
+
 /* List row — overrides card styles */
+.fides-credential-grid[data-view="list"] {
+  overflow: hidden;
+}
+
 .fides-credential-grid[data-view="list"] .fides-credential-card {
   display: grid;
   align-items: center;
@@ -2693,7 +2706,8 @@ a.fides-eco-tag-purple:hover {
 
 /* Count cells (issuers, relying parties) */
 .fides-row-count {
-  justify-content: center;
+  justify-content: flex-end;
+  padding-right: 0.5rem;
   font-size: 0.875rem;
   font-weight: 600;
   color: var(--fides-text-primary);
@@ -2707,6 +2721,7 @@ a.fides-eco-tag-purple:hover {
   overflow: hidden;
   text-overflow: ellipsis;
   display: block;
+  padding-left: 0.75rem;
 }
 
 /* ---- VIEW TOGGLE END ---- */
