@@ -1541,6 +1541,89 @@ a.fides-tag.wallet-link svg {
   white-space: nowrap;
 }
 
+/* Issuers + Relying parties modal tables: same column split so dividers line up */
+.fides-modal-overlay .fides-modal-entity-table {
+  table-layout: fixed;
+}
+
+/* Let fixed-layout columns shrink below content min-width (avoids phantom horizontal scroll) */
+.fides-modal-overlay .fides-modal-entity-table th,
+.fides-modal-overlay .fides-modal-entity-table td {
+  min-width: 0;
+}
+
+.fides-modal-overlay .fides-modal-entity-table th:nth-child(1),
+.fides-modal-overlay .fides-modal-entity-table td:nth-child(1) {
+  width: 52%;
+}
+
+.fides-modal-overlay .fides-modal-entity-table th:nth-child(2),
+.fides-modal-overlay .fides-modal-entity-table td:nth-child(2) {
+  width: 48%;
+}
+
+.fides-modal-overlay .fides-modal-entity-table td {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+/* Single-column variant (no Organization): full width */
+.fides-modal-overlay .fides-modal-entity-table thead tr th:only-child,
+.fides-modal-overlay .fides-modal-entity-table tbody tr td:only-child {
+  width: 100%;
+}
+
+@media (max-width: 560px) {
+  .fides-modal-overlay .fides-modal-entity-table th:nth-child(1),
+  .fides-modal-overlay .fides-modal-entity-table td:nth-child(1) {
+    width: 40%;
+  }
+
+  .fides-modal-overlay .fides-modal-entity-table th:nth-child(2),
+  .fides-modal-overlay .fides-modal-entity-table td:nth-child(2) {
+    width: 60%;
+  }
+
+  .fides-modal-overlay .fides-modal-entity-table th {
+    white-space: normal;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+  }
+}
+
+/* Modal tables: first column (names / field names) wraps instead of stretching the table */
+.fides-modal-overlay .fides-attributes-table td:nth-child(1) {
+  overflow-wrap: anywhere;
+  word-break: normal;
+}
+
+.fides-modal-overlay .fides-attributes-table td:nth-child(1) code {
+  word-break: break-word;
+}
+
+/* Scroll wrapper + table fit modal width (no extra min-content overflow) */
+.fides-modal-overlay .fides-attributes-table-wrap {
+  max-width: 100%;
+  min-width: 0;
+}
+
+.fides-modal-overlay .fides-attributes-table {
+  max-width: 100%;
+  min-width: 0;
+}
+
+/*
+ * .fides-modal-link-inline uses inline-flex; default flex items do not shrink, so link text
+ * stayed on one line and forced the table wider than the viewport. Use inline flow in cells.
+ */
+.fides-modal-overlay .fides-attributes-table td .fides-modal-link-inline {
+  display: inline;
+  white-space: normal;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+  vertical-align: baseline;
+}
+
 /* Modal intro */
 .fides-modal-intro {
   padding-bottom: 1.25rem;
@@ -1650,10 +1733,21 @@ a.fides-tag.wallet-link svg {
 
 .fides-eco-main-row {
   display: grid;
-  grid-template-columns: 1fr auto 1fr auto 1fr;
-  align-items: stretch;
-  gap: 0.375rem;
+  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr) auto minmax(0, 1fr);
+  align-items: center;
+  gap: 0.5rem;
   width: 100%;
+  box-sizing: border-box;
+  padding: 0.25rem 0.75rem;
+}
+
+.fides-eco-main-row > .fides-eco-col {
+  padding: 0.25rem 0;
+  min-width: 0;
+}
+
+.fides-eco-main-row > .fides-eco-col.fides-eco-col-center {
+  padding: 0;
 }
 
 .fides-eco-col {
@@ -1885,6 +1979,222 @@ a.fides-eco-entity svg {
   padding: 0.1rem 0.5rem;
   letter-spacing: 0.02em;
   background: transparent;
+}
+
+/* Ecosystem stat boxes (issuer / RP counts + double chevron — aligned with issuer catalog modal) */
+.fides-eco-stat-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 0;
+  min-width: 0;
+}
+
+.fides-eco-wallet-box.fides-eco-stat-box {
+  cursor: pointer;
+  width: 100%;
+  max-width: 260px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.55rem;
+  min-height: 5.5rem;
+  padding: 0.65rem 1rem 0.85rem;
+}
+
+.fides-eco-stat-box-main {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+}
+
+.fides-modal-ecosystem .fides-eco-wallet-box.fides-eco-stat-box--green:not(.fides-eco-stat-box--static) {
+  border-color: #16a34a;
+}
+
+.fides-modal-ecosystem .fides-eco-wallet-box.fides-eco-stat-box--blue:not(.fides-eco-stat-box--static) {
+  border-color: #93c5fd;
+}
+
+.fides-eco-stat-hint {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  line-height: 0;
+  opacity: 0.92;
+}
+
+.fides-eco-stat-hint svg {
+  display: block;
+}
+
+.fides-eco-stat-box--green:not(.fides-eco-stat-box--static) .fides-eco-stat-hint {
+  color: #15803d;
+}
+
+.fides-eco-stat-box--blue:not(.fides-eco-stat-box--static) .fides-eco-stat-hint {
+  color: #2563eb;
+}
+
+.fides-modal-overlay[data-theme="fides"] .fides-eco-stat-box--green:not(.fides-eco-stat-box--static) .fides-eco-stat-hint,
+.fides-modal-overlay[data-theme="light"] .fides-eco-stat-box--green:not(.fides-eco-stat-box--static) .fides-eco-stat-hint {
+  color: #16a34a;
+}
+
+.fides-eco-wallet-box.fides-eco-stat-box--static {
+  cursor: default;
+}
+
+.fides-eco-wallet-box.fides-eco-stat-box--green:hover:not(.fides-eco-stat-box--static) {
+  border-color: #16a34a !important;
+  background: rgba(22, 163, 74, 0.06) !important;
+  box-shadow: 0 0 0 3px rgba(22, 163, 74, 0.3) !important;
+}
+
+.fides-eco-wallet-box.fides-eco-stat-box--blue:hover:not(.fides-eco-stat-box--static) {
+  border-color: #2563eb !important;
+  background: rgba(37, 99, 235, 0.06) !important;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.3) !important;
+}
+
+.fides-eco-stat-box--static:hover {
+  border-color: var(--fides-border) !important;
+  background: var(--fides-bg-secondary) !important;
+  box-shadow: none !important;
+}
+
+#fides-accordion-data,
+#fides-accordion-issuers,
+#fides-accordion-rps,
+#fides-accordion-details {
+  scroll-margin-top: 0.75rem;
+}
+
+/* Accordion header row: title | catalog link | chevron (valid HTML — no <a> inside <button>) */
+.fides-accordion-header-bar {
+  display: flex;
+  align-items: stretch;
+  gap: 0.35rem;
+  width: 100%;
+  background: var(--fides-bg-secondary);
+  transition: background 0.15s;
+}
+
+.fides-accordion-header-bar:hover {
+  background: rgba(59, 130, 246, 0.05);
+}
+
+.fides-accordion-header-bar .fides-accordion-header {
+  flex: 1;
+  min-width: 0;
+  width: auto;
+  justify-content: flex-start;
+  background: transparent;
+}
+
+.fides-accordion-header-bar .fides-accordion-header:hover {
+  background: transparent;
+}
+
+.fides-accordion-chevron-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  padding: 0.75rem 0.85rem 0.75rem 0.25rem;
+  margin: 0;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: var(--fides-text-primary);
+  line-height: 1;
+  transition: background 0.15s;
+}
+
+.fides-accordion-header-bar .fides-accordion-chevron-btn:hover {
+  background: transparent;
+}
+
+/* Chevron column: separated from title row (and optional catalog link) on every accordion */
+.fides-accordion-header-bar .fides-accordion-chevron-btn {
+  padding: 0.75rem 0.85rem;
+  border-left: 1px solid var(--fides-border);
+}
+
+/* Filled button-style control (not a pill) — distinct from accordion title + chevron */
+.fides-accordion-header-bar .fides-accordion-explore-link {
+  display: inline-flex;
+  align-items: center;
+  align-self: center;
+  flex-shrink: 0;
+  margin: 0;
+  padding: 0.4rem 0.7rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: 0.01em;
+  color: #ffffff;
+  text-decoration: none;
+  white-space: nowrap;
+  border-radius: 6px;
+  border: 1px solid var(--fides-accent);
+  background: var(--fides-accent);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12);
+  transition:
+    background 0.15s ease,
+    border-color 0.15s ease,
+    box-shadow 0.15s ease,
+    filter 0.15s ease;
+}
+
+.fides-accordion-header-bar .fides-accordion-explore-link:hover {
+  background: color-mix(in srgb, var(--fides-accent) 82%, black);
+  border-color: color-mix(in srgb, var(--fides-accent) 82%, black);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.14);
+}
+
+.fides-accordion-header-bar .fides-accordion-explore-link:focus-visible {
+  outline: 2px solid var(--fides-accent);
+  outline-offset: 2px;
+}
+
+@supports not (background: color-mix(in srgb, red 82%, black)) {
+  .fides-accordion-header-bar .fides-accordion-explore-link:hover {
+    filter: brightness(0.88);
+  }
+}
+
+/* Narrow viewports: title + chevron on first row; catalog CTA full-width row below (DOM is title, link, chevron) */
+@media (max-width: 560px) {
+  .fides-accordion-header-bar {
+    flex-wrap: wrap;
+    row-gap: 0.25rem;
+  }
+
+  .fides-accordion-header-bar .fides-accordion-header {
+    order: 1;
+    flex: 1 1 auto;
+    min-width: 0;
+  }
+
+  .fides-accordion-header-bar .fides-accordion-chevron-btn {
+    order: 2;
+  }
+
+  .fides-accordion-header-bar .fides-accordion-explore-link {
+    order: 3;
+    flex-basis: 100%;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    align-self: stretch;
+    justify-content: center;
+    margin: 0;
+  }
 }
 
 /* Accordion */
@@ -2133,20 +2443,44 @@ a.fides-eco-tag-purple:hover {
 }
 
 
-/* Inline link in detail rows */
+/* Inline links in modals: underline at rest (not color-only); stronger hover; keyboard focus */
 .fides-modal-link-inline {
   display: inline-flex;
   align-items: center;
   gap: 0.2rem;
   font-size: 0.8125rem;
   color: var(--fides-accent);
-  text-decoration: none;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.2em;
+  text-decoration-color: color-mix(in srgb, var(--fides-accent) 50%, transparent);
+  border-radius: 2px;
+  transition:
+    text-decoration-thickness 0.12s ease,
+    text-decoration-color 0.12s ease,
+    color 0.12s ease;
 }
 
 .fides-modal-link-inline:hover {
-  color: var(--fides-accent);
-  text-decoration: underline;
-  opacity: 0.8;
+  text-decoration-thickness: 2px;
+  text-decoration-color: var(--fides-accent);
+  color: color-mix(in srgb, var(--fides-accent) 88%, black);
+}
+
+.fides-modal-link-inline:focus-visible {
+  outline: 2px solid var(--fides-accent);
+  outline-offset: 2px;
+}
+
+@supports not (color: color-mix(in srgb, red 50%, transparent)) {
+  .fides-modal-link-inline {
+    text-decoration-color: rgba(59, 130, 246, 0.45);
+  }
+
+  .fides-modal-link-inline:hover {
+    text-decoration-color: #3b82f6;
+    color: #2563eb;
+  }
 }
 
 .fides-modal-link-inline svg {
@@ -2194,6 +2528,22 @@ a.fides-eco-tag-purple:hover {
 .fides-modal-overlay[data-theme="fides"] .fides-accordion-body,
 .fides-modal-overlay[data-theme="light"] .fides-accordion-body {
   border-top-color: #e2e8f0;
+}
+
+.fides-modal-overlay[data-theme="fides"] .fides-accordion-header-bar,
+.fides-modal-overlay[data-theme="light"] .fides-accordion-header-bar,
+.fides-modal-overlay[data-theme="fides"] .fides-accordion-header-bar .fides-accordion-header,
+.fides-modal-overlay[data-theme="light"] .fides-accordion-header-bar .fides-accordion-header,
+.fides-modal-overlay[data-theme="fides"] .fides-accordion-header-bar .fides-accordion-chevron-btn,
+.fides-modal-overlay[data-theme="light"] .fides-accordion-header-bar .fides-accordion-chevron-btn {
+  background: transparent;
+  color: #1e293b;
+  border-left-color: #e2e8f0;
+}
+
+.fides-modal-overlay[data-theme="fides"] .fides-accordion-header-bar,
+.fides-modal-overlay[data-theme="light"] .fides-accordion-header-bar {
+  background: #f8fafc;
 }
 
 
@@ -2464,6 +2814,10 @@ a.fides-eco-tag-purple:hover {
   .fides-eco-main-row {
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto auto auto;
+  }
+
+  .fides-eco-wallet-box.fides-eco-stat-box {
+    max-width: none;
   }
 
   /* Arrows: rotate 90° so they point downward */

@@ -32,6 +32,8 @@
     xSmall: '<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg>',
     xLarge: '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg>',
     chevronDown: '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"></path></svg>',
+    chevronDoubleDown: '<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 8 6 6 6-6"></path><path d="m6 14 6 6 6-6"></path></svg>',
+    server: '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="8" x="2" y="2" rx="2" ry="2"/><rect width="20" height="8" x="2" y="14" rx="2" ry="2"/><line x1="6" x2="6.01" y1="6" y2="6"/><line x1="6" x2="6.01" y1="18" y2="18"/></svg>',
     chevronUp: '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"></path></svg>',
     wallet: '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12V7H5a2 2 0 0 1 0-4h14v4"/><path d="M3 5v14a2 2 0 0 0 2 2h16v-5"/><path d="M18 12a2 2 0 0 0 0 4h4v-4Z"/></svg>',
     eye: '<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg>',
@@ -121,6 +123,13 @@
       .replace(/>/g, "&gt;")
       .replace(/"/g, "&quot;")
       .replace(/'/g, "&#39;");
+  }
+
+  /** Trim string; empty string if missing. */
+  function trimStr(value) {
+    if (value == null) return "";
+    const s = String(value).trim();
+    return s;
   }
 
   /** Human-readable VC format label (plain text; use in list/grid rows). */
@@ -289,7 +298,15 @@
         for (const credentialId of refs) {
           // RP usage
           const existingRPs = rpMap.get(credentialId) || [];
-          existingRPs.push({ id: rp.id, name: rp.name || rp.id });
+          const rpOrg =
+            trimStr(rp.organization?.name) ||
+            trimStr(rp.provider?.name) ||
+            "";
+          existingRPs.push({
+            id: rp.id,
+            name: trimStr(rp.name) || rp.id,
+            organization: rpOrg
+          });
           rpMap.set(credentialId, existingRPs);
           // Wallet usage: collect unique wallets from this RP for this credential
           if (Array.isArray(rp.supportedWallets)) {
@@ -347,7 +364,8 @@
         if (!existing.some((e) => e.id === issuer.id)) {
           existing.push({
             id: issuer.id,
-            name: issuer.displayName || issuer.organization?.name || issuer.id
+            name: trimStr(issuer.displayName) || issuer.id,
+            organization: trimStr(issuer.organization?.name)
           });
         }
         map.set(credentialId, existing);
@@ -730,11 +748,15 @@
     const attributes = Array.isArray(selectedCredential.attributes) ? selectedCredential.attributes : [];
     const currentTheme = root.getAttribute("data-theme") || "dark";
 
-    const MAX_VISIBLE = 2;
-    const visibleIssuers = issuerItems.slice(0, MAX_VISIBLE);
-    const hiddenIssuers = issuerItems.length - visibleIssuers.length;
-    const visibleRPs = rpItems.slice(0, MAX_VISIBLE);
-    const hiddenRPs = rpItems.length - visibleRPs.length;
+    const issuerRowsSorted = [...issuerItems].sort((a, b) =>
+      String(a.name || a.id).localeCompare(String(b.name || b.id), undefined, { sensitivity: "base" })
+    );
+    const rpRowsSorted = [...rpItems].sort((a, b) =>
+      String(a.name || a.id).localeCompare(String(b.name || b.id), undefined, { sensitivity: "base" })
+    );
+
+    const showIssuerOrgCol = issuerRowsSorted.some((i) => trimStr(i.organization));
+    const showRpOrgCol = rpRowsSorted.some((rp) => trimStr(rp.organization));
 
     const issuerCatalogBase = (config.issuerCatalogUrl || "").replace(/\/$/, "");
     const ecosystemIssuerHref =
@@ -751,10 +773,6 @@
           ? `${rpCatalogBase}/?rp=${encodeURIComponent(rpItems[0].id)}`
           : `${rpCatalogBase}/?rps=${rpItems.map((rp) => encodeURIComponent(rp.id)).join(",")}`
         : "";
-
-    // Pills are labels only; the parent column uses data-href for catalog navigation (issuer / RP blocks).
-    const renderEcoTag = (item, colorClass) =>
-      `<span class="fides-eco-tag ${colorClass}">${escapeHtml(item.name)}</span>`;
 
     return `
       <div class="fides-modal-overlay" id="fides-modal-overlay" data-theme="${currentTheme}">
@@ -807,22 +825,16 @@
 
                   <div class="fides-eco-wallet-connector">${icons.chevronUp}</div>
 
-                  <!-- Main row: Issuers → Credential → Relying Parties -->
+                  <!-- Main row: Issuers → Credential → Relying Parties (count + double-chevron; details in accordions below) -->
                   <div class="fides-eco-main-row">
-                    <div class="fides-eco-col fides-eco-col-side fides-eco-col-side--green"
-                      ${ecosystemIssuerHref ? `data-href="${escapeHtml(ecosystemIssuerHref)}"` : ""}>
-                      <div class="fides-eco-col-header">
-                        <span class="fides-eco-count">${issuerItems.length}</span>
-                        <span class="fides-eco-label">${issuerItems.length === 1 ? "Issuer" : "Issuers"}</span>
-                      </div>
-                      <div class="fides-eco-entities">
-                        ${visibleIssuers.length > 0
-                          ? (hiddenIssuers > 0
-                              ? visibleIssuers.slice(0, -1).map((i) => renderEcoTag(i, "fides-eco-tag-green")).join("") +
-                                `<div class="fides-eco-tag-last-row">${renderEcoTag(visibleIssuers[visibleIssuers.length - 1], "fides-eco-tag-green")}<span class="fides-eco-more">+ ${hiddenIssuers} more</span></div>`
-                              : visibleIssuers.map((i) => renderEcoTag(i, "fides-eco-tag-green")).join("")
-                            )
-                          : `<p class="fides-modal-empty">No issuers found.</p>`}
+                    <div class="fides-eco-col fides-eco-stat-wrap">
+                      <div class="fides-eco-wallet-box fides-eco-stat-box fides-eco-stat-box--green${issuerItems.length > 0 ? "" : " fides-eco-stat-box--static"}"
+                        ${issuerItems.length > 0 ? 'data-fides-eco-target="fides-accordion-issuers"' : ""}>
+                        <div class="fides-eco-stat-box-main">
+                          <span class="fides-eco-wallet-count">${issuerItems.length}</span>
+                          <span class="fides-eco-wallet-label">${issuerItems.length === 1 ? "Issuer" : "Issuers"}</span>
+                        </div>
+                        ${issuerItems.length > 0 ? `<span class="fides-eco-stat-hint" aria-hidden="true">${icons.chevronDoubleDown}</span>` : ""}
                       </div>
                     </div>
 
@@ -838,20 +850,14 @@
 
                     <div class="fides-eco-arrow fides-eco-arrow-right">${icons.chevronDown}</div>
 
-                    <div class="fides-eco-col fides-eco-col-side fides-eco-col-side--blue"
-                      ${ecosystemRpHref ? `data-href="${escapeHtml(ecosystemRpHref)}"` : ""}>
-                      <div class="fides-eco-col-header">
-                        <span class="fides-eco-count">${rpItems.length}</span>
-                        <span class="fides-eco-label">${rpItems.length === 1 ? "Relying party" : "Relying parties"}</span>
-                      </div>
-                      <div class="fides-eco-entities">
-                        ${visibleRPs.length > 0
-                          ? (hiddenRPs > 0
-                              ? visibleRPs.slice(0, -1).map((rp) => renderEcoTag(rp, "fides-eco-tag-blue")).join("") +
-                                `<div class="fides-eco-tag-last-row">${renderEcoTag(visibleRPs[visibleRPs.length - 1], "fides-eco-tag-blue")}<span class="fides-eco-more">+ ${hiddenRPs} more</span></div>`
-                              : visibleRPs.map((rp) => renderEcoTag(rp, "fides-eco-tag-blue")).join("")
-                            )
-                          : `<p class="fides-modal-empty">No relying parties found.</p>`}
+                    <div class="fides-eco-col fides-eco-stat-wrap fides-eco-rp-col">
+                      <div class="fides-eco-wallet-box fides-eco-stat-box fides-eco-stat-box--blue${rpItems.length > 0 ? "" : " fides-eco-stat-box--static"}"
+                        ${rpItems.length > 0 ? 'data-fides-eco-target="fides-accordion-rps"' : ""}>
+                        <div class="fides-eco-stat-box-main">
+                          <span class="fides-eco-wallet-count">${rpItems.length}</span>
+                          <span class="fides-eco-wallet-label">${rpItems.length === 1 ? "Relying party" : "Relying parties"}</span>
+                        </div>
+                        ${rpItems.length > 0 ? `<span class="fides-eco-stat-hint" aria-hidden="true">${icons.chevronDoubleDown}</span>` : ""}
                       </div>
                     </div>
                   </div>
@@ -872,10 +878,14 @@
 
             <!-- Attributes accordion -->
             <div class="fides-accordion" id="fides-accordion-data">
-              <button class="fides-accordion-header" type="button" aria-expanded="false">
-                <span class="fides-accordion-title">${icons.fileCheck} Attributes${attributes.length > 0 ? ` <span class="fides-accordion-count">${attributes.length}</span>` : ""}</span>
-                <span class="fides-accordion-chevron">${icons.chevronDown}</span>
-              </button>
+              <div class="fides-accordion-header-bar">
+                <button class="fides-accordion-header fides-accordion-toggle" type="button" aria-expanded="false">
+                  <span class="fides-accordion-title">${icons.fileCheck} Attributes${attributes.length > 0 ? ` <span class="fides-accordion-count">${attributes.length}</span>` : ""}</span>
+                </button>
+                <button type="button" class="fides-accordion-chevron-btn fides-accordion-toggle" aria-expanded="false" aria-label="Toggle attributes section">
+                  <span class="fides-accordion-chevron">${icons.chevronDown}</span>
+                </button>
+              </div>
               <div class="fides-accordion-body">
                 ${attributes.length > 0
                   ? `<div class="fides-attributes-table-wrap"><table class="fides-attributes-table">
@@ -893,12 +903,90 @@
               </div>
             </div>
 
+            <!-- Issuers (from issuer catalog linkage) -->
+            <div class="fides-accordion" id="fides-accordion-issuers">
+              <div class="fides-accordion-header-bar">
+                <button class="fides-accordion-header fides-accordion-toggle" type="button" aria-expanded="false">
+                  <span class="fides-accordion-title">${icons.server} Issuers <span class="fides-accordion-count">${issuerItems.length}</span></span>
+                </button>
+                ${ecosystemIssuerHref
+                  ? `<a href="${escapeHtml(ecosystemIssuerHref)}" class="fides-accordion-explore-link" aria-label="Issuer catalog (filtered view)">Open in catalog</a>`
+                  : ""}
+                <button type="button" class="fides-accordion-chevron-btn fides-accordion-toggle" aria-expanded="false" aria-label="Toggle issuers section">
+                  <span class="fides-accordion-chevron">${icons.chevronDown}</span>
+                </button>
+              </div>
+              <div class="fides-accordion-body">
+                ${issuerRowsSorted.length > 0
+                  ? `<div class="fides-attributes-table-wrap"><table class="fides-attributes-table fides-modal-rp-table fides-modal-entity-table" aria-label="Issuers">
+                      <thead><tr><th>Issuer</th>${showIssuerOrgCol ? "<th>Organization</th>" : ""}</tr></thead>
+                      <tbody>
+                        ${issuerRowsSorted.map((i) => {
+                          const href = issuerCatalogBase ? `${issuerCatalogBase}/?issuer=${encodeURIComponent(i.id)}` : "";
+                          const label = escapeHtml(i.name || i.id);
+                          const orgCell =
+                            showIssuerOrgCol
+                              ? `<td>${i.organization ? escapeHtml(i.organization) : "—"}</td>`
+                              : "";
+                          return `<tr><td>${
+                            href
+                              ? `<a href="${escapeHtml(href)}" class="fides-modal-link-inline" onclick="event.stopPropagation();">${label}</a>`
+                              : `<span>${label}</span>`
+                          }</td>${orgCell}</tr>`;
+                        }).join("")}
+                      </tbody>
+                    </table></div>`
+                  : `<p class="fides-modal-empty">No issuers found in the issuer catalog data for this credential.</p>`}
+              </div>
+            </div>
+
+            <!-- Relying parties (from RP catalog linkage) -->
+            <div class="fides-accordion" id="fides-accordion-rps">
+              <div class="fides-accordion-header-bar">
+                <button class="fides-accordion-header fides-accordion-toggle" type="button" aria-expanded="false">
+                  <span class="fides-accordion-title">${icons.building} Relying parties <span class="fides-accordion-count">${rpItems.length}</span></span>
+                </button>
+                ${ecosystemRpHref
+                  ? `<a href="${escapeHtml(ecosystemRpHref)}" class="fides-accordion-explore-link" aria-label="Relying party catalog (filtered view)">Open in catalog</a>`
+                  : ""}
+                <button type="button" class="fides-accordion-chevron-btn fides-accordion-toggle" aria-expanded="false" aria-label="Toggle relying parties section">
+                  <span class="fides-accordion-chevron">${icons.chevronDown}</span>
+                </button>
+              </div>
+              <div class="fides-accordion-body">
+                ${rpRowsSorted.length > 0
+                  ? `<div class="fides-attributes-table-wrap"><table class="fides-attributes-table fides-modal-rp-table fides-modal-entity-table" aria-label="Relying parties">
+                      <thead><tr><th>Relying party</th>${showRpOrgCol ? "<th>Organization</th>" : ""}</tr></thead>
+                      <tbody>
+                        ${rpRowsSorted.map((rp) => {
+                          const href = rpCatalogBase ? `${rpCatalogBase}/?rp=${encodeURIComponent(rp.id)}` : "";
+                          const label = escapeHtml(rp.name || rp.id);
+                          const orgCell =
+                            showRpOrgCol
+                              ? `<td>${rp.organization ? escapeHtml(rp.organization) : "—"}</td>`
+                              : "";
+                          return `<tr><td>${
+                            href
+                              ? `<a href="${escapeHtml(href)}" class="fides-modal-link-inline" onclick="event.stopPropagation();">${label}</a>`
+                              : `<span>${label}</span>`
+                          }</td>${orgCell}</tr>`;
+                        }).join("")}
+                      </tbody>
+                    </table></div>`
+                  : `<p class="fides-modal-empty">No relying parties found in the RP catalog data for this credential.</p>`}
+              </div>
+            </div>
+
             <!-- Other details accordion (open by default) -->
             <div class="fides-accordion is-open" id="fides-accordion-details">
-              <button class="fides-accordion-header" type="button" aria-expanded="true">
-                <span class="fides-accordion-title">${icons.shield} Other details</span>
-                <span class="fides-accordion-chevron">${icons.chevronDown}</span>
-              </button>
+              <div class="fides-accordion-header-bar">
+                <button class="fides-accordion-header fides-accordion-toggle" type="button" aria-expanded="true">
+                  <span class="fides-accordion-title">${icons.shield} Other details</span>
+                </button>
+                <button type="button" class="fides-accordion-chevron-btn fides-accordion-toggle" aria-expanded="true" aria-label="Toggle other details section">
+                  <span class="fides-accordion-chevron">${icons.chevronDown}</span>
+                </button>
+              </div>
               <div class="fides-accordion-body">
                 <div class="fides-details-kv">
                   <!-- left col: row 1 -->
@@ -1298,19 +1386,34 @@
       });
     }
 
-    // Ecosystem side columns: whole block navigates via data-href; pills are not separate links
-    document.querySelectorAll("#fides-modal-overlay .fides-eco-col-side[data-href]").forEach((col) => {
-      col.addEventListener("click", (e) => {
+    // Ecosystem stat boxes: scroll to matching accordion and open it
+    function openEcoTargetAccordionCred(accordionId) {
+      const acc = document.getElementById(accordionId);
+      if (!acc) return;
+      acc.classList.add("is-open");
+      acc.querySelectorAll('.fides-accordion-toggle[type="button"]').forEach((b) => {
+        b.setAttribute("aria-expanded", "true");
+      });
+      requestAnimationFrame(() => {
+        acc.scrollIntoView({ behavior: "smooth", block: "start" });
+      });
+    }
+    document.querySelectorAll("#fides-modal-overlay [data-fides-eco-target]").forEach((el) => {
+      el.addEventListener("click", (e) => {
         if (e.target.closest("a")) return;
-        window.location.href = col.dataset.href;
+        const id = el.getAttribute("data-fides-eco-target");
+        if (id) openEcoTargetAccordionCred(id);
       });
     });
 
-    document.querySelectorAll("#fides-modal-overlay .fides-accordion-header").forEach((btn) => {
+    document.querySelectorAll('#fides-modal-overlay .fides-accordion-toggle[type="button"]').forEach((btn) => {
       btn.addEventListener("click", () => {
         const accordion = btn.closest(".fides-accordion");
+        if (!accordion) return;
         const isOpen = accordion.classList.toggle("is-open");
-        btn.setAttribute("aria-expanded", isOpen ? "true" : "false");
+        accordion.querySelectorAll('.fides-accordion-toggle[type="button"]').forEach((b) => {
+          b.setAttribute("aria-expanded", isOpen ? "true" : "false");
+        });
       });
     });
 
