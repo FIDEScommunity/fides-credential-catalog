@@ -106,11 +106,12 @@
 
   // IDs from ?credentials= URL param; preserved so the filter can be toggled back on
   let originalCredentialIds = [];
+  /* Collapsible groups: false = collapsed by default. Order in sidebar: Authority, Subject type, VC Format, Schema type */
   const filterGroupState = {
-    vcFormat: true,
-    subjectType: true,
     authority: true,
-    schemaType: true
+    subjectType: true,
+    vcFormat: false,
+    schemaType: false
   };
 
   function escapeHtml(value) {
@@ -120,6 +121,17 @@
       .replace(/>/g, "&gt;")
       .replace(/"/g, "&quot;")
       .replace(/'/g, "&#39;");
+  }
+
+  /** Human-readable VC format label (plain text; use in list/grid rows). */
+  function vcFormatDisplayLabel(vcFormat) {
+    if (!vcFormat) return "—";
+    return VC_FORMAT_LABELS[vcFormat] || vcFormat;
+  }
+
+  /** VC format pill HTML (detail modal only). */
+  function vcFormatTagHtml(vcFormat) {
+    return `<span class="fides-tag credential-format">${escapeHtml(vcFormatDisplayLabel(vcFormat))}</span>`;
   }
 
   function showToast(message, type, theme) {
@@ -397,6 +409,18 @@
     return facets;
   }
 
+  function credentialIssuerCountForSort(credential) {
+    return (issuerUsageMap.get(credential.id) || []).length;
+  }
+
+  function credentialRpCountForSort(credential) {
+    return (rpUsageMap.get(credential.id) || []).length;
+  }
+
+  function compareCredentialDisplayName(a, b) {
+    return (a.displayName || "").localeCompare(b.displayName || "");
+  }
+
   function getFilteredCredentials() {
     let list = credentials.filter((credential) => {
       // ID pre-filter (from ?credentials= URL param)
@@ -427,7 +451,21 @@
     });
 
     if (sortBy === "name") {
-      list = list.sort((a, b) => (a.displayName || "").localeCompare(b.displayName || ""));
+      list = list.sort((a, b) => compareCredentialDisplayName(a, b));
+    } else if (sortBy === "issuers") {
+      list = list.sort((a, b) => {
+        const ia = credentialIssuerCountForSort(a);
+        const ib = credentialIssuerCountForSort(b);
+        if (ib !== ia) return ib - ia;
+        return compareCredentialDisplayName(a, b);
+      });
+    } else if (sortBy === "relyingParties") {
+      list = list.sort((a, b) => {
+        const ra = credentialRpCountForSort(a);
+        const rb = credentialRpCountForSort(b);
+        if (rb !== ra) return rb - ra;
+        return compareCredentialDisplayName(a, b);
+      });
     } else {
       list = list.sort((a, b) => {
         const dateA = toDate(a.updatedAt)?.getTime() || 0;
@@ -454,25 +492,24 @@
   }
 
   function renderKpiCards(metrics) {
-    const recentActive = filters.addedLast30Days || filters.updatedLast30Days;
     return `
-      <div class="fides-kpi-row">
-        <button class="fides-kpi-card" data-kpi-action="reset">
+      <div class="fides-kpi-row" role="group" aria-label="Catalog summary">
+        <div class="fides-kpi-card">
           <span class="fides-kpi-value">${metrics.total}</span>
           <span class="fides-kpi-label">Credentials</span>
-        </button>
-        <button class="fides-kpi-card ${filters.hasIssuersOnly ? "active" : ""}" data-kpi-action="toggle-issuer">
+        </div>
+        <div class="fides-kpi-card">
           <span class="fides-kpi-value">${metrics.issuers}</span>
           <span class="fides-kpi-label">Issuers</span>
-        </button>
-        <button class="fides-kpi-card ${filters.usedByRPsOnly ? "active" : ""}" data-kpi-action="toggle-used">
+        </div>
+        <div class="fides-kpi-card">
           <span class="fides-kpi-value">${metrics.usedByRPs}</span>
           <span class="fides-kpi-label">Used by relying parties</span>
-        </button>
-        <button class="fides-kpi-card ${recentActive ? "active" : ""}" data-kpi-action="toggle-recent">
+        </div>
+        <div class="fides-kpi-card">
           <span class="fides-kpi-value">${metrics.recentActivity}</span>
           <span class="fides-kpi-label">Updated last 30 days</span>
-        </button>
+        </div>
       </div>
     `;
   }
@@ -551,9 +588,9 @@
             <span>Linked credentials (${originalCredentialIds.length})</span>
           </label>` : ''}
         </div>
-        ${renderCheckboxGroup("VC format", "vcFormat", formatOptions, filterFacets)}
-        ${renderCheckboxGroup("Subject type", "subjectType", subjectOptions, filterFacets)}
         ${renderCheckboxGroup("Authority", "authority", authorityOptions, filterFacets)}
+        ${renderCheckboxGroup("Subject type", "subjectType", subjectOptions, filterFacets)}
+        ${renderCheckboxGroup("VC Format", "vcFormat", formatOptions, filterFacets)}
         ${renderCheckboxGroup("Schema type", "schemaType", schemaTypeOptions, filterFacets)}
         </div>
       </aside>
@@ -586,7 +623,7 @@
         <div></div>
         <div>Name</div>
         <div>Authority</div>
-        <div>Format</div>
+        <div>VC Format</div>
         <div class="fides-list-col-right" title="Issuers">${icons.building}</div>
         <div class="fides-list-col-right" title="Relying parties">${icons.shield}</div>
         <div style="padding-left:0.75rem">Updated</div>
@@ -606,7 +643,6 @@
    */
   function renderCredentialRow(credential) {
     const { issuerCount, rpCount, activityLabel } = getCredentialDisplayData(credential);
-    const formatLabel = escapeHtml(VC_FORMAT_LABELS[credential.vcFormat] || credential.vcFormat || '—');
     return `
       <article class="fides-credential-card" data-credential-id="${escapeHtml(credential.id)}" role="button" tabindex="0">
         <div class="fides-row-icon" aria-hidden="true" title="${escapeHtml(credential.subjectType || 'Document')}">
@@ -619,7 +655,7 @@
             : ''}
         </div>
         <div class="fides-row-authority" title="${escapeHtml(credential.authority?.name || '')}">${escapeHtml(credential.authority?.name || '—')}</div>
-        <div class="fides-row-format">${formatLabel}</div>
+        <div class="fides-row-format">${escapeHtml(vcFormatDisplayLabel(credential.vcFormat))}</div>
         <div class="fides-row-count" title="${issuerCount} ${issuerCount === 1 ? 'issuer' : 'issuers'}">${issuerCount}</div>
         <div class="fides-row-count" title="${rpCount} ${rpCount === 1 ? 'relying party' : 'relying parties'}">${rpCount}</div>
         <div class="fides-row-updated">${escapeHtml(activityLabel || '—')}</div>
@@ -700,14 +736,25 @@
     const visibleRPs = rpItems.slice(0, MAX_VISIBLE);
     const hiddenRPs = rpItems.length - visibleRPs.length;
 
-    const renderEcoTag = (item, catalogUrl, paramKey, colorClass) => {
-      const separator = (catalogUrl || "").includes("?") ? "&" : "?";
-      const href = catalogUrl ? `${catalogUrl.replace(/\/$/, "")}${separator}${paramKey}=${encodeURIComponent(item.id)}` : null;
-      const inner = escapeHtml(item.name);
-      return href
-        ? `<a href="${escapeHtml(href)}" class="fides-eco-tag ${colorClass}" onclick="event.stopPropagation();">${inner}</a>`
-        : `<span class="fides-eco-tag ${colorClass}">${inner}</span>`;
-    };
+    const issuerCatalogBase = (config.issuerCatalogUrl || "").replace(/\/$/, "");
+    const ecosystemIssuerHref =
+      issuerItems.length > 0 && issuerCatalogBase
+        ? issuerItems.length === 1
+          ? `${issuerCatalogBase}/?issuer=${encodeURIComponent(issuerItems[0].id)}`
+          : `${issuerCatalogBase}/?issuers=${issuerItems.map((i) => encodeURIComponent(i.id)).join(",")}`
+        : "";
+
+    const rpCatalogBase = (config.rpCatalogUrl || "").replace(/\/$/, "");
+    const ecosystemRpHref =
+      rpItems.length > 0 && rpCatalogBase
+        ? rpItems.length === 1
+          ? `${rpCatalogBase}/?rp=${encodeURIComponent(rpItems[0].id)}`
+          : `${rpCatalogBase}/?rps=${rpItems.map((rp) => encodeURIComponent(rp.id)).join(",")}`
+        : "";
+
+    // Pills are labels only; the parent column uses data-href for catalog navigation (issuer / RP blocks).
+    const renderEcoTag = (item, colorClass) =>
+      `<span class="fides-eco-tag ${colorClass}">${escapeHtml(item.name)}</span>`;
 
     return `
       <div class="fides-modal-overlay" id="fides-modal-overlay" data-theme="${currentTheme}">
@@ -763,7 +810,7 @@
                   <!-- Main row: Issuers → Credential → Relying Parties -->
                   <div class="fides-eco-main-row">
                     <div class="fides-eco-col fides-eco-col-side fides-eco-col-side--green"
-                      ${issuerItems.length > 0 && config.issuerCatalogUrl ? `data-href="${config.issuerCatalogUrl.replace(/\/$/, '')}/?issuers=${issuerItems.map(i => encodeURIComponent(i.id)).join(',')}"` : ''}>
+                      ${ecosystemIssuerHref ? `data-href="${escapeHtml(ecosystemIssuerHref)}"` : ""}>
                       <div class="fides-eco-col-header">
                         <span class="fides-eco-count">${issuerItems.length}</span>
                         <span class="fides-eco-label">${issuerItems.length === 1 ? "Issuer" : "Issuers"}</span>
@@ -771,9 +818,9 @@
                       <div class="fides-eco-entities">
                         ${visibleIssuers.length > 0
                           ? (hiddenIssuers > 0
-                              ? visibleIssuers.slice(0, -1).map((i) => renderEcoTag(i, config.issuerCatalogUrl, "issuer", "fides-eco-tag-green")).join("") +
-                                `<div class="fides-eco-tag-last-row">${renderEcoTag(visibleIssuers[visibleIssuers.length - 1], config.issuerCatalogUrl, "issuer", "fides-eco-tag-green")}<span class="fides-eco-more">+ ${hiddenIssuers} more</span></div>`
-                              : visibleIssuers.map((i) => renderEcoTag(i, config.issuerCatalogUrl, "issuer", "fides-eco-tag-green")).join("")
+                              ? visibleIssuers.slice(0, -1).map((i) => renderEcoTag(i, "fides-eco-tag-green")).join("") +
+                                `<div class="fides-eco-tag-last-row">${renderEcoTag(visibleIssuers[visibleIssuers.length - 1], "fides-eco-tag-green")}<span class="fides-eco-more">+ ${hiddenIssuers} more</span></div>`
+                              : visibleIssuers.map((i) => renderEcoTag(i, "fides-eco-tag-green")).join("")
                             )
                           : `<p class="fides-modal-empty">No issuers found.</p>`}
                       </div>
@@ -792,7 +839,7 @@
                     <div class="fides-eco-arrow fides-eco-arrow-right">${icons.chevronDown}</div>
 
                     <div class="fides-eco-col fides-eco-col-side fides-eco-col-side--blue"
-                      ${rpItems.length > 0 && config.rpCatalogUrl ? `data-href="${config.rpCatalogUrl.replace(/\/$/, '')}/?rps=${rpItems.map(rp => encodeURIComponent(rp.id)).join(',')}"` : ''}>
+                      ${ecosystemRpHref ? `data-href="${escapeHtml(ecosystemRpHref)}"` : ""}>
                       <div class="fides-eco-col-header">
                         <span class="fides-eco-count">${rpItems.length}</span>
                         <span class="fides-eco-label">${rpItems.length === 1 ? "Relying party" : "Relying parties"}</span>
@@ -800,9 +847,9 @@
                       <div class="fides-eco-entities">
                         ${visibleRPs.length > 0
                           ? (hiddenRPs > 0
-                              ? visibleRPs.slice(0, -1).map((rp) => renderEcoTag(rp, config.rpCatalogUrl, "rp", "fides-eco-tag-blue")).join("") +
-                                `<div class="fides-eco-tag-last-row">${renderEcoTag(visibleRPs[visibleRPs.length - 1], config.rpCatalogUrl, "rp", "fides-eco-tag-blue")}<span class="fides-eco-more">+ ${hiddenRPs} more</span></div>`
-                              : visibleRPs.map((rp) => renderEcoTag(rp, config.rpCatalogUrl, "rp", "fides-eco-tag-blue")).join("")
+                              ? visibleRPs.slice(0, -1).map((rp) => renderEcoTag(rp, "fides-eco-tag-blue")).join("") +
+                                `<div class="fides-eco-tag-last-row">${renderEcoTag(visibleRPs[visibleRPs.length - 1], "fides-eco-tag-blue")}<span class="fides-eco-more">+ ${hiddenRPs} more</span></div>`
+                              : visibleRPs.map((rp) => renderEcoTag(rp, "fides-eco-tag-blue")).join("")
                             )
                           : `<p class="fides-modal-empty">No relying parties found.</p>`}
                       </div>
@@ -871,13 +918,10 @@
                     <span class="fides-kv-val">—</span>
                   </div>`}
                   <!-- left col: row 2 -->
-                  ${selectedCredential.vcFormat ? `<div class="fides-kv-row">
-                    <span class="fides-kv-key">Credential format</span>
-                    <span class="fides-kv-val">${escapeHtml(VC_FORMAT_LABELS[selectedCredential.vcFormat] || selectedCredential.vcFormat)}</span>
-                  </div>` : `<div class="fides-kv-row">
-                    <span class="fides-kv-key">Credential format</span>
-                    <span class="fides-kv-val">—</span>
-                  </div>`}
+                  <div class="fides-kv-row">
+                    <span class="fides-kv-key">VC Format</span>
+                    <span class="fides-kv-val fides-kv-tags">${selectedCredential.vcFormat ? vcFormatTagHtml(selectedCredential.vcFormat) : "—"}</span>
+                  </div>
                   <!-- right col: row 2 -->
                   <div class="fides-kv-row">
                     <span class="fides-kv-key">Version</span>
@@ -958,6 +1002,8 @@
                 <select id="fides-sort-select" class="fides-sort-select">
                   <option value="lastUpdated" ${sortBy === "lastUpdated" ? "selected" : ""}>Last updated</option>
                   <option value="name" ${sortBy === "name" ? "selected" : ""}>Name</option>
+                  <option value="issuers" ${sortBy === "issuers" ? "selected" : ""}>Issuers</option>
+                  <option value="relyingParties" ${sortBy === "relyingParties" ? "selected" : ""}>Relying parties</option>
                 </select>
               </label>
               ${settings.showFilters ? `
@@ -1019,13 +1065,6 @@
     bindCredentialCardEvents();
   }
 
-  function clearQuickFilters() {
-    filters.addedLast30Days = false;
-    filters.updatedLast30Days = false;
-    filters.usedByRPsOnly = false;
-    filters.hasIssuersOnly = false;
-  }
-
   function getActiveFilterCount() {
     let count = 0;
     count += filters.vcFormat.length;
@@ -1075,7 +1114,9 @@
     const sortSelect = root.querySelector("#fides-sort-select");
     if (sortSelect) {
       sortSelect.addEventListener("change", (event) => {
-        sortBy = event.target.value === "name" ? "name" : "lastUpdated";
+        const v = event.target.value;
+        const allowed = new Set(["lastUpdated", "name", "issuers", "relyingParties"]);
+        sortBy = allowed.has(v) ? v : "lastUpdated";
         render();
       });
     }
@@ -1137,25 +1178,6 @@
         render();
       });
     }
-
-    root.querySelectorAll(".fides-kpi-card").forEach((button) => {
-      button.addEventListener("click", () => {
-        const action = button.dataset.kpiAction;
-        if (action === "reset") {
-          clearQuickFilters();
-          sortBy = "lastUpdated";
-        } else if (action === "toggle-issuer") {
-          filters.hasIssuersOnly = !filters.hasIssuersOnly;
-        } else if (action === "toggle-used") {
-          filters.usedByRPsOnly = !filters.usedByRPsOnly;
-        } else if (action === "toggle-recent") {
-          const recentActive = filters.addedLast30Days || filters.updatedLast30Days;
-          filters.addedLast30Days = !recentActive;
-          filters.updatedLast30Days = !recentActive;
-        }
-        render();
-      });
-    });
 
     root.querySelectorAll(".fides-filter-label-toggle").forEach((toggle) => {
       toggle.addEventListener("click", () => {
@@ -1276,7 +1298,7 @@
       });
     }
 
-    // Click handler for ecosystem column boxes with data-href (RP and issuer columns)
+    // Ecosystem side columns: whole block navigates via data-href; pills are not separate links
     document.querySelectorAll("#fides-modal-overlay .fides-eco-col-side[data-href]").forEach((col) => {
       col.addEventListener("click", (e) => {
         if (e.target.closest("a")) return;

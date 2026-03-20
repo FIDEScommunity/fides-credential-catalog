@@ -3,7 +3,7 @@
  * Plugin Name: FIDES Credential Catalog
  * Plugin URI: https://github.com/FIDEScommunity/fides-credential-catalog
  * Description: Display an interactive catalog of credentials with search and filters.
- * Version: 1.0.4
+ * Version: 1.1.0
  * Author: FIDES Community
  * Author URI: https://fides.community
  * License: Apache-2.0
@@ -14,7 +14,7 @@ if (!defined('ABSPATH')) {
     exit;
 }
 
-define('FIDES_CREDENTIAL_CATALOG_VERSION', '1.0.4');
+define('FIDES_CREDENTIAL_CATALOG_VERSION', '1.1.0');
 define('FIDES_CREDENTIAL_CATALOG_PLUGIN_DIR', plugin_dir_path(__FILE__));
 define('FIDES_CREDENTIAL_CATALOG_PLUGIN_URL', plugin_dir_url(__FILE__));
 

@@ -106,6 +106,12 @@
   margin-bottom: 1rem;
 }
 
+/* Force arrow cursor for entire KPI strip (themes often set pointer on groups/spans) */
+.fides-credential-catalog .fides-kpi-row,
+.fides-credential-catalog .fides-kpi-row * {
+  cursor: default !important;
+}
+
 .fides-kpi-card {
   display: flex;
   flex-direction: column;
@@ -117,18 +123,21 @@
   background: var(--fides-bg-secondary);
   color: var(--fides-text-primary);
   text-align: left;
-  cursor: pointer;
-  transition: border-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+  min-width: 0;
+  cursor: default;
 }
 
-.fides-kpi-card:hover {
-  border-color: var(--fides-accent);
-  transform: translateY(-1px);
-}
-
-.fides-kpi-card.active {
-  border-color: var(--fides-accent);
-  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.12);
+/* KPIs are non-interactive; lock appearance on hover/focus so theme or old button styles cannot apply */
+.fides-credential-catalog .fides-kpi-card:hover,
+.fides-credential-catalog .fides-kpi-card:focus,
+.fides-credential-catalog .fides-kpi-card:focus-visible,
+.fides-credential-catalog .fides-kpi-card:focus-within {
+  border-color: var(--fides-border) !important;
+  transform: none !important;
+  box-shadow: none !important;
+  background: var(--fides-bg-secondary) !important;
+  color: var(--fides-text-primary) !important;
+  cursor: default !important;
 }
 
 .fides-kpi-value {
@@ -731,7 +740,15 @@
 
 .fides-credential-meta-row {
   margin-top: 0;
-  display: block;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.375rem;
+  min-width: 0;
+}
+
+.fides-credential-meta-row .fides-credential-provider {
+  flex: 1 1 auto;
 }
 
 .fides-credential-provider {
@@ -2038,6 +2055,21 @@ a.fides-eco-tag-purple:hover {
   border-color: rgba(245, 158, 11, 0.25);
 }
 
+/* VC format pill — aligned with issuer catalog */
+.fides-tag.credential-format {
+  display: inline-block;
+  white-space: nowrap;
+  background: rgba(10, 110, 243, 0.1);
+  color: var(--fides-accent, #0a6ef3);
+  border-color: rgba(10, 110, 243, 0.25);
+}
+
+.fides-modal-overlay[data-theme="fides"] .fides-tag.credential-format,
+.fides-modal-overlay[data-theme="light"] .fides-tag.credential-format {
+  background: rgba(10, 110, 243, 0.1);
+  color: #0a6ef3;
+}
+
 /* Key:value 2-column layout for Other details */
 .fides-details-kv {
   display: grid;
@@ -2081,6 +2113,23 @@ a.fides-eco-tag-purple:hover {
   display: flex;
   align-items: center;
   gap: 0.25rem;
+}
+
+.fides-kv-val.fides-kv-tags {
+  flex-wrap: wrap;
+  white-space: normal;
+  overflow: visible;
+}
+
+.fides-kv-val .fides-tag {
+  white-space: nowrap;
+}
+
+.fides-kv-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+  align-items: center;
 }
 
 
@@ -2695,11 +2744,12 @@ a.fides-eco-tag-purple:hover {
   display: block;
 }
 
-/* Format cell (VC format, e.g. "SD-JWT VC") */
+/* Format cell — plain text (same tone as authority column) */
 .fides-row-format {
+  min-width: 0;
+  overflow: hidden;
   font-size: 0.8125rem;
   color: var(--fides-text-secondary);
-  overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
 }
