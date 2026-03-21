@@ -6,7 +6,23 @@
 
 import type { VercelRequest, VercelResponse } from "@vercel/node";
 
-const OPENAPI_SPEC = {
+/** Base URL for this deployment (Vercel preview/production or local). Avoids a hardcoded host while community DNS may still point at legacy infra. */
+function getPublicBaseUrl(req: VercelRequest): string {
+  const first = (v: string | string[] | undefined): string => {
+    if (!v) return "";
+    const s = Array.isArray(v) ? v[0] : v;
+    return String(s).split(",")[0]?.trim() ?? "";
+  };
+  const proto = first(req.headers["x-forwarded-proto"] as string | string[] | undefined) || "https";
+  const host =
+    first(req.headers["x-forwarded-host"] as string | string[] | undefined) ||
+    first(req.headers.host as string | string[] | undefined) ||
+    (process.env.VERCEL_URL ? process.env.VERCEL_URL.replace(/^https?:\/\//i, "") : "");
+  if (!host) return "http://localhost:3000";
+  return `${proto}://${host.replace(/^https?:\/\//i, "")}`;
+}
+
+const OPENAPI_SPEC_BASE = {
   openapi: "3.1.0",
   info: {
     title: "Credential Catalog API",
@@ -14,12 +30,10 @@ const OPENAPI_SPEC = {
       "API to search credential definitions in the FIDES Credential Catalog. Returns credential types (schema, format, kind) only. Issuer-related fields (issuance URL, configuration ID, etc.) are omitted; for issuance and issuer details, use the Issuer Catalog API.",
     contact: {
       name: "Fides Credential Catalog",
-      url: "https://credential-catalog.fides.community",
       email: "catalog@fides.community",
     },
     version: "2.0",
   },
-  servers: [{ url: "https://credential-catalog.fides.community", description: "Credential Catalog API" }],
   tags: [{ name: "Search API", description: "Search in the catalog" }],
   paths: {
     "/api/public/credentialtype": {
@@ -141,7 +155,16 @@ export default function handler(req: VercelRequest, res: VercelResponse) {
     res.status(405).end();
     return;
   }
+  const baseUrl = getPublicBaseUrl(req);
+  const spec = {
+    ...OPENAPI_SPEC_BASE,
+    info: {
+      ...OPENAPI_SPEC_BASE.info,
+      contact: { ...OPENAPI_SPEC_BASE.info.contact, url: baseUrl },
+    },
+    servers: [{ url: baseUrl, description: "This deployment" }],
+  };
   res.setHeader("Access-Control-Allow-Origin", "*");
   res.setHeader("Content-Type", "application/json");
-  res.status(200).json(OPENAPI_SPEC);
+  res.status(200).json(spec);
 }
