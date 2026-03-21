@@ -2168,30 +2168,43 @@ a.fides-eco-entity svg {
   }
 }
 
-/* Narrow viewports: title + chevron on first row; catalog CTA full-width row below (DOM is title, link, chevron) */
+/*
+ * Narrow viewports: keep title + chevron on one row (flex-wrap let the chevron wrap alone on iOS).
+ * Grid pins header to col1 row1, chevron to col2 row1, catalog CTA spans row2 (DOM: title, link, chevron).
+ */
 @media (max-width: 560px) {
   .fides-accordion-header-bar {
-    flex-wrap: wrap;
-    row-gap: 0.25rem;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    grid-template-rows: auto auto;
+    gap: 0.35rem 0.35rem;
+    align-items: stretch;
   }
 
   .fides-accordion-header-bar .fides-accordion-header {
-    order: 1;
-    flex: 1 1 auto;
+    grid-column: 1;
+    grid-row: 1;
+    min-width: 0;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .fides-accordion-header-bar .fides-accordion-title {
     min-width: 0;
   }
 
   .fides-accordion-header-bar .fides-accordion-chevron-btn {
-    order: 2;
+    grid-column: 2;
+    grid-row: 1;
   }
 
   .fides-accordion-header-bar .fides-accordion-explore-link {
-    order: 3;
-    flex-basis: 100%;
+    grid-column: 1 / -1;
+    grid-row: 2;
     width: 100%;
-    max-width: 100%;
+    max-width: none;
     box-sizing: border-box;
-    align-self: stretch;
+    justify-self: stretch;
     justify-content: center;
     margin: 0;
   }
