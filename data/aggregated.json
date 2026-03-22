@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.0.0",
   "catalogType": "credential",
-  "lastUpdated": "2026-03-22T06:59:29.839Z",
+  "lastUpdated": "2026-03-22T17:28:43.714Z",
   "credentials": [
     {
       "id": "cred:eu:diploma-vc-sd-jwt:sd-jwt-vc",
@@ -29,7 +29,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-22T06:59:29.839Z",
+      "fetchedAt": "2026-03-22T17:28:43.714Z",
       "updatedAt": "2026-03-19T15:39:51.000Z",
       "firstSeenAt": "2026-03-17T09:29:34.000Z",
       "attributes": [
@@ -158,7 +158,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-22T06:59:29.839Z",
+      "fetchedAt": "2026-03-22T17:28:43.714Z",
       "updatedAt": "2026-03-19T15:39:51.000Z",
       "firstSeenAt": "2026-03-17T09:29:34.000Z",
       "attributes": [
@@ -237,7 +237,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-22T06:59:29.839Z",
+      "fetchedAt": "2026-03-22T17:28:43.714Z",
       "updatedAt": "2026-03-19T15:39:51.000Z",
       "firstSeenAt": "2026-03-17T09:29:34.000Z",
       "attributes": [
@@ -378,7 +378,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-22T06:59:29.839Z",
+      "fetchedAt": "2026-03-22T17:28:43.714Z",
       "updatedAt": "2026-03-19T15:39:51.000Z",
       "firstSeenAt": "2026-03-17T09:29:34.000Z",
       "attributes": [
@@ -531,7 +531,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-22T06:59:29.839Z",
+      "fetchedAt": "2026-03-22T17:28:43.714Z",
       "updatedAt": "2026-03-19T15:39:51.000Z",
       "firstSeenAt": "2026-03-17T09:29:34.000Z",
       "attributes": [
@@ -636,7 +636,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-22T06:59:29.839Z",
+      "fetchedAt": "2026-03-22T17:28:43.714Z",
       "updatedAt": "2026-03-19T15:39:51.000Z",
       "firstSeenAt": "2026-03-17T09:29:34.000Z",
       "attributes": [
@@ -736,7 +736,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-22T06:59:29.839Z",
+      "fetchedAt": "2026-03-22T17:28:43.714Z",
       "updatedAt": "2026-03-19T15:39:51.000Z",
       "firstSeenAt": "2026-03-17T09:29:34.000Z",
       "attributes": [
@@ -888,7 +888,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-22T06:59:29.839Z",
+      "fetchedAt": "2026-03-22T17:28:43.714Z",
       "updatedAt": "2026-03-19T15:39:51.000Z",
       "firstSeenAt": "2026-03-17T09:29:34.000Z",
       "attributes": [
@@ -987,7 +987,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-22T06:59:29.839Z",
+      "fetchedAt": "2026-03-22T17:28:43.714Z",
       "updatedAt": "2026-03-19T15:39:51.000Z",
       "firstSeenAt": "2026-03-17T09:29:34.000Z",
       "attributes": [
@@ -1074,7 +1074,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-22T06:59:29.839Z",
+      "fetchedAt": "2026-03-22T17:28:43.714Z",
       "updatedAt": "2026-03-19T15:39:51.000Z",
       "firstSeenAt": "2026-03-17T09:29:34.000Z",
       "attributes": [
@@ -1192,7 +1192,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-22T06:59:29.839Z",
+      "fetchedAt": "2026-03-22T17:28:43.714Z",
       "updatedAt": "2026-03-19T15:39:51.000Z",
       "firstSeenAt": "2026-03-17T09:29:34.000Z",
       "attributes": [
@@ -1231,7 +1231,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-22T06:59:29.839Z",
+      "fetchedAt": "2026-03-22T17:28:43.714Z",
       "updatedAt": "2026-03-19T15:39:51.000Z",
       "firstSeenAt": "2026-03-17T09:29:34.000Z",
       "attributes": [
@@ -1270,7 +1270,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-22T06:59:29.839Z",
+      "fetchedAt": "2026-03-22T17:28:43.714Z",
       "updatedAt": "2026-03-19T15:39:51.000Z",
       "firstSeenAt": "2026-03-17T09:29:34.000Z",
       "attributes": [
@@ -1309,7 +1309,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-22T06:59:29.839Z",
+      "fetchedAt": "2026-03-22T17:28:43.714Z",
       "updatedAt": "2026-03-19T15:39:51.000Z",
       "firstSeenAt": "2026-03-17T09:29:34.000Z",
       "attributes": [
@@ -1348,7 +1348,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-22T06:59:29.839Z",
+      "fetchedAt": "2026-03-22T17:28:43.714Z",
       "updatedAt": "2026-03-19T15:39:51.000Z",
       "firstSeenAt": "2026-03-17T09:29:34.000Z",
       "attributes": [
@@ -1387,7 +1387,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-22T06:59:29.839Z",
+      "fetchedAt": "2026-03-22T17:28:43.714Z",
       "updatedAt": "2026-03-19T15:39:51.000Z",
       "firstSeenAt": "2026-03-17T09:29:34.000Z",
       "attributes": [
@@ -1426,7 +1426,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-22T06:59:29.839Z",
+      "fetchedAt": "2026-03-22T17:28:43.714Z",
       "updatedAt": "2026-03-19T15:39:51.000Z",
       "firstSeenAt": "2026-03-17T09:29:34.000Z",
       "attributes": [
@@ -1465,7 +1465,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-22T06:59:29.839Z",
+      "fetchedAt": "2026-03-22T17:28:43.714Z",
       "updatedAt": "2026-03-19T15:39:51.000Z",
       "firstSeenAt": "2026-03-17T09:29:34.000Z",
       "attributes": [
@@ -1504,7 +1504,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-22T06:59:29.839Z",
+      "fetchedAt": "2026-03-22T17:28:43.714Z",
       "updatedAt": "2026-03-19T15:39:51.000Z",
       "firstSeenAt": "2026-03-17T09:29:34.000Z",
       "attributes": [
@@ -1543,7 +1543,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-22T06:59:29.839Z",
+      "fetchedAt": "2026-03-22T17:28:43.714Z",
       "updatedAt": "2026-03-19T15:39:51.000Z",
       "firstSeenAt": "2026-03-17T09:29:34.000Z",
       "attributes": [
@@ -1582,7 +1582,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-22T06:59:29.839Z",
+      "fetchedAt": "2026-03-22T17:28:43.714Z",
       "updatedAt": "2026-03-19T15:39:51.000Z",
       "firstSeenAt": "2026-03-17T09:29:34.000Z",
       "attributes": [
@@ -1621,7 +1621,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-22T06:59:29.839Z",
+      "fetchedAt": "2026-03-22T17:28:43.714Z",
       "updatedAt": "2026-03-19T15:39:51.000Z",
       "firstSeenAt": "2026-03-17T09:29:34.000Z",
       "attributes": [
@@ -1660,7 +1660,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-22T06:59:29.839Z",
+      "fetchedAt": "2026-03-22T17:28:43.714Z",
       "updatedAt": "2026-03-19T15:39:51.000Z",
       "firstSeenAt": "2026-03-17T09:29:34.000Z",
       "attributes": [
@@ -1699,7 +1699,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-22T06:59:29.839Z",
+      "fetchedAt": "2026-03-22T17:28:43.714Z",
       "updatedAt": "2026-03-19T15:39:51.000Z",
       "firstSeenAt": "2026-03-17T09:29:34.000Z",
       "attributes": [
@@ -1738,7 +1738,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-22T06:59:29.839Z",
+      "fetchedAt": "2026-03-22T17:28:43.714Z",
       "updatedAt": "2026-03-19T15:39:51.000Z",
       "firstSeenAt": "2026-03-17T09:29:34.000Z",
       "attributes": [
@@ -1777,7 +1777,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-22T06:59:29.839Z",
+      "fetchedAt": "2026-03-22T17:28:43.714Z",
       "updatedAt": "2026-03-19T15:39:51.000Z",
       "firstSeenAt": "2026-03-17T09:29:34.000Z",
       "attributes": [
@@ -1816,7 +1816,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-22T06:59:29.839Z",
+      "fetchedAt": "2026-03-22T17:28:43.714Z",
       "updatedAt": "2026-03-19T15:39:51.000Z",
       "firstSeenAt": "2026-03-18T12:12:34.000Z",
       "attributes": [
@@ -1856,7 +1856,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-22T06:59:29.839Z",
+      "fetchedAt": "2026-03-22T17:28:43.714Z",
       "updatedAt": "2026-03-19T15:39:51.000Z",
       "firstSeenAt": "2026-03-18T12:12:34.000Z",
       "attributes": [
@@ -1896,7 +1896,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-22T06:59:29.839Z",
+      "fetchedAt": "2026-03-22T17:28:43.714Z",
       "updatedAt": "2026-03-19T15:39:51.000Z",
       "firstSeenAt": "2026-03-18T12:12:34.000Z",
       "attributes": [
@@ -1934,7 +1934,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/ewc/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-22T06:59:29.839Z",
+      "fetchedAt": "2026-03-22T17:28:43.714Z",
       "updatedAt": "2026-03-19T15:39:51.000Z",
       "firstSeenAt": "2026-03-17T16:20:30.000Z",
       "attributes": [
@@ -1979,7 +1979,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/ewc/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-22T06:59:29.839Z",
+      "fetchedAt": "2026-03-22T17:28:43.714Z",
       "updatedAt": "2026-03-19T15:39:51.000Z",
       "firstSeenAt": "2026-03-17T16:20:30.000Z",
       "attributes": [
@@ -2024,7 +2024,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/ewc/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-22T06:59:29.839Z",
+      "fetchedAt": "2026-03-22T17:28:43.714Z",
       "updatedAt": "2026-03-19T15:39:51.000Z",
       "firstSeenAt": "2026-03-17T16:20:30.000Z",
       "attributes": [
@@ -2105,7 +2105,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/ewc/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-22T06:59:29.839Z",
+      "fetchedAt": "2026-03-22T17:28:43.714Z",
       "updatedAt": "2026-03-19T15:39:51.000Z",
       "firstSeenAt": "2026-03-17T16:20:30.000Z",
       "attributes": [
@@ -2186,7 +2186,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/ewc/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-22T06:59:29.839Z",
+      "fetchedAt": "2026-03-22T17:28:43.714Z",
       "updatedAt": "2026-03-19T15:39:51.000Z",
       "firstSeenAt": "2026-03-17T16:20:30.000Z",
       "attributes": [
@@ -2231,7 +2231,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/ewc/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-22T06:59:29.839Z",
+      "fetchedAt": "2026-03-22T17:28:43.714Z",
       "updatedAt": "2026-03-19T15:39:51.000Z",
       "firstSeenAt": "2026-03-17T16:20:30.000Z",
       "attributes": [
@@ -2331,7 +2331,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/ewc/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-22T06:59:29.839Z",
+      "fetchedAt": "2026-03-22T17:28:43.714Z",
       "updatedAt": "2026-03-19T15:39:51.000Z",
       "firstSeenAt": "2026-03-17T16:20:30.000Z",
       "attributes": [
@@ -2418,7 +2418,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/ewc/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-22T06:59:29.839Z",
+      "fetchedAt": "2026-03-22T17:28:43.714Z",
       "updatedAt": "2026-03-19T15:39:51.000Z",
       "firstSeenAt": "2026-03-17T16:20:30.000Z",
       "attributes": [
@@ -2482,7 +2482,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/ewc/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-22T06:59:29.839Z",
+      "fetchedAt": "2026-03-22T17:28:43.714Z",
       "updatedAt": "2026-03-19T15:39:51.000Z",
       "firstSeenAt": "2026-03-17T16:20:30.000Z",
       "attributes": [
@@ -2564,7 +2564,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/ewc/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-22T06:59:29.839Z",
+      "fetchedAt": "2026-03-22T17:28:43.714Z",
       "updatedAt": "2026-03-19T15:39:51.000Z",
       "firstSeenAt": "2026-03-17T16:20:30.000Z",
       "attributes": [
@@ -2645,7 +2645,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/ewc/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-22T06:59:29.839Z",
+      "fetchedAt": "2026-03-22T17:28:43.714Z",
       "updatedAt": "2026-03-19T15:39:51.000Z",
       "firstSeenAt": "2026-03-17T16:20:30.000Z",
       "attributes": [
@@ -2690,7 +2690,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/ewc/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-22T06:59:29.839Z",
+      "fetchedAt": "2026-03-22T17:28:43.714Z",
       "updatedAt": "2026-03-19T15:39:51.000Z",
       "firstSeenAt": "2026-03-17T16:20:30.000Z",
       "attributes": [
@@ -2740,7 +2740,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/ewc/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-22T06:59:29.839Z",
+      "fetchedAt": "2026-03-22T17:28:43.714Z",
       "updatedAt": "2026-03-19T15:39:51.000Z",
       "firstSeenAt": "2026-03-17T16:20:30.000Z",
       "attributes": [
@@ -2814,7 +2814,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/ewc/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-22T06:59:29.839Z",
+      "fetchedAt": "2026-03-22T17:28:43.714Z",
       "updatedAt": "2026-03-19T15:39:51.000Z",
       "firstSeenAt": "2026-03-17T16:20:30.000Z",
       "attributes": [
@@ -2882,7 +2882,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-22T06:59:29.839Z",
+      "fetchedAt": "2026-03-22T17:28:43.714Z",
       "updatedAt": "2026-03-15T00:00:00.000Z",
       "firstSeenAt": "2026-03-12T00:00:00.000Z",
       "attributes": [
@@ -2973,7 +2973,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-22T06:59:29.839Z",
+      "fetchedAt": "2026-03-22T17:28:43.714Z",
       "updatedAt": "2026-03-15T00:00:00.000Z",
       "firstSeenAt": "2026-03-12T00:00:00.000Z",
       "attributes": [
@@ -3059,7 +3059,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-22T06:59:29.839Z",
+      "fetchedAt": "2026-03-22T17:28:43.714Z",
       "updatedAt": "2026-03-15T00:00:00.000Z",
       "firstSeenAt": "2026-03-12T00:00:00.000Z",
       "attributes": [
@@ -3125,7 +3125,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-22T06:59:29.839Z",
+      "fetchedAt": "2026-03-22T17:28:43.714Z",
       "updatedAt": "2026-03-15T00:00:00.000Z",
       "firstSeenAt": "2026-03-12T00:00:00.000Z",
       "attributes": [
@@ -3192,7 +3192,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-22T06:59:29.839Z",
+      "fetchedAt": "2026-03-22T17:28:43.714Z",
       "updatedAt": "2026-03-15T00:00:00.000Z",
       "firstSeenAt": "2026-03-12T00:00:00.000Z",
       "attributes": [
@@ -3239,7 +3239,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-22T06:59:29.839Z",
+      "fetchedAt": "2026-03-22T17:28:43.714Z",
       "updatedAt": "2026-03-15T00:00:00.000Z",
       "firstSeenAt": "2026-03-12T00:00:00.000Z",
       "attributes": [
@@ -3324,7 +3324,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-22T06:59:29.839Z",
+      "fetchedAt": "2026-03-22T17:28:43.714Z",
       "updatedAt": "2026-03-15T00:00:00.000Z",
       "firstSeenAt": "2026-03-12T00:00:00.000Z",
       "attributes": []
@@ -3354,7 +3354,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-22T06:59:29.839Z",
+      "fetchedAt": "2026-03-22T17:28:43.714Z",
       "updatedAt": "2026-03-15T00:00:00.000Z",
       "firstSeenAt": "2026-03-12T00:00:00.000Z",
       "attributes": []
@@ -3385,7 +3385,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-22T06:59:29.839Z",
+      "fetchedAt": "2026-03-22T17:28:43.714Z",
       "updatedAt": "2026-03-15T00:00:00.000Z",
       "firstSeenAt": "2026-03-12T00:00:00.000Z",
       "attributes": [
@@ -3568,7 +3568,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-22T06:59:29.839Z",
+      "fetchedAt": "2026-03-22T17:28:43.714Z",
       "updatedAt": "2026-03-15T00:00:00.000Z",
       "firstSeenAt": "2026-03-12T00:00:00.000Z",
       "attributes": [
@@ -3661,7 +3661,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-22T06:59:29.839Z",
+      "fetchedAt": "2026-03-22T17:28:43.714Z",
       "updatedAt": "2026-03-15T00:00:00.000Z",
       "firstSeenAt": "2026-03-12T00:00:00.000Z",
       "attributes": [
@@ -3706,7 +3706,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-22T06:59:29.839Z",
+      "fetchedAt": "2026-03-22T17:28:43.714Z",
       "updatedAt": "2026-03-15T00:00:00.000Z",
       "firstSeenAt": "2026-03-12T00:00:00.000Z",
       "attributes": [
@@ -3811,7 +3811,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-22T06:59:29.839Z",
+      "fetchedAt": "2026-03-22T17:28:43.714Z",
       "updatedAt": "2026-03-15T00:00:00.000Z",
       "firstSeenAt": "2026-03-12T00:00:00.000Z",
       "attributes": [
@@ -3874,7 +3874,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-22T06:59:29.839Z",
+      "fetchedAt": "2026-03-22T17:28:43.714Z",
       "updatedAt": "2026-03-15T00:00:00.000Z",
       "firstSeenAt": "2026-03-12T00:00:00.000Z",
       "attributes": [
@@ -3953,7 +3953,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-22T06:59:29.839Z",
+      "fetchedAt": "2026-03-22T17:28:43.714Z",
       "updatedAt": "2026-03-15T00:00:00.000Z",
       "firstSeenAt": "2026-03-12T00:00:00.000Z",
       "attributes": [
@@ -4081,7 +4081,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-22T06:59:29.839Z",
+      "fetchedAt": "2026-03-22T17:28:43.714Z",
       "updatedAt": "2026-03-15T00:00:00.000Z",
       "firstSeenAt": "2026-03-12T00:00:00.000Z",
       "attributes": [
@@ -4144,7 +4144,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-22T06:59:29.839Z",
+      "fetchedAt": "2026-03-22T17:28:43.714Z",
       "updatedAt": "2026-03-15T00:00:00.000Z",
       "firstSeenAt": "2026-03-12T00:00:00.000Z",
       "attributes": [
@@ -4236,7 +4236,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-22T06:59:29.839Z",
+      "fetchedAt": "2026-03-22T17:28:43.714Z",
       "updatedAt": "2026-03-15T00:00:00.000Z",
       "firstSeenAt": "2026-03-12T00:00:00.000Z",
       "attributes": [
@@ -4306,7 +4306,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-22T06:59:29.839Z",
+      "fetchedAt": "2026-03-22T17:28:43.714Z",
       "updatedAt": "2026-03-15T00:00:00.000Z",
       "firstSeenAt": "2026-03-12T00:00:00.000Z",
       "attributes": [
@@ -4360,7 +4360,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-22T06:59:29.839Z",
+      "fetchedAt": "2026-03-22T17:28:43.714Z",
       "updatedAt": "2026-03-15T00:00:00.000Z",
       "firstSeenAt": "2026-03-12T00:00:00.000Z",
       "attributes": [
@@ -4429,7 +4429,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-22T06:59:29.839Z",
+      "fetchedAt": "2026-03-22T17:28:43.714Z",
       "updatedAt": "2026-03-15T00:00:00.000Z",
       "firstSeenAt": "2026-03-12T00:00:00.000Z",
       "attributes": [
@@ -4516,7 +4516,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-22T06:59:29.839Z",
+      "fetchedAt": "2026-03-22T17:28:43.714Z",
       "updatedAt": "2026-03-15T00:00:00.000Z",
       "firstSeenAt": "2026-03-12T00:00:00.000Z",
       "attributes": [
@@ -4594,8 +4594,8 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/uncefact/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-22T06:59:29.839Z",
-      "updatedAt": "2026-03-19T00:00:00.000Z",
+      "fetchedAt": "2026-03-22T17:28:43.714Z",
+      "updatedAt": "2026-03-22T00:00:00.000Z",
       "firstSeenAt": "2026-03-19T00:00:00.000Z",
       "attributes": [
         {
@@ -4678,8 +4678,8 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/uncefact/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-22T06:59:29.839Z",
-      "updatedAt": "2026-03-19T00:00:00.000Z",
+      "fetchedAt": "2026-03-22T17:28:43.714Z",
+      "updatedAt": "2026-03-22T00:00:00.000Z",
       "firstSeenAt": "2026-03-19T00:00:00.000Z",
       "attributes": [
         {
@@ -4762,8 +4762,8 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/uncefact/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-22T06:59:29.839Z",
-      "updatedAt": "2026-03-19T00:00:00.000Z",
+      "fetchedAt": "2026-03-22T17:28:43.714Z",
+      "updatedAt": "2026-03-22T00:00:00.000Z",
       "firstSeenAt": "2026-03-19T00:00:00.000Z",
       "attributes": []
     },
@@ -4803,8 +4803,8 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/uncefact/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-22T06:59:29.839Z",
-      "updatedAt": "2026-03-19T00:00:00.000Z",
+      "fetchedAt": "2026-03-22T17:28:43.714Z",
+      "updatedAt": "2026-03-22T00:00:00.000Z",
       "firstSeenAt": "2026-03-19T00:00:00.000Z",
       "attributes": [
         {
@@ -4887,8 +4887,8 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/uncefact/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-22T06:59:29.839Z",
-      "updatedAt": "2026-03-19T00:00:00.000Z",
+      "fetchedAt": "2026-03-22T17:28:43.714Z",
+      "updatedAt": "2026-03-22T00:00:00.000Z",
       "firstSeenAt": "2026-03-19T00:00:00.000Z",
       "attributes": []
     },
@@ -4928,8 +4928,8 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/uncefact/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-22T06:59:29.839Z",
-      "updatedAt": "2026-03-19T00:00:00.000Z",
+      "fetchedAt": "2026-03-22T17:28:43.714Z",
+      "updatedAt": "2026-03-22T00:00:00.000Z",
       "firstSeenAt": "2026-03-19T00:00:00.000Z",
       "attributes": [
         {
@@ -5127,8 +5127,8 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/uncefact/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-22T06:59:29.839Z",
-      "updatedAt": "2026-03-19T00:00:00.000Z",
+      "fetchedAt": "2026-03-22T17:28:43.714Z",
+      "updatedAt": "2026-03-22T00:00:00.000Z",
       "firstSeenAt": "2026-03-19T00:00:00.000Z",
       "attributes": [
         {
@@ -5361,15 +5361,1041 @@
         }
       ],
       "schemaDescription": "A transport document issued by a carrier acknowledging receipt of cargo for shipment and evidencing the contract of carriage and title to the goods."
+    },
+    {
+      "id": "cred:uncefact:certificate-of-origin:vcdm-2-0",
+      "slug": "uncefact-certificate-of-origin",
+      "displayName": "Certificate of Origin",
+      "shortDescription": "Trade document certifying the country of origin of goods.",
+      "authority": {
+        "name": "UN/CEFACT",
+        "url": "https://un.opensource.unicc.org/unece/uncefact/spec-unvtd/certificate-of-origin/"
+      },
+      "subjectType": "Document",
+      "vcFormat": "vcdm_2_0",
+      "nativeIdentifier": "CertificateOfOrigin",
+      "nativeIdentifierType": "type",
+      "schemaUrl": "https://un.opensource.unicc.org/unece/uncefact/spec-unvtd/certificate-of-origin-schema.yaml",
+      "schemaType": "JSON Schema",
+      "version": "1.0",
+      "vocabularies": [
+        {
+          "name": "Certificate of Origin Vocabulary",
+          "authority": {
+            "name": "UN/CEFACT",
+            "url": "https://un.opensource.unicc.org/unece/uncefact/spec-unvtd/certificate-of-origin/"
+          },
+          "url": "https://un.opensource.unicc.org/unece/uncefact/spec-unvtd/certificate-of-origin-context.json"
+        }
+      ],
+      "tags": [
+        "unvtd",
+        "origin"
+      ],
+      "provider": {
+        "name": "UN/CEFACT",
+        "website": "https://untp.unece.org"
+      },
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/uncefact/credential-catalog.json",
+      "source": "local",
+      "fetchedAt": "2026-03-22T17:28:43.714Z",
+      "updatedAt": "2026-03-22T00:00:00.000Z",
+      "firstSeenAt": "2026-03-19T00:00:00.000Z",
+      "attributes": [
+        {
+          "name": "certificateNumber",
+          "type": "string",
+          "required": true,
+          "description": "Reference number to identify a certificate of origin."
+        },
+        {
+          "name": "issueDate",
+          "type": "string",
+          "required": true,
+          "description": "Date that a document was issued and when appropriate, signed or otherwise authenticated."
+        },
+        {
+          "name": "exporter",
+          "type": "object",
+          "required": true,
+          "description": "Party who makes, or on whose behalf the export declaration is made, and who is the owner of the goods or has similar rights of disposal over them at the time when the declaration is accepted."
+        },
+        {
+          "name": "importer",
+          "type": "object",
+          "required": false,
+          "description": "Party who makes - or on whose behalf a Customs clearing agent or other authorised person makes - an import declaration."
+        },
+        {
+          "name": "consignee",
+          "type": "object",
+          "required": false,
+          "description": "Party to which goods are consigned."
+        },
+        {
+          "name": "seller",
+          "type": "object",
+          "required": false,
+          "description": "Party selling merchandise or services to a buyer."
+        },
+        {
+          "name": "placeOfIssue",
+          "type": "object",
+          "required": false,
+          "description": "Location where a document was issued and when appropriate, signed or otherwise authenticated."
+        },
+        {
+          "name": "originCountry",
+          "type": "object",
+          "required": true,
+          "description": "Name of the country in which the goods have been produced or manufactured."
+        },
+        {
+          "name": "exportationCountry",
+          "type": "object",
+          "required": false,
+          "description": "Country from which a consignment of goods was initially exported."
+        },
+        {
+          "name": "destinationCountry",
+          "type": "object",
+          "required": false,
+          "description": "Country to which a consignment of goods is to be or has been delivered."
+        },
+        {
+          "name": "originalLoadingLocation",
+          "type": "object",
+          "required": false,
+          "description": "Location where the goods were first loaded onto the means of transport."
+        },
+        {
+          "name": "baseportUnloadingLocation",
+          "type": "object",
+          "required": false,
+          "description": "The place or port at which the cargo is discharged."
+        },
+        {
+          "name": "transportContractNumber",
+          "type": "string",
+          "required": false,
+          "description": "Reference number to identify a document evidencing a transport contract."
+        },
+        {
+          "name": "invoiceNumber",
+          "type": "string",
+          "required": false,
+          "description": "Reference number to identify an invoice."
+        },
+        {
+          "name": "contractNumber",
+          "type": "string",
+          "required": false,
+          "description": "Identifier of a contract concluded between parties."
+        },
+        {
+          "name": "certification",
+          "type": "string",
+          "required": false,
+          "description": "Text of official certification."
+        },
+        {
+          "name": "authentication",
+          "type": "string",
+          "required": false,
+          "description": "Proof that a document has been authenticated."
+        },
+        {
+          "name": "goods",
+          "type": "array",
+          "required": true,
+          "description": "Goods covered by the certificate of origin"
+        }
+      ],
+      "schemaDescription": "A document certifying the country of origin of specified goods to qualify for preferential treatment under trade agreements or to comply with import regulations."
+    },
+    {
+      "id": "cred:uncefact:customs-declaration:vcdm-2-0",
+      "slug": "uncefact-customs-declaration",
+      "displayName": "Customs Declaration",
+      "shortDescription": "Trade document declaring goods to customs authorities.",
+      "authority": {
+        "name": "UN/CEFACT",
+        "url": "https://un.opensource.unicc.org/unece/uncefact/spec-unvtd/customs-declaration/"
+      },
+      "subjectType": "Document",
+      "vcFormat": "vcdm_2_0",
+      "nativeIdentifier": "CustomsDeclaration",
+      "nativeIdentifierType": "type",
+      "schemaUrl": "https://un.opensource.unicc.org/unece/uncefact/spec-unvtd/customs-declaration-schema.yaml",
+      "schemaType": "JSON Schema",
+      "version": "1.0",
+      "vocabularies": [
+        {
+          "name": "Customs Declaration Vocabulary",
+          "authority": {
+            "name": "UN/CEFACT",
+            "url": "https://un.opensource.unicc.org/unece/uncefact/spec-unvtd/customs-declaration/"
+          },
+          "url": "https://un.opensource.unicc.org/unece/uncefact/spec-unvtd/customs-declaration-context.json"
+        }
+      ],
+      "tags": [
+        "unvtd",
+        "customs"
+      ],
+      "provider": {
+        "name": "UN/CEFACT",
+        "website": "https://untp.unece.org"
+      },
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/uncefact/credential-catalog.json",
+      "source": "local",
+      "fetchedAt": "2026-03-22T17:28:43.714Z",
+      "updatedAt": "2026-03-22T00:00:00.000Z",
+      "firstSeenAt": "2026-03-22T00:00:00.000Z",
+      "attributes": [
+        {
+          "name": "declarationNumber",
+          "type": "string",
+          "required": true,
+          "description": "Reference number, assigned or accepted by Customs, to identify a goods declaration."
+        },
+        {
+          "name": "traderAssignedReference",
+          "type": "string",
+          "required": false,
+          "description": "Reference assigned by a trader to identify a declaration."
+        },
+        {
+          "name": "issueDate",
+          "type": "string",
+          "required": true,
+          "description": "Date that a document was issued."
+        },
+        {
+          "name": "exporter",
+          "type": "object",
+          "required": true,
+          "description": "Party who makes, or on whose behalf the export declaration is made."
+        },
+        {
+          "name": "importer",
+          "type": "object",
+          "required": false,
+          "description": "Party who makes - or on whose behalf a Customs clearing agent makes - an import declaration."
+        },
+        {
+          "name": "consignee",
+          "type": "object",
+          "required": false,
+          "description": "Party to which goods are consigned."
+        },
+        {
+          "name": "carrier",
+          "type": "object",
+          "required": false,
+          "description": "Party providing the transport of goods between named points."
+        },
+        {
+          "name": "exportationCountry",
+          "type": "object",
+          "required": false,
+          "description": "Country from which goods are exported."
+        },
+        {
+          "name": "destinationCountry",
+          "type": "object",
+          "required": false,
+          "description": "Country to which goods are destined."
+        },
+        {
+          "name": "consignmentDestinationCountry",
+          "type": "object",
+          "required": false,
+          "description": "Name of the country to which the goods are to be delivered."
+        },
+        {
+          "name": "exitCustomsOffice",
+          "type": "object",
+          "required": false,
+          "description": "Customs office at which the goods leave the customs territory."
+        },
+        {
+          "name": "entryCustomsOffice",
+          "type": "object",
+          "required": false,
+          "description": "Customs office at which the goods enter the customs territory."
+        },
+        {
+          "name": "transportContractNumber",
+          "type": "string",
+          "required": false,
+          "description": "Reference number to identify a document evidencing a transport contract."
+        },
+        {
+          "name": "invoiceNumber",
+          "type": "string",
+          "required": false,
+          "description": "Reference number to identify an invoice."
+        },
+        {
+          "name": "invoiceDate",
+          "type": "string",
+          "required": false,
+          "description": "Date of issue of an invoice."
+        },
+        {
+          "name": "tradeTermsConditionsCode",
+          "type": "string",
+          "required": false,
+          "description": "Code specifying the delivery or transport terms (Incoterms)."
+        },
+        {
+          "name": "tradeTermsConditionsDescription",
+          "type": "string",
+          "required": false,
+          "description": "Free form description of delivery or transport terms."
+        },
+        {
+          "name": "paymentMethod",
+          "type": "string",
+          "required": false,
+          "description": "Code specifying a method of payment."
+        },
+        {
+          "name": "modeOfTransport",
+          "type": "string",
+          "required": false,
+          "description": "Code specifying a mode of transport (1=Maritime, 3=Road, 4=Air, etc.)."
+        },
+        {
+          "name": "transportMeansIdentifier",
+          "type": "string",
+          "required": false,
+          "description": "Name of a specific means of transport such as the vessel name."
+        },
+        {
+          "name": "transportMeansRegistration",
+          "type": "string",
+          "required": false,
+          "description": "Identifier of a specific means of transport."
+        },
+        {
+          "name": "transportMeansAtBorder",
+          "type": "string",
+          "required": false,
+          "description": "Identifier of the means of transport used in crossing the border."
+        },
+        {
+          "name": "natureOfTransaction",
+          "type": "string",
+          "required": false,
+          "description": "Textual representation of a type of contract."
+        },
+        {
+          "name": "declarationGoods",
+          "type": "array",
+          "required": true,
+          "description": "Goods declared to customs"
+        },
+        {
+          "name": "totalInvoiceAmount",
+          "type": "object",
+          "required": false,
+          "description": "Total monetary amount charged."
+        },
+        {
+          "name": "totalGrossWeight",
+          "type": "object",
+          "required": false,
+          "description": "Total gross weight of all goods."
+        },
+        {
+          "name": "totalNetWeight",
+          "type": "object",
+          "required": false,
+          "description": "Total net weight of all goods."
+        },
+        {
+          "name": "totalNumberOfPackages",
+          "type": "number",
+          "required": false,
+          "description": "Total number of packages."
+        },
+        {
+          "name": "ucr",
+          "type": "string",
+          "required": false,
+          "description": "Unique Consignment Reference identifying a particular consignment."
+        }
+      ],
+      "schemaDescription": "A formal document submitted to customs authorities declaring the details of goods being imported or exported, including their nature, value, and origin for duty assessment and regulatory compliance."
+    },
+    {
+      "id": "cred:uncefact:insurance-certificate:vcdm-2-0",
+      "slug": "uncefact-insurance-certificate",
+      "displayName": "Insurance Certificate",
+      "shortDescription": "Trade document evidencing insurance coverage for goods or shipment.",
+      "authority": {
+        "name": "UN/CEFACT",
+        "url": "https://un.opensource.unicc.org/unece/uncefact/spec-unvtd/insurance-certificate/"
+      },
+      "subjectType": "Document",
+      "vcFormat": "vcdm_2_0",
+      "nativeIdentifier": "InsuranceCertificate",
+      "nativeIdentifierType": "type",
+      "schemaUrl": "https://un.opensource.unicc.org/unece/uncefact/spec-unvtd/insurance-certificate-schema.yaml",
+      "schemaType": "JSON Schema",
+      "version": "1.0",
+      "vocabularies": [
+        {
+          "name": "Insurance Certificate Vocabulary",
+          "authority": {
+            "name": "UN/CEFACT",
+            "url": "https://un.opensource.unicc.org/unece/uncefact/spec-unvtd/insurance-certificate/"
+          },
+          "url": "https://un.opensource.unicc.org/unece/uncefact/spec-unvtd/insurance-certificate-context.json"
+        }
+      ],
+      "tags": [
+        "unvtd",
+        "insurance"
+      ],
+      "provider": {
+        "name": "UN/CEFACT",
+        "website": "https://untp.unece.org"
+      },
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/uncefact/credential-catalog.json",
+      "source": "local",
+      "fetchedAt": "2026-03-22T17:28:43.714Z",
+      "updatedAt": "2026-03-22T00:00:00.000Z",
+      "firstSeenAt": "2026-03-19T00:00:00.000Z",
+      "attributes": [
+        {
+          "name": "certificateNumber",
+          "type": "string",
+          "required": true,
+          "description": "Reference number to identify an insurance certificate."
+        },
+        {
+          "name": "policyNumber",
+          "type": "string",
+          "required": true,
+          "description": "Reference number to identify an insurance policy."
+        },
+        {
+          "name": "issueDate",
+          "type": "string",
+          "required": true,
+          "description": "Date that a document was issued."
+        },
+        {
+          "name": "insuredParty",
+          "type": "object",
+          "required": true,
+          "description": "Party which benefits from insurance coverage."
+        },
+        {
+          "name": "insuranceCompany",
+          "type": "object",
+          "required": true,
+          "description": "Details related to the company engaged in the business of insurance."
+        },
+        {
+          "name": "insuranceClaimsAdjuster",
+          "type": "object",
+          "required": false,
+          "description": "Name and address of the insurance claims adjuster."
+        },
+        {
+          "name": "placeOfIssue",
+          "type": "object",
+          "required": false,
+          "description": "Location where a document was issued."
+        },
+        {
+          "name": "transportContractNumber",
+          "type": "string",
+          "required": false,
+          "description": "Reference number to identify a document evidencing a transport contract."
+        },
+        {
+          "name": "billOfLadingNumber",
+          "type": "string",
+          "required": false,
+          "description": "Reference number to identify a bill of lading."
+        },
+        {
+          "name": "invoiceNumber",
+          "type": "string",
+          "required": false,
+          "description": "Reference number to identify an invoice."
+        },
+        {
+          "name": "contractNumber",
+          "type": "string",
+          "required": false,
+          "description": "Identifier of a contract concluded between parties."
+        },
+        {
+          "name": "documentaryCreditIdentifier",
+          "type": "string",
+          "required": false,
+          "description": "Reference number to identify a documentary credit."
+        },
+        {
+          "name": "consignor",
+          "type": "object",
+          "required": false,
+          "description": "Party consigning goods as stipulated in the transport contract."
+        },
+        {
+          "name": "consignee",
+          "type": "object",
+          "required": false,
+          "description": "Party to which goods are consigned."
+        },
+        {
+          "name": "carrier",
+          "type": "object",
+          "required": false,
+          "description": "Party providing the transport of goods between named points."
+        },
+        {
+          "name": "transportMeansIdentifier",
+          "type": "string",
+          "required": false,
+          "description": "Name of a specific means of transport such as the vessel name."
+        },
+        {
+          "name": "transportMeansRegistration",
+          "type": "string",
+          "required": false,
+          "description": "Identifier of a specific means of transport."
+        },
+        {
+          "name": "conveyanceReferenceNumber",
+          "type": "string",
+          "required": false,
+          "description": "Identifier of a journey of a means of transport."
+        },
+        {
+          "name": "estimatedTimeOfDeparture",
+          "type": "string",
+          "required": false,
+          "description": "Date and time when a transport means is scheduled to depart."
+        },
+        {
+          "name": "estimatedTimeOfArrival",
+          "type": "string",
+          "required": false,
+          "description": "Date and time of the estimated arrival of means of transport."
+        },
+        {
+          "name": "placeOfDeparture",
+          "type": "object",
+          "required": false,
+          "description": "Port from which a means of transport is scheduled to depart."
+        },
+        {
+          "name": "arrivalLocation",
+          "type": "object",
+          "required": false,
+          "description": "Port at which a means of transport is scheduled to arrive."
+        },
+        {
+          "name": "insuredValueAmount",
+          "type": "object",
+          "required": true,
+          "description": "Total sum covered by insurance for a particular consignment."
+        },
+        {
+          "name": "insuranceAmount",
+          "type": "object",
+          "required": false,
+          "description": "Amount of premium payable to the insurance company."
+        },
+        {
+          "name": "insuranceConditions",
+          "type": "string",
+          "required": false,
+          "description": "Reference to the general conditions of contract under which insurance is issued."
+        },
+        {
+          "name": "goodsDescription",
+          "type": "string",
+          "required": false,
+          "description": "Plain language description of the nature of goods."
+        },
+        {
+          "name": "riskObject",
+          "type": "string",
+          "required": false,
+          "description": "Free form description of the object sub-type of a risk."
+        },
+        {
+          "name": "authentication",
+          "type": "string",
+          "required": false,
+          "description": "Proof that a document has been authenticated."
+        }
+      ],
+      "schemaDescription": "A document certifying that insurance coverage has been effected for particular goods being shipped, detailing the risks covered, sum insured, and terms of coverage."
+    },
+    {
+      "id": "cred:uncefact:packing-list:vcdm-2-0",
+      "slug": "uncefact-packing-list",
+      "displayName": "Packing List",
+      "shortDescription": "Trade document listing packaged goods, quantities, and packaging details.",
+      "authority": {
+        "name": "UN/CEFACT",
+        "url": "https://un.opensource.unicc.org/unece/uncefact/spec-unvtd/packing-list/"
+      },
+      "subjectType": "Document",
+      "vcFormat": "vcdm_2_0",
+      "nativeIdentifier": "PackingList",
+      "nativeIdentifierType": "type",
+      "schemaUrl": "https://un.opensource.unicc.org/unece/uncefact/spec-unvtd/packing-list-schema.yaml",
+      "schemaType": "JSON Schema",
+      "version": "1.0",
+      "vocabularies": [
+        {
+          "name": "Packing List Vocabulary",
+          "authority": {
+            "name": "UN/CEFACT",
+            "url": "https://un.opensource.unicc.org/unece/uncefact/spec-unvtd/packing-list/"
+          },
+          "url": "https://un.opensource.unicc.org/unece/uncefact/spec-unvtd/packing-list-context.json"
+        }
+      ],
+      "tags": [
+        "unvtd",
+        "packing"
+      ],
+      "provider": {
+        "name": "UN/CEFACT",
+        "website": "https://untp.unece.org"
+      },
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/uncefact/credential-catalog.json",
+      "source": "local",
+      "fetchedAt": "2026-03-22T17:28:43.714Z",
+      "updatedAt": "2026-03-22T00:00:00.000Z",
+      "firstSeenAt": "2026-03-19T00:00:00.000Z",
+      "attributes": [
+        {
+          "name": "issueDate",
+          "type": "string",
+          "required": true,
+          "description": "Date that a document was issued."
+        },
+        {
+          "name": "despatchDate",
+          "type": "string",
+          "required": false,
+          "description": "Date on which goods are despatched or consigned."
+        },
+        {
+          "name": "purchaseOrderNumber",
+          "type": "string",
+          "required": false,
+          "description": "Identifier assigned by the buyer to an order."
+        },
+        {
+          "name": "contractNumber",
+          "type": "string",
+          "required": false,
+          "description": "Identifier of a contract concluded between parties."
+        },
+        {
+          "name": "invoiceNumber",
+          "type": "string",
+          "required": false,
+          "description": "Reference number to identify an invoice."
+        },
+        {
+          "name": "transportContractNumber",
+          "type": "string",
+          "required": false,
+          "description": "Reference number to identify a document evidencing a transport contract."
+        },
+        {
+          "name": "buyer",
+          "type": "object",
+          "required": false,
+          "description": "Party to which merchandise or services are sold."
+        },
+        {
+          "name": "seller",
+          "type": "object",
+          "required": false,
+          "description": "Party selling merchandise or services to a buyer."
+        },
+        {
+          "name": "consignee",
+          "type": "object",
+          "required": false,
+          "description": "Party to which goods are consigned."
+        },
+        {
+          "name": "carrier",
+          "type": "object",
+          "required": false,
+          "description": "Party providing the transport of goods between named points."
+        },
+        {
+          "name": "deliveryLocation",
+          "type": "object",
+          "required": false,
+          "description": "Location to which a consignment is to be delivered."
+        },
+        {
+          "name": "despatchLocation",
+          "type": "object",
+          "required": false,
+          "description": "Place from which despatch is to take place."
+        },
+        {
+          "name": "originCountry",
+          "type": "object",
+          "required": false,
+          "description": "Country where the goods were produced."
+        },
+        {
+          "name": "baseportUnloadingLocation",
+          "type": "object",
+          "required": false,
+          "description": "The place or port at which the cargo is discharged."
+        },
+        {
+          "name": "totalGrossWeight",
+          "type": "object",
+          "required": false,
+          "description": "Total gross weight of all packages."
+        },
+        {
+          "name": "totalNetWeight",
+          "type": "object",
+          "required": false,
+          "description": "Total net weight of all items."
+        },
+        {
+          "name": "totalPackages",
+          "type": "number",
+          "required": false,
+          "description": "Total number of packages."
+        },
+        {
+          "name": "totalVolume",
+          "type": "object",
+          "required": false,
+          "description": "Total volume of all packages."
+        },
+        {
+          "name": "handlingInstructions",
+          "type": "string",
+          "required": false,
+          "description": "Instructions on how packages should be handled."
+        },
+        {
+          "name": "transportTemperature",
+          "type": "string",
+          "required": false,
+          "description": "Instructions regarding the temperature under which the cargo has to be transported."
+        },
+        {
+          "name": "packages",
+          "type": "array",
+          "required": true,
+          "description": "Details of individual packages"
+        }
+      ],
+      "schemaDescription": "A detailed inventory of the contents of packages in a shipment, including item descriptions, quantities, weights, and package marks for shipping and receiving purposes."
+    },
+    {
+      "id": "cred:uncefact:purchase-order:vcdm-2-0",
+      "slug": "uncefact-purchase-order",
+      "displayName": "Purchase Order",
+      "shortDescription": "Trade document used by a buyer to place an order with a seller.",
+      "authority": {
+        "name": "UN/CEFACT",
+        "url": "https://un.opensource.unicc.org/unece/uncefact/spec-unvtd/purchase-order/"
+      },
+      "subjectType": "Document",
+      "vcFormat": "vcdm_2_0",
+      "nativeIdentifier": "PurchaseOrder",
+      "nativeIdentifierType": "type",
+      "schemaUrl": "https://un.opensource.unicc.org/unece/uncefact/spec-unvtd/purchase-order-schema.yaml",
+      "schemaType": "JSON Schema",
+      "version": "1.0",
+      "vocabularies": [
+        {
+          "name": "Purchase Order Vocabulary",
+          "authority": {
+            "name": "UN/CEFACT",
+            "url": "https://un.opensource.unicc.org/unece/uncefact/spec-unvtd/purchase-order/"
+          },
+          "url": "https://un.opensource.unicc.org/unece/uncefact/spec-unvtd/purchase-order-context.json"
+        }
+      ],
+      "tags": [
+        "unvtd",
+        "order"
+      ],
+      "provider": {
+        "name": "UN/CEFACT",
+        "website": "https://untp.unece.org"
+      },
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/uncefact/credential-catalog.json",
+      "source": "local",
+      "fetchedAt": "2026-03-22T17:28:43.714Z",
+      "updatedAt": "2026-03-22T00:00:00.000Z",
+      "firstSeenAt": "2026-03-22T00:00:00.000Z",
+      "attributes": [
+        {
+          "name": "purchaseOrderNumber",
+          "type": "string",
+          "required": true,
+          "description": "Identifier assigned by the buyer to an order."
+        },
+        {
+          "name": "orderDate",
+          "type": "string",
+          "required": true,
+          "description": "Date of order."
+        },
+        {
+          "name": "buyer",
+          "type": "object",
+          "required": true,
+          "description": "Party to which merchandise or services are sold."
+        },
+        {
+          "name": "seller",
+          "type": "object",
+          "required": true,
+          "description": "Party selling merchandise or services to a buyer."
+        },
+        {
+          "name": "invoicee",
+          "type": "object",
+          "required": false,
+          "description": "Party to whom an invoice is issued."
+        },
+        {
+          "name": "deliveryLocation",
+          "type": "object",
+          "required": true,
+          "description": "Location to which a consignment is to be delivered to the final consignee."
+        },
+        {
+          "name": "paymentTerms",
+          "type": "string",
+          "required": false,
+          "description": "Identification of the terms of payment between the parties to a transaction."
+        },
+        {
+          "name": "paymentMethod",
+          "type": "string",
+          "required": false,
+          "description": "Code specifying a method of payment."
+        },
+        {
+          "name": "allowanceCharge",
+          "type": "object",
+          "required": false,
+          "description": "Code specifying a type of an adjustment to a monetary amount such as an allowance or charge."
+        },
+        {
+          "name": "totalOrderAmount",
+          "type": "object",
+          "required": false,
+          "description": "Total amount of an order."
+        },
+        {
+          "name": "orderedItems",
+          "type": "array",
+          "required": true,
+          "description": "Items being ordered"
+        }
+      ],
+      "schemaDescription": "A purchase order is a commercial document issued by a buyer to a seller, indicating types, quantities, and agreed prices for products or services."
+    },
+    {
+      "id": "cred:uncefact:warehouse-receipt:vcdm-2-0",
+      "slug": "uncefact-warehouse-receipt",
+      "displayName": "Warehouse Receipt",
+      "shortDescription": "Trade document acknowledging storage of goods in a warehouse.",
+      "authority": {
+        "name": "UN/CEFACT",
+        "url": "https://un.opensource.unicc.org/unece/uncefact/spec-unvtd/warehouse-receipt/"
+      },
+      "subjectType": "Document",
+      "vcFormat": "vcdm_2_0",
+      "nativeIdentifier": "WarehouseReceipt",
+      "nativeIdentifierType": "type",
+      "schemaUrl": "https://un.opensource.unicc.org/unece/uncefact/spec-unvtd/warehouse-receipt-schema.yaml",
+      "schemaType": "JSON Schema",
+      "version": "1.0",
+      "vocabularies": [
+        {
+          "name": "Warehouse Receipt Vocabulary",
+          "authority": {
+            "name": "UN/CEFACT",
+            "url": "https://un.opensource.unicc.org/unece/uncefact/spec-unvtd/warehouse-receipt/"
+          },
+          "url": "https://un.opensource.unicc.org/unece/uncefact/spec-unvtd/warehouse-receipt-context.json"
+        }
+      ],
+      "tags": [
+        "unvtd",
+        "warehouse"
+      ],
+      "provider": {
+        "name": "UN/CEFACT",
+        "website": "https://untp.unece.org"
+      },
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/uncefact/credential-catalog.json",
+      "source": "local",
+      "fetchedAt": "2026-03-22T17:28:43.714Z",
+      "updatedAt": "2026-03-22T00:00:00.000Z",
+      "firstSeenAt": "2026-03-22T00:00:00.000Z",
+      "attributes": [
+        {
+          "name": "documentIdentifier",
+          "type": "string",
+          "required": true,
+          "description": "Reference number identifying a specific document."
+        },
+        {
+          "name": "issueDate",
+          "type": "string",
+          "required": true,
+          "description": "Date that a document was issued."
+        },
+        {
+          "name": "warehouseDepositor",
+          "type": "object",
+          "required": true,
+          "description": "Party depositing goods in a warehouse."
+        },
+        {
+          "name": "warehouseKeeper",
+          "type": "object",
+          "required": true,
+          "description": "Party taking responsibility for goods entered into a warehouse."
+        },
+        {
+          "name": "warehouse",
+          "type": "object",
+          "required": true,
+          "description": "Warehouse where a particular consignment has been stored."
+        },
+        {
+          "name": "placeOfIssue",
+          "type": "object",
+          "required": false,
+          "description": "Location where a document was issued."
+        },
+        {
+          "name": "transportContractNumber",
+          "type": "string",
+          "required": false,
+          "description": "Reference number to identify a document evidencing a transport contract."
+        },
+        {
+          "name": "billOfLadingNumber",
+          "type": "string",
+          "required": false,
+          "description": "Reference number to identify a bill of lading."
+        },
+        {
+          "name": "invoiceNumber",
+          "type": "string",
+          "required": false,
+          "description": "Reference number to identify an invoice."
+        },
+        {
+          "name": "actualArrivalDate",
+          "type": "string",
+          "required": false,
+          "description": "Date of the arrival of means of transport."
+        },
+        {
+          "name": "actualDepartureDate",
+          "type": "string",
+          "required": false,
+          "description": "Date of the departure of means of transport."
+        },
+        {
+          "name": "storageStartDate",
+          "type": "string",
+          "required": false,
+          "description": "Date when storage begins."
+        },
+        {
+          "name": "authentication",
+          "type": "string",
+          "required": false,
+          "description": "Proof that a document has been authenticated."
+        },
+        {
+          "name": "documentEndorsement",
+          "type": "string",
+          "required": false,
+          "description": "Proof that a document has been signed."
+        },
+        {
+          "name": "storageConditions",
+          "type": "string",
+          "required": false,
+          "description": "Conditions under which goods are stored."
+        },
+        {
+          "name": "handlingInstructions",
+          "type": "string",
+          "required": false,
+          "description": "Instructions on how goods should be handled."
+        },
+        {
+          "name": "deliveryInstructions",
+          "type": "string",
+          "required": false,
+          "description": "Delivery instructions relating to a consignment."
+        },
+        {
+          "name": "totalGrossWeight",
+          "type": "object",
+          "required": false,
+          "description": "Total gross weight of stored goods."
+        },
+        {
+          "name": "totalVolume",
+          "type": "object",
+          "required": false,
+          "description": "Total volume of stored goods."
+        },
+        {
+          "name": "totalPackages",
+          "type": "number",
+          "required": false,
+          "description": "Total number of packages."
+        },
+        {
+          "name": "storedGoods",
+          "type": "array",
+          "required": true,
+          "description": "Goods stored in the warehouse"
+        }
+      ],
+      "schemaDescription": "A document issued by a warehouse operator acknowledging the receipt of goods for storage and establishing the terms under which the goods are held."
     }
   ],
   "stats": {
-    "totalCredentials": 72,
+    "totalCredentials": 78,
     "byFormat": {
       "sd_jwt_vc": 44,
       "mdoc": 20,
       "vcdm_1_1": 1,
-      "vcdm_2_0": 7
+      "vcdm_2_0": 13
     },
     "bySubjectType": {
       "Person": 52,
@@ -5377,8 +6403,8 @@
       "Product": 3,
       "Dataset": 0,
       "Software": 0,
-      "Document": 4
+      "Document": 10
     },
-    "withSchemaAttributes": 68
+    "withSchemaAttributes": 74
   }
 }
