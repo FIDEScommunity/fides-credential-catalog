@@ -525,7 +525,7 @@
       <div class="fides-kpi-row" role="group" aria-label="Catalog summary">
         <div class="fides-kpi-card">
           <span class="fides-kpi-value">${metrics.total}</span>
-          <span class="fides-kpi-label">Credentials</span>
+          <span class="fides-kpi-label">Credential types</span>
         </div>
         <div class="fides-kpi-card">
           <span class="fides-kpi-value">${metrics.issuers}</span>
