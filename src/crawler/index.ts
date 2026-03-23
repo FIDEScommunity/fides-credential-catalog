@@ -11,6 +11,7 @@ import type {
   NormalizedCredential,
   SubjectType
 } from "../types/credential.js";
+import { extractAttributesFromSchema } from "./schemaAttributes.js";
 
 const CONFIG = {
   schemaPath: path.join(process.cwd(), "schemas/credential-catalog.schema.json"),
@@ -74,50 +75,6 @@ async function loadHistoryState(): Promise<CredentialHistoryState> {
 async function saveHistoryState(state: CredentialHistoryState): Promise<void> {
   await fs.mkdir(path.dirname(CONFIG.historyPath), { recursive: true });
   await fs.writeFile(CONFIG.historyPath, JSON.stringify(state, null, 2));
-}
-
-function getTypeFromSchemaProperty(propertySchema: Record<string, unknown>): string {
-  const type = propertySchema.type;
-  if (typeof type === "string") return type;
-  if (Array.isArray(type) && type.length > 0) return String(type[0]);
-  if (propertySchema.$ref) return "ref";
-  if (propertySchema.oneOf) return "oneOf";
-  if (propertySchema.anyOf) return "anyOf";
-  if (propertySchema.allOf) return "allOf";
-  return "unknown";
-}
-
-function extractAttributesFromSchema(schemaData: Record<string, unknown>): EnrichedAttribute[] {
-  const topProps = schemaData.properties as Record<string, unknown> | undefined;
-
-  // Prefer credentialSubject.properties when present (VCDM/YAML schemas)
-  const credentialSubject = topProps?.credentialSubject as Record<string, unknown> | undefined;
-  const subjectProps = credentialSubject?.properties as Record<string, unknown> | undefined;
-
-  const props = subjectProps ?? topProps;
-  if (!props || typeof props !== "object" || Array.isArray(props)) return [];
-
-  // Required fields: check both root-level and credentialSubject-level
-  const rootRequired = schemaData.required;
-  const subjectRequired = credentialSubject?.required;
-  const requiredSet = new Set<string>([
-    ...(Array.isArray(rootRequired) ? rootRequired.filter((v): v is string => typeof v === "string") : []),
-    ...(Array.isArray(subjectRequired) ? subjectRequired.filter((v): v is string => typeof v === "string") : [])
-  ]);
-
-  const attributes: EnrichedAttribute[] = [];
-  for (const [name, value] of Object.entries(props)) {
-    if (!value || typeof value !== "object" || Array.isArray(value)) continue;
-    const propertySchema = value as Record<string, unknown>;
-    attributes.push({
-      name,
-      type: getTypeFromSchemaProperty(propertySchema),
-      required: requiredSet.has(name),
-      description: typeof propertySchema.description === "string" ? propertySchema.description : undefined
-    });
-  }
-
-  return attributes;
 }
 
 interface SchemaFetchResult {
@@ -250,7 +207,7 @@ async function crawl(): Promise<void> {
   const deduped = Array.from(dedupeMap.values());
 
   const aggregated: AggregatedCredentialCatalog = {
-    schemaVersion: "1.0.0",
+    schemaVersion: "1.1.0",
     catalogType: "credential",
     lastUpdated: now,
     credentials: deduped,

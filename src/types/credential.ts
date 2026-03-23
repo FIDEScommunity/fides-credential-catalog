@@ -72,6 +72,8 @@ export interface EnrichedAttribute {
   type: string;
   required: boolean;
   description?: string;
+  /** Zero-based depth for nested fields (0 = top-level); used for UI indentation. */
+  depth?: number;
 }
 
 export interface NormalizedCredential extends CredentialEntry {

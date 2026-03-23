@@ -11,7 +11,8 @@
     "generate-eudi-schemas": "tsx scripts/generate-eudi-schemas.ts",
     "copy-issuer-aggregated": "node scripts/copy-issuer-aggregated.js",
     "copy-rp-aggregated": "node scripts/copy-rp-aggregated.js",
-    "check-links": "tsx scripts/check-links.ts"
+    "check-links": "tsx scripts/check-links.ts",
+    "test": "node --import tsx --test src/crawler/schemaAttributes.test.ts"
   },
   "repository": {
     "type": "git",

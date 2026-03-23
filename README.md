@@ -32,7 +32,9 @@ fides-credential-catalog/
 │       └── credential-catalog.json       # FIDES Labs credentials
 ├── src/
 │   ├── types/credential.ts               # TypeScript type definitions
-│   └── crawler/index.ts                  # Crawler: aggregates, validates, and enriches data
+│   └── crawler/
+│       ├── index.ts                      # Crawler: aggregates, validates, and enriches data
+│       └── schemaAttributes.ts           # Flattens nested JSON Schema properties into attributes
 ├── data/
 │   ├── aggregated.json                   # Aggregated machine-readable output (used by UI/API)
 │   └── credential-history-state.json     # Stable first-seen state across crawler runs
@@ -62,6 +64,14 @@ attributes fetched from linked schemas (`schemaUrl`), and writes `data/aggregate
 
 ```bash
 npm run crawl
+```
+
+**Schema attributes:** Nested `object.properties` from each `schemaUrl` are flattened into `attributes` rows in `aggregated.json`. Field paths use `/` (e.g. `eu.europa.ec.eudi.pid.1/given_name`) so dotted namespaces stay readable. Arrays of objects expose item fields under `…/item/…`. Limits: max depth and max 500 rows per credential (see `schemaAttributes.ts`). Optional `depth` on each row drives indentation in the WordPress UI. In the plugin modal, nested fields are labeled with a leading slash and without repeating the first segment (e.g. `/given_name`); hover shows the full path.
+
+### Tests
+
+```bash
+npm test
 ```
 
 ### Validate Source Catalogs

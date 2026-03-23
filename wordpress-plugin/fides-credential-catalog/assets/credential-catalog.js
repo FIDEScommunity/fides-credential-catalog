@@ -125,6 +125,17 @@
       .replace(/'/g, "&#39;");
   }
 
+  /**
+   * Attribute table label: drop the first path segment so the doc-type object is not repeated
+   * (e.g. `eu…/iban` → `/iban`). Top-level fields stay unchanged. Full path remains in data for search.
+   */
+  function formatAttributeNameForDisplay(name) {
+    const s = String(name ?? "");
+    const i = s.indexOf("/");
+    if (i === -1) return s;
+    return `/${s.slice(i + 1)}`;
+  }
+
   /** Trim string; empty string if missing. */
   function trimStr(value) {
     if (value == null) return "";
@@ -892,7 +903,7 @@
                       <thead><tr><th>Field name</th><th class="fides-col-type">Type</th><th class="fides-col-required" title="Required">✓</th><th>Description</th></tr></thead>
                       <tbody>
                         ${attributes.map((attr) => `<tr>
-                          <td><code>${escapeHtml(attr.name)}</code></td>
+                          <td class="fides-attr-name-cell" style="padding-left:${(Number(attr.depth) || 0) * 14}px" title="${escapeHtml(attr.name)}"><code>${escapeHtml(formatAttributeNameForDisplay(attr.name))}</code></td>
                           <td class="fides-col-type">${attr.type ? `<span class="fides-attr-type">${escapeHtml(attr.type)}</span>` : "—"}</td>
                           <td class="fides-col-required fides-attr-required">${attr.required ? "✓" : ""}</td>
                           <td>${escapeHtml(attr.description || "")}</td>
