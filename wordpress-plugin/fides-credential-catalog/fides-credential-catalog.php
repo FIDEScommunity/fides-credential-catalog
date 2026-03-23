@@ -3,7 +3,7 @@
  * Plugin Name: FIDES Credential Catalog
  * Plugin URI: https://github.com/FIDEScommunity/fides-credential-catalog
  * Description: Display an interactive catalog of credentials with search and filters.
- * Version: 1.2.14
+ * Version: 1.2.15
  * Author: FIDES Community
  * Author URI: https://fides.community
  * License: Apache-2.0
@@ -14,7 +14,7 @@ if (!defined('ABSPATH')) {
     exit;
 }
 
-define('FIDES_CREDENTIAL_CATALOG_VERSION', '1.2.14');
+define('FIDES_CREDENTIAL_CATALOG_VERSION', '1.2.15');
 define('FIDES_CREDENTIAL_CATALOG_PLUGIN_DIR', plugin_dir_path(__FILE__));
 define('FIDES_CREDENTIAL_CATALOG_PLUGIN_URL', plugin_dir_url(__FILE__));
 
@@ -87,7 +87,10 @@ function fides_credential_catalog_enqueue_assets() {
         'rpAggregatedUrl' => $rp_data_url,
         'rpCatalogUrl' => get_option('fides_credential_catalog_rp_catalog_url', 'https://fides.community/community-tools/relying-party-catalog/'),
         'issuerAggregatedUrl' => $issuer_data_url,
-        'issuerCatalogUrl' => get_option('fides_credential_catalog_issuer_catalog_url', 'https://fides.community/community-tools/issuer-catalog/'),
+        'issuerCatalogUrl' => get_option(
+            'fides_credential_catalog_issuer_catalog_url',
+            'https://fides.community/ecosystem-explorer/issuer-catalog/'
+        ),
         'walletCatalogUrl' => $wallet_catalog_url,
         'vocabularyUrl' => 'https://raw.githubusercontent.com/FIDEScommunity/fides-interop-profiles/main/data/vocabulary.json',
         'vocabularyFallbackUrl' => $plugin_url . 'assets/vocabulary.json',
@@ -146,6 +149,12 @@ function fides_credential_catalog_register_settings() {
         'sanitize_callback' => 'esc_url_raw'
     ));
 
+    register_setting('fides_credential_catalog_settings', 'fides_credential_catalog_issuer_catalog_url', array(
+        'type' => 'string',
+        'default' => 'https://fides.community/ecosystem-explorer/issuer-catalog/',
+        'sanitize_callback' => 'esc_url_raw'
+    ));
+
     register_setting('fides_credential_catalog_settings', 'fides_credential_catalog_wallet_catalog_url', array(
         'type' => 'string',
         'default' => 'https://wallets.fides.community',
@@ -177,6 +186,15 @@ function fides_credential_catalog_settings_page() {
                         <input type="url" id="fides_credential_catalog_rp_catalog_url" name="fides_credential_catalog_rp_catalog_url"
                                value="<?php echo esc_attr(get_option('fides_credential_catalog_rp_catalog_url', 'https://fides.community/community-tools/relying-party-catalog/')); ?>"
                                class="regular-text">
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row"><label for="fides_credential_catalog_issuer_catalog_url">Issuer Catalog Base URL</label></th>
+                    <td>
+                        <input type="url" id="fides_credential_catalog_issuer_catalog_url" name="fides_credential_catalog_issuer_catalog_url"
+                               value="<?php echo esc_attr(get_option('fides_credential_catalog_issuer_catalog_url', 'https://fides.community/ecosystem-explorer/issuer-catalog/')); ?>"
+                               class="regular-text">
+                        <p class="description">Base URL for issuer catalog deep links in the credential modal (e.g. issuer names and “Open in catalog”).</p>
                     </td>
                 </tr>
                 <tr>

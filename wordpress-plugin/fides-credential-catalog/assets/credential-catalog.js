@@ -769,7 +769,7 @@
     const showIssuerOrgCol = issuerRowsSorted.some((i) => trimStr(i.organization));
     const showRpOrgCol = rpRowsSorted.some((rp) => trimStr(rp.organization));
 
-    const issuerCatalogBase = (config.issuerCatalogUrl || "").replace(/\/$/, "");
+    const issuerCatalogBase = (config.issuerCatalogUrl || "https://fides.community/ecosystem-explorer/issuer-catalog/").replace(/\/$/, "");
     const ecosystemIssuerHref =
       issuerItems.length > 0 && issuerCatalogBase
         ? issuerItems.length === 1
