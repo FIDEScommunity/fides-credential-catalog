@@ -1,7 +1,7 @@
 {
-  "schemaVersion": "1.1.0",
+  "schemaVersion": "1.2.0",
   "catalogType": "credential",
-  "lastUpdated": "2026-03-31T07:25:20.394Z",
+  "lastUpdated": "2026-03-31T15:50:24.394Z",
   "credentials": [
     {
       "id": "cred:eu:diploma-vc-sd-jwt:sd-jwt-vc",
@@ -23,15 +23,17 @@
         "eudi",
         "diploma"
       ],
+      "orgId": "org:eu",
       "provider": {
-        "name": "European Commission",
-        "website": "https://digital-strategy.ec.europa.eu/en/policies/eudi-wallet"
+        "name": "European Commission - Government",
+        "website": "https://github.com/eu-digital-identity-wallet",
+        "logo": "https://www.google.com/s2/favicons?domain=ec.europa.eu&sz=128"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-31T07:25:20.394Z",
+      "fetchedAt": "2026-03-31T15:50:24.394Z",
       "updatedAt": "2026-03-19T15:39:51.000Z",
-      "firstSeenAt": "2026-03-17T09:29:34.000Z",
+      "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
         {
           "name": "identifier",
@@ -168,15 +170,17 @@
         "eudi",
         "ehic"
       ],
+      "orgId": "org:eu",
       "provider": {
-        "name": "European Commission",
-        "website": "https://digital-strategy.ec.europa.eu/en/policies/eudi-wallet"
+        "name": "European Commission - Government",
+        "website": "https://github.com/eu-digital-identity-wallet",
+        "logo": "https://www.google.com/s2/favicons?domain=ec.europa.eu&sz=128"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-31T07:25:20.394Z",
+      "fetchedAt": "2026-03-31T15:50:24.394Z",
       "updatedAt": "2026-03-19T15:39:51.000Z",
-      "firstSeenAt": "2026-03-17T09:29:34.000Z",
+      "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
         {
           "name": "personal_administrative_number",
@@ -283,15 +287,17 @@
         "eudi",
         "hiid"
       ],
+      "orgId": "org:eu",
       "provider": {
-        "name": "European Commission",
-        "website": "https://digital-strategy.ec.europa.eu/en/policies/eudi-wallet"
+        "name": "European Commission - Government",
+        "website": "https://github.com/eu-digital-identity-wallet",
+        "logo": "https://www.google.com/s2/favicons?domain=ec.europa.eu&sz=128"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-31T07:25:20.394Z",
+      "fetchedAt": "2026-03-31T15:50:24.394Z",
       "updatedAt": "2026-03-19T15:39:51.000Z",
-      "firstSeenAt": "2026-03-17T09:29:34.000Z",
+      "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
         {
           "name": "health_insurance_id",
@@ -442,15 +448,17 @@
         "eudi",
         "iban"
       ],
+      "orgId": "org:eu",
       "provider": {
-        "name": "European Commission",
-        "website": "https://digital-strategy.ec.europa.eu/en/policies/eudi-wallet"
+        "name": "European Commission - Government",
+        "website": "https://github.com/eu-digital-identity-wallet",
+        "logo": "https://www.google.com/s2/favicons?domain=ec.europa.eu&sz=128"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-31T07:25:20.394Z",
+      "fetchedAt": "2026-03-31T15:50:24.394Z",
       "updatedAt": "2026-03-19T15:39:51.000Z",
-      "firstSeenAt": "2026-03-17T09:29:34.000Z",
+      "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
         {
           "name": "iban",
@@ -615,15 +623,17 @@
         "eudi",
         "msisdn"
       ],
+      "orgId": "org:eu",
       "provider": {
-        "name": "European Commission",
-        "website": "https://digital-strategy.ec.europa.eu/en/policies/eudi-wallet"
+        "name": "European Commission - Government",
+        "website": "https://github.com/eu-digital-identity-wallet",
+        "logo": "https://www.google.com/s2/favicons?domain=ec.europa.eu&sz=128"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-31T07:25:20.394Z",
+      "fetchedAt": "2026-03-31T15:50:24.394Z",
       "updatedAt": "2026-03-19T15:39:51.000Z",
-      "firstSeenAt": "2026-03-17T09:29:34.000Z",
+      "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
         {
           "name": "phone_number",
@@ -732,15 +742,17 @@
         "eudi",
         "pda1"
       ],
+      "orgId": "org:eu",
       "provider": {
-        "name": "European Commission",
-        "website": "https://digital-strategy.ec.europa.eu/en/policies/eudi-wallet"
+        "name": "European Commission - Government",
+        "website": "https://github.com/eu-digital-identity-wallet",
+        "logo": "https://www.google.com/s2/favicons?domain=ec.europa.eu&sz=128"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-31T07:25:20.394Z",
+      "fetchedAt": "2026-03-31T15:50:24.394Z",
       "updatedAt": "2026-03-19T15:39:51.000Z",
-      "firstSeenAt": "2026-03-17T09:29:34.000Z",
+      "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
         {
           "name": "credential_holder",
@@ -1059,15 +1071,17 @@
         "eudi",
         "pid"
       ],
+      "orgId": "org:eu",
       "provider": {
-        "name": "European Commission",
-        "website": "https://digital-strategy.ec.europa.eu/en/policies/eudi-wallet"
+        "name": "European Commission - Government",
+        "website": "https://github.com/eu-digital-identity-wallet",
+        "logo": "https://www.google.com/s2/favicons?domain=ec.europa.eu&sz=128"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-31T07:25:20.394Z",
+      "fetchedAt": "2026-03-31T15:50:24.394Z",
       "updatedAt": "2026-03-19T15:39:51.000Z",
-      "firstSeenAt": "2026-03-17T09:29:34.000Z",
+      "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
         {
           "name": "family_name",
@@ -1280,15 +1294,17 @@
         "eudi",
         "por"
       ],
+      "orgId": "org:eu",
       "provider": {
-        "name": "European Commission",
-        "website": "https://digital-strategy.ec.europa.eu/en/policies/eudi-wallet"
+        "name": "European Commission - Government",
+        "website": "https://github.com/eu-digital-identity-wallet",
+        "logo": "https://www.google.com/s2/favicons?domain=ec.europa.eu&sz=128"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-31T07:25:20.394Z",
+      "fetchedAt": "2026-03-31T15:50:24.394Z",
       "updatedAt": "2026-03-19T15:39:51.000Z",
-      "firstSeenAt": "2026-03-17T09:29:34.000Z",
+      "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
         {
           "name": "legal_person_identifier",
@@ -1390,15 +1406,17 @@
         "eudi",
         "tax"
       ],
+      "orgId": "org:eu",
       "provider": {
-        "name": "European Commission",
-        "website": "https://digital-strategy.ec.europa.eu/en/policies/eudi-wallet"
+        "name": "European Commission - Government",
+        "website": "https://github.com/eu-digital-identity-wallet",
+        "logo": "https://www.google.com/s2/favicons?domain=ec.europa.eu&sz=128"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-31T07:25:20.394Z",
+      "fetchedAt": "2026-03-31T15:50:24.394Z",
       "updatedAt": "2026-03-19T15:39:51.000Z",
-      "firstSeenAt": "2026-03-17T09:29:34.000Z",
+      "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
         {
           "name": "taxpayer_type",
@@ -1486,15 +1504,17 @@
         "eudi",
         "tax"
       ],
+      "orgId": "org:eu",
       "provider": {
-        "name": "European Commission",
-        "website": "https://digital-strategy.ec.europa.eu/en/policies/eudi-wallet"
+        "name": "European Commission - Government",
+        "website": "https://github.com/eu-digital-identity-wallet",
+        "logo": "https://www.google.com/s2/favicons?domain=ec.europa.eu&sz=128"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-31T07:25:20.394Z",
+      "fetchedAt": "2026-03-31T15:50:24.394Z",
       "updatedAt": "2026-03-19T15:39:51.000Z",
-      "firstSeenAt": "2026-03-17T09:29:34.000Z",
+      "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
         {
           "name": "tax_number",
@@ -1618,15 +1638,17 @@
         "mdoc",
         "cor"
       ],
+      "orgId": "org:eu",
       "provider": {
-        "name": "European Commission",
-        "website": "https://digital-strategy.ec.europa.eu/en/policies/eudi-wallet"
+        "name": "European Commission - Government",
+        "website": "https://github.com/eu-digital-identity-wallet",
+        "logo": "https://www.google.com/s2/favicons?domain=ec.europa.eu&sz=128"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-31T07:25:20.394Z",
+      "fetchedAt": "2026-03-31T15:50:24.394Z",
       "updatedAt": "2026-03-19T15:39:51.000Z",
-      "firstSeenAt": "2026-03-17T09:29:34.000Z",
+      "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
         {
           "name": "eu.europa.ec.eudi.cor.1",
@@ -1742,15 +1764,17 @@
         "mdoc",
         "ehic"
       ],
+      "orgId": "org:eu",
       "provider": {
-        "name": "European Commission",
-        "website": "https://digital-strategy.ec.europa.eu/en/policies/eudi-wallet"
+        "name": "European Commission - Government",
+        "website": "https://github.com/eu-digital-identity-wallet",
+        "logo": "https://www.google.com/s2/favicons?domain=ec.europa.eu&sz=128"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-31T07:25:20.394Z",
+      "fetchedAt": "2026-03-31T15:50:24.394Z",
       "updatedAt": "2026-03-19T15:39:51.000Z",
-      "firstSeenAt": "2026-03-17T09:29:34.000Z",
+      "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
         {
           "name": "eu.europa.ec.eudi.ehic.1",
@@ -1859,15 +1883,17 @@
         "mdoc",
         "employee"
       ],
+      "orgId": "org:eu",
       "provider": {
-        "name": "European Commission",
-        "website": "https://digital-strategy.ec.europa.eu/en/policies/eudi-wallet"
+        "name": "European Commission - Government",
+        "website": "https://github.com/eu-digital-identity-wallet",
+        "logo": "https://www.google.com/s2/favicons?domain=ec.europa.eu&sz=128"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-31T07:25:20.394Z",
+      "fetchedAt": "2026-03-31T15:50:24.394Z",
       "updatedAt": "2026-03-19T15:39:51.000Z",
-      "firstSeenAt": "2026-03-17T09:29:34.000Z",
+      "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
         {
           "name": "eu.europa.ec.eudi.employee.1",
@@ -1955,15 +1981,17 @@
         "mdoc",
         "hiid"
       ],
+      "orgId": "org:eu",
       "provider": {
-        "name": "European Commission",
-        "website": "https://digital-strategy.ec.europa.eu/en/policies/eudi-wallet"
+        "name": "European Commission - Government",
+        "website": "https://github.com/eu-digital-identity-wallet",
+        "logo": "https://www.google.com/s2/favicons?domain=ec.europa.eu&sz=128"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-31T07:25:20.394Z",
+      "fetchedAt": "2026-03-31T15:50:24.394Z",
       "updatedAt": "2026-03-19T15:39:51.000Z",
-      "firstSeenAt": "2026-03-17T09:29:34.000Z",
+      "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
         {
           "name": "eu.europa.ec.eudi.hiid.1",
@@ -2121,15 +2149,17 @@
         "mdoc",
         "iban"
       ],
+      "orgId": "org:eu",
       "provider": {
-        "name": "European Commission",
-        "website": "https://digital-strategy.ec.europa.eu/en/policies/eudi-wallet"
+        "name": "European Commission - Government",
+        "website": "https://github.com/eu-digital-identity-wallet",
+        "logo": "https://www.google.com/s2/favicons?domain=ec.europa.eu&sz=128"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-31T07:25:20.394Z",
+      "fetchedAt": "2026-03-31T15:50:24.394Z",
       "updatedAt": "2026-03-19T15:39:51.000Z",
-      "firstSeenAt": "2026-03-17T09:29:34.000Z",
+      "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
         {
           "name": "eu.europa.ec.eudi.iban.1",
@@ -2301,15 +2331,17 @@
         "mdoc",
         "loyalty"
       ],
+      "orgId": "org:eu",
       "provider": {
-        "name": "European Commission",
-        "website": "https://digital-strategy.ec.europa.eu/en/policies/eudi-wallet"
+        "name": "European Commission - Government",
+        "website": "https://github.com/eu-digital-identity-wallet",
+        "logo": "https://www.google.com/s2/favicons?domain=ec.europa.eu&sz=128"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-31T07:25:20.394Z",
+      "fetchedAt": "2026-03-31T15:50:24.394Z",
       "updatedAt": "2026-03-19T15:39:51.000Z",
-      "firstSeenAt": "2026-03-17T09:29:34.000Z",
+      "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
         {
           "name": "eu.europa.ec.eudi.loyalty.1",
@@ -2383,15 +2415,17 @@
         "mdoc",
         "mdl"
       ],
+      "orgId": "org:eu",
       "provider": {
-        "name": "European Commission",
-        "website": "https://digital-strategy.ec.europa.eu/en/policies/eudi-wallet"
+        "name": "European Commission - Government",
+        "website": "https://github.com/eu-digital-identity-wallet",
+        "logo": "https://www.google.com/s2/favicons?domain=ec.europa.eu&sz=128"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-31T07:25:20.394Z",
+      "fetchedAt": "2026-03-31T15:50:24.394Z",
       "updatedAt": "2026-03-19T15:39:51.000Z",
-      "firstSeenAt": "2026-03-17T09:29:34.000Z",
+      "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
         {
           "name": "org.iso.18013.5.1",
@@ -2647,15 +2681,17 @@
         "mdoc",
         "msisdn"
       ],
+      "orgId": "org:eu",
       "provider": {
-        "name": "European Commission",
-        "website": "https://digital-strategy.ec.europa.eu/en/policies/eudi-wallet"
+        "name": "European Commission - Government",
+        "website": "https://github.com/eu-digital-identity-wallet",
+        "logo": "https://www.google.com/s2/favicons?domain=ec.europa.eu&sz=128"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-31T07:25:20.394Z",
+      "fetchedAt": "2026-03-31T15:50:24.394Z",
       "updatedAt": "2026-03-19T15:39:51.000Z",
-      "firstSeenAt": "2026-03-17T09:29:34.000Z",
+      "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
         {
           "name": "eu.europa.ec.eudi.msisdn.1",
@@ -2771,15 +2807,17 @@
         "mdoc",
         "pda1"
       ],
+      "orgId": "org:eu",
       "provider": {
-        "name": "European Commission",
-        "website": "https://digital-strategy.ec.europa.eu/en/policies/eudi-wallet"
+        "name": "European Commission - Government",
+        "website": "https://github.com/eu-digital-identity-wallet",
+        "logo": "https://www.google.com/s2/favicons?domain=ec.europa.eu&sz=128"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-31T07:25:20.394Z",
+      "fetchedAt": "2026-03-31T15:50:24.394Z",
       "updatedAt": "2026-03-19T15:39:51.000Z",
-      "firstSeenAt": "2026-03-17T09:29:34.000Z",
+      "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
         {
           "name": "eu.europa.ec.eudi.pda1.1",
@@ -2895,15 +2933,17 @@
         "mdoc",
         "photoid"
       ],
+      "orgId": "org:eu",
       "provider": {
-        "name": "European Commission",
-        "website": "https://digital-strategy.ec.europa.eu/en/policies/eudi-wallet"
+        "name": "European Commission - Government",
+        "website": "https://github.com/eu-digital-identity-wallet",
+        "logo": "https://www.google.com/s2/favicons?domain=ec.europa.eu&sz=128"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-31T07:25:20.394Z",
+      "fetchedAt": "2026-03-31T15:50:24.394Z",
       "updatedAt": "2026-03-19T15:39:51.000Z",
-      "firstSeenAt": "2026-03-17T09:29:34.000Z",
+      "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
         {
           "name": "org.iso.23220.photoid.1",
@@ -3110,15 +3150,17 @@
         "mdoc",
         "pid"
       ],
+      "orgId": "org:eu",
       "provider": {
-        "name": "European Commission",
-        "website": "https://digital-strategy.ec.europa.eu/en/policies/eudi-wallet"
+        "name": "European Commission - Government",
+        "website": "https://github.com/eu-digital-identity-wallet",
+        "logo": "https://www.google.com/s2/favicons?domain=ec.europa.eu&sz=128"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-31T07:25:20.394Z",
+      "fetchedAt": "2026-03-31T15:50:24.394Z",
       "updatedAt": "2026-03-19T15:39:51.000Z",
-      "firstSeenAt": "2026-03-17T09:29:34.000Z",
+      "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
         {
           "name": "eu.europa.ec.eudi.pid.1",
@@ -3332,15 +3374,17 @@
         "mdoc",
         "pid-mdoc-deferred"
       ],
+      "orgId": "org:eu",
       "provider": {
-        "name": "European Commission",
-        "website": "https://digital-strategy.ec.europa.eu/en/policies/eudi-wallet"
+        "name": "European Commission - Government",
+        "website": "https://github.com/eu-digital-identity-wallet",
+        "logo": "https://www.google.com/s2/favicons?domain=ec.europa.eu&sz=128"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-31T07:25:20.394Z",
+      "fetchedAt": "2026-03-31T15:50:24.394Z",
       "updatedAt": "2026-03-19T15:39:51.000Z",
-      "firstSeenAt": "2026-03-17T09:29:34.000Z",
+      "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
         {
           "name": "eu.europa.ec.eudi.pid.1",
@@ -3554,15 +3598,17 @@
         "mdoc",
         "por"
       ],
+      "orgId": "org:eu",
       "provider": {
-        "name": "European Commission",
-        "website": "https://digital-strategy.ec.europa.eu/en/policies/eudi-wallet"
+        "name": "European Commission - Government",
+        "website": "https://github.com/eu-digital-identity-wallet",
+        "logo": "https://www.google.com/s2/favicons?domain=ec.europa.eu&sz=128"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-31T07:25:20.394Z",
+      "fetchedAt": "2026-03-31T15:50:24.394Z",
       "updatedAt": "2026-03-19T15:39:51.000Z",
-      "firstSeenAt": "2026-03-17T09:29:34.000Z",
+      "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
         {
           "name": "eu.europa.ec.eudi.por.1",
@@ -3671,15 +3717,17 @@
         "mdoc",
         "seafarer"
       ],
+      "orgId": "org:eu",
       "provider": {
-        "name": "European Commission",
-        "website": "https://digital-strategy.ec.europa.eu/en/policies/eudi-wallet"
+        "name": "European Commission - Government",
+        "website": "https://github.com/eu-digital-identity-wallet",
+        "logo": "https://www.google.com/s2/favicons?domain=ec.europa.eu&sz=128"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-31T07:25:20.394Z",
+      "fetchedAt": "2026-03-31T15:50:24.394Z",
       "updatedAt": "2026-03-19T15:39:51.000Z",
-      "firstSeenAt": "2026-03-17T09:29:34.000Z",
+      "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
         {
           "name": "eu.europa.ec.eudi.seafarer.1",
@@ -3837,15 +3885,17 @@
         "mdoc",
         "tax"
       ],
+      "orgId": "org:eu",
       "provider": {
-        "name": "European Commission",
-        "website": "https://digital-strategy.ec.europa.eu/en/policies/eudi-wallet"
+        "name": "European Commission - Government",
+        "website": "https://github.com/eu-digital-identity-wallet",
+        "logo": "https://www.google.com/s2/favicons?domain=ec.europa.eu&sz=128"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-31T07:25:20.394Z",
+      "fetchedAt": "2026-03-31T15:50:24.394Z",
       "updatedAt": "2026-03-19T15:39:51.000Z",
-      "firstSeenAt": "2026-03-17T09:29:34.000Z",
+      "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
         {
           "name": "eu.europa.ec.eudi.tax.1",
@@ -3975,15 +4025,17 @@
         "mdoc",
         "reservation"
       ],
+      "orgId": "org:eu",
       "provider": {
-        "name": "European Commission",
-        "website": "https://digital-strategy.ec.europa.eu/en/policies/eudi-wallet"
+        "name": "European Commission - Government",
+        "website": "https://github.com/eu-digital-identity-wallet",
+        "logo": "https://www.google.com/s2/favicons?domain=ec.europa.eu&sz=128"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-31T07:25:20.394Z",
+      "fetchedAt": "2026-03-31T15:50:24.394Z",
       "updatedAt": "2026-03-19T15:39:51.000Z",
-      "firstSeenAt": "2026-03-17T09:29:34.000Z",
+      "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
         {
           "name": "org.iso.18013.5.reservation.1",
@@ -4106,15 +4158,17 @@
         "mdoc",
         "age-verification"
       ],
+      "orgId": "org:eu",
       "provider": {
-        "name": "European Commission",
-        "website": "https://digital-strategy.ec.europa.eu/en/policies/eudi-wallet"
+        "name": "European Commission - Government",
+        "website": "https://github.com/eu-digital-identity-wallet",
+        "logo": "https://www.google.com/s2/favicons?domain=ec.europa.eu&sz=128"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-31T07:25:20.394Z",
+      "fetchedAt": "2026-03-31T15:50:24.394Z",
       "updatedAt": "2026-03-19T15:39:51.000Z",
-      "firstSeenAt": "2026-03-18T12:12:34.000Z",
+      "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
         {
           "name": "eu.europa.ec.av.1",
@@ -4196,15 +4250,17 @@
         "vehicle",
         "registration"
       ],
+      "orgId": "org:eu",
       "provider": {
-        "name": "European Commission",
-        "website": "https://digital-strategy.ec.europa.eu/en/policies/eudi-wallet"
+        "name": "European Commission - Government",
+        "website": "https://github.com/eu-digital-identity-wallet",
+        "logo": "https://www.google.com/s2/favicons?domain=ec.europa.eu&sz=128"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-31T07:25:20.394Z",
+      "fetchedAt": "2026-03-31T15:50:24.394Z",
       "updatedAt": "2026-03-19T15:39:51.000Z",
-      "firstSeenAt": "2026-03-18T12:12:34.000Z",
+      "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
         {
           "name": "org.iso.7367.1.mVRC",
@@ -4300,15 +4356,17 @@
         "photo-id",
         "identity"
       ],
+      "orgId": "org:eu",
       "provider": {
-        "name": "European Commission",
-        "website": "https://digital-strategy.ec.europa.eu/en/policies/eudi-wallet"
+        "name": "European Commission - Government",
+        "website": "https://github.com/eu-digital-identity-wallet",
+        "logo": "https://www.google.com/s2/favicons?domain=ec.europa.eu&sz=128"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-31T07:25:20.394Z",
+      "fetchedAt": "2026-03-31T15:50:24.394Z",
       "updatedAt": "2026-03-19T15:39:51.000Z",
-      "firstSeenAt": "2026-03-18T12:12:34.000Z",
+      "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
         {
           "name": "org.iso.23220.photoid.1",
@@ -4395,15 +4453,17 @@
         "pda1",
         "social-security"
       ],
+      "orgId": "org:ewc",
       "provider": {
-        "name": "University of the Aegean / EWC",
-        "website": "https://dss.aegean.gr"
+        "name": "EWC - European Wallet Consortium",
+        "website": "https://dss.aegean.gr",
+        "logo": "https://avatars.githubusercontent.com/u/140810559?v=4"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/ewc/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/ewc/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-31T07:25:20.394Z",
+      "fetchedAt": "2026-03-31T15:50:24.394Z",
       "updatedAt": "2026-03-19T15:39:51.000Z",
-      "firstSeenAt": "2026-03-17T16:20:30.000Z",
+      "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
         {
           "name": "given_name",
@@ -4442,15 +4502,17 @@
         "pda2",
         "social-security"
       ],
+      "orgId": "org:ewc",
       "provider": {
-        "name": "University of the Aegean / EWC",
-        "website": "https://dss.aegean.gr"
+        "name": "EWC - European Wallet Consortium",
+        "website": "https://dss.aegean.gr",
+        "logo": "https://avatars.githubusercontent.com/u/140810559?v=4"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/ewc/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/ewc/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-31T07:25:20.394Z",
+      "fetchedAt": "2026-03-31T15:50:24.394Z",
       "updatedAt": "2026-03-19T15:39:51.000Z",
-      "firstSeenAt": "2026-03-17T16:20:30.000Z",
+      "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
         {
           "name": "given_name",
@@ -4489,15 +4551,17 @@
         "id-card",
         "identity"
       ],
+      "orgId": "org:ewc",
       "provider": {
-        "name": "University of the Aegean / EWC",
-        "website": "https://dss.aegean.gr"
+        "name": "EWC - European Wallet Consortium",
+        "website": "https://dss.aegean.gr",
+        "logo": "https://avatars.githubusercontent.com/u/140810559?v=4"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/ewc/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/ewc/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-31T07:25:20.394Z",
+      "fetchedAt": "2026-03-31T15:50:24.394Z",
       "updatedAt": "2026-03-19T15:39:51.000Z",
-      "firstSeenAt": "2026-03-17T16:20:30.000Z",
+      "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
         {
           "name": "given_name",
@@ -4578,15 +4642,17 @@
         "pid",
         "identity"
       ],
+      "orgId": "org:ewc",
       "provider": {
-        "name": "University of the Aegean / EWC",
-        "website": "https://dss.aegean.gr"
+        "name": "EWC - European Wallet Consortium",
+        "website": "https://dss.aegean.gr",
+        "logo": "https://avatars.githubusercontent.com/u/140810559?v=4"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/ewc/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/ewc/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-31T07:25:20.394Z",
+      "fetchedAt": "2026-03-31T15:50:24.394Z",
       "updatedAt": "2026-03-19T15:39:51.000Z",
-      "firstSeenAt": "2026-03-17T16:20:30.000Z",
+      "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
         {
           "name": "given_name",
@@ -4667,15 +4733,17 @@
         "epassport",
         "travel"
       ],
+      "orgId": "org:ewc",
       "provider": {
-        "name": "University of the Aegean / EWC",
-        "website": "https://dss.aegean.gr"
+        "name": "EWC - European Wallet Consortium",
+        "website": "https://dss.aegean.gr",
+        "logo": "https://avatars.githubusercontent.com/u/140810559?v=4"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/ewc/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/ewc/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-31T07:25:20.394Z",
+      "fetchedAt": "2026-03-31T15:50:24.394Z",
       "updatedAt": "2026-03-19T15:39:51.000Z",
-      "firstSeenAt": "2026-03-17T16:20:30.000Z",
+      "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
         {
           "name": "id",
@@ -4714,15 +4782,17 @@
         "student-id",
         "education"
       ],
+      "orgId": "org:ewc",
       "provider": {
-        "name": "University of the Aegean / EWC",
-        "website": "https://dss.aegean.gr"
+        "name": "EWC - European Wallet Consortium",
+        "website": "https://dss.aegean.gr",
+        "logo": "https://avatars.githubusercontent.com/u/140810559?v=4"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/ewc/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/ewc/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-31T07:25:20.394Z",
+      "fetchedAt": "2026-03-31T15:50:24.394Z",
       "updatedAt": "2026-03-19T15:39:51.000Z",
-      "firstSeenAt": "2026-03-17T16:20:30.000Z",
+      "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
         {
           "name": "identifier",
@@ -4825,15 +4895,17 @@
         "travel",
         "ferry"
       ],
+      "orgId": "org:ewc",
       "provider": {
-        "name": "University of the Aegean / EWC",
-        "website": "https://dss.aegean.gr"
+        "name": "EWC - European Wallet Consortium",
+        "website": "https://dss.aegean.gr",
+        "logo": "https://avatars.githubusercontent.com/u/140810559?v=4"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/ewc/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/ewc/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-31T07:25:20.394Z",
+      "fetchedAt": "2026-03-31T15:50:24.394Z",
       "updatedAt": "2026-03-19T15:39:51.000Z",
-      "firstSeenAt": "2026-03-17T16:20:30.000Z",
+      "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
         {
           "name": "identifier",
@@ -4921,15 +4993,17 @@
         "receipt",
         "payment"
       ],
+      "orgId": "org:ewc",
       "provider": {
-        "name": "University of the Aegean / EWC",
-        "website": "https://dss.aegean.gr"
+        "name": "EWC - European Wallet Consortium",
+        "website": "https://dss.aegean.gr",
+        "logo": "https://avatars.githubusercontent.com/u/140810559?v=4"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/ewc/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/ewc/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-31T07:25:20.394Z",
+      "fetchedAt": "2026-03-31T15:50:24.394Z",
       "updatedAt": "2026-03-19T15:39:51.000Z",
-      "firstSeenAt": "2026-03-17T16:20:30.000Z",
+      "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
         {
           "name": "purchase_receipt",
@@ -4990,15 +5064,17 @@
         "eudi",
         "identity"
       ],
+      "orgId": "org:ewc",
       "provider": {
-        "name": "University of the Aegean / EWC",
-        "website": "https://dss.aegean.gr"
+        "name": "EWC - European Wallet Consortium",
+        "website": "https://dss.aegean.gr",
+        "logo": "https://avatars.githubusercontent.com/u/140810559?v=4"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/ewc/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/ewc/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-31T07:25:20.394Z",
+      "fetchedAt": "2026-03-31T15:50:24.394Z",
       "updatedAt": "2026-03-19T15:39:51.000Z",
-      "firstSeenAt": "2026-03-17T16:20:30.000Z",
+      "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
         {
           "name": "given_name",
@@ -5080,15 +5156,17 @@
         "eudi",
         "mdoc"
       ],
+      "orgId": "org:ewc",
       "provider": {
-        "name": "University of the Aegean / EWC",
-        "website": "https://dss.aegean.gr"
+        "name": "EWC - European Wallet Consortium",
+        "website": "https://dss.aegean.gr",
+        "logo": "https://avatars.githubusercontent.com/u/140810559?v=4"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/ewc/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/ewc/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-31T07:25:20.394Z",
+      "fetchedAt": "2026-03-31T15:50:24.394Z",
       "updatedAt": "2026-03-19T15:39:51.000Z",
-      "firstSeenAt": "2026-03-17T16:20:30.000Z",
+      "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
         {
           "name": "given_name",
@@ -5169,15 +5247,17 @@
         "payment",
         "wallet-attestation"
       ],
+      "orgId": "org:ewc",
       "provider": {
-        "name": "University of the Aegean / EWC",
-        "website": "https://dss.aegean.gr"
+        "name": "EWC - European Wallet Consortium",
+        "website": "https://dss.aegean.gr",
+        "logo": "https://avatars.githubusercontent.com/u/140810559?v=4"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/ewc/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/ewc/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-31T07:25:20.394Z",
+      "fetchedAt": "2026-03-31T15:50:24.394Z",
       "updatedAt": "2026-03-19T15:39:51.000Z",
-      "firstSeenAt": "2026-03-17T16:20:30.000Z",
+      "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
         {
           "name": "id",
@@ -5216,15 +5296,17 @@
         "photo-id",
         "identity"
       ],
+      "orgId": "org:ewc",
       "provider": {
-        "name": "University of the Aegean / EWC",
-        "website": "https://dss.aegean.gr"
+        "name": "EWC - European Wallet Consortium",
+        "website": "https://dss.aegean.gr",
+        "logo": "https://avatars.githubusercontent.com/u/140810559?v=4"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/ewc/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/ewc/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-31T07:25:20.394Z",
+      "fetchedAt": "2026-03-31T15:50:24.394Z",
       "updatedAt": "2026-03-19T15:39:51.000Z",
-      "firstSeenAt": "2026-03-17T16:20:30.000Z",
+      "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
         {
           "name": "iso23220",
@@ -5269,15 +5351,17 @@
         "ewc",
         "contact-details"
       ],
+      "orgId": "org:ewc",
       "provider": {
-        "name": "University of the Aegean / EWC",
-        "website": "https://dss.aegean.gr"
+        "name": "EWC - European Wallet Consortium",
+        "website": "https://dss.aegean.gr",
+        "logo": "https://avatars.githubusercontent.com/u/140810559?v=4"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/ewc/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/ewc/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-31T07:25:20.394Z",
+      "fetchedAt": "2026-03-31T15:50:24.394Z",
       "updatedAt": "2026-03-19T15:39:51.000Z",
-      "firstSeenAt": "2026-03-17T16:20:30.000Z",
+      "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
         {
           "name": "surname",
@@ -5350,15 +5434,17 @@
         "ewc",
         "loyalty-card"
       ],
+      "orgId": "org:ewc",
       "provider": {
-        "name": "University of the Aegean / EWC",
-        "website": "https://dss.aegean.gr"
+        "name": "EWC - European Wallet Consortium",
+        "website": "https://dss.aegean.gr",
+        "logo": "https://avatars.githubusercontent.com/u/140810559?v=4"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/ewc/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/ewc/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-31T07:25:20.394Z",
+      "fetchedAt": "2026-03-31T15:50:24.394Z",
       "updatedAt": "2026-03-19T15:39:51.000Z",
-      "firstSeenAt": "2026-03-17T16:20:30.000Z",
+      "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
         {
           "name": "customer.first_name",
@@ -5424,15 +5510,18 @@
         "fides",
         "lpid"
       ],
+      "orgId": "org:fides",
       "provider": {
-        "name": "FIDES Community",
-        "website": "https://fides.community"
+        "name": "FIDES Labs",
+        "did": "did:web:fides.acc.credenco.com:did:da5a3c99-d45c-4ce2-8065-9db36c98868c",
+        "website": "https://fides.community",
+        "logo": "https://avatars.githubusercontent.com/u/119322214?v=4"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-31T07:25:20.394Z",
+      "fetchedAt": "2026-03-31T15:50:24.394Z",
       "updatedAt": "2026-03-15T00:00:00.000Z",
-      "firstSeenAt": "2026-03-12T00:00:00.000Z",
+      "firstSeenAt": "2026-03-15T00:00:00.000Z",
       "attributes": [
         {
           "name": "vct",
@@ -5525,15 +5614,18 @@
         "fides",
         "bri"
       ],
+      "orgId": "org:fides",
       "provider": {
-        "name": "FIDES Community",
-        "website": "https://fides.community"
+        "name": "FIDES Labs",
+        "did": "did:web:fides.acc.credenco.com:did:da5a3c99-d45c-4ce2-8065-9db36c98868c",
+        "website": "https://fides.community",
+        "logo": "https://avatars.githubusercontent.com/u/119322214?v=4"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-31T07:25:20.394Z",
+      "fetchedAt": "2026-03-31T15:50:24.394Z",
       "updatedAt": "2026-03-15T00:00:00.000Z",
-      "firstSeenAt": "2026-03-12T00:00:00.000Z",
+      "firstSeenAt": "2026-03-15T00:00:00.000Z",
       "attributes": [
         {
           "name": "vct",
@@ -5676,15 +5768,18 @@
         "fides",
         "brp"
       ],
+      "orgId": "org:fides",
       "provider": {
-        "name": "FIDES Community",
-        "website": "https://fides.community"
+        "name": "FIDES Labs",
+        "did": "did:web:fides.acc.credenco.com:did:da5a3c99-d45c-4ce2-8065-9db36c98868c",
+        "website": "https://fides.community",
+        "logo": "https://avatars.githubusercontent.com/u/119322214?v=4"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-31T07:25:20.394Z",
+      "fetchedAt": "2026-03-31T15:50:24.394Z",
       "updatedAt": "2026-03-15T00:00:00.000Z",
-      "firstSeenAt": "2026-03-12T00:00:00.000Z",
+      "firstSeenAt": "2026-03-15T00:00:00.000Z",
       "attributes": [
         {
           "name": "vct",
@@ -5820,15 +5915,18 @@
         "fides",
         "company-roles"
       ],
+      "orgId": "org:fides",
       "provider": {
-        "name": "FIDES Community",
-        "website": "https://fides.community"
+        "name": "FIDES Labs",
+        "did": "did:web:fides.acc.credenco.com:did:da5a3c99-d45c-4ce2-8065-9db36c98868c",
+        "website": "https://fides.community",
+        "logo": "https://avatars.githubusercontent.com/u/119322214?v=4"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-31T07:25:20.394Z",
+      "fetchedAt": "2026-03-31T15:50:24.394Z",
       "updatedAt": "2026-03-15T00:00:00.000Z",
-      "firstSeenAt": "2026-03-12T00:00:00.000Z",
+      "firstSeenAt": "2026-03-15T00:00:00.000Z",
       "attributes": [
         {
           "name": "vct",
@@ -5956,15 +6054,18 @@
         "fides",
         "contact-details"
       ],
+      "orgId": "org:fides",
       "provider": {
-        "name": "FIDES Community",
-        "website": "https://fides.community"
+        "name": "FIDES Labs",
+        "did": "did:web:fides.acc.credenco.com:did:da5a3c99-d45c-4ce2-8065-9db36c98868c",
+        "website": "https://fides.community",
+        "logo": "https://avatars.githubusercontent.com/u/119322214?v=4"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-31T07:25:20.394Z",
+      "fetchedAt": "2026-03-31T15:50:24.394Z",
       "updatedAt": "2026-03-15T00:00:00.000Z",
-      "firstSeenAt": "2026-03-12T00:00:00.000Z",
+      "firstSeenAt": "2026-03-15T00:00:00.000Z",
       "attributes": [
         {
           "name": "vct",
@@ -6066,15 +6167,18 @@
         "fides",
         "einvoicing"
       ],
+      "orgId": "org:fides",
       "provider": {
-        "name": "FIDES Community",
-        "website": "https://fides.community"
+        "name": "FIDES Labs",
+        "did": "did:web:fides.acc.credenco.com:did:da5a3c99-d45c-4ce2-8065-9db36c98868c",
+        "website": "https://fides.community",
+        "logo": "https://avatars.githubusercontent.com/u/119322214?v=4"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-31T07:25:20.394Z",
+      "fetchedAt": "2026-03-31T15:50:24.394Z",
       "updatedAt": "2026-03-15T00:00:00.000Z",
-      "firstSeenAt": "2026-03-12T00:00:00.000Z",
+      "firstSeenAt": "2026-03-15T00:00:00.000Z",
       "attributes": [
         {
           "name": "vct",
@@ -6195,15 +6299,18 @@
         "fides",
         "green-lane"
       ],
+      "orgId": "org:fides",
       "provider": {
-        "name": "FIDES Community",
-        "website": "https://fides.community"
+        "name": "FIDES Labs",
+        "did": "did:web:fides.acc.credenco.com:did:da5a3c99-d45c-4ce2-8065-9db36c98868c",
+        "website": "https://fides.community",
+        "logo": "https://avatars.githubusercontent.com/u/119322214?v=4"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-31T07:25:20.394Z",
+      "fetchedAt": "2026-03-31T15:50:24.394Z",
       "updatedAt": "2026-03-15T00:00:00.000Z",
-      "firstSeenAt": "2026-03-12T00:00:00.000Z",
+      "firstSeenAt": "2026-03-15T00:00:00.000Z",
       "attributes": []
     },
     {
@@ -6225,15 +6332,18 @@
         "fides",
         "iban"
       ],
+      "orgId": "org:fides",
       "provider": {
-        "name": "FIDES Community",
-        "website": "https://fides.community"
+        "name": "FIDES Labs",
+        "did": "did:web:fides.acc.credenco.com:did:da5a3c99-d45c-4ce2-8065-9db36c98868c",
+        "website": "https://fides.community",
+        "logo": "https://avatars.githubusercontent.com/u/119322214?v=4"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-31T07:25:20.394Z",
+      "fetchedAt": "2026-03-31T15:50:24.394Z",
       "updatedAt": "2026-03-15T00:00:00.000Z",
-      "firstSeenAt": "2026-03-12T00:00:00.000Z",
+      "firstSeenAt": "2026-03-15T00:00:00.000Z",
       "attributes": []
     },
     {
@@ -6256,15 +6366,18 @@
         "iscc",
         "sd"
       ],
+      "orgId": "org:fides",
       "provider": {
-        "name": "FIDES Community",
-        "website": "https://fides.community"
+        "name": "FIDES Labs",
+        "did": "did:web:fides.acc.credenco.com:did:da5a3c99-d45c-4ce2-8065-9db36c98868c",
+        "website": "https://fides.community",
+        "logo": "https://avatars.githubusercontent.com/u/119322214?v=4"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-31T07:25:20.394Z",
+      "fetchedAt": "2026-03-31T15:50:24.394Z",
       "updatedAt": "2026-03-15T00:00:00.000Z",
-      "firstSeenAt": "2026-03-12T00:00:00.000Z",
+      "firstSeenAt": "2026-03-15T00:00:00.000Z",
       "attributes": [
         {
           "name": "vct",
@@ -6464,15 +6577,18 @@
         "iscc",
         "cert"
       ],
+      "orgId": "org:fides",
       "provider": {
-        "name": "FIDES Community",
-        "website": "https://fides.community"
+        "name": "FIDES Labs",
+        "did": "did:web:fides.acc.credenco.com:did:da5a3c99-d45c-4ce2-8065-9db36c98868c",
+        "website": "https://fides.community",
+        "logo": "https://avatars.githubusercontent.com/u/119322214?v=4"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-31T07:25:20.394Z",
+      "fetchedAt": "2026-03-31T15:50:24.394Z",
       "updatedAt": "2026-03-15T00:00:00.000Z",
-      "firstSeenAt": "2026-03-12T00:00:00.000Z",
+      "firstSeenAt": "2026-03-15T00:00:00.000Z",
       "attributes": [
         {
           "name": "vct",
@@ -6567,15 +6683,18 @@
         "iscc",
         "role"
       ],
+      "orgId": "org:fides",
       "provider": {
-        "name": "FIDES Community",
-        "website": "https://fides.community"
+        "name": "FIDES Labs",
+        "did": "did:web:fides.acc.credenco.com:did:da5a3c99-d45c-4ce2-8065-9db36c98868c",
+        "website": "https://fides.community",
+        "logo": "https://avatars.githubusercontent.com/u/119322214?v=4"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-31T07:25:20.394Z",
+      "fetchedAt": "2026-03-31T15:50:24.394Z",
       "updatedAt": "2026-03-15T00:00:00.000Z",
-      "firstSeenAt": "2026-03-12T00:00:00.000Z",
+      "firstSeenAt": "2026-03-15T00:00:00.000Z",
       "attributes": [
         {
           "name": "vc",
@@ -6614,15 +6733,18 @@
         "iscc",
         "cb"
       ],
+      "orgId": "org:fides",
       "provider": {
-        "name": "FIDES Community",
-        "website": "https://fides.community"
+        "name": "FIDES Labs",
+        "did": "did:web:fides.acc.credenco.com:did:da5a3c99-d45c-4ce2-8065-9db36c98868c",
+        "website": "https://fides.community",
+        "logo": "https://avatars.githubusercontent.com/u/119322214?v=4"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-31T07:25:20.394Z",
+      "fetchedAt": "2026-03-31T15:50:24.394Z",
       "updatedAt": "2026-03-15T00:00:00.000Z",
-      "firstSeenAt": "2026-03-12T00:00:00.000Z",
+      "firstSeenAt": "2026-03-15T00:00:00.000Z",
       "attributes": [
         {
           "name": "vct",
@@ -6731,15 +6853,18 @@
         "iscc",
         "rev-user"
       ],
+      "orgId": "org:fides",
       "provider": {
-        "name": "FIDES Community",
-        "website": "https://fides.community"
+        "name": "FIDES Labs",
+        "did": "did:web:fides.acc.credenco.com:did:da5a3c99-d45c-4ce2-8065-9db36c98868c",
+        "website": "https://fides.community",
+        "logo": "https://avatars.githubusercontent.com/u/119322214?v=4"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-31T07:25:20.394Z",
+      "fetchedAt": "2026-03-31T15:50:24.394Z",
       "updatedAt": "2026-03-15T00:00:00.000Z",
-      "firstSeenAt": "2026-03-12T00:00:00.000Z",
+      "firstSeenAt": "2026-03-15T00:00:00.000Z",
       "attributes": [
         {
           "name": "vct",
@@ -6799,15 +6924,18 @@
         "notary",
         "incorporation"
       ],
+      "orgId": "org:fides",
       "provider": {
-        "name": "FIDES Community",
-        "website": "https://fides.community"
+        "name": "FIDES Labs",
+        "did": "did:web:fides.acc.credenco.com:did:da5a3c99-d45c-4ce2-8065-9db36c98868c",
+        "website": "https://fides.community",
+        "logo": "https://avatars.githubusercontent.com/u/119322214?v=4"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-31T07:25:20.394Z",
+      "fetchedAt": "2026-03-31T15:50:24.394Z",
       "updatedAt": "2026-03-15T00:00:00.000Z",
-      "firstSeenAt": "2026-03-12T00:00:00.000Z",
+      "firstSeenAt": "2026-03-15T00:00:00.000Z",
       "attributes": [
         {
           "name": "vct",
@@ -7142,15 +7270,18 @@
         "fides",
         "pid"
       ],
+      "orgId": "org:fides",
       "provider": {
-        "name": "FIDES Community",
-        "website": "https://fides.community"
+        "name": "FIDES Labs",
+        "did": "did:web:fides.acc.credenco.com:did:da5a3c99-d45c-4ce2-8065-9db36c98868c",
+        "website": "https://fides.community",
+        "logo": "https://avatars.githubusercontent.com/u/119322214?v=4"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-31T07:25:20.394Z",
+      "fetchedAt": "2026-03-31T15:50:24.394Z",
       "updatedAt": "2026-03-15T00:00:00.000Z",
-      "firstSeenAt": "2026-03-12T00:00:00.000Z",
+      "firstSeenAt": "2026-03-15T00:00:00.000Z",
       "attributes": [
         {
           "name": "family_name",
@@ -7378,15 +7509,18 @@
         "fides",
         "vat"
       ],
+      "orgId": "org:fides",
       "provider": {
-        "name": "FIDES Community",
-        "website": "https://fides.community"
+        "name": "FIDES Labs",
+        "did": "did:web:fides.acc.credenco.com:did:da5a3c99-d45c-4ce2-8065-9db36c98868c",
+        "website": "https://fides.community",
+        "logo": "https://avatars.githubusercontent.com/u/119322214?v=4"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-31T07:25:20.394Z",
+      "fetchedAt": "2026-03-31T15:50:24.394Z",
       "updatedAt": "2026-03-15T00:00:00.000Z",
-      "firstSeenAt": "2026-03-12T00:00:00.000Z",
+      "firstSeenAt": "2026-03-15T00:00:00.000Z",
       "attributes": [
         {
           "name": "vct",
@@ -7447,15 +7581,18 @@
         "organization",
         "profile"
       ],
+      "orgId": "org:fides",
       "provider": {
-        "name": "FIDES Community",
-        "website": "https://fides.community"
+        "name": "FIDES Labs",
+        "did": "did:web:fides.acc.credenco.com:did:da5a3c99-d45c-4ce2-8065-9db36c98868c",
+        "website": "https://fides.community",
+        "logo": "https://avatars.githubusercontent.com/u/119322214?v=4"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-31T07:25:20.394Z",
+      "fetchedAt": "2026-03-31T15:50:24.394Z",
       "updatedAt": "2026-03-15T00:00:00.000Z",
-      "firstSeenAt": "2026-03-12T00:00:00.000Z",
+      "firstSeenAt": "2026-03-15T00:00:00.000Z",
       "attributes": [
         {
           "name": "legal_name",
@@ -7551,15 +7688,18 @@
         "criminal-record",
         "screening"
       ],
+      "orgId": "org:fides",
       "provider": {
-        "name": "FIDES Community",
-        "website": "https://fides.community"
+        "name": "FIDES Labs",
+        "did": "did:web:fides.acc.credenco.com:did:da5a3c99-d45c-4ce2-8065-9db36c98868c",
+        "website": "https://fides.community",
+        "logo": "https://avatars.githubusercontent.com/u/119322214?v=4"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-31T07:25:20.394Z",
+      "fetchedAt": "2026-03-31T15:50:24.394Z",
       "updatedAt": "2026-03-15T00:00:00.000Z",
-      "firstSeenAt": "2026-03-12T00:00:00.000Z",
+      "firstSeenAt": "2026-03-15T00:00:00.000Z",
       "attributes": [
         {
           "name": "given_name",
@@ -7628,15 +7768,18 @@
         "employee",
         "employment"
       ],
+      "orgId": "org:fides",
       "provider": {
-        "name": "FIDES Community",
-        "website": "https://fides.community"
+        "name": "FIDES Labs",
+        "did": "did:web:fides.acc.credenco.com:did:da5a3c99-d45c-4ce2-8065-9db36c98868c",
+        "website": "https://fides.community",
+        "logo": "https://avatars.githubusercontent.com/u/119322214?v=4"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-31T07:25:20.394Z",
+      "fetchedAt": "2026-03-31T15:50:24.394Z",
       "updatedAt": "2026-03-15T00:00:00.000Z",
-      "firstSeenAt": "2026-03-12T00:00:00.000Z",
+      "firstSeenAt": "2026-03-15T00:00:00.000Z",
       "attributes": [
         {
           "name": "given_name",
@@ -7686,15 +7829,18 @@
         "education",
         "diploma"
       ],
+      "orgId": "org:fides",
       "provider": {
-        "name": "FIDES Community",
-        "website": "https://fides.community"
+        "name": "FIDES Labs",
+        "did": "did:web:fides.acc.credenco.com:did:da5a3c99-d45c-4ce2-8065-9db36c98868c",
+        "website": "https://fides.community",
+        "logo": "https://avatars.githubusercontent.com/u/119322214?v=4"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-31T07:25:20.394Z",
+      "fetchedAt": "2026-03-31T15:50:24.394Z",
       "updatedAt": "2026-03-15T00:00:00.000Z",
-      "firstSeenAt": "2026-03-12T00:00:00.000Z",
+      "firstSeenAt": "2026-03-15T00:00:00.000Z",
       "attributes": [
         {
           "name": "given_name",
@@ -7762,15 +7908,18 @@
         "certificate",
         "certification"
       ],
+      "orgId": "org:fides",
       "provider": {
-        "name": "FIDES Community",
-        "website": "https://fides.community"
+        "name": "FIDES Labs",
+        "did": "did:web:fides.acc.credenco.com:did:da5a3c99-d45c-4ce2-8065-9db36c98868c",
+        "website": "https://fides.community",
+        "logo": "https://avatars.githubusercontent.com/u/119322214?v=4"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-31T07:25:20.394Z",
+      "fetchedAt": "2026-03-31T15:50:24.394Z",
       "updatedAt": "2026-03-15T00:00:00.000Z",
-      "firstSeenAt": "2026-03-12T00:00:00.000Z",
+      "firstSeenAt": "2026-03-15T00:00:00.000Z",
       "attributes": [
         {
           "name": "id",
@@ -7860,15 +8009,18 @@
         "education",
         "certificate"
       ],
+      "orgId": "org:fides",
       "provider": {
-        "name": "FIDES Community",
-        "website": "https://fides.community"
+        "name": "FIDES Labs",
+        "did": "did:web:fides.acc.credenco.com:did:da5a3c99-d45c-4ce2-8065-9db36c98868c",
+        "website": "https://fides.community",
+        "logo": "https://avatars.githubusercontent.com/u/119322214?v=4"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-31T07:25:20.394Z",
+      "fetchedAt": "2026-03-31T15:50:24.394Z",
       "updatedAt": "2026-03-15T00:00:00.000Z",
-      "firstSeenAt": "2026-03-12T00:00:00.000Z",
+      "firstSeenAt": "2026-03-15T00:00:00.000Z",
       "attributes": [
         {
           "name": "given_name",
@@ -7945,15 +8097,16 @@
         "untp",
         "dcc"
       ],
+      "orgId": "org:uncefact",
       "provider": {
         "name": "UN/CEFACT",
         "website": "https://untp.unece.org"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/uncefact/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/uncefact/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-31T07:25:20.394Z",
+      "fetchedAt": "2026-03-31T15:50:24.394Z",
       "updatedAt": "2026-03-22T00:00:00.000Z",
-      "firstSeenAt": "2026-03-19T00:00:00.000Z",
+      "firstSeenAt": "2026-03-22T00:00:00.000Z",
       "attributes": [
         {
           "name": "type",
@@ -8036,15 +8189,16 @@
         "untp",
         "dpp"
       ],
+      "orgId": "org:uncefact",
       "provider": {
         "name": "UN/CEFACT",
         "website": "https://untp.unece.org"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/uncefact/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/uncefact/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-31T07:25:20.394Z",
+      "fetchedAt": "2026-03-31T15:50:24.394Z",
       "updatedAt": "2026-03-22T00:00:00.000Z",
-      "firstSeenAt": "2026-03-19T00:00:00.000Z",
+      "firstSeenAt": "2026-03-22T00:00:00.000Z",
       "attributes": [
         {
           "name": "type",
@@ -8127,16 +8281,67 @@
         "untp",
         "dte"
       ],
+      "orgId": "org:uncefact",
       "provider": {
         "name": "UN/CEFACT",
         "website": "https://untp.unece.org"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/uncefact/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/uncefact/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-31T07:25:20.394Z",
+      "fetchedAt": "2026-03-31T15:50:24.394Z",
       "updatedAt": "2026-03-22T00:00:00.000Z",
-      "firstSeenAt": "2026-03-19T00:00:00.000Z",
-      "attributes": []
+      "firstSeenAt": "2026-03-22T00:00:00.000Z",
+      "attributes": [
+        {
+          "name": "type",
+          "type": "array",
+          "required": false,
+          "depth": 0
+        },
+        {
+          "name": "@context",
+          "type": "array",
+          "required": true,
+          "description": "A list of JSON-LD context URIs that define the seamntic meaning of prperties within the credential. ",
+          "depth": 0
+        },
+        {
+          "name": "id",
+          "type": "string",
+          "required": true,
+          "description": "A unique identifier (URI) assigned to the product passport. May be a UUID",
+          "depth": 0
+        },
+        {
+          "name": "issuer",
+          "type": "ref",
+          "required": true,
+          "description": "The organisation that is the isuer of this VC. Note that the \"id\" property MUST be a W3C DID.  Other identifiers such as tax registration numbers can be listed in the \"otherIdentifiers\" property.",
+          "depth": 0
+        },
+        {
+          "name": "validFrom",
+          "type": "string",
+          "required": false,
+          "description": "The date and time from which the credential is valid.",
+          "depth": 0
+        },
+        {
+          "name": "validUntil",
+          "type": "string",
+          "required": false,
+          "description": "The expiry date (if applicable) of this verifiable credential.",
+          "depth": 0
+        },
+        {
+          "name": "credentialSubject",
+          "type": "array",
+          "required": false,
+          "description": "VC subject is the transaction event structure",
+          "depth": 0
+        }
+      ],
+      "schemaDescription": "Traceability Event as a VC"
     },
     {
       "id": "cred:uncefact:dfr:vcdm-2-0",
@@ -8168,15 +8373,16 @@
         "untp",
         "dfr"
       ],
+      "orgId": "org:uncefact",
       "provider": {
         "name": "UN/CEFACT",
         "website": "https://untp.unece.org"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/uncefact/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/uncefact/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-31T07:25:20.394Z",
+      "fetchedAt": "2026-03-31T15:50:24.394Z",
       "updatedAt": "2026-03-22T00:00:00.000Z",
-      "firstSeenAt": "2026-03-19T00:00:00.000Z",
+      "firstSeenAt": "2026-03-22T00:00:00.000Z",
       "attributes": [
         {
           "name": "type",
@@ -8259,15 +8465,16 @@
         "untp",
         "dia"
       ],
+      "orgId": "org:uncefact",
       "provider": {
         "name": "UN/CEFACT",
         "website": "https://untp.unece.org"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/uncefact/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/uncefact/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-31T07:25:20.394Z",
+      "fetchedAt": "2026-03-31T15:50:24.394Z",
       "updatedAt": "2026-03-22T00:00:00.000Z",
-      "firstSeenAt": "2026-03-19T00:00:00.000Z",
+      "firstSeenAt": "2026-03-22T00:00:00.000Z",
       "attributes": []
     },
     {
@@ -8300,15 +8507,16 @@
         "unvtd",
         "invoice"
       ],
+      "orgId": "org:uncefact",
       "provider": {
         "name": "UN/CEFACT",
         "website": "https://untp.unece.org"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/uncefact/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/uncefact/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-31T07:25:20.394Z",
+      "fetchedAt": "2026-03-31T15:50:24.394Z",
       "updatedAt": "2026-03-22T00:00:00.000Z",
-      "firstSeenAt": "2026-03-19T00:00:00.000Z",
+      "firstSeenAt": "2026-03-22T00:00:00.000Z",
       "attributes": [
         {
           "name": "purchaseOrderNumber",
@@ -9080,15 +9288,16 @@
         "unvtd",
         "transport"
       ],
+      "orgId": "org:uncefact",
       "provider": {
         "name": "UN/CEFACT",
         "website": "https://untp.unece.org"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/uncefact/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/uncefact/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-31T07:25:20.394Z",
+      "fetchedAt": "2026-03-31T15:50:24.394Z",
       "updatedAt": "2026-03-22T00:00:00.000Z",
-      "firstSeenAt": "2026-03-19T00:00:00.000Z",
+      "firstSeenAt": "2026-03-22T00:00:00.000Z",
       "attributes": [
         {
           "name": "billOfLadingNumber",
@@ -10014,15 +10223,16 @@
         "unvtd",
         "origin"
       ],
+      "orgId": "org:uncefact",
       "provider": {
         "name": "UN/CEFACT",
         "website": "https://untp.unece.org"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/uncefact/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/uncefact/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-31T07:25:20.394Z",
+      "fetchedAt": "2026-03-31T15:50:24.394Z",
       "updatedAt": "2026-03-22T00:00:00.000Z",
-      "firstSeenAt": "2026-03-19T00:00:00.000Z",
+      "firstSeenAt": "2026-03-22T00:00:00.000Z",
       "attributes": [
         {
           "name": "certificateNumber",
@@ -10711,13 +10921,14 @@
         "unvtd",
         "customs"
       ],
+      "orgId": "org:uncefact",
       "provider": {
         "name": "UN/CEFACT",
         "website": "https://untp.unece.org"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/uncefact/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/uncefact/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-31T07:25:20.394Z",
+      "fetchedAt": "2026-03-31T15:50:24.394Z",
       "updatedAt": "2026-03-22T00:00:00.000Z",
       "firstSeenAt": "2026-03-22T00:00:00.000Z",
       "attributes": [
@@ -11471,15 +11682,16 @@
         "unvtd",
         "insurance"
       ],
+      "orgId": "org:uncefact",
       "provider": {
         "name": "UN/CEFACT",
         "website": "https://untp.unece.org"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/uncefact/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/uncefact/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-31T07:25:20.394Z",
+      "fetchedAt": "2026-03-31T15:50:24.394Z",
       "updatedAt": "2026-03-22T00:00:00.000Z",
-      "firstSeenAt": "2026-03-19T00:00:00.000Z",
+      "firstSeenAt": "2026-03-22T00:00:00.000Z",
       "attributes": [
         {
           "name": "certificateNumber",
@@ -12216,15 +12428,16 @@
         "unvtd",
         "packing"
       ],
+      "orgId": "org:uncefact",
       "provider": {
         "name": "UN/CEFACT",
         "website": "https://untp.unece.org"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/uncefact/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/uncefact/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-31T07:25:20.394Z",
+      "fetchedAt": "2026-03-31T15:50:24.394Z",
       "updatedAt": "2026-03-22T00:00:00.000Z",
-      "firstSeenAt": "2026-03-19T00:00:00.000Z",
+      "firstSeenAt": "2026-03-22T00:00:00.000Z",
       "attributes": [
         {
           "name": "issueDate",
@@ -13025,13 +13238,14 @@
         "unvtd",
         "order"
       ],
+      "orgId": "org:uncefact",
       "provider": {
         "name": "UN/CEFACT",
         "website": "https://untp.unece.org"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/uncefact/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/uncefact/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-31T07:25:20.394Z",
+      "fetchedAt": "2026-03-31T15:50:24.394Z",
       "updatedAt": "2026-03-22T00:00:00.000Z",
       "firstSeenAt": "2026-03-22T00:00:00.000Z",
       "attributes": [
@@ -13491,13 +13705,14 @@
         "unvtd",
         "warehouse"
       ],
+      "orgId": "org:uncefact",
       "provider": {
         "name": "UN/CEFACT",
         "website": "https://untp.unece.org"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/uncefact/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/uncefact/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-03-31T07:25:20.394Z",
+      "fetchedAt": "2026-03-31T15:50:24.394Z",
       "updatedAt": "2026-03-22T00:00:00.000Z",
       "firstSeenAt": "2026-03-22T00:00:00.000Z",
       "attributes": [
@@ -13960,6 +14175,6 @@
       "Software": 0,
       "Document": 10
     },
-    "withSchemaAttributes": 74
+    "withSchemaAttributes": 75
   }
 }

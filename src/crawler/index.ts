@@ -1,6 +1,8 @@
 import fs from "fs/promises";
+import { existsSync } from "fs";
 import path from "path";
 import { execFileSync } from "child_process";
+import { hostname } from "os";
 import Ajv2020 from "ajv/dist/2020.js";
 import addFormats from "ajv-formats";
 import yaml from "js-yaml";
@@ -9,6 +11,7 @@ import type {
   CredentialCatalogFile,
   EnrichedAttribute,
   NormalizedCredential,
+  Provider,
   SubjectType
 } from "../types/credential.js";
 import { extractAttributesFromSchema } from "./schemaAttributes.js";
@@ -23,6 +26,90 @@ const CONFIG = {
   ),
   historyPath: path.join(process.cwd(), "data/credential-history-state.json")
 };
+
+const ORGANIZATION_CATALOG_URL =
+  "https://raw.githubusercontent.com/FIDEScommunity/fides-organization-catalog/main/data/aggregated.json";
+const ORGANIZATION_CATALOG_LOCAL_PATHS = [
+  process.env.ORGANIZATION_CATALOG_AGGREGATED_PATH,
+  path.join(process.cwd(), "..", "organization-catalog", "data", "aggregated.json")
+].filter(Boolean) as string[];
+
+interface OrgCatalogEntry {
+  id: string;
+  name: string;
+  identifiers?: { did?: string };
+  website?: string;
+  logoUri?: string;
+  contact?: { email?: string; support?: string };
+  legalName?: string;
+}
+
+function isLocalDevHost(): boolean {
+  const host = hostname();
+  return host !== "" && (host.endsWith(".local") || host === "localhost");
+}
+
+function orgEntryToProvider(entry: OrgCatalogEntry): Provider {
+  const p: Provider = { name: entry.name };
+  if (entry.identifiers?.did) p.did = entry.identifiers.did;
+  if (entry.website) p.website = entry.website;
+  if (entry.logoUri) p.logo = entry.logoUri;
+  if (entry.contact) p.contact = entry.contact;
+  return p;
+}
+
+async function loadOrganizationCatalogMap(): Promise<Map<string, OrgCatalogEntry>> {
+  const tryParse = (raw: string): Map<string, OrgCatalogEntry> => {
+    const data = JSON.parse(raw) as { organizations?: OrgCatalogEntry[] };
+    const map = new Map<string, OrgCatalogEntry>();
+    for (const o of data.organizations || []) {
+      if (o?.id) map.set(o.id, o);
+    }
+    return map;
+  };
+
+  if (isLocalDevHost()) {
+    for (const localPath of ORGANIZATION_CATALOG_LOCAL_PATHS) {
+      if (localPath && existsSync(localPath)) {
+        try {
+          const raw = await fs.readFile(localPath, "utf-8");
+          const map = tryParse(raw);
+          console.log(`Using local organization catalog (${localPath}), ${map.size} org(s)`);
+          return map;
+        } catch (e) {
+          console.warn("Could not parse local organization catalog:", (e as Error).message);
+        }
+      }
+    }
+  }
+
+  try {
+    const res = await fetch(ORGANIZATION_CATALOG_URL);
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    const data = (await res.json()) as { organizations?: OrgCatalogEntry[] };
+    const map = new Map<string, OrgCatalogEntry>();
+    for (const o of data.organizations || []) {
+      if (o?.id) map.set(o.id, o);
+    }
+    console.log(`Using organization catalog from GitHub, ${map.size} org(s)`);
+    return map;
+  } catch (err) {
+    console.warn("Could not fetch organization catalog:", (err as Error).message);
+    for (const localPath of ORGANIZATION_CATALOG_LOCAL_PATHS) {
+      if (localPath && existsSync(localPath)) {
+        try {
+          const raw = await fs.readFile(localPath, "utf-8");
+          const map = tryParse(raw);
+          console.log(`Fallback local organization catalog (${localPath})`);
+          return map;
+        } catch (e) {
+          console.warn("Could not parse local organization catalog:", (e as Error).message);
+        }
+      }
+    }
+    return new Map();
+  }
+}
 
 interface CredentialHistoryEntry {
   firstSeenAt: string;
@@ -148,6 +235,7 @@ async function initValidator() {
 async function crawl(): Promise<void> {
   console.log("Starting credential catalog crawl...");
   const validateCatalog = await initValidator();
+  const organizationById = await loadOrganizationCatalogMap();
   const historyState = await loadHistoryState();
   const now = new Date().toISOString();
   const normalized: NormalizedCredential[] = [];
@@ -164,11 +252,20 @@ async function crawl(): Promise<void> {
         continue;
       }
 
+      const orgEntry = organizationById.get(catalog.orgId);
+      if (!orgEntry) {
+        console.error(
+          `Unknown orgId ${catalog.orgId} in ${sourceDirName} — add this organization to fides-organization-catalog first.`
+        );
+        continue;
+      }
+      const provider = orgEntryToProvider(orgEntry);
+
       const repoRelativePath = path.relative(process.cwd(), catalogPath);
       const gitLastCommitAt = getGitLastCommitDateForPath(repoRelativePath);
 
       for (const credential of catalog.credentials) {
-        const historyKey = `${catalog.provider.name}:${credential.id}`;
+        const historyKey = `${catalog.orgId}:${credential.id}`;
         const updatedAt =
           toIsoString(catalog.lastUpdated) ??
           gitLastCommitAt ??
@@ -183,7 +280,8 @@ async function crawl(): Promise<void> {
 
         normalized.push({
           ...credential,
-          provider: catalog.provider,
+          orgId: catalog.orgId,
+          provider,
           catalogUrl: catalogPath,
           source: "local",
           fetchedAt: now,
@@ -207,7 +305,7 @@ async function crawl(): Promise<void> {
   const deduped = Array.from(dedupeMap.values());
 
   const aggregated: AggregatedCredentialCatalog = {
-    schemaVersion: "1.1.0",
+    schemaVersion: "1.2.0",
     catalogType: "credential",
     lastUpdated: now,
     credentials: deduped,

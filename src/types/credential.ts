@@ -62,7 +62,8 @@ export interface Provider {
 
 export interface CredentialCatalogFile {
   $schema: string;
-  provider: Provider;
+  /** Organization catalog id; crawler resolves provider fields from organization aggregated.json */
+  orgId: string;
   credentials: CredentialEntry[];
   lastUpdated?: string;
 }
@@ -77,6 +78,8 @@ export interface EnrichedAttribute {
 }
 
 export interface NormalizedCredential extends CredentialEntry {
+  orgId: string;
+  /** Resolved from organization catalog at crawl time (same shape as former inline provider). */
   provider: Provider;
   catalogUrl: string;
   source: "local";

@@ -57,6 +57,8 @@ fides-credential-catalog/
 npm install
 ```
 
+**Resolving `orgId`:** The crawler loads the organization catalog `data/aggregated.json` from GitHub raw, or falls back to `../organization-catalog/data/aggregated.json`. Set `ORGANIZATION_CATALOG_AGGREGATED_PATH` to point at a local file when needed.
+
 ### Run Crawler
 
 Crawls all `community-catalogs/**/credential-catalog.json` files, enriches them with
@@ -97,19 +99,17 @@ The credential catalog reads the [FIDES RP Catalog](https://github.com/FIDEScomm
 ## ➕ Add Your Credentials to the Catalog
 
 1. **Fork** this repository
-2. **Create** a folder in `community-catalogs/` with your organization name
-3. **Add** a `credential-catalog.json` following the schema
-4. **Submit** a Pull Request
+2. **Ensure** your organization exists in the [FIDES Organization Catalog](https://github.com/FIDEScommunity/fides-organization-catalog) (canonical name, website, DID, logo, contact).
+3. **Create** a folder in `community-catalogs/` (usually matching your org code, e.g. `fides`)
+4. **Add** a `credential-catalog.json` with `orgId` pointing at your organization catalog entry
+5. **Submit** a Pull Request
 
 ### Minimal Example
 
 ```json
 {
   "$schema": "https://fides.community/schemas/credential-catalog/v1",
-  "provider": {
-    "name": "Your Organization",
-    "website": "https://yourdomain.com"
-  },
+  "orgId": "org:yourorg",
   "credentials": [
     {
       "id": "cred:yourorg:my-credential:sd-jwt-vc",
@@ -182,6 +182,8 @@ Each credential entry in `credentials[]` includes all source fields plus:
 
 | Enriched Field | Source |
 |----------------|--------|
+| `orgId` | Copied from source catalog (same as organization catalog id) |
+| `provider` | Resolved by crawler from the organization catalog (`name`, `did`, `website`, `logo`, `contact`) |
 | `attributes` | Extracted by crawler from `schemaUrl` |
 | `firstSeenAt` | Persisted in `credential-history-state.json` (stable, not reset on re-crawl) |
 | `updatedAt` | Git last-commit date of the source file, or `lastUpdated` from the catalog |

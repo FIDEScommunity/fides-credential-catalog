@@ -57,6 +57,16 @@
 
   root.setAttribute("data-theme", settings.theme);
 
+  function isFidesLocalDevHost() {
+    try {
+      const h = window.location.hostname || "";
+      const href = window.location.href || "";
+      return h.includes(".local") || href.includes(".local");
+    } catch {
+      return false;
+    }
+  }
+
   let credentials = [];
   let rpUsageMap = new Map();
   let issuerUsageMap = new Map();
@@ -219,10 +229,9 @@
   }
 
   async function loadCredentials() {
-    const sources = [
-      config.githubDataUrl,
-      `${config.pluginUrl || ""}data/aggregated.json`
-    ].filter(Boolean);
+    const remote = config.githubDataUrl;
+    const local = `${config.pluginUrl || ""}data/aggregated.json`;
+    const sources = (isFidesLocalDevHost() ? [local, remote] : [remote, local]).filter(Boolean);
 
     for (const source of sources) {
       try {
@@ -296,9 +305,21 @@
   }
 
   async function loadRPUsage() {
-    if (!config.rpAggregatedUrl) return;
+    const remote = config.rpAggregatedUrl;
+    const local = `${config.pluginUrl || ""}data/rp-aggregated.json`;
+    const sources = (isFidesLocalDevHost() ? [local, remote] : [remote, local]).filter(Boolean);
+    if (!sources.length) return;
+    let data = null;
+    for (const url of sources) {
+      try {
+        data = await loadJson(url);
+        break;
+      } catch (_) {
+        /* try next */
+      }
+    }
+    if (!data) return;
     try {
-      const data = await loadJson(config.rpAggregatedUrl);
       const relyingParties = Array.isArray(data.relyingParties) ? data.relyingParties : [];
       const credentialLookup = buildCredentialLookupMap();
       const rpMap = new Map();
@@ -342,10 +363,9 @@
   }
 
   async function loadIssuerUsage() {
-    const issuerSources = [
-      config.issuerAggregatedUrl,
-      `${config.pluginUrl || ""}data/issuer-aggregated.json`
-    ].filter(Boolean);
+    const remote = config.issuerAggregatedUrl;
+    const local = `${config.pluginUrl || ""}data/issuer-aggregated.json`;
+    const issuerSources = (isFidesLocalDevHost() ? [local, remote] : [remote, local]).filter(Boolean);
 
     let data = null;
     for (const source of issuerSources) {
@@ -1483,21 +1503,27 @@
   }
 
   async function loadVocabulary(primaryUrl, fallbackUrl) {
+    let first = primaryUrl;
+    let second = fallbackUrl;
+    if (isFidesLocalDevHost() && primaryUrl && fallbackUrl) {
+      first = fallbackUrl;
+      second = primaryUrl;
+    }
     const tryLoad = async (url) => {
       const res = await fetch(url);
       if (!res.ok) throw new Error('HTTP ' + res.status);
       const data = await res.json();
       return data.terms || null;
     };
-    if (primaryUrl) {
-      try { return await tryLoad(primaryUrl); } catch (e) { console.warn('Vocabulary load failed (primary):', e.message); }
+    if (first) {
+      try { return await tryLoad(first); } catch (e) { console.warn('Vocabulary load failed (first):', e.message); }
     }
-    if (fallbackUrl) {
+    if (second) {
       try {
-        const terms = await tryLoad(fallbackUrl);
-        if (terms) console.log('Vocabulary loaded from fallback');
+        const terms = await tryLoad(second);
+        if (terms) console.log('Vocabulary loaded from second source');
         return terms;
-      } catch (e) { console.warn('Vocabulary load failed (fallback):', e.message); }
+      } catch (e) { console.warn('Vocabulary load failed (second):', e.message); }
     }
     return null;
   }

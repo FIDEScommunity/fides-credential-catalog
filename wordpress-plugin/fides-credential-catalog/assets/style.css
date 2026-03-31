@@ -1669,6 +1669,8 @@ a.fides-tag.wallet-link svg {
   padding: 0.5rem;
   background: var(--fides-bg-primary);
   border-radius: 0 0 8px 8px;
+  /* Chip surface for wallet/stat boxes; light/fides override below — static hover must match */
+  --fides-eco-slot-surface: var(--fides-bg-secondary);
 }
 
 .fides-eco-wallet-row {
@@ -1676,6 +1678,11 @@ a.fides-tag.wallet-link svg {
   align-items: center;
   justify-content: center;
   width: 100%;
+}
+
+.fides-modal-ecosystem .fides-eco-wallet-box,
+.fides-modal-ecosystem .fides-eco-col-side {
+  background: var(--fides-eco-slot-surface);
 }
 
 .fides-eco-wallet-box {
@@ -2063,7 +2070,7 @@ a.fides-eco-entity svg {
 
 .fides-eco-stat-box--static:hover {
   border-color: var(--fides-border) !important;
-  background: var(--fides-bg-secondary) !important;
+  background: var(--fides-eco-slot-surface, var(--fides-bg-secondary)) !important;
   box-shadow: none !important;
 }
 
@@ -2507,13 +2514,13 @@ a.fides-eco-tag-purple:hover {
 .fides-modal-overlay[data-theme="fides"] .fides-modal-ecosystem,
 .fides-modal-overlay[data-theme="light"] .fides-modal-ecosystem {
   background: #ffffff;
+  --fides-eco-slot-surface: #f8fafc;
 }
 
-.fides-modal-overlay[data-theme="fides"] .fides-eco-col-side,
-.fides-modal-overlay[data-theme="light"] .fides-eco-col-side,
-.fides-modal-overlay[data-theme="fides"] .fides-eco-wallet-box,
-.fides-modal-overlay[data-theme="light"] .fides-eco-wallet-box {
-  background: #f8fafc;
+.fides-modal-overlay[data-theme="fides"] .fides-modal-ecosystem .fides-eco-wallet-box,
+.fides-modal-overlay[data-theme="light"] .fides-modal-ecosystem .fides-eco-wallet-box,
+.fides-modal-overlay[data-theme="fides"] .fides-modal-ecosystem .fides-eco-col-side,
+.fides-modal-overlay[data-theme="light"] .fides-modal-ecosystem .fides-eco-col-side {
   border-color: #e2e8f0;
 }
 
