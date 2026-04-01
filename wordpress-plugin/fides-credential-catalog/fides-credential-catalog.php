@@ -3,7 +3,7 @@
  * Plugin Name: FIDES Credential Catalog
  * Plugin URI: https://github.com/FIDEScommunity/fides-credential-catalog
  * Description: Display an interactive catalog of credentials with search and filters.
- * Version: 1.2.19
+ * Version: 1.2.22
  * Author: FIDES Community
  * Author URI: https://fides.community
  * License: Apache-2.0
@@ -14,7 +14,7 @@ if (!defined('ABSPATH')) {
     exit;
 }
 
-define('FIDES_CREDENTIAL_CATALOG_VERSION', '1.2.19');
+define('FIDES_CREDENTIAL_CATALOG_VERSION', '1.2.22');
 define('FIDES_CREDENTIAL_CATALOG_PLUGIN_DIR', plugin_dir_path(__FILE__));
 define('FIDES_CREDENTIAL_CATALOG_PLUGIN_URL', plugin_dir_url(__FILE__));
 
@@ -92,6 +92,12 @@ function fides_credential_catalog_enqueue_assets() {
             'https://fides.community/ecosystem-explorer/issuer-catalog/'
         ),
         'walletCatalogUrl' => $wallet_catalog_url,
+        'organizationCatalogUrl' => $use_local
+            ? rtrim(get_site_url(), '/') . '/organizations/'
+            : get_option(
+                'fides_credential_catalog_organization_catalog_url',
+                'https://fides.community/ecosystem-explorer/organization-catalog/'
+            ),
         'vocabularyUrl' => 'https://raw.githubusercontent.com/FIDEScommunity/fides-interop-profiles/main/data/vocabulary.json',
         'vocabularyFallbackUrl' => $plugin_url . 'assets/vocabulary.json',
     ));
@@ -160,6 +166,12 @@ function fides_credential_catalog_register_settings() {
         'default' => 'https://wallets.fides.community',
         'sanitize_callback' => 'esc_url_raw'
     ));
+
+    register_setting('fides_credential_catalog_settings', 'fides_credential_catalog_organization_catalog_url', array(
+        'type' => 'string',
+        'default' => 'https://fides.community/ecosystem-explorer/organization-catalog/',
+        'sanitize_callback' => 'esc_url_raw'
+    ));
 }
 add_action('admin_init', 'fides_credential_catalog_register_settings');
 
@@ -203,6 +215,15 @@ function fides_credential_catalog_settings_page() {
                         <input type="url" id="fides_credential_catalog_wallet_catalog_url" name="fides_credential_catalog_wallet_catalog_url"
                                value="<?php echo esc_attr(get_option('fides_credential_catalog_wallet_catalog_url', 'https://fides.community/community-tools/personal-wallets/')); ?>"
                                class="regular-text">
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row"><label for="fides_credential_catalog_organization_catalog_url">Organization Catalog Base URL</label></th>
+                    <td>
+                        <input type="url" id="fides_credential_catalog_organization_catalog_url" name="fides_credential_catalog_organization_catalog_url"
+                               value="<?php echo esc_attr(get_option('fides_credential_catalog_organization_catalog_url', 'https://fides.community/ecosystem-explorer/organization-catalog/')); ?>"
+                               class="regular-text">
+                        <p class="description">Base URL for organization deep links in the credential modal (query <code>?org=</code> is appended). On local <code>.local</code> / <code>localhost</code> sites this setting is ignored; the plugin uses <code>/organizations/</code> on the same site instead.</p>
                     </td>
                 </tr>
             </table>

@@ -942,6 +942,17 @@
           : `${rpCatalogBase}/?rps=${rpItems.map((rp) => encodeURIComponent(rp.id)).join(",")}`
         : "";
 
+    const orgCatBase = (config.organizationCatalogUrl || "https://fides.community/ecosystem-explorer/organization-catalog/").replace(/\/$/, "");
+    const credentialOrgId = String(selectedCredential.orgId || "").trim();
+    const orgCatalogHref =
+      orgCatBase && credentialOrgId.startsWith("org:")
+        ? `${orgCatBase}/?org=${encodeURIComponent(credentialOrgId)}`
+        : "";
+    const authorityDisplay = selectedCredential.authority?.name || "Unknown authority";
+    const modalAuthorityLine = orgCatalogHref
+      ? `<p class="fides-modal-provider">${icons.building} <a href="${escapeHtml(orgCatalogHref)}" class="fides-modal-link-inline" aria-label="View organization in organization catalog" title="Organization catalog" onclick="event.stopPropagation();"><span>${escapeHtml(authorityDisplay)}</span></a></p>`
+      : `<p class="fides-modal-provider">${icons.building} ${escapeHtml(authorityDisplay)}</p>`;
+
     return `
       <div class="fides-modal-overlay" id="fides-modal-overlay" data-theme="${currentTheme}">
         <div class="fides-modal" role="dialog" aria-modal="true" aria-labelledby="fides-modal-title">
@@ -953,7 +964,7 @@
               </div>
               <div class="fides-modal-title-wrap">
                 <h2 class="fides-modal-title" id="fides-modal-title">${escapeHtml(selectedCredential.displayName)}</h2>
-                <p class="fides-modal-provider">${icons.building} ${escapeHtml(selectedCredential.authority?.name || "Unknown authority")}</p>
+                ${modalAuthorityLine}
               </div>
             </div>
             <div class="fides-modal-header-actions">
