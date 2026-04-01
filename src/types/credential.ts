@@ -14,6 +14,43 @@ export type VCFormat =
   | "acdc"
   | "other";
 
+/** Same values as OrganizationSectorCode in organization-catalog.schema.json (keep in sync). */
+export type CredentialSectorCode =
+  | "public_sector"
+  | "finance"
+  | "trade"
+  | "supply_chain"
+  | "manufacturing"
+  | "energy"
+  | "agriculture"
+  | "food"
+  | "retail"
+  | "healthcare"
+  | "education"
+  | "construction"
+  | "mobility"
+  | "digital";
+
+export type CredentialEcosystemCode =
+  | "eudi_wallet"
+  | "uncefact"
+  | "gaia_x"
+  | "open_badges"
+  | "iso_mdl"
+  | "india_stack";
+
+/** Cross-sector use-case themes (optional on each credential). */
+export type CredentialThemeCode =
+  | "person_identity"
+  | "organizational_identity"
+  | "payments"
+  | "compliance_reporting"
+  | "trade_documents"
+  | "education"
+  | "digital_product_passports"
+  | "dataspaces"
+  | "agentic_ai";
+
 export interface EntityReference {
   name: string;
   url?: string;
@@ -47,6 +84,9 @@ export interface CredentialEntry {
   extends?: CredentialReference[];
   vocabularies?: VocabularyReference[];
   tags?: string[];
+  sectors: CredentialSectorCode[];
+  ecosystems: CredentialEcosystemCode[];
+  themes?: CredentialThemeCode[];
 }
 
 export interface Provider {
@@ -101,5 +141,8 @@ export interface AggregatedCredentialCatalog {
     byFormat: Record<string, number>;
     bySubjectType: Record<SubjectType, number>;
     withSchemaAttributes: number;
+    bySector: Record<string, number>;
+    byEcosystem: Record<string, number>;
+    byTheme: Record<string, number>;
   };
 }

@@ -1,7 +1,7 @@
 {
-  "schemaVersion": "1.2.0",
+  "schemaVersion": "1.4.0",
   "catalogType": "credential",
-  "lastUpdated": "2026-04-01T13:04:30.171Z",
+  "lastUpdated": "2026-04-01T15:26:46.535Z",
   "credentials": [
     {
       "id": "cred:eu:diploma-vc-sd-jwt:sd-jwt-vc",
@@ -23,15 +23,34 @@
         "eudi",
         "diploma"
       ],
+      "sectors": [
+        "construction",
+        "digital",
+        "education",
+        "finance",
+        "food",
+        "healthcare",
+        "mobility",
+        "public_sector",
+        "retail"
+      ],
+      "ecosystems": [
+        "eudi_wallet",
+        "open_badges"
+      ],
+      "themes": [
+        "education",
+        "person_identity"
+      ],
       "orgId": "org:eu",
       "provider": {
         "name": "European Commission - Government",
         "website": "https://github.com/eu-digital-identity-wallet",
         "logo": "https://www.google.com/s2/favicons?domain=ec.europa.eu&sz=128"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-01T13:04:30.171Z",
+      "fetchedAt": "2026-04-01T15:26:46.535Z",
       "updatedAt": "2026-03-31T17:01:28.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
@@ -170,15 +189,27 @@
         "eudi",
         "ehic"
       ],
+      "sectors": [
+        "finance",
+        "healthcare",
+        "public_sector",
+        "retail"
+      ],
+      "ecosystems": [
+        "eudi_wallet"
+      ],
+      "themes": [
+        "person_identity"
+      ],
       "orgId": "org:eu",
       "provider": {
         "name": "European Commission - Government",
         "website": "https://github.com/eu-digital-identity-wallet",
         "logo": "https://www.google.com/s2/favicons?domain=ec.europa.eu&sz=128"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-01T13:04:30.171Z",
+      "fetchedAt": "2026-04-01T15:26:46.535Z",
       "updatedAt": "2026-03-31T17:01:28.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
@@ -287,15 +318,25 @@
         "eudi",
         "hiid"
       ],
+      "sectors": [
+        "healthcare",
+        "public_sector"
+      ],
+      "ecosystems": [
+        "eudi_wallet"
+      ],
+      "themes": [
+        "person_identity"
+      ],
       "orgId": "org:eu",
       "provider": {
         "name": "European Commission - Government",
         "website": "https://github.com/eu-digital-identity-wallet",
         "logo": "https://www.google.com/s2/favicons?domain=ec.europa.eu&sz=128"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-01T13:04:30.171Z",
+      "fetchedAt": "2026-04-01T15:26:46.535Z",
       "updatedAt": "2026-03-31T17:01:28.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
@@ -448,15 +489,30 @@
         "eudi",
         "iban"
       ],
+      "sectors": [
+        "digital",
+        "energy",
+        "finance",
+        "public_sector",
+        "retail",
+        "supply_chain",
+        "trade"
+      ],
+      "ecosystems": [
+        "eudi_wallet"
+      ],
+      "themes": [
+        "payments"
+      ],
       "orgId": "org:eu",
       "provider": {
         "name": "European Commission - Government",
         "website": "https://github.com/eu-digital-identity-wallet",
         "logo": "https://www.google.com/s2/favicons?domain=ec.europa.eu&sz=128"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-01T13:04:30.171Z",
+      "fetchedAt": "2026-04-01T15:26:46.535Z",
       "updatedAt": "2026-03-31T17:01:28.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
@@ -623,15 +679,26 @@
         "eudi",
         "msisdn"
       ],
+      "sectors": [
+        "digital",
+        "public_sector",
+        "retail"
+      ],
+      "ecosystems": [
+        "eudi_wallet"
+      ],
+      "themes": [
+        "person_identity"
+      ],
       "orgId": "org:eu",
       "provider": {
         "name": "European Commission - Government",
         "website": "https://github.com/eu-digital-identity-wallet",
         "logo": "https://www.google.com/s2/favicons?domain=ec.europa.eu&sz=128"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-01T13:04:30.171Z",
+      "fetchedAt": "2026-04-01T15:26:46.535Z",
       "updatedAt": "2026-03-31T17:01:28.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
@@ -742,15 +809,30 @@
         "eudi",
         "pda1"
       ],
+      "sectors": [
+        "agriculture",
+        "construction",
+        "healthcare",
+        "manufacturing",
+        "public_sector",
+        "supply_chain"
+      ],
+      "ecosystems": [
+        "eudi_wallet"
+      ],
+      "themes": [
+        "compliance_reporting",
+        "person_identity"
+      ],
       "orgId": "org:eu",
       "provider": {
         "name": "European Commission - Government",
         "website": "https://github.com/eu-digital-identity-wallet",
         "logo": "https://www.google.com/s2/favicons?domain=ec.europa.eu&sz=128"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-01T13:04:30.171Z",
+      "fetchedAt": "2026-04-01T15:26:46.535Z",
       "updatedAt": "2026-03-31T17:01:28.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
@@ -1071,15 +1153,41 @@
         "eudi",
         "pid"
       ],
+      "sectors": [
+        "agriculture",
+        "construction",
+        "digital",
+        "education",
+        "energy",
+        "finance",
+        "food",
+        "healthcare",
+        "manufacturing",
+        "mobility",
+        "public_sector",
+        "retail",
+        "supply_chain",
+        "trade"
+      ],
+      "ecosystems": [
+        "eudi_wallet",
+        "gaia_x"
+      ],
+      "themes": [
+        "dataspaces",
+        "education",
+        "payments",
+        "person_identity"
+      ],
       "orgId": "org:eu",
       "provider": {
         "name": "European Commission - Government",
         "website": "https://github.com/eu-digital-identity-wallet",
         "logo": "https://www.google.com/s2/favicons?domain=ec.europa.eu&sz=128"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-01T13:04:30.171Z",
+      "fetchedAt": "2026-04-01T15:26:46.535Z",
       "updatedAt": "2026-03-31T17:01:28.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
@@ -1294,15 +1402,35 @@
         "eudi",
         "por"
       ],
+      "sectors": [
+        "digital",
+        "public_sector"
+      ],
+      "ecosystems": [
+        "eudi_wallet",
+        "gaia_x",
+        "india_stack",
+        "uncefact"
+      ],
+      "themes": [
+        "agentic_ai",
+        "compliance_reporting",
+        "dataspaces",
+        "digital_product_passports",
+        "organizational_identity",
+        "payments",
+        "person_identity",
+        "trade_documents"
+      ],
       "orgId": "org:eu",
       "provider": {
         "name": "European Commission - Government",
         "website": "https://github.com/eu-digital-identity-wallet",
         "logo": "https://www.google.com/s2/favicons?domain=ec.europa.eu&sz=128"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-01T13:04:30.171Z",
+      "fetchedAt": "2026-04-01T15:26:46.535Z",
       "updatedAt": "2026-03-31T17:01:28.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
@@ -1406,15 +1534,39 @@
         "eudi",
         "tax"
       ],
+      "sectors": [
+        "agriculture",
+        "construction",
+        "digital",
+        "education",
+        "energy",
+        "finance",
+        "food",
+        "healthcare",
+        "manufacturing",
+        "mobility",
+        "public_sector",
+        "retail",
+        "supply_chain",
+        "trade"
+      ],
+      "ecosystems": [
+        "eudi_wallet"
+      ],
+      "themes": [
+        "compliance_reporting",
+        "organizational_identity",
+        "person_identity"
+      ],
       "orgId": "org:eu",
       "provider": {
         "name": "European Commission - Government",
         "website": "https://github.com/eu-digital-identity-wallet",
         "logo": "https://www.google.com/s2/favicons?domain=ec.europa.eu&sz=128"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-01T13:04:30.171Z",
+      "fetchedAt": "2026-04-01T15:26:46.535Z",
       "updatedAt": "2026-03-31T17:01:28.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
@@ -1504,15 +1656,39 @@
         "eudi",
         "tax"
       ],
+      "sectors": [
+        "agriculture",
+        "construction",
+        "digital",
+        "education",
+        "energy",
+        "finance",
+        "food",
+        "healthcare",
+        "manufacturing",
+        "mobility",
+        "public_sector",
+        "retail",
+        "supply_chain",
+        "trade"
+      ],
+      "ecosystems": [
+        "eudi_wallet"
+      ],
+      "themes": [
+        "compliance_reporting",
+        "organizational_identity",
+        "person_identity"
+      ],
       "orgId": "org:eu",
       "provider": {
         "name": "European Commission - Government",
         "website": "https://github.com/eu-digital-identity-wallet",
         "logo": "https://www.google.com/s2/favicons?domain=ec.europa.eu&sz=128"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-01T13:04:30.171Z",
+      "fetchedAt": "2026-04-01T15:26:46.535Z",
       "updatedAt": "2026-03-31T17:01:28.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
@@ -1638,15 +1814,35 @@
         "mdoc",
         "cor"
       ],
+      "sectors": [
+        "construction",
+        "digital",
+        "education",
+        "energy",
+        "finance",
+        "healthcare",
+        "mobility",
+        "public_sector",
+        "retail"
+      ],
+      "ecosystems": [
+        "eudi_wallet"
+      ],
+      "themes": [
+        "agentic_ai",
+        "compliance_reporting",
+        "education",
+        "person_identity"
+      ],
       "orgId": "org:eu",
       "provider": {
         "name": "European Commission - Government",
         "website": "https://github.com/eu-digital-identity-wallet",
         "logo": "https://www.google.com/s2/favicons?domain=ec.europa.eu&sz=128"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-01T13:04:30.171Z",
+      "fetchedAt": "2026-04-01T15:26:46.535Z",
       "updatedAt": "2026-03-31T17:01:28.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
@@ -1764,15 +1960,27 @@
         "mdoc",
         "ehic"
       ],
+      "sectors": [
+        "finance",
+        "healthcare",
+        "public_sector",
+        "retail"
+      ],
+      "ecosystems": [
+        "eudi_wallet"
+      ],
+      "themes": [
+        "person_identity"
+      ],
       "orgId": "org:eu",
       "provider": {
         "name": "European Commission - Government",
         "website": "https://github.com/eu-digital-identity-wallet",
         "logo": "https://www.google.com/s2/favicons?domain=ec.europa.eu&sz=128"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-01T13:04:30.171Z",
+      "fetchedAt": "2026-04-01T15:26:46.535Z",
       "updatedAt": "2026-03-31T17:01:28.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
@@ -1883,15 +2091,37 @@
         "mdoc",
         "employee"
       ],
+      "sectors": [
+        "agriculture",
+        "construction",
+        "digital",
+        "education",
+        "energy",
+        "finance",
+        "food",
+        "healthcare",
+        "manufacturing",
+        "mobility",
+        "public_sector",
+        "retail",
+        "supply_chain",
+        "trade"
+      ],
+      "ecosystems": [
+        "eudi_wallet"
+      ],
+      "themes": [
+        "person_identity"
+      ],
       "orgId": "org:eu",
       "provider": {
         "name": "European Commission - Government",
         "website": "https://github.com/eu-digital-identity-wallet",
         "logo": "https://www.google.com/s2/favicons?domain=ec.europa.eu&sz=128"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-01T13:04:30.171Z",
+      "fetchedAt": "2026-04-01T15:26:46.535Z",
       "updatedAt": "2026-03-31T17:01:28.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
@@ -1981,15 +2211,25 @@
         "mdoc",
         "hiid"
       ],
+      "sectors": [
+        "healthcare",
+        "public_sector"
+      ],
+      "ecosystems": [
+        "eudi_wallet"
+      ],
+      "themes": [
+        "person_identity"
+      ],
       "orgId": "org:eu",
       "provider": {
         "name": "European Commission - Government",
         "website": "https://github.com/eu-digital-identity-wallet",
         "logo": "https://www.google.com/s2/favicons?domain=ec.europa.eu&sz=128"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-01T13:04:30.171Z",
+      "fetchedAt": "2026-04-01T15:26:46.535Z",
       "updatedAt": "2026-03-31T17:01:28.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
@@ -2149,15 +2389,31 @@
         "mdoc",
         "iban"
       ],
+      "sectors": [
+        "digital",
+        "energy",
+        "finance",
+        "public_sector",
+        "retail",
+        "supply_chain",
+        "trade"
+      ],
+      "ecosystems": [
+        "eudi_wallet"
+      ],
+      "themes": [
+        "agentic_ai",
+        "payments"
+      ],
       "orgId": "org:eu",
       "provider": {
         "name": "European Commission - Government",
         "website": "https://github.com/eu-digital-identity-wallet",
         "logo": "https://www.google.com/s2/favicons?domain=ec.europa.eu&sz=128"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-01T13:04:30.171Z",
+      "fetchedAt": "2026-04-01T15:26:46.535Z",
       "updatedAt": "2026-03-31T17:01:28.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
@@ -2331,15 +2587,25 @@
         "mdoc",
         "loyalty"
       ],
+      "sectors": [
+        "retail"
+      ],
+      "ecosystems": [
+        "eudi_wallet"
+      ],
+      "themes": [
+        "agentic_ai",
+        "payments"
+      ],
       "orgId": "org:eu",
       "provider": {
         "name": "European Commission - Government",
         "website": "https://github.com/eu-digital-identity-wallet",
         "logo": "https://www.google.com/s2/favicons?domain=ec.europa.eu&sz=128"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-01T13:04:30.171Z",
+      "fetchedAt": "2026-04-01T15:26:46.535Z",
       "updatedAt": "2026-03-31T17:01:28.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
@@ -2415,15 +2681,28 @@
         "mdoc",
         "mdl"
       ],
+      "sectors": [
+        "mobility",
+        "public_sector",
+        "retail"
+      ],
+      "ecosystems": [
+        "eudi_wallet",
+        "iso_mdl"
+      ],
+      "themes": [
+        "agentic_ai",
+        "person_identity"
+      ],
       "orgId": "org:eu",
       "provider": {
         "name": "European Commission - Government",
         "website": "https://github.com/eu-digital-identity-wallet",
         "logo": "https://www.google.com/s2/favicons?domain=ec.europa.eu&sz=128"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-01T13:04:30.171Z",
+      "fetchedAt": "2026-04-01T15:26:46.535Z",
       "updatedAt": "2026-03-31T17:01:28.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
@@ -2681,15 +2960,26 @@
         "mdoc",
         "msisdn"
       ],
+      "sectors": [
+        "digital",
+        "public_sector",
+        "retail"
+      ],
+      "ecosystems": [
+        "eudi_wallet"
+      ],
+      "themes": [
+        "person_identity"
+      ],
       "orgId": "org:eu",
       "provider": {
         "name": "European Commission - Government",
         "website": "https://github.com/eu-digital-identity-wallet",
         "logo": "https://www.google.com/s2/favicons?domain=ec.europa.eu&sz=128"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-01T13:04:30.171Z",
+      "fetchedAt": "2026-04-01T15:26:46.535Z",
       "updatedAt": "2026-03-31T17:01:28.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
@@ -2807,15 +3097,30 @@
         "mdoc",
         "pda1"
       ],
+      "sectors": [
+        "agriculture",
+        "construction",
+        "healthcare",
+        "manufacturing",
+        "public_sector",
+        "supply_chain"
+      ],
+      "ecosystems": [
+        "eudi_wallet"
+      ],
+      "themes": [
+        "compliance_reporting",
+        "person_identity"
+      ],
       "orgId": "org:eu",
       "provider": {
         "name": "European Commission - Government",
         "website": "https://github.com/eu-digital-identity-wallet",
         "logo": "https://www.google.com/s2/favicons?domain=ec.europa.eu&sz=128"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-01T13:04:30.171Z",
+      "fetchedAt": "2026-04-01T15:26:46.535Z",
       "updatedAt": "2026-03-31T17:01:28.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
@@ -2933,15 +3238,37 @@
         "mdoc",
         "photoid"
       ],
+      "sectors": [
+        "agriculture",
+        "construction",
+        "digital",
+        "education",
+        "energy",
+        "finance",
+        "food",
+        "healthcare",
+        "manufacturing",
+        "mobility",
+        "public_sector",
+        "retail",
+        "supply_chain",
+        "trade"
+      ],
+      "ecosystems": [
+        "eudi_wallet"
+      ],
+      "themes": [
+        "person_identity"
+      ],
       "orgId": "org:eu",
       "provider": {
         "name": "European Commission - Government",
         "website": "https://github.com/eu-digital-identity-wallet",
         "logo": "https://www.google.com/s2/favicons?domain=ec.europa.eu&sz=128"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-01T13:04:30.171Z",
+      "fetchedAt": "2026-04-01T15:26:46.535Z",
       "updatedAt": "2026-03-31T17:01:28.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
@@ -3150,15 +3477,41 @@
         "mdoc",
         "pid"
       ],
+      "sectors": [
+        "agriculture",
+        "construction",
+        "digital",
+        "education",
+        "energy",
+        "finance",
+        "food",
+        "healthcare",
+        "manufacturing",
+        "mobility",
+        "public_sector",
+        "retail",
+        "supply_chain",
+        "trade"
+      ],
+      "ecosystems": [
+        "eudi_wallet",
+        "gaia_x"
+      ],
+      "themes": [
+        "dataspaces",
+        "education",
+        "payments",
+        "person_identity"
+      ],
       "orgId": "org:eu",
       "provider": {
         "name": "European Commission - Government",
         "website": "https://github.com/eu-digital-identity-wallet",
         "logo": "https://www.google.com/s2/favicons?domain=ec.europa.eu&sz=128"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-01T13:04:30.171Z",
+      "fetchedAt": "2026-04-01T15:26:46.535Z",
       "updatedAt": "2026-03-31T17:01:28.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
@@ -3374,15 +3727,41 @@
         "mdoc",
         "pid-mdoc-deferred"
       ],
+      "sectors": [
+        "agriculture",
+        "construction",
+        "digital",
+        "education",
+        "energy",
+        "finance",
+        "food",
+        "healthcare",
+        "manufacturing",
+        "mobility",
+        "public_sector",
+        "retail",
+        "supply_chain",
+        "trade"
+      ],
+      "ecosystems": [
+        "eudi_wallet",
+        "gaia_x"
+      ],
+      "themes": [
+        "dataspaces",
+        "education",
+        "payments",
+        "person_identity"
+      ],
       "orgId": "org:eu",
       "provider": {
         "name": "European Commission - Government",
         "website": "https://github.com/eu-digital-identity-wallet",
         "logo": "https://www.google.com/s2/favicons?domain=ec.europa.eu&sz=128"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-01T13:04:30.171Z",
+      "fetchedAt": "2026-04-01T15:26:46.535Z",
       "updatedAt": "2026-03-31T17:01:28.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
@@ -3598,15 +3977,38 @@
         "mdoc",
         "por"
       ],
+      "sectors": [
+        "agriculture",
+        "construction",
+        "digital",
+        "education",
+        "energy",
+        "finance",
+        "food",
+        "healthcare",
+        "manufacturing",
+        "mobility",
+        "public_sector",
+        "retail",
+        "supply_chain",
+        "trade"
+      ],
+      "ecosystems": [
+        "eudi_wallet"
+      ],
+      "themes": [
+        "organizational_identity",
+        "person_identity"
+      ],
       "orgId": "org:eu",
       "provider": {
         "name": "European Commission - Government",
         "website": "https://github.com/eu-digital-identity-wallet",
         "logo": "https://www.google.com/s2/favicons?domain=ec.europa.eu&sz=128"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-01T13:04:30.171Z",
+      "fetchedAt": "2026-04-01T15:26:46.535Z",
       "updatedAt": "2026-03-31T17:01:28.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
@@ -3717,15 +4119,30 @@
         "mdoc",
         "seafarer"
       ],
+      "sectors": [
+        "energy",
+        "manufacturing",
+        "mobility",
+        "public_sector",
+        "supply_chain",
+        "trade"
+      ],
+      "ecosystems": [
+        "eudi_wallet"
+      ],
+      "themes": [
+        "compliance_reporting",
+        "person_identity"
+      ],
       "orgId": "org:eu",
       "provider": {
         "name": "European Commission - Government",
         "website": "https://github.com/eu-digital-identity-wallet",
         "logo": "https://www.google.com/s2/favicons?domain=ec.europa.eu&sz=128"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-01T13:04:30.171Z",
+      "fetchedAt": "2026-04-01T15:26:46.535Z",
       "updatedAt": "2026-03-31T17:01:28.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
@@ -3885,15 +4302,40 @@
         "mdoc",
         "tax"
       ],
+      "sectors": [
+        "agriculture",
+        "construction",
+        "digital",
+        "education",
+        "energy",
+        "finance",
+        "food",
+        "healthcare",
+        "manufacturing",
+        "mobility",
+        "public_sector",
+        "retail",
+        "supply_chain",
+        "trade"
+      ],
+      "ecosystems": [
+        "eudi_wallet"
+      ],
+      "themes": [
+        "agentic_ai",
+        "compliance_reporting",
+        "organizational_identity",
+        "person_identity"
+      ],
       "orgId": "org:eu",
       "provider": {
         "name": "European Commission - Government",
         "website": "https://github.com/eu-digital-identity-wallet",
         "logo": "https://www.google.com/s2/favicons?domain=ec.europa.eu&sz=128"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-01T13:04:30.171Z",
+      "fetchedAt": "2026-04-01T15:26:46.535Z",
       "updatedAt": "2026-03-31T17:01:28.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
@@ -4025,15 +4467,37 @@
         "mdoc",
         "reservation"
       ],
+      "sectors": [
+        "agriculture",
+        "construction",
+        "digital",
+        "education",
+        "energy",
+        "finance",
+        "food",
+        "healthcare",
+        "manufacturing",
+        "mobility",
+        "public_sector",
+        "retail",
+        "supply_chain",
+        "trade"
+      ],
+      "ecosystems": [
+        "eudi_wallet"
+      ],
+      "themes": [
+        "person_identity"
+      ],
       "orgId": "org:eu",
       "provider": {
         "name": "European Commission - Government",
         "website": "https://github.com/eu-digital-identity-wallet",
         "logo": "https://www.google.com/s2/favicons?domain=ec.europa.eu&sz=128"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-01T13:04:30.171Z",
+      "fetchedAt": "2026-04-01T15:26:46.535Z",
       "updatedAt": "2026-03-31T17:01:28.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
@@ -4158,15 +4622,34 @@
         "mdoc",
         "age-verification"
       ],
+      "sectors": [
+        "digital",
+        "education",
+        "healthcare",
+        "mobility",
+        "public_sector",
+        "retail"
+      ],
+      "ecosystems": [
+        "eudi_wallet",
+        "india_stack",
+        "iso_mdl",
+        "open_badges"
+      ],
+      "themes": [
+        "agentic_ai",
+        "education",
+        "person_identity"
+      ],
       "orgId": "org:eu",
       "provider": {
         "name": "European Commission - Government",
         "website": "https://github.com/eu-digital-identity-wallet",
         "logo": "https://www.google.com/s2/favicons?domain=ec.europa.eu&sz=128"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-01T13:04:30.171Z",
+      "fetchedAt": "2026-04-01T15:26:46.535Z",
       "updatedAt": "2026-03-31T17:01:28.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
@@ -4250,15 +4733,27 @@
         "vehicle",
         "registration"
       ],
+      "sectors": [
+        "mobility",
+        "public_sector",
+        "retail",
+        "supply_chain"
+      ],
+      "ecosystems": [
+        "eudi_wallet"
+      ],
+      "themes": [
+        "person_identity"
+      ],
       "orgId": "org:eu",
       "provider": {
         "name": "European Commission - Government",
         "website": "https://github.com/eu-digital-identity-wallet",
         "logo": "https://www.google.com/s2/favicons?domain=ec.europa.eu&sz=128"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-01T13:04:30.171Z",
+      "fetchedAt": "2026-04-01T15:26:46.535Z",
       "updatedAt": "2026-03-31T17:01:28.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
@@ -4356,15 +4851,37 @@
         "photo-id",
         "identity"
       ],
+      "sectors": [
+        "agriculture",
+        "construction",
+        "digital",
+        "education",
+        "energy",
+        "finance",
+        "food",
+        "healthcare",
+        "manufacturing",
+        "mobility",
+        "public_sector",
+        "retail",
+        "supply_chain",
+        "trade"
+      ],
+      "ecosystems": [
+        "eudi_wallet"
+      ],
+      "themes": [
+        "person_identity"
+      ],
       "orgId": "org:eu",
       "provider": {
         "name": "European Commission - Government",
         "website": "https://github.com/eu-digital-identity-wallet",
         "logo": "https://www.google.com/s2/favicons?domain=ec.europa.eu&sz=128"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-01T13:04:30.171Z",
+      "fetchedAt": "2026-04-01T15:26:46.535Z",
       "updatedAt": "2026-03-31T17:01:28.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
@@ -4453,15 +4970,30 @@
         "pda1",
         "social-security"
       ],
+      "sectors": [
+        "agriculture",
+        "construction",
+        "healthcare",
+        "manufacturing",
+        "public_sector",
+        "supply_chain"
+      ],
+      "ecosystems": [
+        "eudi_wallet"
+      ],
+      "themes": [
+        "compliance_reporting",
+        "person_identity"
+      ],
       "orgId": "org:ewc",
       "provider": {
         "name": "EWC - European Wallet Consortium",
         "website": "https://dss.aegean.gr",
         "logo": "https://avatars.githubusercontent.com/u/140810559?v=4"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/ewc/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/ewc/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-01T13:04:30.171Z",
+      "fetchedAt": "2026-04-01T15:26:46.535Z",
       "updatedAt": "2026-03-31T17:01:28.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
@@ -4502,15 +5034,24 @@
         "pda2",
         "social-security"
       ],
+      "sectors": [
+        "public_sector"
+      ],
+      "ecosystems": [
+        "eudi_wallet"
+      ],
+      "themes": [
+        "person_identity"
+      ],
       "orgId": "org:ewc",
       "provider": {
         "name": "EWC - European Wallet Consortium",
         "website": "https://dss.aegean.gr",
         "logo": "https://avatars.githubusercontent.com/u/140810559?v=4"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/ewc/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/ewc/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-01T13:04:30.171Z",
+      "fetchedAt": "2026-04-01T15:26:46.535Z",
       "updatedAt": "2026-03-31T17:01:28.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
@@ -4551,15 +5092,25 @@
         "id-card",
         "identity"
       ],
+      "sectors": [
+        "digital",
+        "public_sector"
+      ],
+      "ecosystems": [
+        "eudi_wallet"
+      ],
+      "themes": [
+        "person_identity"
+      ],
       "orgId": "org:ewc",
       "provider": {
         "name": "EWC - European Wallet Consortium",
         "website": "https://dss.aegean.gr",
         "logo": "https://avatars.githubusercontent.com/u/140810559?v=4"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/ewc/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/ewc/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-01T13:04:30.171Z",
+      "fetchedAt": "2026-04-01T15:26:46.535Z",
       "updatedAt": "2026-03-31T17:01:28.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
@@ -4642,15 +5193,25 @@
         "pid",
         "identity"
       ],
+      "sectors": [
+        "digital",
+        "public_sector"
+      ],
+      "ecosystems": [
+        "eudi_wallet"
+      ],
+      "themes": [
+        "person_identity"
+      ],
       "orgId": "org:ewc",
       "provider": {
         "name": "EWC - European Wallet Consortium",
         "website": "https://dss.aegean.gr",
         "logo": "https://avatars.githubusercontent.com/u/140810559?v=4"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/ewc/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/ewc/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-01T13:04:30.171Z",
+      "fetchedAt": "2026-04-01T15:26:46.535Z",
       "updatedAt": "2026-03-31T17:01:28.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
@@ -4733,15 +5294,25 @@
         "epassport",
         "travel"
       ],
+      "sectors": [
+        "digital",
+        "public_sector"
+      ],
+      "ecosystems": [
+        "eudi_wallet"
+      ],
+      "themes": [
+        "person_identity"
+      ],
       "orgId": "org:ewc",
       "provider": {
         "name": "EWC - European Wallet Consortium",
         "website": "https://dss.aegean.gr",
         "logo": "https://avatars.githubusercontent.com/u/140810559?v=4"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/ewc/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/ewc/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-01T13:04:30.171Z",
+      "fetchedAt": "2026-04-01T15:26:46.535Z",
       "updatedAt": "2026-03-31T17:01:28.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
@@ -4782,15 +5353,25 @@
         "student-id",
         "education"
       ],
+      "sectors": [
+        "education"
+      ],
+      "ecosystems": [
+        "eudi_wallet"
+      ],
+      "themes": [
+        "education",
+        "person_identity"
+      ],
       "orgId": "org:ewc",
       "provider": {
         "name": "EWC - European Wallet Consortium",
         "website": "https://dss.aegean.gr",
         "logo": "https://avatars.githubusercontent.com/u/140810559?v=4"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/ewc/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/ewc/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-01T13:04:30.171Z",
+      "fetchedAt": "2026-04-01T15:26:46.535Z",
       "updatedAt": "2026-03-31T17:01:28.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
@@ -4895,15 +5476,24 @@
         "travel",
         "ferry"
       ],
+      "sectors": [
+        "mobility"
+      ],
+      "ecosystems": [
+        "eudi_wallet"
+      ],
+      "themes": [
+        "person_identity"
+      ],
       "orgId": "org:ewc",
       "provider": {
         "name": "EWC - European Wallet Consortium",
         "website": "https://dss.aegean.gr",
         "logo": "https://avatars.githubusercontent.com/u/140810559?v=4"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/ewc/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/ewc/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-01T13:04:30.171Z",
+      "fetchedAt": "2026-04-01T15:26:46.535Z",
       "updatedAt": "2026-03-31T17:01:28.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
@@ -4993,15 +5583,29 @@
         "receipt",
         "payment"
       ],
+      "sectors": [
+        "digital",
+        "finance",
+        "public_sector",
+        "retail"
+      ],
+      "ecosystems": [
+        "eudi_wallet"
+      ],
+      "themes": [
+        "compliance_reporting",
+        "payments",
+        "trade_documents"
+      ],
       "orgId": "org:ewc",
       "provider": {
         "name": "EWC - European Wallet Consortium",
         "website": "https://dss.aegean.gr",
         "logo": "https://avatars.githubusercontent.com/u/140810559?v=4"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/ewc/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/ewc/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-01T13:04:30.171Z",
+      "fetchedAt": "2026-04-01T15:26:46.535Z",
       "updatedAt": "2026-03-31T17:01:28.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
@@ -5064,15 +5668,25 @@
         "eudi",
         "identity"
       ],
+      "sectors": [
+        "digital",
+        "public_sector"
+      ],
+      "ecosystems": [
+        "eudi_wallet"
+      ],
+      "themes": [
+        "person_identity"
+      ],
       "orgId": "org:ewc",
       "provider": {
         "name": "EWC - European Wallet Consortium",
         "website": "https://dss.aegean.gr",
         "logo": "https://avatars.githubusercontent.com/u/140810559?v=4"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/ewc/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/ewc/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-01T13:04:30.171Z",
+      "fetchedAt": "2026-04-01T15:26:46.535Z",
       "updatedAt": "2026-03-31T17:01:28.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
@@ -5156,15 +5770,25 @@
         "eudi",
         "mdoc"
       ],
+      "sectors": [
+        "digital",
+        "public_sector"
+      ],
+      "ecosystems": [
+        "eudi_wallet"
+      ],
+      "themes": [
+        "person_identity"
+      ],
       "orgId": "org:ewc",
       "provider": {
         "name": "EWC - European Wallet Consortium",
         "website": "https://dss.aegean.gr",
         "logo": "https://avatars.githubusercontent.com/u/140810559?v=4"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/ewc/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/ewc/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-01T13:04:30.171Z",
+      "fetchedAt": "2026-04-01T15:26:46.535Z",
       "updatedAt": "2026-03-31T17:01:28.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
@@ -5247,15 +5871,26 @@
         "payment",
         "wallet-attestation"
       ],
+      "sectors": [
+        "digital",
+        "finance",
+        "retail"
+      ],
+      "ecosystems": [
+        "eudi_wallet"
+      ],
+      "themes": [
+        "payments"
+      ],
       "orgId": "org:ewc",
       "provider": {
         "name": "EWC - European Wallet Consortium",
         "website": "https://dss.aegean.gr",
         "logo": "https://avatars.githubusercontent.com/u/140810559?v=4"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/ewc/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/ewc/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-01T13:04:30.171Z",
+      "fetchedAt": "2026-04-01T15:26:46.535Z",
       "updatedAt": "2026-03-31T17:01:28.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
@@ -5296,15 +5931,25 @@
         "photo-id",
         "identity"
       ],
+      "sectors": [
+        "digital",
+        "public_sector"
+      ],
+      "ecosystems": [
+        "eudi_wallet"
+      ],
+      "themes": [
+        "person_identity"
+      ],
       "orgId": "org:ewc",
       "provider": {
         "name": "EWC - European Wallet Consortium",
         "website": "https://dss.aegean.gr",
         "logo": "https://avatars.githubusercontent.com/u/140810559?v=4"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/ewc/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/ewc/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-01T13:04:30.171Z",
+      "fetchedAt": "2026-04-01T15:26:46.535Z",
       "updatedAt": "2026-03-31T17:01:28.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
@@ -5351,15 +5996,26 @@
         "ewc",
         "contact-details"
       ],
+      "sectors": [
+        "digital",
+        "public_sector",
+        "retail"
+      ],
+      "ecosystems": [
+        "eudi_wallet"
+      ],
+      "themes": [
+        "person_identity"
+      ],
       "orgId": "org:ewc",
       "provider": {
         "name": "EWC - European Wallet Consortium",
         "website": "https://dss.aegean.gr",
         "logo": "https://avatars.githubusercontent.com/u/140810559?v=4"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/ewc/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/ewc/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-01T13:04:30.171Z",
+      "fetchedAt": "2026-04-01T15:26:46.535Z",
       "updatedAt": "2026-03-31T17:01:28.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
@@ -5434,15 +6090,25 @@
         "ewc",
         "loyalty-card"
       ],
+      "sectors": [
+        "retail"
+      ],
+      "ecosystems": [
+        "eudi_wallet"
+      ],
+      "themes": [
+        "payments",
+        "person_identity"
+      ],
       "orgId": "org:ewc",
       "provider": {
         "name": "EWC - European Wallet Consortium",
         "website": "https://dss.aegean.gr",
         "logo": "https://avatars.githubusercontent.com/u/140810559?v=4"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/ewc/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/ewc/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-01T13:04:30.171Z",
+      "fetchedAt": "2026-04-01T15:26:46.535Z",
       "updatedAt": "2026-03-31T17:01:28.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
@@ -5510,6 +6176,15 @@
         "fides",
         "lpid"
       ],
+      "sectors": [
+        "public_sector"
+      ],
+      "ecosystems": [
+        "eudi_wallet"
+      ],
+      "themes": [
+        "organizational_identity"
+      ],
       "orgId": "org:fides",
       "provider": {
         "name": "FIDES Labs",
@@ -5517,9 +6192,9 @@
         "website": "https://fides.community",
         "logo": "https://avatars.githubusercontent.com/u/119322214?v=4"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-01T13:04:30.171Z",
+      "fetchedAt": "2026-04-01T15:26:46.535Z",
       "updatedAt": "2026-03-15T00:00:00.000Z",
       "firstSeenAt": "2026-03-15T00:00:00.000Z",
       "attributes": [
@@ -5614,6 +6289,16 @@
         "fides",
         "bri"
       ],
+      "sectors": [
+        "digital",
+        "public_sector"
+      ],
+      "ecosystems": [
+        "eudi_wallet"
+      ],
+      "themes": [
+        "organizational_identity"
+      ],
       "orgId": "org:fides",
       "provider": {
         "name": "FIDES Labs",
@@ -5621,9 +6306,9 @@
         "website": "https://fides.community",
         "logo": "https://avatars.githubusercontent.com/u/119322214?v=4"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-01T13:04:30.171Z",
+      "fetchedAt": "2026-04-01T15:26:46.535Z",
       "updatedAt": "2026-03-15T00:00:00.000Z",
       "firstSeenAt": "2026-03-15T00:00:00.000Z",
       "attributes": [
@@ -5768,6 +6453,16 @@
         "fides",
         "brp"
       ],
+      "sectors": [
+        "digital",
+        "public_sector"
+      ],
+      "ecosystems": [
+        "eudi_wallet"
+      ],
+      "themes": [
+        "person_identity"
+      ],
       "orgId": "org:fides",
       "provider": {
         "name": "FIDES Labs",
@@ -5775,9 +6470,9 @@
         "website": "https://fides.community",
         "logo": "https://avatars.githubusercontent.com/u/119322214?v=4"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-01T13:04:30.171Z",
+      "fetchedAt": "2026-04-01T15:26:46.535Z",
       "updatedAt": "2026-03-15T00:00:00.000Z",
       "firstSeenAt": "2026-03-15T00:00:00.000Z",
       "attributes": [
@@ -5915,6 +6610,17 @@
         "fides",
         "company-roles"
       ],
+      "sectors": [
+        "digital",
+        "public_sector"
+      ],
+      "ecosystems": [
+        "eudi_wallet"
+      ],
+      "themes": [
+        "organizational_identity",
+        "person_identity"
+      ],
       "orgId": "org:fides",
       "provider": {
         "name": "FIDES Labs",
@@ -5922,9 +6628,9 @@
         "website": "https://fides.community",
         "logo": "https://avatars.githubusercontent.com/u/119322214?v=4"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-01T13:04:30.171Z",
+      "fetchedAt": "2026-04-01T15:26:46.535Z",
       "updatedAt": "2026-03-15T00:00:00.000Z",
       "firstSeenAt": "2026-03-15T00:00:00.000Z",
       "attributes": [
@@ -6054,6 +6760,16 @@
         "fides",
         "contact-details"
       ],
+      "sectors": [
+        "digital",
+        "public_sector"
+      ],
+      "ecosystems": [
+        "eudi_wallet"
+      ],
+      "themes": [
+        "person_identity"
+      ],
       "orgId": "org:fides",
       "provider": {
         "name": "FIDES Labs",
@@ -6061,9 +6777,9 @@
         "website": "https://fides.community",
         "logo": "https://avatars.githubusercontent.com/u/119322214?v=4"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-01T13:04:30.171Z",
+      "fetchedAt": "2026-04-01T15:26:46.535Z",
       "updatedAt": "2026-03-15T00:00:00.000Z",
       "firstSeenAt": "2026-03-15T00:00:00.000Z",
       "attributes": [
@@ -6167,6 +6883,19 @@
         "fides",
         "einvoicing"
       ],
+      "sectors": [
+        "digital",
+        "public_sector",
+        "supply_chain",
+        "trade"
+      ],
+      "ecosystems": [
+        "eudi_wallet"
+      ],
+      "themes": [
+        "payments",
+        "trade_documents"
+      ],
       "orgId": "org:fides",
       "provider": {
         "name": "FIDES Labs",
@@ -6174,9 +6903,9 @@
         "website": "https://fides.community",
         "logo": "https://avatars.githubusercontent.com/u/119322214?v=4"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-01T13:04:30.171Z",
+      "fetchedAt": "2026-04-01T15:26:46.535Z",
       "updatedAt": "2026-03-15T00:00:00.000Z",
       "firstSeenAt": "2026-03-15T00:00:00.000Z",
       "attributes": [
@@ -6299,6 +7028,16 @@
         "fides",
         "green-lane"
       ],
+      "sectors": [
+        "public_sector"
+      ],
+      "ecosystems": [
+        "eudi_wallet"
+      ],
+      "themes": [
+        "compliance_reporting",
+        "organizational_identity"
+      ],
       "orgId": "org:fides",
       "provider": {
         "name": "FIDES Labs",
@@ -6306,9 +7045,9 @@
         "website": "https://fides.community",
         "logo": "https://avatars.githubusercontent.com/u/119322214?v=4"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-01T13:04:30.171Z",
+      "fetchedAt": "2026-04-01T15:26:46.535Z",
       "updatedAt": "2026-03-15T00:00:00.000Z",
       "firstSeenAt": "2026-03-15T00:00:00.000Z",
       "attributes": []
@@ -6332,6 +7071,16 @@
         "fides",
         "iban"
       ],
+      "sectors": [
+        "digital",
+        "finance"
+      ],
+      "ecosystems": [
+        "eudi_wallet"
+      ],
+      "themes": [
+        "payments"
+      ],
       "orgId": "org:fides",
       "provider": {
         "name": "FIDES Labs",
@@ -6339,9 +7088,9 @@
         "website": "https://fides.community",
         "logo": "https://avatars.githubusercontent.com/u/119322214?v=4"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-01T13:04:30.171Z",
+      "fetchedAt": "2026-04-01T15:26:46.535Z",
       "updatedAt": "2026-03-15T00:00:00.000Z",
       "firstSeenAt": "2026-03-15T00:00:00.000Z",
       "attributes": []
@@ -6366,6 +7115,16 @@
         "iscc",
         "sd"
       ],
+      "sectors": [
+        "public_sector",
+        "supply_chain"
+      ],
+      "ecosystems": [
+        "eudi_wallet"
+      ],
+      "themes": [
+        "compliance_reporting"
+      ],
       "orgId": "org:fides",
       "provider": {
         "name": "FIDES Labs",
@@ -6373,9 +7132,9 @@
         "website": "https://fides.community",
         "logo": "https://avatars.githubusercontent.com/u/119322214?v=4"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-01T13:04:30.171Z",
+      "fetchedAt": "2026-04-01T15:26:46.535Z",
       "updatedAt": "2026-03-15T00:00:00.000Z",
       "firstSeenAt": "2026-03-15T00:00:00.000Z",
       "attributes": [
@@ -6577,6 +7336,16 @@
         "iscc",
         "cert"
       ],
+      "sectors": [
+        "energy",
+        "public_sector"
+      ],
+      "ecosystems": [
+        "eudi_wallet"
+      ],
+      "themes": [
+        "compliance_reporting"
+      ],
       "orgId": "org:fides",
       "provider": {
         "name": "FIDES Labs",
@@ -6584,9 +7353,9 @@
         "website": "https://fides.community",
         "logo": "https://avatars.githubusercontent.com/u/119322214?v=4"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-01T13:04:30.171Z",
+      "fetchedAt": "2026-04-01T15:26:46.535Z",
       "updatedAt": "2026-03-15T00:00:00.000Z",
       "firstSeenAt": "2026-03-15T00:00:00.000Z",
       "attributes": [
@@ -6683,6 +7452,17 @@
         "iscc",
         "role"
       ],
+      "sectors": [
+        "public_sector",
+        "supply_chain"
+      ],
+      "ecosystems": [
+        "eudi_wallet"
+      ],
+      "themes": [
+        "compliance_reporting",
+        "organizational_identity"
+      ],
       "orgId": "org:fides",
       "provider": {
         "name": "FIDES Labs",
@@ -6690,9 +7470,9 @@
         "website": "https://fides.community",
         "logo": "https://avatars.githubusercontent.com/u/119322214?v=4"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-01T13:04:30.171Z",
+      "fetchedAt": "2026-04-01T15:26:46.535Z",
       "updatedAt": "2026-03-15T00:00:00.000Z",
       "firstSeenAt": "2026-03-15T00:00:00.000Z",
       "attributes": [
@@ -6733,6 +7513,16 @@
         "iscc",
         "cb"
       ],
+      "sectors": [
+        "digital",
+        "energy"
+      ],
+      "ecosystems": [
+        "eudi_wallet"
+      ],
+      "themes": [
+        "compliance_reporting"
+      ],
       "orgId": "org:fides",
       "provider": {
         "name": "FIDES Labs",
@@ -6740,9 +7530,9 @@
         "website": "https://fides.community",
         "logo": "https://avatars.githubusercontent.com/u/119322214?v=4"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-01T13:04:30.171Z",
+      "fetchedAt": "2026-04-01T15:26:46.535Z",
       "updatedAt": "2026-03-15T00:00:00.000Z",
       "firstSeenAt": "2026-03-15T00:00:00.000Z",
       "attributes": [
@@ -6853,6 +7643,17 @@
         "iscc",
         "rev-user"
       ],
+      "sectors": [
+        "energy",
+        "public_sector"
+      ],
+      "ecosystems": [
+        "eudi_wallet"
+      ],
+      "themes": [
+        "compliance_reporting",
+        "organizational_identity"
+      ],
       "orgId": "org:fides",
       "provider": {
         "name": "FIDES Labs",
@@ -6860,9 +7661,9 @@
         "website": "https://fides.community",
         "logo": "https://avatars.githubusercontent.com/u/119322214?v=4"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-01T13:04:30.171Z",
+      "fetchedAt": "2026-04-01T15:26:46.535Z",
       "updatedAt": "2026-03-15T00:00:00.000Z",
       "firstSeenAt": "2026-03-15T00:00:00.000Z",
       "attributes": [
@@ -6924,6 +7725,17 @@
         "notary",
         "incorporation"
       ],
+      "sectors": [
+        "finance",
+        "public_sector"
+      ],
+      "ecosystems": [
+        "eudi_wallet"
+      ],
+      "themes": [
+        "compliance_reporting",
+        "organizational_identity"
+      ],
       "orgId": "org:fides",
       "provider": {
         "name": "FIDES Labs",
@@ -6931,9 +7743,9 @@
         "website": "https://fides.community",
         "logo": "https://avatars.githubusercontent.com/u/119322214?v=4"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-01T13:04:30.171Z",
+      "fetchedAt": "2026-04-01T15:26:46.535Z",
       "updatedAt": "2026-03-15T00:00:00.000Z",
       "firstSeenAt": "2026-03-15T00:00:00.000Z",
       "attributes": [
@@ -7270,6 +8082,16 @@
         "fides",
         "pid"
       ],
+      "sectors": [
+        "digital",
+        "public_sector"
+      ],
+      "ecosystems": [
+        "eudi_wallet"
+      ],
+      "themes": [
+        "person_identity"
+      ],
       "orgId": "org:fides",
       "provider": {
         "name": "FIDES Labs",
@@ -7277,9 +8099,9 @@
         "website": "https://fides.community",
         "logo": "https://avatars.githubusercontent.com/u/119322214?v=4"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-01T13:04:30.171Z",
+      "fetchedAt": "2026-04-01T15:26:46.535Z",
       "updatedAt": "2026-03-15T00:00:00.000Z",
       "firstSeenAt": "2026-03-15T00:00:00.000Z",
       "attributes": [
@@ -7509,6 +8331,17 @@
         "fides",
         "vat"
       ],
+      "sectors": [
+        "finance",
+        "public_sector"
+      ],
+      "ecosystems": [
+        "eudi_wallet"
+      ],
+      "themes": [
+        "compliance_reporting",
+        "organizational_identity"
+      ],
       "orgId": "org:fides",
       "provider": {
         "name": "FIDES Labs",
@@ -7516,9 +8349,9 @@
         "website": "https://fides.community",
         "logo": "https://avatars.githubusercontent.com/u/119322214?v=4"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-01T13:04:30.171Z",
+      "fetchedAt": "2026-04-01T15:26:46.535Z",
       "updatedAt": "2026-03-15T00:00:00.000Z",
       "firstSeenAt": "2026-03-15T00:00:00.000Z",
       "attributes": [
@@ -7581,6 +8414,16 @@
         "organization",
         "profile"
       ],
+      "sectors": [
+        "digital",
+        "public_sector"
+      ],
+      "ecosystems": [
+        "eudi_wallet"
+      ],
+      "themes": [
+        "organizational_identity"
+      ],
       "orgId": "org:fides",
       "provider": {
         "name": "FIDES Labs",
@@ -7588,9 +8431,9 @@
         "website": "https://fides.community",
         "logo": "https://avatars.githubusercontent.com/u/119322214?v=4"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-01T13:04:30.171Z",
+      "fetchedAt": "2026-04-01T15:26:46.535Z",
       "updatedAt": "2026-03-15T00:00:00.000Z",
       "firstSeenAt": "2026-03-15T00:00:00.000Z",
       "attributes": [
@@ -7688,6 +8531,19 @@
         "criminal-record",
         "screening"
       ],
+      "sectors": [
+        "digital",
+        "education",
+        "healthcare",
+        "public_sector"
+      ],
+      "ecosystems": [
+        "eudi_wallet"
+      ],
+      "themes": [
+        "compliance_reporting",
+        "person_identity"
+      ],
       "orgId": "org:fides",
       "provider": {
         "name": "FIDES Labs",
@@ -7695,9 +8551,9 @@
         "website": "https://fides.community",
         "logo": "https://avatars.githubusercontent.com/u/119322214?v=4"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-01T13:04:30.171Z",
+      "fetchedAt": "2026-04-01T15:26:46.535Z",
       "updatedAt": "2026-03-15T00:00:00.000Z",
       "firstSeenAt": "2026-03-15T00:00:00.000Z",
       "attributes": [
@@ -7768,6 +8624,17 @@
         "employee",
         "employment"
       ],
+      "sectors": [
+        "digital",
+        "public_sector"
+      ],
+      "ecosystems": [
+        "eudi_wallet"
+      ],
+      "themes": [
+        "organizational_identity",
+        "person_identity"
+      ],
       "orgId": "org:fides",
       "provider": {
         "name": "FIDES Labs",
@@ -7775,9 +8642,9 @@
         "website": "https://fides.community",
         "logo": "https://avatars.githubusercontent.com/u/119322214?v=4"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-01T13:04:30.171Z",
+      "fetchedAt": "2026-04-01T15:26:46.535Z",
       "updatedAt": "2026-03-15T00:00:00.000Z",
       "firstSeenAt": "2026-03-15T00:00:00.000Z",
       "attributes": [
@@ -7829,6 +8696,16 @@
         "education",
         "diploma"
       ],
+      "sectors": [
+        "education"
+      ],
+      "ecosystems": [
+        "eudi_wallet"
+      ],
+      "themes": [
+        "education",
+        "person_identity"
+      ],
       "orgId": "org:fides",
       "provider": {
         "name": "FIDES Labs",
@@ -7836,9 +8713,9 @@
         "website": "https://fides.community",
         "logo": "https://avatars.githubusercontent.com/u/119322214?v=4"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-01T13:04:30.171Z",
+      "fetchedAt": "2026-04-01T15:26:46.535Z",
       "updatedAt": "2026-03-15T00:00:00.000Z",
       "firstSeenAt": "2026-03-15T00:00:00.000Z",
       "attributes": [
@@ -7908,6 +8785,15 @@
         "certificate",
         "certification"
       ],
+      "sectors": [
+        "manufacturing"
+      ],
+      "ecosystems": [
+        "eudi_wallet"
+      ],
+      "themes": [
+        "compliance_reporting"
+      ],
       "orgId": "org:fides",
       "provider": {
         "name": "FIDES Labs",
@@ -7915,9 +8801,9 @@
         "website": "https://fides.community",
         "logo": "https://avatars.githubusercontent.com/u/119322214?v=4"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-01T13:04:30.171Z",
+      "fetchedAt": "2026-04-01T15:26:46.535Z",
       "updatedAt": "2026-03-15T00:00:00.000Z",
       "firstSeenAt": "2026-03-15T00:00:00.000Z",
       "attributes": [
@@ -8009,6 +8895,16 @@
         "education",
         "certificate"
       ],
+      "sectors": [
+        "education"
+      ],
+      "ecosystems": [
+        "eudi_wallet"
+      ],
+      "themes": [
+        "education",
+        "person_identity"
+      ],
       "orgId": "org:fides",
       "provider": {
         "name": "FIDES Labs",
@@ -8016,9 +8912,9 @@
         "website": "https://fides.community",
         "logo": "https://avatars.githubusercontent.com/u/119322214?v=4"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-01T13:04:30.171Z",
+      "fetchedAt": "2026-04-01T15:26:46.535Z",
       "updatedAt": "2026-03-15T00:00:00.000Z",
       "firstSeenAt": "2026-03-15T00:00:00.000Z",
       "attributes": [
@@ -8097,14 +8993,41 @@
         "untp",
         "dcc"
       ],
+      "sectors": [
+        "agriculture",
+        "construction",
+        "digital",
+        "education",
+        "energy",
+        "finance",
+        "food",
+        "healthcare",
+        "manufacturing",
+        "mobility",
+        "public_sector",
+        "retail",
+        "supply_chain",
+        "trade"
+      ],
+      "ecosystems": [
+        "eudi_wallet",
+        "gaia_x",
+        "uncefact"
+      ],
+      "themes": [
+        "compliance_reporting",
+        "dataspaces",
+        "digital_product_passports",
+        "trade_documents"
+      ],
       "orgId": "org:uncefact",
       "provider": {
         "name": "UN/CEFACT",
         "website": "https://untp.unece.org"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/uncefact/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/uncefact/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-01T13:04:30.171Z",
+      "fetchedAt": "2026-04-01T15:26:46.535Z",
       "updatedAt": "2026-03-22T00:00:00.000Z",
       "firstSeenAt": "2026-03-22T00:00:00.000Z",
       "attributes": [
@@ -8189,14 +9112,36 @@
         "untp",
         "dpp"
       ],
+      "sectors": [
+        "agriculture",
+        "construction",
+        "digital",
+        "energy",
+        "food",
+        "manufacturing",
+        "public_sector",
+        "retail",
+        "supply_chain"
+      ],
+      "ecosystems": [
+        "eudi_wallet",
+        "gaia_x",
+        "uncefact"
+      ],
+      "themes": [
+        "compliance_reporting",
+        "dataspaces",
+        "digital_product_passports",
+        "trade_documents"
+      ],
       "orgId": "org:uncefact",
       "provider": {
         "name": "UN/CEFACT",
         "website": "https://untp.unece.org"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/uncefact/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/uncefact/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-01T13:04:30.171Z",
+      "fetchedAt": "2026-04-01T15:26:46.535Z",
       "updatedAt": "2026-03-22T00:00:00.000Z",
       "firstSeenAt": "2026-03-22T00:00:00.000Z",
       "attributes": [
@@ -8281,14 +9226,33 @@
         "untp",
         "dte"
       ],
+      "sectors": [
+        "agriculture",
+        "construction",
+        "food",
+        "manufacturing",
+        "public_sector",
+        "supply_chain",
+        "trade"
+      ],
+      "ecosystems": [
+        "eudi_wallet",
+        "uncefact"
+      ],
+      "themes": [
+        "compliance_reporting",
+        "dataspaces",
+        "digital_product_passports",
+        "trade_documents"
+      ],
       "orgId": "org:uncefact",
       "provider": {
         "name": "UN/CEFACT",
         "website": "https://untp.unece.org"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/uncefact/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/uncefact/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-01T13:04:30.171Z",
+      "fetchedAt": "2026-04-01T15:26:46.535Z",
       "updatedAt": "2026-03-22T00:00:00.000Z",
       "firstSeenAt": "2026-03-22T00:00:00.000Z",
       "attributes": [
@@ -8366,14 +9330,36 @@
         "untp",
         "dfr"
       ],
+      "sectors": [
+        "agriculture",
+        "construction",
+        "energy",
+        "food",
+        "manufacturing",
+        "public_sector",
+        "supply_chain",
+        "trade"
+      ],
+      "ecosystems": [
+        "eudi_wallet",
+        "gaia_x",
+        "uncefact"
+      ],
+      "themes": [
+        "compliance_reporting",
+        "dataspaces",
+        "digital_product_passports",
+        "organizational_identity",
+        "trade_documents"
+      ],
       "orgId": "org:uncefact",
       "provider": {
         "name": "UN/CEFACT",
         "website": "https://untp.unece.org"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/uncefact/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/uncefact/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-01T13:04:30.171Z",
+      "fetchedAt": "2026-04-01T15:26:46.535Z",
       "updatedAt": "2026-03-22T00:00:00.000Z",
       "firstSeenAt": "2026-03-22T00:00:00.000Z",
       "attributes": [
@@ -8458,14 +9444,41 @@
         "untp",
         "dia"
       ],
+      "sectors": [
+        "agriculture",
+        "construction",
+        "digital",
+        "education",
+        "energy",
+        "finance",
+        "food",
+        "healthcare",
+        "manufacturing",
+        "mobility",
+        "public_sector",
+        "retail",
+        "supply_chain",
+        "trade"
+      ],
+      "ecosystems": [
+        "eudi_wallet",
+        "uncefact"
+      ],
+      "themes": [
+        "compliance_reporting",
+        "dataspaces",
+        "digital_product_passports",
+        "organizational_identity",
+        "trade_documents"
+      ],
       "orgId": "org:uncefact",
       "provider": {
         "name": "UN/CEFACT",
         "website": "https://untp.unece.org"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/uncefact/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/uncefact/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-01T13:04:30.171Z",
+      "fetchedAt": "2026-04-01T15:26:46.535Z",
       "updatedAt": "2026-03-22T00:00:00.000Z",
       "firstSeenAt": "2026-03-22T00:00:00.000Z",
       "attributes": [
@@ -8550,14 +9563,42 @@
         "unvtd",
         "invoice"
       ],
+      "sectors": [
+        "agriculture",
+        "construction",
+        "digital",
+        "education",
+        "energy",
+        "finance",
+        "food",
+        "healthcare",
+        "manufacturing",
+        "mobility",
+        "public_sector",
+        "retail",
+        "supply_chain",
+        "trade"
+      ],
+      "ecosystems": [
+        "eudi_wallet",
+        "uncefact"
+      ],
+      "themes": [
+        "agentic_ai",
+        "compliance_reporting",
+        "dataspaces",
+        "digital_product_passports",
+        "payments",
+        "trade_documents"
+      ],
       "orgId": "org:uncefact",
       "provider": {
         "name": "UN/CEFACT",
         "website": "https://untp.unece.org"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/uncefact/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/uncefact/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-01T13:04:30.171Z",
+      "fetchedAt": "2026-04-01T15:26:46.535Z",
       "updatedAt": "2026-03-22T00:00:00.000Z",
       "firstSeenAt": "2026-03-22T00:00:00.000Z",
       "attributes": [
@@ -9331,14 +10372,30 @@
         "unvtd",
         "transport"
       ],
+      "sectors": [
+        "agriculture",
+        "energy",
+        "food",
+        "manufacturing",
+        "public_sector",
+        "supply_chain",
+        "trade"
+      ],
+      "ecosystems": [
+        "eudi_wallet",
+        "uncefact"
+      ],
+      "themes": [
+        "trade_documents"
+      ],
       "orgId": "org:uncefact",
       "provider": {
         "name": "UN/CEFACT",
         "website": "https://untp.unece.org"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/uncefact/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/uncefact/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-01T13:04:30.171Z",
+      "fetchedAt": "2026-04-01T15:26:46.535Z",
       "updatedAt": "2026-03-22T00:00:00.000Z",
       "firstSeenAt": "2026-03-22T00:00:00.000Z",
       "attributes": [
@@ -10266,14 +11323,34 @@
         "unvtd",
         "origin"
       ],
+      "sectors": [
+        "agriculture",
+        "construction",
+        "energy",
+        "food",
+        "manufacturing",
+        "public_sector",
+        "retail",
+        "supply_chain",
+        "trade"
+      ],
+      "ecosystems": [
+        "eudi_wallet",
+        "uncefact"
+      ],
+      "themes": [
+        "compliance_reporting",
+        "digital_product_passports",
+        "trade_documents"
+      ],
       "orgId": "org:uncefact",
       "provider": {
         "name": "UN/CEFACT",
         "website": "https://untp.unece.org"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/uncefact/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/uncefact/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-01T13:04:30.171Z",
+      "fetchedAt": "2026-04-01T15:26:46.535Z",
       "updatedAt": "2026-03-22T00:00:00.000Z",
       "firstSeenAt": "2026-03-22T00:00:00.000Z",
       "attributes": [
@@ -10964,14 +12041,31 @@
         "unvtd",
         "customs"
       ],
+      "sectors": [
+        "agriculture",
+        "food",
+        "manufacturing",
+        "public_sector",
+        "supply_chain",
+        "trade"
+      ],
+      "ecosystems": [
+        "eudi_wallet",
+        "uncefact"
+      ],
+      "themes": [
+        "compliance_reporting",
+        "digital_product_passports",
+        "trade_documents"
+      ],
       "orgId": "org:uncefact",
       "provider": {
         "name": "UN/CEFACT",
         "website": "https://untp.unece.org"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/uncefact/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/uncefact/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-01T13:04:30.171Z",
+      "fetchedAt": "2026-04-01T15:26:46.535Z",
       "updatedAt": "2026-03-22T00:00:00.000Z",
       "firstSeenAt": "2026-03-22T00:00:00.000Z",
       "attributes": [
@@ -11725,14 +12819,31 @@
         "unvtd",
         "insurance"
       ],
+      "sectors": [
+        "agriculture",
+        "finance",
+        "food",
+        "manufacturing",
+        "public_sector",
+        "supply_chain",
+        "trade"
+      ],
+      "ecosystems": [
+        "eudi_wallet",
+        "uncefact"
+      ],
+      "themes": [
+        "compliance_reporting",
+        "trade_documents"
+      ],
       "orgId": "org:uncefact",
       "provider": {
         "name": "UN/CEFACT",
         "website": "https://untp.unece.org"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/uncefact/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/uncefact/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-01T13:04:30.171Z",
+      "fetchedAt": "2026-04-01T15:26:46.535Z",
       "updatedAt": "2026-03-22T00:00:00.000Z",
       "firstSeenAt": "2026-03-22T00:00:00.000Z",
       "attributes": [
@@ -12471,14 +13582,31 @@
         "unvtd",
         "packing"
       ],
+      "sectors": [
+        "agriculture",
+        "food",
+        "manufacturing",
+        "public_sector",
+        "supply_chain",
+        "trade"
+      ],
+      "ecosystems": [
+        "eudi_wallet",
+        "uncefact"
+      ],
+      "themes": [
+        "compliance_reporting",
+        "digital_product_passports",
+        "trade_documents"
+      ],
       "orgId": "org:uncefact",
       "provider": {
         "name": "UN/CEFACT",
         "website": "https://untp.unece.org"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/uncefact/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/uncefact/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-01T13:04:30.171Z",
+      "fetchedAt": "2026-04-01T15:26:46.535Z",
       "updatedAt": "2026-03-22T00:00:00.000Z",
       "firstSeenAt": "2026-03-22T00:00:00.000Z",
       "attributes": [
@@ -13281,14 +14409,37 @@
         "unvtd",
         "order"
       ],
+      "sectors": [
+        "agriculture",
+        "construction",
+        "digital",
+        "education",
+        "energy",
+        "finance",
+        "food",
+        "healthcare",
+        "manufacturing",
+        "mobility",
+        "public_sector",
+        "retail",
+        "supply_chain",
+        "trade"
+      ],
+      "ecosystems": [
+        "eudi_wallet",
+        "uncefact"
+      ],
+      "themes": [
+        "trade_documents"
+      ],
       "orgId": "org:uncefact",
       "provider": {
         "name": "UN/CEFACT",
         "website": "https://untp.unece.org"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/uncefact/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/uncefact/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-01T13:04:30.171Z",
+      "fetchedAt": "2026-04-01T15:26:46.535Z",
       "updatedAt": "2026-03-22T00:00:00.000Z",
       "firstSeenAt": "2026-03-22T00:00:00.000Z",
       "attributes": [
@@ -13748,14 +14899,29 @@
         "unvtd",
         "warehouse"
       ],
+      "sectors": [
+        "finance",
+        "manufacturing",
+        "public_sector",
+        "supply_chain",
+        "trade"
+      ],
+      "ecosystems": [
+        "eudi_wallet",
+        "uncefact"
+      ],
+      "themes": [
+        "compliance_reporting",
+        "trade_documents"
+      ],
       "orgId": "org:uncefact",
       "provider": {
         "name": "UN/CEFACT",
         "website": "https://untp.unece.org"
       },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/uncefact/credential-catalog.json",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/uncefact/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-01T13:04:30.171Z",
+      "fetchedAt": "2026-04-01T15:26:46.535Z",
       "updatedAt": "2026-03-22T00:00:00.000Z",
       "firstSeenAt": "2026-03-22T00:00:00.000Z",
       "attributes": [
@@ -14218,6 +15384,41 @@
       "Software": 0,
       "Document": 10
     },
-    "withSchemaAttributes": 76
+    "withSchemaAttributes": 76,
+    "bySector": {
+      "construction": 24,
+      "digital": 44,
+      "education": 22,
+      "finance": 28,
+      "food": 24,
+      "healthcare": 26,
+      "mobility": 22,
+      "public_sector": 68,
+      "retail": 33,
+      "energy": 26,
+      "supply_chain": 34,
+      "trade": 27,
+      "agriculture": 26,
+      "manufacturing": 29
+    },
+    "byEcosystem": {
+      "eudi_wallet": 78,
+      "open_badges": 2,
+      "gaia_x": 7,
+      "india_stack": 2,
+      "uncefact": 14,
+      "iso_mdl": 2
+    },
+    "byTheme": {
+      "education": 9,
+      "person_identity": 46,
+      "payments": 13,
+      "compliance_reporting": 31,
+      "dataspaces": 10,
+      "agentic_ai": 8,
+      "digital_product_passports": 10,
+      "organizational_identity": 17,
+      "trade_documents": 16
+    }
   }
 }

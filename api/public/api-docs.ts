@@ -32,7 +32,7 @@ const OPENAPI_SPEC_BASE = {
       name: "Fides Credential Catalog",
       email: "catalog@fides.community",
     },
-    version: "2.0",
+    version: "2.2",
   },
   tags: [{ name: "Search API", description: "Search in the catalog" }],
   paths: {
@@ -56,6 +56,72 @@ const OPENAPI_SPEC_BASE = {
             in: "query",
             required: false,
             schema: { type: "array", items: { type: "string" } },
+          },
+          {
+            name: "sector",
+            in: "query",
+            required: false,
+            description:
+              "Filter by sector code (same taxonomy as the organization catalog). Repeat for OR semantics: credential matches if it has any selected sector.",
+            schema: {
+              type: "array",
+              items: {
+                type: "string",
+                enum: [
+                  "public_sector",
+                  "finance",
+                  "trade",
+                  "supply_chain",
+                  "manufacturing",
+                  "energy",
+                  "agriculture",
+                  "food",
+                  "retail",
+                  "healthcare",
+                  "education",
+                  "construction",
+                  "mobility",
+                  "digital",
+                ],
+              },
+            },
+          },
+          {
+            name: "ecosystem",
+            in: "query",
+            required: false,
+            description: "Filter by ecosystem code. Repeat for OR semantics.",
+            schema: {
+              type: "array",
+              items: {
+                type: "string",
+                enum: ["eudi_wallet", "uncefact", "gaia_x", "open_badges", "iso_mdl", "india_stack"],
+              },
+            },
+          },
+          {
+            name: "theme",
+            in: "query",
+            required: false,
+            description:
+              "Filter by use-case theme code. Repeat for OR semantics: credential matches if it has any selected theme.",
+            schema: {
+              type: "array",
+              items: {
+                type: "string",
+                enum: [
+                  "person_identity",
+                  "organizational_identity",
+                  "payments",
+                  "compliance_reporting",
+                  "trade_documents",
+                  "education",
+                  "digital_product_passports",
+                  "dataspaces",
+                  "agentic_ai",
+                ],
+              },
+            },
           },
           {
             name: "page",
@@ -117,6 +183,54 @@ const OPENAPI_SPEC_BASE = {
           schemaUrl: { type: "string", format: "uri" },
           schemaInfo: { type: "string", description: "Short description" },
           trustFrameworkUrl: { type: "string", format: "uri", description: "Rulebook URL when present" },
+          sectors: {
+            type: "array",
+            items: {
+              type: "string",
+              enum: [
+                "public_sector",
+                "finance",
+                "trade",
+                "supply_chain",
+                "manufacturing",
+                "energy",
+                "agriculture",
+                "food",
+                "retail",
+                "healthcare",
+                "education",
+                "construction",
+                "mobility",
+                "digital",
+              ],
+            },
+            description: "Sector codes (aligned with FIDES organization catalog)",
+          },
+          ecosystems: {
+            type: "array",
+            items: {
+              type: "string",
+              enum: ["eudi_wallet", "uncefact", "gaia_x", "open_badges", "iso_mdl", "india_stack"],
+            },
+          },
+          themes: {
+            type: "array",
+            items: {
+              type: "string",
+              enum: [
+                "person_identity",
+                "organizational_identity",
+                "payments",
+                "compliance_reporting",
+                "trade_documents",
+                "education",
+                "digital_product_passports",
+                "dataspaces",
+                "agentic_ai",
+              ],
+            },
+            description: "Optional use-case themes (empty array when not set in catalog)",
+          },
         },
       },
       PageMetadata: {

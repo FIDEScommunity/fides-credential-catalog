@@ -12,7 +12,61 @@
     'mdoc':      'mDL/mDoc',
   };
 
+  /** Same codes as organization catalog (English labels). */
+  const SECTOR_LABELS = {
+    public_sector: 'Public Sector',
+    finance: 'Finance',
+    trade: 'Trade',
+    supply_chain: 'Supply Chain',
+    manufacturing: 'Manufacturing',
+    energy: 'Energy',
+    agriculture: 'Agriculture',
+    food: 'Food',
+    retail: 'Retail',
+    healthcare: 'Healthcare',
+    education: 'Education',
+    construction: 'Construction',
+    mobility: 'Mobility',
+    digital: 'Digital',
+  };
+
+  const SECTOR_CODES_ALPHABETIC = Object.keys(SECTOR_LABELS).sort((a, b) =>
+    SECTOR_LABELS[a].localeCompare(SECTOR_LABELS[b], 'en', { sensitivity: 'base' }),
+  );
+
+  const ECOSYSTEM_LABELS = {
+    eudi_wallet: 'EUDI Wallet',
+    uncefact: 'UN/CEFACT',
+    gaia_x: 'Gaia-X',
+    open_badges: 'Open Badges',
+    iso_mdl: 'ISO mDL',
+    india_stack: 'India Stack',
+  };
+
+  const ECOSYSTEM_CODES_ALPHABETIC = Object.keys(ECOSYSTEM_LABELS).sort((a, b) =>
+    ECOSYSTEM_LABELS[a].localeCompare(ECOSYSTEM_LABELS[b], 'en', { sensitivity: 'base' }),
+  );
+
+  const THEME_LABELS = {
+    person_identity: 'Person identity',
+    organizational_identity: 'Organizational identity',
+    payments: 'Payments',
+    compliance_reporting: 'Compliance & reporting',
+    trade_documents: 'Trade documents',
+    education: 'Education',
+    digital_product_passports: 'Digital product passports',
+    dataspaces: 'Data spaces',
+    agentic_ai: 'Agentic AI',
+  };
+
+  const THEME_CODES_ALPHABETIC = Object.keys(THEME_LABELS).sort((a, b) =>
+    THEME_LABELS[a].localeCompare(THEME_LABELS[b], 'en', { sensitivity: 'base' }),
+  );
+
   const CREDENTIAL_FILTER_TO_VOCAB = {
+    sector:      'sector',
+    ecosystem:   'ecosystem',
+    theme:       'credentialTheme',
     vcFormat:    'credentialFormat',
     subjectType: 'subjectType',
     authority:   'authority',
@@ -109,6 +163,9 @@
     subjectType: [],
     authority: [],
     schemaType: [],
+    sector: [],
+    ecosystem: [],
+    theme: [],
     usedByRPsOnly: false,
     hasIssuersOnly: false,
     addedLast30Days: false,
@@ -118,10 +175,13 @@
 
   // IDs from ?credentials= URL param; preserved so the filter can be toggled back on
   let originalCredentialIds = [];
-  /* Collapsible groups: false = collapsed by default. Order in sidebar: Authority, Subject type, VC Format, Schema type */
+  /* Collapsible groups: false = collapsed by default. Sidebar order: Authority, Subject type, Sector, Ecosystem, Theme, VC Format, Schema type */
   const filterGroupState = {
     authority: true,
     subjectType: true,
+    sector: false,
+    ecosystem: false,
+    theme: false,
     vcFormat: false,
     schemaType: false
   };
@@ -439,6 +499,9 @@
       subjectType: {},
       authority: {},
       schemaType: {},
+      sector: {},
+      ecosystem: {},
+      theme: {},
       usedByRPsOnly: 0,
       addedLast30Days: 0,
       updatedLast30Days: 0
@@ -450,6 +513,21 @@
       const authorityName = credential.authority?.name || "Unknown";
       facets.authority[authorityName] = (facets.authority[authorityName] || 0) + 1;
       facets.schemaType[credential.schemaType] = (facets.schemaType[credential.schemaType] || 0) + 1;
+      for (const s of credential.sectors || []) {
+        if (typeof s === "string" && Object.prototype.hasOwnProperty.call(SECTOR_LABELS, s)) {
+          facets.sector[s] = (facets.sector[s] || 0) + 1;
+        }
+      }
+      for (const e of credential.ecosystems || []) {
+        if (typeof e === "string" && Object.prototype.hasOwnProperty.call(ECOSYSTEM_LABELS, e)) {
+          facets.ecosystem[e] = (facets.ecosystem[e] || 0) + 1;
+        }
+      }
+      for (const t of credential.themes || []) {
+        if (typeof t === "string" && Object.prototype.hasOwnProperty.call(THEME_LABELS, t)) {
+          facets.theme[t] = (facets.theme[t] || 0) + 1;
+        }
+      }
       if ((rpUsageMap.get(credential.id) || []).length > 0) facets.usedByRPsOnly += 1;
       if (isWithinLastDays(credential.firstSeenAt, 30)) facets.addedLast30Days += 1;
       if (isWithinLastDays(credential.updatedAt, 30)) facets.updatedLast30Days += 1;
@@ -475,12 +553,28 @@
       // ID pre-filter (from ?credentials= URL param)
       if (filters.ids.length > 0 && !filters.ids.includes(credential.id)) return false;
 
+      const sectorLabels = (credential.sectors || [])
+        .filter((s) => typeof s === "string" && SECTOR_LABELS[s])
+        .map((s) => SECTOR_LABELS[s]);
+      const ecosystemLabels = (credential.ecosystems || [])
+        .filter((e) => typeof e === "string" && ECOSYSTEM_LABELS[e])
+        .map((e) => ECOSYSTEM_LABELS[e]);
+      const themeLabels = (credential.themes || [])
+        .filter((t) => typeof t === "string" && THEME_LABELS[t])
+        .map((t) => THEME_LABELS[t]);
+
       const searchTarget = [
         credential.displayName,
         credential.schemaDescription || credential.shortDescription,
         credential.nativeIdentifier,
         credential.authority?.name,
         ...(credential.tags || []),
+        ...(credential.sectors || []),
+        ...(credential.ecosystems || []),
+        ...(credential.themes || []),
+        ...sectorLabels,
+        ...ecosystemLabels,
+        ...themeLabels,
         ...(credential.attributes || []).map(a => a.name)
       ]
         .filter(Boolean)
@@ -492,6 +586,9 @@
       if (filters.subjectType.length > 0 && !filters.subjectType.includes(credential.subjectType)) return false;
       if (filters.authority.length > 0 && !filters.authority.includes(credential.authority?.name || "")) return false;
       if (filters.schemaType.length > 0 && !filters.schemaType.includes(credential.schemaType)) return false;
+      if (filters.sector.length > 0 && !filters.sector.some((s) => (credential.sectors || []).includes(s))) return false;
+      if (filters.ecosystem.length > 0 && !filters.ecosystem.some((e) => (credential.ecosystems || []).includes(e))) return false;
+      if (filters.theme.length > 0 && !filters.theme.some((t) => (credential.themes || []).includes(t))) return false;
       if (filters.usedByRPsOnly && !(rpUsageMap.get(credential.id) || []).length) return false;
       if (filters.hasIssuersOnly && !(issuerUsageMap.get(credential.id) || []).length) return false;
       if (filters.addedLast30Days && !isWithinLastDays(credential.firstSeenAt, 30)) return false;
@@ -563,12 +660,14 @@
     `;
   }
 
-  function renderCheckboxGroup(title, key, options, facets) {
+  function renderCheckboxGroup(title, key, options, facets, labelMap) {
     if (options.length === 0) return "";
     const selected = filters[key] || [];
     const expanded = filterGroupState[key] !== false;
     const groupClass = expanded ? "" : "collapsed";
     const hasActiveClass = selected.length > 0 ? "has-active" : "";
+    const labels = labelMap || {};
+    const optionLabel = (opt) => labels[opt] || VC_FORMAT_LABELS[opt] || opt;
     return `
       <div class="fides-filter-group collapsible ${groupClass} ${hasActiveClass}" data-filter-group="${escapeHtml(key)}">
         <button class="fides-filter-label-toggle" type="button" aria-expanded="${expanded}">
@@ -584,7 +683,7 @@
                 <input type="checkbox" data-filter-group="${escapeHtml(key)}" value="${escapeHtml(option)}" ${
                   selected.includes(option) ? "checked" : ""
                 }>
-                <span>${escapeHtml(VC_FORMAT_LABELS[option] || option)}<span class="fides-filter-option-count">(${facets?.[key]?.[option] || 0})</span></span>
+                <span>${escapeHtml(optionLabel(option))}<span class="fides-filter-option-count">(${facets?.[key]?.[option] || 0})</span></span>
               </label>
             `
           )
@@ -639,6 +738,9 @@
         </div>
         ${renderCheckboxGroup("Authority", "authority", authorityOptions, filterFacets)}
         ${renderCheckboxGroup("Subject type", "subjectType", subjectOptions, filterFacets)}
+        ${renderCheckboxGroup("Sector", "sector", SECTOR_CODES_ALPHABETIC, filterFacets, SECTOR_LABELS)}
+        ${renderCheckboxGroup("Ecosystem", "ecosystem", ECOSYSTEM_CODES_ALPHABETIC, filterFacets, ECOSYSTEM_LABELS)}
+        ${renderCheckboxGroup("Theme", "theme", THEME_CODES_ALPHABETIC, filterFacets, THEME_LABELS)}
         ${renderCheckboxGroup("VC Format", "vcFormat", formatOptions, filterFacets)}
         ${renderCheckboxGroup("Schema type", "schemaType", schemaTypeOptions, filterFacets)}
         </div>
@@ -728,6 +830,41 @@
                 aria-label="List view" aria-pressed="${viewMode === 'list'}" title="List view">
           ${icons.viewList}
         </button>
+      </div>
+    `;
+  }
+
+  function renderCredentialModalTaxonomy(credential) {
+    const sc = (credential.sectors || []).filter(
+      (s) => typeof s === "string" && Object.prototype.hasOwnProperty.call(SECTOR_LABELS, s)
+    );
+    const ec = (credential.ecosystems || []).filter(
+      (e) => typeof e === "string" && Object.prototype.hasOwnProperty.call(ECOSYSTEM_LABELS, e)
+    );
+    const th = (credential.themes || []).filter(
+      (t) => typeof t === "string" && Object.prototype.hasOwnProperty.call(THEME_LABELS, t)
+    );
+    if (sc.length === 0 && ec.length === 0 && th.length === 0) return "";
+    const sectorInner = sc
+      .slice()
+      .sort((a, b) => SECTOR_LABELS[a].localeCompare(SECTOR_LABELS[b], "en", { sensitivity: "base" }))
+      .map((s) => `<span class="fides-tag">${escapeHtml(SECTOR_LABELS[s])}</span>`)
+      .join("");
+    const ecoInner = ec
+      .slice()
+      .sort((a, b) => ECOSYSTEM_LABELS[a].localeCompare(ECOSYSTEM_LABELS[b], "en", { sensitivity: "base" }))
+      .map((e) => `<span class="fides-tag">${escapeHtml(ECOSYSTEM_LABELS[e])}</span>`)
+      .join("");
+    const themeInner = th
+      .slice()
+      .sort((a, b) => THEME_LABELS[a].localeCompare(THEME_LABELS[b], "en", { sensitivity: "base" }))
+      .map((t) => `<span class="fides-tag fides-tag-theme">${escapeHtml(THEME_LABELS[t])}</span>`)
+      .join("");
+    return `
+      <div class="fides-modal-taxonomy fides-modal-intro">
+        ${sectorInner ? `<div class="fides-modal-taxonomy-row"><span class="fides-modal-taxonomy-label">${icons.tag} Sectors</span><div class="fides-modal-taxonomy-tags">${sectorInner}</div></div>` : ""}
+        ${ecoInner ? `<div class="fides-modal-taxonomy-row"><span class="fides-modal-taxonomy-label">${icons.wallet} Ecosystems</span><div class="fides-modal-taxonomy-tags">${ecoInner}</div></div>` : ""}
+        ${themeInner ? `<div class="fides-modal-taxonomy-row"><span class="fides-modal-taxonomy-label">${icons.filter} Themes</span><div class="fides-modal-taxonomy-tags">${themeInner}</div></div>` : ""}
       </div>
     `;
   }
@@ -831,6 +968,7 @@
 
             <!-- Intro: description only -->
             ${(selectedCredential.schemaDescription || selectedCredential.shortDescription) ? `<div class="fides-modal-intro"><p class="fides-modal-description">${escapeHtml(selectedCredential.schemaDescription || selectedCredential.shortDescription)}</p></div>` : ""}
+            ${renderCredentialModalTaxonomy(selectedCredential)}
 
             <!-- Ecosystem flow -->
             <div class="fides-accordion fides-modal-section">
@@ -1190,6 +1328,9 @@
     count += filters.subjectType.length;
     count += filters.authority.length;
     count += filters.schemaType.length;
+    count += filters.sector.length;
+    count += filters.ecosystem.length;
+    count += filters.theme.length;
     count += filters.ids.length;
     if (filters.usedByRPsOnly) count += 1;
     if (filters.hasIssuersOnly) count += 1;
@@ -1247,6 +1388,9 @@
         filters.subjectType = [];
         filters.authority = [];
         filters.schemaType = [];
+        filters.sector = [];
+        filters.ecosystem = [];
+        filters.theme = [];
         filters.hasSchemaUrl = null;
         filters.usedByRPsOnly = false;
         filters.addedLast30Days = false;
@@ -1380,6 +1524,8 @@
     });
 
     bindCredentialCardEvents();
+
+    initVocabularyInfo(root);
   }
 
   function bindModalBodyEvents() {
@@ -1447,8 +1593,6 @@
         });
       });
     });
-
-    initVocabularyInfo(root);
   }
 
   function bindCredentialCardEvents() {
@@ -1535,6 +1679,15 @@
     if (popup) popup.remove();
   }
 
+  /** Label text for a filter row, without the facet count span. */
+  function filterCheckboxLabelTextWithoutCount(label) {
+    const span = label.querySelector('span');
+    if (!span) return label.textContent.trim();
+    const clone = span.cloneNode(true);
+    clone.querySelectorAll('.fides-filter-option-count').forEach((el) => el.remove());
+    return clone.textContent.trim();
+  }
+
   function showVocabularyPopup(button, groupEl, vocabKey) {
     hideVocabularyPopup();
     const groupTerm = vocabulary[vocabKey];
@@ -1550,7 +1703,7 @@
         labels.forEach((label) => {
           const input = label.querySelector('input');
           const value = input ? (input.dataset.value || input.value) : '';
-          const labelText = (label.querySelector('span') || label).textContent.trim();
+          const labelText = filterCheckboxLabelTextWithoutCount(label);
           const term = vocabulary[value] || null;
           const desc = term && term.description ? escapeHtml(term.description) : '';
           listItems.push({ labelText, desc });

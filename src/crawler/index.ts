@@ -208,19 +208,34 @@ function calculateStats(credentials: NormalizedCredential[]): AggregatedCredenti
     Software: 0,
     Document: 0
   };
+  const bySector: Record<string, number> = {};
+  const byEcosystem: Record<string, number> = {};
+  const byTheme: Record<string, number> = {};
   let withSchemaAttributes = 0;
 
   for (const credential of credentials) {
     byFormat[credential.vcFormat] = (byFormat[credential.vcFormat] || 0) + 1;
     bySubjectType[credential.subjectType] += 1;
     if (credential.attributes.length > 0) withSchemaAttributes += 1;
+    for (const s of credential.sectors || []) {
+      bySector[s] = (bySector[s] || 0) + 1;
+    }
+    for (const e of credential.ecosystems || []) {
+      byEcosystem[e] = (byEcosystem[e] || 0) + 1;
+    }
+    for (const t of credential.themes || []) {
+      byTheme[t] = (byTheme[t] || 0) + 1;
+    }
   }
 
   return {
     totalCredentials: credentials.length,
     byFormat,
     bySubjectType,
-    withSchemaAttributes
+    withSchemaAttributes,
+    bySector,
+    byEcosystem,
+    byTheme
   };
 }
 
@@ -305,7 +320,7 @@ async function crawl(): Promise<void> {
   const deduped = Array.from(dedupeMap.values());
 
   const aggregated: AggregatedCredentialCatalog = {
-    schemaVersion: "1.2.0",
+    schemaVersion: "1.4.0",
     catalogType: "credential",
     lastUpdated: now,
     credentials: deduped,

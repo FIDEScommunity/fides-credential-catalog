@@ -1630,6 +1630,36 @@ a.fides-tag.wallet-link svg {
   margin-bottom: 1.25rem;
 }
 
+.fides-modal-taxonomy .fides-modal-taxonomy-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 0.5rem 0.75rem;
+  margin-top: 0.75rem;
+}
+
+.fides-modal-taxonomy .fides-modal-taxonomy-row:first-child {
+  margin-top: 0;
+}
+
+.fides-modal-taxonomy-label {
+  flex: 0 0 auto;
+  min-width: 7.5rem;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  opacity: 0.85;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.fides-modal-taxonomy-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  flex: 1 1 12rem;
+}
+
 .fides-modal-badge-row {
   display: flex;
   flex-wrap: wrap;
@@ -2398,6 +2428,10 @@ a.fides-eco-tag-purple:hover {
 .fides-modal-overlay[data-theme="light"] .fides-tag.credential-format {
   background: rgba(10, 110, 243, 0.1);
   color: #0a6ef3;
+}
+
+.fides-modal-taxonomy-tags .fides-tag-theme {
+  border-style: dashed;
 }
 
 /* Key:value 2-column layout for Other details */

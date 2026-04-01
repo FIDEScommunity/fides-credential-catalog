@@ -38,3 +38,9 @@ wordpress-plugin/*.zip
 
 # Documentation (local only, not pushed to GitHub)
 docs/
+
+# Local taxonomy tooling (kept out of the public repo)
+scripts/generate-taxonomy-matrix.mjs
+scripts/import-taxonomy-matrix.mjs
+scripts/inject-credential-themes.mjs
+data/credential-taxonomy-matrix.tsv

@@ -11,6 +11,44 @@ import { join } from "path";
 const CREDENTIAL_KIND = ["PERSONAL", "ORGANIZATIONAL", "PRODUCT", "UNKNOWN"] as const;
 type CredentialKind = (typeof CREDENTIAL_KIND)[number];
 
+const SECTOR_CODES = [
+  "public_sector",
+  "finance",
+  "trade",
+  "supply_chain",
+  "manufacturing",
+  "energy",
+  "agriculture",
+  "food",
+  "retail",
+  "healthcare",
+  "education",
+  "construction",
+  "mobility",
+  "digital",
+] as const;
+
+const ECOSYSTEM_CODES = [
+  "eudi_wallet",
+  "uncefact",
+  "gaia_x",
+  "open_badges",
+  "iso_mdl",
+  "india_stack",
+] as const;
+
+const THEME_CODES = [
+  "person_identity",
+  "organizational_identity",
+  "payments",
+  "compliance_reporting",
+  "trade_documents",
+  "education",
+  "digital_product_passports",
+  "dataspaces",
+  "agentic_ai",
+] as const;
+
 function subjectTypeToCredentialKind(subjectType: string): CredentialKind {
   const s = String(subjectType || "").trim();
   if (s === "Person") return "PERSONAL";
@@ -29,14 +67,26 @@ interface AggregatedCatalog {
     schemaUrl?: string;
     rulebookUrl?: string;
     updatedAt?: string;
+    sectors?: string[];
+    ecosystems?: string[];
+    themes?: string[];
   }>;
 }
 
+function arraysOverlap(selected: string[], values: string[] | undefined): boolean {
+  if (selected.length === 0) return true;
+  const set = new Set(values ?? []);
+  return selected.some((x) => set.has(x));
+}
+
 /** CredentialTypeDto: only fields we have; issuer fields omitted. */
-function toCredentialTypeDto(c: AggregatedCatalog["credentials"][0]): Record<string, string> {
-  const dto: Record<string, string> = {};
+function toCredentialTypeDto(c: AggregatedCatalog["credentials"][0]): Record<string, unknown> {
+  const dto: Record<string, unknown> = {};
   dto.id = c.id;
   dto.credentialKind = subjectTypeToCredentialKind(c.subjectType || "");
+  dto.sectors = Array.isArray(c.sectors) ? [...c.sectors] : [];
+  dto.ecosystems = Array.isArray(c.ecosystems) ? [...c.ecosystems] : [];
+  dto.themes = Array.isArray(c.themes) ? [...c.themes] : [];
   if (c.vcFormat) dto.credentialFormat = c.vcFormat;
   if (c.schemaUrl) dto.schemaUrl = c.schemaUrl;
   if (c.shortDescription) dto.schemaInfo = c.shortDescription;
@@ -76,6 +126,15 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
       CREDENTIAL_KIND.includes(k as CredentialKind)
     );
     const credentialFormat = parseQueryArray(req.query.credentialFormat);
+    const sectorFilter = parseQueryArray(req.query.sector).filter((s) =>
+      SECTOR_CODES.includes(s as (typeof SECTOR_CODES)[number])
+    );
+    const ecosystemFilter = parseQueryArray(req.query.ecosystem).filter((e) =>
+      ECOSYSTEM_CODES.includes(e as (typeof ECOSYSTEM_CODES)[number])
+    );
+    const themeFilter = parseQueryArray(req.query.theme).filter((t) =>
+      THEME_CODES.includes(t as (typeof THEME_CODES)[number])
+    );
 
     if (credentialKind.length > 0) {
       const kindSet = new Set(credentialKind);
@@ -85,17 +144,47 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
       const formatSet = new Set(credentialFormat);
       list = list.filter((c) => c.vcFormat && formatSet.has(c.vcFormat));
     }
+    if (sectorFilter.length > 0) {
+      list = list.filter((c) => arraysOverlap(sectorFilter, c.sectors));
+    }
+    if (ecosystemFilter.length > 0) {
+      list = list.filter((c) => arraysOverlap(ecosystemFilter, c.ecosystems));
+    }
+    if (themeFilter.length > 0) {
+      list = list.filter((c) => arraysOverlap(themeFilter, c.themes));
+    }
 
     const sortParam = req.query.sort;
     const sortStr = Array.isArray(sortParam) ? sortParam[0] : sortParam;
     if (typeof sortStr === "string" && sortStr.includes(",")) {
       const [field, dir] = sortStr.split(",").map((s) => s.trim());
       const asc = (dir || "asc").toLowerCase() !== "desc";
-      const key = field === "credentialFormat" ? "vcFormat" : field === "credentialKind" ? "subjectType" : field;
+      const key =
+        field === "credentialFormat"
+          ? "vcFormat"
+          : field === "credentialKind"
+            ? "subjectType"
+            : field === "id"
+              ? "id"
+              : field;
       list.sort((a, b) => {
-        const va = key === "subjectType" ? subjectTypeToCredentialKind((a as Record<string, string>)[key] || "") : (a as Record<string, string>)[key] ?? "";
-        const vb = key === "subjectType" ? subjectTypeToCredentialKind((b as Record<string, string>)[key] || "") : (b as Record<string, string>)[key] ?? "";
-        const cmp = String(va).localeCompare(String(vb), undefined, { sensitivity: "base" });
+        const ra = a as Record<string, unknown>;
+        const rb = b as Record<string, unknown>;
+        let va: string;
+        let vb: string;
+        if (key === "subjectType") {
+          va = subjectTypeToCredentialKind(String(ra.subjectType || ""));
+          vb = subjectTypeToCredentialKind(String(rb.subjectType || ""));
+        } else if (key === "sectors" || key === "ecosystems" || key === "themes") {
+          const aa = Array.isArray(ra[key]) ? (ra[key] as string[]).slice().sort().join(",") : "";
+          const bb = Array.isArray(rb[key]) ? (rb[key] as string[]).slice().sort().join(",") : "";
+          va = aa;
+          vb = bb;
+        } else {
+          va = String(ra[key] ?? "");
+          vb = String(rb[key] ?? "");
+        }
+        const cmp = va.localeCompare(vb, undefined, { sensitivity: "base" });
         return asc ? cmp : -cmp;
       });
     }
