@@ -1630,6 +1630,12 @@ a.fides-tag.wallet-link svg {
   margin-bottom: 1.25rem;
 }
 
+/* Taxonomy block placed under the FIDES Ecosystem Model in the modal */
+.fides-modal-taxonomy--below-ecosystem {
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
 .fides-modal-taxonomy .fides-modal-taxonomy-row {
   display: flex;
   flex-wrap: wrap;

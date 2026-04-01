@@ -861,7 +861,7 @@
       .map((t) => `<span class="fides-tag fides-tag-theme">${escapeHtml(THEME_LABELS[t])}</span>`)
       .join("");
     return `
-      <div class="fides-modal-taxonomy fides-modal-intro">
+      <div class="fides-modal-taxonomy fides-modal-taxonomy--below-ecosystem">
         ${sectorInner ? `<div class="fides-modal-taxonomy-row"><span class="fides-modal-taxonomy-label">${icons.tag} Sectors</span><div class="fides-modal-taxonomy-tags">${sectorInner}</div></div>` : ""}
         ${ecoInner ? `<div class="fides-modal-taxonomy-row"><span class="fides-modal-taxonomy-label">${icons.wallet} Ecosystems</span><div class="fides-modal-taxonomy-tags">${ecoInner}</div></div>` : ""}
         ${themeInner ? `<div class="fides-modal-taxonomy-row"><span class="fides-modal-taxonomy-label">${icons.filter} Themes</span><div class="fides-modal-taxonomy-tags">${themeInner}</div></div>` : ""}
@@ -968,7 +968,6 @@
 
             <!-- Intro: description only -->
             ${(selectedCredential.schemaDescription || selectedCredential.shortDescription) ? `<div class="fides-modal-intro"><p class="fides-modal-description">${escapeHtml(selectedCredential.schemaDescription || selectedCredential.shortDescription)}</p></div>` : ""}
-            ${renderCredentialModalTaxonomy(selectedCredential)}
 
             <!-- Ecosystem flow -->
             <div class="fides-accordion fides-modal-section">
@@ -1044,6 +1043,8 @@
 
               </div>
             </div>
+
+            ${renderCredentialModalTaxonomy(selectedCredential)}
 
             <!-- Attributes accordion -->
             <div class="fides-accordion" id="fides-accordion-data">
