@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.4.0",
   "catalogType": "credential",
-  "lastUpdated": "2026-04-01T15:59:28.703Z",
+  "lastUpdated": "2026-04-02T07:22:06.963Z",
   "credentials": [
     {
       "id": "cred:eu:diploma-vc-sd-jwt:sd-jwt-vc",
@@ -50,7 +50,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-01T15:59:28.703Z",
+      "fetchedAt": "2026-04-02T07:22:06.963Z",
       "updatedAt": "2026-04-01T15:58:06.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
@@ -209,7 +209,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-01T15:59:28.703Z",
+      "fetchedAt": "2026-04-02T07:22:06.963Z",
       "updatedAt": "2026-04-01T15:58:06.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
@@ -336,7 +336,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-01T15:59:28.703Z",
+      "fetchedAt": "2026-04-02T07:22:06.963Z",
       "updatedAt": "2026-04-01T15:58:06.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
@@ -512,7 +512,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-01T15:59:28.703Z",
+      "fetchedAt": "2026-04-02T07:22:06.963Z",
       "updatedAt": "2026-04-01T15:58:06.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
@@ -698,7 +698,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-01T15:59:28.703Z",
+      "fetchedAt": "2026-04-02T07:22:06.963Z",
       "updatedAt": "2026-04-01T15:58:06.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
@@ -832,7 +832,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-01T15:59:28.703Z",
+      "fetchedAt": "2026-04-02T07:22:06.963Z",
       "updatedAt": "2026-04-01T15:58:06.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
@@ -1187,7 +1187,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-01T15:59:28.703Z",
+      "fetchedAt": "2026-04-02T07:22:06.963Z",
       "updatedAt": "2026-04-01T15:58:06.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
@@ -1429,7 +1429,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-01T15:59:28.703Z",
+      "fetchedAt": "2026-04-02T07:22:06.963Z",
       "updatedAt": "2026-04-01T15:58:06.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
@@ -1565,7 +1565,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-01T15:59:28.703Z",
+      "fetchedAt": "2026-04-02T07:22:06.963Z",
       "updatedAt": "2026-04-01T15:58:06.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
@@ -1687,7 +1687,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-01T15:59:28.703Z",
+      "fetchedAt": "2026-04-02T07:22:06.963Z",
       "updatedAt": "2026-04-01T15:58:06.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
@@ -1841,7 +1841,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-01T15:59:28.703Z",
+      "fetchedAt": "2026-04-02T07:22:06.963Z",
       "updatedAt": "2026-04-01T15:58:06.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
@@ -1979,7 +1979,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-01T15:59:28.703Z",
+      "fetchedAt": "2026-04-02T07:22:06.963Z",
       "updatedAt": "2026-04-01T15:58:06.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
@@ -2120,7 +2120,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-01T15:59:28.703Z",
+      "fetchedAt": "2026-04-02T07:22:06.963Z",
       "updatedAt": "2026-04-01T15:58:06.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
@@ -2228,7 +2228,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-01T15:59:28.703Z",
+      "fetchedAt": "2026-04-02T07:22:06.963Z",
       "updatedAt": "2026-04-01T15:58:06.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
@@ -2412,7 +2412,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-01T15:59:28.703Z",
+      "fetchedAt": "2026-04-02T07:22:06.963Z",
       "updatedAt": "2026-04-01T15:58:06.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
@@ -2604,7 +2604,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-01T15:59:28.703Z",
+      "fetchedAt": "2026-04-02T07:22:06.963Z",
       "updatedAt": "2026-04-01T15:58:06.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
@@ -2701,7 +2701,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-01T15:59:28.703Z",
+      "fetchedAt": "2026-04-02T07:22:06.963Z",
       "updatedAt": "2026-04-01T15:58:06.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
@@ -2978,7 +2978,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-01T15:59:28.703Z",
+      "fetchedAt": "2026-04-02T07:22:06.963Z",
       "updatedAt": "2026-04-01T15:58:06.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
@@ -3119,7 +3119,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-01T15:59:28.703Z",
+      "fetchedAt": "2026-04-02T07:22:06.963Z",
       "updatedAt": "2026-04-01T15:58:06.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
@@ -3267,7 +3267,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-01T15:59:28.703Z",
+      "fetchedAt": "2026-04-02T07:22:06.963Z",
       "updatedAt": "2026-04-01T15:58:06.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
@@ -3510,7 +3510,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-01T15:59:28.703Z",
+      "fetchedAt": "2026-04-02T07:22:06.963Z",
       "updatedAt": "2026-04-01T15:58:06.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
@@ -3760,7 +3760,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-01T15:59:28.703Z",
+      "fetchedAt": "2026-04-02T07:22:06.963Z",
       "updatedAt": "2026-04-01T15:58:06.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
@@ -4007,7 +4007,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-01T15:59:28.703Z",
+      "fetchedAt": "2026-04-02T07:22:06.963Z",
       "updatedAt": "2026-04-01T15:58:06.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
@@ -4141,7 +4141,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-01T15:59:28.703Z",
+      "fetchedAt": "2026-04-02T07:22:06.963Z",
       "updatedAt": "2026-04-01T15:58:06.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
@@ -4334,7 +4334,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-01T15:59:28.703Z",
+      "fetchedAt": "2026-04-02T07:22:06.963Z",
       "updatedAt": "2026-04-01T15:58:06.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
@@ -4496,7 +4496,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-01T15:59:28.703Z",
+      "fetchedAt": "2026-04-02T07:22:06.963Z",
       "updatedAt": "2026-04-01T15:58:06.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
@@ -4647,7 +4647,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-01T15:59:28.703Z",
+      "fetchedAt": "2026-04-02T07:22:06.963Z",
       "updatedAt": "2026-04-01T15:58:06.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
@@ -4751,7 +4751,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-01T15:59:28.703Z",
+      "fetchedAt": "2026-04-02T07:22:06.963Z",
       "updatedAt": "2026-04-01T15:58:06.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
@@ -4879,7 +4879,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-01T15:59:28.703Z",
+      "fetchedAt": "2026-04-02T07:22:06.963Z",
       "updatedAt": "2026-04-01T15:58:06.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
@@ -4991,7 +4991,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/ewc/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-01T15:59:28.703Z",
+      "fetchedAt": "2026-04-02T07:22:06.963Z",
       "updatedAt": "2026-04-01T15:27:24.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
@@ -5049,7 +5049,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/ewc/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-01T15:59:28.703Z",
+      "fetchedAt": "2026-04-02T07:22:06.963Z",
       "updatedAt": "2026-04-01T15:27:24.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
@@ -5108,7 +5108,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/ewc/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-01T15:59:28.703Z",
+      "fetchedAt": "2026-04-02T07:22:06.963Z",
       "updatedAt": "2026-04-01T15:27:24.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
@@ -5209,7 +5209,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/ewc/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-01T15:59:28.703Z",
+      "fetchedAt": "2026-04-02T07:22:06.963Z",
       "updatedAt": "2026-04-01T15:27:24.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
@@ -5310,7 +5310,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/ewc/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-01T15:59:28.703Z",
+      "fetchedAt": "2026-04-02T07:22:06.963Z",
       "updatedAt": "2026-04-01T15:27:24.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
@@ -5369,7 +5369,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/ewc/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-01T15:59:28.703Z",
+      "fetchedAt": "2026-04-02T07:22:06.963Z",
       "updatedAt": "2026-04-01T15:27:24.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
@@ -5491,7 +5491,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/ewc/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-01T15:59:28.703Z",
+      "fetchedAt": "2026-04-02T07:22:06.963Z",
       "updatedAt": "2026-04-01T15:27:24.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
@@ -5603,7 +5603,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/ewc/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-01T15:59:28.703Z",
+      "fetchedAt": "2026-04-02T07:22:06.963Z",
       "updatedAt": "2026-04-01T15:27:24.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
@@ -5684,7 +5684,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/ewc/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-01T15:59:28.703Z",
+      "fetchedAt": "2026-04-02T07:22:06.963Z",
       "updatedAt": "2026-04-01T15:27:24.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
@@ -5786,7 +5786,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/ewc/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-01T15:59:28.703Z",
+      "fetchedAt": "2026-04-02T07:22:06.963Z",
       "updatedAt": "2026-04-01T15:27:24.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
@@ -5888,7 +5888,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/ewc/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-01T15:59:28.703Z",
+      "fetchedAt": "2026-04-02T07:22:06.963Z",
       "updatedAt": "2026-04-01T15:27:24.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
@@ -5947,7 +5947,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/ewc/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-01T15:59:28.703Z",
+      "fetchedAt": "2026-04-02T07:22:06.963Z",
       "updatedAt": "2026-04-01T15:27:24.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
@@ -6013,7 +6013,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/ewc/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-01T15:59:28.703Z",
+      "fetchedAt": "2026-04-02T07:22:06.963Z",
       "updatedAt": "2026-04-01T15:27:24.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
@@ -6106,7 +6106,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/ewc/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-01T15:59:28.703Z",
+      "fetchedAt": "2026-04-02T07:22:06.963Z",
       "updatedAt": "2026-04-01T15:27:24.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
@@ -6192,7 +6192,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-01T15:59:28.703Z",
+      "fetchedAt": "2026-04-02T07:22:06.963Z",
       "updatedAt": "2026-03-15T00:00:00.000Z",
       "firstSeenAt": "2026-03-15T00:00:00.000Z",
       "attributes": [
@@ -6306,7 +6306,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-01T15:59:28.703Z",
+      "fetchedAt": "2026-04-02T07:22:06.963Z",
       "updatedAt": "2026-03-15T00:00:00.000Z",
       "firstSeenAt": "2026-03-15T00:00:00.000Z",
       "attributes": [
@@ -6470,7 +6470,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-01T15:59:28.703Z",
+      "fetchedAt": "2026-04-02T07:22:06.963Z",
       "updatedAt": "2026-03-15T00:00:00.000Z",
       "firstSeenAt": "2026-03-15T00:00:00.000Z",
       "attributes": [
@@ -6628,7 +6628,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-01T15:59:28.703Z",
+      "fetchedAt": "2026-04-02T07:22:06.963Z",
       "updatedAt": "2026-03-15T00:00:00.000Z",
       "firstSeenAt": "2026-03-15T00:00:00.000Z",
       "attributes": [
@@ -6777,7 +6777,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-01T15:59:28.703Z",
+      "fetchedAt": "2026-04-02T07:22:06.963Z",
       "updatedAt": "2026-03-15T00:00:00.000Z",
       "firstSeenAt": "2026-03-15T00:00:00.000Z",
       "attributes": [
@@ -6903,7 +6903,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-01T15:59:28.703Z",
+      "fetchedAt": "2026-04-02T07:22:06.963Z",
       "updatedAt": "2026-03-15T00:00:00.000Z",
       "firstSeenAt": "2026-03-15T00:00:00.000Z",
       "attributes": [
@@ -7045,7 +7045,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-01T15:59:28.703Z",
+      "fetchedAt": "2026-04-02T07:22:06.963Z",
       "updatedAt": "2026-03-15T00:00:00.000Z",
       "firstSeenAt": "2026-03-15T00:00:00.000Z",
       "attributes": []
@@ -7088,7 +7088,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-01T15:59:28.703Z",
+      "fetchedAt": "2026-04-02T07:22:06.963Z",
       "updatedAt": "2026-03-15T00:00:00.000Z",
       "firstSeenAt": "2026-03-15T00:00:00.000Z",
       "attributes": []
@@ -7132,7 +7132,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-01T15:59:28.703Z",
+      "fetchedAt": "2026-04-02T07:22:06.963Z",
       "updatedAt": "2026-03-15T00:00:00.000Z",
       "firstSeenAt": "2026-03-15T00:00:00.000Z",
       "attributes": [
@@ -7353,7 +7353,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-01T15:59:28.703Z",
+      "fetchedAt": "2026-04-02T07:22:06.963Z",
       "updatedAt": "2026-03-15T00:00:00.000Z",
       "firstSeenAt": "2026-03-15T00:00:00.000Z",
       "attributes": [
@@ -7470,7 +7470,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-01T15:59:28.703Z",
+      "fetchedAt": "2026-04-02T07:22:06.963Z",
       "updatedAt": "2026-03-15T00:00:00.000Z",
       "firstSeenAt": "2026-03-15T00:00:00.000Z",
       "attributes": [
@@ -7530,7 +7530,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-01T15:59:28.703Z",
+      "fetchedAt": "2026-04-02T07:22:06.963Z",
       "updatedAt": "2026-03-15T00:00:00.000Z",
       "firstSeenAt": "2026-03-15T00:00:00.000Z",
       "attributes": [
@@ -7661,7 +7661,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-01T15:59:28.703Z",
+      "fetchedAt": "2026-04-02T07:22:06.963Z",
       "updatedAt": "2026-03-15T00:00:00.000Z",
       "firstSeenAt": "2026-03-15T00:00:00.000Z",
       "attributes": [
@@ -7743,7 +7743,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-01T15:59:28.703Z",
+      "fetchedAt": "2026-04-02T07:22:06.963Z",
       "updatedAt": "2026-03-15T00:00:00.000Z",
       "firstSeenAt": "2026-03-15T00:00:00.000Z",
       "attributes": [
@@ -8099,7 +8099,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-01T15:59:28.703Z",
+      "fetchedAt": "2026-04-02T07:22:06.963Z",
       "updatedAt": "2026-03-15T00:00:00.000Z",
       "firstSeenAt": "2026-03-15T00:00:00.000Z",
       "attributes": [
@@ -8349,7 +8349,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-01T15:59:28.703Z",
+      "fetchedAt": "2026-04-02T07:22:06.963Z",
       "updatedAt": "2026-03-15T00:00:00.000Z",
       "firstSeenAt": "2026-03-15T00:00:00.000Z",
       "attributes": [
@@ -8431,7 +8431,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-01T15:59:28.703Z",
+      "fetchedAt": "2026-04-02T07:22:06.963Z",
       "updatedAt": "2026-03-15T00:00:00.000Z",
       "firstSeenAt": "2026-03-15T00:00:00.000Z",
       "attributes": [
@@ -8551,7 +8551,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-01T15:59:28.703Z",
+      "fetchedAt": "2026-04-02T07:22:06.963Z",
       "updatedAt": "2026-03-15T00:00:00.000Z",
       "firstSeenAt": "2026-03-15T00:00:00.000Z",
       "attributes": [
@@ -8642,7 +8642,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-01T15:59:28.703Z",
+      "fetchedAt": "2026-04-02T07:22:06.963Z",
       "updatedAt": "2026-03-15T00:00:00.000Z",
       "firstSeenAt": "2026-03-15T00:00:00.000Z",
       "attributes": [
@@ -8713,7 +8713,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-01T15:59:28.703Z",
+      "fetchedAt": "2026-04-02T07:22:06.963Z",
       "updatedAt": "2026-03-15T00:00:00.000Z",
       "firstSeenAt": "2026-03-15T00:00:00.000Z",
       "attributes": [
@@ -8801,7 +8801,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-01T15:59:28.703Z",
+      "fetchedAt": "2026-04-02T07:22:06.963Z",
       "updatedAt": "2026-03-15T00:00:00.000Z",
       "firstSeenAt": "2026-03-15T00:00:00.000Z",
       "attributes": [
@@ -8912,7 +8912,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-01T15:59:28.703Z",
+      "fetchedAt": "2026-04-02T07:22:06.963Z",
       "updatedAt": "2026-03-15T00:00:00.000Z",
       "firstSeenAt": "2026-03-15T00:00:00.000Z",
       "attributes": [
@@ -9025,7 +9025,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/uncefact/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-01T15:59:28.703Z",
+      "fetchedAt": "2026-04-02T07:22:06.963Z",
       "updatedAt": "2026-03-22T00:00:00.000Z",
       "firstSeenAt": "2026-03-22T00:00:00.000Z",
       "attributes": [
@@ -9139,7 +9139,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/uncefact/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-01T15:59:28.703Z",
+      "fetchedAt": "2026-04-02T07:22:06.963Z",
       "updatedAt": "2026-03-22T00:00:00.000Z",
       "firstSeenAt": "2026-03-22T00:00:00.000Z",
       "attributes": [
@@ -9250,7 +9250,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/uncefact/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-01T15:59:28.703Z",
+      "fetchedAt": "2026-04-02T07:22:06.963Z",
       "updatedAt": "2026-03-22T00:00:00.000Z",
       "firstSeenAt": "2026-03-22T00:00:00.000Z",
       "attributes": [
@@ -9357,7 +9357,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/uncefact/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-01T15:59:28.703Z",
+      "fetchedAt": "2026-04-02T07:22:06.963Z",
       "updatedAt": "2026-03-22T00:00:00.000Z",
       "firstSeenAt": "2026-03-22T00:00:00.000Z",
       "attributes": [
@@ -9476,7 +9476,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/uncefact/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-01T15:59:28.703Z",
+      "fetchedAt": "2026-04-02T07:22:06.963Z",
       "updatedAt": "2026-03-22T00:00:00.000Z",
       "firstSeenAt": "2026-03-22T00:00:00.000Z",
       "attributes": [
@@ -9596,10 +9596,749 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/uncefact/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-01T15:59:28.703Z",
+      "fetchedAt": "2026-04-02T07:22:06.963Z",
       "updatedAt": "2026-03-22T00:00:00.000Z",
       "firstSeenAt": "2026-03-22T00:00:00.000Z",
-      "attributes": []
+      "attributes": [
+        {
+          "name": "purchaseOrderNumber",
+          "type": "string",
+          "required": false,
+          "description": "Identifier assigned by the buyer to an order.",
+          "depth": 0
+        },
+        {
+          "name": "contractNumber",
+          "type": "string",
+          "required": false,
+          "description": "Identifier of a contract concluded between parties such as between buyer and seller.",
+          "depth": 0
+        },
+        {
+          "name": "invoiceNumber",
+          "type": "string",
+          "required": false,
+          "description": "Reference number to identify an invoice.",
+          "depth": 0
+        },
+        {
+          "name": "issueDate",
+          "type": "string",
+          "required": false,
+          "description": "Date that a document was issued and when appropriate, signed or otherwise authenticated.",
+          "depth": 0
+        },
+        {
+          "name": "invoiceDate",
+          "type": "string",
+          "required": false,
+          "description": "Date of issue of an invoice.",
+          "depth": 0
+        },
+        {
+          "name": "paymentDueDate",
+          "type": "string",
+          "required": false,
+          "description": "Date when an amount due should be made available to the creditor under the terms of payment.",
+          "depth": 0
+        },
+        {
+          "name": "billOfLadingNumber",
+          "type": "string",
+          "required": false,
+          "description": "Carrier-issued Bill of Lading or Waybill number for the shipment.",
+          "depth": 0
+        },
+        {
+          "name": "letterOfCreditNumber",
+          "type": "string",
+          "required": false,
+          "description": "Letter of Credit reference number if applicable for payment.",
+          "depth": 0
+        },
+        {
+          "name": "portOfEntry",
+          "type": "object",
+          "required": false,
+          "description": "Port where the goods will enter the destination country.",
+          "depth": 0
+        },
+        {
+          "name": "portOfEntry/unLocode",
+          "type": "string",
+          "required": false,
+          "description": "UN/LOCODE port identifier (5 characters).",
+          "depth": 1
+        },
+        {
+          "name": "portOfEntry/portName",
+          "type": "string",
+          "required": false,
+          "description": "Human-readable name of the port.",
+          "depth": 1
+        },
+        {
+          "name": "destinationCountry",
+          "type": "string",
+          "required": false,
+          "description": "Two-letter ISO 3166-1 alpha-2 country code for final destination.",
+          "depth": 0
+        },
+        {
+          "name": "buyer",
+          "type": "object",
+          "required": false,
+          "description": "Party to which merchandise or services are sold.",
+          "depth": 0
+        },
+        {
+          "name": "buyer/type",
+          "type": "string",
+          "required": false,
+          "depth": 1
+        },
+        {
+          "name": "buyer/id",
+          "type": "string",
+          "required": false,
+          "description": "A unique party identifier.",
+          "depth": 1
+        },
+        {
+          "name": "buyer/name",
+          "type": "string",
+          "required": false,
+          "description": "Trade party name.",
+          "depth": 1
+        },
+        {
+          "name": "buyer/street",
+          "type": "string",
+          "required": false,
+          "description": "The street component of the address",
+          "depth": 1
+        },
+        {
+          "name": "buyer/city",
+          "type": "string",
+          "required": false,
+          "description": "The city compomnent of the address",
+          "depth": 1
+        },
+        {
+          "name": "buyer/state",
+          "type": "string",
+          "required": false,
+          "description": "The state component of the address",
+          "depth": 1
+        },
+        {
+          "name": "buyer/zip",
+          "type": "number",
+          "required": false,
+          "description": "",
+          "depth": 1
+        },
+        {
+          "name": "buyer/country",
+          "type": "string",
+          "required": false,
+          "description": "Country.",
+          "depth": 1
+        },
+        {
+          "name": "invoicee",
+          "type": "object",
+          "required": false,
+          "description": "Party to whom an invoice is issued.",
+          "depth": 0
+        },
+        {
+          "name": "invoicee/type",
+          "type": "string",
+          "required": false,
+          "depth": 1
+        },
+        {
+          "name": "invoicee/id",
+          "type": "string",
+          "required": false,
+          "description": "A unique party identifier.",
+          "depth": 1
+        },
+        {
+          "name": "invoicee/name",
+          "type": "string",
+          "required": false,
+          "description": "Trade party name.",
+          "depth": 1
+        },
+        {
+          "name": "invoicee/street",
+          "type": "string",
+          "required": false,
+          "description": "The street component of the address",
+          "depth": 1
+        },
+        {
+          "name": "invoicee/city",
+          "type": "string",
+          "required": false,
+          "description": "The city compomnent of the address",
+          "depth": 1
+        },
+        {
+          "name": "invoicee/state",
+          "type": "string",
+          "required": false,
+          "description": "The state component of the address",
+          "depth": 1
+        },
+        {
+          "name": "invoicee/zip",
+          "type": "number",
+          "required": false,
+          "description": "",
+          "depth": 1
+        },
+        {
+          "name": "invoicee/country",
+          "type": "string",
+          "required": false,
+          "description": "Country.",
+          "depth": 1
+        },
+        {
+          "name": "consignee",
+          "type": "object",
+          "required": false,
+          "description": "Party to whom the goods are consigned (may differ from buyer).",
+          "depth": 0
+        },
+        {
+          "name": "consignee/type",
+          "type": "string",
+          "required": false,
+          "depth": 1
+        },
+        {
+          "name": "consignee/id",
+          "type": "string",
+          "required": false,
+          "description": "A unique party identifier.",
+          "depth": 1
+        },
+        {
+          "name": "consignee/name",
+          "type": "string",
+          "required": false,
+          "description": "Consignee name.",
+          "depth": 1
+        },
+        {
+          "name": "consignee/street",
+          "type": "string",
+          "required": false,
+          "description": "The street component of the address",
+          "depth": 1
+        },
+        {
+          "name": "consignee/city",
+          "type": "string",
+          "required": false,
+          "description": "The city component of the address",
+          "depth": 1
+        },
+        {
+          "name": "consignee/state",
+          "type": "string",
+          "required": false,
+          "description": "The state component of the address",
+          "depth": 1
+        },
+        {
+          "name": "consignee/zip",
+          "type": "number",
+          "required": false,
+          "description": "Postal code.",
+          "depth": 1
+        },
+        {
+          "name": "consignee/country",
+          "type": "string",
+          "required": false,
+          "description": "Country code.",
+          "depth": 1
+        },
+        {
+          "name": "sellersBank",
+          "type": "object",
+          "required": false,
+          "description": "Bank designated by the seller to receive payment.",
+          "depth": 0
+        },
+        {
+          "name": "sellersBank/type",
+          "type": "string",
+          "required": false,
+          "depth": 1
+        },
+        {
+          "name": "sellersBank/id",
+          "type": "string",
+          "required": false,
+          "description": "A unique party identifier.",
+          "depth": 1
+        },
+        {
+          "name": "sellersBank/name",
+          "type": "string",
+          "required": false,
+          "description": "Trade party name.",
+          "depth": 1
+        },
+        {
+          "name": "sellersBank/street",
+          "type": "string",
+          "required": false,
+          "description": "The street component of the address",
+          "depth": 1
+        },
+        {
+          "name": "sellersBank/city",
+          "type": "string",
+          "required": false,
+          "description": "The city compomnent of the address",
+          "depth": 1
+        },
+        {
+          "name": "sellersBank/state",
+          "type": "string",
+          "required": false,
+          "description": "The state component of the address",
+          "depth": 1
+        },
+        {
+          "name": "sellersBank/zip",
+          "type": "number",
+          "required": false,
+          "description": "",
+          "depth": 1
+        },
+        {
+          "name": "sellersBank/country",
+          "type": "string",
+          "required": false,
+          "description": "Country.",
+          "depth": 1
+        },
+        {
+          "name": "seller",
+          "type": "object",
+          "required": false,
+          "description": "Party selling merchandise or services to a buyer.",
+          "depth": 0
+        },
+        {
+          "name": "seller/type",
+          "type": "string",
+          "required": false,
+          "depth": 1
+        },
+        {
+          "name": "seller/id",
+          "type": "string",
+          "required": false,
+          "description": "A unique party identifier.",
+          "depth": 1
+        },
+        {
+          "name": "seller/name",
+          "type": "string",
+          "required": false,
+          "description": "Trade party name.",
+          "depth": 1
+        },
+        {
+          "name": "seller/street",
+          "type": "string",
+          "required": false,
+          "description": "The street component of the address",
+          "depth": 1
+        },
+        {
+          "name": "seller/city",
+          "type": "string",
+          "required": false,
+          "description": "The city compomnent of the address",
+          "depth": 1
+        },
+        {
+          "name": "seller/state",
+          "type": "string",
+          "required": false,
+          "description": "The state component of the address",
+          "depth": 1
+        },
+        {
+          "name": "seller/zip",
+          "type": "number",
+          "required": false,
+          "description": "",
+          "depth": 1
+        },
+        {
+          "name": "seller/country",
+          "type": "string",
+          "required": false,
+          "description": "Country.",
+          "depth": 1
+        },
+        {
+          "name": "sellerBankAccountNumber",
+          "type": "string",
+          "required": false,
+          "description": "Identifier of an account with the bank designated to receive payment.",
+          "depth": 0
+        },
+        {
+          "name": "originalLoadingLocation",
+          "type": "object",
+          "required": false,
+          "description": "Seaport, airport, freight terminal, rail station or other location where the goods were first loaded onto the means of transport being utilised for their carriage.",
+          "depth": 0
+        },
+        {
+          "name": "originalLoadingLocation/street",
+          "type": "string",
+          "required": false,
+          "description": "",
+          "depth": 1
+        },
+        {
+          "name": "originalLoadingLocation/city",
+          "type": "string",
+          "required": false,
+          "description": "",
+          "depth": 1
+        },
+        {
+          "name": "originalLoadingLocation/state",
+          "type": "string",
+          "required": false,
+          "description": "",
+          "depth": 1
+        },
+        {
+          "name": "originalLoadingLocation/zip",
+          "type": "number",
+          "required": false,
+          "description": "",
+          "depth": 1
+        },
+        {
+          "name": "originalLoadingLocation/iataAirportCode",
+          "type": "string",
+          "required": false,
+          "description": "",
+          "depth": 1
+        },
+        {
+          "name": "originalLoadingLocation/unlocode",
+          "type": "string",
+          "required": false,
+          "description": "",
+          "depth": 1
+        },
+        {
+          "name": "originCountry",
+          "type": "object",
+          "required": false,
+          "description": "Name of the country in which the goods have been produced or manufactured, according to criteria laid down for the application of the Customs tariff or quantitative restrictions, or any measure related to trade.",
+          "depth": 0
+        },
+        {
+          "name": "originCountry/street",
+          "type": "string",
+          "required": false,
+          "description": "",
+          "depth": 1
+        },
+        {
+          "name": "originCountry/city",
+          "type": "string",
+          "required": false,
+          "description": "",
+          "depth": 1
+        },
+        {
+          "name": "originCountry/state",
+          "type": "string",
+          "required": false,
+          "description": "",
+          "depth": 1
+        },
+        {
+          "name": "originCountry/zip",
+          "type": "number",
+          "required": false,
+          "description": "",
+          "depth": 1
+        },
+        {
+          "name": "originCountry/country",
+          "type": "string",
+          "required": false,
+          "description": "",
+          "depth": 1
+        },
+        {
+          "name": "originCountry/iataAirportCode",
+          "type": "string",
+          "required": false,
+          "description": "",
+          "depth": 1
+        },
+        {
+          "name": "originCountry/unlocode",
+          "type": "string",
+          "required": false,
+          "description": "",
+          "depth": 1
+        },
+        {
+          "name": "tradeTermsConditionsDescription",
+          "type": "string",
+          "required": false,
+          "description": "Free form description of delivery or transport terms (Incoterms).",
+          "depth": 0
+        },
+        {
+          "name": "tradeTermsConditionsCode",
+          "type": "string",
+          "required": false,
+          "description": "Code specifying the delivery or transport terms (Incoterms).",
+          "depth": 0
+        },
+        {
+          "name": "paymentTerms",
+          "type": "string",
+          "required": false,
+          "description": "Identification of the terms of payment between the parties to a transaction (generic term).",
+          "depth": 0
+        },
+        {
+          "name": "paymentMethod",
+          "type": "string",
+          "required": false,
+          "description": "Code specifying a method of payment.",
+          "depth": 0
+        },
+        {
+          "name": "itemsShipped",
+          "type": "array",
+          "required": false,
+          "description": "Invoice line items",
+          "depth": 0
+        },
+        {
+          "name": "itemsShipped/item/product",
+          "type": "object",
+          "required": false,
+          "description": "Plain language description of the nature of a goods item sufficient to identify it for customs, statistical or transport purposes.",
+          "depth": 2
+        },
+        {
+          "name": "itemsShipped/item/product/id",
+          "type": "string",
+          "required": false,
+          "description": "A unique identifier for the product.",
+          "depth": 3
+        },
+        {
+          "name": "itemsShipped/item/product/name",
+          "type": "string",
+          "required": false,
+          "description": "",
+          "depth": 3
+        },
+        {
+          "name": "itemsShipped/item/product/description",
+          "type": "string",
+          "required": false,
+          "description": "",
+          "depth": 3
+        },
+        {
+          "name": "itemsShipped/item/sku",
+          "type": "string",
+          "required": false,
+          "description": "",
+          "depth": 2
+        },
+        {
+          "name": "itemsShipped/item/itemCount",
+          "type": "number",
+          "required": false,
+          "description": "",
+          "depth": 2
+        },
+        {
+          "name": "itemsShipped/item/netWeight",
+          "type": "object",
+          "required": false,
+          "description": "Total net weight (mass) of all the goods items referred to as one consignment.",
+          "depth": 2
+        },
+        {
+          "name": "itemsShipped/item/netWeight/amount",
+          "type": "number",
+          "required": false,
+          "description": "",
+          "depth": 3
+        },
+        {
+          "name": "itemsShipped/item/netWeight/unit",
+          "type": "string",
+          "required": false,
+          "description": "",
+          "depth": 3
+        },
+        {
+          "name": "itemsShipped/item/grossWeight",
+          "type": "object",
+          "required": false,
+          "description": "",
+          "depth": 2
+        },
+        {
+          "name": "itemsShipped/item/grossWeight/amount",
+          "type": "number",
+          "required": false,
+          "description": "",
+          "depth": 3
+        },
+        {
+          "name": "itemsShipped/item/grossWeight/unit",
+          "type": "string",
+          "required": false,
+          "description": "",
+          "depth": 3
+        },
+        {
+          "name": "itemsShipped/item/productPrice",
+          "type": "object",
+          "required": false,
+          "description": "",
+          "depth": 2
+        },
+        {
+          "name": "itemsShipped/item/productPrice/amount",
+          "type": "number",
+          "required": false,
+          "description": "",
+          "depth": 3
+        },
+        {
+          "name": "itemsShipped/item/productPrice/currency",
+          "type": "string",
+          "required": false,
+          "description": "",
+          "depth": 3
+        },
+        {
+          "name": "itemsShipped/item/commodity",
+          "type": "string",
+          "required": false,
+          "description": "Code specifying a type of goods for Customs, transport or statistical purposes (generic term).",
+          "depth": 2
+        },
+        {
+          "name": "itemsShipped/item/price",
+          "type": "object",
+          "required": false,
+          "description": "",
+          "depth": 2
+        },
+        {
+          "name": "itemsShipped/item/price/amount",
+          "type": "number",
+          "required": false,
+          "description": "",
+          "depth": 3
+        },
+        {
+          "name": "itemsShipped/item/price/currency",
+          "type": "string",
+          "required": false,
+          "description": "",
+          "depth": 3
+        },
+        {
+          "name": "freightCost",
+          "type": "object",
+          "required": false,
+          "description": "Cost of freight/shipping charges.",
+          "depth": 0
+        },
+        {
+          "name": "freightCost/amount",
+          "type": "number",
+          "required": false,
+          "description": "Freight charge amount.",
+          "depth": 1
+        },
+        {
+          "name": "freightCost/currency",
+          "type": "string",
+          "required": false,
+          "description": "Three-letter ISO 4217 currency code.",
+          "depth": 1
+        },
+        {
+          "name": "insuranceCost",
+          "type": "object",
+          "required": false,
+          "description": "Cost of insurance for the shipment.",
+          "depth": 0
+        },
+        {
+          "name": "insuranceCost/amount",
+          "type": "number",
+          "required": false,
+          "description": "Insurance charge amount.",
+          "depth": 1
+        },
+        {
+          "name": "insuranceCost/currency",
+          "type": "string",
+          "required": false,
+          "description": "Three-letter ISO 4217 currency code.",
+          "depth": 1
+        },
+        {
+          "name": "totalAmount",
+          "type": "object",
+          "required": false,
+          "description": "Total monetary amount charged in respect of one or more invoices.",
+          "depth": 0
+        },
+        {
+          "name": "totalAmount/amount",
+          "type": "number",
+          "required": false,
+          "description": "",
+          "depth": 1
+        },
+        {
+          "name": "totalAmount/currency",
+          "type": "string",
+          "required": false,
+          "description": "",
+          "depth": 1
+        }
+      ],
+      "schemaDescription": "A commercial document which consists of an itemized account of goods or services delivered, together with a demand for payment."
     },
     {
       "id": "cred:uncefact:bill-of-lading:vcdm-2-0",
@@ -9654,10 +10393,903 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/uncefact/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-01T15:59:28.703Z",
+      "fetchedAt": "2026-04-02T07:22:06.963Z",
       "updatedAt": "2026-03-22T00:00:00.000Z",
       "firstSeenAt": "2026-03-22T00:00:00.000Z",
-      "attributes": []
+      "attributes": [
+        {
+          "name": "billOfLadingNumber",
+          "type": "string",
+          "required": true,
+          "description": "Reference number to identify a document evidencing a transport contract.",
+          "depth": 0
+        },
+        {
+          "name": "documentIdentifier",
+          "type": "string",
+          "required": false,
+          "description": "Reference number identifying a specific document.",
+          "depth": 0
+        },
+        {
+          "name": "bookingReferenceNumber",
+          "type": "string",
+          "required": false,
+          "description": "Reference number assigned by a carrier to identify a specific consignment.",
+          "depth": 0
+        },
+        {
+          "name": "issueDate",
+          "type": "string",
+          "required": true,
+          "description": "Date that a document was issued.",
+          "depth": 0
+        },
+        {
+          "name": "consignmentLoadingDate",
+          "type": "string",
+          "required": false,
+          "description": "Date when a consignment is loaded onto a means of transport.",
+          "depth": 0
+        },
+        {
+          "name": "estimatedTimeOfDeparture",
+          "type": "string",
+          "required": false,
+          "description": "Date and time when a transport means is scheduled to depart.",
+          "depth": 0
+        },
+        {
+          "name": "estimatedTimeOfArrival",
+          "type": "string",
+          "required": false,
+          "description": "Date and time of the estimated arrival of means of transport.",
+          "depth": 0
+        },
+        {
+          "name": "consignor",
+          "type": "object",
+          "required": true,
+          "description": "Party consigning goods as stipulated in the transport contract.",
+          "depth": 0
+        },
+        {
+          "name": "consignor/type",
+          "type": "string",
+          "required": false,
+          "depth": 1
+        },
+        {
+          "name": "consignor/id",
+          "type": "string",
+          "required": false,
+          "description": "A unique party identifier.",
+          "depth": 1
+        },
+        {
+          "name": "consignor/name",
+          "type": "string",
+          "required": false,
+          "description": "Trade party name.",
+          "depth": 1
+        },
+        {
+          "name": "consignor/street",
+          "type": "string",
+          "required": false,
+          "description": "The street component of the address",
+          "depth": 1
+        },
+        {
+          "name": "consignor/city",
+          "type": "string",
+          "required": false,
+          "description": "The city component of the address",
+          "depth": 1
+        },
+        {
+          "name": "consignor/state",
+          "type": "string",
+          "required": false,
+          "description": "The state component of the address",
+          "depth": 1
+        },
+        {
+          "name": "consignor/zip",
+          "type": "number",
+          "required": false,
+          "description": "Postal code",
+          "depth": 1
+        },
+        {
+          "name": "consignor/country",
+          "type": "string",
+          "required": false,
+          "description": "Country.",
+          "depth": 1
+        },
+        {
+          "name": "consignee",
+          "type": "object",
+          "required": true,
+          "description": "Party to which goods are consigned.",
+          "depth": 0
+        },
+        {
+          "name": "consignee/type",
+          "type": "string",
+          "required": false,
+          "depth": 1
+        },
+        {
+          "name": "consignee/id",
+          "type": "string",
+          "required": false,
+          "description": "A unique party identifier.",
+          "depth": 1
+        },
+        {
+          "name": "consignee/name",
+          "type": "string",
+          "required": false,
+          "description": "Trade party name.",
+          "depth": 1
+        },
+        {
+          "name": "consignee/street",
+          "type": "string",
+          "required": false,
+          "description": "The street component of the address",
+          "depth": 1
+        },
+        {
+          "name": "consignee/city",
+          "type": "string",
+          "required": false,
+          "description": "The city component of the address",
+          "depth": 1
+        },
+        {
+          "name": "consignee/state",
+          "type": "string",
+          "required": false,
+          "description": "The state component of the address",
+          "depth": 1
+        },
+        {
+          "name": "consignee/zip",
+          "type": "number",
+          "required": false,
+          "description": "Postal code",
+          "depth": 1
+        },
+        {
+          "name": "consignee/country",
+          "type": "string",
+          "required": false,
+          "description": "Country.",
+          "depth": 1
+        },
+        {
+          "name": "notifyParty",
+          "type": "object",
+          "required": false,
+          "description": "Party to be notified.",
+          "depth": 0
+        },
+        {
+          "name": "notifyParty/type",
+          "type": "string",
+          "required": false,
+          "depth": 1
+        },
+        {
+          "name": "notifyParty/id",
+          "type": "string",
+          "required": false,
+          "description": "A unique party identifier.",
+          "depth": 1
+        },
+        {
+          "name": "notifyParty/name",
+          "type": "string",
+          "required": false,
+          "description": "Trade party name.",
+          "depth": 1
+        },
+        {
+          "name": "notifyParty/street",
+          "type": "string",
+          "required": false,
+          "description": "The street component of the address",
+          "depth": 1
+        },
+        {
+          "name": "notifyParty/city",
+          "type": "string",
+          "required": false,
+          "description": "The city component of the address",
+          "depth": 1
+        },
+        {
+          "name": "notifyParty/state",
+          "type": "string",
+          "required": false,
+          "description": "The state component of the address",
+          "depth": 1
+        },
+        {
+          "name": "notifyParty/zip",
+          "type": "number",
+          "required": false,
+          "description": "Postal code",
+          "depth": 1
+        },
+        {
+          "name": "notifyParty/country",
+          "type": "string",
+          "required": false,
+          "description": "Country.",
+          "depth": 1
+        },
+        {
+          "name": "carrier",
+          "type": "object",
+          "required": true,
+          "description": "Party providing the transport of goods between named points.",
+          "depth": 0
+        },
+        {
+          "name": "carrier/type",
+          "type": "string",
+          "required": false,
+          "depth": 1
+        },
+        {
+          "name": "carrier/id",
+          "type": "string",
+          "required": false,
+          "description": "A unique party identifier.",
+          "depth": 1
+        },
+        {
+          "name": "carrier/name",
+          "type": "string",
+          "required": false,
+          "description": "Trade party name.",
+          "depth": 1
+        },
+        {
+          "name": "carrier/street",
+          "type": "string",
+          "required": false,
+          "description": "The street component of the address",
+          "depth": 1
+        },
+        {
+          "name": "carrier/city",
+          "type": "string",
+          "required": false,
+          "description": "The city component of the address",
+          "depth": 1
+        },
+        {
+          "name": "carrier/state",
+          "type": "string",
+          "required": false,
+          "description": "The state component of the address",
+          "depth": 1
+        },
+        {
+          "name": "carrier/zip",
+          "type": "number",
+          "required": false,
+          "description": "Postal code",
+          "depth": 1
+        },
+        {
+          "name": "carrier/country",
+          "type": "string",
+          "required": false,
+          "description": "Country.",
+          "depth": 1
+        },
+        {
+          "name": "freightPayer",
+          "type": "object",
+          "required": false,
+          "description": "Party responsible for the payment of freight charges.",
+          "depth": 0
+        },
+        {
+          "name": "freightPayer/type",
+          "type": "string",
+          "required": false,
+          "depth": 1
+        },
+        {
+          "name": "freightPayer/id",
+          "type": "string",
+          "required": false,
+          "description": "A unique party identifier.",
+          "depth": 1
+        },
+        {
+          "name": "freightPayer/name",
+          "type": "string",
+          "required": false,
+          "description": "Trade party name.",
+          "depth": 1
+        },
+        {
+          "name": "freightPayer/street",
+          "type": "string",
+          "required": false,
+          "description": "The street component of the address",
+          "depth": 1
+        },
+        {
+          "name": "freightPayer/city",
+          "type": "string",
+          "required": false,
+          "description": "The city component of the address",
+          "depth": 1
+        },
+        {
+          "name": "freightPayer/state",
+          "type": "string",
+          "required": false,
+          "description": "The state component of the address",
+          "depth": 1
+        },
+        {
+          "name": "freightPayer/zip",
+          "type": "number",
+          "required": false,
+          "description": "Postal code",
+          "depth": 1
+        },
+        {
+          "name": "freightPayer/country",
+          "type": "string",
+          "required": false,
+          "description": "Country.",
+          "depth": 1
+        },
+        {
+          "name": "originalLoadingLocation",
+          "type": "object",
+          "required": true,
+          "description": "Location where the goods were first loaded onto the means of transport.",
+          "depth": 0
+        },
+        {
+          "name": "originalLoadingLocation/name",
+          "type": "string",
+          "required": false,
+          "description": "Location name",
+          "depth": 1
+        },
+        {
+          "name": "originalLoadingLocation/city",
+          "type": "string",
+          "required": false,
+          "description": "City",
+          "depth": 1
+        },
+        {
+          "name": "originalLoadingLocation/state",
+          "type": "string",
+          "required": false,
+          "description": "State",
+          "depth": 1
+        },
+        {
+          "name": "originalLoadingLocation/country",
+          "type": "string",
+          "required": false,
+          "description": "Country",
+          "depth": 1
+        },
+        {
+          "name": "originalLoadingLocation/unlocode",
+          "type": "string",
+          "required": false,
+          "description": "UN/LOCODE identifier",
+          "depth": 1
+        },
+        {
+          "name": "baseportUnloadingLocation",
+          "type": "object",
+          "required": true,
+          "description": "The place or port at which the cargo is discharged.",
+          "depth": 0
+        },
+        {
+          "name": "baseportUnloadingLocation/name",
+          "type": "string",
+          "required": false,
+          "description": "Location name",
+          "depth": 1
+        },
+        {
+          "name": "baseportUnloadingLocation/city",
+          "type": "string",
+          "required": false,
+          "description": "City",
+          "depth": 1
+        },
+        {
+          "name": "baseportUnloadingLocation/state",
+          "type": "string",
+          "required": false,
+          "description": "State",
+          "depth": 1
+        },
+        {
+          "name": "baseportUnloadingLocation/country",
+          "type": "string",
+          "required": false,
+          "description": "Country",
+          "depth": 1
+        },
+        {
+          "name": "baseportUnloadingLocation/unlocode",
+          "type": "string",
+          "required": false,
+          "description": "UN/LOCODE identifier",
+          "depth": 1
+        },
+        {
+          "name": "deliveryLocation",
+          "type": "object",
+          "required": false,
+          "description": "Location to which a consignment is to be delivered to the final consignee.",
+          "depth": 0
+        },
+        {
+          "name": "deliveryLocation/name",
+          "type": "string",
+          "required": false,
+          "description": "Location name",
+          "depth": 1
+        },
+        {
+          "name": "deliveryLocation/street",
+          "type": "string",
+          "required": false,
+          "description": "Street address",
+          "depth": 1
+        },
+        {
+          "name": "deliveryLocation/city",
+          "type": "string",
+          "required": false,
+          "description": "City",
+          "depth": 1
+        },
+        {
+          "name": "deliveryLocation/state",
+          "type": "string",
+          "required": false,
+          "description": "State",
+          "depth": 1
+        },
+        {
+          "name": "deliveryLocation/zip",
+          "type": "number",
+          "required": false,
+          "description": "Postal code",
+          "depth": 1
+        },
+        {
+          "name": "deliveryLocation/country",
+          "type": "string",
+          "required": false,
+          "description": "Country",
+          "depth": 1
+        },
+        {
+          "name": "placeOfDeparture",
+          "type": "object",
+          "required": false,
+          "description": "Port from which a means of transport is scheduled to depart.",
+          "depth": 0
+        },
+        {
+          "name": "placeOfDeparture/name",
+          "type": "string",
+          "required": false,
+          "description": "Location name",
+          "depth": 1
+        },
+        {
+          "name": "placeOfDeparture/city",
+          "type": "string",
+          "required": false,
+          "description": "City",
+          "depth": 1
+        },
+        {
+          "name": "placeOfDeparture/state",
+          "type": "string",
+          "required": false,
+          "description": "State",
+          "depth": 1
+        },
+        {
+          "name": "placeOfDeparture/country",
+          "type": "string",
+          "required": false,
+          "description": "Country",
+          "depth": 1
+        },
+        {
+          "name": "placeOfDeparture/unlocode",
+          "type": "string",
+          "required": false,
+          "description": "UN/LOCODE identifier",
+          "depth": 1
+        },
+        {
+          "name": "arrivalLocation",
+          "type": "object",
+          "required": false,
+          "description": "Port at which a means of transport is scheduled to arrive.",
+          "depth": 0
+        },
+        {
+          "name": "arrivalLocation/name",
+          "type": "string",
+          "required": false,
+          "description": "Location name",
+          "depth": 1
+        },
+        {
+          "name": "arrivalLocation/city",
+          "type": "string",
+          "required": false,
+          "description": "City",
+          "depth": 1
+        },
+        {
+          "name": "arrivalLocation/state",
+          "type": "string",
+          "required": false,
+          "description": "State",
+          "depth": 1
+        },
+        {
+          "name": "arrivalLocation/country",
+          "type": "string",
+          "required": false,
+          "description": "Country",
+          "depth": 1
+        },
+        {
+          "name": "arrivalLocation/unlocode",
+          "type": "string",
+          "required": false,
+          "description": "UN/LOCODE identifier",
+          "depth": 1
+        },
+        {
+          "name": "paymentLocation",
+          "type": "object",
+          "required": false,
+          "description": "Place where the payment has been or should be made.",
+          "depth": 0
+        },
+        {
+          "name": "paymentLocation/city",
+          "type": "string",
+          "required": false,
+          "description": "City",
+          "depth": 1
+        },
+        {
+          "name": "paymentLocation/state",
+          "type": "string",
+          "required": false,
+          "description": "State",
+          "depth": 1
+        },
+        {
+          "name": "paymentLocation/country",
+          "type": "string",
+          "required": false,
+          "description": "Country",
+          "depth": 1
+        },
+        {
+          "name": "placeOfIssue",
+          "type": "object",
+          "required": false,
+          "description": "Location where a document was issued.",
+          "depth": 0
+        },
+        {
+          "name": "placeOfIssue/city",
+          "type": "string",
+          "required": false,
+          "description": "City",
+          "depth": 1
+        },
+        {
+          "name": "placeOfIssue/state",
+          "type": "string",
+          "required": false,
+          "description": "State",
+          "depth": 1
+        },
+        {
+          "name": "placeOfIssue/country",
+          "type": "string",
+          "required": false,
+          "description": "Country",
+          "depth": 1
+        },
+        {
+          "name": "conveyanceReferenceNumber",
+          "type": "string",
+          "required": false,
+          "description": "Identifier of a journey of a means of transport, for example voyage number.",
+          "depth": 0
+        },
+        {
+          "name": "transportMeansIdentifier",
+          "type": "string",
+          "required": false,
+          "description": "Name of a specific means of transport such as the vessel name.",
+          "depth": 0
+        },
+        {
+          "name": "transportMeansRegistration",
+          "type": "string",
+          "required": false,
+          "description": "Identifier of a specific means of transport.",
+          "depth": 0
+        },
+        {
+          "name": "containerSizeAndType",
+          "type": "string",
+          "required": false,
+          "description": "Code specifying the characteristics, i.e. size and type of a piece of transport equipment.",
+          "depth": 0
+        },
+        {
+          "name": "fullOrEmptyContainer",
+          "type": "string",
+          "required": false,
+          "description": "Code specifying how full a piece of transport equipment is (5=Full).",
+          "depth": 0
+        },
+        {
+          "name": "transportEquipmentIdentifier",
+          "type": "string",
+          "required": false,
+          "description": "Identifier of a piece of transport equipment e.g. container.",
+          "depth": 0
+        },
+        {
+          "name": "sealIdentifier",
+          "type": "string",
+          "required": false,
+          "description": "The identification number of a seal affixed to a piece of transport equipment.",
+          "depth": 0
+        },
+        {
+          "name": "grossWeight",
+          "type": "object",
+          "required": false,
+          "description": "Total gross weight including packaging.",
+          "depth": 0
+        },
+        {
+          "name": "grossWeight/amount",
+          "type": "number",
+          "required": false,
+          "description": "Weight amount",
+          "depth": 1
+        },
+        {
+          "name": "grossWeight/unit",
+          "type": "string",
+          "required": false,
+          "description": "Weight unit",
+          "depth": 1
+        },
+        {
+          "name": "volume",
+          "type": "object",
+          "required": false,
+          "description": "Total volume measurement.",
+          "depth": 0
+        },
+        {
+          "name": "volume/amount",
+          "type": "number",
+          "required": false,
+          "description": "Volume amount",
+          "depth": 1
+        },
+        {
+          "name": "volume/unit",
+          "type": "string",
+          "required": false,
+          "description": "Volume unit",
+          "depth": 1
+        },
+        {
+          "name": "numberOfPackages",
+          "type": "number",
+          "required": false,
+          "description": "Number of packages.",
+          "depth": 0
+        },
+        {
+          "name": "descriptionOfGoods",
+          "type": "string",
+          "required": false,
+          "description": "Plain language description of the nature of a goods item.",
+          "depth": 0
+        },
+        {
+          "name": "consignmentSummaryDescription",
+          "type": "string",
+          "required": false,
+          "description": "Plain language description of a consignment in summary terms.",
+          "depth": 0
+        },
+        {
+          "name": "shippingMarks",
+          "type": "string",
+          "required": false,
+          "description": "Free form description of the marks and numbers on a transport unit or package.",
+          "depth": 0
+        },
+        {
+          "name": "transportContractConditions",
+          "type": "string",
+          "required": false,
+          "description": "Reference to carrier's conditions of carriage.",
+          "depth": 0
+        },
+        {
+          "name": "prepaidAmount",
+          "type": "object",
+          "required": false,
+          "description": "Monetary amount of charges which have been paid in advance.",
+          "depth": 0
+        },
+        {
+          "name": "prepaidAmount/amount",
+          "type": "number",
+          "required": false,
+          "description": "Monetary amount",
+          "depth": 1
+        },
+        {
+          "name": "prepaidAmount/currency",
+          "type": "string",
+          "required": false,
+          "description": "Currency code",
+          "depth": 1
+        },
+        {
+          "name": "collectCharges",
+          "type": "object",
+          "required": false,
+          "description": "Monetary amount of charges to be collected from the consignee.",
+          "depth": 0
+        },
+        {
+          "name": "collectCharges/amount",
+          "type": "number",
+          "required": false,
+          "description": "Monetary amount",
+          "depth": 1
+        },
+        {
+          "name": "collectCharges/currency",
+          "type": "string",
+          "required": false,
+          "description": "Currency code",
+          "depth": 1
+        },
+        {
+          "name": "contractNumber",
+          "type": "string",
+          "required": false,
+          "description": "Identifier of a contract concluded between parties.",
+          "depth": 0
+        },
+        {
+          "name": "ucr",
+          "type": "string",
+          "required": false,
+          "description": "Unique Consignment Reference identifying a particular consignment.",
+          "depth": 0
+        },
+        {
+          "name": "goods",
+          "type": "array",
+          "required": false,
+          "description": "Goods covered by the bill of lading",
+          "depth": 0
+        },
+        {
+          "name": "goods/item/description",
+          "type": "string",
+          "required": false,
+          "description": "Description of the goods.",
+          "depth": 2
+        },
+        {
+          "name": "goods/item/hsCode",
+          "type": "string",
+          "required": false,
+          "description": "Code specifying a type of goods for Customs purposes.",
+          "depth": 2
+        },
+        {
+          "name": "goods/item/quantity",
+          "type": "object",
+          "required": false,
+          "description": "Number of units",
+          "depth": 2
+        },
+        {
+          "name": "goods/item/quantity/amount",
+          "type": "number",
+          "required": false,
+          "description": "Quantity amount",
+          "depth": 3
+        },
+        {
+          "name": "goods/item/quantity/unit",
+          "type": "string",
+          "required": false,
+          "description": "Unit of measure",
+          "depth": 3
+        },
+        {
+          "name": "goods/item/grossWeight",
+          "type": "object",
+          "required": false,
+          "description": "Gross weight including packaging.",
+          "depth": 2
+        },
+        {
+          "name": "goods/item/grossWeight/amount",
+          "type": "number",
+          "required": false,
+          "description": "Weight amount",
+          "depth": 3
+        },
+        {
+          "name": "goods/item/grossWeight/unit",
+          "type": "string",
+          "required": false,
+          "description": "Weight unit",
+          "depth": 3
+        },
+        {
+          "name": "goods/item/packages",
+          "type": "number",
+          "required": false,
+          "description": "Number of packages.",
+          "depth": 2
+        },
+        {
+          "name": "goods/item/packagingType",
+          "type": "string",
+          "required": false,
+          "description": "Code specifying the type of packaging.",
+          "depth": 2
+        }
+      ],
+      "schemaDescription": "A transport document issued by a carrier acknowledging receipt of cargo for shipment and evidencing the contract of carriage and title to the goods."
     },
     {
       "id": "cred:uncefact:certificate-of-origin:vcdm-2-0",
@@ -9716,10 +11348,666 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/uncefact/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-01T15:59:28.703Z",
+      "fetchedAt": "2026-04-02T07:22:06.963Z",
       "updatedAt": "2026-03-22T00:00:00.000Z",
       "firstSeenAt": "2026-03-22T00:00:00.000Z",
-      "attributes": []
+      "attributes": [
+        {
+          "name": "certificateNumber",
+          "type": "string",
+          "required": true,
+          "description": "Reference number to identify a certificate of origin.",
+          "depth": 0
+        },
+        {
+          "name": "issueDate",
+          "type": "string",
+          "required": true,
+          "description": "Date that a document was issued and when appropriate, signed or otherwise authenticated.",
+          "depth": 0
+        },
+        {
+          "name": "exporter",
+          "type": "object",
+          "required": true,
+          "description": "Party who makes, or on whose behalf the export declaration is made, and who is the owner of the goods or has similar rights of disposal over them at the time when the declaration is accepted.",
+          "depth": 0
+        },
+        {
+          "name": "exporter/type",
+          "type": "string",
+          "required": false,
+          "depth": 1
+        },
+        {
+          "name": "exporter/id",
+          "type": "string",
+          "required": false,
+          "description": "A unique party identifier.",
+          "depth": 1
+        },
+        {
+          "name": "exporter/name",
+          "type": "string",
+          "required": false,
+          "description": "Trade party name.",
+          "depth": 1
+        },
+        {
+          "name": "exporter/street",
+          "type": "string",
+          "required": false,
+          "description": "The street component of the address",
+          "depth": 1
+        },
+        {
+          "name": "exporter/city",
+          "type": "string",
+          "required": false,
+          "description": "The city component of the address",
+          "depth": 1
+        },
+        {
+          "name": "exporter/state",
+          "type": "string",
+          "required": false,
+          "description": "The state component of the address",
+          "depth": 1
+        },
+        {
+          "name": "exporter/zip",
+          "type": "number",
+          "required": false,
+          "description": "Postal code",
+          "depth": 1
+        },
+        {
+          "name": "exporter/country",
+          "type": "string",
+          "required": false,
+          "description": "Country.",
+          "depth": 1
+        },
+        {
+          "name": "importer",
+          "type": "object",
+          "required": false,
+          "description": "Party who makes - or on whose behalf a Customs clearing agent or other authorised person makes - an import declaration.",
+          "depth": 0
+        },
+        {
+          "name": "importer/type",
+          "type": "string",
+          "required": false,
+          "depth": 1
+        },
+        {
+          "name": "importer/id",
+          "type": "string",
+          "required": false,
+          "description": "A unique party identifier.",
+          "depth": 1
+        },
+        {
+          "name": "importer/name",
+          "type": "string",
+          "required": false,
+          "description": "Trade party name.",
+          "depth": 1
+        },
+        {
+          "name": "importer/street",
+          "type": "string",
+          "required": false,
+          "description": "The street component of the address",
+          "depth": 1
+        },
+        {
+          "name": "importer/city",
+          "type": "string",
+          "required": false,
+          "description": "The city component of the address",
+          "depth": 1
+        },
+        {
+          "name": "importer/state",
+          "type": "string",
+          "required": false,
+          "description": "The state component of the address",
+          "depth": 1
+        },
+        {
+          "name": "importer/zip",
+          "type": "number",
+          "required": false,
+          "description": "Postal code",
+          "depth": 1
+        },
+        {
+          "name": "importer/country",
+          "type": "string",
+          "required": false,
+          "description": "Country.",
+          "depth": 1
+        },
+        {
+          "name": "consignee",
+          "type": "object",
+          "required": false,
+          "description": "Party to which goods are consigned.",
+          "depth": 0
+        },
+        {
+          "name": "consignee/type",
+          "type": "string",
+          "required": false,
+          "depth": 1
+        },
+        {
+          "name": "consignee/id",
+          "type": "string",
+          "required": false,
+          "description": "A unique party identifier.",
+          "depth": 1
+        },
+        {
+          "name": "consignee/name",
+          "type": "string",
+          "required": false,
+          "description": "Trade party name.",
+          "depth": 1
+        },
+        {
+          "name": "consignee/street",
+          "type": "string",
+          "required": false,
+          "description": "The street component of the address",
+          "depth": 1
+        },
+        {
+          "name": "consignee/city",
+          "type": "string",
+          "required": false,
+          "description": "The city component of the address",
+          "depth": 1
+        },
+        {
+          "name": "consignee/state",
+          "type": "string",
+          "required": false,
+          "description": "The state component of the address",
+          "depth": 1
+        },
+        {
+          "name": "consignee/zip",
+          "type": "number",
+          "required": false,
+          "description": "Postal code",
+          "depth": 1
+        },
+        {
+          "name": "consignee/country",
+          "type": "string",
+          "required": false,
+          "description": "Country.",
+          "depth": 1
+        },
+        {
+          "name": "seller",
+          "type": "object",
+          "required": false,
+          "description": "Party selling merchandise or services to a buyer.",
+          "depth": 0
+        },
+        {
+          "name": "seller/type",
+          "type": "string",
+          "required": false,
+          "depth": 1
+        },
+        {
+          "name": "seller/id",
+          "type": "string",
+          "required": false,
+          "description": "A unique party identifier.",
+          "depth": 1
+        },
+        {
+          "name": "seller/name",
+          "type": "string",
+          "required": false,
+          "description": "Trade party name.",
+          "depth": 1
+        },
+        {
+          "name": "seller/street",
+          "type": "string",
+          "required": false,
+          "description": "The street component of the address",
+          "depth": 1
+        },
+        {
+          "name": "seller/city",
+          "type": "string",
+          "required": false,
+          "description": "The city component of the address",
+          "depth": 1
+        },
+        {
+          "name": "seller/state",
+          "type": "string",
+          "required": false,
+          "description": "The state component of the address",
+          "depth": 1
+        },
+        {
+          "name": "seller/zip",
+          "type": "number",
+          "required": false,
+          "description": "Postal code",
+          "depth": 1
+        },
+        {
+          "name": "seller/country",
+          "type": "string",
+          "required": false,
+          "description": "Country.",
+          "depth": 1
+        },
+        {
+          "name": "placeOfIssue",
+          "type": "object",
+          "required": false,
+          "description": "Location where a document was issued and when appropriate, signed or otherwise authenticated.",
+          "depth": 0
+        },
+        {
+          "name": "placeOfIssue/city",
+          "type": "string",
+          "required": false,
+          "description": "City where issued",
+          "depth": 1
+        },
+        {
+          "name": "placeOfIssue/state",
+          "type": "string",
+          "required": false,
+          "description": "State where issued",
+          "depth": 1
+        },
+        {
+          "name": "placeOfIssue/country",
+          "type": "string",
+          "required": false,
+          "description": "Country where issued",
+          "depth": 1
+        },
+        {
+          "name": "originCountry",
+          "type": "object",
+          "required": true,
+          "description": "Name of the country in which the goods have been produced or manufactured.",
+          "depth": 0
+        },
+        {
+          "name": "originCountry/country",
+          "type": "string",
+          "required": false,
+          "description": "ISO country code",
+          "depth": 1
+        },
+        {
+          "name": "originCountry/name",
+          "type": "string",
+          "required": false,
+          "description": "Country name",
+          "depth": 1
+        },
+        {
+          "name": "exportationCountry",
+          "type": "object",
+          "required": false,
+          "description": "Country from which a consignment of goods was initially exported.",
+          "depth": 0
+        },
+        {
+          "name": "exportationCountry/country",
+          "type": "string",
+          "required": false,
+          "description": "ISO country code",
+          "depth": 1
+        },
+        {
+          "name": "exportationCountry/name",
+          "type": "string",
+          "required": false,
+          "description": "Country name",
+          "depth": 1
+        },
+        {
+          "name": "destinationCountry",
+          "type": "object",
+          "required": false,
+          "description": "Country to which a consignment of goods is to be or has been delivered.",
+          "depth": 0
+        },
+        {
+          "name": "destinationCountry/country",
+          "type": "string",
+          "required": false,
+          "description": "ISO country code",
+          "depth": 1
+        },
+        {
+          "name": "destinationCountry/name",
+          "type": "string",
+          "required": false,
+          "description": "Country name",
+          "depth": 1
+        },
+        {
+          "name": "originalLoadingLocation",
+          "type": "object",
+          "required": false,
+          "description": "Location where the goods were first loaded onto the means of transport.",
+          "depth": 0
+        },
+        {
+          "name": "originalLoadingLocation/name",
+          "type": "string",
+          "required": false,
+          "description": "Location name",
+          "depth": 1
+        },
+        {
+          "name": "originalLoadingLocation/city",
+          "type": "string",
+          "required": false,
+          "description": "City",
+          "depth": 1
+        },
+        {
+          "name": "originalLoadingLocation/state",
+          "type": "string",
+          "required": false,
+          "description": "State",
+          "depth": 1
+        },
+        {
+          "name": "originalLoadingLocation/country",
+          "type": "string",
+          "required": false,
+          "description": "Country",
+          "depth": 1
+        },
+        {
+          "name": "originalLoadingLocation/unlocode",
+          "type": "string",
+          "required": false,
+          "description": "UN/LOCODE identifier",
+          "depth": 1
+        },
+        {
+          "name": "baseportUnloadingLocation",
+          "type": "object",
+          "required": false,
+          "description": "The place or port at which the cargo is discharged.",
+          "depth": 0
+        },
+        {
+          "name": "baseportUnloadingLocation/name",
+          "type": "string",
+          "required": false,
+          "description": "Location name",
+          "depth": 1
+        },
+        {
+          "name": "baseportUnloadingLocation/city",
+          "type": "string",
+          "required": false,
+          "description": "City",
+          "depth": 1
+        },
+        {
+          "name": "baseportUnloadingLocation/state",
+          "type": "string",
+          "required": false,
+          "description": "State",
+          "depth": 1
+        },
+        {
+          "name": "baseportUnloadingLocation/country",
+          "type": "string",
+          "required": false,
+          "description": "Country",
+          "depth": 1
+        },
+        {
+          "name": "baseportUnloadingLocation/unlocode",
+          "type": "string",
+          "required": false,
+          "description": "UN/LOCODE identifier",
+          "depth": 1
+        },
+        {
+          "name": "transportContractNumber",
+          "type": "string",
+          "required": false,
+          "description": "Reference number to identify a document evidencing a transport contract.",
+          "depth": 0
+        },
+        {
+          "name": "invoiceNumber",
+          "type": "string",
+          "required": false,
+          "description": "Reference number to identify an invoice.",
+          "depth": 0
+        },
+        {
+          "name": "contractNumber",
+          "type": "string",
+          "required": false,
+          "description": "Identifier of a contract concluded between parties.",
+          "depth": 0
+        },
+        {
+          "name": "issuingAuthority",
+          "type": "object",
+          "required": true,
+          "description": "Name, signature and seal of the party issuing the certificate of origin (UID:3P03).",
+          "depth": 0
+        },
+        {
+          "name": "issuingAuthority/name",
+          "type": "string",
+          "required": false,
+          "description": "Name of the issuing authority.",
+          "depth": 1
+        },
+        {
+          "name": "issuingAuthority/street",
+          "type": "string",
+          "required": false,
+          "description": "Street address.",
+          "depth": 1
+        },
+        {
+          "name": "issuingAuthority/city",
+          "type": "string",
+          "required": false,
+          "description": "City.",
+          "depth": 1
+        },
+        {
+          "name": "issuingAuthority/state",
+          "type": "string",
+          "required": false,
+          "description": "State.",
+          "depth": 1
+        },
+        {
+          "name": "issuingAuthority/country",
+          "type": "string",
+          "required": false,
+          "description": "Country.",
+          "depth": 1
+        },
+        {
+          "name": "competentAuthority",
+          "type": "object",
+          "required": true,
+          "description": "Name, address, national seal/stamp and country of the management or competent authority overseeing origin certification (UID:3P04).",
+          "depth": 0
+        },
+        {
+          "name": "competentAuthority/name",
+          "type": "string",
+          "required": false,
+          "description": "Name of the competent authority.",
+          "depth": 1
+        },
+        {
+          "name": "competentAuthority/country",
+          "type": "string",
+          "required": false,
+          "description": "Country of the competent authority.",
+          "depth": 1
+        },
+        {
+          "name": "numberOfPackages",
+          "type": "number",
+          "required": true,
+          "description": "Total number of packages in the consignment (UID:7012).",
+          "depth": 0
+        },
+        {
+          "name": "certification",
+          "type": "string",
+          "required": false,
+          "description": "Text of official certification.",
+          "depth": 0
+        },
+        {
+          "name": "authentication",
+          "type": "string",
+          "required": false,
+          "description": "Proof that a document has been authenticated.",
+          "depth": 0
+        },
+        {
+          "name": "goods",
+          "type": "array",
+          "required": true,
+          "description": "Goods covered by the certificate of origin",
+          "depth": 0
+        },
+        {
+          "name": "goods/item/description",
+          "type": "string",
+          "required": false,
+          "description": "Plain language description of the nature of a goods item.",
+          "depth": 2
+        },
+        {
+          "name": "goods/item/hsCode",
+          "type": "string",
+          "required": false,
+          "description": "Code specifying a type of goods for Customs purposes.",
+          "depth": 2
+        },
+        {
+          "name": "goods/item/quantity",
+          "type": "object",
+          "required": false,
+          "description": "Number of units",
+          "depth": 2
+        },
+        {
+          "name": "goods/item/quantity/amount",
+          "type": "number",
+          "required": false,
+          "description": "Quantity amount",
+          "depth": 3
+        },
+        {
+          "name": "goods/item/quantity/unit",
+          "type": "string",
+          "required": false,
+          "description": "Unit of measure",
+          "depth": 3
+        },
+        {
+          "name": "goods/item/netWeight",
+          "type": "object",
+          "required": false,
+          "description": "Total net weight of the goods.",
+          "depth": 2
+        },
+        {
+          "name": "goods/item/netWeight/amount",
+          "type": "number",
+          "required": false,
+          "description": "Weight amount",
+          "depth": 3
+        },
+        {
+          "name": "goods/item/netWeight/unit",
+          "type": "string",
+          "required": false,
+          "description": "Weight unit",
+          "depth": 3
+        },
+        {
+          "name": "goods/item/grossWeight",
+          "type": "object",
+          "required": false,
+          "description": "Total gross weight including packaging.",
+          "depth": 2
+        },
+        {
+          "name": "goods/item/grossWeight/amount",
+          "type": "number",
+          "required": false,
+          "description": "Weight amount",
+          "depth": 3
+        },
+        {
+          "name": "goods/item/grossWeight/unit",
+          "type": "string",
+          "required": false,
+          "description": "Weight unit",
+          "depth": 3
+        },
+        {
+          "name": "goods/item/value",
+          "type": "object",
+          "required": false,
+          "description": "Value of the goods",
+          "depth": 2
+        },
+        {
+          "name": "goods/item/value/amount",
+          "type": "number",
+          "required": false,
+          "description": "Monetary amount",
+          "depth": 3
+        },
+        {
+          "name": "goods/item/value/currency",
+          "type": "string",
+          "required": false,
+          "description": "Currency code",
+          "depth": 3
+        },
+        {
+          "name": "goods/item/countryOfOrigin",
+          "type": "string",
+          "required": false,
+          "description": "Country where the goods were produced or manufactured.",
+          "depth": 2
+        }
+      ],
+      "schemaDescription": "A document certifying the country of origin of specified goods to qualify for preferential treatment under trade agreements or to comply with import regulations."
     },
     {
       "id": "cred:uncefact:customs-declaration:vcdm-2-0",
@@ -9775,10 +12063,729 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/uncefact/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-01T15:59:28.703Z",
+      "fetchedAt": "2026-04-02T07:22:06.963Z",
       "updatedAt": "2026-03-22T00:00:00.000Z",
       "firstSeenAt": "2026-03-22T00:00:00.000Z",
-      "attributes": []
+      "attributes": [
+        {
+          "name": "declarationNumber",
+          "type": "string",
+          "required": true,
+          "description": "Reference number, assigned or accepted by Customs, to identify a goods declaration.",
+          "depth": 0
+        },
+        {
+          "name": "traderAssignedReference",
+          "type": "string",
+          "required": false,
+          "description": "Reference assigned by a trader to identify a declaration.",
+          "depth": 0
+        },
+        {
+          "name": "issueDate",
+          "type": "string",
+          "required": true,
+          "description": "Date that a document was issued.",
+          "depth": 0
+        },
+        {
+          "name": "exporter",
+          "type": "object",
+          "required": true,
+          "description": "Party who makes, or on whose behalf the export declaration is made.",
+          "depth": 0
+        },
+        {
+          "name": "exporter/type",
+          "type": "string",
+          "required": false,
+          "depth": 1
+        },
+        {
+          "name": "exporter/id",
+          "type": "string",
+          "required": false,
+          "description": "A unique party identifier.",
+          "depth": 1
+        },
+        {
+          "name": "exporter/name",
+          "type": "string",
+          "required": false,
+          "description": "Trade party name.",
+          "depth": 1
+        },
+        {
+          "name": "exporter/street",
+          "type": "string",
+          "required": false,
+          "description": "The street component of the address",
+          "depth": 1
+        },
+        {
+          "name": "exporter/city",
+          "type": "string",
+          "required": false,
+          "description": "The city component of the address",
+          "depth": 1
+        },
+        {
+          "name": "exporter/state",
+          "type": "string",
+          "required": false,
+          "description": "The state component of the address",
+          "depth": 1
+        },
+        {
+          "name": "exporter/zip",
+          "type": "number",
+          "required": false,
+          "description": "Postal code",
+          "depth": 1
+        },
+        {
+          "name": "exporter/country",
+          "type": "string",
+          "required": false,
+          "description": "Country.",
+          "depth": 1
+        },
+        {
+          "name": "exporter/eoriNumber",
+          "type": "string",
+          "required": false,
+          "description": "Economic Operators Registration and Identification number.",
+          "depth": 1
+        },
+        {
+          "name": "importer",
+          "type": "object",
+          "required": false,
+          "description": "Party who makes - or on whose behalf a Customs clearing agent makes - an import declaration.",
+          "depth": 0
+        },
+        {
+          "name": "importer/type",
+          "type": "string",
+          "required": false,
+          "depth": 1
+        },
+        {
+          "name": "importer/id",
+          "type": "string",
+          "required": false,
+          "description": "A unique party identifier.",
+          "depth": 1
+        },
+        {
+          "name": "importer/name",
+          "type": "string",
+          "required": false,
+          "description": "Trade party name.",
+          "depth": 1
+        },
+        {
+          "name": "importer/street",
+          "type": "string",
+          "required": false,
+          "description": "The street component of the address",
+          "depth": 1
+        },
+        {
+          "name": "importer/city",
+          "type": "string",
+          "required": false,
+          "description": "The city component of the address",
+          "depth": 1
+        },
+        {
+          "name": "importer/state",
+          "type": "string",
+          "required": false,
+          "description": "The state component of the address",
+          "depth": 1
+        },
+        {
+          "name": "importer/zip",
+          "type": "number",
+          "required": false,
+          "description": "Postal code",
+          "depth": 1
+        },
+        {
+          "name": "importer/country",
+          "type": "string",
+          "required": false,
+          "description": "Country.",
+          "depth": 1
+        },
+        {
+          "name": "consignee",
+          "type": "object",
+          "required": false,
+          "description": "Party to which goods are consigned.",
+          "depth": 0
+        },
+        {
+          "name": "consignee/type",
+          "type": "string",
+          "required": false,
+          "depth": 1
+        },
+        {
+          "name": "consignee/id",
+          "type": "string",
+          "required": false,
+          "description": "A unique party identifier.",
+          "depth": 1
+        },
+        {
+          "name": "consignee/name",
+          "type": "string",
+          "required": false,
+          "description": "Trade party name.",
+          "depth": 1
+        },
+        {
+          "name": "consignee/street",
+          "type": "string",
+          "required": false,
+          "description": "The street component of the address",
+          "depth": 1
+        },
+        {
+          "name": "consignee/city",
+          "type": "string",
+          "required": false,
+          "description": "The city component of the address",
+          "depth": 1
+        },
+        {
+          "name": "consignee/state",
+          "type": "string",
+          "required": false,
+          "description": "The state component of the address",
+          "depth": 1
+        },
+        {
+          "name": "consignee/zip",
+          "type": "number",
+          "required": false,
+          "description": "Postal code",
+          "depth": 1
+        },
+        {
+          "name": "consignee/country",
+          "type": "string",
+          "required": false,
+          "description": "Country.",
+          "depth": 1
+        },
+        {
+          "name": "carrier",
+          "type": "object",
+          "required": false,
+          "description": "Party providing the transport of goods between named points.",
+          "depth": 0
+        },
+        {
+          "name": "carrier/type",
+          "type": "string",
+          "required": false,
+          "depth": 1
+        },
+        {
+          "name": "carrier/id",
+          "type": "string",
+          "required": false,
+          "description": "A unique party identifier.",
+          "depth": 1
+        },
+        {
+          "name": "carrier/name",
+          "type": "string",
+          "required": false,
+          "description": "Trade party name.",
+          "depth": 1
+        },
+        {
+          "name": "carrier/street",
+          "type": "string",
+          "required": false,
+          "description": "The street component of the address",
+          "depth": 1
+        },
+        {
+          "name": "carrier/city",
+          "type": "string",
+          "required": false,
+          "description": "The city component of the address",
+          "depth": 1
+        },
+        {
+          "name": "carrier/state",
+          "type": "string",
+          "required": false,
+          "description": "The state component of the address",
+          "depth": 1
+        },
+        {
+          "name": "carrier/zip",
+          "type": "number",
+          "required": false,
+          "description": "Postal code",
+          "depth": 1
+        },
+        {
+          "name": "carrier/country",
+          "type": "string",
+          "required": false,
+          "description": "Country.",
+          "depth": 1
+        },
+        {
+          "name": "exportationCountry",
+          "type": "object",
+          "required": false,
+          "description": "Country from which goods are exported.",
+          "depth": 0
+        },
+        {
+          "name": "exportationCountry/country",
+          "type": "string",
+          "required": false,
+          "description": "ISO country code",
+          "depth": 1
+        },
+        {
+          "name": "exportationCountry/name",
+          "type": "string",
+          "required": false,
+          "description": "Country name",
+          "depth": 1
+        },
+        {
+          "name": "destinationCountry",
+          "type": "object",
+          "required": false,
+          "description": "Country to which goods are destined.",
+          "depth": 0
+        },
+        {
+          "name": "destinationCountry/country",
+          "type": "string",
+          "required": false,
+          "description": "ISO country code",
+          "depth": 1
+        },
+        {
+          "name": "destinationCountry/name",
+          "type": "string",
+          "required": false,
+          "description": "Country name",
+          "depth": 1
+        },
+        {
+          "name": "consignmentDestinationCountry",
+          "type": "object",
+          "required": false,
+          "description": "Name of the country to which the goods are to be delivered.",
+          "depth": 0
+        },
+        {
+          "name": "consignmentDestinationCountry/country",
+          "type": "string",
+          "required": false,
+          "description": "ISO country code",
+          "depth": 1
+        },
+        {
+          "name": "consignmentDestinationCountry/name",
+          "type": "string",
+          "required": false,
+          "description": "Country name",
+          "depth": 1
+        },
+        {
+          "name": "exitCustomsOffice",
+          "type": "object",
+          "required": false,
+          "description": "Customs office at which the goods leave the customs territory.",
+          "depth": 0
+        },
+        {
+          "name": "exitCustomsOffice/code",
+          "type": "string",
+          "required": false,
+          "description": "Office code",
+          "depth": 1
+        },
+        {
+          "name": "exitCustomsOffice/name",
+          "type": "string",
+          "required": false,
+          "description": "Office name",
+          "depth": 1
+        },
+        {
+          "name": "exitCustomsOffice/location",
+          "type": "string",
+          "required": false,
+          "description": "Office location",
+          "depth": 1
+        },
+        {
+          "name": "entryCustomsOffice",
+          "type": "object",
+          "required": false,
+          "description": "Customs office at which the goods enter the customs territory.",
+          "depth": 0
+        },
+        {
+          "name": "entryCustomsOffice/code",
+          "type": "string",
+          "required": false,
+          "description": "Office code",
+          "depth": 1
+        },
+        {
+          "name": "entryCustomsOffice/name",
+          "type": "string",
+          "required": false,
+          "description": "Office name",
+          "depth": 1
+        },
+        {
+          "name": "entryCustomsOffice/location",
+          "type": "string",
+          "required": false,
+          "description": "Office location",
+          "depth": 1
+        },
+        {
+          "name": "transportContractNumber",
+          "type": "string",
+          "required": false,
+          "description": "Reference number to identify a document evidencing a transport contract.",
+          "depth": 0
+        },
+        {
+          "name": "invoiceNumber",
+          "type": "string",
+          "required": false,
+          "description": "Reference number to identify an invoice.",
+          "depth": 0
+        },
+        {
+          "name": "invoiceDate",
+          "type": "string",
+          "required": false,
+          "description": "Date of issue of an invoice.",
+          "depth": 0
+        },
+        {
+          "name": "tradeTermsConditionsCode",
+          "type": "string",
+          "required": false,
+          "description": "Code specifying the delivery or transport terms (Incoterms).",
+          "depth": 0
+        },
+        {
+          "name": "tradeTermsConditionsDescription",
+          "type": "string",
+          "required": false,
+          "description": "Free form description of delivery or transport terms.",
+          "depth": 0
+        },
+        {
+          "name": "paymentMethod",
+          "type": "string",
+          "required": false,
+          "description": "Code specifying a method of payment.",
+          "depth": 0
+        },
+        {
+          "name": "modeOfTransport",
+          "type": "string",
+          "required": false,
+          "description": "Code specifying a mode of transport (1=Maritime, 3=Road, 4=Air, etc.).",
+          "depth": 0
+        },
+        {
+          "name": "transportMeansIdentifier",
+          "type": "string",
+          "required": false,
+          "description": "Name of a specific means of transport such as the vessel name.",
+          "depth": 0
+        },
+        {
+          "name": "transportMeansRegistration",
+          "type": "string",
+          "required": false,
+          "description": "Identifier of a specific means of transport.",
+          "depth": 0
+        },
+        {
+          "name": "transportMeansAtBorder",
+          "type": "string",
+          "required": false,
+          "description": "Identifier of the means of transport used in crossing the border.",
+          "depth": 0
+        },
+        {
+          "name": "natureOfTransaction",
+          "type": "string",
+          "required": false,
+          "description": "Textual representation of a type of contract.",
+          "depth": 0
+        },
+        {
+          "name": "declarationGoods",
+          "type": "array",
+          "required": true,
+          "description": "Goods declared to customs",
+          "depth": 0
+        },
+        {
+          "name": "declarationGoods/item/sequenceIdentifier",
+          "type": "number",
+          "required": false,
+          "description": "Sequence number differentiating a specific goods item.",
+          "depth": 2
+        },
+        {
+          "name": "declarationGoods/item/description",
+          "type": "string",
+          "required": false,
+          "description": "Plain language description of the goods.",
+          "depth": 2
+        },
+        {
+          "name": "declarationGoods/item/hsCode",
+          "type": "string",
+          "required": false,
+          "description": "Code specifying a type of goods for Customs purposes.",
+          "depth": 2
+        },
+        {
+          "name": "declarationGoods/item/originCountry",
+          "type": "string",
+          "required": false,
+          "description": "Country where the goods were produced or manufactured.",
+          "depth": 2
+        },
+        {
+          "name": "declarationGoods/item/quantity",
+          "type": "object",
+          "required": false,
+          "description": "Number of units",
+          "depth": 2
+        },
+        {
+          "name": "declarationGoods/item/quantity/amount",
+          "type": "number",
+          "required": false,
+          "description": "Quantity amount",
+          "depth": 3
+        },
+        {
+          "name": "declarationGoods/item/quantity/unit",
+          "type": "string",
+          "required": false,
+          "description": "Unit of measure",
+          "depth": 3
+        },
+        {
+          "name": "declarationGoods/item/netWeight",
+          "type": "object",
+          "required": false,
+          "description": "Total net weight of the goods.",
+          "depth": 2
+        },
+        {
+          "name": "declarationGoods/item/netWeight/amount",
+          "type": "number",
+          "required": false,
+          "description": "Weight amount",
+          "depth": 3
+        },
+        {
+          "name": "declarationGoods/item/netWeight/unit",
+          "type": "string",
+          "required": false,
+          "description": "Weight unit",
+          "depth": 3
+        },
+        {
+          "name": "declarationGoods/item/grossWeight",
+          "type": "object",
+          "required": false,
+          "description": "Total gross weight including packaging.",
+          "depth": 2
+        },
+        {
+          "name": "declarationGoods/item/grossWeight/amount",
+          "type": "number",
+          "required": false,
+          "description": "Weight amount",
+          "depth": 3
+        },
+        {
+          "name": "declarationGoods/item/grossWeight/unit",
+          "type": "string",
+          "required": false,
+          "description": "Weight unit",
+          "depth": 3
+        },
+        {
+          "name": "declarationGoods/item/numberOfPackages",
+          "type": "number",
+          "required": false,
+          "description": "Number of packages per goods item.",
+          "depth": 2
+        },
+        {
+          "name": "declarationGoods/item/packagingType",
+          "type": "string",
+          "required": false,
+          "description": "Code specifying the type of packaging (CT=Carton, etc.).",
+          "depth": 2
+        },
+        {
+          "name": "declarationGoods/item/shippingMarks",
+          "type": "string",
+          "required": false,
+          "description": "Free form description of the marks and numbers on packages.",
+          "depth": 2
+        },
+        {
+          "name": "declarationGoods/item/customsValue",
+          "type": "object",
+          "required": false,
+          "description": "Value declared for customs purposes",
+          "depth": 2
+        },
+        {
+          "name": "declarationGoods/item/customsValue/amount",
+          "type": "number",
+          "required": false,
+          "description": "Monetary amount",
+          "depth": 3
+        },
+        {
+          "name": "declarationGoods/item/customsValue/currency",
+          "type": "string",
+          "required": false,
+          "description": "Currency code",
+          "depth": 3
+        },
+        {
+          "name": "declarationGoods/item/statisticalValue",
+          "type": "object",
+          "required": false,
+          "description": "Value declared for statistical purposes",
+          "depth": 2
+        },
+        {
+          "name": "declarationGoods/item/statisticalValue/amount",
+          "type": "number",
+          "required": false,
+          "description": "Monetary amount",
+          "depth": 3
+        },
+        {
+          "name": "declarationGoods/item/statisticalValue/currency",
+          "type": "string",
+          "required": false,
+          "description": "Currency code",
+          "depth": 3
+        },
+        {
+          "name": "declarationGoods/item/taxRegimeType",
+          "type": "string",
+          "required": false,
+          "description": "Code specifying a regime according to which tax is assessed.",
+          "depth": 2
+        },
+        {
+          "name": "totalInvoiceAmount",
+          "type": "object",
+          "required": false,
+          "description": "Total monetary amount charged.",
+          "depth": 0
+        },
+        {
+          "name": "totalInvoiceAmount/amount",
+          "type": "number",
+          "required": false,
+          "description": "Monetary amount",
+          "depth": 1
+        },
+        {
+          "name": "totalInvoiceAmount/currency",
+          "type": "string",
+          "required": false,
+          "description": "Currency code",
+          "depth": 1
+        },
+        {
+          "name": "totalGrossWeight",
+          "type": "object",
+          "required": false,
+          "description": "Total gross weight of all goods.",
+          "depth": 0
+        },
+        {
+          "name": "totalGrossWeight/amount",
+          "type": "number",
+          "required": false,
+          "description": "Weight amount",
+          "depth": 1
+        },
+        {
+          "name": "totalGrossWeight/unit",
+          "type": "string",
+          "required": false,
+          "description": "Weight unit",
+          "depth": 1
+        },
+        {
+          "name": "totalNetWeight",
+          "type": "object",
+          "required": false,
+          "description": "Total net weight of all goods.",
+          "depth": 0
+        },
+        {
+          "name": "totalNetWeight/amount",
+          "type": "number",
+          "required": false,
+          "description": "Weight amount",
+          "depth": 1
+        },
+        {
+          "name": "totalNetWeight/unit",
+          "type": "string",
+          "required": false,
+          "description": "Weight unit",
+          "depth": 1
+        },
+        {
+          "name": "totalNumberOfPackages",
+          "type": "number",
+          "required": false,
+          "description": "Total number of packages.",
+          "depth": 0
+        },
+        {
+          "name": "ucr",
+          "type": "string",
+          "required": false,
+          "description": "Unique Consignment Reference identifying a particular consignment.",
+          "depth": 0
+        }
+      ],
+      "schemaDescription": "A formal document submitted to customs authorities declaring the details of goods being imported or exported, including their nature, value, and origin for duty assessment and regulatory compliance."
     },
     {
       "id": "cred:uncefact:insurance-certificate:vcdm-2-0",
@@ -9834,10 +12841,714 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/uncefact/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-01T15:59:28.703Z",
+      "fetchedAt": "2026-04-02T07:22:06.963Z",
       "updatedAt": "2026-03-22T00:00:00.000Z",
       "firstSeenAt": "2026-03-22T00:00:00.000Z",
-      "attributes": []
+      "attributes": [
+        {
+          "name": "certificateNumber",
+          "type": "string",
+          "required": true,
+          "description": "Reference number to identify an insurance certificate.",
+          "depth": 0
+        },
+        {
+          "name": "policyNumber",
+          "type": "string",
+          "required": true,
+          "description": "Reference number to identify an insurance policy.",
+          "depth": 0
+        },
+        {
+          "name": "issueDate",
+          "type": "string",
+          "required": true,
+          "description": "Date that a document was issued.",
+          "depth": 0
+        },
+        {
+          "name": "insuredParty",
+          "type": "object",
+          "required": true,
+          "description": "Party which benefits from insurance coverage.",
+          "depth": 0
+        },
+        {
+          "name": "insuredParty/type",
+          "type": "string",
+          "required": false,
+          "depth": 1
+        },
+        {
+          "name": "insuredParty/id",
+          "type": "string",
+          "required": false,
+          "description": "A unique party identifier.",
+          "depth": 1
+        },
+        {
+          "name": "insuredParty/name",
+          "type": "string",
+          "required": false,
+          "description": "Trade party name.",
+          "depth": 1
+        },
+        {
+          "name": "insuredParty/street",
+          "type": "string",
+          "required": false,
+          "description": "The street component of the address",
+          "depth": 1
+        },
+        {
+          "name": "insuredParty/city",
+          "type": "string",
+          "required": false,
+          "description": "The city component of the address",
+          "depth": 1
+        },
+        {
+          "name": "insuredParty/state",
+          "type": "string",
+          "required": false,
+          "description": "The state component of the address",
+          "depth": 1
+        },
+        {
+          "name": "insuredParty/zip",
+          "type": "number",
+          "required": false,
+          "description": "Postal code",
+          "depth": 1
+        },
+        {
+          "name": "insuredParty/country",
+          "type": "string",
+          "required": false,
+          "description": "Country.",
+          "depth": 1
+        },
+        {
+          "name": "insuranceCompany",
+          "type": "object",
+          "required": true,
+          "description": "Details related to the company engaged in the business of insurance.",
+          "depth": 0
+        },
+        {
+          "name": "insuranceCompany/type",
+          "type": "string",
+          "required": false,
+          "depth": 1
+        },
+        {
+          "name": "insuranceCompany/id",
+          "type": "string",
+          "required": false,
+          "description": "A unique party identifier.",
+          "depth": 1
+        },
+        {
+          "name": "insuranceCompany/name",
+          "type": "string",
+          "required": false,
+          "description": "Trade party name.",
+          "depth": 1
+        },
+        {
+          "name": "insuranceCompany/street",
+          "type": "string",
+          "required": false,
+          "description": "The street component of the address",
+          "depth": 1
+        },
+        {
+          "name": "insuranceCompany/city",
+          "type": "string",
+          "required": false,
+          "description": "The city component of the address",
+          "depth": 1
+        },
+        {
+          "name": "insuranceCompany/state",
+          "type": "string",
+          "required": false,
+          "description": "The state component of the address",
+          "depth": 1
+        },
+        {
+          "name": "insuranceCompany/zip",
+          "type": "number",
+          "required": false,
+          "description": "Postal code",
+          "depth": 1
+        },
+        {
+          "name": "insuranceCompany/country",
+          "type": "string",
+          "required": false,
+          "description": "Country.",
+          "depth": 1
+        },
+        {
+          "name": "insuranceClaimsAdjuster",
+          "type": "object",
+          "required": false,
+          "description": "Name and address of the insurance claims adjuster.",
+          "depth": 0
+        },
+        {
+          "name": "insuranceClaimsAdjuster/name",
+          "type": "string",
+          "required": false,
+          "description": "Adjuster name",
+          "depth": 1
+        },
+        {
+          "name": "insuranceClaimsAdjuster/street",
+          "type": "string",
+          "required": false,
+          "description": "Street address",
+          "depth": 1
+        },
+        {
+          "name": "insuranceClaimsAdjuster/city",
+          "type": "string",
+          "required": false,
+          "description": "City",
+          "depth": 1
+        },
+        {
+          "name": "insuranceClaimsAdjuster/state",
+          "type": "string",
+          "required": false,
+          "description": "State",
+          "depth": 1
+        },
+        {
+          "name": "insuranceClaimsAdjuster/zip",
+          "type": "number",
+          "required": false,
+          "description": "Postal code",
+          "depth": 1
+        },
+        {
+          "name": "insuranceClaimsAdjuster/country",
+          "type": "string",
+          "required": false,
+          "description": "Country",
+          "depth": 1
+        },
+        {
+          "name": "placeOfIssue",
+          "type": "object",
+          "required": false,
+          "description": "Location where a document was issued.",
+          "depth": 0
+        },
+        {
+          "name": "placeOfIssue/city",
+          "type": "string",
+          "required": false,
+          "description": "City",
+          "depth": 1
+        },
+        {
+          "name": "placeOfIssue/state",
+          "type": "string",
+          "required": false,
+          "description": "State",
+          "depth": 1
+        },
+        {
+          "name": "placeOfIssue/country",
+          "type": "string",
+          "required": false,
+          "description": "Country",
+          "depth": 1
+        },
+        {
+          "name": "transportContractNumber",
+          "type": "string",
+          "required": false,
+          "description": "Reference number to identify a document evidencing a transport contract.",
+          "depth": 0
+        },
+        {
+          "name": "billOfLadingNumber",
+          "type": "string",
+          "required": false,
+          "description": "Reference number to identify a bill of lading.",
+          "depth": 0
+        },
+        {
+          "name": "invoiceNumber",
+          "type": "string",
+          "required": false,
+          "description": "Reference number to identify an invoice.",
+          "depth": 0
+        },
+        {
+          "name": "contractNumber",
+          "type": "string",
+          "required": false,
+          "description": "Identifier of a contract concluded between parties.",
+          "depth": 0
+        },
+        {
+          "name": "documentaryCreditIdentifier",
+          "type": "string",
+          "required": false,
+          "description": "Reference number to identify a documentary credit.",
+          "depth": 0
+        },
+        {
+          "name": "consignor",
+          "type": "object",
+          "required": false,
+          "description": "Party consigning goods as stipulated in the transport contract.",
+          "depth": 0
+        },
+        {
+          "name": "consignor/type",
+          "type": "string",
+          "required": false,
+          "depth": 1
+        },
+        {
+          "name": "consignor/id",
+          "type": "string",
+          "required": false,
+          "description": "A unique party identifier.",
+          "depth": 1
+        },
+        {
+          "name": "consignor/name",
+          "type": "string",
+          "required": false,
+          "description": "Trade party name.",
+          "depth": 1
+        },
+        {
+          "name": "consignor/street",
+          "type": "string",
+          "required": false,
+          "description": "The street component of the address",
+          "depth": 1
+        },
+        {
+          "name": "consignor/city",
+          "type": "string",
+          "required": false,
+          "description": "The city component of the address",
+          "depth": 1
+        },
+        {
+          "name": "consignor/state",
+          "type": "string",
+          "required": false,
+          "description": "The state component of the address",
+          "depth": 1
+        },
+        {
+          "name": "consignor/zip",
+          "type": "number",
+          "required": false,
+          "description": "Postal code",
+          "depth": 1
+        },
+        {
+          "name": "consignor/country",
+          "type": "string",
+          "required": false,
+          "description": "Country.",
+          "depth": 1
+        },
+        {
+          "name": "consignee",
+          "type": "object",
+          "required": false,
+          "description": "Party to which goods are consigned.",
+          "depth": 0
+        },
+        {
+          "name": "consignee/type",
+          "type": "string",
+          "required": false,
+          "depth": 1
+        },
+        {
+          "name": "consignee/id",
+          "type": "string",
+          "required": false,
+          "description": "A unique party identifier.",
+          "depth": 1
+        },
+        {
+          "name": "consignee/name",
+          "type": "string",
+          "required": false,
+          "description": "Trade party name.",
+          "depth": 1
+        },
+        {
+          "name": "consignee/street",
+          "type": "string",
+          "required": false,
+          "description": "The street component of the address",
+          "depth": 1
+        },
+        {
+          "name": "consignee/city",
+          "type": "string",
+          "required": false,
+          "description": "The city component of the address",
+          "depth": 1
+        },
+        {
+          "name": "consignee/state",
+          "type": "string",
+          "required": false,
+          "description": "The state component of the address",
+          "depth": 1
+        },
+        {
+          "name": "consignee/zip",
+          "type": "number",
+          "required": false,
+          "description": "Postal code",
+          "depth": 1
+        },
+        {
+          "name": "consignee/country",
+          "type": "string",
+          "required": false,
+          "description": "Country.",
+          "depth": 1
+        },
+        {
+          "name": "carrier",
+          "type": "object",
+          "required": false,
+          "description": "Party providing the transport of goods between named points.",
+          "depth": 0
+        },
+        {
+          "name": "carrier/type",
+          "type": "string",
+          "required": false,
+          "depth": 1
+        },
+        {
+          "name": "carrier/id",
+          "type": "string",
+          "required": false,
+          "description": "A unique party identifier.",
+          "depth": 1
+        },
+        {
+          "name": "carrier/name",
+          "type": "string",
+          "required": false,
+          "description": "Trade party name.",
+          "depth": 1
+        },
+        {
+          "name": "carrier/street",
+          "type": "string",
+          "required": false,
+          "description": "The street component of the address",
+          "depth": 1
+        },
+        {
+          "name": "carrier/city",
+          "type": "string",
+          "required": false,
+          "description": "The city component of the address",
+          "depth": 1
+        },
+        {
+          "name": "carrier/state",
+          "type": "string",
+          "required": false,
+          "description": "The state component of the address",
+          "depth": 1
+        },
+        {
+          "name": "carrier/zip",
+          "type": "number",
+          "required": false,
+          "description": "Postal code",
+          "depth": 1
+        },
+        {
+          "name": "carrier/country",
+          "type": "string",
+          "required": false,
+          "description": "Country.",
+          "depth": 1
+        },
+        {
+          "name": "transportMeansIdentifier",
+          "type": "string",
+          "required": false,
+          "description": "Name of a specific means of transport such as the vessel name.",
+          "depth": 0
+        },
+        {
+          "name": "transportMeansRegistration",
+          "type": "string",
+          "required": false,
+          "description": "Identifier of a specific means of transport.",
+          "depth": 0
+        },
+        {
+          "name": "conveyanceReferenceNumber",
+          "type": "string",
+          "required": false,
+          "description": "Identifier of a journey of a means of transport.",
+          "depth": 0
+        },
+        {
+          "name": "estimatedTimeOfDeparture",
+          "type": "string",
+          "required": false,
+          "description": "Date and time when a transport means is scheduled to depart.",
+          "depth": 0
+        },
+        {
+          "name": "estimatedTimeOfArrival",
+          "type": "string",
+          "required": false,
+          "description": "Date and time of the estimated arrival of means of transport.",
+          "depth": 0
+        },
+        {
+          "name": "originalLoadingLocation",
+          "type": "object",
+          "required": true,
+          "description": "Seaport, airport, freight terminal, rail station or other location where the goods were first loaded onto the means of transport (UID:3099).",
+          "depth": 0
+        },
+        {
+          "name": "originalLoadingLocation/name",
+          "type": "string",
+          "required": false,
+          "description": "Location name",
+          "depth": 1
+        },
+        {
+          "name": "originalLoadingLocation/city",
+          "type": "string",
+          "required": false,
+          "description": "City",
+          "depth": 1
+        },
+        {
+          "name": "originalLoadingLocation/state",
+          "type": "string",
+          "required": false,
+          "description": "State",
+          "depth": 1
+        },
+        {
+          "name": "originalLoadingLocation/country",
+          "type": "string",
+          "required": false,
+          "description": "Country",
+          "depth": 1
+        },
+        {
+          "name": "originalLoadingLocation/unlocode",
+          "type": "string",
+          "required": false,
+          "description": "UN/LOCODE identifier",
+          "depth": 1
+        },
+        {
+          "name": "baseportUnloadingLocation",
+          "type": "object",
+          "required": true,
+          "description": "The place or port at which the cargo is discharged from the main vessel (UID:3356).",
+          "depth": 0
+        },
+        {
+          "name": "baseportUnloadingLocation/name",
+          "type": "string",
+          "required": false,
+          "description": "Location name",
+          "depth": 1
+        },
+        {
+          "name": "baseportUnloadingLocation/city",
+          "type": "string",
+          "required": false,
+          "description": "City",
+          "depth": 1
+        },
+        {
+          "name": "baseportUnloadingLocation/state",
+          "type": "string",
+          "required": false,
+          "description": "State",
+          "depth": 1
+        },
+        {
+          "name": "baseportUnloadingLocation/country",
+          "type": "string",
+          "required": false,
+          "description": "Country",
+          "depth": 1
+        },
+        {
+          "name": "baseportUnloadingLocation/unlocode",
+          "type": "string",
+          "required": false,
+          "description": "UN/LOCODE identifier",
+          "depth": 1
+        },
+        {
+          "name": "placeOfDeparture",
+          "type": "object",
+          "required": false,
+          "description": "Port from which a means of transport is scheduled to depart.",
+          "depth": 0
+        },
+        {
+          "name": "placeOfDeparture/name",
+          "type": "string",
+          "required": false,
+          "description": "Location name",
+          "depth": 1
+        },
+        {
+          "name": "placeOfDeparture/city",
+          "type": "string",
+          "required": false,
+          "description": "City",
+          "depth": 1
+        },
+        {
+          "name": "placeOfDeparture/state",
+          "type": "string",
+          "required": false,
+          "description": "State",
+          "depth": 1
+        },
+        {
+          "name": "placeOfDeparture/country",
+          "type": "string",
+          "required": false,
+          "description": "Country",
+          "depth": 1
+        },
+        {
+          "name": "arrivalLocation",
+          "type": "object",
+          "required": false,
+          "description": "Port at which a means of transport is scheduled to arrive.",
+          "depth": 0
+        },
+        {
+          "name": "arrivalLocation/name",
+          "type": "string",
+          "required": false,
+          "description": "Location name",
+          "depth": 1
+        },
+        {
+          "name": "arrivalLocation/city",
+          "type": "string",
+          "required": false,
+          "description": "City",
+          "depth": 1
+        },
+        {
+          "name": "arrivalLocation/state",
+          "type": "string",
+          "required": false,
+          "description": "State",
+          "depth": 1
+        },
+        {
+          "name": "arrivalLocation/country",
+          "type": "string",
+          "required": false,
+          "description": "Country",
+          "depth": 1
+        },
+        {
+          "name": "insuredValueAmount",
+          "type": "object",
+          "required": true,
+          "description": "Total sum covered by insurance for a particular consignment.",
+          "depth": 0
+        },
+        {
+          "name": "insuredValueAmount/amount",
+          "type": "number",
+          "required": false,
+          "description": "Monetary amount (110% of goods value)",
+          "depth": 1
+        },
+        {
+          "name": "insuredValueAmount/currency",
+          "type": "string",
+          "required": false,
+          "description": "Currency code",
+          "depth": 1
+        },
+        {
+          "name": "insuranceAmount",
+          "type": "object",
+          "required": false,
+          "description": "Amount of premium payable to the insurance company.",
+          "depth": 0
+        },
+        {
+          "name": "insuranceAmount/amount",
+          "type": "number",
+          "required": false,
+          "description": "Premium amount (1% of insured value)",
+          "depth": 1
+        },
+        {
+          "name": "insuranceAmount/currency",
+          "type": "string",
+          "required": false,
+          "description": "Currency code",
+          "depth": 1
+        },
+        {
+          "name": "insuranceConditions",
+          "type": "string",
+          "required": false,
+          "description": "Reference to the general conditions of contract under which insurance is issued.",
+          "depth": 0
+        },
+        {
+          "name": "goodsDescription",
+          "type": "string",
+          "required": false,
+          "description": "Plain language description of the nature of goods.",
+          "depth": 0
+        },
+        {
+          "name": "riskObject",
+          "type": "string",
+          "required": false,
+          "description": "Free form description of the object sub-type of a risk.",
+          "depth": 0
+        },
+        {
+          "name": "authentication",
+          "type": "string",
+          "required": false,
+          "description": "Proof that a document has been authenticated.",
+          "depth": 0
+        }
+      ],
+      "schemaDescription": "A document certifying that insurance coverage has been effected for particular goods being shipped, detailing the risks covered, sum insured, and terms of coverage."
     },
     {
       "id": "cred:uncefact:packing-list:vcdm-2-0",
@@ -9893,10 +13604,778 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/uncefact/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-01T15:59:28.703Z",
+      "fetchedAt": "2026-04-02T07:22:06.963Z",
       "updatedAt": "2026-03-22T00:00:00.000Z",
       "firstSeenAt": "2026-03-22T00:00:00.000Z",
-      "attributes": []
+      "attributes": [
+        {
+          "name": "issueDate",
+          "type": "string",
+          "required": true,
+          "description": "Date that a document was issued.",
+          "depth": 0
+        },
+        {
+          "name": "despatchDate",
+          "type": "string",
+          "required": false,
+          "description": "Date on which goods are despatched or consigned.",
+          "depth": 0
+        },
+        {
+          "name": "purchaseOrderNumber",
+          "type": "string",
+          "required": false,
+          "description": "Identifier assigned by the buyer to an order.",
+          "depth": 0
+        },
+        {
+          "name": "contractNumber",
+          "type": "string",
+          "required": false,
+          "description": "Identifier of a contract concluded between parties.",
+          "depth": 0
+        },
+        {
+          "name": "invoiceNumber",
+          "type": "string",
+          "required": false,
+          "description": "Reference number to identify an invoice.",
+          "depth": 0
+        },
+        {
+          "name": "transportContractNumber",
+          "type": "string",
+          "required": false,
+          "description": "Reference number to identify a document evidencing a transport contract.",
+          "depth": 0
+        },
+        {
+          "name": "buyer",
+          "type": "object",
+          "required": false,
+          "description": "Party to which merchandise or services are sold.",
+          "depth": 0
+        },
+        {
+          "name": "buyer/type",
+          "type": "string",
+          "required": false,
+          "depth": 1
+        },
+        {
+          "name": "buyer/id",
+          "type": "string",
+          "required": false,
+          "description": "A unique party identifier.",
+          "depth": 1
+        },
+        {
+          "name": "buyer/name",
+          "type": "string",
+          "required": false,
+          "description": "Trade party name.",
+          "depth": 1
+        },
+        {
+          "name": "buyer/street",
+          "type": "string",
+          "required": false,
+          "description": "The street component of the address",
+          "depth": 1
+        },
+        {
+          "name": "buyer/city",
+          "type": "string",
+          "required": false,
+          "description": "The city component of the address",
+          "depth": 1
+        },
+        {
+          "name": "buyer/state",
+          "type": "string",
+          "required": false,
+          "description": "The state component of the address",
+          "depth": 1
+        },
+        {
+          "name": "buyer/zip",
+          "type": "number",
+          "required": false,
+          "description": "Postal code",
+          "depth": 1
+        },
+        {
+          "name": "buyer/country",
+          "type": "string",
+          "required": false,
+          "description": "Country.",
+          "depth": 1
+        },
+        {
+          "name": "seller",
+          "type": "object",
+          "required": false,
+          "description": "Party selling merchandise or services to a buyer.",
+          "depth": 0
+        },
+        {
+          "name": "seller/type",
+          "type": "string",
+          "required": false,
+          "depth": 1
+        },
+        {
+          "name": "seller/id",
+          "type": "string",
+          "required": false,
+          "description": "A unique party identifier.",
+          "depth": 1
+        },
+        {
+          "name": "seller/name",
+          "type": "string",
+          "required": false,
+          "description": "Trade party name.",
+          "depth": 1
+        },
+        {
+          "name": "seller/street",
+          "type": "string",
+          "required": false,
+          "description": "The street component of the address",
+          "depth": 1
+        },
+        {
+          "name": "seller/city",
+          "type": "string",
+          "required": false,
+          "description": "The city component of the address",
+          "depth": 1
+        },
+        {
+          "name": "seller/state",
+          "type": "string",
+          "required": false,
+          "description": "The state component of the address",
+          "depth": 1
+        },
+        {
+          "name": "seller/zip",
+          "type": "number",
+          "required": false,
+          "description": "Postal code",
+          "depth": 1
+        },
+        {
+          "name": "seller/country",
+          "type": "string",
+          "required": false,
+          "description": "Country.",
+          "depth": 1
+        },
+        {
+          "name": "consignee",
+          "type": "object",
+          "required": false,
+          "description": "Party to which goods are consigned.",
+          "depth": 0
+        },
+        {
+          "name": "consignee/type",
+          "type": "string",
+          "required": false,
+          "depth": 1
+        },
+        {
+          "name": "consignee/id",
+          "type": "string",
+          "required": false,
+          "description": "A unique party identifier.",
+          "depth": 1
+        },
+        {
+          "name": "consignee/name",
+          "type": "string",
+          "required": false,
+          "description": "Trade party name.",
+          "depth": 1
+        },
+        {
+          "name": "consignee/street",
+          "type": "string",
+          "required": false,
+          "description": "The street component of the address",
+          "depth": 1
+        },
+        {
+          "name": "consignee/city",
+          "type": "string",
+          "required": false,
+          "description": "The city component of the address",
+          "depth": 1
+        },
+        {
+          "name": "consignee/state",
+          "type": "string",
+          "required": false,
+          "description": "The state component of the address",
+          "depth": 1
+        },
+        {
+          "name": "consignee/zip",
+          "type": "number",
+          "required": false,
+          "description": "Postal code",
+          "depth": 1
+        },
+        {
+          "name": "consignee/country",
+          "type": "string",
+          "required": false,
+          "description": "Country.",
+          "depth": 1
+        },
+        {
+          "name": "carrier",
+          "type": "object",
+          "required": false,
+          "description": "Party providing the transport of goods between named points.",
+          "depth": 0
+        },
+        {
+          "name": "carrier/type",
+          "type": "string",
+          "required": false,
+          "depth": 1
+        },
+        {
+          "name": "carrier/id",
+          "type": "string",
+          "required": false,
+          "description": "A unique party identifier.",
+          "depth": 1
+        },
+        {
+          "name": "carrier/name",
+          "type": "string",
+          "required": false,
+          "description": "Trade party name.",
+          "depth": 1
+        },
+        {
+          "name": "carrier/street",
+          "type": "string",
+          "required": false,
+          "description": "The street component of the address",
+          "depth": 1
+        },
+        {
+          "name": "carrier/city",
+          "type": "string",
+          "required": false,
+          "description": "The city component of the address",
+          "depth": 1
+        },
+        {
+          "name": "carrier/state",
+          "type": "string",
+          "required": false,
+          "description": "The state component of the address",
+          "depth": 1
+        },
+        {
+          "name": "carrier/zip",
+          "type": "number",
+          "required": false,
+          "description": "Postal code",
+          "depth": 1
+        },
+        {
+          "name": "carrier/country",
+          "type": "string",
+          "required": false,
+          "description": "Country.",
+          "depth": 1
+        },
+        {
+          "name": "deliveryLocation",
+          "type": "object",
+          "required": false,
+          "description": "Location to which a consignment is to be delivered.",
+          "depth": 0
+        },
+        {
+          "name": "deliveryLocation/name",
+          "type": "string",
+          "required": false,
+          "description": "Location name",
+          "depth": 1
+        },
+        {
+          "name": "deliveryLocation/street",
+          "type": "string",
+          "required": false,
+          "description": "Street address",
+          "depth": 1
+        },
+        {
+          "name": "deliveryLocation/city",
+          "type": "string",
+          "required": false,
+          "description": "City",
+          "depth": 1
+        },
+        {
+          "name": "deliveryLocation/state",
+          "type": "string",
+          "required": false,
+          "description": "State",
+          "depth": 1
+        },
+        {
+          "name": "deliveryLocation/zip",
+          "type": "number",
+          "required": false,
+          "description": "Postal code",
+          "depth": 1
+        },
+        {
+          "name": "deliveryLocation/country",
+          "type": "string",
+          "required": false,
+          "description": "Country",
+          "depth": 1
+        },
+        {
+          "name": "despatchLocation",
+          "type": "object",
+          "required": false,
+          "description": "Place from which despatch is to take place.",
+          "depth": 0
+        },
+        {
+          "name": "despatchLocation/name",
+          "type": "string",
+          "required": false,
+          "description": "Location name",
+          "depth": 1
+        },
+        {
+          "name": "despatchLocation/street",
+          "type": "string",
+          "required": false,
+          "description": "Street address",
+          "depth": 1
+        },
+        {
+          "name": "despatchLocation/city",
+          "type": "string",
+          "required": false,
+          "description": "City",
+          "depth": 1
+        },
+        {
+          "name": "despatchLocation/state",
+          "type": "string",
+          "required": false,
+          "description": "State",
+          "depth": 1
+        },
+        {
+          "name": "despatchLocation/zip",
+          "type": "number",
+          "required": false,
+          "description": "Postal code",
+          "depth": 1
+        },
+        {
+          "name": "despatchLocation/country",
+          "type": "string",
+          "required": false,
+          "description": "Country",
+          "depth": 1
+        },
+        {
+          "name": "originCountry",
+          "type": "object",
+          "required": false,
+          "description": "Country where the goods were produced.",
+          "depth": 0
+        },
+        {
+          "name": "originCountry/country",
+          "type": "string",
+          "required": false,
+          "description": "ISO country code",
+          "depth": 1
+        },
+        {
+          "name": "originCountry/name",
+          "type": "string",
+          "required": false,
+          "description": "Country name",
+          "depth": 1
+        },
+        {
+          "name": "baseportUnloadingLocation",
+          "type": "object",
+          "required": false,
+          "description": "The place or port at which the cargo is discharged.",
+          "depth": 0
+        },
+        {
+          "name": "baseportUnloadingLocation/name",
+          "type": "string",
+          "required": false,
+          "description": "Location name",
+          "depth": 1
+        },
+        {
+          "name": "baseportUnloadingLocation/city",
+          "type": "string",
+          "required": false,
+          "description": "City",
+          "depth": 1
+        },
+        {
+          "name": "baseportUnloadingLocation/state",
+          "type": "string",
+          "required": false,
+          "description": "State",
+          "depth": 1
+        },
+        {
+          "name": "baseportUnloadingLocation/country",
+          "type": "string",
+          "required": false,
+          "description": "Country",
+          "depth": 1
+        },
+        {
+          "name": "baseportUnloadingLocation/unlocode",
+          "type": "string",
+          "required": false,
+          "description": "UN/LOCODE identifier",
+          "depth": 1
+        },
+        {
+          "name": "totalGrossWeight",
+          "type": "object",
+          "required": false,
+          "description": "Total gross weight of all packages.",
+          "depth": 0
+        },
+        {
+          "name": "totalGrossWeight/amount",
+          "type": "number",
+          "required": false,
+          "description": "Weight amount",
+          "depth": 1
+        },
+        {
+          "name": "totalGrossWeight/unit",
+          "type": "string",
+          "required": false,
+          "description": "Weight unit",
+          "depth": 1
+        },
+        {
+          "name": "totalNetWeight",
+          "type": "object",
+          "required": false,
+          "description": "Total net weight of all items.",
+          "depth": 0
+        },
+        {
+          "name": "totalNetWeight/amount",
+          "type": "number",
+          "required": false,
+          "description": "Weight amount",
+          "depth": 1
+        },
+        {
+          "name": "totalNetWeight/unit",
+          "type": "string",
+          "required": false,
+          "description": "Weight unit",
+          "depth": 1
+        },
+        {
+          "name": "totalPackages",
+          "type": "number",
+          "required": false,
+          "description": "Total number of packages.",
+          "depth": 0
+        },
+        {
+          "name": "totalVolume",
+          "type": "object",
+          "required": false,
+          "description": "Total volume of all packages.",
+          "depth": 0
+        },
+        {
+          "name": "totalVolume/amount",
+          "type": "number",
+          "required": false,
+          "description": "Volume amount",
+          "depth": 1
+        },
+        {
+          "name": "totalVolume/unit",
+          "type": "string",
+          "required": false,
+          "description": "Volume unit (cubic meters)",
+          "depth": 1
+        },
+        {
+          "name": "handlingInstructions",
+          "type": "string",
+          "required": false,
+          "description": "Instructions on how packages should be handled.",
+          "depth": 0
+        },
+        {
+          "name": "transportTemperature",
+          "type": "string",
+          "required": false,
+          "description": "Instructions regarding the temperature under which the cargo has to be transported.",
+          "depth": 0
+        },
+        {
+          "name": "conveyanceReferenceNumber",
+          "type": "string",
+          "required": true,
+          "description": "Identifier of a journey of a means of transport, such as a voyage or flight number (UID:8028).",
+          "depth": 0
+        },
+        {
+          "name": "vehicleRegistrationNumber",
+          "type": "string",
+          "required": true,
+          "description": "Identifier of the specific means of transport such as IMO number or vessel registration (UID:8213).",
+          "depth": 0
+        },
+        {
+          "name": "packages",
+          "type": "array",
+          "required": true,
+          "description": "Details of individual packages",
+          "depth": 0
+        },
+        {
+          "name": "packages/item/packageNumber",
+          "type": "number",
+          "required": false,
+          "description": "Sequential package number",
+          "depth": 2
+        },
+        {
+          "name": "packages/item/packageType",
+          "type": "string",
+          "required": false,
+          "description": "Code specifying the type of packaging (CT=Carton).",
+          "depth": 2
+        },
+        {
+          "name": "packages/item/shippingMark",
+          "type": "string",
+          "required": false,
+          "description": "Marks and numbers on the package.",
+          "depth": 2
+        },
+        {
+          "name": "packages/item/length",
+          "type": "object",
+          "required": false,
+          "description": "Package length measurement.",
+          "depth": 2
+        },
+        {
+          "name": "packages/item/length/amount",
+          "type": "number",
+          "required": false,
+          "description": "Length value",
+          "depth": 3
+        },
+        {
+          "name": "packages/item/length/unit",
+          "type": "string",
+          "required": false,
+          "description": "Length unit",
+          "depth": 3
+        },
+        {
+          "name": "packages/item/width",
+          "type": "object",
+          "required": false,
+          "description": "Package width measurement.",
+          "depth": 2
+        },
+        {
+          "name": "packages/item/width/amount",
+          "type": "number",
+          "required": false,
+          "description": "Width value",
+          "depth": 3
+        },
+        {
+          "name": "packages/item/width/unit",
+          "type": "string",
+          "required": false,
+          "description": "Width unit",
+          "depth": 3
+        },
+        {
+          "name": "packages/item/height",
+          "type": "object",
+          "required": false,
+          "description": "Package height measurement.",
+          "depth": 2
+        },
+        {
+          "name": "packages/item/height/amount",
+          "type": "number",
+          "required": false,
+          "description": "Height value",
+          "depth": 3
+        },
+        {
+          "name": "packages/item/height/unit",
+          "type": "string",
+          "required": false,
+          "description": "Height unit",
+          "depth": 3
+        },
+        {
+          "name": "packages/item/grossWeight",
+          "type": "object",
+          "required": false,
+          "description": "Gross weight of the package.",
+          "depth": 2
+        },
+        {
+          "name": "packages/item/grossWeight/amount",
+          "type": "number",
+          "required": false,
+          "description": "Weight amount",
+          "depth": 3
+        },
+        {
+          "name": "packages/item/grossWeight/unit",
+          "type": "string",
+          "required": false,
+          "description": "Weight unit",
+          "depth": 3
+        },
+        {
+          "name": "packages/item/netWeight",
+          "type": "object",
+          "required": false,
+          "description": "Net weight of items in the package.",
+          "depth": 2
+        },
+        {
+          "name": "packages/item/netWeight/amount",
+          "type": "number",
+          "required": false,
+          "description": "Weight amount",
+          "depth": 3
+        },
+        {
+          "name": "packages/item/netWeight/unit",
+          "type": "string",
+          "required": false,
+          "description": "Weight unit",
+          "depth": 3
+        },
+        {
+          "name": "packages/item/volume",
+          "type": "object",
+          "required": false,
+          "description": "Volume of the package.",
+          "depth": 2
+        },
+        {
+          "name": "packages/item/volume/amount",
+          "type": "number",
+          "required": false,
+          "description": "Volume amount",
+          "depth": 3
+        },
+        {
+          "name": "packages/item/volume/unit",
+          "type": "string",
+          "required": false,
+          "description": "Volume unit",
+          "depth": 3
+        },
+        {
+          "name": "packages/item/items",
+          "type": "array",
+          "required": false,
+          "description": "Items contained in this package",
+          "depth": 2
+        },
+        {
+          "name": "packages/item/items/item/description",
+          "type": "string",
+          "required": false,
+          "description": "Description of the item.",
+          "depth": 4
+        },
+        {
+          "name": "packages/item/items/item/sku",
+          "type": "string",
+          "required": false,
+          "description": "Stock keeping unit identifier.",
+          "depth": 4
+        },
+        {
+          "name": "packages/item/items/item/quantity",
+          "type": "number",
+          "required": false,
+          "description": "Number of units in this package.",
+          "depth": 4
+        },
+        {
+          "name": "packages/item/items/item/hsCode",
+          "type": "string",
+          "required": false,
+          "description": "Harmonized System code.",
+          "depth": 4
+        },
+        {
+          "name": "packages/item/items/item/originCountry",
+          "type": "string",
+          "required": false,
+          "description": "Country of origin.",
+          "depth": 4
+        },
+        {
+          "name": "packages/item/items/item/unitWeight",
+          "type": "object",
+          "required": false,
+          "description": "Weight per unit.",
+          "depth": 4
+        },
+        {
+          "name": "packages/item/items/item/unitWeight/amount",
+          "type": "number",
+          "required": false,
+          "description": "Weight amount",
+          "depth": 5
+        },
+        {
+          "name": "packages/item/items/item/unitWeight/unit",
+          "type": "string",
+          "required": false,
+          "description": "Weight unit",
+          "depth": 5
+        }
+      ],
+      "schemaDescription": "A detailed inventory of the contents of packages in a shipment, including item descriptions, quantities, weights, and package marks for shipping and receiving purposes."
     },
     {
       "id": "cred:uncefact:purchase-order:vcdm-2-0",
@@ -9958,10 +14437,435 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/uncefact/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-01T15:59:28.703Z",
+      "fetchedAt": "2026-04-02T07:22:06.963Z",
       "updatedAt": "2026-03-22T00:00:00.000Z",
       "firstSeenAt": "2026-03-22T00:00:00.000Z",
-      "attributes": []
+      "attributes": [
+        {
+          "name": "purchaseOrderNumber",
+          "type": "string",
+          "required": true,
+          "description": "Identifier assigned by the buyer to an order.",
+          "depth": 0
+        },
+        {
+          "name": "orderDate",
+          "type": "string",
+          "required": true,
+          "description": "Date of order.",
+          "depth": 0
+        },
+        {
+          "name": "buyer",
+          "type": "object",
+          "required": true,
+          "description": "Party to which merchandise or services are sold.",
+          "depth": 0
+        },
+        {
+          "name": "buyer/type",
+          "type": "string",
+          "required": true,
+          "depth": 1
+        },
+        {
+          "name": "buyer/id",
+          "type": "string",
+          "required": true,
+          "description": "A unique party identifier.",
+          "depth": 1
+        },
+        {
+          "name": "buyer/name",
+          "type": "string",
+          "required": true,
+          "description": "Trade party name.",
+          "depth": 1
+        },
+        {
+          "name": "buyer/street",
+          "type": "string",
+          "required": false,
+          "description": "The street component of the address",
+          "depth": 1
+        },
+        {
+          "name": "buyer/city",
+          "type": "string",
+          "required": false,
+          "description": "The city component of the address",
+          "depth": 1
+        },
+        {
+          "name": "buyer/state",
+          "type": "string",
+          "required": false,
+          "description": "The state component of the address",
+          "depth": 1
+        },
+        {
+          "name": "buyer/zip",
+          "type": "number",
+          "required": false,
+          "description": "The postal code",
+          "depth": 1
+        },
+        {
+          "name": "buyer/country",
+          "type": "string",
+          "required": false,
+          "description": "Country.",
+          "depth": 1
+        },
+        {
+          "name": "seller",
+          "type": "object",
+          "required": true,
+          "description": "Party selling merchandise or services to a buyer.",
+          "depth": 0
+        },
+        {
+          "name": "seller/type",
+          "type": "string",
+          "required": true,
+          "depth": 1
+        },
+        {
+          "name": "seller/id",
+          "type": "string",
+          "required": true,
+          "description": "A unique party identifier.",
+          "depth": 1
+        },
+        {
+          "name": "seller/name",
+          "type": "string",
+          "required": true,
+          "description": "Trade party name.",
+          "depth": 1
+        },
+        {
+          "name": "seller/street",
+          "type": "string",
+          "required": false,
+          "description": "The street component of the address",
+          "depth": 1
+        },
+        {
+          "name": "seller/city",
+          "type": "string",
+          "required": false,
+          "description": "The city component of the address",
+          "depth": 1
+        },
+        {
+          "name": "seller/state",
+          "type": "string",
+          "required": false,
+          "description": "The state component of the address",
+          "depth": 1
+        },
+        {
+          "name": "seller/zip",
+          "type": "number",
+          "required": false,
+          "description": "The postal code",
+          "depth": 1
+        },
+        {
+          "name": "seller/country",
+          "type": "string",
+          "required": false,
+          "description": "Country.",
+          "depth": 1
+        },
+        {
+          "name": "invoicee",
+          "type": "object",
+          "required": false,
+          "description": "Party to whom an invoice is issued.",
+          "depth": 0
+        },
+        {
+          "name": "invoicee/type",
+          "type": "string",
+          "required": false,
+          "depth": 1
+        },
+        {
+          "name": "invoicee/id",
+          "type": "string",
+          "required": false,
+          "description": "A unique party identifier.",
+          "depth": 1
+        },
+        {
+          "name": "invoicee/name",
+          "type": "string",
+          "required": false,
+          "description": "Trade party name.",
+          "depth": 1
+        },
+        {
+          "name": "invoicee/street",
+          "type": "string",
+          "required": false,
+          "description": "The street component of the address",
+          "depth": 1
+        },
+        {
+          "name": "invoicee/city",
+          "type": "string",
+          "required": false,
+          "description": "The city component of the address",
+          "depth": 1
+        },
+        {
+          "name": "invoicee/state",
+          "type": "string",
+          "required": false,
+          "description": "The state component of the address",
+          "depth": 1
+        },
+        {
+          "name": "invoicee/zip",
+          "type": "number",
+          "required": false,
+          "description": "The postal code",
+          "depth": 1
+        },
+        {
+          "name": "invoicee/country",
+          "type": "string",
+          "required": false,
+          "description": "Country.",
+          "depth": 1
+        },
+        {
+          "name": "deliveryLocation",
+          "type": "object",
+          "required": true,
+          "description": "Location to which a consignment is to be delivered to the final consignee.",
+          "depth": 0
+        },
+        {
+          "name": "deliveryLocation/name",
+          "type": "string",
+          "required": true,
+          "description": "Name of the delivery location",
+          "depth": 1
+        },
+        {
+          "name": "deliveryLocation/street",
+          "type": "string",
+          "required": false,
+          "description": "The street component of the address",
+          "depth": 1
+        },
+        {
+          "name": "deliveryLocation/city",
+          "type": "string",
+          "required": false,
+          "description": "The city component of the address",
+          "depth": 1
+        },
+        {
+          "name": "deliveryLocation/state",
+          "type": "string",
+          "required": false,
+          "description": "The state component of the address",
+          "depth": 1
+        },
+        {
+          "name": "deliveryLocation/zip",
+          "type": "number",
+          "required": false,
+          "description": "The postal code",
+          "depth": 1
+        },
+        {
+          "name": "deliveryLocation/country",
+          "type": "string",
+          "required": false,
+          "description": "Country",
+          "depth": 1
+        },
+        {
+          "name": "deliveryLocation/unlocode",
+          "type": "string",
+          "required": false,
+          "description": "UN/LOCODE location identifier",
+          "depth": 1
+        },
+        {
+          "name": "paymentTerms",
+          "type": "string",
+          "required": false,
+          "description": "Identification of the terms of payment between the parties to a transaction.",
+          "depth": 0
+        },
+        {
+          "name": "paymentMethod",
+          "type": "string",
+          "required": false,
+          "description": "Code specifying a method of payment.",
+          "depth": 0
+        },
+        {
+          "name": "allowanceCharge",
+          "type": "object",
+          "required": false,
+          "description": "Code specifying a type of an adjustment to a monetary amount such as an allowance or charge.",
+          "depth": 0
+        },
+        {
+          "name": "allowanceCharge/type",
+          "type": "string",
+          "required": false,
+          "description": "Whether this is an allowance or charge",
+          "depth": 1
+        },
+        {
+          "name": "allowanceCharge/description",
+          "type": "string",
+          "required": false,
+          "description": "Description of the allowance or charge",
+          "depth": 1
+        },
+        {
+          "name": "allowanceCharge/amount",
+          "type": "object",
+          "required": false,
+          "depth": 1
+        },
+        {
+          "name": "allowanceCharge/amount/amount",
+          "type": "number",
+          "required": false,
+          "description": "The monetary amount",
+          "depth": 2
+        },
+        {
+          "name": "allowanceCharge/amount/currency",
+          "type": "string",
+          "required": false,
+          "description": "Currency code",
+          "depth": 2
+        },
+        {
+          "name": "totalOrderAmount",
+          "type": "object",
+          "required": false,
+          "description": "Total amount of an order.",
+          "depth": 0
+        },
+        {
+          "name": "totalOrderAmount/amount",
+          "type": "number",
+          "required": false,
+          "description": "Total order amount",
+          "depth": 1
+        },
+        {
+          "name": "totalOrderAmount/currency",
+          "type": "string",
+          "required": false,
+          "description": "Currency code",
+          "depth": 1
+        },
+        {
+          "name": "orderedItems",
+          "type": "array",
+          "required": true,
+          "description": "Items being ordered",
+          "depth": 0
+        },
+        {
+          "name": "orderedItems/item/productIdentifier",
+          "type": "string",
+          "required": true,
+          "description": "Reference number identifying a product.",
+          "depth": 2
+        },
+        {
+          "name": "orderedItems/item/product",
+          "type": "object",
+          "required": false,
+          "description": "Product details",
+          "depth": 2
+        },
+        {
+          "name": "orderedItems/item/product/id",
+          "type": "string",
+          "required": false,
+          "description": "A unique identifier for the product.",
+          "depth": 3
+        },
+        {
+          "name": "orderedItems/item/product/name",
+          "type": "string",
+          "required": false,
+          "description": "Product name",
+          "depth": 3
+        },
+        {
+          "name": "orderedItems/item/product/description",
+          "type": "string",
+          "required": false,
+          "description": "Product description",
+          "depth": 3
+        },
+        {
+          "name": "orderedItems/item/quantityOrdered",
+          "type": "number",
+          "required": true,
+          "description": "The quantity which has been ordered.",
+          "depth": 2
+        },
+        {
+          "name": "orderedItems/item/unitPrice",
+          "type": "object",
+          "required": false,
+          "description": "Price per unit of quantity on which an article item amount is calculated.",
+          "depth": 2
+        },
+        {
+          "name": "orderedItems/item/unitPrice/amount",
+          "type": "number",
+          "required": false,
+          "description": "Unit price amount",
+          "depth": 3
+        },
+        {
+          "name": "orderedItems/item/unitPrice/currency",
+          "type": "string",
+          "required": false,
+          "description": "Currency code",
+          "depth": 3
+        },
+        {
+          "name": "orderedItems/item/lineTotal",
+          "type": "object",
+          "required": false,
+          "description": "Total amount for this line item.",
+          "depth": 2
+        },
+        {
+          "name": "orderedItems/item/lineTotal/amount",
+          "type": "number",
+          "required": false,
+          "description": "Line total amount",
+          "depth": 3
+        },
+        {
+          "name": "orderedItems/item/lineTotal/currency",
+          "type": "string",
+          "required": false,
+          "description": "Currency code",
+          "depth": 3
+        }
+      ],
+      "schemaDescription": "A purchase order is a commercial document issued by a buyer to a seller, indicating types, quantities, and agreed prices for products or services."
     },
     {
       "id": "cred:uncefact:warehouse-receipt:vcdm-2-0",
@@ -10015,10 +14919,451 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/uncefact/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-01T15:59:28.703Z",
+      "fetchedAt": "2026-04-02T07:22:06.963Z",
       "updatedAt": "2026-03-22T00:00:00.000Z",
       "firstSeenAt": "2026-03-22T00:00:00.000Z",
-      "attributes": []
+      "attributes": [
+        {
+          "name": "documentIdentifier",
+          "type": "string",
+          "required": true,
+          "description": "Reference number identifying a specific document.",
+          "depth": 0
+        },
+        {
+          "name": "issueDate",
+          "type": "string",
+          "required": true,
+          "description": "Date that a document was issued.",
+          "depth": 0
+        },
+        {
+          "name": "warehouseDepositor",
+          "type": "object",
+          "required": true,
+          "description": "Party depositing goods in a warehouse.",
+          "depth": 0
+        },
+        {
+          "name": "warehouseDepositor/type",
+          "type": "string",
+          "required": false,
+          "depth": 1
+        },
+        {
+          "name": "warehouseDepositor/id",
+          "type": "string",
+          "required": false,
+          "description": "A unique party identifier.",
+          "depth": 1
+        },
+        {
+          "name": "warehouseDepositor/name",
+          "type": "string",
+          "required": false,
+          "description": "Trade party name.",
+          "depth": 1
+        },
+        {
+          "name": "warehouseDepositor/street",
+          "type": "string",
+          "required": false,
+          "description": "The street component of the address",
+          "depth": 1
+        },
+        {
+          "name": "warehouseDepositor/city",
+          "type": "string",
+          "required": false,
+          "description": "The city component of the address",
+          "depth": 1
+        },
+        {
+          "name": "warehouseDepositor/state",
+          "type": "string",
+          "required": false,
+          "description": "The state component of the address",
+          "depth": 1
+        },
+        {
+          "name": "warehouseDepositor/zip",
+          "type": "number",
+          "required": false,
+          "description": "Postal code",
+          "depth": 1
+        },
+        {
+          "name": "warehouseDepositor/country",
+          "type": "string",
+          "required": false,
+          "description": "Country.",
+          "depth": 1
+        },
+        {
+          "name": "warehouseKeeper",
+          "type": "object",
+          "required": true,
+          "description": "Party taking responsibility for goods entered into a warehouse.",
+          "depth": 0
+        },
+        {
+          "name": "warehouseKeeper/type",
+          "type": "string",
+          "required": false,
+          "depth": 1
+        },
+        {
+          "name": "warehouseKeeper/id",
+          "type": "string",
+          "required": false,
+          "description": "A unique party identifier.",
+          "depth": 1
+        },
+        {
+          "name": "warehouseKeeper/name",
+          "type": "string",
+          "required": false,
+          "description": "Trade party name.",
+          "depth": 1
+        },
+        {
+          "name": "warehouseKeeper/street",
+          "type": "string",
+          "required": false,
+          "description": "The street component of the address",
+          "depth": 1
+        },
+        {
+          "name": "warehouseKeeper/city",
+          "type": "string",
+          "required": false,
+          "description": "The city component of the address",
+          "depth": 1
+        },
+        {
+          "name": "warehouseKeeper/state",
+          "type": "string",
+          "required": false,
+          "description": "The state component of the address",
+          "depth": 1
+        },
+        {
+          "name": "warehouseKeeper/zip",
+          "type": "number",
+          "required": false,
+          "description": "Postal code",
+          "depth": 1
+        },
+        {
+          "name": "warehouseKeeper/country",
+          "type": "string",
+          "required": false,
+          "description": "Country.",
+          "depth": 1
+        },
+        {
+          "name": "warehouse",
+          "type": "object",
+          "required": true,
+          "description": "Warehouse where a particular consignment has been stored.",
+          "depth": 0
+        },
+        {
+          "name": "warehouse/name",
+          "type": "string",
+          "required": false,
+          "description": "Warehouse name",
+          "depth": 1
+        },
+        {
+          "name": "warehouse/street",
+          "type": "string",
+          "required": false,
+          "description": "Street address",
+          "depth": 1
+        },
+        {
+          "name": "warehouse/city",
+          "type": "string",
+          "required": false,
+          "description": "City",
+          "depth": 1
+        },
+        {
+          "name": "warehouse/state",
+          "type": "string",
+          "required": false,
+          "description": "State",
+          "depth": 1
+        },
+        {
+          "name": "warehouse/zip",
+          "type": "number",
+          "required": false,
+          "description": "Postal code",
+          "depth": 1
+        },
+        {
+          "name": "warehouse/country",
+          "type": "string",
+          "required": false,
+          "description": "Country",
+          "depth": 1
+        },
+        {
+          "name": "warehouse/warehouseCode",
+          "type": "string",
+          "required": false,
+          "description": "Internal warehouse code",
+          "depth": 1
+        },
+        {
+          "name": "placeOfIssue",
+          "type": "object",
+          "required": false,
+          "description": "Location where a document was issued.",
+          "depth": 0
+        },
+        {
+          "name": "placeOfIssue/city",
+          "type": "string",
+          "required": false,
+          "description": "City",
+          "depth": 1
+        },
+        {
+          "name": "placeOfIssue/state",
+          "type": "string",
+          "required": false,
+          "description": "State",
+          "depth": 1
+        },
+        {
+          "name": "placeOfIssue/country",
+          "type": "string",
+          "required": false,
+          "description": "Country",
+          "depth": 1
+        },
+        {
+          "name": "transportContractNumber",
+          "type": "string",
+          "required": false,
+          "description": "Reference number to identify a document evidencing a transport contract.",
+          "depth": 0
+        },
+        {
+          "name": "billOfLadingNumber",
+          "type": "string",
+          "required": false,
+          "description": "Reference number to identify a bill of lading.",
+          "depth": 0
+        },
+        {
+          "name": "invoiceNumber",
+          "type": "string",
+          "required": false,
+          "description": "Reference number to identify an invoice.",
+          "depth": 0
+        },
+        {
+          "name": "actualArrivalDate",
+          "type": "string",
+          "required": false,
+          "description": "Date of the arrival of means of transport.",
+          "depth": 0
+        },
+        {
+          "name": "actualDepartureDate",
+          "type": "string",
+          "required": false,
+          "description": "Date of the departure of means of transport.",
+          "depth": 0
+        },
+        {
+          "name": "storageStartDate",
+          "type": "string",
+          "required": false,
+          "description": "Date when storage begins.",
+          "depth": 0
+        },
+        {
+          "name": "authentication",
+          "type": "string",
+          "required": false,
+          "description": "Proof that a document has been authenticated.",
+          "depth": 0
+        },
+        {
+          "name": "documentEndorsement",
+          "type": "string",
+          "required": false,
+          "description": "Proof that a document has been signed.",
+          "depth": 0
+        },
+        {
+          "name": "storageConditions",
+          "type": "string",
+          "required": false,
+          "description": "Conditions under which goods are stored.",
+          "depth": 0
+        },
+        {
+          "name": "handlingInstructions",
+          "type": "string",
+          "required": false,
+          "description": "Instructions on how goods should be handled.",
+          "depth": 0
+        },
+        {
+          "name": "deliveryInstructions",
+          "type": "string",
+          "required": false,
+          "description": "Delivery instructions relating to a consignment.",
+          "depth": 0
+        },
+        {
+          "name": "totalGrossWeight",
+          "type": "object",
+          "required": false,
+          "description": "Total gross weight of stored goods.",
+          "depth": 0
+        },
+        {
+          "name": "totalGrossWeight/amount",
+          "type": "number",
+          "required": false,
+          "description": "Weight amount",
+          "depth": 1
+        },
+        {
+          "name": "totalGrossWeight/unit",
+          "type": "string",
+          "required": false,
+          "description": "Weight unit",
+          "depth": 1
+        },
+        {
+          "name": "totalVolume",
+          "type": "object",
+          "required": false,
+          "description": "Total volume of stored goods.",
+          "depth": 0
+        },
+        {
+          "name": "totalVolume/amount",
+          "type": "number",
+          "required": false,
+          "description": "Volume amount",
+          "depth": 1
+        },
+        {
+          "name": "totalVolume/unit",
+          "type": "string",
+          "required": false,
+          "description": "Volume unit",
+          "depth": 1
+        },
+        {
+          "name": "totalPackages",
+          "type": "number",
+          "required": false,
+          "description": "Total number of packages.",
+          "depth": 0
+        },
+        {
+          "name": "storedGoods",
+          "type": "array",
+          "required": true,
+          "description": "Goods stored in the warehouse",
+          "depth": 0
+        },
+        {
+          "name": "storedGoods/item/description",
+          "type": "string",
+          "required": false,
+          "description": "Plain language description of the goods.",
+          "depth": 2
+        },
+        {
+          "name": "storedGoods/item/quantity",
+          "type": "object",
+          "required": false,
+          "description": "Number of units",
+          "depth": 2
+        },
+        {
+          "name": "storedGoods/item/quantity/amount",
+          "type": "number",
+          "required": false,
+          "description": "Quantity amount",
+          "depth": 3
+        },
+        {
+          "name": "storedGoods/item/quantity/unit",
+          "type": "string",
+          "required": false,
+          "description": "Unit of measure",
+          "depth": 3
+        },
+        {
+          "name": "storedGoods/item/numberOfPackages",
+          "type": "number",
+          "required": false,
+          "description": "Number of packages.",
+          "depth": 2
+        },
+        {
+          "name": "storedGoods/item/packagingType",
+          "type": "string",
+          "required": false,
+          "description": "Code specifying the type of packaging.",
+          "depth": 2
+        },
+        {
+          "name": "storedGoods/item/shippingMarks",
+          "type": "string",
+          "required": false,
+          "description": "Free form description of the marks and numbers.",
+          "depth": 2
+        },
+        {
+          "name": "storedGoods/item/grossWeight",
+          "type": "object",
+          "required": false,
+          "description": "Gross weight including packaging.",
+          "depth": 2
+        },
+        {
+          "name": "storedGoods/item/grossWeight/amount",
+          "type": "number",
+          "required": false,
+          "description": "Weight amount",
+          "depth": 3
+        },
+        {
+          "name": "storedGoods/item/grossWeight/unit",
+          "type": "string",
+          "required": false,
+          "description": "Weight unit",
+          "depth": 3
+        },
+        {
+          "name": "storedGoods/item/storageLocation",
+          "type": "string",
+          "required": false,
+          "description": "Location within the warehouse where goods are stored.",
+          "depth": 2
+        },
+        {
+          "name": "storedGoods/item/condition",
+          "type": "string",
+          "required": false,
+          "description": "Condition of the goods upon receipt.",
+          "depth": 2
+        }
+      ],
+      "schemaDescription": "A document issued by a warehouse operator acknowledging the receipt of goods for storage and establishing the terms under which the goods are held."
     }
   ],
   "stats": {
@@ -10037,7 +15382,7 @@
       "Software": 0,
       "Document": 10
     },
-    "withSchemaAttributes": 68,
+    "withSchemaAttributes": 76,
     "bySector": {
       "construction": 24,
       "digital": 44,
