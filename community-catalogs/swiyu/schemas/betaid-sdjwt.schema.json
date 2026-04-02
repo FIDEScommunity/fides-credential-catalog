@@ -1,0 +1,104 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://fides.community/schemas/credentials/betaid-sdjwt.json",
+  "title": "Beta-ID SD-JWT VC Claims Schema",
+  "description": "Derived JSON Schema for the Swiss Beta-ID credential based on OID4VCI credential metadata.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "family_name",
+    "given_name",
+    "birth_date",
+    "birth_place",
+    "nationality",
+    "portrait",
+    "personal_administrative_number",
+    "additional_person_info",
+    "age_over_16",
+    "age_over_18",
+    "age_over_65",
+    "age_birth_year",
+    "document_number",
+    "issuance_date",
+    "expiry_date",
+    "reference_id_type",
+    "reference_id_expiry_date",
+    "verification_type",
+    "verification_organization",
+    "issuing_authority",
+    "issuing_country"
+  ],
+  "properties": {
+    "family_name": {
+      "type": "string"
+    },
+    "given_name": {
+      "type": "string"
+    },
+    "birth_date": {
+      "type": "string"
+    },
+    "sex": {
+      "type": "string"
+    },
+    "place_of_origin": {
+      "type": "string"
+    },
+    "birth_place": {
+      "type": "string"
+    },
+    "nationality": {
+      "type": "string"
+    },
+    "portrait": {
+      "type": "string",
+      "contentEncoding": "base64",
+      "contentMediaType": "image/jpeg"
+    },
+    "personal_administrative_number": {
+      "type": "string"
+    },
+    "additional_person_info": {
+      "type": "string"
+    },
+    "age_over_16": {
+      "type": "string"
+    },
+    "age_over_18": {
+      "type": "string"
+    },
+    "age_over_65": {
+      "type": "string"
+    },
+    "age_birth_year": {
+      "type": "string"
+    },
+    "document_number": {
+      "type": "string"
+    },
+    "issuance_date": {
+      "type": "string"
+    },
+    "expiry_date": {
+      "type": "string"
+    },
+    "reference_id_type": {
+      "type": "string"
+    },
+    "reference_id_expiry_date": {
+      "type": "string"
+    },
+    "verification_type": {
+      "type": "string"
+    },
+    "verification_organization": {
+      "type": "string"
+    },
+    "issuing_authority": {
+      "type": "string"
+    },
+    "issuing_country": {
+      "type": "string"
+    }
+  }
+}
