@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.4.0",
   "catalogType": "credential",
-  "lastUpdated": "2026-04-02T07:22:06.963Z",
+  "lastUpdated": "2026-04-02T08:16:24.312Z",
   "credentials": [
     {
       "id": "cred:eu:diploma-vc-sd-jwt:sd-jwt-vc",
@@ -50,7 +50,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-02T07:22:06.963Z",
+      "fetchedAt": "2026-04-02T08:16:24.312Z",
       "updatedAt": "2026-04-01T15:58:06.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
@@ -209,7 +209,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-02T07:22:06.963Z",
+      "fetchedAt": "2026-04-02T08:16:24.312Z",
       "updatedAt": "2026-04-01T15:58:06.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
@@ -336,7 +336,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-02T07:22:06.963Z",
+      "fetchedAt": "2026-04-02T08:16:24.312Z",
       "updatedAt": "2026-04-01T15:58:06.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
@@ -512,7 +512,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-02T07:22:06.963Z",
+      "fetchedAt": "2026-04-02T08:16:24.312Z",
       "updatedAt": "2026-04-01T15:58:06.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
@@ -698,7 +698,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-02T07:22:06.963Z",
+      "fetchedAt": "2026-04-02T08:16:24.312Z",
       "updatedAt": "2026-04-01T15:58:06.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
@@ -832,7 +832,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-02T07:22:06.963Z",
+      "fetchedAt": "2026-04-02T08:16:24.312Z",
       "updatedAt": "2026-04-01T15:58:06.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
@@ -1187,7 +1187,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-02T07:22:06.963Z",
+      "fetchedAt": "2026-04-02T08:16:24.312Z",
       "updatedAt": "2026-04-01T15:58:06.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
@@ -1429,7 +1429,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-02T07:22:06.963Z",
+      "fetchedAt": "2026-04-02T08:16:24.312Z",
       "updatedAt": "2026-04-01T15:58:06.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
@@ -1565,7 +1565,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-02T07:22:06.963Z",
+      "fetchedAt": "2026-04-02T08:16:24.312Z",
       "updatedAt": "2026-04-01T15:58:06.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
@@ -1687,7 +1687,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-02T07:22:06.963Z",
+      "fetchedAt": "2026-04-02T08:16:24.312Z",
       "updatedAt": "2026-04-01T15:58:06.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
@@ -1841,7 +1841,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-02T07:22:06.963Z",
+      "fetchedAt": "2026-04-02T08:16:24.312Z",
       "updatedAt": "2026-04-01T15:58:06.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
@@ -1979,7 +1979,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-02T07:22:06.963Z",
+      "fetchedAt": "2026-04-02T08:16:24.312Z",
       "updatedAt": "2026-04-01T15:58:06.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
@@ -2120,7 +2120,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-02T07:22:06.963Z",
+      "fetchedAt": "2026-04-02T08:16:24.312Z",
       "updatedAt": "2026-04-01T15:58:06.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
@@ -2228,7 +2228,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-02T07:22:06.963Z",
+      "fetchedAt": "2026-04-02T08:16:24.312Z",
       "updatedAt": "2026-04-01T15:58:06.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
@@ -2412,7 +2412,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-02T07:22:06.963Z",
+      "fetchedAt": "2026-04-02T08:16:24.312Z",
       "updatedAt": "2026-04-01T15:58:06.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
@@ -2604,7 +2604,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-02T07:22:06.963Z",
+      "fetchedAt": "2026-04-02T08:16:24.312Z",
       "updatedAt": "2026-04-01T15:58:06.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
@@ -2701,7 +2701,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-02T07:22:06.963Z",
+      "fetchedAt": "2026-04-02T08:16:24.312Z",
       "updatedAt": "2026-04-01T15:58:06.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
@@ -2978,7 +2978,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-02T07:22:06.963Z",
+      "fetchedAt": "2026-04-02T08:16:24.312Z",
       "updatedAt": "2026-04-01T15:58:06.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
@@ -3119,7 +3119,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-02T07:22:06.963Z",
+      "fetchedAt": "2026-04-02T08:16:24.312Z",
       "updatedAt": "2026-04-01T15:58:06.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
@@ -3267,7 +3267,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-02T07:22:06.963Z",
+      "fetchedAt": "2026-04-02T08:16:24.312Z",
       "updatedAt": "2026-04-01T15:58:06.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
@@ -3510,7 +3510,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-02T07:22:06.963Z",
+      "fetchedAt": "2026-04-02T08:16:24.312Z",
       "updatedAt": "2026-04-01T15:58:06.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
@@ -3760,7 +3760,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-02T07:22:06.963Z",
+      "fetchedAt": "2026-04-02T08:16:24.312Z",
       "updatedAt": "2026-04-01T15:58:06.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
@@ -4007,7 +4007,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-02T07:22:06.963Z",
+      "fetchedAt": "2026-04-02T08:16:24.312Z",
       "updatedAt": "2026-04-01T15:58:06.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
@@ -4141,7 +4141,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-02T07:22:06.963Z",
+      "fetchedAt": "2026-04-02T08:16:24.312Z",
       "updatedAt": "2026-04-01T15:58:06.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
@@ -4334,7 +4334,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-02T07:22:06.963Z",
+      "fetchedAt": "2026-04-02T08:16:24.312Z",
       "updatedAt": "2026-04-01T15:58:06.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
@@ -4496,7 +4496,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-02T07:22:06.963Z",
+      "fetchedAt": "2026-04-02T08:16:24.312Z",
       "updatedAt": "2026-04-01T15:58:06.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
@@ -4647,7 +4647,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-02T07:22:06.963Z",
+      "fetchedAt": "2026-04-02T08:16:24.312Z",
       "updatedAt": "2026-04-01T15:58:06.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
@@ -4751,7 +4751,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-02T07:22:06.963Z",
+      "fetchedAt": "2026-04-02T08:16:24.312Z",
       "updatedAt": "2026-04-01T15:58:06.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
@@ -4879,7 +4879,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-02T07:22:06.963Z",
+      "fetchedAt": "2026-04-02T08:16:24.312Z",
       "updatedAt": "2026-04-01T15:58:06.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
@@ -4991,7 +4991,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/ewc/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-02T07:22:06.963Z",
+      "fetchedAt": "2026-04-02T08:16:24.312Z",
       "updatedAt": "2026-04-01T15:27:24.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
@@ -5049,7 +5049,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/ewc/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-02T07:22:06.963Z",
+      "fetchedAt": "2026-04-02T08:16:24.312Z",
       "updatedAt": "2026-04-01T15:27:24.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
@@ -5108,7 +5108,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/ewc/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-02T07:22:06.963Z",
+      "fetchedAt": "2026-04-02T08:16:24.312Z",
       "updatedAt": "2026-04-01T15:27:24.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
@@ -5209,7 +5209,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/ewc/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-02T07:22:06.963Z",
+      "fetchedAt": "2026-04-02T08:16:24.312Z",
       "updatedAt": "2026-04-01T15:27:24.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
@@ -5310,7 +5310,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/ewc/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-02T07:22:06.963Z",
+      "fetchedAt": "2026-04-02T08:16:24.312Z",
       "updatedAt": "2026-04-01T15:27:24.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
@@ -5369,7 +5369,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/ewc/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-02T07:22:06.963Z",
+      "fetchedAt": "2026-04-02T08:16:24.312Z",
       "updatedAt": "2026-04-01T15:27:24.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
@@ -5491,7 +5491,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/ewc/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-02T07:22:06.963Z",
+      "fetchedAt": "2026-04-02T08:16:24.312Z",
       "updatedAt": "2026-04-01T15:27:24.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
@@ -5603,7 +5603,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/ewc/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-02T07:22:06.963Z",
+      "fetchedAt": "2026-04-02T08:16:24.312Z",
       "updatedAt": "2026-04-01T15:27:24.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
@@ -5684,7 +5684,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/ewc/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-02T07:22:06.963Z",
+      "fetchedAt": "2026-04-02T08:16:24.312Z",
       "updatedAt": "2026-04-01T15:27:24.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
@@ -5786,7 +5786,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/ewc/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-02T07:22:06.963Z",
+      "fetchedAt": "2026-04-02T08:16:24.312Z",
       "updatedAt": "2026-04-01T15:27:24.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
@@ -5888,7 +5888,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/ewc/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-02T07:22:06.963Z",
+      "fetchedAt": "2026-04-02T08:16:24.312Z",
       "updatedAt": "2026-04-01T15:27:24.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
@@ -5947,7 +5947,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/ewc/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-02T07:22:06.963Z",
+      "fetchedAt": "2026-04-02T08:16:24.312Z",
       "updatedAt": "2026-04-01T15:27:24.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
@@ -6013,7 +6013,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/ewc/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-02T07:22:06.963Z",
+      "fetchedAt": "2026-04-02T08:16:24.312Z",
       "updatedAt": "2026-04-01T15:27:24.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
@@ -6106,7 +6106,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/ewc/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-02T07:22:06.963Z",
+      "fetchedAt": "2026-04-02T08:16:24.312Z",
       "updatedAt": "2026-04-01T15:27:24.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
@@ -6154,2812 +6154,6 @@
         }
       ],
       "schemaDescription": "EWC issuer credential: Loyalty Card (SD-JWT VC). Schema generated from issuer metadata."
-    },
-    {
-      "id": "cred:fides:lpid:sd-jwt-vc",
-      "slug": "fides-lpid-sd-jwt-vc",
-      "displayName": "LPID Attestation",
-      "authority": {
-        "name": "FIDES Labs",
-        "url": "https://fides.community"
-      },
-      "subjectType": "Organization",
-      "vcFormat": "sd_jwt_vc",
-      "nativeIdentifier": "urn:org:fides:lpid:1",
-      "nativeIdentifierType": "vct",
-      "schemaUrl": "https://raw.githubusercontent.com/FIDEScommunity/FIDES-credential-schemas/main/vct-schemas/lpid/1/FIDES.lpid.schema.json",
-      "schemaType": "JSON Schema",
-      "version": "1",
-      "tags": [
-        "fides",
-        "lpid"
-      ],
-      "sectors": [
-        "public_sector"
-      ],
-      "ecosystems": [
-        "eudi_wallet"
-      ],
-      "themes": [
-        "organizational_identity"
-      ],
-      "orgId": "org:fides",
-      "provider": {
-        "name": "FIDES Labs",
-        "did": "did:web:fides.acc.credenco.com:did:da5a3c99-d45c-4ce2-8065-9db36c98868c",
-        "website": "https://fides.community",
-        "logo": "https://avatars.githubusercontent.com/u/119322214?v=4"
-      },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
-      "source": "local",
-      "fetchedAt": "2026-04-02T07:22:06.963Z",
-      "updatedAt": "2026-03-15T00:00:00.000Z",
-      "firstSeenAt": "2026-03-15T00:00:00.000Z",
-      "attributes": [
-        {
-          "name": "vct",
-          "type": "string",
-          "required": false,
-          "depth": 0
-        },
-        {
-          "name": "legal_person_id",
-          "type": "string",
-          "required": true,
-          "description": "The EUID or other legal person identifier of the company.",
-          "depth": 0
-        },
-        {
-          "name": "legal_person_name",
-          "type": "string",
-          "required": true,
-          "description": "The registered name of the company.",
-          "depth": 0
-        },
-        {
-          "name": "issuer_name",
-          "type": "string",
-          "required": true,
-          "description": "Name of the authority or organization that issued the LPID attestation.",
-          "depth": 0
-        },
-        {
-          "name": "issuer_id",
-          "type": "string",
-          "required": true,
-          "description": "Identifier of the issuing authority (e.g. business register identifier for BRIS).",
-          "depth": 0
-        },
-        {
-          "name": "issuer_country",
-          "type": "string",
-          "required": true,
-          "description": "Alpha-2 country code, as defined in ISO 3166-1, of the issuing country.",
-          "depth": 0
-        },
-        {
-          "name": "issuance_date",
-          "type": "string",
-          "required": true,
-          "description": "Date and possibly time of issuance, including timezone offset (ISO 8601).",
-          "depth": 0
-        },
-        {
-          "name": "expiry_date",
-          "type": "string",
-          "required": true,
-          "description": "Date and possibly time of expiration, including timezone offset (ISO 8601).",
-          "depth": 0
-        },
-        {
-          "name": "authentic_source_id",
-          "type": "string",
-          "required": false,
-          "description": "Identifier of the authentic source of the data (e.g. business register identifier such as BRIS, HRB, etc.).",
-          "depth": 0
-        },
-        {
-          "name": "authentic_source_name",
-          "type": "string",
-          "required": false,
-          "description": "Human-readable name of the authentic source that issued the instance.",
-          "depth": 0
-        }
-      ],
-      "schemaDescription": "This schema represents the claim set of an SD-JWT based Verifiable Credential for the LPID (Legal Person ID) attestation as a single, flat JSON object. It is derived from the EWC PID Rulebook and aligned with the IETF SD-JWT VC data model: generic SD-JWT VC claims (iss, sub, vct, iat, nbf, exp, jti, cnf) are defined alongside the domain-specific LPID claims. Implementations may conceptually treat this as a layered model (base + domain), but the structure is flat for systems that expect a single JSON Schema document, such as current organizational wallet templates."
-    },
-    {
-      "id": "cred:fides:bri:sd-jwt-vc",
-      "slug": "fides-bri-sd-jwt-vc",
-      "displayName": "BRI Attestation",
-      "authority": {
-        "name": "FIDES Labs",
-        "url": "https://fides.community"
-      },
-      "subjectType": "Person",
-      "vcFormat": "sd_jwt_vc",
-      "nativeIdentifier": "urn:org:fides:nl_bld_bri:1",
-      "nativeIdentifierType": "vct",
-      "schemaUrl": "https://raw.githubusercontent.com/FIDEScommunity/FIDES-credential-schemas/main/vct-schemas/bri/1/FIDES.bri.schema.json",
-      "schemaType": "JSON Schema",
-      "version": "1",
-      "tags": [
-        "fides",
-        "bri"
-      ],
-      "sectors": [
-        "digital",
-        "public_sector"
-      ],
-      "ecosystems": [
-        "eudi_wallet"
-      ],
-      "themes": [
-        "organizational_identity"
-      ],
-      "orgId": "org:fides",
-      "provider": {
-        "name": "FIDES Labs",
-        "did": "did:web:fides.acc.credenco.com:did:da5a3c99-d45c-4ce2-8065-9db36c98868c",
-        "website": "https://fides.community",
-        "logo": "https://avatars.githubusercontent.com/u/119322214?v=4"
-      },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
-      "source": "local",
-      "fetchedAt": "2026-04-02T07:22:06.963Z",
-      "updatedAt": "2026-03-15T00:00:00.000Z",
-      "firstSeenAt": "2026-03-15T00:00:00.000Z",
-      "attributes": [
-        {
-          "name": "vct",
-          "type": "string",
-          "required": true,
-          "description": "Verifiable Credential Type (VCT) identifier for the BRI attestation, as defined in the rulebook.",
-          "depth": 0
-        },
-        {
-          "name": "datetime_of_expiry",
-          "type": "string",
-          "required": true,
-          "description": "Administrative expiry date and time, including timezone offset (ISO 8601).",
-          "depth": 0
-        },
-        {
-          "name": "datetime_of_issuance",
-          "type": "string",
-          "required": false,
-          "description": "Administrative issuance date and time, including timezone offset (optional).",
-          "depth": 0
-        },
-        {
-          "name": "issuing_authority",
-          "type": "string",
-          "required": true,
-          "description": "Name of the issuing authority (e.g. the Dutch Tax Administration).",
-          "depth": 0
-        },
-        {
-          "name": "issuing_country",
-          "type": "string",
-          "required": true,
-          "description": "ISO 3166-1 alpha-2 country code (e.g. NL).",
-          "depth": 0
-        },
-        {
-          "name": "issuing_jurisdiction",
-          "type": "string",
-          "required": false,
-          "description": "Jurisdiction of issuance (optional).",
-          "depth": 0
-        },
-        {
-          "name": "trust_anchor",
-          "type": "string",
-          "required": false,
-          "description": "Reference (URL or identifier) to the applicable trust anchor (optional).",
-          "depth": 0
-        },
-        {
-          "name": "subject",
-          "type": "object",
-          "required": true,
-          "description": "Subject attributes (subset of PID) as defined in the mapping table in section 3.1.1.",
-          "depth": 0
-        },
-        {
-          "name": "subject/family_name",
-          "type": "string",
-          "required": true,
-          "description": "Family name of the subject.",
-          "depth": 1
-        },
-        {
-          "name": "subject/given_name",
-          "type": "string",
-          "required": true,
-          "description": "Given name of the subject.",
-          "depth": 1
-        },
-        {
-          "name": "subject/birthdate",
-          "type": "string",
-          "required": true,
-          "description": "Date of birth (YYYY-MM-DD).",
-          "depth": 1
-        },
-        {
-          "name": "subject/sex",
-          "type": "number",
-          "required": false,
-          "description": "Gender of the subject, encoded according to ISO/IEC 5218 (optional).",
-          "depth": 1
-        },
-        {
-          "name": "subject/place_of_birth",
-          "type": "string",
-          "required": false,
-          "description": "Place of birth (string, optional).",
-          "depth": 1
-        },
-        {
-          "name": "subject/nationalities",
-          "type": "string",
-          "required": false,
-          "description": "Nationalities as a string according to mapping (optional).",
-          "depth": 1
-        },
-        {
-          "name": "nl_bld_bri",
-          "type": "object",
-          "required": true,
-          "description": "Income data as registered in the Dutch Basisregistratie Inkomen (BRI) for a specific year.",
-          "depth": 0
-        },
-        {
-          "name": "nl_bld_bri/year",
-          "type": "integer",
-          "required": true,
-          "description": "Tax year to which the income data refers.",
-          "depth": 1
-        },
-        {
-          "name": "nl_bld_bri/income",
-          "type": "integer",
-          "required": true,
-          "description": "Annual income in full euros.",
-          "depth": 1
-        }
-      ],
-      "schemaDescription": "This schema represents the claim set of an SD-JWT based Verifiable Credential for the BRI (Income) attestation as a single, flat JSON object. It is derived from the BRI Rulebook (urn:eudi:nl:nl_bld_bri:1)"
-    },
-    {
-      "id": "cred:fides:brp:sd-jwt-vc",
-      "slug": "fides-brp-sd-jwt-vc",
-      "displayName": "BRP Attestation",
-      "authority": {
-        "name": "FIDES Labs",
-        "url": "https://fides.community"
-      },
-      "subjectType": "Person",
-      "vcFormat": "sd_jwt_vc",
-      "nativeIdentifier": "urn:org:fides:brp:1",
-      "nativeIdentifierType": "vct",
-      "schemaUrl": "https://raw.githubusercontent.com/FIDEScommunity/FIDES-credential-schemas/main/vct-schemas/brp/1/FIDES.brp.schema.json",
-      "schemaType": "JSON Schema",
-      "version": "1",
-      "tags": [
-        "fides",
-        "brp"
-      ],
-      "sectors": [
-        "digital",
-        "public_sector"
-      ],
-      "ecosystems": [
-        "eudi_wallet"
-      ],
-      "themes": [
-        "person_identity"
-      ],
-      "orgId": "org:fides",
-      "provider": {
-        "name": "FIDES Labs",
-        "did": "did:web:fides.acc.credenco.com:did:da5a3c99-d45c-4ce2-8065-9db36c98868c",
-        "website": "https://fides.community",
-        "logo": "https://avatars.githubusercontent.com/u/119322214?v=4"
-      },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
-      "source": "local",
-      "fetchedAt": "2026-04-02T07:22:06.963Z",
-      "updatedAt": "2026-03-15T00:00:00.000Z",
-      "firstSeenAt": "2026-03-15T00:00:00.000Z",
-      "attributes": [
-        {
-          "name": "vct",
-          "type": "string",
-          "required": false,
-          "depth": 0
-        },
-        {
-          "name": "address",
-          "type": "object",
-          "required": false,
-          "depth": 0
-        },
-        {
-          "name": "address/street",
-          "type": "string",
-          "required": true,
-          "depth": 1
-        },
-        {
-          "name": "address/houseNumber",
-          "type": "integer",
-          "required": true,
-          "depth": 1
-        },
-        {
-          "name": "address/houseNumberAddition",
-          "type": "string",
-          "required": false,
-          "depth": 1
-        },
-        {
-          "name": "address/postalCode",
-          "type": "string",
-          "required": true,
-          "depth": 1
-        },
-        {
-          "name": "address/city",
-          "type": "string",
-          "required": true,
-          "depth": 1
-        },
-        {
-          "name": "address/municipality",
-          "type": "object",
-          "required": false,
-          "depth": 1
-        },
-        {
-          "name": "address/municipality/name",
-          "type": "string",
-          "required": false,
-          "depth": 2
-        },
-        {
-          "name": "address/municipality/code",
-          "type": "string",
-          "required": false,
-          "depth": 2
-        },
-        {
-          "name": "address/country",
-          "type": "string",
-          "required": true,
-          "depth": 1
-        },
-        {
-          "name": "address/addressLabel",
-          "type": "string",
-          "required": false,
-          "depth": 1
-        },
-        {
-          "name": "address/addressStartDate",
-          "type": "string",
-          "required": false,
-          "depth": 1
-        },
-        {
-          "name": "address/addressConfidential",
-          "type": "boolean",
-          "required": false,
-          "depth": 1
-        },
-        {
-          "name": "issuing_authority",
-          "type": "string",
-          "required": true,
-          "description": "Name of the issuer that issued the credential",
-          "depth": 0
-        },
-        {
-          "name": "issuing_authority_id",
-          "type": "string",
-          "required": true,
-          "description": "EUID of the issuing authority",
-          "depth": 0
-        },
-        {
-          "name": "authentic_source_id",
-          "type": "string",
-          "required": true,
-          "description": "EUID of the data providing entity",
-          "depth": 0
-        },
-        {
-          "name": "authentic_source_name",
-          "type": "string",
-          "required": true,
-          "description": "Name of the data providing entity",
-          "depth": 0
-        }
-      ],
-      "schemaDescription": "This schema represents the claim set of an SD-JWT based Verifiable Credential for the BRP (Persons) attestation as a single, flat JSON object."
-    },
-    {
-      "id": "cred:fides:company-roles:sd-jwt-vc",
-      "slug": "fides-company-roles-sd-jwt-vc",
-      "displayName": "Company Roles Attestation",
-      "authority": {
-        "name": "FIDES Labs",
-        "url": "https://fides.community"
-      },
-      "subjectType": "Person",
-      "vcFormat": "sd_jwt_vc",
-      "nativeIdentifier": "urn:org:fides:company-roles:1",
-      "nativeIdentifierType": "vct",
-      "schemaUrl": "https://raw.githubusercontent.com/FIDEScommunity/FIDES-credential-schemas/main/vct-schemas/company-roles/1/FIDES.company-roles.schema.json",
-      "schemaType": "JSON Schema",
-      "version": "1",
-      "tags": [
-        "fides",
-        "company-roles"
-      ],
-      "sectors": [
-        "digital",
-        "public_sector"
-      ],
-      "ecosystems": [
-        "eudi_wallet"
-      ],
-      "themes": [
-        "organizational_identity",
-        "person_identity"
-      ],
-      "orgId": "org:fides",
-      "provider": {
-        "name": "FIDES Labs",
-        "did": "did:web:fides.acc.credenco.com:did:da5a3c99-d45c-4ce2-8065-9db36c98868c",
-        "website": "https://fides.community",
-        "logo": "https://avatars.githubusercontent.com/u/119322214?v=4"
-      },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
-      "source": "local",
-      "fetchedAt": "2026-04-02T07:22:06.963Z",
-      "updatedAt": "2026-03-15T00:00:00.000Z",
-      "firstSeenAt": "2026-03-15T00:00:00.000Z",
-      "attributes": [
-        {
-          "name": "vct",
-          "type": "string",
-          "required": false,
-          "depth": 0
-        },
-        {
-          "name": "subject",
-          "type": "object",
-          "required": true,
-          "description": "Subject attributes (subset of PID) used to identify the natural person.",
-          "depth": 0
-        },
-        {
-          "name": "subject/family_name",
-          "type": "string",
-          "required": true,
-          "description": "Family name (surname) of the subject.",
-          "depth": 1
-        },
-        {
-          "name": "subject/given_name",
-          "type": "string",
-          "required": true,
-          "description": "Given name (first name) of the subject.",
-          "depth": 1
-        },
-        {
-          "name": "subject/birthdate",
-          "type": "string",
-          "required": true,
-          "description": "Date of birth of the subject (YYYY-MM-DD).",
-          "depth": 1
-        },
-        {
-          "name": "board_history",
-          "type": "array",
-          "required": true,
-          "description": "List of company roles the subject holds or has held as registered in the KVK Handelsregister.",
-          "depth": 0
-        },
-        {
-          "name": "board_history/item/legal_person_name",
-          "type": "string",
-          "required": false,
-          "description": "Registered (statutory or trade) name of the company or legal entity.",
-          "depth": 2
-        },
-        {
-          "name": "board_history/item/legal_person_id",
-          "type": "string",
-          "required": false,
-          "description": "KVK registration number of the company.",
-          "depth": 2
-        },
-        {
-          "name": "board_history/item/function",
-          "type": "string",
-          "required": true,
-          "description": "Role/function of the subject within the company, as registered in the Handelsregister (e.g. 'Bestuurder', 'Commissaris').",
-          "depth": 2
-        },
-        {
-          "name": "board_history/item/start_date",
-          "type": "string",
-          "required": false,
-          "description": "Start date of the role (YYYY-MM-DD) or null if unknown.",
-          "depth": 2
-        },
-        {
-          "name": "board_history/item/end_date",
-          "type": "string",
-          "required": false,
-          "description": "End date of the role (YYYY-MM-DD) or null if the role is still active.",
-          "depth": 2
-        },
-        {
-          "name": "board_history/item/status",
-          "type": "string",
-          "required": true,
-          "description": "Status of the role.",
-          "depth": 2
-        },
-        {
-          "name": "board_disqualification",
-          "type": "boolean",
-          "required": true,
-          "description": "Result of the board disqualification check: false = no active ban, true = an active board disqualification exists.",
-          "depth": 0
-        },
-        {
-          "name": "issuing_authority",
-          "type": "string",
-          "required": true,
-          "description": "Name of the issuer that issued the credential",
-          "depth": 0
-        },
-        {
-          "name": "issuing_authority_id",
-          "type": "string",
-          "required": true,
-          "description": "EUID of the issuing authority",
-          "depth": 0
-        }
-      ],
-      "schemaDescription": "This schema represents the claim set of an SD-JWT based Verifiable Credential for describing a natural person's roles in companies and the result of a board disqualification check."
-    },
-    {
-      "id": "cred:fides:contact-details:sd-jwt-vc",
-      "slug": "fides-contact-details-sd-jwt-vc",
-      "displayName": "Contact Details",
-      "authority": {
-        "name": "FIDES Labs",
-        "url": "https://fides.community"
-      },
-      "subjectType": "Person",
-      "vcFormat": "sd_jwt_vc",
-      "nativeIdentifier": "urn:org:fides:contact-details:1",
-      "nativeIdentifierType": "vct",
-      "schemaUrl": "https://raw.githubusercontent.com/FIDEScommunity/FIDES-credential-schemas/main/vct-schemas/contact-details/1/FIDES.contact-details.schema.json",
-      "schemaType": "JSON Schema",
-      "version": "1",
-      "tags": [
-        "fides",
-        "contact-details"
-      ],
-      "sectors": [
-        "digital",
-        "public_sector"
-      ],
-      "ecosystems": [
-        "eudi_wallet"
-      ],
-      "themes": [
-        "person_identity"
-      ],
-      "orgId": "org:fides",
-      "provider": {
-        "name": "FIDES Labs",
-        "did": "did:web:fides.acc.credenco.com:did:da5a3c99-d45c-4ce2-8065-9db36c98868c",
-        "website": "https://fides.community",
-        "logo": "https://avatars.githubusercontent.com/u/119322214?v=4"
-      },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
-      "source": "local",
-      "fetchedAt": "2026-04-02T07:22:06.963Z",
-      "updatedAt": "2026-03-15T00:00:00.000Z",
-      "firstSeenAt": "2026-03-15T00:00:00.000Z",
-      "attributes": [
-        {
-          "name": "vct",
-          "type": "string",
-          "required": false,
-          "depth": 0
-        },
-        {
-          "name": "email",
-          "type": "object",
-          "required": false,
-          "depth": 0
-        },
-        {
-          "name": "email/value",
-          "type": "string",
-          "required": true,
-          "depth": 1
-        },
-        {
-          "name": "email/verified_at",
-          "type": "string",
-          "required": true,
-          "depth": 1
-        },
-        {
-          "name": "email/method",
-          "type": "string",
-          "required": true,
-          "depth": 1
-        },
-        {
-          "name": "email/provider",
-          "type": "string",
-          "required": false,
-          "depth": 1
-        },
-        {
-          "name": "email/proof_ref",
-          "type": "string",
-          "required": false,
-          "depth": 1
-        },
-        {
-          "name": "phone",
-          "type": "object",
-          "required": false,
-          "depth": 0
-        },
-        {
-          "name": "phone/value",
-          "type": "string",
-          "required": true,
-          "depth": 1
-        },
-        {
-          "name": "phone/verified_at",
-          "type": "string",
-          "required": true,
-          "depth": 1
-        },
-        {
-          "name": "phone/method",
-          "type": "string",
-          "required": true,
-          "depth": 1
-        },
-        {
-          "name": "phone/provider",
-          "type": "string",
-          "required": false,
-          "depth": 1
-        },
-        {
-          "name": "phone/proof_ref",
-          "type": "string",
-          "required": false,
-          "depth": 1
-        }
-      ],
-      "schemaDescription": "This schema represents the claim set of an SD-JWT based Verifiable Credential for Contact Details (verified email and phone number) attestation as a single, flat JSON object."
-    },
-    {
-      "id": "cred:fides:einvoicing:sd-jwt-vc",
-      "slug": "fides-einvoicing-sd-jwt-vc",
-      "displayName": "eInvoice Attestation",
-      "authority": {
-        "name": "FIDES Labs",
-        "url": "https://fides.community"
-      },
-      "subjectType": "Organization",
-      "vcFormat": "sd_jwt_vc",
-      "nativeIdentifier": "urn:org:fides:einvoicing:1",
-      "nativeIdentifierType": "vct",
-      "schemaUrl": "https://raw.githubusercontent.com/FIDEScommunity/FIDES-credential-schemas/main/vct-schemas/einvoicing/1/FIDES.einvoice.schema.json",
-      "schemaType": "JSON Schema",
-      "version": "1",
-      "tags": [
-        "fides",
-        "einvoicing"
-      ],
-      "sectors": [
-        "digital",
-        "public_sector",
-        "supply_chain",
-        "trade"
-      ],
-      "ecosystems": [
-        "eudi_wallet"
-      ],
-      "themes": [
-        "payments",
-        "trade_documents"
-      ],
-      "orgId": "org:fides",
-      "provider": {
-        "name": "FIDES Labs",
-        "did": "did:web:fides.acc.credenco.com:did:da5a3c99-d45c-4ce2-8065-9db36c98868c",
-        "website": "https://fides.community",
-        "logo": "https://avatars.githubusercontent.com/u/119322214?v=4"
-      },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
-      "source": "local",
-      "fetchedAt": "2026-04-02T07:22:06.963Z",
-      "updatedAt": "2026-03-15T00:00:00.000Z",
-      "firstSeenAt": "2026-03-15T00:00:00.000Z",
-      "attributes": [
-        {
-          "name": "vct",
-          "type": "string",
-          "required": false,
-          "depth": 0
-        },
-        {
-          "name": "invoice_id",
-          "type": "string",
-          "required": true,
-          "description": "The id of the invoice",
-          "depth": 0
-        },
-        {
-          "name": "invoice_date",
-          "type": "string",
-          "required": true,
-          "description": "The invoice date",
-          "depth": 0
-        },
-        {
-          "name": "due_date",
-          "type": "string",
-          "required": true,
-          "description": "Due date of the invoice",
-          "depth": 0
-        },
-        {
-          "name": "currency_code",
-          "type": "string",
-          "required": true,
-          "description": "Currency code of the invoice, as defined in ISO 4217:2015",
-          "depth": 0
-        },
-        {
-          "name": "tax_exclusive_amount",
-          "type": "number",
-          "required": true,
-          "description": "Amount of the invoice excluding taxes",
-          "depth": 0
-        },
-        {
-          "name": "tax_amount",
-          "type": "number",
-          "required": true,
-          "description": "Tax amount of the invoice",
-          "depth": 0
-        },
-        {
-          "name": "tax_inclusive_amount",
-          "type": "number",
-          "required": true,
-          "description": "Amount of the invoice including taxes",
-          "depth": 0
-        },
-        {
-          "name": "evidence",
-          "type": "array",
-          "required": true,
-          "description": "The original evidence documents, such as the UBL 2.0 invoice",
-          "depth": 0
-        },
-        {
-          "name": "evidence/item/id",
-          "type": "string",
-          "required": true,
-          "description": "The uri to the original document",
-          "depth": 2
-        },
-        {
-          "name": "evidence/item/type",
-          "type": "array",
-          "required": true,
-          "description": "The type of document",
-          "depth": 2
-        },
-        {
-          "name": "evidence/item/name",
-          "type": "string",
-          "required": true,
-          "description": "The name of the document",
-          "depth": 2
-        },
-        {
-          "name": "evidence/item/description",
-          "type": "string",
-          "required": false,
-          "description": "Description of the document",
-          "depth": 2
-        },
-        {
-          "name": "evidence/item/digestMultibase",
-          "type": "string",
-          "required": true,
-          "description": "Digest of the document",
-          "depth": 2
-        }
-      ],
-      "schemaDescription": "This schema represents the claim set of an SD-JWT based Verifiable Credential for the eInvoice attestation as a single, flat JSON object. It is based on UBL attributes and aligned with the IETF SD-JWT VC data model: generic SD-JWT VC claims (iss, sub, vct, iat, nbf, exp, jti, cnf) are defined alongside the domain-specific LPID claims. Implementations may conceptually treat this as a layered model (base + domain), but the structure is flat for systems that expect a single JSON Schema document, such as current organizational wallet templates."
-    },
-    {
-      "id": "cred:fides:green-lane:sd-jwt-vc",
-      "slug": "fides-green-lane-sd-jwt-vc",
-      "displayName": "Green Lane Credential",
-      "authority": {
-        "name": "FIDES Labs",
-        "url": "https://fides.community"
-      },
-      "subjectType": "Organization",
-      "vcFormat": "sd_jwt_vc",
-      "nativeIdentifier": "urn:org:fides:green-lane:1",
-      "nativeIdentifierType": "vct",
-      "schemaUrl": "https://raw.githubusercontent.com/FIDEScommunity/FIDES-credential-schemas/main/vct-schemas/green-lane/1/FIDES.green-lane.schema.json",
-      "schemaType": "JSON Schema",
-      "version": "1",
-      "tags": [
-        "fides",
-        "green-lane"
-      ],
-      "sectors": [
-        "public_sector"
-      ],
-      "ecosystems": [
-        "eudi_wallet"
-      ],
-      "themes": [
-        "compliance_reporting",
-        "organizational_identity"
-      ],
-      "orgId": "org:fides",
-      "provider": {
-        "name": "FIDES Labs",
-        "did": "did:web:fides.acc.credenco.com:did:da5a3c99-d45c-4ce2-8065-9db36c98868c",
-        "website": "https://fides.community",
-        "logo": "https://avatars.githubusercontent.com/u/119322214?v=4"
-      },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
-      "source": "local",
-      "fetchedAt": "2026-04-02T07:22:06.963Z",
-      "updatedAt": "2026-03-15T00:00:00.000Z",
-      "firstSeenAt": "2026-03-15T00:00:00.000Z",
-      "attributes": []
-    },
-    {
-      "id": "cred:fides:iban:sd-jwt-vc",
-      "slug": "fides-iban-sd-jwt-vc",
-      "displayName": "IBAN Attestation",
-      "authority": {
-        "name": "FIDES Labs",
-        "url": "https://fides.community"
-      },
-      "subjectType": "Person",
-      "vcFormat": "sd_jwt_vc",
-      "nativeIdentifier": "urn:org:fides:iban:1",
-      "nativeIdentifierType": "vct",
-      "schemaUrl": "https://raw.githubusercontent.com/FIDEScommunity/FIDES-credential-schemas/main/vct-schemas/iban/1/FIDES.iban.schema.json",
-      "schemaType": "JSON Schema",
-      "version": "1",
-      "tags": [
-        "fides",
-        "iban"
-      ],
-      "sectors": [
-        "digital",
-        "finance"
-      ],
-      "ecosystems": [
-        "eudi_wallet"
-      ],
-      "themes": [
-        "payments"
-      ],
-      "orgId": "org:fides",
-      "provider": {
-        "name": "FIDES Labs",
-        "did": "did:web:fides.acc.credenco.com:did:da5a3c99-d45c-4ce2-8065-9db36c98868c",
-        "website": "https://fides.community",
-        "logo": "https://avatars.githubusercontent.com/u/119322214?v=4"
-      },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
-      "source": "local",
-      "fetchedAt": "2026-04-02T07:22:06.963Z",
-      "updatedAt": "2026-03-15T00:00:00.000Z",
-      "firstSeenAt": "2026-03-15T00:00:00.000Z",
-      "attributes": []
-    },
-    {
-      "id": "cred:fides:iscc-sd:sd-jwt-vc",
-      "slug": "fides-iscc-sd-sd-jwt-vc",
-      "displayName": "ISCC Sustainability Declaration",
-      "authority": {
-        "name": "FIDES Labs",
-        "url": "https://fides.community"
-      },
-      "subjectType": "Product",
-      "vcFormat": "sd_jwt_vc",
-      "nativeIdentifier": "urn:org:fides:iscc-sd:1",
-      "nativeIdentifierType": "vct",
-      "schemaUrl": "https://raw.githubusercontent.com/FIDEScommunity/FIDES-credential-schemas/main/vct-schemas/iscc/sd/1/CFP.SD.schema.json",
-      "schemaType": "JSON Schema",
-      "version": "1",
-      "tags": [
-        "fides",
-        "iscc",
-        "sd"
-      ],
-      "sectors": [
-        "public_sector",
-        "supply_chain"
-      ],
-      "ecosystems": [
-        "eudi_wallet"
-      ],
-      "themes": [
-        "compliance_reporting"
-      ],
-      "orgId": "org:fides",
-      "provider": {
-        "name": "FIDES Labs",
-        "did": "did:web:fides.acc.credenco.com:did:da5a3c99-d45c-4ce2-8065-9db36c98868c",
-        "website": "https://fides.community",
-        "logo": "https://avatars.githubusercontent.com/u/119322214?v=4"
-      },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
-      "source": "local",
-      "fetchedAt": "2026-04-02T07:22:06.963Z",
-      "updatedAt": "2026-03-15T00:00:00.000Z",
-      "firstSeenAt": "2026-03-15T00:00:00.000Z",
-      "attributes": [
-        {
-          "name": "vct",
-          "type": "string",
-          "required": false,
-          "description": "Verifiable Credential Data Model Type identifier for the Sustainability Declaration attestation, as defined by the Clean Fuel Protocol (CFP).",
-          "depth": 0
-        },
-        {
-          "name": "sdNumber",
-          "type": "string",
-          "required": true,
-          "description": "Unique number of the Sustainability Declaration as issued under the sustainability scheme.",
-          "depth": 0
-        },
-        {
-          "name": "sdIssuanceDate",
-          "type": "string",
-          "required": false,
-          "description": "Date of issuance of the Sustainability Declaration, as stated on the ISCC SD form.",
-          "depth": 0
-        },
-        {
-          "name": "scheme",
-          "type": "string",
-          "required": true,
-          "description": "Name of the sustainability certification scheme.",
-          "depth": 0
-        },
-        {
-          "name": "schemeVersion",
-          "type": "string",
-          "required": false,
-          "description": "Version of the sustainability certification scheme.",
-          "depth": 0
-        },
-        {
-          "name": "ISCCcertificateNumber",
-          "type": "string",
-          "required": true,
-          "description": "Certificate registration number under the sustainability scheme (e.g. ISCC certificate number of the certified supplier).",
-          "depth": 0
-        },
-        {
-          "name": "supplierName",
-          "type": "string",
-          "required": true,
-          "description": "Name of the certified supplier issuing this Sustainability Declaration.",
-          "depth": 0
-        },
-        {
-          "name": "supplierIdentifier",
-          "type": "string",
-          "required": true,
-          "description": "Business identifier of the supplier, such as KVK, VAT/BTW, SIREN, SIRET, GLN, or other trade identifiers.",
-          "depth": 0
-        },
-        {
-          "name": "supplierDid",
-          "type": "string",
-          "required": false,
-          "description": "DID of the supplier (organisation wallet) issuing this Sustainability Declaration.",
-          "depth": 0
-        },
-        {
-          "name": "recipientName",
-          "type": "string",
-          "required": true,
-          "description": "Name of the recipient of the sustainable material, as stated on the Sustainability Declaration.",
-          "depth": 0
-        },
-        {
-          "name": "recipientIdentifier",
-          "type": "string",
-          "required": false,
-          "description": "Business identifier of the recipient, such as KVK, VAT/BTW, GLN, etc.",
-          "depth": 0
-        },
-        {
-          "name": "recipientDid",
-          "type": "string",
-          "required": false,
-          "description": "DID of the recipient organisation (organisation wallet) to which this Sustainability Declaration applies.",
-          "depth": 0
-        },
-        {
-          "name": "recipientAddress",
-          "type": "string",
-          "required": false,
-          "description": "Postal address or place of destination (location of the recipient) as stated on the Sustainability Declaration.",
-          "depth": 0
-        },
-        {
-          "name": "dateOfDispatch",
-          "type": "string",
-          "required": true,
-          "description": "Date of dispatch of the sustainable material as recorded on the Sustainability Declaration.",
-          "depth": 0
-        },
-        {
-          "name": "productType",
-          "type": "string",
-          "required": false,
-          "description": "Type of product, e.g. raw material or intermediate product such as crude oil.",
-          "depth": 0
-        },
-        {
-          "name": "rawMaterialType",
-          "type": "string",
-          "required": true,
-          "description": "Type of raw material as defined in the Sustainability Declaration (ideally selected from the ISCC raw material list).",
-          "depth": 0
-        },
-        {
-          "name": "countryOfOrigin",
-          "type": "string",
-          "required": true,
-          "description": "Country of origin of the raw material, ISO 3166-1 alpha-2 code.",
-          "depth": 0
-        },
-        {
-          "name": "quantity",
-          "type": "number",
-          "required": true,
-          "description": "Quantity of sustainable material covered by this Sustainability Declaration.",
-          "depth": 0
-        },
-        {
-          "name": "quantityUnit",
-          "type": "string",
-          "required": true,
-          "description": "Unit of the material quantity.",
-          "depth": 0
-        },
-        {
-          "name": "isccCompliantMaterial",
-          "type": "boolean",
-          "required": false,
-          "description": "Indicates that the material is \"ISCC Compliant material\" according to the ISCC template.",
-          "depth": 0
-        },
-        {
-          "name": "euRedCompliantMaterial",
-          "type": "boolean",
-          "required": false,
-          "description": "Indicates that the material is \"EU RED Compliant material\" according to the ISCC template.",
-          "depth": 0
-        },
-        {
-          "name": "chainOfCustodyOption",
-          "type": "string",
-          "required": false,
-          "description": "Chain of custody option applied to this material as recorded on the Sustainability Declaration.",
-          "depth": 0
-        },
-        {
-          "name": "isWasteOrResidue",
-          "type": "boolean",
-          "required": false,
-          "description": "Indicates that the raw material meets the definition of waste or residue according to RED III.",
-          "depth": 0
-        },
-        {
-          "name": "totalDefaultGhgValueApplied",
-          "type": "boolean",
-          "required": false,
-          "description": "Indicates that a total default value according to RED III was applied for the GHG emission calculation.",
-          "depth": 0
-        },
-        {
-          "name": "ghgCalculationUnit",
-          "type": "string",
-          "required": false,
-          "description": "Unit used for the GHG emission calculation for raw materials and intermediate products. Default is kgCO2eq/dry-ton.",
-          "depth": 0
-        }
-      ],
-      "schemaDescription": "Light variant of the Clean Fuel Sustainability Declaration (SD) JSON Schema. This version is intended for early pilots and prototypes and focuses on a minimal subset of fields that are most critical for linking SDs to PoS and to physical batches. It follows the same naming conventions as the full SD schema and the PoS schema."
-    },
-    {
-      "id": "cred:fides:iscc-cert:sd-jwt-vc",
-      "slug": "fides-iscc-cert-sd-jwt-vc",
-      "displayName": "ISCC Certificate",
-      "authority": {
-        "name": "FIDES Labs",
-        "url": "https://fides.community"
-      },
-      "subjectType": "Organization",
-      "vcFormat": "sd_jwt_vc",
-      "nativeIdentifier": "urn:org:fides:iscc-cert:1",
-      "nativeIdentifierType": "vct",
-      "schemaUrl": "https://raw.githubusercontent.com/FIDEScommunity/FIDES-credential-schemas/main/vct-schemas/iscc/iscc-cert/1/FIDES.isccCert.schema.json",
-      "schemaType": "JSON Schema",
-      "version": "1",
-      "tags": [
-        "fides",
-        "iscc",
-        "cert"
-      ],
-      "sectors": [
-        "energy",
-        "public_sector"
-      ],
-      "ecosystems": [
-        "eudi_wallet"
-      ],
-      "themes": [
-        "compliance_reporting"
-      ],
-      "orgId": "org:fides",
-      "provider": {
-        "name": "FIDES Labs",
-        "did": "did:web:fides.acc.credenco.com:did:da5a3c99-d45c-4ce2-8065-9db36c98868c",
-        "website": "https://fides.community",
-        "logo": "https://avatars.githubusercontent.com/u/119322214?v=4"
-      },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
-      "source": "local",
-      "fetchedAt": "2026-04-02T07:22:06.963Z",
-      "updatedAt": "2026-03-15T00:00:00.000Z",
-      "firstSeenAt": "2026-03-15T00:00:00.000Z",
-      "attributes": [
-        {
-          "name": "vct",
-          "type": "string",
-          "required": true,
-          "description": "The Verifiable Credential Type (VCT) for this ISCC demo certificate.",
-          "depth": 0
-        },
-        {
-          "name": "certificateNumber",
-          "type": "string",
-          "required": true,
-          "description": "The official ISCC certificate number.",
-          "depth": 0
-        },
-        {
-          "name": "systemUserCertificate",
-          "type": "string",
-          "required": false,
-          "description": "The certificate ID as shown on the official ISCC PDF (may differ from the certificate number).",
-          "depth": 0
-        },
-        {
-          "name": "scheme",
-          "type": "string",
-          "required": true,
-          "description": "The ISCC scheme applicable to this certificate.",
-          "depth": 0
-        },
-        {
-          "name": "validFrom",
-          "type": "string",
-          "required": true,
-          "description": "Start date of certificate validity (DD-MM-YYYY).",
-          "depth": 0
-        },
-        {
-          "name": "validUntil",
-          "type": "string",
-          "required": true,
-          "description": "End date of certificate validity (DD-MM-YYYY).",
-          "depth": 0
-        },
-        {
-          "name": "systemUserName",
-          "type": "string",
-          "required": true,
-          "description": "Official name of the certified company.",
-          "depth": 0
-        },
-        {
-          "name": "systemUserNumber",
-          "type": "string",
-          "required": false,
-          "description": "The official ISCC System User Number (SUN).",
-          "depth": 0
-        },
-        {
-          "name": "country",
-          "type": "string",
-          "required": true,
-          "description": "ISO 3166-1 alpha-2 country code where the certificate applies.",
-          "depth": 0
-        },
-        {
-          "name": "certificationBody",
-          "type": "string",
-          "required": true,
-          "description": "Name of the ISCC-recognised Certification Body (CB) that issued this certificate.",
-          "depth": 0
-        }
-      ],
-      "schemaDescription": "A simplified ISCC certificate credential for demo purposes. Contains only essential information issued by an ISCC Certification Body (CB)."
-    },
-    {
-      "id": "cred:fides:iscc-role:sd-jwt-vc",
-      "slug": "fides-iscc-role-sd-jwt-vc",
-      "displayName": "CFP Role Credential",
-      "authority": {
-        "name": "FIDES Labs",
-        "url": "https://fides.community"
-      },
-      "subjectType": "Organization",
-      "vcFormat": "sd_jwt_vc",
-      "nativeIdentifier": "urn:org:fides:iscc-role:1",
-      "nativeIdentifierType": "vct",
-      "schemaUrl": "https://raw.githubusercontent.com/FIDEScommunity/FIDES-credential-schemas/main/vct-schemas/iscc/role/1/CFP.roleCredential.schema.json",
-      "schemaType": "JSON Schema",
-      "version": "1",
-      "tags": [
-        "fides",
-        "iscc",
-        "role"
-      ],
-      "sectors": [
-        "public_sector",
-        "supply_chain"
-      ],
-      "ecosystems": [
-        "eudi_wallet"
-      ],
-      "themes": [
-        "compliance_reporting",
-        "organizational_identity"
-      ],
-      "orgId": "org:fides",
-      "provider": {
-        "name": "FIDES Labs",
-        "did": "did:web:fides.acc.credenco.com:did:da5a3c99-d45c-4ce2-8065-9db36c98868c",
-        "website": "https://fides.community",
-        "logo": "https://avatars.githubusercontent.com/u/119322214?v=4"
-      },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
-      "source": "local",
-      "fetchedAt": "2026-04-02T07:22:06.963Z",
-      "updatedAt": "2026-03-15T00:00:00.000Z",
-      "firstSeenAt": "2026-03-15T00:00:00.000Z",
-      "attributes": [
-        {
-          "name": "vc",
-          "type": "string",
-          "required": false,
-          "description": "Data model identifier for the CFP Role Credential.",
-          "depth": 0
-        },
-        {
-          "name": "cfpRoles",
-          "type": "array",
-          "required": true,
-          "description": "One or more Clean Fuel Protocol roles assigned to the organization.",
-          "depth": 0
-        }
-      ],
-      "schemaDescription": "Domain model for a Clean Fuel Protocol Role Credential. This credential asserts one or more supply-chain roles for an organization. It follows the FIDES JSON Schema pattern: only credentialSubject fields are defined here."
-    },
-    {
-      "id": "cred:fides:iscc-cb:sd-jwt-vc",
-      "slug": "fides-iscc-cb-sd-jwt-vc",
-      "displayName": "ISCC Certification Body Credential",
-      "authority": {
-        "name": "FIDES Labs",
-        "url": "https://fides.community"
-      },
-      "subjectType": "Organization",
-      "vcFormat": "sd_jwt_vc",
-      "nativeIdentifier": "urn:org:fides:iscc-cb:1",
-      "nativeIdentifierType": "vct",
-      "schemaUrl": "https://raw.githubusercontent.com/FIDEScommunity/FIDES-credential-schemas/main/vct-schemas/iscc/iscc-cb/1/FIDES.isccCb.schema.json",
-      "schemaType": "JSON Schema",
-      "version": "1",
-      "tags": [
-        "fides",
-        "iscc",
-        "cb"
-      ],
-      "sectors": [
-        "digital",
-        "energy"
-      ],
-      "ecosystems": [
-        "eudi_wallet"
-      ],
-      "themes": [
-        "compliance_reporting"
-      ],
-      "orgId": "org:fides",
-      "provider": {
-        "name": "FIDES Labs",
-        "did": "did:web:fides.acc.credenco.com:did:da5a3c99-d45c-4ce2-8065-9db36c98868c",
-        "website": "https://fides.community",
-        "logo": "https://avatars.githubusercontent.com/u/119322214?v=4"
-      },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
-      "source": "local",
-      "fetchedAt": "2026-04-02T07:22:06.963Z",
-      "updatedAt": "2026-03-15T00:00:00.000Z",
-      "firstSeenAt": "2026-03-15T00:00:00.000Z",
-      "attributes": [
-        {
-          "name": "vct",
-          "type": "string",
-          "required": true,
-          "description": "The Verifiable Credential Type (VCT) that identifies this ISCC Certification Body credential. Required. Example: urn:org:iscc.iscc-cb:1",
-          "depth": 0
-        },
-        {
-          "name": "cbName",
-          "type": "string",
-          "required": true,
-          "description": "The official name of the ISCC Certification Body (CB). Required. Example: DEKRA Certification B.V.",
-          "depth": 0
-        },
-        {
-          "name": "cbId",
-          "type": "string",
-          "required": true,
-          "description": "The ISCC-internal Certification Body identifier or another stable ID used by ISCC to reference this CB. Required. Example: ISCC-CB-220",
-          "depth": 0
-        },
-        {
-          "name": "legalPersonId",
-          "type": "string",
-          "required": false,
-          "description": "The official registration identifier of the Certification Body, such as EUID, VAT number, or Chamber of Commerce number. Optional. Example: NL123456789B01",
-          "depth": 0
-        },
-        {
-          "name": "isccSchemes",
-          "type": "array",
-          "required": true,
-          "description": "The ISCC schemes for which this Certification Body is officially recognised. Required. Typical values include: ISCC EU, ISCC PLUS, ISCC CORSIA.",
-          "depth": 0
-        },
-        {
-          "name": "recognitionStatus",
-          "type": "string",
-          "required": true,
-          "description": "The current ISCC recognition status of the Certification Body. Required. Example: active",
-          "depth": 0
-        },
-        {
-          "name": "recognitionDate",
-          "type": "string",
-          "required": true,
-          "description": "The date on which the Certification Body was first recognised by ISCC for the relevant schemes. Required. ISO 8601 date format (YYYY-MM-DD). Example: 2024-05-20",
-          "depth": 0
-        },
-        {
-          "name": "recognitionExpiry",
-          "type": "string",
-          "required": false,
-          "description": "The expiry date of the current ISCC recognition, if applicable. ISO 8601 date format (YYYY-MM-DD). Example: 2027-05-20",
-          "depth": 0
-        },
-        {
-          "name": "regions",
-          "type": "array",
-          "required": false,
-          "description": "The regions and/or countries in which this Certification Body is allowed to perform ISCC audits. Values can be regional labels (e.g. EU, Europe, Global) or ISO 3166-1 alpha-2 country codes (e.g. NL, DE). Optional.",
-          "depth": 0
-        },
-        {
-          "name": "scopes",
-          "type": "array",
-          "required": false,
-          "description": "The audit scopes for which this Certification Body is recognised under ISCC (for example, traceability, waste & residues, GHG verification, RFNBO/SAF). Optional.",
-          "depth": 0
-        },
-        {
-          "name": "officialWebsite",
-          "type": "string",
-          "required": false,
-          "description": "The official website of the Certification Body. Optional. Example: https://www.dekra-certification.nl",
-          "depth": 0
-        },
-        {
-          "name": "certificateLookup",
-          "type": "string",
-          "required": false,
-          "description": "A public URL where ISCC certificates or audit information for this CB or its clients can be looked up. Optional. Example: https://certificates.iscc-system.org",
-          "depth": 0
-        }
-      ],
-      "schemaDescription": "This schema defines a Verifiable Credential with the ISCC recognition details of a Certification Body (CB). It only contains domain-specific claims and is intended to be combined with a base SD-JWT VC layer by the wallet or ecosystem."
-    },
-    {
-      "id": "cred:fides:iscc-rev-user:sd-jwt-vc",
-      "slug": "fides-iscc-rev-user-sd-jwt-vc",
-      "displayName": "NEa REV User Credential",
-      "authority": {
-        "name": "FIDES Labs",
-        "url": "https://fides.community"
-      },
-      "subjectType": "Organization",
-      "vcFormat": "sd_jwt_vc",
-      "nativeIdentifier": "urn:org:fides:iscc-rev-user:1",
-      "nativeIdentifierType": "vct",
-      "schemaUrl": "https://raw.githubusercontent.com/FIDEScommunity/FIDES-credential-schemas/main/vct-schemas/iscc/rev-user/1/FIDES.revUser.schema.json",
-      "schemaType": "JSON Schema",
-      "version": "1",
-      "tags": [
-        "fides",
-        "iscc",
-        "rev-user"
-      ],
-      "sectors": [
-        "energy",
-        "public_sector"
-      ],
-      "ecosystems": [
-        "eudi_wallet"
-      ],
-      "themes": [
-        "compliance_reporting",
-        "organizational_identity"
-      ],
-      "orgId": "org:fides",
-      "provider": {
-        "name": "FIDES Labs",
-        "did": "did:web:fides.acc.credenco.com:did:da5a3c99-d45c-4ce2-8065-9db36c98868c",
-        "website": "https://fides.community",
-        "logo": "https://avatars.githubusercontent.com/u/119322214?v=4"
-      },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
-      "source": "local",
-      "fetchedAt": "2026-04-02T07:22:06.963Z",
-      "updatedAt": "2026-03-15T00:00:00.000Z",
-      "firstSeenAt": "2026-03-15T00:00:00.000Z",
-      "attributes": [
-        {
-          "name": "vct",
-          "type": "string",
-          "required": true,
-          "description": "The Verifiable Credential Type uniquely identifying this credential.",
-          "depth": 0
-        },
-        {
-          "name": "revUserName",
-          "type": "string",
-          "required": true,
-          "description": "Official name of the organisation as registered in the REV.",
-          "depth": 0
-        },
-        {
-          "name": "revUserNumber",
-          "type": "string",
-          "required": true,
-          "description": "The unique organisation identifier used by NEa in the REV (REV user number).",
-          "depth": 0
-        },
-        {
-          "name": "revRoles",
-          "type": "array",
-          "required": false,
-          "description": "De rol(len) van de organisatie binnen het REV, zoals erkend door de NEa.",
-          "depth": 0
-        },
-        {
-          "name": "registrationDate",
-          "type": "string",
-          "required": false,
-          "description": "Datum waarop de organisatie als REV-gebruiker is geregistreerd (DD-MM-YYYY).",
-          "depth": 0
-        }
-      ],
-      "schemaDescription": "A minimal Verifiable Credential issued by the Dutch Emissions Authority (NEa) confirming that an organisation is a registered user of the Register Energie voor Vervoer (REV)."
-    },
-    {
-      "id": "cred:fides:notary-incorporation:sd-jwt-vc",
-      "slug": "fides-notary-incorporation-sd-jwt-vc",
-      "displayName": "Notary Incorporation Attestation",
-      "authority": {
-        "name": "FIDES Labs",
-        "url": "https://fides.community"
-      },
-      "subjectType": "Organization",
-      "vcFormat": "sd_jwt_vc",
-      "nativeIdentifier": "urn:org:fides:notary-incorporation:1",
-      "nativeIdentifierType": "vct",
-      "schemaUrl": "https://raw.githubusercontent.com/FIDEScommunity/FIDES-credential-schemas/main/vct-schemas/notary_incorporation/1/FIDES.notary_incorporation.schema.json",
-      "schemaType": "JSON Schema",
-      "version": "1",
-      "tags": [
-        "fides",
-        "notary",
-        "incorporation"
-      ],
-      "sectors": [
-        "finance",
-        "public_sector"
-      ],
-      "ecosystems": [
-        "eudi_wallet"
-      ],
-      "themes": [
-        "compliance_reporting",
-        "organizational_identity"
-      ],
-      "orgId": "org:fides",
-      "provider": {
-        "name": "FIDES Labs",
-        "did": "did:web:fides.acc.credenco.com:did:da5a3c99-d45c-4ce2-8065-9db36c98868c",
-        "website": "https://fides.community",
-        "logo": "https://avatars.githubusercontent.com/u/119322214?v=4"
-      },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
-      "source": "local",
-      "fetchedAt": "2026-04-02T07:22:06.963Z",
-      "updatedAt": "2026-03-15T00:00:00.000Z",
-      "firstSeenAt": "2026-03-15T00:00:00.000Z",
-      "attributes": [
-        {
-          "name": "vct",
-          "type": "string",
-          "required": false,
-          "depth": 0
-        },
-        {
-          "name": "issuing_notary",
-          "type": "string",
-          "required": false,
-          "description": "Name of the notarial office or notary issuing this attestation.",
-          "depth": 0
-        },
-        {
-          "name": "issuing_notary_id",
-          "type": "string",
-          "required": false,
-          "description": "Identifier of the notary or notarial office (e.g., KNB number).",
-          "depth": 0
-        },
-        {
-          "name": "date_of_issuance",
-          "type": "string",
-          "required": true,
-          "description": "ISO 8601 timestamp of issuance.",
-          "depth": 0
-        },
-        {
-          "name": "deed",
-          "type": "object",
-          "required": false,
-          "description": "Information about the notarial deed.",
-          "depth": 0
-        },
-        {
-          "name": "deed/deed_number",
-          "type": "string",
-          "required": true,
-          "description": "Reference number of the notarial deed.",
-          "depth": 1
-        },
-        {
-          "name": "deed/deed_date",
-          "type": "string",
-          "required": true,
-          "description": "Date of the deed.",
-          "depth": 1
-        },
-        {
-          "name": "deed/deed_type",
-          "type": "string",
-          "required": true,
-          "description": "Type of deed, e.g., incorporation.",
-          "depth": 1
-        },
-        {
-          "name": "founder",
-          "type": "object",
-          "required": true,
-          "description": "Basic identification attributes of the founder.",
-          "depth": 0
-        },
-        {
-          "name": "founder/family_name",
-          "type": "string",
-          "required": true,
-          "description": "Family name of founder.",
-          "depth": 1
-        },
-        {
-          "name": "founder/given_name",
-          "type": "string",
-          "required": true,
-          "description": "Given name of founder.",
-          "depth": 1
-        },
-        {
-          "name": "founder/birthdate",
-          "type": "string",
-          "required": true,
-          "description": "Date of birth (YYYY-MM-DD).",
-          "depth": 1
-        },
-        {
-          "name": "founder/address",
-          "type": "object",
-          "required": false,
-          "description": "Residential address of the founder as verified by the notary.",
-          "depth": 1
-        },
-        {
-          "name": "founder/address/street",
-          "type": "string",
-          "required": true,
-          "description": "Street name.",
-          "depth": 2
-        },
-        {
-          "name": "founder/address/house_number",
-          "type": "string",
-          "required": true,
-          "description": "House or building number.",
-          "depth": 2
-        },
-        {
-          "name": "founder/address/postal_code",
-          "type": "string",
-          "required": true,
-          "description": "Postal code.",
-          "depth": 2
-        },
-        {
-          "name": "founder/address/city",
-          "type": "string",
-          "required": true,
-          "description": "City or locality.",
-          "depth": 2
-        },
-        {
-          "name": "founder/address/country",
-          "type": "string",
-          "required": true,
-          "description": "ISO 3166-1 alpha-2 country code.",
-          "depth": 2
-        },
-        {
-          "name": "company",
-          "type": "object",
-          "required": true,
-          "description": "Information about the new company.",
-          "depth": 0
-        },
-        {
-          "name": "company/name",
-          "type": "string",
-          "required": true,
-          "description": "Statutory name of the company.",
-          "depth": 1
-        },
-        {
-          "name": "company/legal_form",
-          "type": "string",
-          "required": false,
-          "description": "Legal form of the company as registered in the Handelsregister.",
-          "depth": 1
-        },
-        {
-          "name": "company/economic_activity_code",
-          "type": "string",
-          "required": true,
-          "description": "Primary economic activity code (e.g. SBI/NACE).",
-          "depth": 1
-        },
-        {
-          "name": "company/economic_activity_description",
-          "type": "string",
-          "required": true,
-          "description": "Textual description of the economic activity.",
-          "depth": 1
-        },
-        {
-          "name": "verifications",
-          "type": "object",
-          "required": true,
-          "description": "Overview of the verified credentials the notary used.",
-          "depth": 0
-        },
-        {
-          "name": "verifications/bri_income",
-          "type": "object",
-          "required": true,
-          "description": "BRI income credential verification summary.",
-          "depth": 1
-        },
-        {
-          "name": "verifications/bri_income/vct",
-          "type": "string",
-          "required": true,
-          "depth": 2
-        },
-        {
-          "name": "verifications/bri_income/received",
-          "type": "boolean",
-          "required": true,
-          "depth": 2
-        },
-        {
-          "name": "verifications/bri_income/checked_at",
-          "type": "string",
-          "required": true,
-          "description": "Timestamp of verification.",
-          "depth": 2
-        },
-        {
-          "name": "verifications/bri_income/issuer",
-          "type": "string",
-          "required": true,
-          "depth": 2
-        },
-        {
-          "name": "verifications/brp_address",
-          "type": "object",
-          "required": true,
-          "description": "BRP address credential verification summary.",
-          "depth": 1
-        },
-        {
-          "name": "verifications/brp_address/vct",
-          "type": "string",
-          "required": true,
-          "depth": 2
-        },
-        {
-          "name": "verifications/brp_address/received",
-          "type": "boolean",
-          "required": true,
-          "depth": 2
-        },
-        {
-          "name": "verifications/brp_address/checked_at",
-          "type": "string",
-          "required": true,
-          "depth": 2
-        },
-        {
-          "name": "verifications/brp_address/issuer",
-          "type": "string",
-          "required": true,
-          "depth": 2
-        },
-        {
-          "name": "verifications/contact_details",
-          "type": "object",
-          "required": true,
-          "description": "Verified contact details used during incorporation.",
-          "depth": 1
-        },
-        {
-          "name": "verifications/contact_details/vct",
-          "type": "string",
-          "required": true,
-          "depth": 2
-        },
-        {
-          "name": "verifications/contact_details/received",
-          "type": "boolean",
-          "required": true,
-          "depth": 2
-        },
-        {
-          "name": "verifications/contact_details/checked_at",
-          "type": "string",
-          "required": true,
-          "depth": 2
-        },
-        {
-          "name": "verifications/contact_details/issuer",
-          "type": "string",
-          "required": true,
-          "depth": 2
-        },
-        {
-          "name": "verifications/contact_details/email",
-          "type": "string",
-          "required": true,
-          "depth": 2
-        },
-        {
-          "name": "verifications/contact_details/phone",
-          "type": "string",
-          "required": true,
-          "depth": 2
-        },
-        {
-          "name": "verifications/company_roles",
-          "type": "object",
-          "required": true,
-          "description": "Company roles verification summary and board disqualification result.",
-          "depth": 1
-        },
-        {
-          "name": "verifications/company_roles/vct",
-          "type": "string",
-          "required": true,
-          "depth": 2
-        },
-        {
-          "name": "verifications/company_roles/received",
-          "type": "boolean",
-          "required": true,
-          "depth": 2
-        },
-        {
-          "name": "verifications/company_roles/checked_at",
-          "type": "string",
-          "required": true,
-          "depth": 2
-        },
-        {
-          "name": "verifications/company_roles/issuer",
-          "type": "string",
-          "required": true,
-          "depth": 2
-        },
-        {
-          "name": "verifications/company_roles/board_disqualification",
-          "type": "boolean",
-          "required": true,
-          "description": "False = no active ban, true = active ban.",
-          "depth": 2
-        }
-      ],
-      "schemaDescription": "An SD-JWT VC attesting that a notary verified a founder's data and used it to produce a notarial deed for the incorporation of a company."
-    },
-    {
-      "id": "cred:fides:pid:sd-jwt-vc",
-      "slug": "fides-pid-sd-jwt-vc",
-      "displayName": "PID Attestation",
-      "authority": {
-        "name": "FIDES Labs",
-        "url": "https://fides.community"
-      },
-      "subjectType": "Person",
-      "vcFormat": "sd_jwt_vc",
-      "nativeIdentifier": "urn:org:fides:pid:1",
-      "nativeIdentifierType": "vct",
-      "schemaUrl": "https://raw.githubusercontent.com/FIDEScommunity/FIDES-credential-schemas/main/vct-schemas/pid/1/FIDES.pid.schema.json",
-      "schemaType": "JSON Schema",
-      "version": "1",
-      "tags": [
-        "fides",
-        "pid"
-      ],
-      "sectors": [
-        "digital",
-        "public_sector"
-      ],
-      "ecosystems": [
-        "eudi_wallet"
-      ],
-      "themes": [
-        "person_identity"
-      ],
-      "orgId": "org:fides",
-      "provider": {
-        "name": "FIDES Labs",
-        "did": "did:web:fides.acc.credenco.com:did:da5a3c99-d45c-4ce2-8065-9db36c98868c",
-        "website": "https://fides.community",
-        "logo": "https://avatars.githubusercontent.com/u/119322214?v=4"
-      },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
-      "source": "local",
-      "fetchedAt": "2026-04-02T07:22:06.963Z",
-      "updatedAt": "2026-03-15T00:00:00.000Z",
-      "firstSeenAt": "2026-03-15T00:00:00.000Z",
-      "attributes": [
-        {
-          "name": "family_name",
-          "type": "string",
-          "required": true,
-          "depth": 0
-        },
-        {
-          "name": "given_name",
-          "type": "string",
-          "required": true,
-          "depth": 0
-        },
-        {
-          "name": "birthdate",
-          "type": "date",
-          "required": true,
-          "depth": 0
-        },
-        {
-          "name": "place_of_birth",
-          "type": "object",
-          "required": false,
-          "depth": 0
-        },
-        {
-          "name": "place_of_birth/country",
-          "type": "string",
-          "required": false,
-          "description": "The country as an alpha-2 country code as specified in ISO 3166-1, or the state, province, district, or local area or the municipality, city, town, or village where the user to whom the person identification data relates was born.",
-          "depth": 1
-        },
-        {
-          "name": "place_of_birth/region",
-          "type": "string",
-          "required": false,
-          "description": "for the state, province or other region",
-          "depth": 1
-        },
-        {
-          "name": "place_of_birth/locality",
-          "type": "string",
-          "required": false,
-          "description": "for the city or other locality",
-          "depth": 1
-        },
-        {
-          "name": "nationalities",
-          "type": "array",
-          "required": true,
-          "description": "One or more alpha-2 country codes as specified in ISO 3166-1, representing the nationality of the user to whom the person identification data relates.",
-          "depth": 0
-        },
-        {
-          "name": "address",
-          "type": "object",
-          "required": false,
-          "depth": 0
-        },
-        {
-          "name": "address/formatted",
-          "type": "string",
-          "required": false,
-          "description": "The full address of the place where the user to whom the person identification data relates currently resides or can be contacted (street name, house number, city etc.)",
-          "depth": 1
-        },
-        {
-          "name": "address/country",
-          "type": "string",
-          "required": false,
-          "description": "The country where the user to whom the person identification data relates currently resides, as an alpha-2 country code as specified in ISO 3166-1.",
-          "depth": 1
-        },
-        {
-          "name": "address/region",
-          "type": "string",
-          "required": false,
-          "description": "for the state, province or other region",
-          "depth": 1
-        },
-        {
-          "name": "address/locality",
-          "type": "string",
-          "required": false,
-          "description": "for the city or other locality",
-          "depth": 1
-        },
-        {
-          "name": "address/postal_code",
-          "type": "string",
-          "required": false,
-          "depth": 1
-        },
-        {
-          "name": "address/street_address",
-          "type": "string",
-          "required": false,
-          "depth": 1
-        },
-        {
-          "name": "address/house_number",
-          "type": "string",
-          "required": false,
-          "depth": 1
-        },
-        {
-          "name": "birth_family_name",
-          "type": "string",
-          "required": false,
-          "description": "Last name(s) or surname(s) of the person identification data user at the time of birth.",
-          "depth": 0
-        },
-        {
-          "name": "birth_given_name",
-          "type": "string",
-          "required": false,
-          "description": "First name(s), including middle name(s), of the person identification data user at the time of birth.",
-          "depth": 0
-        },
-        {
-          "name": "email",
-          "type": "string",
-          "required": false,
-          "description": "Electronic mail address of the user to whom the person identification data relates [in conformance with RFC 5322].",
-          "depth": 0
-        },
-        {
-          "name": "phone_number",
-          "type": "string",
-          "required": false,
-          "description": "Mobile telephone number of the user to whom the person identification data relates, starting with the ‘+’ symbol as the international code prefix and the country code, followed by numbers only.",
-          "depth": 0
-        },
-        {
-          "name": "picture",
-          "type": "string",
-          "required": false,
-          "description": "Facial image of the wallet user compliant with ISO 19794-5 or ISO 39794 specifications.The image SHALL be encoded as binary data.",
-          "depth": 0
-        },
-        {
-          "name": "personal_administrative_number",
-          "type": "string",
-          "required": false,
-          "description": "A value assigned to the natural person that is unique among all personal administrative numbers issued by the provider of person identification data. Where Member States opt to include this attribute, they shall describe in their electronic identification schemes under which the person identification data is issued, the policy that they apply to the values of this attribute, including, where applicable, specific conditions for the processing of this value.",
-          "depth": 0
-        },
-        {
-          "name": "sex",
-          "type": "number",
-          "required": false,
-          "description": "Values shall be one of the following: 0 = not known; 1 = male; 2 = female; 3 = other; 4 = inter; 5 = diverse; 6 = open; 9 = not applicable. For values 0, 1, 2 and 9, ISO/IEC 5218 applies.",
-          "depth": 0
-        },
-        {
-          "name": "age_over_18",
-          "type": "boolean",
-          "required": false,
-          "description": "Attesting whether the User to whom the person identification data relates is currently an adult (true) or a minor (false). (specified only in the ARF PID rulebook).",
-          "depth": 0
-        },
-        {
-          "name": "age_equal_or_over",
-          "type": "object",
-          "required": false,
-          "depth": 0
-        },
-        {
-          "name": "age_equal_or_over/16",
-          "type": "boolean",
-          "required": false,
-          "depth": 1
-        },
-        {
-          "name": "age_equal_or_over/18",
-          "type": "boolean",
-          "required": false,
-          "depth": 1
-        },
-        {
-          "name": "age_equal_or_over/21",
-          "type": "boolean",
-          "required": false,
-          "depth": 1
-        },
-        {
-          "name": "age_equal_or_over/65",
-          "type": "boolean",
-          "required": false,
-          "depth": 1
-        },
-        {
-          "name": "age_in_years",
-          "type": "number",
-          "required": false,
-          "description": "The current age of the User to whom the person identification data relates in years. (specified only in the ARF PID rulebook).",
-          "depth": 0
-        },
-        {
-          "name": "age_birth_year",
-          "type": "number",
-          "required": false,
-          "description": "The year when the User to whom the person identification data relates was born. (specified only in the ARF PID rulebook).",
-          "depth": 0
-        }
-      ],
-      "schemaDescription": "This schema represents the claim set of an SD-JWT based Verifiable Credential for the PID (Person Identification Data) attestation as a single, flat JSON object. It is derived from the EWC PID Rulebook (WP3)"
-    },
-    {
-      "id": "cred:fides:vat:sd-jwt-vc",
-      "slug": "fides-vat-sd-jwt-vc",
-      "displayName": "VAT Attestation",
-      "authority": {
-        "name": "FIDES Labs",
-        "url": "https://fides.community"
-      },
-      "subjectType": "Organization",
-      "vcFormat": "sd_jwt_vc",
-      "nativeIdentifier": "urn:org:fides:vat:1",
-      "nativeIdentifierType": "vct",
-      "schemaUrl": "https://raw.githubusercontent.com/FIDEScommunity/FIDES-credential-schemas/main/vct-schemas/vat/1/FIDES.vat.schema.json",
-      "schemaType": "JSON Schema",
-      "version": "1",
-      "tags": [
-        "fides",
-        "vat"
-      ],
-      "sectors": [
-        "finance",
-        "public_sector"
-      ],
-      "ecosystems": [
-        "eudi_wallet"
-      ],
-      "themes": [
-        "compliance_reporting",
-        "organizational_identity"
-      ],
-      "orgId": "org:fides",
-      "provider": {
-        "name": "FIDES Labs",
-        "did": "did:web:fides.acc.credenco.com:did:da5a3c99-d45c-4ce2-8065-9db36c98868c",
-        "website": "https://fides.community",
-        "logo": "https://avatars.githubusercontent.com/u/119322214?v=4"
-      },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
-      "source": "local",
-      "fetchedAt": "2026-04-02T07:22:06.963Z",
-      "updatedAt": "2026-03-15T00:00:00.000Z",
-      "firstSeenAt": "2026-03-15T00:00:00.000Z",
-      "attributes": [
-        {
-          "name": "vct",
-          "type": "string",
-          "required": false,
-          "depth": 0
-        },
-        {
-          "name": "legal_person_id",
-          "type": "string",
-          "required": true,
-          "depth": 0
-        },
-        {
-          "name": "legal_person_name",
-          "type": "string",
-          "required": true,
-          "depth": 0
-        },
-        {
-          "name": "legal_form_type",
-          "type": "string",
-          "required": true,
-          "depth": 0
-        },
-        {
-          "name": "vat_number",
-          "type": "string",
-          "required": true,
-          "depth": 0
-        },
-        {
-          "name": "tax_number",
-          "type": "string",
-          "required": true,
-          "depth": 0
-        }
-      ],
-      "schemaDescription": "This schema represents the claim set of an SD-JWT based Verifiable Credential for the VAT (Tax) attestation as a single, flat JSON object. It is aligned with the IETF SD-JWT VC data model: generic SD-JWT VC claims (iss, sub, vct, iat, nbf, exp, jti, cnf) are defined alongside the domain-specific LPID claims. Implementations may conceptually treat this as a layered model (base + domain), but the structure is flat for systems that expect a single JSON Schema document, such as current organizational wallet templates."
-    },
-    {
-      "id": "cred:fides:organization-profile:sd-jwt-vc",
-      "slug": "fides-organization-profile-sd-jwt-vc",
-      "displayName": "Organization Profile",
-      "authority": {
-        "name": "FIDES Labs",
-        "url": "https://fides.community"
-      },
-      "subjectType": "Organization",
-      "vcFormat": "sd_jwt_vc",
-      "nativeIdentifier": "Organization Profile",
-      "nativeIdentifierType": "vct",
-      "schemaUrl": "https://raw.githubusercontent.com/FIDEScommunity/FIDES-credential-schemas/main/fides-credential-schemas/data-schemas/sd-jwt/sd_jwt_organization_profile_schema.json",
-      "schemaType": "JSON Schema",
-      "version": "1",
-      "tags": [
-        "fides",
-        "organization",
-        "profile"
-      ],
-      "sectors": [
-        "digital",
-        "public_sector"
-      ],
-      "ecosystems": [
-        "eudi_wallet"
-      ],
-      "themes": [
-        "organizational_identity"
-      ],
-      "orgId": "org:fides",
-      "provider": {
-        "name": "FIDES Labs",
-        "did": "did:web:fides.acc.credenco.com:did:da5a3c99-d45c-4ce2-8065-9db36c98868c",
-        "website": "https://fides.community",
-        "logo": "https://avatars.githubusercontent.com/u/119322214?v=4"
-      },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
-      "source": "local",
-      "fetchedAt": "2026-04-02T07:22:06.963Z",
-      "updatedAt": "2026-03-15T00:00:00.000Z",
-      "firstSeenAt": "2026-03-15T00:00:00.000Z",
-      "attributes": [
-        {
-          "name": "legal_name",
-          "type": "string",
-          "required": true,
-          "depth": 0
-        },
-        {
-          "name": "brand",
-          "type": "string",
-          "required": false,
-          "depth": 0
-        },
-        {
-          "name": "url",
-          "type": "string",
-          "required": false,
-          "depth": 0
-        },
-        {
-          "name": "telephone",
-          "type": "string",
-          "required": false,
-          "depth": 0
-        },
-        {
-          "name": "email",
-          "type": "string",
-          "required": false,
-          "depth": 0
-        },
-        {
-          "name": "postal_code",
-          "type": "string",
-          "required": false,
-          "depth": 0
-        },
-        {
-          "name": "street_address",
-          "type": "string",
-          "required": false,
-          "depth": 0
-        },
-        {
-          "name": "address_locality",
-          "type": "string",
-          "required": false,
-          "depth": 0
-        },
-        {
-          "name": "address_country",
-          "type": "string",
-          "required": true,
-          "depth": 0
-        },
-        {
-          "name": "latitude",
-          "type": "number",
-          "required": false,
-          "depth": 0
-        },
-        {
-          "name": "longitude",
-          "type": "number",
-          "required": false,
-          "depth": 0
-        },
-        {
-          "name": "logo",
-          "type": "string",
-          "required": false,
-          "depth": 0
-        }
-      ]
-    },
-    {
-      "id": "cred:fides:criminal-record-check:sd-jwt-vc",
-      "slug": "fides-criminal-record-check-sd-jwt-vc",
-      "displayName": "Criminal Record Check",
-      "authority": {
-        "name": "FIDES Labs",
-        "url": "https://fides.community"
-      },
-      "subjectType": "Person",
-      "vcFormat": "sd_jwt_vc",
-      "nativeIdentifier": "CriminalRecordCheck",
-      "nativeIdentifierType": "vct",
-      "schemaUrl": "https://raw.githubusercontent.com/FIDEScommunity/FIDES-credential-schemas/main/fides-credential-schemas/data-schemas/sd-jwt/sd_jwt_criminal_record_check_schema.json",
-      "schemaType": "JSON Schema",
-      "version": "1",
-      "tags": [
-        "fides",
-        "criminal-record",
-        "screening"
-      ],
-      "sectors": [
-        "digital",
-        "education",
-        "healthcare",
-        "public_sector"
-      ],
-      "ecosystems": [
-        "eudi_wallet"
-      ],
-      "themes": [
-        "compliance_reporting",
-        "person_identity"
-      ],
-      "orgId": "org:fides",
-      "provider": {
-        "name": "FIDES Labs",
-        "did": "did:web:fides.acc.credenco.com:did:da5a3c99-d45c-4ce2-8065-9db36c98868c",
-        "website": "https://fides.community",
-        "logo": "https://avatars.githubusercontent.com/u/119322214?v=4"
-      },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
-      "source": "local",
-      "fetchedAt": "2026-04-02T07:22:06.963Z",
-      "updatedAt": "2026-03-15T00:00:00.000Z",
-      "firstSeenAt": "2026-03-15T00:00:00.000Z",
-      "attributes": [
-        {
-          "name": "given_name",
-          "type": "string",
-          "required": true,
-          "depth": 0
-        },
-        {
-          "name": "family_name",
-          "type": "string",
-          "required": true,
-          "depth": 0
-        },
-        {
-          "name": "date_of_birth",
-          "type": "string",
-          "required": true,
-          "depth": 0
-        },
-        {
-          "name": "check_result",
-          "type": "string",
-          "required": true,
-          "description": "Result of the background check",
-          "depth": 0
-        },
-        {
-          "name": "check_type",
-          "type": "string",
-          "required": true,
-          "description": "Type of criminal record check, e.g. Basic",
-          "depth": 0
-        },
-        {
-          "name": "jurisdiction",
-          "type": "string",
-          "required": true,
-          "description": "Authority that issued the check",
-          "depth": 0
-        },
-        {
-          "name": "issued_date",
-          "type": "string",
-          "required": true,
-          "depth": 0
-        }
-      ]
-    },
-    {
-      "id": "cred:fides:verified-employee:sd-jwt-vc",
-      "slug": "fides-verified-employee-sd-jwt-vc",
-      "displayName": "Verified Employee",
-      "authority": {
-        "name": "FIDES Labs",
-        "url": "https://fides.community"
-      },
-      "subjectType": "Person",
-      "vcFormat": "sd_jwt_vc",
-      "nativeIdentifier": "VerifiedEmployee",
-      "nativeIdentifierType": "vct",
-      "schemaUrl": "https://raw.githubusercontent.com/FIDEScommunity/FIDES-credential-schemas/main/fides-credential-schemas/data-schemas/sd-jwt/sd_jwt_verified_employee_schema.json",
-      "schemaType": "JSON Schema",
-      "version": "1",
-      "tags": [
-        "fides",
-        "employee",
-        "employment"
-      ],
-      "sectors": [
-        "digital",
-        "public_sector"
-      ],
-      "ecosystems": [
-        "eudi_wallet"
-      ],
-      "themes": [
-        "organizational_identity",
-        "person_identity"
-      ],
-      "orgId": "org:fides",
-      "provider": {
-        "name": "FIDES Labs",
-        "did": "did:web:fides.acc.credenco.com:did:da5a3c99-d45c-4ce2-8065-9db36c98868c",
-        "website": "https://fides.community",
-        "logo": "https://avatars.githubusercontent.com/u/119322214?v=4"
-      },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
-      "source": "local",
-      "fetchedAt": "2026-04-02T07:22:06.963Z",
-      "updatedAt": "2026-03-15T00:00:00.000Z",
-      "firstSeenAt": "2026-03-15T00:00:00.000Z",
-      "attributes": [
-        {
-          "name": "given_name",
-          "type": "string",
-          "required": true,
-          "depth": 0
-        },
-        {
-          "name": "family_name",
-          "type": "string",
-          "required": true,
-          "depth": 0
-        },
-        {
-          "name": "employee_id",
-          "type": "string",
-          "required": true,
-          "description": "Unique identifier of the employee",
-          "depth": 0
-        },
-        {
-          "name": "employer",
-          "type": "string",
-          "required": true,
-          "description": "Name of the employer organization",
-          "depth": 0
-        }
-      ]
-    },
-    {
-      "id": "cred:fides:higher-education-diploma:sd-jwt-vc",
-      "slug": "fides-higher-education-diploma-sd-jwt-vc",
-      "displayName": "Higher Education Diploma",
-      "authority": {
-        "name": "FIDES Labs",
-        "url": "https://fides.community"
-      },
-      "subjectType": "Person",
-      "vcFormat": "sd_jwt_vc",
-      "nativeIdentifier": "HigherEducationDiploma",
-      "nativeIdentifierType": "vct",
-      "schemaUrl": "https://raw.githubusercontent.com/FIDEScommunity/FIDES-credential-schemas/main/fides-credential-schemas/data-schemas/sd-jwt/sd_jwt_higher_education_diploma_schema.json",
-      "schemaType": "JSON Schema",
-      "version": "1",
-      "tags": [
-        "fides",
-        "education",
-        "diploma"
-      ],
-      "sectors": [
-        "education"
-      ],
-      "ecosystems": [
-        "eudi_wallet"
-      ],
-      "themes": [
-        "education",
-        "person_identity"
-      ],
-      "orgId": "org:fides",
-      "provider": {
-        "name": "FIDES Labs",
-        "did": "did:web:fides.acc.credenco.com:did:da5a3c99-d45c-4ce2-8065-9db36c98868c",
-        "website": "https://fides.community",
-        "logo": "https://avatars.githubusercontent.com/u/119322214?v=4"
-      },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
-      "source": "local",
-      "fetchedAt": "2026-04-02T07:22:06.963Z",
-      "updatedAt": "2026-03-15T00:00:00.000Z",
-      "firstSeenAt": "2026-03-15T00:00:00.000Z",
-      "attributes": [
-        {
-          "name": "given_name",
-          "type": "string",
-          "required": true,
-          "depth": 0
-        },
-        {
-          "name": "family_name",
-          "type": "string",
-          "required": true,
-          "depth": 0
-        },
-        {
-          "name": "date_of_birth",
-          "type": "string",
-          "required": true,
-          "depth": 0
-        },
-        {
-          "name": "awarding_date",
-          "type": "string",
-          "required": true,
-          "depth": 0
-        },
-        {
-          "name": "learning_achievement",
-          "type": "string",
-          "required": true,
-          "description": "Type of diploma awarded, e.g. Master International Law",
-          "depth": 0
-        },
-        {
-          "name": "eqf_level",
-          "type": "string",
-          "required": true,
-          "depth": 0
-        },
-        {
-          "name": "awarding_body",
-          "type": "string",
-          "required": true,
-          "depth": 0
-        }
-      ]
-    },
-    {
-      "id": "cred:fides:iso-certificate:sd-jwt-vc",
-      "slug": "fides-iso-certificate-sd-jwt-vc",
-      "displayName": "ISO Certificate",
-      "authority": {
-        "name": "FIDES Labs",
-        "url": "https://fides.community"
-      },
-      "subjectType": "Organization",
-      "vcFormat": "sd_jwt_vc",
-      "nativeIdentifier": "ISO14001",
-      "nativeIdentifierType": "vct",
-      "schemaUrl": "https://raw.githubusercontent.com/FIDEScommunity/FIDES-credential-schemas/main/fides-credential-schemas/data-schemas/sd-jwt/sd_jwt_isocertificate_schema.json",
-      "schemaType": "JSON Schema",
-      "version": "1",
-      "tags": [
-        "fides",
-        "iso",
-        "certificate",
-        "certification"
-      ],
-      "sectors": [
-        "manufacturing"
-      ],
-      "ecosystems": [
-        "eudi_wallet"
-      ],
-      "themes": [
-        "compliance_reporting"
-      ],
-      "orgId": "org:fides",
-      "provider": {
-        "name": "FIDES Labs",
-        "did": "did:web:fides.acc.credenco.com:did:da5a3c99-d45c-4ce2-8065-9db36c98868c",
-        "website": "https://fides.community",
-        "logo": "https://avatars.githubusercontent.com/u/119322214?v=4"
-      },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
-      "source": "local",
-      "fetchedAt": "2026-04-02T07:22:06.963Z",
-      "updatedAt": "2026-03-15T00:00:00.000Z",
-      "firstSeenAt": "2026-03-15T00:00:00.000Z",
-      "attributes": [
-        {
-          "name": "id",
-          "type": "string",
-          "required": true,
-          "depth": 0
-        },
-        {
-          "name": "organization_name",
-          "type": "string",
-          "required": true,
-          "depth": 0
-        },
-        {
-          "name": "certificate_number",
-          "type": "string",
-          "required": true,
-          "depth": 0
-        },
-        {
-          "name": "standard",
-          "type": "string",
-          "required": true,
-          "depth": 0
-        },
-        {
-          "name": "status",
-          "type": "string",
-          "required": true,
-          "depth": 0
-        },
-        {
-          "name": "issue_date",
-          "type": "string",
-          "required": true,
-          "depth": 0
-        },
-        {
-          "name": "valid_until",
-          "type": "string",
-          "required": true,
-          "depth": 0
-        },
-        {
-          "name": "certifying_body",
-          "type": "string",
-          "required": true,
-          "depth": 0
-        },
-        {
-          "name": "accreditation_body",
-          "type": "string",
-          "required": true,
-          "depth": 0
-        },
-        {
-          "name": "country",
-          "type": "string",
-          "required": true,
-          "depth": 0
-        },
-        {
-          "name": "scope",
-          "type": "string",
-          "required": true,
-          "depth": 0
-        }
-      ]
-    },
-    {
-      "id": "cred:fides:upper-secondary-education:sd-jwt-vc",
-      "slug": "fides-upper-secondary-education-sd-jwt-vc",
-      "displayName": "Upper Secondary Education Certificate",
-      "authority": {
-        "name": "FIDES Labs",
-        "url": "https://fides.community"
-      },
-      "subjectType": "Person",
-      "vcFormat": "sd_jwt_vc",
-      "nativeIdentifier": "UpperSecondaryEducationCertificate",
-      "nativeIdentifierType": "vct",
-      "schemaUrl": "https://raw.githubusercontent.com/FIDEScommunity/FIDES-credential-schemas/main/fides-credential-schemas/data-schemas/sd-jwt/sd_jwt_upper_secondary_certificate_schema.json",
-      "schemaType": "JSON Schema",
-      "version": "1",
-      "tags": [
-        "fides",
-        "education",
-        "certificate"
-      ],
-      "sectors": [
-        "education"
-      ],
-      "ecosystems": [
-        "eudi_wallet"
-      ],
-      "themes": [
-        "education",
-        "person_identity"
-      ],
-      "orgId": "org:fides",
-      "provider": {
-        "name": "FIDES Labs",
-        "did": "did:web:fides.acc.credenco.com:did:da5a3c99-d45c-4ce2-8065-9db36c98868c",
-        "website": "https://fides.community",
-        "logo": "https://avatars.githubusercontent.com/u/119322214?v=4"
-      },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
-      "source": "local",
-      "fetchedAt": "2026-04-02T07:22:06.963Z",
-      "updatedAt": "2026-03-15T00:00:00.000Z",
-      "firstSeenAt": "2026-03-15T00:00:00.000Z",
-      "attributes": [
-        {
-          "name": "given_name",
-          "type": "string",
-          "required": true,
-          "depth": 0
-        },
-        {
-          "name": "family_name",
-          "type": "string",
-          "required": true,
-          "depth": 0
-        },
-        {
-          "name": "date_of_birth",
-          "type": "string",
-          "required": true,
-          "depth": 0
-        },
-        {
-          "name": "awarding_date",
-          "type": "string",
-          "required": true,
-          "depth": 0
-        },
-        {
-          "name": "learning_achievement",
-          "type": "string",
-          "required": true,
-          "description": "Type of diploma awarded, e.g. VWO",
-          "depth": 0
-        },
-        {
-          "name": "eqf_level",
-          "type": "string",
-          "required": true,
-          "depth": 0
-        },
-        {
-          "name": "awarding_body",
-          "type": "string",
-          "required": true,
-          "depth": 0
-        }
-      ]
     },
     {
       "id": "cred:uncefact:dcc:vcdm-2-0",
@@ -9025,7 +6219,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/uncefact/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-02T07:22:06.963Z",
+      "fetchedAt": "2026-04-02T08:16:24.312Z",
       "updatedAt": "2026-03-22T00:00:00.000Z",
       "firstSeenAt": "2026-03-22T00:00:00.000Z",
       "attributes": [
@@ -9139,7 +6333,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/uncefact/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-02T07:22:06.963Z",
+      "fetchedAt": "2026-04-02T08:16:24.312Z",
       "updatedAt": "2026-03-22T00:00:00.000Z",
       "firstSeenAt": "2026-03-22T00:00:00.000Z",
       "attributes": [
@@ -9250,7 +6444,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/uncefact/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-02T07:22:06.963Z",
+      "fetchedAt": "2026-04-02T08:16:24.312Z",
       "updatedAt": "2026-03-22T00:00:00.000Z",
       "firstSeenAt": "2026-03-22T00:00:00.000Z",
       "attributes": [
@@ -9357,7 +6551,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/uncefact/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-02T07:22:06.963Z",
+      "fetchedAt": "2026-04-02T08:16:24.312Z",
       "updatedAt": "2026-03-22T00:00:00.000Z",
       "firstSeenAt": "2026-03-22T00:00:00.000Z",
       "attributes": [
@@ -9476,7 +6670,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/uncefact/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-02T07:22:06.963Z",
+      "fetchedAt": "2026-04-02T08:16:24.312Z",
       "updatedAt": "2026-03-22T00:00:00.000Z",
       "firstSeenAt": "2026-03-22T00:00:00.000Z",
       "attributes": [
@@ -9596,7 +6790,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/uncefact/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-02T07:22:06.963Z",
+      "fetchedAt": "2026-04-02T08:16:24.312Z",
       "updatedAt": "2026-03-22T00:00:00.000Z",
       "firstSeenAt": "2026-03-22T00:00:00.000Z",
       "attributes": [
@@ -10393,7 +7587,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/uncefact/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-02T07:22:06.963Z",
+      "fetchedAt": "2026-04-02T08:16:24.312Z",
       "updatedAt": "2026-03-22T00:00:00.000Z",
       "firstSeenAt": "2026-03-22T00:00:00.000Z",
       "attributes": [
@@ -11348,7 +8542,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/uncefact/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-02T07:22:06.963Z",
+      "fetchedAt": "2026-04-02T08:16:24.312Z",
       "updatedAt": "2026-03-22T00:00:00.000Z",
       "firstSeenAt": "2026-03-22T00:00:00.000Z",
       "attributes": [
@@ -12063,7 +9257,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/uncefact/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-02T07:22:06.963Z",
+      "fetchedAt": "2026-04-02T08:16:24.312Z",
       "updatedAt": "2026-03-22T00:00:00.000Z",
       "firstSeenAt": "2026-03-22T00:00:00.000Z",
       "attributes": [
@@ -12841,7 +10035,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/uncefact/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-02T07:22:06.963Z",
+      "fetchedAt": "2026-04-02T08:16:24.312Z",
       "updatedAt": "2026-03-22T00:00:00.000Z",
       "firstSeenAt": "2026-03-22T00:00:00.000Z",
       "attributes": [
@@ -13604,7 +10798,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/uncefact/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-02T07:22:06.963Z",
+      "fetchedAt": "2026-04-02T08:16:24.312Z",
       "updatedAt": "2026-03-22T00:00:00.000Z",
       "firstSeenAt": "2026-03-22T00:00:00.000Z",
       "attributes": [
@@ -14437,7 +11631,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/uncefact/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-02T07:22:06.963Z",
+      "fetchedAt": "2026-04-02T08:16:24.312Z",
       "updatedAt": "2026-03-22T00:00:00.000Z",
       "firstSeenAt": "2026-03-22T00:00:00.000Z",
       "attributes": [
@@ -14919,7 +12113,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/uncefact/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-02T07:22:06.963Z",
+      "fetchedAt": "2026-04-02T08:16:24.312Z",
       "updatedAt": "2026-03-22T00:00:00.000Z",
       "firstSeenAt": "2026-03-22T00:00:00.000Z",
       "attributes": [
@@ -15367,55 +12561,55 @@
     }
   ],
   "stats": {
-    "totalCredentials": 78,
+    "totalCredentials": 56,
     "byFormat": {
-      "sd_jwt_vc": 44,
+      "sd_jwt_vc": 22,
       "mdoc": 20,
       "vcdm_1_1": 1,
       "vcdm_2_0": 13
     },
     "bySubjectType": {
-      "Person": 52,
-      "Organization": 13,
-      "Product": 3,
+      "Person": 42,
+      "Organization": 2,
+      "Product": 2,
       "Dataset": 0,
       "Software": 0,
       "Document": 10
     },
-    "withSchemaAttributes": 76,
+    "withSchemaAttributes": 56,
     "bySector": {
       "construction": 24,
-      "digital": 44,
-      "education": 22,
-      "finance": 28,
+      "digital": 33,
+      "education": 19,
+      "finance": 25,
       "food": 24,
-      "healthcare": 26,
+      "healthcare": 25,
       "mobility": 22,
-      "public_sector": 68,
+      "public_sector": 51,
       "retail": 33,
-      "energy": 26,
-      "supply_chain": 34,
-      "trade": 27,
+      "energy": 23,
+      "supply_chain": 31,
+      "trade": 26,
       "agriculture": 26,
-      "manufacturing": 29
+      "manufacturing": 28
     },
     "byEcosystem": {
-      "eudi_wallet": 78,
+      "eudi_wallet": 56,
       "open_badges": 2,
       "gaia_x": 7,
       "uncefact": 14,
       "iso_mdl": 2
     },
     "byTheme": {
-      "education": 9,
-      "person_identity": 46,
-      "payments": 13,
-      "compliance_reporting": 31,
+      "education": 7,
+      "person_identity": 38,
+      "payments": 11,
+      "compliance_reporting": 21,
       "dataspaces": 10,
       "agentic_ai": 8,
       "digital_product_passports": 10,
-      "organizational_identity": 17,
-      "trade_documents": 16
+      "organizational_identity": 7,
+      "trade_documents": 15
     }
   }
 }
