@@ -3,7 +3,7 @@
  * Plugin Name: FIDES Credential Catalog
  * Plugin URI: https://github.com/FIDEScommunity/fides-credential-catalog
  * Description: Display an interactive catalog of credentials with search and filters.
- * Version: 1.2.22
+ * Version: 1.2.23
  * Author: FIDES Community
  * Author URI: https://fides.community
  * License: Apache-2.0
@@ -14,7 +14,7 @@ if (!defined('ABSPATH')) {
     exit;
 }
 
-define('FIDES_CREDENTIAL_CATALOG_VERSION', '1.2.22');
+define('FIDES_CREDENTIAL_CATALOG_VERSION', '1.2.23');
 define('FIDES_CREDENTIAL_CATALOG_PLUGIN_DIR', plugin_dir_path(__FILE__));
 define('FIDES_CREDENTIAL_CATALOG_PLUGIN_URL', plugin_dir_url(__FILE__));
 
@@ -109,20 +109,23 @@ function fides_credential_catalog_shortcode($atts) {
         'show_filters' => 'true',
         'show_search' => 'true',
         'columns' => '3',
-        'theme' => 'fides'
+        'theme' => 'fides',
+        'sector' => '',
     ), $atts, 'fides_credential_catalog');
 
     $show_filters = $atts['show_filters'] === 'true' ? 'true' : 'false';
     $show_search = $atts['show_search'] === 'true' ? 'true' : 'false';
     $columns = in_array($atts['columns'], array('2', '3', '4')) ? $atts['columns'] : '3';
     $theme = in_array($atts['theme'], array('dark', 'light', 'fides')) ? $atts['theme'] : 'fides';
+    $sector = sanitize_text_field((string) $atts['sector']);
 
     $html = sprintf(
-        '<div id="fides-credential-catalog-root" class="fides-credential-catalog" data-show-filters="%s" data-show-search="%s" data-columns="%s" data-theme="%s">',
+        '<div id="fides-credential-catalog-root" class="fides-credential-catalog" data-show-filters="%s" data-show-search="%s" data-columns="%s" data-theme="%s" data-sector="%s">',
         esc_attr($show_filters),
         esc_attr($show_search),
         esc_attr($columns),
-        esc_attr($theme)
+        esc_attr($theme),
+        esc_attr($sector)
     );
     $html .= '<div class="fides-loading">Loading credentials...</div>';
     $html .= '</div>';

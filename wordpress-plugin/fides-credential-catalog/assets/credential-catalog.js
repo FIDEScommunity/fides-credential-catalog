@@ -34,6 +34,33 @@
     SECTOR_LABELS[a].localeCompare(SECTOR_LABELS[b], 'en', { sensitivity: 'base' }),
   );
 
+  /** Legacy sector strings to canonical code (align with fides-rp-catalog rp-catalog.js). */
+  const LEGACY_SECTOR_TO_CANONICAL = {
+    government: 'public_sector',
+    finance: 'finance',
+    healthcare: 'healthcare',
+    education: 'education',
+    retail: 'retail',
+    travel: 'mobility',
+    hospitality: 'retail',
+    employment: 'digital',
+    telecom: 'digital',
+    utilities: 'energy',
+    insurance: 'finance',
+    'real-estate': 'construction',
+    automotive: 'mobility',
+    entertainment: 'retail',
+    other: 'digital',
+  };
+
+  function normalizeSectorFilterCode(code) {
+    if (!code || typeof code !== 'string') return '';
+    const t = code.trim();
+    if (!t) return '';
+    if (Object.prototype.hasOwnProperty.call(SECTOR_LABELS, t)) return t;
+    return LEGACY_SECTOR_TO_CANONICAL[t] || '';
+  }
+
   const ECOSYSTEM_LABELS = {
     eudi_wallet: 'EUDI Wallet',
     uncefact: 'UN/CEFACT',
@@ -41,6 +68,7 @@
     open_badges: 'Open Badges',
     iso_mdl: 'ISO mDL',
     india_stack: 'India Stack',
+    swiyu: 'Swiyu',
   };
 
   const ECOSYSTEM_CODES_ALPHABETIC = Object.keys(ECOSYSTEM_LABELS).sort((a, b) =>
@@ -1655,6 +1683,12 @@
       const ids = credentialsParam.split(",").map((id) => decodeURIComponent(id.trim())).filter(Boolean);
       originalCredentialIds = ids;
       filters.ids = [...ids];
+    }
+    const sectorFromUrl = normalizeSectorFilterCode(params.get("sector"));
+    const sectorFromData = normalizeSectorFilterCode(root.dataset.sector || "");
+    const sectorCode = sectorFromUrl || sectorFromData;
+    if (sectorCode && Object.prototype.hasOwnProperty.call(SECTOR_LABELS, sectorCode)) {
+      filters.sector = [sectorCode];
     }
   }
 

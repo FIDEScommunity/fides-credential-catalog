@@ -37,7 +37,8 @@ export type CredentialEcosystemCode =
   | "gaia_x"
   | "open_badges"
   | "iso_mdl"
-  | "india_stack";
+  | "india_stack"
+  | "swiyu";
 
 /** Cross-sector use-case themes (optional on each credential). */
 export type CredentialThemeCode =

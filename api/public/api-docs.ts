@@ -95,7 +95,7 @@ const OPENAPI_SPEC_BASE = {
               type: "array",
               items: {
                 type: "string",
-                enum: ["eudi_wallet", "uncefact", "gaia_x", "open_badges", "iso_mdl", "india_stack"],
+                enum: ["eudi_wallet", "uncefact", "gaia_x", "open_badges", "iso_mdl", "india_stack", "swiyu"],
               },
             },
           },
@@ -210,7 +210,7 @@ const OPENAPI_SPEC_BASE = {
             type: "array",
             items: {
               type: "string",
-              enum: ["eudi_wallet", "uncefact", "gaia_x", "open_badges", "iso_mdl", "india_stack"],
+              enum: ["eudi_wallet", "uncefact", "gaia_x", "open_badges", "iso_mdl", "india_stack", "swiyu"],
             },
           },
           themes: {

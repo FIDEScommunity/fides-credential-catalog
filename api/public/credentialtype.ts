@@ -35,6 +35,7 @@ const ECOSYSTEM_CODES = [
   "open_badges",
   "iso_mdl",
   "india_stack",
+  "swiyu",
 ] as const;
 
 const THEME_CODES = [

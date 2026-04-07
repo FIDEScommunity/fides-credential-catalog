@@ -269,6 +269,9 @@
     "india_stack": {
       "description": "India Stack and related national digital infrastructure contexts where verifiable credentials are used."
     },
+    "swiyu": {
+      "description": "Swiss national digital identity and trustworthy data exchange programme (Swiyu): credentials aligned with that ecosystem."
+    },
     "credentialTheme": {
       "description": "Cross-sector use-case themes for discovering credential types (for example identity, payments, or trade documents). Themes complement sector and ecosystem tags and describe why a credential might be used, not only which industry it belongs to."
     },
