@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.4.0",
   "catalogType": "credential",
-  "lastUpdated": "2026-04-07T19:08:30.957Z",
+  "lastUpdated": "2026-04-07T19:10:54.539Z",
   "credentials": [
     {
       "id": "cred:eu:diploma-vc-sd-jwt:sd-jwt-vc",
@@ -35,8 +35,7 @@
         "retail"
       ],
       "ecosystems": [
-        "eudi_wallet",
-        "open_badges"
+        "eudi_wallet"
       ],
       "themes": [
         "education",
@@ -50,8 +49,8 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-07T19:08:30.957Z",
-      "updatedAt": "2026-04-01T15:58:06.000Z",
+      "fetchedAt": "2026-04-07T19:10:54.539Z",
+      "updatedAt": "2026-04-07T19:10:35.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
         {
@@ -209,8 +208,8 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-07T19:08:30.957Z",
-      "updatedAt": "2026-04-01T15:58:06.000Z",
+      "fetchedAt": "2026-04-07T19:10:54.539Z",
+      "updatedAt": "2026-04-07T19:10:35.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
         {
@@ -336,8 +335,8 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-07T19:08:30.957Z",
-      "updatedAt": "2026-04-01T15:58:06.000Z",
+      "fetchedAt": "2026-04-07T19:10:54.539Z",
+      "updatedAt": "2026-04-07T19:10:35.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
         {
@@ -512,8 +511,8 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-07T19:08:30.957Z",
-      "updatedAt": "2026-04-01T15:58:06.000Z",
+      "fetchedAt": "2026-04-07T19:10:54.539Z",
+      "updatedAt": "2026-04-07T19:10:35.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
         {
@@ -698,8 +697,8 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-07T19:08:30.957Z",
-      "updatedAt": "2026-04-01T15:58:06.000Z",
+      "fetchedAt": "2026-04-07T19:10:54.539Z",
+      "updatedAt": "2026-04-07T19:10:35.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
         {
@@ -832,8 +831,8 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-07T19:08:30.957Z",
-      "updatedAt": "2026-04-01T15:58:06.000Z",
+      "fetchedAt": "2026-04-07T19:10:54.539Z",
+      "updatedAt": "2026-04-07T19:10:35.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
         {
@@ -1187,8 +1186,8 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-07T19:08:30.957Z",
-      "updatedAt": "2026-04-01T15:58:06.000Z",
+      "fetchedAt": "2026-04-07T19:10:54.539Z",
+      "updatedAt": "2026-04-07T19:10:35.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
         {
@@ -1429,8 +1428,8 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-07T19:08:30.957Z",
-      "updatedAt": "2026-04-01T15:58:06.000Z",
+      "fetchedAt": "2026-04-07T19:10:54.539Z",
+      "updatedAt": "2026-04-07T19:10:35.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
         {
@@ -1565,8 +1564,8 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-07T19:08:30.957Z",
-      "updatedAt": "2026-04-01T15:58:06.000Z",
+      "fetchedAt": "2026-04-07T19:10:54.539Z",
+      "updatedAt": "2026-04-07T19:10:35.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
         {
@@ -1687,8 +1686,8 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-07T19:08:30.957Z",
-      "updatedAt": "2026-04-01T15:58:06.000Z",
+      "fetchedAt": "2026-04-07T19:10:54.539Z",
+      "updatedAt": "2026-04-07T19:10:35.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
         {
@@ -1841,8 +1840,8 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-07T19:08:30.957Z",
-      "updatedAt": "2026-04-01T15:58:06.000Z",
+      "fetchedAt": "2026-04-07T19:10:54.539Z",
+      "updatedAt": "2026-04-07T19:10:35.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
         {
@@ -1979,8 +1978,8 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-07T19:08:30.957Z",
-      "updatedAt": "2026-04-01T15:58:06.000Z",
+      "fetchedAt": "2026-04-07T19:10:54.539Z",
+      "updatedAt": "2026-04-07T19:10:35.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
         {
@@ -2120,8 +2119,8 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-07T19:08:30.957Z",
-      "updatedAt": "2026-04-01T15:58:06.000Z",
+      "fetchedAt": "2026-04-07T19:10:54.539Z",
+      "updatedAt": "2026-04-07T19:10:35.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
         {
@@ -2228,8 +2227,8 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-07T19:08:30.957Z",
-      "updatedAt": "2026-04-01T15:58:06.000Z",
+      "fetchedAt": "2026-04-07T19:10:54.539Z",
+      "updatedAt": "2026-04-07T19:10:35.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
         {
@@ -2412,8 +2411,8 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-07T19:08:30.957Z",
-      "updatedAt": "2026-04-01T15:58:06.000Z",
+      "fetchedAt": "2026-04-07T19:10:54.539Z",
+      "updatedAt": "2026-04-07T19:10:35.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
         {
@@ -2604,8 +2603,8 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-07T19:08:30.957Z",
-      "updatedAt": "2026-04-01T15:58:06.000Z",
+      "fetchedAt": "2026-04-07T19:10:54.539Z",
+      "updatedAt": "2026-04-07T19:10:35.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
         {
@@ -2701,8 +2700,8 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-07T19:08:30.957Z",
-      "updatedAt": "2026-04-01T15:58:06.000Z",
+      "fetchedAt": "2026-04-07T19:10:54.539Z",
+      "updatedAt": "2026-04-07T19:10:35.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
         {
@@ -2978,8 +2977,8 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-07T19:08:30.957Z",
-      "updatedAt": "2026-04-01T15:58:06.000Z",
+      "fetchedAt": "2026-04-07T19:10:54.539Z",
+      "updatedAt": "2026-04-07T19:10:35.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
         {
@@ -3119,8 +3118,8 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-07T19:08:30.957Z",
-      "updatedAt": "2026-04-01T15:58:06.000Z",
+      "fetchedAt": "2026-04-07T19:10:54.539Z",
+      "updatedAt": "2026-04-07T19:10:35.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
         {
@@ -3267,8 +3266,8 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-07T19:08:30.957Z",
-      "updatedAt": "2026-04-01T15:58:06.000Z",
+      "fetchedAt": "2026-04-07T19:10:54.539Z",
+      "updatedAt": "2026-04-07T19:10:35.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
         {
@@ -3510,8 +3509,8 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-07T19:08:30.957Z",
-      "updatedAt": "2026-04-01T15:58:06.000Z",
+      "fetchedAt": "2026-04-07T19:10:54.539Z",
+      "updatedAt": "2026-04-07T19:10:35.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
         {
@@ -3760,8 +3759,8 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-07T19:08:30.957Z",
-      "updatedAt": "2026-04-01T15:58:06.000Z",
+      "fetchedAt": "2026-04-07T19:10:54.539Z",
+      "updatedAt": "2026-04-07T19:10:35.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
         {
@@ -4007,8 +4006,8 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-07T19:08:30.957Z",
-      "updatedAt": "2026-04-01T15:58:06.000Z",
+      "fetchedAt": "2026-04-07T19:10:54.539Z",
+      "updatedAt": "2026-04-07T19:10:35.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
         {
@@ -4141,8 +4140,8 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-07T19:08:30.957Z",
-      "updatedAt": "2026-04-01T15:58:06.000Z",
+      "fetchedAt": "2026-04-07T19:10:54.539Z",
+      "updatedAt": "2026-04-07T19:10:35.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
         {
@@ -4334,8 +4333,8 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-07T19:08:30.957Z",
-      "updatedAt": "2026-04-01T15:58:06.000Z",
+      "fetchedAt": "2026-04-07T19:10:54.539Z",
+      "updatedAt": "2026-04-07T19:10:35.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
         {
@@ -4496,8 +4495,8 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-07T19:08:30.957Z",
-      "updatedAt": "2026-04-01T15:58:06.000Z",
+      "fetchedAt": "2026-04-07T19:10:54.539Z",
+      "updatedAt": "2026-04-07T19:10:35.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
         {
@@ -4647,8 +4646,8 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-07T19:08:30.957Z",
-      "updatedAt": "2026-04-01T15:58:06.000Z",
+      "fetchedAt": "2026-04-07T19:10:54.539Z",
+      "updatedAt": "2026-04-07T19:10:35.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
         {
@@ -4751,8 +4750,8 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-07T19:08:30.957Z",
-      "updatedAt": "2026-04-01T15:58:06.000Z",
+      "fetchedAt": "2026-04-07T19:10:54.539Z",
+      "updatedAt": "2026-04-07T19:10:35.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
         {
@@ -4879,8 +4878,8 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-07T19:08:30.957Z",
-      "updatedAt": "2026-04-01T15:58:06.000Z",
+      "fetchedAt": "2026-04-07T19:10:54.539Z",
+      "updatedAt": "2026-04-07T19:10:35.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
         {
@@ -4991,7 +4990,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/ewc/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-07T19:08:30.957Z",
+      "fetchedAt": "2026-04-07T19:10:54.539Z",
       "updatedAt": "2026-04-01T15:27:24.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
@@ -5049,7 +5048,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/ewc/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-07T19:08:30.957Z",
+      "fetchedAt": "2026-04-07T19:10:54.539Z",
       "updatedAt": "2026-04-01T15:27:24.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
@@ -5108,7 +5107,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/ewc/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-07T19:08:30.957Z",
+      "fetchedAt": "2026-04-07T19:10:54.539Z",
       "updatedAt": "2026-04-01T15:27:24.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
@@ -5209,7 +5208,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/ewc/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-07T19:08:30.957Z",
+      "fetchedAt": "2026-04-07T19:10:54.539Z",
       "updatedAt": "2026-04-01T15:27:24.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
@@ -5310,7 +5309,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/ewc/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-07T19:08:30.957Z",
+      "fetchedAt": "2026-04-07T19:10:54.539Z",
       "updatedAt": "2026-04-01T15:27:24.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
@@ -5369,7 +5368,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/ewc/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-07T19:08:30.957Z",
+      "fetchedAt": "2026-04-07T19:10:54.539Z",
       "updatedAt": "2026-04-01T15:27:24.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
@@ -5491,7 +5490,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/ewc/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-07T19:08:30.957Z",
+      "fetchedAt": "2026-04-07T19:10:54.539Z",
       "updatedAt": "2026-04-01T15:27:24.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
@@ -5603,7 +5602,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/ewc/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-07T19:08:30.957Z",
+      "fetchedAt": "2026-04-07T19:10:54.539Z",
       "updatedAt": "2026-04-01T15:27:24.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
@@ -5684,7 +5683,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/ewc/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-07T19:08:30.957Z",
+      "fetchedAt": "2026-04-07T19:10:54.539Z",
       "updatedAt": "2026-04-01T15:27:24.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
@@ -5786,7 +5785,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/ewc/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-07T19:08:30.957Z",
+      "fetchedAt": "2026-04-07T19:10:54.539Z",
       "updatedAt": "2026-04-01T15:27:24.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
@@ -5888,7 +5887,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/ewc/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-07T19:08:30.957Z",
+      "fetchedAt": "2026-04-07T19:10:54.539Z",
       "updatedAt": "2026-04-01T15:27:24.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
@@ -5947,7 +5946,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/ewc/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-07T19:08:30.957Z",
+      "fetchedAt": "2026-04-07T19:10:54.539Z",
       "updatedAt": "2026-04-01T15:27:24.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
@@ -6013,7 +6012,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/ewc/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-07T19:08:30.957Z",
+      "fetchedAt": "2026-04-07T19:10:54.539Z",
       "updatedAt": "2026-04-01T15:27:24.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
@@ -6106,7 +6105,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/ewc/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-07T19:08:30.957Z",
+      "fetchedAt": "2026-04-07T19:10:54.539Z",
       "updatedAt": "2026-04-01T15:27:24.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
@@ -6192,7 +6191,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-07T19:08:30.957Z",
+      "fetchedAt": "2026-04-07T19:10:54.539Z",
       "updatedAt": "2026-04-02T00:00:00.000Z",
       "firstSeenAt": "2026-03-15T00:00:00.000Z",
       "attributes": [
@@ -6306,7 +6305,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-07T19:08:30.957Z",
+      "fetchedAt": "2026-04-07T19:10:54.539Z",
       "updatedAt": "2026-04-02T00:00:00.000Z",
       "firstSeenAt": "2026-03-15T00:00:00.000Z",
       "attributes": [
@@ -6470,7 +6469,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-07T19:08:30.957Z",
+      "fetchedAt": "2026-04-07T19:10:54.539Z",
       "updatedAt": "2026-04-02T00:00:00.000Z",
       "firstSeenAt": "2026-03-15T00:00:00.000Z",
       "attributes": [
@@ -6628,7 +6627,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-07T19:08:30.957Z",
+      "fetchedAt": "2026-04-07T19:10:54.539Z",
       "updatedAt": "2026-04-02T00:00:00.000Z",
       "firstSeenAt": "2026-03-15T00:00:00.000Z",
       "attributes": [
@@ -6777,7 +6776,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-07T19:08:30.957Z",
+      "fetchedAt": "2026-04-07T19:10:54.539Z",
       "updatedAt": "2026-04-02T00:00:00.000Z",
       "firstSeenAt": "2026-03-15T00:00:00.000Z",
       "attributes": [
@@ -6903,7 +6902,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-07T19:08:30.957Z",
+      "fetchedAt": "2026-04-07T19:10:54.539Z",
       "updatedAt": "2026-04-02T00:00:00.000Z",
       "firstSeenAt": "2026-03-15T00:00:00.000Z",
       "attributes": [
@@ -7048,7 +7047,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-07T19:08:30.957Z",
+      "fetchedAt": "2026-04-07T19:10:54.539Z",
       "updatedAt": "2026-04-02T00:00:00.000Z",
       "firstSeenAt": "2026-04-02T00:00:00.000Z",
       "attributes": [
@@ -7369,7 +7368,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-07T19:08:30.957Z",
+      "fetchedAt": "2026-04-07T19:10:54.539Z",
       "updatedAt": "2026-04-02T00:00:00.000Z",
       "firstSeenAt": "2026-04-02T00:00:00.000Z",
       "attributes": [
@@ -7683,7 +7682,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-07T19:08:30.957Z",
+      "fetchedAt": "2026-04-07T19:10:54.539Z",
       "updatedAt": "2026-04-02T00:00:00.000Z",
       "firstSeenAt": "2026-04-02T00:00:00.000Z",
       "attributes": [
@@ -7994,7 +7993,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-07T19:08:30.957Z",
+      "fetchedAt": "2026-04-07T19:10:54.539Z",
       "updatedAt": "2026-04-02T00:00:00.000Z",
       "firstSeenAt": "2026-03-15T00:00:00.000Z",
       "attributes": []
@@ -8037,7 +8036,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-07T19:08:30.957Z",
+      "fetchedAt": "2026-04-07T19:10:54.539Z",
       "updatedAt": "2026-04-02T00:00:00.000Z",
       "firstSeenAt": "2026-03-15T00:00:00.000Z",
       "attributes": []
@@ -8081,7 +8080,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-07T19:08:30.957Z",
+      "fetchedAt": "2026-04-07T19:10:54.539Z",
       "updatedAt": "2026-04-02T00:00:00.000Z",
       "firstSeenAt": "2026-03-15T00:00:00.000Z",
       "attributes": [
@@ -8302,7 +8301,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-07T19:08:30.957Z",
+      "fetchedAt": "2026-04-07T19:10:54.539Z",
       "updatedAt": "2026-04-02T00:00:00.000Z",
       "firstSeenAt": "2026-03-15T00:00:00.000Z",
       "attributes": [
@@ -8419,7 +8418,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-07T19:08:30.957Z",
+      "fetchedAt": "2026-04-07T19:10:54.539Z",
       "updatedAt": "2026-04-02T00:00:00.000Z",
       "firstSeenAt": "2026-03-15T00:00:00.000Z",
       "attributes": [
@@ -8479,7 +8478,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-07T19:08:30.957Z",
+      "fetchedAt": "2026-04-07T19:10:54.539Z",
       "updatedAt": "2026-04-02T00:00:00.000Z",
       "firstSeenAt": "2026-03-15T00:00:00.000Z",
       "attributes": [
@@ -8610,7 +8609,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-07T19:08:30.957Z",
+      "fetchedAt": "2026-04-07T19:10:54.539Z",
       "updatedAt": "2026-04-02T00:00:00.000Z",
       "firstSeenAt": "2026-03-15T00:00:00.000Z",
       "attributes": [
@@ -8692,7 +8691,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-07T19:08:30.957Z",
+      "fetchedAt": "2026-04-07T19:10:54.539Z",
       "updatedAt": "2026-04-02T00:00:00.000Z",
       "firstSeenAt": "2026-03-15T00:00:00.000Z",
       "attributes": [
@@ -9048,7 +9047,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-07T19:08:30.957Z",
+      "fetchedAt": "2026-04-07T19:10:54.539Z",
       "updatedAt": "2026-04-02T00:00:00.000Z",
       "firstSeenAt": "2026-03-15T00:00:00.000Z",
       "attributes": [
@@ -9298,7 +9297,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-07T19:08:30.957Z",
+      "fetchedAt": "2026-04-07T19:10:54.539Z",
       "updatedAt": "2026-04-02T00:00:00.000Z",
       "firstSeenAt": "2026-03-15T00:00:00.000Z",
       "attributes": [
@@ -9380,7 +9379,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-07T19:08:30.957Z",
+      "fetchedAt": "2026-04-07T19:10:54.539Z",
       "updatedAt": "2026-04-02T00:00:00.000Z",
       "firstSeenAt": "2026-03-15T00:00:00.000Z",
       "attributes": [
@@ -9500,7 +9499,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-07T19:08:30.957Z",
+      "fetchedAt": "2026-04-07T19:10:54.539Z",
       "updatedAt": "2026-04-02T00:00:00.000Z",
       "firstSeenAt": "2026-03-15T00:00:00.000Z",
       "attributes": [
@@ -9591,7 +9590,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-07T19:08:30.957Z",
+      "fetchedAt": "2026-04-07T19:10:54.539Z",
       "updatedAt": "2026-04-02T00:00:00.000Z",
       "firstSeenAt": "2026-03-15T00:00:00.000Z",
       "attributes": [
@@ -9662,7 +9661,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-07T19:08:30.957Z",
+      "fetchedAt": "2026-04-07T19:10:54.539Z",
       "updatedAt": "2026-04-02T00:00:00.000Z",
       "firstSeenAt": "2026-03-15T00:00:00.000Z",
       "attributes": [
@@ -9750,7 +9749,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-07T19:08:30.957Z",
+      "fetchedAt": "2026-04-07T19:10:54.539Z",
       "updatedAt": "2026-04-02T00:00:00.000Z",
       "firstSeenAt": "2026-03-15T00:00:00.000Z",
       "attributes": [
@@ -9861,7 +9860,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-07T19:08:30.957Z",
+      "fetchedAt": "2026-04-07T19:10:54.539Z",
       "updatedAt": "2026-04-02T00:00:00.000Z",
       "firstSeenAt": "2026-03-15T00:00:00.000Z",
       "attributes": [
@@ -9951,7 +9950,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/swiyu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-07T19:08:30.957Z",
+      "fetchedAt": "2026-04-07T19:10:54.539Z",
       "updatedAt": "2026-04-07T19:08:14.000Z",
       "firstSeenAt": "2026-04-02T19:01:41.000Z",
       "attributes": [
@@ -10160,7 +10159,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/uncefact/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-07T19:08:30.957Z",
+      "fetchedAt": "2026-04-07T19:10:54.539Z",
       "updatedAt": "2026-03-22T00:00:00.000Z",
       "firstSeenAt": "2026-03-22T00:00:00.000Z",
       "attributes": [
@@ -10274,7 +10273,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/uncefact/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-07T19:08:30.957Z",
+      "fetchedAt": "2026-04-07T19:10:54.539Z",
       "updatedAt": "2026-03-22T00:00:00.000Z",
       "firstSeenAt": "2026-03-22T00:00:00.000Z",
       "attributes": [
@@ -10385,7 +10384,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/uncefact/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-07T19:08:30.957Z",
+      "fetchedAt": "2026-04-07T19:10:54.539Z",
       "updatedAt": "2026-03-22T00:00:00.000Z",
       "firstSeenAt": "2026-03-22T00:00:00.000Z",
       "attributes": [
@@ -10492,7 +10491,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/uncefact/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-07T19:08:30.957Z",
+      "fetchedAt": "2026-04-07T19:10:54.539Z",
       "updatedAt": "2026-03-22T00:00:00.000Z",
       "firstSeenAt": "2026-03-22T00:00:00.000Z",
       "attributes": [
@@ -10611,7 +10610,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/uncefact/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-07T19:08:30.957Z",
+      "fetchedAt": "2026-04-07T19:10:54.539Z",
       "updatedAt": "2026-03-22T00:00:00.000Z",
       "firstSeenAt": "2026-03-22T00:00:00.000Z",
       "attributes": [
@@ -10731,7 +10730,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/uncefact/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-07T19:08:30.957Z",
+      "fetchedAt": "2026-04-07T19:10:54.539Z",
       "updatedAt": "2026-03-22T00:00:00.000Z",
       "firstSeenAt": "2026-03-22T00:00:00.000Z",
       "attributes": [
@@ -11528,7 +11527,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/uncefact/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-07T19:08:30.957Z",
+      "fetchedAt": "2026-04-07T19:10:54.539Z",
       "updatedAt": "2026-03-22T00:00:00.000Z",
       "firstSeenAt": "2026-03-22T00:00:00.000Z",
       "attributes": [
@@ -12483,7 +12482,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/uncefact/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-07T19:08:30.957Z",
+      "fetchedAt": "2026-04-07T19:10:54.539Z",
       "updatedAt": "2026-03-22T00:00:00.000Z",
       "firstSeenAt": "2026-03-22T00:00:00.000Z",
       "attributes": [
@@ -13198,7 +13197,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/uncefact/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-07T19:08:30.957Z",
+      "fetchedAt": "2026-04-07T19:10:54.539Z",
       "updatedAt": "2026-03-22T00:00:00.000Z",
       "firstSeenAt": "2026-03-22T00:00:00.000Z",
       "attributes": [
@@ -13976,7 +13975,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/uncefact/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-07T19:08:30.957Z",
+      "fetchedAt": "2026-04-07T19:10:54.539Z",
       "updatedAt": "2026-03-22T00:00:00.000Z",
       "firstSeenAt": "2026-03-22T00:00:00.000Z",
       "attributes": [
@@ -14739,7 +14738,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/uncefact/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-07T19:08:30.957Z",
+      "fetchedAt": "2026-04-07T19:10:54.539Z",
       "updatedAt": "2026-03-22T00:00:00.000Z",
       "firstSeenAt": "2026-03-22T00:00:00.000Z",
       "attributes": [
@@ -15572,7 +15571,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/uncefact/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-07T19:08:30.957Z",
+      "fetchedAt": "2026-04-07T19:10:54.539Z",
       "updatedAt": "2026-03-22T00:00:00.000Z",
       "firstSeenAt": "2026-03-22T00:00:00.000Z",
       "attributes": [
@@ -16054,7 +16053,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/uncefact/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-07T19:08:30.957Z",
+      "fetchedAt": "2026-04-07T19:10:54.539Z",
       "updatedAt": "2026-03-22T00:00:00.000Z",
       "firstSeenAt": "2026-03-22T00:00:00.000Z",
       "attributes": [
@@ -16536,10 +16535,10 @@
     },
     "byEcosystem": {
       "eudi_wallet": 81,
-      "open_badges": 2,
       "gaia_x": 7,
       "uncefact": 14,
       "iso_mdl": 2,
+      "open_badges": 1,
       "swiyu": 1
     },
     "byTheme": {
