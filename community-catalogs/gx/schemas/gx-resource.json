@@ -1,0 +1,262 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://fides.community/schemas/gaia-x/resource/v1.json",
+  "title": "FIDES JSON Schema - Gaia-X Resource Credential",
+  "description": "Developer-friendly JSON Schema for a Gaia-X Resource Verifiable Credential.",
+  "$comment": "FIDES-generated JSON Schema for developer convenience. Derived from Gaia-X credential documentation and SHACL-based Gaia-X schema model. The Gaia-X SHACL shapes and related Gaia-X specifications remain the normative source.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "@context",
+    "type",
+    "issuer",
+    "validFrom",
+    "credentialSubject"
+  ],
+  "properties": {
+    "@context": {
+      "oneOf": [
+        {
+          "type": "string",
+          "format": "uri"
+        },
+        {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "oneOf": [
+              {
+                "type": "string",
+                "format": "uri"
+              },
+              {
+                "type": "object"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "id": {
+      "type": "string",
+      "format": "uri"
+    },
+    "type": {
+      "oneOf": [
+        {
+          "type": "array",
+          "minItems": 2,
+          "items": {
+            "type": "string"
+          }
+        },
+        {
+          "type": "string",
+          "const": "VerifiableCredential"
+        }
+      ]
+    },
+    "issuer": {
+      "oneOf": [
+        {
+          "type": "string",
+          "format": "uri"
+        },
+        {
+          "type": "object",
+          "additionalProperties": true,
+          "required": [
+            "id"
+          ],
+          "properties": {
+            "id": {
+              "type": "string",
+              "format": "uri"
+            }
+          }
+        }
+      ]
+    },
+    "validFrom": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "validUntil": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "credentialStatus": {
+      "type": "object",
+      "additionalProperties": true
+    },
+    "proof": {
+      "type": "object",
+      "additionalProperties": true
+    },
+    "credentialSubject": {
+      "oneOf": [
+        {
+          "$ref": "#/$defs/CredentialSubject"
+        },
+        {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/CredentialSubject"
+          }
+        }
+      ]
+    }
+  },
+  "$defs": {
+    "IdReference": {
+      "type": "object",
+      "additionalProperties": true,
+      "required": [
+        "id"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "format": "uri"
+        },
+        "sri": {
+          "type": "string"
+        }
+      }
+    },
+    "Address": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "type": {
+          "oneOf": [
+            {
+              "type": "string",
+              "enum": [
+                "gx:Address",
+                "Address"
+              ]
+            },
+            {
+              "type": "array",
+              "items": {
+                "type": "string"
+              },
+              "contains": {
+                "enum": [
+                  "gx:Address",
+                  "Address"
+                ]
+              }
+            }
+          ]
+        },
+        "gx:countrySubdivisionCode": {
+          "type": "string"
+        },
+        "gx:countryCode": {
+          "type": "string"
+        },
+        "gx:streetAddress": {
+          "type": "string"
+        },
+        "gx:postalCode": {
+          "type": "string"
+        },
+        "gx:locality": {
+          "type": "string"
+        }
+      }
+    },
+    "TermsAndConditionsValue": {
+      "oneOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "object",
+          "additionalProperties": true,
+          "properties": {
+            "gx:URL": {
+              "type": "string",
+              "format": "uri"
+            },
+            "gx:hash": {
+              "type": "string"
+            }
+          }
+        }
+      ]
+    },
+    "CredentialSubject": {
+      "type": "object",
+      "additionalProperties": true,
+      "required": [
+        "id",
+        "type"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "format": "uri"
+        },
+        "type": {
+          "oneOf": [
+            {
+              "type": "string",
+              "enum": [
+                "gx:Resource",
+                "Resource"
+              ]
+            },
+            {
+              "type": "array",
+              "minItems": 1,
+              "items": {
+                "type": "string"
+              },
+              "contains": {
+                "enum": [
+                  "gx:Resource",
+                  "Resource"
+                ]
+              }
+            }
+          ]
+        },
+        "gx:name": {
+          "type": "string"
+        },
+        "gx:description": {
+          "type": "string"
+        },
+        "gx:ownedBy": {
+          "oneOf": [
+            {
+              "$ref": "#/$defs/IdReference"
+            },
+            {
+              "type": "string",
+              "format": "uri"
+            }
+          ]
+        },
+        "gx:maintainedBy": {
+          "oneOf": [
+            {
+              "$ref": "#/$defs/IdReference"
+            },
+            {
+              "type": "string",
+              "format": "uri"
+            }
+          ]
+        },
+        "gx:termsAndConditions": {
+          "$ref": "#/$defs/TermsAndConditionsValue"
+        }
+      }
+    }
+  }
+}
