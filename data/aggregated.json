@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.4.0",
   "catalogType": "credential",
-  "lastUpdated": "2026-04-09T20:04:53.973Z",
+  "lastUpdated": "2026-04-09T20:16:25.677Z",
   "credentials": [
     {
       "id": "cred:eu:diploma-vc-sd-jwt:sd-jwt-vc",
@@ -49,7 +49,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-09T20:04:53.973Z",
+      "fetchedAt": "2026-04-09T20:16:25.677Z",
       "updatedAt": "2026-04-07T19:20:37.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
@@ -208,7 +208,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-09T20:04:53.973Z",
+      "fetchedAt": "2026-04-09T20:16:25.677Z",
       "updatedAt": "2026-04-07T19:20:37.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
@@ -335,7 +335,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-09T20:04:53.973Z",
+      "fetchedAt": "2026-04-09T20:16:25.677Z",
       "updatedAt": "2026-04-07T19:20:37.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
@@ -511,7 +511,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-09T20:04:53.973Z",
+      "fetchedAt": "2026-04-09T20:16:25.677Z",
       "updatedAt": "2026-04-07T19:20:37.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
@@ -697,7 +697,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-09T20:04:53.973Z",
+      "fetchedAt": "2026-04-09T20:16:25.677Z",
       "updatedAt": "2026-04-07T19:20:37.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
@@ -831,7 +831,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-09T20:04:53.973Z",
+      "fetchedAt": "2026-04-09T20:16:25.677Z",
       "updatedAt": "2026-04-07T19:20:37.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
@@ -1185,7 +1185,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-09T20:04:53.973Z",
+      "fetchedAt": "2026-04-09T20:16:25.677Z",
       "updatedAt": "2026-04-07T19:20:37.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
@@ -1425,7 +1425,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-09T20:04:53.973Z",
+      "fetchedAt": "2026-04-09T20:16:25.677Z",
       "updatedAt": "2026-04-07T19:20:37.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
@@ -1561,7 +1561,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-09T20:04:53.973Z",
+      "fetchedAt": "2026-04-09T20:16:25.677Z",
       "updatedAt": "2026-04-07T19:20:37.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
@@ -1683,7 +1683,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-09T20:04:53.973Z",
+      "fetchedAt": "2026-04-09T20:16:25.677Z",
       "updatedAt": "2026-04-07T19:20:37.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
@@ -1837,7 +1837,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-09T20:04:53.973Z",
+      "fetchedAt": "2026-04-09T20:16:25.677Z",
       "updatedAt": "2026-04-07T19:20:37.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
@@ -1975,7 +1975,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-09T20:04:53.973Z",
+      "fetchedAt": "2026-04-09T20:16:25.677Z",
       "updatedAt": "2026-04-07T19:20:37.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
@@ -2116,7 +2116,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-09T20:04:53.973Z",
+      "fetchedAt": "2026-04-09T20:16:25.677Z",
       "updatedAt": "2026-04-07T19:20:37.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
@@ -2224,7 +2224,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-09T20:04:53.973Z",
+      "fetchedAt": "2026-04-09T20:16:25.677Z",
       "updatedAt": "2026-04-07T19:20:37.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
@@ -2408,7 +2408,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-09T20:04:53.973Z",
+      "fetchedAt": "2026-04-09T20:16:25.677Z",
       "updatedAt": "2026-04-07T19:20:37.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
@@ -2600,7 +2600,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-09T20:04:53.973Z",
+      "fetchedAt": "2026-04-09T20:16:25.677Z",
       "updatedAt": "2026-04-07T19:20:37.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
@@ -2697,7 +2697,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-09T20:04:53.973Z",
+      "fetchedAt": "2026-04-09T20:16:25.677Z",
       "updatedAt": "2026-04-07T19:20:37.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
@@ -2974,7 +2974,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-09T20:04:53.973Z",
+      "fetchedAt": "2026-04-09T20:16:25.677Z",
       "updatedAt": "2026-04-07T19:20:37.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
@@ -3115,7 +3115,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-09T20:04:53.973Z",
+      "fetchedAt": "2026-04-09T20:16:25.677Z",
       "updatedAt": "2026-04-07T19:20:37.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
@@ -3263,7 +3263,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-09T20:04:53.973Z",
+      "fetchedAt": "2026-04-09T20:16:25.677Z",
       "updatedAt": "2026-04-07T19:20:37.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
@@ -3505,7 +3505,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-09T20:04:53.973Z",
+      "fetchedAt": "2026-04-09T20:16:25.677Z",
       "updatedAt": "2026-04-07T19:20:37.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
@@ -3754,7 +3754,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-09T20:04:53.973Z",
+      "fetchedAt": "2026-04-09T20:16:25.677Z",
       "updatedAt": "2026-04-07T19:20:37.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
@@ -4001,7 +4001,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-09T20:04:53.973Z",
+      "fetchedAt": "2026-04-09T20:16:25.677Z",
       "updatedAt": "2026-04-07T19:20:37.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
@@ -4135,7 +4135,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-09T20:04:53.973Z",
+      "fetchedAt": "2026-04-09T20:16:25.677Z",
       "updatedAt": "2026-04-07T19:20:37.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
@@ -4328,7 +4328,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-09T20:04:53.973Z",
+      "fetchedAt": "2026-04-09T20:16:25.677Z",
       "updatedAt": "2026-04-07T19:20:37.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
@@ -4490,7 +4490,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-09T20:04:53.973Z",
+      "fetchedAt": "2026-04-09T20:16:25.677Z",
       "updatedAt": "2026-04-07T19:20:37.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
@@ -4639,7 +4639,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-09T20:04:53.973Z",
+      "fetchedAt": "2026-04-09T20:16:25.677Z",
       "updatedAt": "2026-04-07T19:20:37.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
@@ -4743,7 +4743,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-09T20:04:53.973Z",
+      "fetchedAt": "2026-04-09T20:16:25.677Z",
       "updatedAt": "2026-04-07T19:20:37.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
@@ -4871,7 +4871,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-09T20:04:53.973Z",
+      "fetchedAt": "2026-04-09T20:16:25.677Z",
       "updatedAt": "2026-04-07T19:20:37.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
@@ -4983,7 +4983,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/ewc/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-09T20:04:53.973Z",
+      "fetchedAt": "2026-04-09T20:16:25.677Z",
       "updatedAt": "2026-04-01T15:27:24.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
@@ -5041,7 +5041,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/ewc/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-09T20:04:53.973Z",
+      "fetchedAt": "2026-04-09T20:16:25.677Z",
       "updatedAt": "2026-04-01T15:27:24.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
@@ -5100,7 +5100,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/ewc/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-09T20:04:53.973Z",
+      "fetchedAt": "2026-04-09T20:16:25.677Z",
       "updatedAt": "2026-04-01T15:27:24.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
@@ -5201,7 +5201,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/ewc/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-09T20:04:53.973Z",
+      "fetchedAt": "2026-04-09T20:16:25.677Z",
       "updatedAt": "2026-04-01T15:27:24.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
@@ -5302,7 +5302,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/ewc/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-09T20:04:53.973Z",
+      "fetchedAt": "2026-04-09T20:16:25.677Z",
       "updatedAt": "2026-04-01T15:27:24.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
@@ -5361,7 +5361,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/ewc/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-09T20:04:53.973Z",
+      "fetchedAt": "2026-04-09T20:16:25.677Z",
       "updatedAt": "2026-04-01T15:27:24.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
@@ -5483,7 +5483,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/ewc/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-09T20:04:53.973Z",
+      "fetchedAt": "2026-04-09T20:16:25.677Z",
       "updatedAt": "2026-04-01T15:27:24.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
@@ -5595,7 +5595,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/ewc/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-09T20:04:53.973Z",
+      "fetchedAt": "2026-04-09T20:16:25.677Z",
       "updatedAt": "2026-04-01T15:27:24.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
@@ -5676,7 +5676,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/ewc/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-09T20:04:53.973Z",
+      "fetchedAt": "2026-04-09T20:16:25.677Z",
       "updatedAt": "2026-04-01T15:27:24.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
@@ -5778,7 +5778,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/ewc/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-09T20:04:53.973Z",
+      "fetchedAt": "2026-04-09T20:16:25.677Z",
       "updatedAt": "2026-04-01T15:27:24.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
@@ -5880,7 +5880,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/ewc/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-09T20:04:53.973Z",
+      "fetchedAt": "2026-04-09T20:16:25.677Z",
       "updatedAt": "2026-04-01T15:27:24.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
@@ -5939,7 +5939,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/ewc/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-09T20:04:53.973Z",
+      "fetchedAt": "2026-04-09T20:16:25.677Z",
       "updatedAt": "2026-04-01T15:27:24.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
@@ -6005,7 +6005,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/ewc/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-09T20:04:53.973Z",
+      "fetchedAt": "2026-04-09T20:16:25.677Z",
       "updatedAt": "2026-04-01T15:27:24.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
@@ -6098,7 +6098,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/ewc/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-09T20:04:53.973Z",
+      "fetchedAt": "2026-04-09T20:16:25.677Z",
       "updatedAt": "2026-04-01T15:27:24.000Z",
       "firstSeenAt": "2026-03-19T15:39:51.000Z",
       "attributes": [
@@ -6184,7 +6184,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-09T20:04:53.973Z",
+      "fetchedAt": "2026-04-09T20:16:25.677Z",
       "updatedAt": "2026-04-02T00:00:00.000Z",
       "firstSeenAt": "2026-03-15T00:00:00.000Z",
       "attributes": [
@@ -6298,7 +6298,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-09T20:04:53.973Z",
+      "fetchedAt": "2026-04-09T20:16:25.677Z",
       "updatedAt": "2026-04-02T00:00:00.000Z",
       "firstSeenAt": "2026-03-15T00:00:00.000Z",
       "attributes": [
@@ -6462,7 +6462,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-09T20:04:53.973Z",
+      "fetchedAt": "2026-04-09T20:16:25.677Z",
       "updatedAt": "2026-04-02T00:00:00.000Z",
       "firstSeenAt": "2026-03-15T00:00:00.000Z",
       "attributes": [
@@ -6620,7 +6620,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-09T20:04:53.973Z",
+      "fetchedAt": "2026-04-09T20:16:25.677Z",
       "updatedAt": "2026-04-02T00:00:00.000Z",
       "firstSeenAt": "2026-03-15T00:00:00.000Z",
       "attributes": [
@@ -6769,7 +6769,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-09T20:04:53.973Z",
+      "fetchedAt": "2026-04-09T20:16:25.677Z",
       "updatedAt": "2026-04-02T00:00:00.000Z",
       "firstSeenAt": "2026-03-15T00:00:00.000Z",
       "attributes": [
@@ -6895,7 +6895,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-09T20:04:53.973Z",
+      "fetchedAt": "2026-04-09T20:16:25.677Z",
       "updatedAt": "2026-04-02T00:00:00.000Z",
       "firstSeenAt": "2026-03-15T00:00:00.000Z",
       "attributes": [
@@ -7040,7 +7040,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-09T20:04:53.973Z",
+      "fetchedAt": "2026-04-09T20:16:25.677Z",
       "updatedAt": "2026-04-02T00:00:00.000Z",
       "firstSeenAt": "2026-04-02T00:00:00.000Z",
       "attributes": [
@@ -7361,7 +7361,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-09T20:04:53.973Z",
+      "fetchedAt": "2026-04-09T20:16:25.677Z",
       "updatedAt": "2026-04-02T00:00:00.000Z",
       "firstSeenAt": "2026-04-02T00:00:00.000Z",
       "attributes": [
@@ -7675,7 +7675,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-09T20:04:53.973Z",
+      "fetchedAt": "2026-04-09T20:16:25.677Z",
       "updatedAt": "2026-04-02T00:00:00.000Z",
       "firstSeenAt": "2026-04-02T00:00:00.000Z",
       "attributes": [
@@ -7986,7 +7986,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-09T20:04:53.973Z",
+      "fetchedAt": "2026-04-09T20:16:25.677Z",
       "updatedAt": "2026-04-02T00:00:00.000Z",
       "firstSeenAt": "2026-03-15T00:00:00.000Z",
       "attributes": []
@@ -8029,7 +8029,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-09T20:04:53.973Z",
+      "fetchedAt": "2026-04-09T20:16:25.677Z",
       "updatedAt": "2026-04-02T00:00:00.000Z",
       "firstSeenAt": "2026-03-15T00:00:00.000Z",
       "attributes": []
@@ -8073,7 +8073,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-09T20:04:53.973Z",
+      "fetchedAt": "2026-04-09T20:16:25.677Z",
       "updatedAt": "2026-04-02T00:00:00.000Z",
       "firstSeenAt": "2026-03-15T00:00:00.000Z",
       "attributes": [
@@ -8294,7 +8294,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-09T20:04:53.973Z",
+      "fetchedAt": "2026-04-09T20:16:25.677Z",
       "updatedAt": "2026-04-02T00:00:00.000Z",
       "firstSeenAt": "2026-03-15T00:00:00.000Z",
       "attributes": [
@@ -8411,7 +8411,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-09T20:04:53.973Z",
+      "fetchedAt": "2026-04-09T20:16:25.677Z",
       "updatedAt": "2026-04-02T00:00:00.000Z",
       "firstSeenAt": "2026-03-15T00:00:00.000Z",
       "attributes": [
@@ -8471,7 +8471,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-09T20:04:53.973Z",
+      "fetchedAt": "2026-04-09T20:16:25.677Z",
       "updatedAt": "2026-04-02T00:00:00.000Z",
       "firstSeenAt": "2026-03-15T00:00:00.000Z",
       "attributes": [
@@ -8602,7 +8602,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-09T20:04:53.973Z",
+      "fetchedAt": "2026-04-09T20:16:25.677Z",
       "updatedAt": "2026-04-02T00:00:00.000Z",
       "firstSeenAt": "2026-03-15T00:00:00.000Z",
       "attributes": [
@@ -8684,7 +8684,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-09T20:04:53.973Z",
+      "fetchedAt": "2026-04-09T20:16:25.677Z",
       "updatedAt": "2026-04-02T00:00:00.000Z",
       "firstSeenAt": "2026-03-15T00:00:00.000Z",
       "attributes": [
@@ -9040,7 +9040,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-09T20:04:53.973Z",
+      "fetchedAt": "2026-04-09T20:16:25.677Z",
       "updatedAt": "2026-04-02T00:00:00.000Z",
       "firstSeenAt": "2026-03-15T00:00:00.000Z",
       "attributes": [
@@ -9290,7 +9290,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-09T20:04:53.973Z",
+      "fetchedAt": "2026-04-09T20:16:25.677Z",
       "updatedAt": "2026-04-02T00:00:00.000Z",
       "firstSeenAt": "2026-03-15T00:00:00.000Z",
       "attributes": [
@@ -9372,7 +9372,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-09T20:04:53.973Z",
+      "fetchedAt": "2026-04-09T20:16:25.677Z",
       "updatedAt": "2026-04-02T00:00:00.000Z",
       "firstSeenAt": "2026-03-15T00:00:00.000Z",
       "attributes": [
@@ -9492,7 +9492,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-09T20:04:53.973Z",
+      "fetchedAt": "2026-04-09T20:16:25.677Z",
       "updatedAt": "2026-04-02T00:00:00.000Z",
       "firstSeenAt": "2026-03-15T00:00:00.000Z",
       "attributes": [
@@ -9583,7 +9583,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-09T20:04:53.973Z",
+      "fetchedAt": "2026-04-09T20:16:25.677Z",
       "updatedAt": "2026-04-02T00:00:00.000Z",
       "firstSeenAt": "2026-03-15T00:00:00.000Z",
       "attributes": [
@@ -9654,7 +9654,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-09T20:04:53.973Z",
+      "fetchedAt": "2026-04-09T20:16:25.677Z",
       "updatedAt": "2026-04-02T00:00:00.000Z",
       "firstSeenAt": "2026-03-15T00:00:00.000Z",
       "attributes": [
@@ -9742,7 +9742,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-09T20:04:53.973Z",
+      "fetchedAt": "2026-04-09T20:16:25.677Z",
       "updatedAt": "2026-04-02T00:00:00.000Z",
       "firstSeenAt": "2026-03-15T00:00:00.000Z",
       "attributes": [
@@ -9853,7 +9853,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-09T20:04:53.973Z",
+      "fetchedAt": "2026-04-09T20:16:25.677Z",
       "updatedAt": "2026-04-02T00:00:00.000Z",
       "firstSeenAt": "2026-03-15T00:00:00.000Z",
       "attributes": [
@@ -9903,6 +9903,993 @@
       ]
     },
     {
+      "id": "cred:gaiax:legal-participant:vcdm-1-1",
+      "slug": "gaia-x-legal-participant",
+      "displayName": "Gaia-X Legal Participant Credential",
+      "shortDescription": "Credential describing a legal participant in the Gaia-X ecosystem. ",
+      "authority": {
+        "name": "Gaia-X AISBL",
+        "url": "https://gaia-x.eu/"
+      },
+      "subjectType": "Organization",
+      "vcFormat": "vcdm_1_1",
+      "version": "1.0",
+      "nativeIdentifier": "gx:LegalParticipant",
+      "nativeIdentifierType": "type",
+      "schemaUrl": "https://raw.githubusercontent.com/FIDEScommunity/fides-credential-catalog/refs/heads/main/community-catalogs/gx/schemas/gx-legal-participant.json",
+      "schemaType": "JSON Schema",
+      "vocabularies": [
+        {
+          "name": "Gaia-X Vocabulary",
+          "authority": {
+            "name": "Gaia-X AISBL",
+            "url": "https://gaia-x.eu/"
+          },
+          "url": "https://docs.gaia-x.eu/"
+        }
+      ],
+      "sectors": [
+        "digital"
+      ],
+      "ecosystems": [
+        "gaia_x"
+      ],
+      "themes": [
+        "dataspaces"
+      ],
+      "orgId": "org:gaia-x",
+      "provider": {
+        "name": "Gaia-X",
+        "website": "https://gaia-x.eu/",
+        "logo": "https://upload.wikimedia.org/wikipedia/de/thumb/6/6f/Gaia-X_logo.svg/1920px-Gaia-X_logo.svg.png",
+        "contact": {
+          "email": "info@gaia-x.eu"
+        }
+      },
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/gx/credential-catalog.json",
+      "source": "local",
+      "fetchedAt": "2026-04-09T20:16:25.677Z",
+      "updatedAt": "2026-04-09T12:00:00.000Z",
+      "firstSeenAt": "2026-04-09T12:00:00.000Z",
+      "attributes": [
+        {
+          "name": "@context",
+          "type": "oneOf",
+          "required": true,
+          "depth": 0
+        },
+        {
+          "name": "id",
+          "type": "string",
+          "required": false,
+          "depth": 0
+        },
+        {
+          "name": "type",
+          "type": "oneOf",
+          "required": true,
+          "depth": 0
+        },
+        {
+          "name": "issuer",
+          "type": "oneOf",
+          "required": true,
+          "depth": 0
+        },
+        {
+          "name": "validFrom",
+          "type": "string",
+          "required": true,
+          "depth": 0
+        },
+        {
+          "name": "validUntil",
+          "type": "string",
+          "required": false,
+          "depth": 0
+        },
+        {
+          "name": "credentialStatus",
+          "type": "object",
+          "required": false,
+          "depth": 0
+        },
+        {
+          "name": "proof",
+          "type": "object",
+          "required": false,
+          "depth": 0
+        },
+        {
+          "name": "credentialSubject",
+          "type": "oneOf",
+          "required": true,
+          "depth": 0
+        }
+      ],
+      "schemaDescription": "Developer-friendly JSON Schema for a Gaia-X LegalParticipant Verifiable Credential."
+    },
+    {
+      "id": "cred:gaiax:legal-registration-number:vcdm-1-1",
+      "slug": "gaia-x-legal-registration-number",
+      "displayName": "Gaia-X Legal Registration Number Credential",
+      "shortDescription": "Credential expressing a legal registration reference for a Gaia-X participant.",
+      "authority": {
+        "name": "Gaia-X AISBL",
+        "url": "https://gaia-x.eu/"
+      },
+      "subjectType": "Organization",
+      "vcFormat": "vcdm_1_1",
+      "version": "1.0",
+      "nativeIdentifier": "gx:LegalRegistrationNumber",
+      "nativeIdentifierType": "type",
+      "schemaUrl": "https://raw.githubusercontent.com/FIDEScommunity/fides-credential-catalog/refs/heads/main/community-catalogs/gx/schemas/gx-legal-registration-number.json",
+      "schemaType": "JSON Schema",
+      "vocabularies": [
+        {
+          "name": "Gaia-X Vocabulary",
+          "authority": {
+            "name": "Gaia-X AISBL",
+            "url": "https://gaia-x.eu/"
+          },
+          "url": "https://docs.gaia-x.eu/"
+        }
+      ],
+      "sectors": [
+        "digital"
+      ],
+      "ecosystems": [
+        "gaia_x"
+      ],
+      "themes": [
+        "dataspaces"
+      ],
+      "orgId": "org:gaia-x",
+      "provider": {
+        "name": "Gaia-X",
+        "website": "https://gaia-x.eu/",
+        "logo": "https://upload.wikimedia.org/wikipedia/de/thumb/6/6f/Gaia-X_logo.svg/1920px-Gaia-X_logo.svg.png",
+        "contact": {
+          "email": "info@gaia-x.eu"
+        }
+      },
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/gx/credential-catalog.json",
+      "source": "local",
+      "fetchedAt": "2026-04-09T20:16:25.677Z",
+      "updatedAt": "2026-04-09T12:00:00.000Z",
+      "firstSeenAt": "2026-04-09T12:00:00.000Z",
+      "attributes": [
+        {
+          "name": "@context",
+          "type": "oneOf",
+          "required": true,
+          "depth": 0
+        },
+        {
+          "name": "id",
+          "type": "string",
+          "required": false,
+          "depth": 0
+        },
+        {
+          "name": "type",
+          "type": "oneOf",
+          "required": true,
+          "depth": 0
+        },
+        {
+          "name": "issuer",
+          "type": "oneOf",
+          "required": true,
+          "depth": 0
+        },
+        {
+          "name": "validFrom",
+          "type": "string",
+          "required": true,
+          "depth": 0
+        },
+        {
+          "name": "validUntil",
+          "type": "string",
+          "required": false,
+          "depth": 0
+        },
+        {
+          "name": "credentialStatus",
+          "type": "object",
+          "required": false,
+          "depth": 0
+        },
+        {
+          "name": "proof",
+          "type": "object",
+          "required": false,
+          "depth": 0
+        },
+        {
+          "name": "credentialSubject",
+          "type": "oneOf",
+          "required": true,
+          "depth": 0
+        }
+      ],
+      "schemaDescription": "Developer-friendly JSON Schema for a Gaia-X LegalRegistrationNumber Verifiable Credential."
+    },
+    {
+      "id": "cred:gaiax:terms-and-conditions:vcdm-1-1",
+      "slug": "gaia-x-terms-and-conditions",
+      "displayName": "Gaia-X Terms and Conditions Credential",
+      "shortDescription": "Credential expressing acceptance of Gaia-X terms and conditions.",
+      "authority": {
+        "name": "Gaia-X AISBL",
+        "url": "https://gaia-x.eu/"
+      },
+      "subjectType": "Organization",
+      "vcFormat": "vcdm_1_1",
+      "version": "1.0",
+      "nativeIdentifier": "gx:GaiaXTermsAndConditions",
+      "nativeIdentifierType": "type",
+      "schemaUrl": "https://raw.githubusercontent.com/FIDEScommunity/fides-credential-catalog/refs/heads/main/community-catalogs/gx/schemas/gx-gaiax-terms-and-conditions.json",
+      "schemaType": "JSON Schema",
+      "vocabularies": [
+        {
+          "name": "Gaia-X Vocabulary",
+          "authority": {
+            "name": "Gaia-X AISBL",
+            "url": "https://gaia-x.eu/"
+          },
+          "url": "https://docs.gaia-x.eu/"
+        }
+      ],
+      "sectors": [
+        "digital"
+      ],
+      "ecosystems": [
+        "gaia_x"
+      ],
+      "themes": [
+        "dataspaces"
+      ],
+      "orgId": "org:gaia-x",
+      "provider": {
+        "name": "Gaia-X",
+        "website": "https://gaia-x.eu/",
+        "logo": "https://upload.wikimedia.org/wikipedia/de/thumb/6/6f/Gaia-X_logo.svg/1920px-Gaia-X_logo.svg.png",
+        "contact": {
+          "email": "info@gaia-x.eu"
+        }
+      },
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/gx/credential-catalog.json",
+      "source": "local",
+      "fetchedAt": "2026-04-09T20:16:25.677Z",
+      "updatedAt": "2026-04-09T12:00:00.000Z",
+      "firstSeenAt": "2026-04-09T12:00:00.000Z",
+      "attributes": [
+        {
+          "name": "@context",
+          "type": "oneOf",
+          "required": true,
+          "depth": 0
+        },
+        {
+          "name": "id",
+          "type": "string",
+          "required": false,
+          "depth": 0
+        },
+        {
+          "name": "type",
+          "type": "oneOf",
+          "required": true,
+          "depth": 0
+        },
+        {
+          "name": "issuer",
+          "type": "oneOf",
+          "required": true,
+          "depth": 0
+        },
+        {
+          "name": "validFrom",
+          "type": "string",
+          "required": true,
+          "depth": 0
+        },
+        {
+          "name": "validUntil",
+          "type": "string",
+          "required": false,
+          "depth": 0
+        },
+        {
+          "name": "credentialStatus",
+          "type": "object",
+          "required": false,
+          "depth": 0
+        },
+        {
+          "name": "proof",
+          "type": "object",
+          "required": false,
+          "depth": 0
+        },
+        {
+          "name": "credentialSubject",
+          "type": "oneOf",
+          "required": true,
+          "depth": 0
+        }
+      ],
+      "schemaDescription": "Developer-friendly JSON Schema for a Gaia-X GaiaXTermsAndConditions Verifiable Credential."
+    },
+    {
+      "id": "cred:gaiax:resource:vcdm-1-1",
+      "slug": "gaia-x-resource",
+      "displayName": "Gaia-X Resource Credential",
+      "shortDescription": "Generic credential for describing a Gaia-X resource.",
+      "authority": {
+        "name": "Gaia-X AISBL",
+        "url": "https://gaia-x.eu/"
+      },
+      "subjectType": "Document",
+      "vcFormat": "vcdm_1_1",
+      "version": "1.0",
+      "nativeIdentifier": "gx:Resource",
+      "nativeIdentifierType": "type",
+      "schemaUrl": "https://raw.githubusercontent.com/FIDEScommunity/fides-credential-catalog/refs/heads/main/community-catalogs/gx/schemas/gx-resource.json",
+      "schemaType": "JSON Schema",
+      "vocabularies": [
+        {
+          "name": "Gaia-X Vocabulary",
+          "authority": {
+            "name": "Gaia-X AISBL",
+            "url": "https://gaia-x.eu/"
+          },
+          "url": "https://docs.gaia-x.eu/"
+        }
+      ],
+      "sectors": [
+        "digital"
+      ],
+      "ecosystems": [
+        "gaia_x"
+      ],
+      "themes": [
+        "dataspaces"
+      ],
+      "orgId": "org:gaia-x",
+      "provider": {
+        "name": "Gaia-X",
+        "website": "https://gaia-x.eu/",
+        "logo": "https://upload.wikimedia.org/wikipedia/de/thumb/6/6f/Gaia-X_logo.svg/1920px-Gaia-X_logo.svg.png",
+        "contact": {
+          "email": "info@gaia-x.eu"
+        }
+      },
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/gx/credential-catalog.json",
+      "source": "local",
+      "fetchedAt": "2026-04-09T20:16:25.677Z",
+      "updatedAt": "2026-04-09T12:00:00.000Z",
+      "firstSeenAt": "2026-04-09T12:00:00.000Z",
+      "attributes": [
+        {
+          "name": "@context",
+          "type": "oneOf",
+          "required": true,
+          "depth": 0
+        },
+        {
+          "name": "id",
+          "type": "string",
+          "required": false,
+          "depth": 0
+        },
+        {
+          "name": "type",
+          "type": "oneOf",
+          "required": true,
+          "depth": 0
+        },
+        {
+          "name": "issuer",
+          "type": "oneOf",
+          "required": true,
+          "depth": 0
+        },
+        {
+          "name": "validFrom",
+          "type": "string",
+          "required": true,
+          "depth": 0
+        },
+        {
+          "name": "validUntil",
+          "type": "string",
+          "required": false,
+          "depth": 0
+        },
+        {
+          "name": "credentialStatus",
+          "type": "object",
+          "required": false,
+          "depth": 0
+        },
+        {
+          "name": "proof",
+          "type": "object",
+          "required": false,
+          "depth": 0
+        },
+        {
+          "name": "credentialSubject",
+          "type": "oneOf",
+          "required": true,
+          "depth": 0
+        }
+      ],
+      "schemaDescription": "Developer-friendly JSON Schema for a Gaia-X Resource Verifiable Credential."
+    },
+    {
+      "id": "cred:gaiax:service-offering:vcdm-1-1",
+      "slug": "gaia-x-service-offering",
+      "displayName": "Gaia-X Service Offering Credential",
+      "shortDescription": "Credential describing a service offering in the Gaia-X ecosystem.",
+      "authority": {
+        "name": "Gaia-X AISBL",
+        "url": "https://gaia-x.eu/"
+      },
+      "subjectType": "Document",
+      "vcFormat": "vcdm_1_1",
+      "version": "1.0",
+      "nativeIdentifier": "gx:ServiceOffering",
+      "nativeIdentifierType": "type",
+      "schemaUrl": "https://raw.githubusercontent.com/FIDEScommunity/fides-credential-catalog/refs/heads/main/community-catalogs/gx/schemas/gx-service-offering.json",
+      "schemaType": "JSON Schema",
+      "extends": [
+        {
+          "id": "cred:gaiax:resource:vcdm-1-1",
+          "displayName": "Gaia-X Resource Credential"
+        }
+      ],
+      "vocabularies": [
+        {
+          "name": "Gaia-X Vocabulary",
+          "authority": {
+            "name": "Gaia-X AISBL",
+            "url": "https://gaia-x.eu/"
+          },
+          "url": "https://docs.gaia-x.eu/"
+        }
+      ],
+      "sectors": [
+        "digital"
+      ],
+      "ecosystems": [
+        "gaia_x"
+      ],
+      "themes": [
+        "dataspaces"
+      ],
+      "orgId": "org:gaia-x",
+      "provider": {
+        "name": "Gaia-X",
+        "website": "https://gaia-x.eu/",
+        "logo": "https://upload.wikimedia.org/wikipedia/de/thumb/6/6f/Gaia-X_logo.svg/1920px-Gaia-X_logo.svg.png",
+        "contact": {
+          "email": "info@gaia-x.eu"
+        }
+      },
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/gx/credential-catalog.json",
+      "source": "local",
+      "fetchedAt": "2026-04-09T20:16:25.677Z",
+      "updatedAt": "2026-04-09T12:00:00.000Z",
+      "firstSeenAt": "2026-04-09T12:00:00.000Z",
+      "attributes": [
+        {
+          "name": "@context",
+          "type": "oneOf",
+          "required": true,
+          "depth": 0
+        },
+        {
+          "name": "id",
+          "type": "string",
+          "required": false,
+          "depth": 0
+        },
+        {
+          "name": "type",
+          "type": "oneOf",
+          "required": true,
+          "depth": 0
+        },
+        {
+          "name": "issuer",
+          "type": "oneOf",
+          "required": true,
+          "depth": 0
+        },
+        {
+          "name": "validFrom",
+          "type": "string",
+          "required": true,
+          "depth": 0
+        },
+        {
+          "name": "validUntil",
+          "type": "string",
+          "required": false,
+          "depth": 0
+        },
+        {
+          "name": "credentialStatus",
+          "type": "object",
+          "required": false,
+          "depth": 0
+        },
+        {
+          "name": "proof",
+          "type": "object",
+          "required": false,
+          "depth": 0
+        },
+        {
+          "name": "credentialSubject",
+          "type": "oneOf",
+          "required": true,
+          "depth": 0
+        }
+      ],
+      "schemaDescription": "Developer-friendly JSON Schema for a Gaia-X ServiceOffering Verifiable Credential."
+    },
+    {
+      "id": "cred:gaiax:data-resource:vcdm-1-1",
+      "slug": "gaia-x-data-resource",
+      "displayName": "Gaia-X Data Resource Credential",
+      "shortDescription": "Credential describing a data resource in Gaia-X.",
+      "authority": {
+        "name": "Gaia-X AISBL",
+        "url": "https://gaia-x.eu/"
+      },
+      "subjectType": "Dataset",
+      "vcFormat": "vcdm_1_1",
+      "version": "1.0",
+      "nativeIdentifier": "gx:DataResource",
+      "nativeIdentifierType": "type",
+      "schemaUrl": "https://raw.githubusercontent.com/FIDEScommunity/fides-credential-catalog/refs/heads/main/community-catalogs/gx/schemas/gx-data-resource.json",
+      "schemaType": "JSON Schema",
+      "extends": [
+        {
+          "id": "cred:gaiax:resource:vcdm-1-1",
+          "displayName": "Gaia-X Resource Credential"
+        }
+      ],
+      "vocabularies": [
+        {
+          "name": "Gaia-X Vocabulary",
+          "authority": {
+            "name": "Gaia-X AISBL",
+            "url": "https://gaia-x.eu/"
+          },
+          "url": "https://docs.gaia-x.eu/"
+        }
+      ],
+      "sectors": [
+        "digital"
+      ],
+      "ecosystems": [
+        "gaia_x"
+      ],
+      "themes": [
+        "dataspaces"
+      ],
+      "orgId": "org:gaia-x",
+      "provider": {
+        "name": "Gaia-X",
+        "website": "https://gaia-x.eu/",
+        "logo": "https://upload.wikimedia.org/wikipedia/de/thumb/6/6f/Gaia-X_logo.svg/1920px-Gaia-X_logo.svg.png",
+        "contact": {
+          "email": "info@gaia-x.eu"
+        }
+      },
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/gx/credential-catalog.json",
+      "source": "local",
+      "fetchedAt": "2026-04-09T20:16:25.677Z",
+      "updatedAt": "2026-04-09T12:00:00.000Z",
+      "firstSeenAt": "2026-04-09T12:00:00.000Z",
+      "attributes": [
+        {
+          "name": "@context",
+          "type": "oneOf",
+          "required": true,
+          "depth": 0
+        },
+        {
+          "name": "id",
+          "type": "string",
+          "required": false,
+          "depth": 0
+        },
+        {
+          "name": "type",
+          "type": "oneOf",
+          "required": true,
+          "depth": 0
+        },
+        {
+          "name": "issuer",
+          "type": "oneOf",
+          "required": true,
+          "depth": 0
+        },
+        {
+          "name": "validFrom",
+          "type": "string",
+          "required": true,
+          "depth": 0
+        },
+        {
+          "name": "validUntil",
+          "type": "string",
+          "required": false,
+          "depth": 0
+        },
+        {
+          "name": "credentialStatus",
+          "type": "object",
+          "required": false,
+          "depth": 0
+        },
+        {
+          "name": "proof",
+          "type": "object",
+          "required": false,
+          "depth": 0
+        },
+        {
+          "name": "credentialSubject",
+          "type": "oneOf",
+          "required": true,
+          "depth": 0
+        }
+      ],
+      "schemaDescription": "Developer-friendly JSON Schema for a Gaia-X DataResource Verifiable Credential."
+    },
+    {
+      "id": "cred:gaiax:physical-resource:vcdm-1-1",
+      "slug": "gaia-x-physical-resource",
+      "displayName": "Gaia-X Physical Resource Credential",
+      "shortDescription": "Credential describing a physical resource in Gaia-X.",
+      "authority": {
+        "name": "Gaia-X AISBL",
+        "url": "https://gaia-x.eu/"
+      },
+      "subjectType": "Product",
+      "vcFormat": "vcdm_1_1",
+      "version": "1.0",
+      "nativeIdentifier": "gx:PhysicalResource",
+      "nativeIdentifierType": "type",
+      "schemaUrl": "https://raw.githubusercontent.com/FIDEScommunity/fides-credential-catalog/refs/heads/main/community-catalogs/gx/schemas/gx-physical-resource.json",
+      "schemaType": "JSON Schema",
+      "extends": [
+        {
+          "id": "cred:gaiax:resource:vcdm-1-1",
+          "displayName": "Gaia-X Resource Credential"
+        }
+      ],
+      "vocabularies": [
+        {
+          "name": "Gaia-X Vocabulary",
+          "authority": {
+            "name": "Gaia-X AISBL",
+            "url": "https://gaia-x.eu/"
+          },
+          "url": "https://docs.gaia-x.eu/"
+        }
+      ],
+      "sectors": [
+        "digital"
+      ],
+      "ecosystems": [
+        "gaia_x"
+      ],
+      "themes": [
+        "dataspaces"
+      ],
+      "orgId": "org:gaia-x",
+      "provider": {
+        "name": "Gaia-X",
+        "website": "https://gaia-x.eu/",
+        "logo": "https://upload.wikimedia.org/wikipedia/de/thumb/6/6f/Gaia-X_logo.svg/1920px-Gaia-X_logo.svg.png",
+        "contact": {
+          "email": "info@gaia-x.eu"
+        }
+      },
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/gx/credential-catalog.json",
+      "source": "local",
+      "fetchedAt": "2026-04-09T20:16:25.677Z",
+      "updatedAt": "2026-04-09T12:00:00.000Z",
+      "firstSeenAt": "2026-04-09T12:00:00.000Z",
+      "attributes": [
+        {
+          "name": "@context",
+          "type": "oneOf",
+          "required": true,
+          "depth": 0
+        },
+        {
+          "name": "id",
+          "type": "string",
+          "required": false,
+          "depth": 0
+        },
+        {
+          "name": "type",
+          "type": "oneOf",
+          "required": true,
+          "depth": 0
+        },
+        {
+          "name": "issuer",
+          "type": "oneOf",
+          "required": true,
+          "depth": 0
+        },
+        {
+          "name": "validFrom",
+          "type": "string",
+          "required": true,
+          "depth": 0
+        },
+        {
+          "name": "validUntil",
+          "type": "string",
+          "required": false,
+          "depth": 0
+        },
+        {
+          "name": "credentialStatus",
+          "type": "object",
+          "required": false,
+          "depth": 0
+        },
+        {
+          "name": "proof",
+          "type": "object",
+          "required": false,
+          "depth": 0
+        },
+        {
+          "name": "credentialSubject",
+          "type": "oneOf",
+          "required": true,
+          "depth": 0
+        }
+      ],
+      "schemaDescription": "Developer-friendly JSON Schema for a Gaia-X PhysicalResource Verifiable Credential."
+    },
+    {
+      "id": "cred:gaiax:software-resource:vcdm-1-1",
+      "slug": "gaia-x-software-resource",
+      "displayName": "Gaia-X Software Resource Credential",
+      "shortDescription": "Credential describing a software resource in Gaia-X.",
+      "authority": {
+        "name": "Gaia-X AISBL",
+        "url": "https://gaia-x.eu/"
+      },
+      "subjectType": "Software",
+      "vcFormat": "vcdm_1_1",
+      "version": "1.0",
+      "nativeIdentifier": "gx:SoftwareResource",
+      "nativeIdentifierType": "type",
+      "schemaUrl": "https://raw.githubusercontent.com/FIDEScommunity/fides-credential-catalog/refs/heads/main/community-catalogs/gx/schemas/gx-software-resource.json",
+      "schemaType": "JSON Schema",
+      "extends": [
+        {
+          "id": "cred:gaiax:resource:vcdm-1-1",
+          "displayName": "Gaia-X Resource Credential"
+        }
+      ],
+      "vocabularies": [
+        {
+          "name": "Gaia-X Vocabulary",
+          "authority": {
+            "name": "Gaia-X AISBL",
+            "url": "https://gaia-x.eu/"
+          },
+          "url": "https://docs.gaia-x.eu/"
+        }
+      ],
+      "sectors": [
+        "digital"
+      ],
+      "ecosystems": [
+        "gaia_x"
+      ],
+      "themes": [
+        "dataspaces"
+      ],
+      "orgId": "org:gaia-x",
+      "provider": {
+        "name": "Gaia-X",
+        "website": "https://gaia-x.eu/",
+        "logo": "https://upload.wikimedia.org/wikipedia/de/thumb/6/6f/Gaia-X_logo.svg/1920px-Gaia-X_logo.svg.png",
+        "contact": {
+          "email": "info@gaia-x.eu"
+        }
+      },
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/gx/credential-catalog.json",
+      "source": "local",
+      "fetchedAt": "2026-04-09T20:16:25.677Z",
+      "updatedAt": "2026-04-09T12:00:00.000Z",
+      "firstSeenAt": "2026-04-09T12:00:00.000Z",
+      "attributes": [
+        {
+          "name": "@context",
+          "type": "oneOf",
+          "required": true,
+          "depth": 0
+        },
+        {
+          "name": "id",
+          "type": "string",
+          "required": false,
+          "depth": 0
+        },
+        {
+          "name": "type",
+          "type": "oneOf",
+          "required": true,
+          "depth": 0
+        },
+        {
+          "name": "issuer",
+          "type": "oneOf",
+          "required": true,
+          "depth": 0
+        },
+        {
+          "name": "validFrom",
+          "type": "string",
+          "required": true,
+          "depth": 0
+        },
+        {
+          "name": "validUntil",
+          "type": "string",
+          "required": false,
+          "depth": 0
+        },
+        {
+          "name": "credentialStatus",
+          "type": "object",
+          "required": false,
+          "depth": 0
+        },
+        {
+          "name": "proof",
+          "type": "object",
+          "required": false,
+          "depth": 0
+        },
+        {
+          "name": "credentialSubject",
+          "type": "oneOf",
+          "required": true,
+          "depth": 0
+        }
+      ],
+      "schemaDescription": "Developer-friendly JSON Schema for a Gaia-X SoftwareResource Verifiable Credential."
+    },
+    {
+      "id": "cred:gaiax:compliance-credential:vcdm-1-1",
+      "slug": "gaia-x-compliance-credential",
+      "displayName": "Gaia-X Compliance Credential",
+      "shortDescription": "Credential issued after Gaia-X compliance checks for a participant or offering.",
+      "authority": {
+        "name": "Gaia-X AISBL",
+        "url": "https://gaia-x.eu/"
+      },
+      "subjectType": "Document",
+      "vcFormat": "vcdm_1_1",
+      "version": "1.0",
+      "nativeIdentifier": "gx:compliance",
+      "nativeIdentifierType": "type",
+      "schemaUrl": "https://raw.githubusercontent.com/FIDEScommunity/fides-credential-catalog/refs/heads/main/community-catalogs/gx/schemas/gx-compliance-credential.json",
+      "schemaType": "JSON Schema",
+      "vocabularies": [
+        {
+          "name": "Gaia-X Vocabulary",
+          "authority": {
+            "name": "Gaia-X AISBL",
+            "url": "https://gaia-x.eu/"
+          },
+          "url": "https://docs.gaia-x.eu/"
+        }
+      ],
+      "sectors": [
+        "digital"
+      ],
+      "ecosystems": [
+        "gaia_x"
+      ],
+      "themes": [
+        "dataspaces"
+      ],
+      "orgId": "org:gaia-x",
+      "provider": {
+        "name": "Gaia-X",
+        "website": "https://gaia-x.eu/",
+        "logo": "https://upload.wikimedia.org/wikipedia/de/thumb/6/6f/Gaia-X_logo.svg/1920px-Gaia-X_logo.svg.png",
+        "contact": {
+          "email": "info@gaia-x.eu"
+        }
+      },
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/gx/credential-catalog.json",
+      "source": "local",
+      "fetchedAt": "2026-04-09T20:16:25.677Z",
+      "updatedAt": "2026-04-09T12:00:00.000Z",
+      "firstSeenAt": "2026-04-09T12:00:00.000Z",
+      "attributes": [
+        {
+          "name": "@context",
+          "type": "oneOf",
+          "required": true,
+          "depth": 0
+        },
+        {
+          "name": "id",
+          "type": "string",
+          "required": false,
+          "depth": 0
+        },
+        {
+          "name": "type",
+          "type": "oneOf",
+          "required": true,
+          "depth": 0
+        },
+        {
+          "name": "issuer",
+          "type": "oneOf",
+          "required": true,
+          "depth": 0
+        },
+        {
+          "name": "validFrom",
+          "type": "string",
+          "required": true,
+          "depth": 0
+        },
+        {
+          "name": "validUntil",
+          "type": "string",
+          "required": false,
+          "depth": 0
+        },
+        {
+          "name": "credentialStatus",
+          "type": "object",
+          "required": false,
+          "depth": 0
+        },
+        {
+          "name": "proof",
+          "type": "object",
+          "required": false,
+          "depth": 0
+        },
+        {
+          "name": "credentialSubject",
+          "type": "oneOf",
+          "required": true,
+          "depth": 0
+        }
+      ],
+      "schemaDescription": "Developer-friendly JSON Schema for a Gaia-X Compliance Credential."
+    },
+    {
       "id": "cred:swiyu:betaid-sdjwt:sd-jwt-vc",
       "slug": "betaid-sdjwt",
       "displayName": "Beta-ID",
@@ -9943,7 +10930,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/swiyu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-09T20:04:53.973Z",
+      "fetchedAt": "2026-04-09T20:16:25.677Z",
       "updatedAt": "2026-04-07T19:08:14.000Z",
       "firstSeenAt": "2026-04-02T19:01:41.000Z",
       "attributes": [
@@ -10150,7 +11137,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/uncefact/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-09T20:04:53.973Z",
+      "fetchedAt": "2026-04-09T20:16:25.677Z",
       "updatedAt": "2026-03-22T00:00:00.000Z",
       "firstSeenAt": "2026-03-22T00:00:00.000Z",
       "attributes": [
@@ -10262,7 +11249,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/uncefact/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-09T20:04:53.973Z",
+      "fetchedAt": "2026-04-09T20:16:25.677Z",
       "updatedAt": "2026-03-22T00:00:00.000Z",
       "firstSeenAt": "2026-03-22T00:00:00.000Z",
       "attributes": [
@@ -10373,7 +11360,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/uncefact/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-09T20:04:53.973Z",
+      "fetchedAt": "2026-04-09T20:16:25.677Z",
       "updatedAt": "2026-03-22T00:00:00.000Z",
       "firstSeenAt": "2026-03-22T00:00:00.000Z",
       "attributes": [
@@ -10478,7 +11465,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/uncefact/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-09T20:04:53.973Z",
+      "fetchedAt": "2026-04-09T20:16:25.677Z",
       "updatedAt": "2026-03-22T00:00:00.000Z",
       "firstSeenAt": "2026-03-22T00:00:00.000Z",
       "attributes": [
@@ -10597,7 +11584,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/uncefact/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-09T20:04:53.973Z",
+      "fetchedAt": "2026-04-09T20:16:25.677Z",
       "updatedAt": "2026-03-22T00:00:00.000Z",
       "firstSeenAt": "2026-03-22T00:00:00.000Z",
       "attributes": [
@@ -10717,7 +11704,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/uncefact/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-09T20:04:53.973Z",
+      "fetchedAt": "2026-04-09T20:16:25.677Z",
       "updatedAt": "2026-03-22T00:00:00.000Z",
       "firstSeenAt": "2026-03-22T00:00:00.000Z",
       "attributes": [
@@ -11514,7 +12501,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/uncefact/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-09T20:04:53.973Z",
+      "fetchedAt": "2026-04-09T20:16:25.677Z",
       "updatedAt": "2026-03-22T00:00:00.000Z",
       "firstSeenAt": "2026-03-22T00:00:00.000Z",
       "attributes": [
@@ -12469,7 +13456,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/uncefact/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-09T20:04:53.973Z",
+      "fetchedAt": "2026-04-09T20:16:25.677Z",
       "updatedAt": "2026-03-22T00:00:00.000Z",
       "firstSeenAt": "2026-03-22T00:00:00.000Z",
       "attributes": [
@@ -13184,7 +14171,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/uncefact/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-09T20:04:53.973Z",
+      "fetchedAt": "2026-04-09T20:16:25.677Z",
       "updatedAt": "2026-03-22T00:00:00.000Z",
       "firstSeenAt": "2026-03-22T00:00:00.000Z",
       "attributes": [
@@ -13962,7 +14949,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/uncefact/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-09T20:04:53.973Z",
+      "fetchedAt": "2026-04-09T20:16:25.677Z",
       "updatedAt": "2026-03-22T00:00:00.000Z",
       "firstSeenAt": "2026-03-22T00:00:00.000Z",
       "attributes": [
@@ -14725,7 +15712,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/uncefact/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-09T20:04:53.973Z",
+      "fetchedAt": "2026-04-09T20:16:25.677Z",
       "updatedAt": "2026-03-22T00:00:00.000Z",
       "firstSeenAt": "2026-03-22T00:00:00.000Z",
       "attributes": [
@@ -15558,7 +16545,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/uncefact/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-09T20:04:53.973Z",
+      "fetchedAt": "2026-04-09T20:16:25.677Z",
       "updatedAt": "2026-03-22T00:00:00.000Z",
       "firstSeenAt": "2026-03-22T00:00:00.000Z",
       "attributes": [
@@ -16040,7 +17027,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/uncefact/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-04-09T20:04:53.973Z",
+      "fetchedAt": "2026-04-09T20:16:25.677Z",
       "updatedAt": "2026-03-22T00:00:00.000Z",
       "firstSeenAt": "2026-03-22T00:00:00.000Z",
       "attributes": [
@@ -16488,25 +17475,25 @@
     }
   ],
   "stats": {
-    "totalCredentials": 82,
+    "totalCredentials": 91,
     "byFormat": {
       "sd_jwt_vc": 48,
       "mdoc": 20,
-      "vcdm_1_1": 1,
+      "vcdm_1_1": 10,
       "vcdm_2_0": 13
     },
     "bySubjectType": {
       "Person": 53,
-      "Organization": 13,
-      "Product": 3,
-      "Dataset": 0,
-      "Software": 0,
-      "Document": 13
+      "Organization": 16,
+      "Product": 4,
+      "Dataset": 1,
+      "Software": 1,
+      "Document": 16
     },
-    "withSchemaAttributes": 80,
+    "withSchemaAttributes": 89,
     "bySector": {
       "construction": 24,
-      "digital": 45,
+      "digital": 54,
       "education": 22,
       "finance": 31,
       "food": 24,
@@ -16523,6 +17510,7 @@
     "byEcosystem": {
       "eudi_wallet": 78,
       "iso_mdl": 1,
+      "gaia_x": 9,
       "swiyu": 1,
       "uncefact": 13
     },
@@ -16531,7 +17519,7 @@
       "person_identity": 47,
       "payments": 16,
       "compliance_reporting": 31,
-      "dataspaces": 10,
+      "dataspaces": 19,
       "agentic_ai": 8,
       "digital_product_passports": 10,
       "organizational_identity": 17,
