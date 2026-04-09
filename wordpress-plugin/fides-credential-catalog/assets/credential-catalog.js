@@ -61,6 +61,13 @@
     return LEGACY_SECTOR_TO_CANONICAL[t] || '';
   }
 
+  /** Canonical taxonomy theme code for ?theme= and data-taxonomy-theme (not UI color theme). */
+  function normalizeCredentialThemeCode(code) {
+    if (!code || typeof code !== 'string') return '';
+    const t = code.trim();
+    return Object.prototype.hasOwnProperty.call(THEME_LABELS, t) ? t : '';
+  }
+
   const ECOSYSTEM_LABELS = {
     eudi_wallet: 'EUDI Wallet',
     uncefact: 'UN/CEFACT',
@@ -1439,6 +1446,7 @@
         originalCredentialIds = [];
         const url = new URL(window.location.href);
         url.searchParams.delete('credentials');
+        url.searchParams.delete('theme');
         history.replaceState(null, '', url.toString());
         render();
       });
@@ -1690,6 +1698,12 @@
     if (sectorCode && Object.prototype.hasOwnProperty.call(SECTOR_LABELS, sectorCode)) {
       filters.sector = [sectorCode];
     }
+    const themeCode =
+      normalizeCredentialThemeCode(params.get("theme") || "") ||
+      normalizeCredentialThemeCode(root.dataset.taxonomyTheme || "");
+    if (themeCode) {
+      filters.theme = [themeCode];
+    }
   }
 
   async function loadVocabulary(primaryUrl, fallbackUrl) {
@@ -1836,11 +1850,11 @@
 
   async function init() {
     await loadCredentials();
+    openFromQueryParam();
     await Promise.all([loadRPUsage(), loadIssuerUsage()]);
     const primaryVocabUrl = config.vocabularyUrl || 'https://raw.githubusercontent.com/FIDEScommunity/fides-interop-profiles/main/data/vocabulary.json';
     const fallbackVocabUrl = config.vocabularyFallbackUrl || (config.pluginUrl ? config.pluginUrl + 'assets/vocabulary.json' : null);
     vocabulary = await loadVocabulary(primaryVocabUrl, fallbackVocabUrl);
-    openFromQueryParam();
     render();
   }
 

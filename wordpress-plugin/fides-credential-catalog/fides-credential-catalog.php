@@ -3,7 +3,7 @@
  * Plugin Name: FIDES Credential Catalog
  * Plugin URI: https://github.com/FIDEScommunity/fides-credential-catalog
  * Description: Display an interactive catalog of credentials with search and filters.
- * Version: 1.2.23
+ * Version: 1.2.27
  * Author: FIDES Community
  * Author URI: https://fides.community
  * License: Apache-2.0
@@ -14,7 +14,7 @@ if (!defined('ABSPATH')) {
     exit;
 }
 
-define('FIDES_CREDENTIAL_CATALOG_VERSION', '1.2.23');
+define('FIDES_CREDENTIAL_CATALOG_VERSION', '1.2.27');
 define('FIDES_CREDENTIAL_CATALOG_PLUGIN_DIR', plugin_dir_path(__FILE__));
 define('FIDES_CREDENTIAL_CATALOG_PLUGIN_URL', plugin_dir_url(__FILE__));
 
@@ -104,6 +104,37 @@ function fides_credential_catalog_enqueue_assets() {
 }
 add_action('wp_enqueue_scripts', 'fides_credential_catalog_enqueue_assets');
 
+/**
+ * Register catalog deep-link query vars (helps SEO plugins and canonical URL handling).
+ *
+ * @param string[] $vars Public query variables.
+ * @return string[]
+ */
+function fides_credential_catalog_query_vars($vars) {
+    foreach (array('theme', 'sector', 'credential', 'credentials') as $q) {
+        $vars[] = $q;
+    }
+    return $vars;
+}
+add_filter('query_vars', 'fides_credential_catalog_query_vars');
+
+/**
+ * Avoid redirect_canonical dropping FIDES catalog deep-link parameters (empty search in JS).
+ *
+ * @param string|false $redirect_url Computed canonical URL, or false.
+ * @return string|false
+ */
+function fides_credential_catalog_preserve_redirect_canonical($redirect_url) {
+    $keys = array('theme', 'credential', 'credentials');
+    foreach ($keys as $key) {
+        if (isset($_GET[$key]) && (string) $_GET[$key] !== '') {
+            return false;
+        }
+    }
+    return $redirect_url;
+}
+add_filter('redirect_canonical', 'fides_credential_catalog_preserve_redirect_canonical', 10, 1);
+
 function fides_credential_catalog_shortcode($atts) {
     $atts = shortcode_atts(array(
         'show_filters' => 'true',
@@ -111,6 +142,7 @@ function fides_credential_catalog_shortcode($atts) {
         'columns' => '3',
         'theme' => 'fides',
         'sector' => '',
+        'taxonomy_theme' => '',
     ), $atts, 'fides_credential_catalog');
 
     $show_filters = $atts['show_filters'] === 'true' ? 'true' : 'false';
@@ -118,14 +150,16 @@ function fides_credential_catalog_shortcode($atts) {
     $columns = in_array($atts['columns'], array('2', '3', '4')) ? $atts['columns'] : '3';
     $theme = in_array($atts['theme'], array('dark', 'light', 'fides')) ? $atts['theme'] : 'fides';
     $sector = sanitize_text_field((string) $atts['sector']);
+    $taxonomy_theme = sanitize_text_field((string) $atts['taxonomy_theme']);
 
     $html = sprintf(
-        '<div id="fides-credential-catalog-root" class="fides-credential-catalog" data-show-filters="%s" data-show-search="%s" data-columns="%s" data-theme="%s" data-sector="%s">',
+        '<div id="fides-credential-catalog-root" class="fides-credential-catalog" data-show-filters="%s" data-show-search="%s" data-columns="%s" data-theme="%s" data-sector="%s" data-taxonomy-theme="%s">',
         esc_attr($show_filters),
         esc_attr($show_search),
         esc_attr($columns),
         esc_attr($theme),
-        esc_attr($sector)
+        esc_attr($sector),
+        esc_attr($taxonomy_theme)
     );
     $html .= '<div class="fides-loading">Loading credentials...</div>';
     $html .= '</div>';
@@ -236,7 +270,7 @@ function fides_credential_catalog_settings_page() {
         <hr>
         <h2>Shortcode</h2>
         <code>[fides_credential_catalog]</code>
-        <p>Optional attributes: <code>show_filters</code>, <code>show_search</code>, <code>columns</code>, <code>theme</code>.</p>
+        <p>Optional attributes: <code>show_filters</code>, <code>show_search</code>, <code>columns</code>, <code>theme</code> (UI color), <code>sector</code>, <code>taxonomy_theme</code> (preset taxonomy filter; URL uses <code>?theme=</code>).</p>
     </div>
     <?php
 }
