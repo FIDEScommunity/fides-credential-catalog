@@ -9,6 +9,9 @@ export const SCHEMA_ATTRIBUTES_MAX_COUNT = 500;
 /** Synthetic path segment for array item object properties (`field/item/nested`). */
 export const ARRAY_ITEM_PATH_SEGMENT = "item";
 
+/** Guard deep `oneOf`/`anyOf` recursion (e.g. accidental cycles). */
+const PICK_EXPANDABLE_MAX_DEPTH = 32;
+
 function getTypeFromSchemaProperty(propertySchema: Record<string, unknown>): string {
   const type = propertySchema.type;
   if (typeof type === "string") return type;
@@ -52,6 +55,100 @@ function isObjectLikeWithProperties(propertySchema: Record<string, unknown>): bo
 function requiredStringSet(required: unknown): Set<string> {
   if (!Array.isArray(required)) return new Set();
   return new Set(required.filter((v): v is string => typeof v === "string"));
+}
+
+/**
+ * Resolve a JSON Pointer (fragment only, same document) against the schema root.
+ * Supports `#/$defs/X` and `#/definitions/X`.
+ */
+function resolveJsonPointer(root: Record<string, unknown>, pointer: string): unknown {
+  if (pointer === "#" || pointer === "") return root;
+  if (!pointer.startsWith("#")) return null;
+  const segments = pointer.slice(1).split("/").filter((s) => s.length > 0);
+  let cur: unknown = root;
+  for (const raw of segments) {
+    const seg = raw.replace(/~1/g, "/").replace(/~0/g, "~");
+    if (cur === null || typeof cur !== "object" || Array.isArray(cur)) return null;
+    cur = (cur as Record<string, unknown>)[seg];
+  }
+  return cur;
+}
+
+/**
+ * Follow in-document `$ref` chains (`#/…`) until a non-ref object or external/missing ref.
+ */
+function followRefChain(
+  root: Record<string, unknown>,
+  node: Record<string, unknown>,
+  visited: Set<string>
+): Record<string, unknown> {
+  let current = node;
+  for (;;) {
+    const ref = current.$ref;
+    if (typeof ref !== "string" || !ref.startsWith("#")) break;
+    if (visited.has(ref)) break;
+    visited.add(ref);
+    const next = resolveJsonPointer(root, ref);
+    if (!next || typeof next !== "object" || Array.isArray(next)) break;
+    current = next as Record<string, unknown>;
+  }
+  return current;
+}
+
+/**
+ * First object subschema in the same document that has a non-empty `properties` map
+ * (after resolving refs, and optionally picking among `oneOf` / `anyOf` branches).
+ * Used for Gaia-X-style `credentialSubject` and nested `$ref` / `oneOf` object shapes.
+ */
+function pickFirstExpandableObject(
+  root: Record<string, unknown>,
+  node: Record<string, unknown>,
+  depth = 0
+): Record<string, unknown> | null {
+  if (depth > PICK_EXPANDABLE_MAX_DEPTH) return null;
+  const derefed = followRefChain(root, node, new Set<string>());
+  if (isObjectLikeWithProperties(derefed)) return derefed;
+
+  const tryBranches = (branches: unknown[]): Record<string, unknown> | null => {
+    for (const br of branches) {
+      if (!br || typeof br !== "object" || Array.isArray(br)) continue;
+      const sub = pickFirstExpandableObject(root, br as Record<string, unknown>, depth + 1);
+      if (sub) return sub;
+    }
+    return null;
+  };
+
+  if (Array.isArray(derefed.oneOf)) {
+    const r = tryBranches(derefed.oneOf);
+    if (r) return r;
+  }
+  if (Array.isArray(derefed.anyOf)) {
+    const r = tryBranches(derefed.anyOf);
+    if (r) return r;
+  }
+
+  return null;
+}
+
+/**
+ * Resolve `credentialSubject` to the object schema whose `properties` are credential claims
+ * (inline VCDM, or `oneOf` + `#/$defs/…` as used by Gaia-X schemas).
+ */
+function resolveCredentialSubjectPropertySource(
+  root: Record<string, unknown>
+): { props: Record<string, unknown>; subjectRequired: Set<string> } | null {
+  const topProps = root.properties as Record<string, unknown> | undefined;
+  const cs = topProps?.credentialSubject as Record<string, unknown> | undefined;
+  if (!cs) return null;
+
+  const expanded = pickFirstExpandableObject(root, cs, 0);
+  if (expanded && isObjectLikeWithProperties(expanded)) {
+    return {
+      props: expanded.properties as Record<string, unknown>,
+      subjectRequired: requiredStringSet(expanded.required)
+    };
+  }
+  return null;
 }
 
 /**
@@ -156,7 +253,8 @@ function walkPropertyMap(
   pathPrefix: string[],
   parentRequired: Set<string>,
   out: EnrichedAttribute[],
-  limits: { maxDepth: number; maxRows: number }
+  limits: { maxDepth: number; maxRows: number },
+  schemaRoot: Record<string, unknown>
 ): void {
   if (pathPrefix.length >= limits.maxDepth || out.length >= limits.maxRows) return;
 
@@ -165,10 +263,11 @@ function walkPropertyMap(
     if (!value || typeof value !== "object" || Array.isArray(value)) continue;
 
     const propertySchema = value as Record<string, unknown>;
+    const displaySchema = followRefChain(schemaRoot, propertySchema, new Set<string>());
     const path = [...pathPrefix, key];
     if (path.length > limits.maxDepth) continue;
 
-    const implicitMap = implicitChildPropertyMap(propertySchema);
+    const implicitMap = implicitChildPropertyMap(displaySchema);
     const unwrapPropertiesKey = key === "properties" && implicitMap !== null;
 
     if (!unwrapPropertiesKey) {
@@ -176,22 +275,26 @@ function walkPropertyMap(
       const depth = path.length - 1;
       out.push({
         name: fullName,
-        type: getTypeFromSchemaProperty(propertySchema),
+        type: getTypeFromSchemaProperty(displaySchema),
         required: parentRequired.has(key),
         description:
-          typeof propertySchema.description === "string" ? propertySchema.description : undefined,
+          typeof displaySchema.description === "string" ? displaySchema.description : undefined,
         depth
       });
     }
 
     // Array of objects: recurse into items.properties under .../item/...
-    const types = propertySchema.type;
+    const types = displaySchema.type;
     const isArray =
       types === "array" || (Array.isArray(types) && types.includes("array"));
     if (isArray && out.length < limits.maxRows) {
-      const items = propertySchema.items;
+      const items = displaySchema.items;
       if (items && typeof items === "object" && !Array.isArray(items)) {
-        const itemSchema = items as Record<string, unknown>;
+        let itemSchema = followRefChain(schemaRoot, items as Record<string, unknown>, new Set<string>());
+        const itemExpandable = pickFirstExpandableObject(schemaRoot, items as Record<string, unknown>, 0);
+        if (itemExpandable && isObjectLikeWithProperties(itemExpandable)) {
+          itemSchema = itemExpandable;
+        }
         const itemBasePath = unwrapPropertiesKey ? pathPrefix : path;
         if (isObjectLikeWithProperties(itemSchema)) {
           const itemProps = itemSchema.properties as Record<string, unknown>;
@@ -201,7 +304,8 @@ function walkPropertyMap(
             [...itemBasePath, ARRAY_ITEM_PATH_SEGMENT],
             itemReq,
             out,
-            limits
+            limits,
+            schemaRoot
           );
         } else {
           const itemImplicit = implicitChildPropertyMap(itemSchema);
@@ -211,7 +315,8 @@ function walkPropertyMap(
               [...itemBasePath, ARRAY_ITEM_PATH_SEGMENT],
               new Set(),
               out,
-              limits
+              limits,
+              schemaRoot
             );
           }
         }
@@ -219,20 +324,25 @@ function walkPropertyMap(
     }
 
     if (unwrapPropertiesKey && implicitMap && out.length < limits.maxRows) {
-      walkPropertyMap(implicitMap, pathPrefix, new Set(), out, limits);
+      walkPropertyMap(implicitMap, pathPrefix, new Set(), out, limits, schemaRoot);
       continue;
     }
 
     if (implicitMap && !unwrapPropertiesKey && out.length < limits.maxRows) {
-      walkPropertyMap(implicitMap, path, new Set(), out, limits);
+      walkPropertyMap(implicitMap, path, new Set(), out, limits, schemaRoot);
       continue;
     }
 
-    // Nested object (standard JSON Schema)
-    if (isObjectLikeWithProperties(propertySchema) && out.length < limits.maxRows) {
-      const nestedProps = propertySchema.properties as Record<string, unknown>;
-      const nestedReq = requiredStringSet(propertySchema.required);
-      walkPropertyMap(nestedProps, path, nestedReq, out, limits);
+    // Nested object: inline properties, or same-document $ref / oneOf → object with properties
+    const expandable = pickFirstExpandableObject(schemaRoot, propertySchema, 0);
+    if (expandable && isObjectLikeWithProperties(expandable) && out.length < limits.maxRows) {
+      const nestedProps = expandable.properties as Record<string, unknown>;
+      const nestedReq = requiredStringSet(expandable.required);
+      walkPropertyMap(nestedProps, path, nestedReq, out, limits, schemaRoot);
+    } else if (isObjectLikeWithProperties(displaySchema) && out.length < limits.maxRows) {
+      const nestedProps = displaySchema.properties as Record<string, unknown>;
+      const nestedReq = requiredStringSet(displaySchema.required);
+      walkPropertyMap(nestedProps, path, nestedReq, out, limits, schemaRoot);
     }
   }
 }
@@ -243,24 +353,33 @@ function walkPropertyMap(
  */
 export function extractAttributesFromSchema(schemaData: Record<string, unknown>): EnrichedAttribute[] {
   const topProps = schemaData.properties as Record<string, unknown> | undefined;
+  if (!topProps || typeof topProps !== "object" || Array.isArray(topProps)) return [];
 
-  const credentialSubject = topProps?.credentialSubject as Record<string, unknown> | undefined;
-  const subjectProps = credentialSubject?.properties as Record<string, unknown> | undefined;
+  const credentialSubject = topProps.credentialSubject as Record<string, unknown> | undefined;
+  const subjectResolved = resolveCredentialSubjectPropertySource(schemaData);
 
-  const props = subjectProps ?? topProps;
+  let props: Record<string, unknown>;
+  let subjectLayerRequired: Set<string>;
+
+  if (subjectResolved) {
+    props = subjectResolved.props;
+    subjectLayerRequired = subjectResolved.subjectRequired;
+  } else {
+    props = topProps;
+    subjectLayerRequired = credentialSubject ? requiredStringSet(credentialSubject.required) : new Set();
+  }
+
   if (!props || typeof props !== "object" || Array.isArray(props)) return [];
 
-  const rootRequired = schemaData.required;
-  const subjectRequired = credentialSubject?.required;
   const requiredSet = new Set<string>([
-    ...requiredStringSet(rootRequired),
-    ...requiredStringSet(subjectRequired)
+    ...requiredStringSet(schemaData.required),
+    ...subjectLayerRequired
   ]);
 
   const out: EnrichedAttribute[] = [];
   walkPropertyMap(props, [], requiredSet, out, {
     maxDepth: SCHEMA_ATTRIBUTES_MAX_DEPTH,
     maxRows: SCHEMA_ATTRIBUTES_MAX_COUNT
-  });
+  }, schemaData);
   return out;
 }
