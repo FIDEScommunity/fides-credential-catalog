@@ -80,7 +80,7 @@
   ],
   "$id": "https://eudi.example.org/schemas/ehic-sd-jwt-vc.schema.json",
   "title": "EHIC (SD-JWT VC)",
-  "description": "EUDI Wallet credential: EHIC (SD-JWT VC). Schema generated from issuer metadata.",
+  "description": "A verifiable credential representing the European Health Insurance Card (EHIC), used to prove entitlement to medically necessary healthcare during a temporary stay in another European country.",
   "vct": "urn:eudi:ehic:1",
   "$comment": "This schema was automatically generated from EUDI issuer metadata and may be provisional or incomplete."
 }
