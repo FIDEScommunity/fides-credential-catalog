@@ -67,7 +67,7 @@
   ],
   "$id": "https://eudi.example.org/schemas/msisdn-sd-jwt-vc.schema.json",
   "title": "MSISDN (SD-JWT VC)",
-  "description": "EUDI Wallet credential: MSISDN (SD-JWT VC). Schema generated from issuer metadata.",
+  "description": "A verifiable credential representing a mobile phone number (MSISDN — Mobile Station International Subscriber Directory Number), used to prove control over a phone number for authentication and communication purposes.",
   "vct": "urn:eu.europa.ec.eudi:msisdn:1",
   "$comment": "This schema was automatically generated from EUDI issuer metadata and may be provisional or incomplete."
 }
