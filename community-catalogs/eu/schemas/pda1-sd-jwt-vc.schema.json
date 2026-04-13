@@ -236,7 +236,7 @@
   ],
   "$id": "https://eudi.example.org/schemas/pda1-sd-jwt-vc.schema.json",
   "title": "PDA1 (SD-JWT VC)",
-  "description": "EUDI Wallet credential: PDA1 (SD-JWT VC). Schema generated from issuer metadata.",
+  "description": "A verifiable credential representing the EU PDA1 certificate, used to prove that an employee remains covered by their home country’s social security system when working across borders.",
   "vct": "urn:eu.europa.ec.eudi:pda1:1",
   "$comment": "This schema was automatically generated from EUDI issuer metadata and may be provisional or incomplete."
 }
