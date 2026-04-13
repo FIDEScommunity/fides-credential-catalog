@@ -59,7 +59,7 @@
   "additionalProperties": true,
   "$id": "https://eudi.example.org/schemas/ehic-mdoc.schema.json",
   "title": "EHIC (MSO Mdoc)",
-  "description": "EUDI Wallet credential: EHIC (MSO Mdoc). Schema generated from issuer metadata.",
+  "description": "A verifiable credential representing the European Health Insurance Card (EHIC), used to prove entitlement to medically necessary healthcare during a temporary stay in another European country.",
   "docType": "eu.europa.ec.eudi.ehic.1",
   "$comment": "This schema was automatically generated from EUDI issuer metadata and may be provisional or incomplete."
 }
