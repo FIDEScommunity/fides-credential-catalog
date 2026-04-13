@@ -62,7 +62,7 @@
   "additionalProperties": true,
   "$id": "https://eudi.example.org/schemas/msisdn-mdoc.schema.json",
   "title": "MSISDN (MSO Mdoc)",
-  "description": "EUDI Wallet credential: MSISDN (MSO Mdoc). Schema generated from issuer metadata.",
+  "description": "A verifiable credential representing a mobile phone number (MSISDN — Mobile Station International Subscriber Directory Number), used to prove control over a phone number for authentication and communication purposes.",
   "docType": "eu.europa.ec.eudi.msisdn.1",
   "$comment": "This schema was automatically generated from EUDI issuer metadata and may be provisional or incomplete."
 }
