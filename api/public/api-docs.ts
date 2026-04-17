@@ -32,10 +32,53 @@ const OPENAPI_SPEC_BASE = {
       name: "Fides Credential Catalog",
       email: "catalog@fides.community",
     },
-    version: "2.2",
+    version: "2.3",
   },
   tags: [{ name: "Search API", description: "Search in the catalog" }],
   paths: {
+    "/api/public/credentialtype/{id}": {
+      get: {
+        tags: ["Search API"],
+        summary: "Get one credential type by catalog id",
+        operationId: "getById",
+        parameters: [
+          {
+            name: "id",
+            in: "path",
+            required: true,
+            description:
+              "Catalog credential id (URL-encoded when it contains reserved characters, e.g. cred:…)",
+            schema: { type: "string" },
+          },
+        ],
+        responses: {
+          "200": {
+            description: "OK",
+            content: {
+              "application/json": {
+                schema: { $ref: "#/components/schemas/CredentialTypeDto" },
+              },
+            },
+          },
+          "404": {
+            description: "Not found",
+            content: {
+              "application/json": {
+                schema: { $ref: "#/components/schemas/ErrorMessage" },
+              },
+            },
+          },
+          "500": {
+            description: "Internal Server Error",
+            content: {
+              "application/json": {
+                schema: { $ref: "#/components/schemas/ErrorMessage" },
+              },
+            },
+          },
+        },
+      },
+    },
     "/api/public/credentialtype": {
       get: {
         tags: ["Search API"],

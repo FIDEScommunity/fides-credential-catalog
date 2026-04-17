@@ -7,6 +7,11 @@
 import type { VercelRequest, VercelResponse } from "@vercel/node";
 import { readFile } from "fs/promises";
 import { join } from "path";
+import {
+  subjectTypeToCredentialKind,
+  toCredentialTypeDto,
+  type AggregatedCatalog,
+} from "../../lib/credentialTypeDto";
 
 const CREDENTIAL_KIND = ["PERSONAL", "ORGANIZATIONAL", "PRODUCT", "UNKNOWN"] as const;
 type CredentialKind = (typeof CREDENTIAL_KIND)[number];
@@ -50,49 +55,10 @@ const THEME_CODES = [
   "agentic_ai",
 ] as const;
 
-function subjectTypeToCredentialKind(subjectType: string): CredentialKind {
-  const s = String(subjectType || "").trim();
-  if (s === "Person") return "PERSONAL";
-  if (s === "Organization") return "ORGANIZATIONAL";
-  if (s === "Product") return "PRODUCT";
-  return "UNKNOWN";
-}
-
-interface AggregatedCatalog {
-  credentials: Array<{
-    id: string;
-    displayName?: string;
-    shortDescription?: string;
-    subjectType?: string;
-    vcFormat?: string;
-    schemaUrl?: string;
-    rulebookUrl?: string;
-    updatedAt?: string;
-    sectors?: string[];
-    ecosystems?: string[];
-    themes?: string[];
-  }>;
-}
-
 function arraysOverlap(selected: string[], values: string[] | undefined): boolean {
   if (selected.length === 0) return true;
   const set = new Set(values ?? []);
   return selected.some((x) => set.has(x));
-}
-
-/** CredentialTypeDto: only fields we have; issuer fields omitted. */
-function toCredentialTypeDto(c: AggregatedCatalog["credentials"][0]): Record<string, unknown> {
-  const dto: Record<string, unknown> = {};
-  dto.id = c.id;
-  dto.credentialKind = subjectTypeToCredentialKind(c.subjectType || "");
-  dto.sectors = Array.isArray(c.sectors) ? [...c.sectors] : [];
-  dto.ecosystems = Array.isArray(c.ecosystems) ? [...c.ecosystems] : [];
-  dto.themes = Array.isArray(c.themes) ? [...c.themes] : [];
-  if (c.vcFormat) dto.credentialFormat = c.vcFormat;
-  if (c.schemaUrl) dto.schemaUrl = c.schemaUrl;
-  if (c.shortDescription) dto.schemaInfo = c.shortDescription;
-  if (c.rulebookUrl) dto.trustFrameworkUrl = c.rulebookUrl;
-  return dto;
 }
 
 function parseQueryArray(q: unknown): string[] {
