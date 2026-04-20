@@ -2,8 +2,8 @@
 /**
  * Plugin Name: FIDES Credential Catalog
  * Plugin URI: https://github.com/FIDEScommunity/fides-credential-catalog
- * Description: Display an interactive catalog of credentials with search and filters.
- * Version: 1.2.27
+ * Description: Display an interactive catalog of credentials with search and filters. When the master fides_catalog_ssr_enabled flag (provided by FIDES Community Tools Tiles ≥ 1.6.3) is enabled, the plugin also emits a server-rendered listing fallback, per-deeplink SEO meta tags and a DigitalDocument JSON-LD payload so credential detail URLs become indexable by search engines.
+ * Version: 1.3.0
  * Author: FIDES Community
  * Author URI: https://fides.community
  * License: Apache-2.0
@@ -14,9 +14,12 @@ if (!defined('ABSPATH')) {
     exit;
 }
 
-define('FIDES_CREDENTIAL_CATALOG_VERSION', '1.2.27');
+define('FIDES_CREDENTIAL_CATALOG_VERSION', '1.3.0');
 define('FIDES_CREDENTIAL_CATALOG_PLUGIN_DIR', plugin_dir_path(__FILE__));
 define('FIDES_CREDENTIAL_CATALOG_PLUGIN_URL', plugin_dir_url(__FILE__));
+
+require_once FIDES_CREDENTIAL_CATALOG_PLUGIN_DIR . 'includes/class-fides-credential-catalog-ssr.php';
+Fides_Credential_Catalog_SSR::bootstrap();
 
 /**
  * Detect if the site is running on a .local or localhost URL (local dev).
@@ -152,19 +155,31 @@ function fides_credential_catalog_shortcode($atts) {
     $sector = sanitize_text_field((string) $atts['sector']);
     $taxonomy_theme = sanitize_text_field((string) $atts['taxonomy_theme']);
 
-    $html = sprintf(
-        '<div id="fides-credential-catalog-root" class="fides-credential-catalog" data-show-filters="%s" data-show-search="%s" data-columns="%s" data-theme="%s" data-sector="%s" data-taxonomy-theme="%s">',
+    $initial_html = '';
+    if (class_exists('Fides_Credential_Catalog_SSR')) {
+        $initial_html = Fides_Credential_Catalog_SSR::build_initial_html(array(
+            'show_filters'   => $show_filters,
+            'show_search'    => $show_search,
+            'columns'        => $columns,
+            'theme'          => $theme,
+            'sector'         => $sector,
+            'taxonomy_theme' => $taxonomy_theme,
+        ));
+    }
+    if ($initial_html === '') {
+        $initial_html = '<div class="fides-loading">Loading credentials...</div>';
+    }
+
+    return sprintf(
+        '<div id="fides-credential-catalog-root" class="fides-credential-catalog" data-show-filters="%s" data-show-search="%s" data-columns="%s" data-theme="%s" data-sector="%s" data-taxonomy-theme="%s">%s</div>',
         esc_attr($show_filters),
         esc_attr($show_search),
         esc_attr($columns),
         esc_attr($theme),
         esc_attr($sector),
-        esc_attr($taxonomy_theme)
+        esc_attr($taxonomy_theme),
+        $initial_html
     );
-    $html .= '<div class="fides-loading">Loading credentials...</div>';
-    $html .= '</div>';
-
-    return $html;
 }
 add_shortcode('fides_credential_catalog', 'fides_credential_catalog_shortcode');
 
