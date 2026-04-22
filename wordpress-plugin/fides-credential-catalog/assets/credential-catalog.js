@@ -363,6 +363,19 @@
     return value;
   }
 
+  /** When labels/native keys collide (e.g. EU vs ISO mDL), prefer ISO catalog ids so RP label fallback does not double-count RPs on the EU duplicate row. */
+  function pickCredentialIdForLookupKey(existingId, nextId) {
+    if (!existingId) return nextId;
+    if (!nextId) return existingId;
+    const exIso = existingId.startsWith("cred:iso:");
+    const nxIso = nextId.startsWith("cred:iso:");
+    const exEu = existingId.startsWith("cred:eu:");
+    const nxEu = nextId.startsWith("cred:eu:");
+    if (nxIso && exEu) return nextId;
+    if (exIso && nxEu) return existingId;
+    return existingId;
+  }
+
   function buildCredentialLookupMap() {
     const lookup = new Map();
     for (const credential of credentials) {
@@ -375,9 +388,9 @@
       ];
       for (const candidate of candidateKeys) {
         const key = normalizeCredentialKey(candidate);
-        if (key && !lookup.has(key)) {
-          lookup.set(key, credential.id);
-        }
+        if (!key) continue;
+        const chosen = pickCredentialIdForLookupKey(lookup.get(key), credential.id);
+        lookup.set(key, chosen);
       }
     }
     return lookup;
@@ -485,9 +498,9 @@
       // Build a lookup from nativeIdentifier → credential.id for vct-based fallback matching
       const vctToCredentialId = new Map();
       for (const cred of credentials) {
-        if (cred.nativeIdentifier) {
-          vctToCredentialId.set(cred.nativeIdentifier, cred.id);
-        }
+        if (!cred.nativeIdentifier) continue;
+        const prev = vctToCredentialId.get(cred.nativeIdentifier);
+        vctToCredentialId.set(cred.nativeIdentifier, pickCredentialIdForLookupKey(prev, cred.id));
       }
 
       const map = new Map();
