@@ -39,7 +39,7 @@ export function toCredentialTypeDto(
   dto.sectors = Array.isArray(c.sectors) ? [...c.sectors] : [];
   dto.ecosystems = Array.isArray(c.ecosystems) ? [...c.ecosystems] : [];
   dto.themes = Array.isArray(c.themes) ? [...c.themes] : [];
-  if (c.vcFormat) dto.credentialFormat = c.vcFormat;
+  if (c.vcFormat) dto.vcFormat = c.vcFormat;
   if (c.schemaUrl) dto.schemaUrl = c.schemaUrl;
   if (c.shortDescription) dto.schemaInfo = c.shortDescription;
   if (c.rulebookUrl) dto.trustFrameworkUrl = c.rulebookUrl;

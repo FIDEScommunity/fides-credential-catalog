@@ -92,7 +92,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     const credentialKind = parseQueryArray(req.query.credentialKind).filter((k) =>
       CREDENTIAL_KIND.includes(k as CredentialKind)
     );
-    const credentialFormat = parseQueryArray(req.query.credentialFormat);
+    const vcFormat = parseQueryArray(req.query.vcFormat);
     const sectorFilter = parseQueryArray(req.query.sector).filter((s) =>
       SECTOR_CODES.includes(s as (typeof SECTOR_CODES)[number])
     );
@@ -107,8 +107,8 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
       const kindSet = new Set(credentialKind);
       list = list.filter((c) => kindSet.has(subjectTypeToCredentialKind(c.subjectType || "")));
     }
-    if (credentialFormat.length > 0) {
-      const formatSet = new Set(credentialFormat);
+    if (vcFormat.length > 0) {
+      const formatSet = new Set(vcFormat);
       list = list.filter((c) => c.vcFormat && formatSet.has(c.vcFormat));
     }
     if (sectorFilter.length > 0) {
@@ -127,7 +127,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
       const [field, dir] = sortStr.split(",").map((s) => s.trim());
       const asc = (dir || "asc").toLowerCase() !== "desc";
       const key =
-        field === "credentialFormat"
+        field === "vcFormat" || field === "credentialFormat"
           ? "vcFormat"
           : field === "credentialKind"
             ? "subjectType"

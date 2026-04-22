@@ -9,10 +9,14 @@ export type SubjectType =
 export type VCFormat =
   | "sd_jwt_vc"
   | "mdoc"
+  | "jwt_vc"
   | "vcdm_1_1"
   | "vcdm_2_0"
-  | "acdc"
-  | "other";
+  | "anoncreds"
+  | "idemix"
+  | "apple_wallet_pass"
+  | "google_wallet_pass"
+  | "acdc";
 
 /** Same values as OrganizationSectorCode in organization-catalog.schema.json (keep in sync). */
 export type CredentialSectorCode =

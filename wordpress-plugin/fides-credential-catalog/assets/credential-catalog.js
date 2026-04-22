@@ -6,10 +6,16 @@
   if (!root) return;
 
   const VC_FORMAT_LABELS = {
-    'sd_jwt_vc': 'SD-JWT VC',
-    'vcdm_1_1':  'JWT-VC',
-    'vcdm_2_0':  'JSON-LD VC',
-    'mdoc':      'mDL/mDoc',
+    sd_jwt_vc: "SD-JWT VC",
+    mdoc: "ISO mDoc",
+    jwt_vc: "JWT VC",
+    vcdm_1_1: "VCDM1.1",
+    vcdm_2_0: "VCDM2.0",
+    anoncreds: "AnonCreds",
+    idemix: "Idemix",
+    apple_wallet_pass: "Apple Wallet Pass",
+    google_wallet_pass: "Google Wallet Pass",
+    acdc: "ACDC",
   };
 
   /** Same codes as organization catalog (English labels). */
@@ -102,7 +108,7 @@
     sector:      'sector',
     ecosystem:   'ecosystem',
     theme:       'credentialTheme',
-    vcFormat:    'credentialFormat',
+    vcFormat:    'vcFormat',
     subjectType: 'subjectType',
     authority:   'authority',
     schemaType:  'schemaType',

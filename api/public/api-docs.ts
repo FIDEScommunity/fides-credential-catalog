@@ -95,7 +95,7 @@ const OPENAPI_SPEC_BASE = {
             },
           },
           {
-            name: "credentialFormat",
+            name: "vcFormat",
             in: "query",
             required: false,
             schema: { type: "array", items: { type: "string" } },
@@ -222,7 +222,11 @@ const OPENAPI_SPEC_BASE = {
             enum: ["PERSONAL", "ORGANIZATIONAL", "PRODUCT", "UNKNOWN"],
             description: "Mapped from subjectType",
           },
-          credentialFormat: { type: "string", description: "VC format (e.g. sd_jwt_vc)" },
+          vcFormat: {
+            type: "string",
+            description:
+              "VC format code: sd_jwt_vc, mdoc, jwt_vc, vcdm_1_1, vcdm_2_0, anoncreds, idemix, apple_wallet_pass, google_wallet_pass, acdc",
+          },
           schemaUrl: { type: "string", format: "uri" },
           schemaInfo: { type: "string", description: "Short description" },
           trustFrameworkUrl: { type: "string", format: "uri", description: "Rulebook URL when present" },

@@ -206,7 +206,7 @@ Source entries support the following fields:
 | `displayName` | ✅ | Human-readable credential name |
 | `authority` | ✅ | Issuing authority (name + optional URL) |
 | `subjectType` | ✅ | `Person`, `Organization`, `Product`, `Dataset`, `Software`, or `Document` |
-| `vcFormat` | ✅ | `sd_jwt_vc`, `mdoc`, `vcdm_1_1`, `vcdm_2_0`, `acdc`, or `other` |
+| `vcFormat` | ✅ | `sd_jwt_vc`, `mdoc`, `jwt_vc`, `vcdm_1_1`, `vcdm_2_0`, `anoncreds`, `idemix`, `apple_wallet_pass`, `google_wallet_pass`, `acdc` |
 | `version` | ✅ | Version string (e.g. `"1.0"`) |
 | `schemaUrl` | ✅ | URL to the credential schema |
 | `schemaType` | ✅ | `JSON Schema`, `JSON-LD Context`, `ISO Data Model`, `ACDC Schema`, or `Other` |
