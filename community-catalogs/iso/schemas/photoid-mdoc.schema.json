@@ -117,9 +117,9 @@
     }
   },
   "additionalProperties": true,
-  "$id": "https://eudi.example.org/schemas/photoid-mdoc.schema.json",
+  "$id": "https://raw.githubusercontent.com/FIDEScommunity/fides-credential-catalog/main/community-catalogs/iso/schemas/photoid-mdoc.schema.json",
   "title": "Photo ID (MSO Mdoc)",
-  "description": "EUDI Wallet credential: Photo ID (MSO Mdoc). Schema generated from issuer metadata.",
+  "description": "ISO/IEC 23220-2 Photo ID mDoc attribute map. Schema derived from issuer metadata.",
   "docType": "org.iso.23220.2.photoid.1",
-  "$comment": "This schema was automatically generated from EUDI issuer metadata and may be provisional or incomplete."
+  "$comment": "Originally generated from EUDI issuer metadata; canonical path for the ISO catalog entry."
 }

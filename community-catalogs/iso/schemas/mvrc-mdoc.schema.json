@@ -1,9 +1,9 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$comment": "This schema was automatically generated from EUDI issuer metadata and may be provisional or incomplete.",
-  "$id": "https://eudi.example.org/schemas/mvrc-mdoc.schema.json",
+  "$comment": "Originally generated from EUDI issuer metadata; canonical path for the ISO catalog entry.",
+  "$id": "https://raw.githubusercontent.com/FIDEScommunity/fides-credential-catalog/main/community-catalogs/iso/schemas/mvrc-mdoc.schema.json",
   "title": "Vehicle Registration Certificate (MSO Mdoc)",
-  "description": "ISO 7367 / EUDI Wallet credential: Mobile Vehicle Registration Certificate (mVRC). Contains vehicle and owner registration data.",
+  "description": "ISO 7367 Mobile Vehicle Registration Certificate (mVRC). Contains vehicle and owner registration data.",
   "type": "object",
   "properties": {
     "org.iso.7367.1.mVRC": {

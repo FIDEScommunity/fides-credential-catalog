@@ -67,9 +67,9 @@
     }
   },
   "additionalProperties": true,
-  "$id": "https://eudi.example.org/schemas/reservation-mdoc.schema.json",
+  "$id": "https://raw.githubusercontent.com/FIDEScommunity/fides-credential-catalog/main/community-catalogs/iso/schemas/reservation-mdoc.schema.json",
   "title": "Reservation",
-  "description": "EUDI Wallet credential: Reservation. Schema generated from issuer metadata.",
+  "description": "ISO/IEC 18013-5 reservation mDoc attribute map. Schema derived from issuer metadata.",
   "docType": "org.iso.18013.5.1.reservation",
-  "$comment": "This schema was automatically generated from EUDI issuer metadata and may be provisional or incomplete."
+  "$comment": "Originally generated from EUDI issuer metadata; canonical path for the ISO catalog entry."
 }
