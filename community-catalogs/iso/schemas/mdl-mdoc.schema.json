@@ -150,9 +150,9 @@
     }
   },
   "additionalProperties": true,
-  "$id": "https://eudi.example.org/schemas/mdl-mdoc.schema.json",
+  "$id": "https://raw.githubusercontent.com/FIDEScommunity/fides-credential-catalog/main/community-catalogs/iso/schemas/mdl-mdoc.schema.json",
   "title": "mDL (MSO Mdoc)",
-  "description": "EUDI Wallet credential: mDL (MSO Mdoc). Schema generated from issuer metadata.",
+  "description": "ISO/IEC 18013-5 Mobile Driving Licence (mDoc). Schema derived from issuer metadata.",
   "docType": "org.iso.18013.5.1.mDL",
-  "$comment": "This schema was automatically generated from EUDI issuer metadata and may be provisional or incomplete."
+  "$comment": "Originally generated from EUDI issuer metadata; maintained as the canonical mDL attribute map for the ISO catalog entry."
 }
