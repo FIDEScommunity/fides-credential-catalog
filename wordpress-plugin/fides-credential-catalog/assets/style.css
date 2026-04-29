@@ -3000,7 +3000,7 @@ a.fides-eco-tag-purple:hover {
  */
 .fides-credential-list-header,
 .fides-credential-grid[data-view="list"] .fides-credential-card {
-  grid-template-columns: 32px 2fr 1.5fr 0.65fr 44px 44px minmax(90px, 120px);
+  grid-template-columns: 32px 2fr 1.9fr 0.65fr 44px 44px minmax(78px, 98px);
   gap: 0.75rem;
   padding: 0.625rem 1rem;
 }

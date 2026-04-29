@@ -813,7 +813,15 @@
     const activityLabel = isWithinLastDays(credential.firstSeenAt, 30)
       ? formatDateLabel(credential.firstSeenAt, "Added")
       : formatDateLabel(credential.updatedAt, "Updated");
-    return { issuerCount, rpCount, activityLabel };
+    let activityDateLabel = "";
+    if (isWithinLastDays(credential.firstSeenAt, 30)) {
+      activityDateLabel = toDate(credential.firstSeenAt)?.toLocaleDateString("en-US") || "";
+    } else {
+      activityDateLabel = toDate(credential.updatedAt)?.toLocaleDateString("en-US")
+        || toDate(credential.firstSeenAt)?.toLocaleDateString("en-US")
+        || "";
+    }
+    return { issuerCount, rpCount, activityLabel, activityDateLabel };
   }
 
   /**
@@ -847,7 +855,7 @@
    *               and .fides-credential-grid[data-view="list"] .fides-credential-card
    */
   function renderCredentialRow(credential) {
-    const { issuerCount, rpCount, activityLabel } = getCredentialDisplayData(credential);
+    const { issuerCount, rpCount, activityDateLabel } = getCredentialDisplayData(credential);
     return `
       <article class="fides-credential-card" data-credential-id="${escapeHtml(credential.id)}" role="button" tabindex="0">
         <div class="fides-row-icon" aria-hidden="true" title="${escapeHtml(credential.subjectType || 'Document')}">
@@ -863,7 +871,7 @@
         <div class="fides-row-format">${escapeHtml(vcFormatDisplayLabel(credential.vcFormat))}</div>
         <div class="fides-row-count" title="${issuerCount} ${issuerCount === 1 ? 'issuer' : 'issuers'}">${issuerCount}</div>
         <div class="fides-row-count" title="${rpCount} ${rpCount === 1 ? 'relying party' : 'relying parties'}">${rpCount}</div>
-        <div class="fides-row-updated">${escapeHtml(activityLabel || '—')}</div>
+        <div class="fides-row-updated">${escapeHtml(activityDateLabel || '—')}</div>
       </article>
     `;
   }
