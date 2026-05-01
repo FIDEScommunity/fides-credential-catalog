@@ -167,6 +167,20 @@ const OPENAPI_SPEC_BASE = {
             },
           },
           {
+            name: "tags",
+            in: "query",
+            required: false,
+            description: "Free text filter over credential tags (case-insensitive, partial match).",
+            schema: { type: "string" },
+          },
+          {
+            name: "authority",
+            in: "query",
+            required: false,
+            description: "Free text filter over credential authority name (case-insensitive, partial match).",
+            schema: { type: "string" },
+          },
+          {
             name: "page",
             in: "query",
             description: "Zero-based page index (0..N)",
@@ -222,6 +236,10 @@ const OPENAPI_SPEC_BASE = {
             enum: ["PERSONAL", "ORGANIZATIONAL", "PRODUCT", "UNKNOWN"],
             description: "Mapped from subjectType",
           },
+          authority: {
+            type: "string",
+            description: "Credential authority name",
+          },
           vcFormat: {
             type: "string",
             description:
@@ -230,6 +248,11 @@ const OPENAPI_SPEC_BASE = {
           schemaUrl: { type: "string", format: "uri" },
           schemaInfo: { type: "string", description: "Short description" },
           trustFrameworkUrl: { type: "string", format: "uri", description: "Rulebook URL when present" },
+          tags: {
+            type: "array",
+            items: { type: "string" },
+            description: "Free-form credential tags (empty array when not set in catalog)",
+          },
           sectors: {
             type: "array",
             items: {

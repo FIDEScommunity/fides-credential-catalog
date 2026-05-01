@@ -10,11 +10,13 @@ export interface AggregatedCatalog {
     id: string;
     displayName?: string;
     shortDescription?: string;
+    authority?: { name?: string; url?: string };
     subjectType?: string;
     vcFormat?: string;
     schemaUrl?: string;
     rulebookUrl?: string;
     updatedAt?: string;
+    tags?: string[];
     sectors?: string[];
     ecosystems?: string[];
     themes?: string[];
@@ -36,6 +38,10 @@ export function toCredentialTypeDto(
   const dto: Record<string, unknown> = {};
   dto.id = c.id;
   dto.credentialKind = subjectTypeToCredentialKind(c.subjectType || "");
+  if (typeof c.authority?.name === "string" && c.authority.name.length) {
+    dto.authority = c.authority.name;
+  }
+  dto.tags = Array.isArray(c.tags) ? [...c.tags] : [];
   dto.sectors = Array.isArray(c.sectors) ? [...c.sectors] : [];
   dto.ecosystems = Array.isArray(c.ecosystems) ? [...c.ecosystems] : [];
   dto.themes = Array.isArray(c.themes) ? [...c.themes] : [];

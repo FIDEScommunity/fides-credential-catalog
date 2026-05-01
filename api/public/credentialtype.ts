@@ -73,6 +73,14 @@ function parseQueryNumber(q: unknown, defaultVal: number): number {
   return Number.isFinite(n) ? Math.max(0, Math.floor(n)) : defaultVal;
 }
 
+function parseQueryText(q: unknown): string | undefined {
+  if (q == null) return undefined;
+  const val = Array.isArray(q) ? q[0] : q;
+  if (typeof val !== "string") return undefined;
+  const text = val.trim();
+  return text.length ? text.toLowerCase() : undefined;
+}
+
 export default async function handler(req: VercelRequest, res: VercelResponse) {
   if (req.method !== "GET") {
     res.setHeader("Allow", "GET");
@@ -102,6 +110,8 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     const themeFilter = parseQueryArray(req.query.theme).filter((t) =>
       THEME_CODES.includes(t as (typeof THEME_CODES)[number])
     );
+    const tagsFilter = parseQueryText(req.query.tags);
+    const authorityFilter = parseQueryText(req.query.authority);
 
     if (credentialKind.length > 0) {
       const kindSet = new Set(credentialKind);
@@ -119,6 +129,21 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     }
     if (themeFilter.length > 0) {
       list = list.filter((c) => arraysOverlap(themeFilter, c.themes));
+    }
+    if (tagsFilter) {
+      list = list.filter((c) =>
+        Array.isArray(c.tags)
+          ? c.tags.some((tag) => typeof tag === "string" && tag.toLowerCase().includes(tagsFilter))
+          : false
+      );
+    }
+    if (authorityFilter) {
+      list = list.filter((c) => {
+        const authorityName = c.authority?.name;
+        return typeof authorityName === "string"
+          ? authorityName.toLowerCase().includes(authorityFilter)
+          : false;
+      });
     }
 
     const sortParam = req.query.sort;
