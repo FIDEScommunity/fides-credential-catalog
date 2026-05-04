@@ -211,6 +211,7 @@ function calculateStats(credentials: NormalizedCredential[]): AggregatedCredenti
   const bySector: Record<string, number> = {};
   const byEcosystem: Record<string, number> = {};
   const byTheme: Record<string, number> = {};
+  const byCategory: Record<string, number> = {};
   let withSchemaAttributes = 0;
 
   for (const credential of credentials) {
@@ -226,6 +227,10 @@ function calculateStats(credentials: NormalizedCredential[]): AggregatedCredenti
     for (const t of credential.themes || []) {
       byTheme[t] = (byTheme[t] || 0) + 1;
     }
+    const category = credential.category;
+    if (category) {
+      byCategory[category] = (byCategory[category] || 0) + 1;
+    }
   }
 
   return {
@@ -235,7 +240,8 @@ function calculateStats(credentials: NormalizedCredential[]): AggregatedCredenti
     withSchemaAttributes,
     bySector,
     byEcosystem,
-    byTheme
+    byTheme,
+    byCategory
   };
 }
 

@@ -55,6 +55,17 @@ const THEME_CODES = [
   "agentic_ai",
 ] as const;
 
+const CATEGORY_CODES = [
+  "identity",
+  "business",
+  "finance",
+  "health",
+  "travel",
+  "professional",
+  "compliance",
+  "trade",
+] as const;
+
 function arraysOverlap(selected: string[], values: string[] | undefined): boolean {
   if (selected.length === 0) return true;
   const set = new Set(values ?? []);
@@ -110,6 +121,9 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     const themeFilter = parseQueryArray(req.query.theme).filter((t) =>
       THEME_CODES.includes(t as (typeof THEME_CODES)[number])
     );
+    const categoryFilter = parseQueryArray(req.query.category).filter((c) =>
+      CATEGORY_CODES.includes(c as (typeof CATEGORY_CODES)[number])
+    );
     const tagsFilter = parseQueryText(req.query.tags);
     const authorityFilter = parseQueryText(req.query.authority);
 
@@ -129,6 +143,10 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     }
     if (themeFilter.length > 0) {
       list = list.filter((c) => arraysOverlap(themeFilter, c.themes));
+    }
+    if (categoryFilter.length > 0) {
+      const categorySet = new Set(categoryFilter);
+      list = list.filter((c) => typeof c.category === "string" && categorySet.has(c.category));
     }
     if (tagsFilter) {
       list = list.filter((c) =>

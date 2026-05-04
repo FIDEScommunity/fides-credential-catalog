@@ -4,6 +4,17 @@
 
 const CREDENTIAL_KIND = ["PERSONAL", "ORGANIZATIONAL", "PRODUCT", "UNKNOWN"] as const;
 export type CredentialKind = (typeof CREDENTIAL_KIND)[number];
+const CREDENTIAL_CATEGORIES = [
+  "identity",
+  "business",
+  "finance",
+  "health",
+  "travel",
+  "professional",
+  "compliance",
+  "trade",
+] as const;
+type CredentialCategory = (typeof CREDENTIAL_CATEGORIES)[number];
 
 export interface AggregatedCatalog {
   credentials: Array<{
@@ -20,6 +31,7 @@ export interface AggregatedCatalog {
     sectors?: string[];
     ecosystems?: string[];
     themes?: string[];
+    category?: string;
   }>;
 }
 
@@ -45,6 +57,12 @@ export function toCredentialTypeDto(
   dto.sectors = Array.isArray(c.sectors) ? [...c.sectors] : [];
   dto.ecosystems = Array.isArray(c.ecosystems) ? [...c.ecosystems] : [];
   dto.themes = Array.isArray(c.themes) ? [...c.themes] : [];
+  if (
+    typeof c.category === "string" &&
+    (CREDENTIAL_CATEGORIES as readonly string[]).includes(c.category)
+  ) {
+    dto.category = c.category as CredentialCategory;
+  }
   if (c.vcFormat) dto.vcFormat = c.vcFormat;
   if (c.schemaUrl) dto.schemaUrl = c.schemaUrl;
   if (c.shortDescription) dto.schemaInfo = c.shortDescription;

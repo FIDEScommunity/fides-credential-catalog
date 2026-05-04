@@ -56,6 +56,16 @@ export type CredentialThemeCode =
   | "dataspaces"
   | "agentic_ai";
 
+export type CredentialCategoryCode =
+  | "identity"
+  | "business"
+  | "finance"
+  | "health"
+  | "travel"
+  | "professional"
+  | "compliance"
+  | "trade";
+
 export interface EntityReference {
   name: string;
   url?: string;
@@ -92,6 +102,7 @@ export interface CredentialEntry {
   sectors: CredentialSectorCode[];
   ecosystems: CredentialEcosystemCode[];
   themes?: CredentialThemeCode[];
+  category?: CredentialCategoryCode;
 }
 
 export interface Provider {
@@ -149,5 +160,6 @@ export interface AggregatedCredentialCatalog {
     bySector: Record<string, number>;
     byEcosystem: Record<string, number>;
     byTheme: Record<string, number>;
+    byCategory: Record<string, number>;
   };
 }
