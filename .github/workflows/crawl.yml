@@ -54,7 +54,7 @@ jobs:
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git add data/aggregated.json data/credential-history-state.json
+          git add data/aggregated.json data/credential-history-state.json data/issuer-availability-index.json
           git commit -m "chore: update aggregated credential data [skip ci]"
           git push
 

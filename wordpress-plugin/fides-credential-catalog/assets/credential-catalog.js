@@ -676,12 +676,13 @@
     return list;
   }
 
-  function computeMetrics() {
-    const total = credentials.length;
+  function computeMetrics(items) {
+    const list = Array.isArray(items) ? items : [];
+    const total = list.length;
     let recentActivity = 0;
     let usedByRPs = 0;
     const uniqueIssuerIds = new Set();
-    for (const credential of credentials) {
+    for (const credential of list) {
       if (isWithinLastDays(credential.firstSeenAt, 30) || isWithinLastDays(credential.updatedAt, 30)) recentActivity += 1;
       if ((rpUsageMap.get(credential.id) || []).length > 0) usedByRPs += 1;
       for (const issuer of (issuerUsageMap.get(credential.id) || [])) {
@@ -1311,7 +1312,7 @@
 
   function render() {
     const filtered = getFilteredCredentials();
-    const metrics = computeMetrics();
+    const metrics = computeMetrics(filtered);
 
     root.innerHTML = `
       <div class="fides-credential-layout">
@@ -1388,6 +1389,14 @@
     const ev = effectiveView();
     grid.setAttribute('data-view', ev);
     const filtered = getFilteredCredentials();
+    const metrics = computeMetrics(filtered);
+    const kpiValues = root.querySelectorAll('.fides-kpi-card .fides-kpi-value');
+    if (kpiValues.length >= 4) {
+      kpiValues[0].textContent = String(metrics.total);
+      kpiValues[1].textContent = String(metrics.issuers);
+      kpiValues[2].textContent = String(metrics.usedByRPs);
+      kpiValues[3].textContent = String(metrics.recentActivity);
+    }
     const header = ev === 'list' ? renderCredentialListHeader() : '';
     const items = filtered.length > 0
       ? filtered.map(ev === 'list' ? renderCredentialRow : renderCredentialCard).join("")

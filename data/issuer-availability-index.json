@@ -1,0 +1,310 @@
+{
+  "generatedAt": "2026-05-05T13:58:04.350Z",
+  "byCredentialId": {
+    "cred:iso:mdl-mdoc:mdoc": {
+      "total": 6,
+      "production": 0,
+      "test": 6
+    },
+    "cred:eu:pid-vc-sd-jwt:sd-jwt-vc": {
+      "total": 7,
+      "production": 0,
+      "test": 7
+    },
+    "cred:eu:pid-mdoc:mdoc": {
+      "total": 8,
+      "production": 0,
+      "test": 8
+    },
+    "cred:eu:age-verification-mdoc:mdoc": {
+      "total": 5,
+      "production": 0,
+      "test": 5
+    },
+    "cred:iso:mvrc-mdoc:mdoc": {
+      "total": 1,
+      "production": 0,
+      "test": 1
+    },
+    "cred:eu:msisdn-mdoc:mdoc": {
+      "total": 2,
+      "production": 0,
+      "test": 2
+    },
+    "cred:eu:hiid-sd-jwt-vc:sd-jwt-vc": {
+      "total": 2,
+      "production": 0,
+      "test": 2
+    },
+    "cred:eu:iban-sd-jwt-vc:sd-jwt-vc": {
+      "total": 3,
+      "production": 0,
+      "test": 3
+    },
+    "cred:eu:ehic-sd-jwt-vc:sd-jwt-vc": {
+      "total": 3,
+      "production": 0,
+      "test": 3
+    },
+    "cred:eu:ehic-mdoc:mdoc": {
+      "total": 2,
+      "production": 0,
+      "test": 2
+    },
+    "cred:eu:hiid-mdoc:mdoc": {
+      "total": 3,
+      "production": 0,
+      "test": 3
+    },
+    "cred:eu:cor-mdoc:mdoc": {
+      "total": 3,
+      "production": 0,
+      "test": 3
+    },
+    "cred:eu:iban-mdoc:mdoc": {
+      "total": 2,
+      "production": 0,
+      "test": 2
+    },
+    "cred:eu:loyalty-mdoc:mdoc": {
+      "total": 2,
+      "production": 0,
+      "test": 2
+    },
+    "cred:fides:vat:sd-jwt-vc": {
+      "total": 2,
+      "production": 0,
+      "test": 2
+    },
+    "cred:gleif:legal-entity-vlei:acdc": {
+      "total": 8,
+      "production": 8,
+      "test": 0
+    },
+    "cred:gleif:official-organizational-role-vlei:acdc": {
+      "total": 8,
+      "production": 8,
+      "test": 0
+    },
+    "cred:gleif:engagement-context-role-vlei:acdc": {
+      "total": 8,
+      "production": 8,
+      "test": 0
+    },
+    "cred:fides:iban:sd-jwt-vc": {
+      "total": 2,
+      "production": 0,
+      "test": 2
+    },
+    "cred:eu:diploma-vc-sd-jwt:sd-jwt-vc": {
+      "total": 2,
+      "production": 0,
+      "test": 2
+    },
+    "cred:eu:employee-mdoc:mdoc": {
+      "total": 2,
+      "production": 0,
+      "test": 2
+    },
+    "cred:eu:msisdn-sd-jwt-vc:sd-jwt-vc": {
+      "total": 1,
+      "production": 0,
+      "test": 1
+    },
+    "cred:eu:pda1-mdoc:mdoc": {
+      "total": 1,
+      "production": 0,
+      "test": 1
+    },
+    "cred:eu:pda1-sd-jwt-vc:sd-jwt-vc": {
+      "total": 1,
+      "production": 0,
+      "test": 1
+    },
+    "cred:iso:photoid-mdoc:mdoc": {
+      "total": 1,
+      "production": 0,
+      "test": 1
+    },
+    "cred:eu:por-mdoc:mdoc": {
+      "total": 1,
+      "production": 0,
+      "test": 1
+    },
+    "cred:eu:por-sd-jwt-vc:sd-jwt-vc": {
+      "total": 2,
+      "production": 0,
+      "test": 2
+    },
+    "cred:eu:seafarer-mdoc:mdoc": {
+      "total": 1,
+      "production": 0,
+      "test": 1
+    },
+    "cred:eu:tax-mdoc:mdoc": {
+      "total": 1,
+      "production": 0,
+      "test": 1
+    },
+    "cred:eu:tax-residency-vc-sd-jwt:sd-jwt-vc": {
+      "total": 1,
+      "production": 0,
+      "test": 1
+    },
+    "cred:eu:tax-sd-jwt-vc:sd-jwt-vc": {
+      "total": 2,
+      "production": 0,
+      "test": 2
+    },
+    "cred:iso:reservation-mdoc:mdoc": {
+      "total": 1,
+      "production": 0,
+      "test": 1
+    },
+    "cred:ewc:pda1-sd-jwt:sd-jwt-vc": {
+      "total": 1,
+      "production": 0,
+      "test": 1
+    },
+    "cred:ewc:pda2-sd-jwt:sd-jwt-vc": {
+      "total": 1,
+      "production": 0,
+      "test": 1
+    },
+    "cred:ewc:id-card-jwt-vc:jwt-vc": {
+      "total": 1,
+      "production": 0,
+      "test": 1
+    },
+    "cred:ewc:pid-sd-jwt:sd-jwt-vc": {
+      "total": 1,
+      "production": 0,
+      "test": 1
+    },
+    "cred:ewc:epassport-sd-jwt:sd-jwt-vc": {
+      "total": 1,
+      "production": 0,
+      "test": 1
+    },
+    "cred:ewc:student-id-sd-jwt:sd-jwt-vc": {
+      "total": 1,
+      "production": 0,
+      "test": 1
+    },
+    "cred:ewc:ferry-boarding-pass-sd-jwt:sd-jwt-vc": {
+      "total": 1,
+      "production": 0,
+      "test": 1
+    },
+    "cred:ewc:vreceipt-sd-jwt:sd-jwt-vc": {
+      "total": 1,
+      "production": 0,
+      "test": 1
+    },
+    "cred:ewc:pid-eudi-sd-jwt:sd-jwt-vc": {
+      "total": 2,
+      "production": 0,
+      "test": 2
+    },
+    "cred:ewc:payment-wallet-attestation-sd-jwt:sd-jwt-vc": {
+      "total": 1,
+      "production": 0,
+      "test": 1
+    },
+    "cred:ewc:photo-id-sd-jwt:sd-jwt-vc": {
+      "total": 1,
+      "production": 0,
+      "test": 1
+    },
+    "cred:ewc:personal-contact-details-sd-jwt:sd-jwt-vc": {
+      "total": 1,
+      "production": 0,
+      "test": 1
+    },
+    "cred:ewc:loyalty-card-sd-jwt:sd-jwt-vc": {
+      "total": 1,
+      "production": 0,
+      "test": 1
+    },
+    "cred:fides:lpid:sd-jwt-vc": {
+      "total": 1,
+      "production": 0,
+      "test": 1
+    },
+    "cred:fides:pid:sd-jwt-vc": {
+      "total": 1,
+      "production": 0,
+      "test": 1
+    },
+    "cred:fides:organization-profile:sd-jwt-vc": {
+      "total": 1,
+      "production": 0,
+      "test": 1
+    },
+    "cred:fides:criminal-record-check:sd-jwt-vc": {
+      "total": 1,
+      "production": 0,
+      "test": 1
+    },
+    "cred:fides:verified-employee:sd-jwt-vc": {
+      "total": 1,
+      "production": 0,
+      "test": 1
+    },
+    "cred:fides:higher-education-diploma:sd-jwt-vc": {
+      "total": 1,
+      "production": 0,
+      "test": 1
+    },
+    "cred:fides:iso-certificate:sd-jwt-vc": {
+      "total": 1,
+      "production": 0,
+      "test": 1
+    },
+    "cred:fides:upper-secondary-education:sd-jwt-vc": {
+      "total": 1,
+      "production": 0,
+      "test": 1
+    },
+    "cred:fides:brp:sd-jwt-vc": {
+      "total": 1,
+      "production": 0,
+      "test": 1
+    },
+    "cred:fides:contact-details:sd-jwt-vc": {
+      "total": 1,
+      "production": 0,
+      "test": 1
+    },
+    "cred:fides:bri:sd-jwt-vc": {
+      "total": 1,
+      "production": 0,
+      "test": 1
+    },
+    "cred:gleif:qualified-vlei-issuer:acdc": {
+      "total": 1,
+      "production": 1,
+      "test": 0
+    },
+    "cred:iso:photoid-mdoc-alt:mdoc": {
+      "total": 1,
+      "production": 0,
+      "test": 1
+    },
+    "cred:iata:boarding-pass-mdoc:mdoc": {
+      "total": 4,
+      "production": 0,
+      "test": 4
+    },
+    "cred:iata:booking-order-mdoc:mdoc": {
+      "total": 4,
+      "production": 0,
+      "test": 4
+    },
+    "cred:swiyu:betaid-sdjwt:sd-jwt-vc": {
+      "total": 1,
+      "production": 0,
+      "test": 1
+    }
+  }
+}
