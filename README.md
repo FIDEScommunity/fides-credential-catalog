@@ -4,14 +4,6 @@
 
 A community-driven catalog of verifiable credential schemas used in the FIDES ecosystem, including national identity credentials and sector-specific credentials.
 
-## Changelog
-
-### 1.3.5
-
-- WordPress plugin version bump to `1.3.5`.
-- KPI cards in the catalog UI now recalculate from the currently filtered/search result set.
-- KPI values now update live during grid-only refreshes (search/filter), without adding KPI quick-filter click behavior.
-
 ## 🎯 Concept
 
 The FIDES Credential Catalog provides a standardized, searchable database of verifiable credential definitions. Credential authorities contribute their schemas via GitHub Pull Requests, ensuring:
