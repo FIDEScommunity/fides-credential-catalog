@@ -20,6 +20,7 @@ const CONFIG = {
   schemaPath: path.join(process.cwd(), "schemas/credential-catalog.schema.json"),
   sourceDir: path.join(process.cwd(), "community-catalogs"),
   outputPath: path.join(process.cwd(), "data/aggregated.json"),
+  issuerAvailabilityIndexPath: path.join(process.cwd(), "data/issuer-availability-index.json"),
   wpPluginDataPath: path.join(
     process.cwd(),
     "wordpress-plugin/fides-credential-catalog/data/aggregated.json"
@@ -33,6 +34,12 @@ const ORGANIZATION_CATALOG_LOCAL_PATHS = [
   process.env.ORGANIZATION_CATALOG_AGGREGATED_PATH,
   path.join(process.cwd(), "..", "organization-catalog", "data", "aggregated.json")
 ].filter(Boolean) as string[];
+const ISSUER_CATALOG_URL =
+  "https://raw.githubusercontent.com/FIDEScommunity/fides-issuer-catalog/main/data/aggregated.json";
+const ISSUER_CATALOG_LOCAL_PATHS = [
+  process.env.ISSUER_CATALOG_AGGREGATED_PATH,
+  path.join(process.cwd(), "..", "issuer-catalog", "data", "aggregated.json")
+].filter(Boolean) as string[];
 
 interface OrgCatalogEntry {
   id: string;
@@ -42,6 +49,32 @@ interface OrgCatalogEntry {
   logoUri?: string;
   contact?: { email?: string; support?: string };
   legalName?: string;
+}
+
+interface IssuerCredentialConfiguration {
+  vct?: string;
+  credentialCatalogRef?: { id?: string };
+}
+
+interface IssuerCatalogEntry {
+  id: string;
+  environment?: string;
+  credentialConfigurations?: IssuerCredentialConfiguration[];
+}
+
+interface IssuerCatalogData {
+  issuers?: IssuerCatalogEntry[];
+}
+
+interface IssuerAvailabilityCounts {
+  total: number;
+  production: number;
+  test: number;
+}
+
+interface IssuerAvailabilityIndex {
+  generatedAt: string;
+  byCredentialId: Record<string, IssuerAvailabilityCounts>;
 }
 
 function isLocalDevHost(): boolean {
@@ -109,6 +142,57 @@ async function loadOrganizationCatalogMap(): Promise<Map<string, OrgCatalogEntry
     }
     return new Map();
   }
+}
+
+async function loadIssuerCatalogData(): Promise<IssuerCatalogData> {
+  const tryParse = (raw: string): IssuerCatalogData => JSON.parse(raw) as IssuerCatalogData;
+
+  if (isLocalDevHost()) {
+    for (const localPath of ISSUER_CATALOG_LOCAL_PATHS) {
+      if (localPath && existsSync(localPath)) {
+        try {
+          const raw = await fs.readFile(localPath, "utf-8");
+          const parsed = tryParse(raw);
+          const count = Array.isArray(parsed.issuers) ? parsed.issuers.length : 0;
+          console.log(`Using local issuer catalog (${localPath}), ${count} issuer(s)`);
+          return parsed;
+        } catch (e) {
+          console.warn("Could not parse local issuer catalog:", (e as Error).message);
+        }
+      }
+    }
+  }
+
+  try {
+    const res = await fetch(ISSUER_CATALOG_URL);
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    const parsed = (await res.json()) as IssuerCatalogData;
+    const count = Array.isArray(parsed.issuers) ? parsed.issuers.length : 0;
+    console.log(`Using issuer catalog from GitHub, ${count} issuer(s)`);
+    return parsed;
+  } catch (err) {
+    console.warn("Could not fetch issuer catalog:", (err as Error).message);
+    for (const localPath of ISSUER_CATALOG_LOCAL_PATHS) {
+      if (localPath && existsSync(localPath)) {
+        try {
+          const raw = await fs.readFile(localPath, "utf-8");
+          const parsed = tryParse(raw);
+          console.log(`Fallback local issuer catalog (${localPath})`);
+          return parsed;
+        } catch (e) {
+          console.warn("Could not parse fallback local issuer catalog:", (e as Error).message);
+        }
+      }
+    }
+    return { issuers: [] };
+  }
+}
+
+function normalizeIssuerEnvironment(value: string | undefined): "production" | "test" | "unknown" {
+  const normalized = String(value || "").trim().toLowerCase();
+  if (normalized === "production") return "production";
+  if (normalized === "test") return "test";
+  return "unknown";
 }
 
 interface CredentialHistoryEntry {
@@ -245,6 +329,73 @@ function calculateStats(credentials: NormalizedCredential[]): AggregatedCredenti
   };
 }
 
+function buildNativeIdentifierMap(credentials: NormalizedCredential[]): Map<string, string> {
+  const map = new Map<string, string>();
+  for (const credential of credentials) {
+    if (!credential.nativeIdentifier) continue;
+    const key = String(credential.nativeIdentifier).trim();
+    if (!key) continue;
+    if (!map.has(key)) {
+      map.set(key, credential.id);
+    }
+  }
+  return map;
+}
+
+async function buildIssuerAvailabilityIndex(
+  credentials: NormalizedCredential[],
+  generatedAt: string
+): Promise<IssuerAvailabilityIndex> {
+  const data = await loadIssuerCatalogData();
+  const issuers = Array.isArray(data.issuers) ? data.issuers : [];
+  const nativeIdentifierToCredentialId = buildNativeIdentifierMap(credentials);
+  const byCredentialIdSets = new Map<string, { total: Set<string>; production: Set<string>; test: Set<string> }>();
+
+  const ensureBucket = (credentialId: string) => {
+    if (!byCredentialIdSets.has(credentialId)) {
+      byCredentialIdSets.set(credentialId, {
+        total: new Set<string>(),
+        production: new Set<string>(),
+        test: new Set<string>(),
+      });
+    }
+    return byCredentialIdSets.get(credentialId)!;
+  };
+
+  for (const issuer of issuers) {
+    const issuerId = String(issuer?.id || "").trim();
+    if (!issuerId) continue;
+    const env = normalizeIssuerEnvironment(issuer.environment);
+    const configs = Array.isArray(issuer.credentialConfigurations) ? issuer.credentialConfigurations : [];
+
+    for (const configuration of configs) {
+      const byRefId = String(configuration?.credentialCatalogRef?.id || "").trim();
+      const byVctId = String(configuration?.vct || "").trim();
+      const credentialId = byRefId || (byVctId ? nativeIdentifierToCredentialId.get(byVctId) || "" : "");
+      if (!credentialId) continue;
+
+      const bucket = ensureBucket(credentialId);
+      bucket.total.add(issuerId);
+      if (env === "production") bucket.production.add(issuerId);
+      if (env === "test") bucket.test.add(issuerId);
+    }
+  }
+
+  const byCredentialId: Record<string, IssuerAvailabilityCounts> = {};
+  for (const [credentialId, sets] of byCredentialIdSets.entries()) {
+    byCredentialId[credentialId] = {
+      total: sets.total.size,
+      production: sets.production.size,
+      test: sets.test.size,
+    };
+  }
+
+  return {
+    generatedAt,
+    byCredentialId,
+  };
+}
+
 async function initValidator() {
   const schemaRaw = await fs.readFile(CONFIG.schemaPath, "utf-8");
   const schema = JSON.parse(schemaRaw) as Record<string, unknown>;
@@ -336,6 +487,9 @@ async function crawl(): Promise<void> {
   await fs.mkdir(path.dirname(CONFIG.outputPath), { recursive: true });
   await fs.writeFile(CONFIG.outputPath, JSON.stringify(aggregated, null, 2));
   await saveHistoryState(historyState);
+
+  const issuerAvailabilityIndex = await buildIssuerAvailabilityIndex(deduped, now);
+  await fs.writeFile(CONFIG.issuerAvailabilityIndexPath, JSON.stringify(issuerAvailabilityIndex, null, 2));
 
   await fs.mkdir(path.dirname(CONFIG.wpPluginDataPath), { recursive: true });
   await fs.writeFile(CONFIG.wpPluginDataPath, JSON.stringify(aggregated, null, 2));

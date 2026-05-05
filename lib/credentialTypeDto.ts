@@ -46,6 +46,7 @@ export function subjectTypeToCredentialKind(subjectType: string): CredentialKind
 /** CredentialTypeDto: only fields we have; issuer fields omitted. */
 export function toCredentialTypeDto(
   c: AggregatedCatalog["credentials"][0],
+  issuerAvailability?: { hasIssuers: boolean; issuerCount: number },
 ): Record<string, unknown> {
   const dto: Record<string, unknown> = {};
   dto.id = c.id;
@@ -67,5 +68,7 @@ export function toCredentialTypeDto(
   if (c.schemaUrl) dto.schemaUrl = c.schemaUrl;
   if (c.shortDescription) dto.schemaInfo = c.shortDescription;
   if (c.rulebookUrl) dto.trustFrameworkUrl = c.rulebookUrl;
+  dto.hasIssuers = Boolean(issuerAvailability?.hasIssuers);
+  dto.issuerCount = Math.max(0, Number(issuerAvailability?.issuerCount || 0));
   return dto;
 }

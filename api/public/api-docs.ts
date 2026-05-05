@@ -1,7 +1,7 @@
 /**
  * GET /api/public/api-docs
  * OpenAPI 3.1 spec for the Credential Catalog API.
- * This API returns credential definitions only; issuer-related fields are omitted. For issuance, use the Issuer Catalog API.
+ * This API returns credential definitions and issuer-availability metadata.
  */
 
 import type { VercelRequest, VercelResponse } from "@vercel/node";
@@ -27,12 +27,12 @@ const OPENAPI_SPEC_BASE = {
   info: {
     title: "Credential Catalog API",
     description:
-      "API to search credential definitions in the FIDES Credential Catalog. Returns credential types (schema, format, kind) only. Issuer-related fields (issuance URL, configuration ID, etc.) are omitted; for issuance and issuer details, use the Issuer Catalog API.",
+      "API to search credential definitions in the FIDES Credential Catalog. Returns credential types (schema, format, kind) with issuer-availability metadata (`hasIssuers`, `issuerCount`). Issuer integration details (issuance URL, configuration ID, etc.) remain in the Issuer Catalog API.",
     contact: {
       name: "Fides Credential Catalog",
       email: "catalog@fides.community",
     },
-    version: "2.4",
+    version: "2.5",
   },
   tags: [{ name: "Search API", description: "Search in the catalog" }],
   paths: {
@@ -49,6 +49,14 @@ const OPENAPI_SPEC_BASE = {
             description:
               "Catalog credential id (URL-encoded when it contains reserved characters, e.g. cred:…)",
             schema: { type: "string" },
+          },
+          {
+            name: "environment",
+            in: "query",
+            required: false,
+            description:
+              "Issuer environment scope for issuer availability counters. Defaults to both environments when omitted.",
+            schema: { type: "string", enum: ["production", "test"] },
           },
         ],
         responses: {
@@ -190,6 +198,22 @@ const OPENAPI_SPEC_BASE = {
             },
           },
           {
+            name: "hasIssuers",
+            in: "query",
+            required: false,
+            description:
+              "Filter credentials by issuer availability. `true` keeps credentials with one or more issuers; `false` keeps credentials without known issuers.",
+            schema: { type: "boolean" },
+          },
+          {
+            name: "environment",
+            in: "query",
+            required: false,
+            description:
+              "Issuer environment scope used by `hasIssuers` and `issuerCount`. Defaults to both environments when omitted.",
+            schema: { type: "string", enum: ["production", "test"] },
+          },
+          {
             name: "tags",
             in: "query",
             required: false,
@@ -245,13 +269,56 @@ const OPENAPI_SPEC_BASE = {
         },
       },
     },
+    "/api/public/credentialcategory": {
+      get: {
+        tags: ["Search API"],
+        summary: "List credential categories with issuer-availability counts",
+        operationId: "listCategories",
+        parameters: [
+          {
+            name: "hasIssuers",
+            in: "query",
+            required: false,
+            description:
+              "Filter categories by issuer availability. `true` returns categories with at least one credential that has issuers in scope; `false` returns categories with zero issuer-backed credentials in scope.",
+            schema: { type: "boolean" },
+          },
+          {
+            name: "environment",
+            in: "query",
+            required: false,
+            description:
+              "Issuer environment scope used for `credentialCountWithIssuers`. Defaults to both environments when omitted.",
+            schema: { type: "string", enum: ["production", "test"] },
+          },
+        ],
+        responses: {
+          "200": {
+            description: "OK",
+            content: {
+              "application/json": {
+                schema: { $ref: "#/components/schemas/CredentialCategoryListDto" },
+              },
+            },
+          },
+          "500": {
+            description: "Internal Server Error",
+            content: {
+              "application/json": {
+                schema: { $ref: "#/components/schemas/ErrorMessage" },
+              },
+            },
+          },
+        },
+      },
+    },
   },
   components: {
     schemas: {
       CredentialTypeDto: {
         type: "object",
         description:
-          "Credential definition only. Issuer-related fields (issuanceUrl, credentialConfigurationId, deploymentEnvironment, etc.) are omitted; use the Issuer Catalog API for those.",
+          "Credential definition with issuer-availability metadata. Issuer integration fields (issuanceUrl, credentialConfigurationId, etc.) are omitted; use the Issuer Catalog API for those.",
         properties: {
           id: { type: "string", description: "Catalog credential ID (e.g. cred:authority:key:format)" },
           credentialKind: {
@@ -337,6 +404,56 @@ const OPENAPI_SPEC_BASE = {
               "trade",
             ],
             description: "Optional top-level category used for wallet-initiated flow discovery",
+          },
+          hasIssuers: {
+            type: "boolean",
+            description:
+              "True when at least one issuer is known for this credential in the selected environment scope.",
+          },
+          issuerCount: {
+            type: "integer",
+            minimum: 0,
+            description:
+              "Number of unique issuers known for this credential in the selected environment scope.",
+          },
+        },
+      },
+      CredentialCategoryDto: {
+        type: "object",
+        properties: {
+          category: {
+            type: "string",
+            enum: [
+              "identity",
+              "business",
+              "finance",
+              "health",
+              "travel",
+              "professional",
+              "compliance",
+              "trade",
+            ],
+          },
+          label: { type: "string" },
+          credentialCount: {
+            type: "integer",
+            minimum: 0,
+            description: "Total number of credentials in this category.",
+          },
+          credentialCountWithIssuers: {
+            type: "integer",
+            minimum: 0,
+            description:
+              "Number of credentials in this category that have one or more issuers in the selected environment scope.",
+          },
+        },
+      },
+      CredentialCategoryListDto: {
+        type: "object",
+        properties: {
+          content: {
+            type: "array",
+            items: { $ref: "#/components/schemas/CredentialCategoryDto" },
           },
         },
       },

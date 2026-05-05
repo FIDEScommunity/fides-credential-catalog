@@ -10,6 +10,11 @@ import {
   toCredentialTypeDto,
   type AggregatedCatalog,
 } from "../../../lib/credentialTypeDto";
+import {
+  issuerCountForCredential,
+  loadIssuerAvailabilityIndex,
+  parseEnvironment,
+} from "../../../lib/issuerAvailability";
 
 export default async function handler(req: VercelRequest, res: VercelResponse) {
   if (req.method !== "GET") {
@@ -46,6 +51,8 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     const dataPath = join(process.cwd(), "data", "aggregated.json");
     const raw = await readFile(dataPath, "utf-8");
     const catalog = JSON.parse(raw) as AggregatedCatalog;
+    const issuerAvailabilityIndex = await loadIssuerAvailabilityIndex();
+    const environment = parseEnvironment(req.query.environment);
     const list = Array.isArray(catalog.credentials) ? catalog.credentials : [];
     const c = list.find((row) => row.id === id);
 
@@ -57,7 +64,11 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
       return;
     }
 
-    res.status(200).json(toCredentialTypeDto(c));
+    const issuerCount = issuerCountForCredential(issuerAvailabilityIndex, c.id, environment);
+    res.status(200).json(toCredentialTypeDto(c, {
+      hasIssuers: issuerCount > 0,
+      issuerCount,
+    }));
   } catch (err) {
     console.error("credentialtype detail API error:", err);
     res.status(500).json({

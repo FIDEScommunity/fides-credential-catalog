@@ -12,6 +12,12 @@ import {
   toCredentialTypeDto,
   type AggregatedCatalog,
 } from "../../lib/credentialTypeDto";
+import {
+  issuerCountForCredential,
+  loadIssuerAvailabilityIndex,
+  parseBooleanFlag,
+  parseEnvironment,
+} from "../../lib/issuerAvailability";
 
 const CREDENTIAL_KIND = ["PERSONAL", "ORGANIZATIONAL", "PRODUCT", "UNKNOWN"] as const;
 type CredentialKind = (typeof CREDENTIAL_KIND)[number];
@@ -106,6 +112,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     const dataPath = join(process.cwd(), "data", "aggregated.json");
     const raw = await readFile(dataPath, "utf-8");
     const catalog = JSON.parse(raw) as AggregatedCatalog;
+    const issuerAvailabilityIndex = await loadIssuerAvailabilityIndex();
     let list = Array.isArray(catalog.credentials) ? [...catalog.credentials] : [];
 
     const credentialKind = parseQueryArray(req.query.credentialKind).filter((k) =>
@@ -126,6 +133,8 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     );
     const tagsFilter = parseQueryText(req.query.tags);
     const authorityFilter = parseQueryText(req.query.authority);
+    const environment = parseEnvironment(req.query.environment);
+    const hasIssuers = parseBooleanFlag(req.query.hasIssuers);
 
     if (credentialKind.length > 0) {
       const kindSet = new Set(credentialKind);
@@ -161,6 +170,12 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
         return typeof authorityName === "string"
           ? authorityName.toLowerCase().includes(authorityFilter)
           : false;
+      });
+    }
+    if (typeof hasIssuers === "boolean") {
+      list = list.filter((c) => {
+        const count = issuerCountForCredential(issuerAvailabilityIndex, c.id, environment);
+        return hasIssuers ? count > 0 : count === 0;
       });
     }
 
@@ -206,7 +221,13 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     const start = page * size;
     const slice = list.slice(start, start + size);
 
-    const content = slice.map(toCredentialTypeDto);
+    const content = slice.map((row) => {
+      const issuerCount = issuerCountForCredential(issuerAvailabilityIndex, row.id, environment);
+      return toCredentialTypeDto(row, {
+        hasIssuers: issuerCount > 0,
+        issuerCount,
+      });
+    });
 
     res.status(200).json({
       content,
