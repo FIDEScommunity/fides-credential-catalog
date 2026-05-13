@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-13T08:51:30.655Z",
+  "generatedAt": "2026-05-13T11:20:20.404Z",
   "byCredentialId": {
     "cred:iso:mdl-mdoc:mdoc": {
       "total": 6,
@@ -212,6 +212,11 @@
       "test": 1
     },
     "cred:fides:bri:sd-jwt-vc": {
+      "total": 1,
+      "production": 0,
+      "test": 1
+    },
+    "cred:findynet:pension-credential:sd-jwt-vc": {
       "total": 1,
       "production": 0,
       "test": 1
