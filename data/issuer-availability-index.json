@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-12T08:47:50.729Z",
+  "generatedAt": "2026-05-13T08:51:30.655Z",
   "byCredentialId": {
     "cred:iso:mdl-mdoc:mdoc": {
       "total": 6,
@@ -161,71 +161,6 @@
       "production": 0,
       "test": 1
     },
-    "cred:ewc:pda1-sd-jwt:sd-jwt-vc": {
-      "total": 1,
-      "production": 0,
-      "test": 1
-    },
-    "cred:ewc:pda2-sd-jwt:sd-jwt-vc": {
-      "total": 1,
-      "production": 0,
-      "test": 1
-    },
-    "cred:ewc:id-card-jwt-vc:jwt-vc": {
-      "total": 1,
-      "production": 0,
-      "test": 1
-    },
-    "cred:ewc:pid-sd-jwt:sd-jwt-vc": {
-      "total": 1,
-      "production": 0,
-      "test": 1
-    },
-    "cred:ewc:epassport-sd-jwt:sd-jwt-vc": {
-      "total": 1,
-      "production": 0,
-      "test": 1
-    },
-    "cred:ewc:student-id-sd-jwt:sd-jwt-vc": {
-      "total": 1,
-      "production": 0,
-      "test": 1
-    },
-    "cred:ewc:ferry-boarding-pass-sd-jwt:sd-jwt-vc": {
-      "total": 1,
-      "production": 0,
-      "test": 1
-    },
-    "cred:ewc:vreceipt-sd-jwt:sd-jwt-vc": {
-      "total": 1,
-      "production": 0,
-      "test": 1
-    },
-    "cred:ewc:pid-eudi-sd-jwt:sd-jwt-vc": {
-      "total": 2,
-      "production": 0,
-      "test": 2
-    },
-    "cred:ewc:payment-wallet-attestation-sd-jwt:sd-jwt-vc": {
-      "total": 1,
-      "production": 0,
-      "test": 1
-    },
-    "cred:ewc:photo-id-sd-jwt:sd-jwt-vc": {
-      "total": 1,
-      "production": 0,
-      "test": 1
-    },
-    "cred:ewc:personal-contact-details-sd-jwt:sd-jwt-vc": {
-      "total": 1,
-      "production": 0,
-      "test": 1
-    },
-    "cred:ewc:loyalty-card-sd-jwt:sd-jwt-vc": {
-      "total": 1,
-      "production": 0,
-      "test": 1
-    },
     "cred:fides:lpid:sd-jwt-vc": {
       "total": 1,
       "production": 0,
@@ -300,6 +235,11 @@
       "total": 4,
       "production": 0,
       "test": 4
+    },
+    "cred:ewc:pid-eudi-sd-jwt:sd-jwt-vc": {
+      "total": 1,
+      "production": 0,
+      "test": 1
     },
     "cred:swiyu:betaid-sdjwt:sd-jwt-vc": {
       "total": 1,
