@@ -1,20 +1,20 @@
 {
-  "generatedAt": "2026-05-15T08:55:43.834Z",
+  "generatedAt": "2026-05-16T08:11:02.502Z",
   "byCredentialId": {
     "cred:iso:mdl-mdoc:mdoc": {
+      "total": 5,
+      "production": 0,
+      "test": 5
+    },
+    "cred:eu:pid-vc-sd-jwt:sd-jwt-vc": {
       "total": 6,
       "production": 0,
       "test": 6
     },
-    "cred:eu:pid-vc-sd-jwt:sd-jwt-vc": {
+    "cred:eu:pid-mdoc:mdoc": {
       "total": 7,
       "production": 0,
       "test": 7
-    },
-    "cred:eu:pid-mdoc:mdoc": {
-      "total": 8,
-      "production": 0,
-      "test": 8
     },
     "cred:eu:age-verification-mdoc:mdoc": {
       "total": 5,
@@ -27,46 +27,6 @@
       "test": 1
     },
     "cred:eu:msisdn-mdoc:mdoc": {
-      "total": 2,
-      "production": 0,
-      "test": 2
-    },
-    "cred:eu:hiid-sd-jwt-vc:sd-jwt-vc": {
-      "total": 2,
-      "production": 0,
-      "test": 2
-    },
-    "cred:eu:iban-sd-jwt-vc:sd-jwt-vc": {
-      "total": 3,
-      "production": 0,
-      "test": 3
-    },
-    "cred:eu:ehic-sd-jwt-vc:sd-jwt-vc": {
-      "total": 3,
-      "production": 0,
-      "test": 3
-    },
-    "cred:eu:ehic-mdoc:mdoc": {
-      "total": 2,
-      "production": 0,
-      "test": 2
-    },
-    "cred:eu:hiid-mdoc:mdoc": {
-      "total": 3,
-      "production": 0,
-      "test": 3
-    },
-    "cred:eu:cor-mdoc:mdoc": {
-      "total": 3,
-      "production": 0,
-      "test": 3
-    },
-    "cred:eu:iban-mdoc:mdoc": {
-      "total": 2,
-      "production": 0,
-      "test": 2
-    },
-    "cred:eu:loyalty-mdoc:mdoc": {
       "total": 2,
       "production": 0,
       "test": 2
@@ -96,7 +56,22 @@
       "production": 0,
       "test": 2
     },
+    "cred:eu:cor-mdoc:mdoc": {
+      "total": 2,
+      "production": 0,
+      "test": 2
+    },
     "cred:eu:diploma-vc-sd-jwt:sd-jwt-vc": {
+      "total": 2,
+      "production": 0,
+      "test": 2
+    },
+    "cred:eu:ehic-mdoc:mdoc": {
+      "total": 1,
+      "production": 0,
+      "test": 1
+    },
+    "cred:eu:ehic-sd-jwt-vc:sd-jwt-vc": {
       "total": 2,
       "production": 0,
       "test": 2
@@ -105,6 +80,31 @@
       "total": 2,
       "production": 0,
       "test": 2
+    },
+    "cred:eu:hiid-mdoc:mdoc": {
+      "total": 2,
+      "production": 0,
+      "test": 2
+    },
+    "cred:eu:hiid-sd-jwt-vc:sd-jwt-vc": {
+      "total": 1,
+      "production": 0,
+      "test": 1
+    },
+    "cred:eu:iban-mdoc:mdoc": {
+      "total": 1,
+      "production": 0,
+      "test": 1
+    },
+    "cred:eu:iban-sd-jwt-vc:sd-jwt-vc": {
+      "total": 2,
+      "production": 0,
+      "test": 2
+    },
+    "cred:eu:loyalty-mdoc:mdoc": {
+      "total": 1,
+      "production": 0,
+      "test": 1
     },
     "cred:eu:msisdn-sd-jwt-vc:sd-jwt-vc": {
       "total": 1,
