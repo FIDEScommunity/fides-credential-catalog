@@ -1,25 +1,25 @@
 {
-  "generatedAt": "2026-05-18T10:16:16.532Z",
+  "generatedAt": "2026-05-18T19:43:27.939Z",
   "byCredentialId": {
     "cred:iso:mdl-mdoc:mdoc": {
-      "total": 6,
-      "production": 0,
-      "test": 6
-    },
-    "cred:eu:pid-vc-sd-jwt:sd-jwt-vc": {
       "total": 7,
       "production": 0,
       "test": 7
     },
-    "cred:eu:pid-mdoc:mdoc": {
+    "cred:eu:pid-vc-sd-jwt:sd-jwt-vc": {
       "total": 8,
       "production": 0,
       "test": 8
     },
-    "cred:eu:age-verification-mdoc:mdoc": {
-      "total": 5,
+    "cred:eu:pid-mdoc:mdoc": {
+      "total": 9,
       "production": 0,
-      "test": 5
+      "test": 9
+    },
+    "cred:eu:age-verification-mdoc:mdoc": {
+      "total": 6,
+      "production": 0,
+      "test": 6
     },
     "cred:iso:mvrc-mdoc:mdoc": {
       "total": 1,
