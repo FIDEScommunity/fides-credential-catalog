@@ -1,0 +1,201 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/FIDEScommunity/fides-credential-catalog/main/community-catalogs/uidai/schemas/aadhaar-mdoc.schema.json",
+  "title": "Aadhaar Verifiable Credential (MSO mDoc)",
+  "description": "UIDAI Aadhaar mDoc schema derived from the ISO 18013-5 Aadhaar mDoc Specs. Schema derived from public UIDAI documentation.",
+  "type": "object",
+  "properties": {
+    "in.gov.uidai.aadhaar.1": {
+      "type": "object",
+      "description": "UIDAI Aadhaar namespace. All resident attributes reside inside this namespace.",
+      "properties": {
+        "CredentialIssuingDate": {
+          "type": "string",
+          "format": "date",
+          "description": "Credential Issuance Date"
+        },
+        "EnrolmentDate": {
+          "type": "string",
+          "format": "date",
+          "description": "Enrolment Date"
+        },
+        "EnrolmentNumber": {
+          "type": "string",
+          "description": "Enrolment Number"
+        },
+        "IsNRI": {
+          "type": "boolean",
+          "description": "Whether the resident is an NRI or not"
+        },
+        "IsResidentForeigner": {
+          "type": "boolean",
+          "description": "Whether the resident is a foreign national"
+        },
+        "AadhaarType": {
+          "type": "string",
+          "description": "Type of Aadhaar, for example RF, NRI, or IN"
+        },
+        "AadhaarExpiresOn": {
+          "type": "string",
+          "format": "date",
+          "description": "Date of expiry for the Aadhaar"
+        },
+        "MaskedUID": {
+          "type": "string",
+          "description": "Masked UID of resident"
+        },
+        "ResidentName": {
+          "type": "string",
+          "description": "Name of the Aadhaar holder"
+        },
+        "LocalResidentName": {
+          "type": "string",
+          "description": "Local language name of the Aadhaar holder"
+        },
+        "Dob": {
+          "type": "string",
+          "description": "Date of birth"
+        },
+        "Email": {
+          "type": "string",
+          "format": "idn-email",
+          "description": "Email ID of resident"
+        },
+        "MaskedEmail": {
+          "type": "string",
+          "description": "Masked email"
+        },
+        "Mobile": {
+          "type": "string",
+          "description": "Mobile number"
+        },
+        "MaskedMobile": {
+          "type": "string",
+          "description": "Masked mobile number"
+        },
+        "Gender": {
+          "type": "string",
+          "description": "Gender of the Aadhaar holder"
+        },
+        "ResidentImage": {
+          "type": "string",
+          "contentEncoding": "base64",
+          "contentMediaType": "image/jpeg",
+          "description": "Photo of the Aadhaar holder"
+        },
+        "AgeAbove18": {
+          "type": "boolean",
+          "description": "Is age above 18 years?"
+        },
+        "AgeAbove50": {
+          "type": "boolean",
+          "description": "Is age above 50 years?"
+        },
+        "AgeAbove60": {
+          "type": "boolean",
+          "description": "Is age above 60 years?"
+        },
+        "AgeAbove75": {
+          "type": "boolean",
+          "description": "Is age above 75 years?"
+        },
+        "CareOf": {
+          "type": "string",
+          "description": "Guardian / Head of Family name"
+        },
+        "LocalCareOf": {
+          "type": "string",
+          "description": "Guardian / Head of Family name in local language"
+        },
+        "Building": {
+          "type": "string",
+          "description": "Building details"
+        },
+        "LocalBuilding": {
+          "type": "string",
+          "description": "Building details in local language"
+        },
+        "Locality": {
+          "type": "string",
+          "description": "Locality details"
+        },
+        "LocalLocality": {
+          "type": "string",
+          "description": "Locality in local language"
+        },
+        "Street": {
+          "type": "string",
+          "description": "Street details"
+        },
+        "LocalStreet": {
+          "type": "string",
+          "description": "Street in local language"
+        },
+        "Landmark": {
+          "type": "string",
+          "description": "Landmark details"
+        },
+        "LocalLandmark": {
+          "type": "string",
+          "description": "Landmark in local language"
+        },
+        "Vtc": {
+          "type": "string",
+          "description": "Village / Town / City"
+        },
+        "LocalVtc": {
+          "type": "string",
+          "description": "Village / Town / City in local language"
+        },
+        "SubDistrict": {
+          "type": "string",
+          "description": "Sub-district details"
+        },
+        "LocalSubDistrict": {
+          "type": "string",
+          "description": "Sub-district in local language"
+        },
+        "District": {
+          "type": "string",
+          "description": "District details"
+        },
+        "LocalDistrict": {
+          "type": "string",
+          "description": "District in local language"
+        },
+        "State": {
+          "type": "string",
+          "description": "State details"
+        },
+        "LocalState": {
+          "type": "string",
+          "description": "State details in local language"
+        },
+        "PoName": {
+          "type": "string",
+          "description": "Post Office Name"
+        },
+        "LocalPoName": {
+          "type": "string",
+          "description": "Post Office name in local language"
+        },
+        "PinCode": {
+          "type": "string",
+          "description": "Pin code"
+        },
+        "Address": {
+          "type": "string",
+          "description": "Full address"
+        },
+        "RegionalAddress": {
+          "type": "string",
+          "description": "Address in local language"
+        }
+      },
+      "additionalProperties": true
+    }
+  },
+  "additionalProperties": true,
+  "docType": "in.gov.uidai.aadhaar.1",
+  "$comment": "Derived from UIDAI ISO 18013-5 Aadhaar mDoc Specs. UIDAI defines namespace in.gov.uidai.aadhaar.1 and docType in.gov.uidai.aadhaar.1. All listed claims are selectively disclosable."
+}
