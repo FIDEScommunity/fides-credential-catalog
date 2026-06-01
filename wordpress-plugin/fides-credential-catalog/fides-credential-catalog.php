@@ -3,7 +3,7 @@
  * Plugin Name: FIDES Credential Catalog
  * Plugin URI: https://github.com/FIDEScommunity/fides-credential-catalog
  * Description: Display an interactive catalog of credentials with search and filters. When the master fides_catalog_ssr_enabled flag (provided by FIDES Community Tools Tiles ≥ 1.6.3) is enabled, the plugin also emits a server-rendered listing fallback, per-deeplink SEO meta tags and a DigitalDocument JSON-LD payload so credential detail URLs become indexable by search engines.
- * Version: 1.3.6
+ * Version: 1.3.8
  * Author: FIDES Community
  * Author URI: https://fides.community
  * License: Apache-2.0
@@ -14,7 +14,7 @@ if (!defined('ABSPATH')) {
     exit;
 }
 
-define('FIDES_CREDENTIAL_CATALOG_VERSION', '1.3.6');
+define('FIDES_CREDENTIAL_CATALOG_VERSION', '1.3.8');
 define('FIDES_CREDENTIAL_CATALOG_PLUGIN_DIR', plugin_dir_path(__FILE__));
 define('FIDES_CREDENTIAL_CATALOG_PLUGIN_URL', plugin_dir_url(__FILE__));
 
@@ -83,6 +83,17 @@ function fides_credential_catalog_enqueue_assets() {
     $wallet_catalog_url = $use_local
         ? rtrim(get_site_url(), '/') . '/community-tools/personal-wallets/'
         : get_option('fides_credential_catalog_wallet_catalog_url', 'https://fides.community/community-tools/personal-wallets/');
+    $current_request_uri = isset($_SERVER['REQUEST_URI']) ? wp_unslash($_SERVER['REQUEST_URI']) : '';
+    $current_host = isset($_SERVER['HTTP_HOST']) ? sanitize_text_field(wp_unslash($_SERVER['HTTP_HOST'])) : '';
+    $current_url = $current_host !== ''
+        ? ((is_ssl() ? 'https://' : 'http://') . $current_host . $current_request_uri)
+        : home_url('/');
+    $oid4vp_options = get_option('universal_openid4vp_options', array());
+    $oid4vp_login_url = '';
+    if (is_array($oid4vp_options) && ! empty($oid4vp_options['loginUrl'])) {
+        $oid4vp_login_url = esc_url_raw((string) $oid4vp_options['loginUrl']);
+    }
+    $ratings_login_url = $oid4vp_login_url !== '' ? $oid4vp_login_url : wp_login_url($current_url);
 
     wp_localize_script('fides-credential-catalog-script', 'fidesCredentialCatalog', array(
         'pluginUrl' => $plugin_url,
@@ -103,6 +114,10 @@ function fides_credential_catalog_enqueue_assets() {
             ),
         'vocabularyUrl' => 'https://raw.githubusercontent.com/FIDEScommunity/fides-interop-profiles/main/data/vocabulary.json',
         'vocabularyFallbackUrl' => $plugin_url . 'assets/vocabulary.json',
+        'ratingsApiBase' => rest_url('fides-catalog/v1'),
+        'ratingsNonce' => wp_create_nonce('wp_rest'),
+        'ratingsIsLoggedIn' => is_user_logged_in(),
+        'ratingsLoginUrl' => $ratings_login_url,
     ));
 }
 add_action('wp_enqueue_scripts', 'fides_credential_catalog_enqueue_assets');

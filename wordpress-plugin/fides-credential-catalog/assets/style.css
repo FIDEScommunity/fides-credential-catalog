@@ -796,6 +796,106 @@
   line-height: 1.3;
 }
 
+.fides-credential-rating-summary {
+  margin: 0 0 0.2rem;
+  font-size: 0.84rem;
+  min-height: 1.35rem;
+  display: flex;
+  align-items: center;
+}
+
+.fides-credential-rating-summary .fides-item-rating {
+  margin-left: 0;
+  font-weight: 700;
+  color: var(--fides-text-primary, #0f172a);
+  gap: 0.35rem;
+  display: inline-flex;
+  align-items: center;
+  min-height: 1.35rem;
+  line-height: 1.2;
+}
+
+.fides-credential-rating-summary .fides-item-rating-star {
+  color: #111827;
+  font-size: 0.95em;
+  line-height: 1;
+}
+
+.fides-credential-rating-summary .fides-item-rating.is-liked .fides-item-rating-star {
+  color: #facc15;
+}
+
+.fides-credential-rating-summary .fides-item-rating-empty {
+  color: var(--fides-text-muted, #64748b);
+  font-weight: 600;
+}
+
+.fides-modal-overlay.fides-modal-overlay--credential #fides-modal-rating-slot {
+  margin-bottom: 0.9rem;
+}
+
+.fides-modal-overlay.fides-modal-overlay--credential #fides-modal-rating-slot:empty {
+  margin-bottom: 0;
+}
+
+.fides-modal-rating {
+  padding: 0;
+  border-radius: 0;
+  background: transparent;
+}
+
+.fides-modal-rating-summary {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.fides-rating-star {
+  font-size: 1.3rem;
+  line-height: 1;
+  background: transparent;
+  border: none;
+  padding: 0;
+  color: #111827;
+}
+
+.fides-rating-star.fides-rating-star-single {
+  font-size: 1.35rem;
+}
+
+.fides-rating-star.is-filled {
+  color: #facc15;
+}
+
+.fides-rating-star:not(.is-readonly) {
+  cursor: pointer;
+}
+
+.fides-modal-rating-value {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--fides-text-primary);
+}
+
+.fides-modal-rating-note {
+  font-size: 0.8rem;
+  color: var(--fides-text-muted);
+}
+
+.fides-modal-rating-note-inline {
+  margin-left: 0.15rem;
+}
+
+.fides-modal-rating-login {
+  color: var(--fides-accent);
+  text-decoration: underline;
+}
+
+.fides-modal-rating-login:hover {
+  color: #0858c4;
+}
+
 .fides-credential-description {
   margin: 0 0 1rem 0;
   font-size: 0.875rem;
@@ -1575,6 +1675,20 @@ a.fides-tag.wallet-link svg {
   width: 48%;
 }
 
+.fides-modal-overlay .fides-modal-entity-table th.fides-modal-entity-col-likes,
+.fides-modal-overlay .fides-modal-entity-table td.fides-modal-entity-col-likes {
+  width: 88px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.fides-modal-overlay .fides-attributes-table th.fides-modal-entity-col-likes,
+.fides-modal-overlay .fides-attributes-table td.fides-modal-entity-col-likes {
+  width: 88px;
+  text-align: center;
+  white-space: nowrap;
+}
+
 .fides-modal-overlay .fides-modal-entity-table td {
   overflow-wrap: anywhere;
   word-break: break-word;
@@ -1595,6 +1709,16 @@ a.fides-tag.wallet-link svg {
   .fides-modal-overlay .fides-modal-entity-table th:nth-child(2),
   .fides-modal-overlay .fides-modal-entity-table td:nth-child(2) {
     width: 60%;
+  }
+
+  .fides-modal-overlay .fides-modal-entity-table th.fides-modal-entity-col-likes,
+  .fides-modal-overlay .fides-modal-entity-table td.fides-modal-entity-col-likes {
+    width: 68px;
+  }
+
+  .fides-modal-overlay .fides-attributes-table th.fides-modal-entity-col-likes,
+  .fides-modal-overlay .fides-attributes-table td.fides-modal-entity-col-likes {
+    width: 68px;
   }
 
   .fides-modal-overlay .fides-modal-entity-table th {
@@ -1635,6 +1759,30 @@ a.fides-tag.wallet-link svg {
   overflow-wrap: anywhere;
   word-break: break-word;
   vertical-align: baseline;
+}
+
+.fides-modal-entity-like {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.2rem;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--fides-text-secondary);
+  min-width: 2.5rem;
+}
+
+.fides-modal-entity-like-star {
+  color: #111827;
+  line-height: 1;
+}
+
+.fides-modal-entity-like.is-liked .fides-modal-entity-like-star {
+  color: #facc15;
+}
+
+.fides-modal-entity-like-empty {
+  color: var(--fides-text-muted);
 }
 
 /* Modal intro */
@@ -3008,12 +3156,12 @@ a.fides-eco-tag-purple:hover {
 }
 
 /*
- * Column layout — 7 columns matching renderCredentialListHeader() and renderCredentialRow().
+ * Column layout — 8 columns matching renderCredentialListHeader() and renderCredentialRow().
  * If you add/remove a column, update this template AND both render functions.
  */
 .fides-credential-list-header,
 .fides-credential-grid[data-view="list"] .fides-credential-card {
-  grid-template-columns: 32px 2fr 1.9fr 0.65fr 44px 44px minmax(78px, 98px);
+  grid-template-columns: 32px 2fr minmax(54px, 64px) 1.9fr 0.65fr 44px 44px minmax(78px, 98px);
   gap: 0.75rem;
   padding: 0.625rem 1rem;
 }
@@ -3058,6 +3206,10 @@ a.fides-eco-tag-purple:hover {
   height: 13px;
 }
 
+.fides-list-col-likes {
+  min-height: 1px;
+}
+
 /* List row — overrides card styles */
 .fides-credential-grid[data-view="list"] {
   overflow: hidden;
@@ -3094,6 +3246,7 @@ a.fides-eco-tag-purple:hover {
 
 .fides-row-icon,
 .fides-row-name,
+.fides-row-likes,
 .fides-row-authority,
 .fides-row-format,
 .fides-row-count,
@@ -3103,6 +3256,7 @@ a.fides-eco-tag-purple:hover {
 
 .fides-credential-grid[data-view="list"] .fides-row-icon,
 .fides-credential-grid[data-view="list"] .fides-row-name,
+.fides-credential-grid[data-view="list"] .fides-row-likes,
 .fides-credential-grid[data-view="list"] .fides-row-authority,
 .fides-credential-grid[data-view="list"] .fides-row-format,
 .fides-credential-grid[data-view="list"] .fides-row-count,
@@ -3159,6 +3313,33 @@ a.fides-eco-tag-purple:hover {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+}
+
+.fides-row-likes {
+  justify-content: flex-start;
+  min-height: 1rem;
+}
+
+.fides-list-like {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--fides-text-secondary);
+}
+
+.fides-list-like-star {
+  color: #111827;
+  line-height: 1;
+}
+
+.fides-list-like.is-liked .fides-list-like-star {
+  color: #facc15;
+}
+
+.fides-list-like-count {
+  font-variant-numeric: tabular-nums;
 }
 
 /* Authority cell */
