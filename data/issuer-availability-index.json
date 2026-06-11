@@ -1,36 +1,6 @@
 {
-  "generatedAt": "2026-06-10T10:12:18.654Z",
+  "generatedAt": "2026-06-11T10:47:35.180Z",
   "byCredentialId": {
-    "cred:iso:mdl-mdoc:mdoc": {
-      "total": 6,
-      "production": 0,
-      "test": 6
-    },
-    "cred:eu:pid-vc-sd-jwt:sd-jwt-vc": {
-      "total": 8,
-      "production": 0,
-      "test": 8
-    },
-    "cred:eu:pid-mdoc:mdoc": {
-      "total": 9,
-      "production": 0,
-      "test": 9
-    },
-    "cred:eu:age-verification-mdoc:mdoc": {
-      "total": 6,
-      "production": 0,
-      "test": 6
-    },
-    "cred:iso:mvrc-mdoc:mdoc": {
-      "total": 1,
-      "production": 0,
-      "test": 1
-    },
-    "cred:eu:msisdn-mdoc:mdoc": {
-      "total": 2,
-      "production": 0,
-      "test": 2
-    },
     "cred:eu:hiid-sd-jwt-vc:sd-jwt-vc": {
       "total": 2,
       "production": 0,
@@ -41,10 +11,20 @@
       "production": 0,
       "test": 3
     },
+    "cred:eu:pid-mdoc:mdoc": {
+      "total": 8,
+      "production": 0,
+      "test": 8
+    },
     "cred:eu:ehic-sd-jwt-vc:sd-jwt-vc": {
       "total": 3,
       "production": 0,
       "test": 3
+    },
+    "cred:iso:mdl-mdoc:mdoc": {
+      "total": 5,
+      "production": 0,
+      "test": 5
     },
     "cred:eu:ehic-mdoc:mdoc": {
       "total": 2,
@@ -65,6 +45,11 @@
       "total": 2,
       "production": 0,
       "test": 2
+    },
+    "cred:eu:pid-vc-sd-jwt:sd-jwt-vc": {
+      "total": 7,
+      "production": 0,
+      "test": 7
     },
     "cred:eu:loyalty-mdoc:mdoc": {
       "total": 2,
@@ -105,6 +90,11 @@
       "total": 2,
       "production": 0,
       "test": 2
+    },
+    "cred:eu:msisdn-mdoc:mdoc": {
+      "total": 1,
+      "production": 0,
+      "test": 1
     },
     "cred:eu:msisdn-sd-jwt-vc:sd-jwt-vc": {
       "total": 1,
@@ -235,6 +225,11 @@
       "total": 1,
       "production": 0,
       "test": 1
+    },
+    "cred:eu:age-verification-mdoc:mdoc": {
+      "total": 5,
+      "production": 0,
+      "test": 5
     },
     "cred:iata:boarding-pass-mdoc:mdoc": {
       "total": 4,
