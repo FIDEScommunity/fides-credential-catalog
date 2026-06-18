@@ -321,6 +321,10 @@ const OPENAPI_SPEC_BASE = {
           "Credential definition with issuer-availability metadata. Issuer integration fields (issuanceUrl, credentialConfigurationId, etc.) are omitted; use the Issuer Catalog API for those.",
         properties: {
           id: { type: "string", description: "Catalog credential ID (e.g. cred:authority:key:format)" },
+          displayName: {
+            type: "string",
+            description: "Human-readable credential name (e.g. 'LPID Attestation')",
+          },
           credentialKind: {
             type: "string",
             enum: ["PERSONAL", "ORGANIZATIONAL", "PRODUCT", "UNKNOWN"],

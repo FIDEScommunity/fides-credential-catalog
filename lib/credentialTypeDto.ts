@@ -50,6 +50,9 @@ export function toCredentialTypeDto(
 ): Record<string, unknown> {
   const dto: Record<string, unknown> = {};
   dto.id = c.id;
+  if (typeof c.displayName === "string" && c.displayName.length) {
+    dto.displayName = c.displayName;
+  }
   dto.credentialKind = subjectTypeToCredentialKind(c.subjectType || "");
   if (typeof c.authority?.name === "string" && c.authority.name.length) {
     dto.authority = c.authority.name;
