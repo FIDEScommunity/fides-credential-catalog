@@ -1637,23 +1637,25 @@
                   </div>
                 </div>
               ` : ""}
-              <label class="fides-sort-label" for="fides-sort-select">
-                <span class="fides-sort-text">Sort by:</span>
-                <select id="fides-sort-select" class="fides-sort-select">
-                  <option value="rating" ${sortBy === "rating" ? "selected" : ""}>Likes</option>
-                  <option value="lastUpdated" ${sortBy === "lastUpdated" ? "selected" : ""}>Last updated</option>
-                  <option value="name" ${sortBy === "name" ? "selected" : ""}>Name</option>
-                  <option value="issuers" ${sortBy === "issuers" ? "selected" : ""}>Issuers</option>
-                  <option value="relyingParties" ${sortBy === "relyingParties" ? "selected" : ""}>Relying parties</option>
-                </select>
-              </label>
-              ${settings.showFilters ? `
-                <button class="fides-mobile-filter-toggle" id="fides-mobile-filter-toggle">
-                  ${icons.filter}
-                  <span>Filters</span>
-                  <span class="fides-filter-count ${getActiveFilterCount() > 0 ? "" : "hidden"}">${getActiveFilterCount() || 0}</span>
-                </button>
-              ` : ""}
+              <div class="fides-results-bar-actions">
+                ${settings.showFilters ? `
+                  <button class="fides-mobile-filter-toggle" id="fides-mobile-filter-toggle">
+                    ${icons.filter}
+                    <span>Filters</span>
+                    <span class="fides-filter-count ${getActiveFilterCount() > 0 ? "" : "hidden"}">${getActiveFilterCount() || 0}</span>
+                  </button>
+                ` : ""}
+                <label class="fides-sort-label" for="fides-sort-select">
+                  <span class="fides-sort-text">Sort by:</span>
+                  <select id="fides-sort-select" class="fides-sort-select">
+                    <option value="rating" ${sortBy === "rating" ? "selected" : ""}>Likes</option>
+                    <option value="lastUpdated" ${sortBy === "lastUpdated" ? "selected" : ""}>Last updated</option>
+                    <option value="name" ${sortBy === "name" ? "selected" : ""}>Name</option>
+                    <option value="issuers" ${sortBy === "issuers" ? "selected" : ""}>Issuers</option>
+                    <option value="relyingParties" ${sortBy === "relyingParties" ? "selected" : ""}>Relying parties</option>
+                  </select>
+                </label>
+              </div>
               ${renderViewToggle()}
             </div>
             ${renderKpiCards(metrics)}

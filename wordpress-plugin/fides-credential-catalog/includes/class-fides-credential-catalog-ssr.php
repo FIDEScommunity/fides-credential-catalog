@@ -80,6 +80,7 @@ if (! class_exists('Fides_Credential_Catalog_SSR')) {
                 Fides_Catalog_Registry::register(self::TYPE, array(
                     'label'             => __('Credentials', 'fides-credential-catalog'),
                     'json_url'          => 'https://raw.githubusercontent.com/FIDEScommunity/fides-credential-catalog/main/data/aggregated.json',
+                    'local_json_path'   => dirname(__DIR__) . '/data/aggregated.json',
                     'collection_key'    => 'credentials',
                     'id_field'          => 'id',
                     'name_field'        => 'displayName',
