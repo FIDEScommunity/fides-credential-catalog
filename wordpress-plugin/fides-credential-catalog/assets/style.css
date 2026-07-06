@@ -1854,6 +1854,43 @@ a.fides-tag.wallet-link svg {
   pointer-events: none;
 }
 
+.fides-modal-section-header--with-link {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.5rem;
+}
+
+.fides-eco-explain-link {
+  pointer-events: auto;
+  cursor: pointer;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--fides-text-muted);
+  text-decoration: underline dashed currentColor;
+  text-underline-offset: 0.2em;
+  text-decoration-thickness: 1px;
+  flex-shrink: 0;
+  letter-spacing: normal;
+  text-transform: none;
+}
+
+.fides-eco-explain-link:hover,
+.fides-eco-explain-link:focus-visible {
+  color: var(--fides-accent);
+  text-decoration-style: solid;
+}
+
+.fides-modal-overlay[data-theme="fides"] .fides-eco-explain-link,
+.fides-modal-overlay[data-theme="light"] .fides-eco-explain-link {
+  color: #64748b;
+}
+
+.fides-modal-overlay[data-theme="fides"] .fides-eco-explain-link:hover,
+.fides-modal-overlay[data-theme="light"] .fides-eco-explain-link:hover {
+  color: #0A6EF3;
+}
+
 .fides-modal-ecosystem-body {
   padding: 0 !important;
   display: block !important;
@@ -2445,6 +2482,11 @@ a.fides-eco-entity svg {
 
 .fides-accordion-header:hover {
   background: rgba(59, 130, 246, 0.05);
+}
+
+.fides-accordion-header.fides-modal-section-header--with-link,
+.fides-modal-overlay .fides-modal-section-header--with-link {
+  justify-content: flex-start;
 }
 
 .fides-accordion-title {

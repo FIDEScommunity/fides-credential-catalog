@@ -7,6 +7,9 @@
   const RATINGS_IS_LOGGED_IN = !!config.ratingsIsLoggedIn;
   const RATINGS_LOGIN_URL = config.ratingsLoginUrl ? String(config.ratingsLoginUrl) : "";
   const RATINGS_BATCH_LIMIT = 100;
+  const ECOSYSTEM_EXPLORER_URL = config.ecosystemExplorerUrl
+    ? String(config.ecosystemExplorerUrl).trim()
+    : "https://fides.community/topics/ecosystem-explorer/";
   const root = document.getElementById("fides-credential-catalog-root");
   if (!root) return;
 
@@ -234,6 +237,15 @@
     vcFormat: false,
     schemaType: false
   };
+
+  function buildEcosystemExplainLinkHtml() {
+    if (!ECOSYSTEM_EXPLORER_URL) return "";
+    return (
+      '<a href="' +
+      escapeHtml(ECOSYSTEM_EXPLORER_URL) +
+      '" class="fides-eco-explain-link" target="_blank" rel="noopener" onclick="event.stopPropagation();" aria-label="Explain the FIDES Ecosystem Model">Explain</a>'
+    );
+  }
 
   function escapeHtml(value) {
     return String(value ?? "")
@@ -1351,8 +1363,9 @@
 
             <!-- Ecosystem flow -->
             <div class="fides-accordion fides-modal-section">
-              <div class="fides-accordion-header fides-modal-section-header">
+              <div class="fides-accordion-header fides-modal-section-header fides-modal-section-header--with-link">
                 <span class="fides-accordion-title">${icons.wallet} FIDES Ecosystem Model</span>
+                ${buildEcosystemExplainLinkHtml()}
               </div>
               <div class="fides-accordion-body fides-modal-ecosystem-body">
 
