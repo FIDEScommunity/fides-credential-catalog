@@ -340,7 +340,18 @@
   function formatDateLabel(value, prefix) {
     const date = toDate(value);
     if (!date) return "";
-    return `${prefix} ${date.toLocaleDateString("en-US")}`;
+    return `${prefix} ${date.toLocaleDateString(undefined)}`;
+  }
+
+  function renderModalLastUpdatedHtml(item) {
+    if (window.FidesCatalogUI && typeof window.FidesCatalogUI.buildModalLastUpdatedHtml === 'function') {
+      return window.FidesCatalogUI.buildModalLastUpdatedHtml(item, ['updatedAt', 'updated', 'fetchedAt']);
+    }
+    const date = toDate(item && item.updatedAt);
+    if (!date) return '';
+    const label = date.toLocaleDateString(undefined, { year: 'numeric', month: 'long', day: 'numeric' });
+    const iso = date.toISOString().slice(0, 10);
+    return `<div class="fides-modal-last-updated">Last updated <time datetime="${escapeHtml(iso)}">${escapeHtml(label)}</time></div>`;
   }
 
   async function loadJson(url) {
@@ -1585,11 +1596,6 @@
                     <span class="fides-kv-key">Authority</span>
                     <span class="fides-kv-val">${escapeHtml(selectedCredential.authority?.name || "—")}</span>
                   </div>
-                  <!-- right col: row 3 -->
-                  <div class="fides-kv-row">
-                    <span class="fides-kv-key">Last updated</span>
-                    <span class="fides-kv-val">${escapeHtml(formatDateLabel(selectedCredential.updatedAt, "").trim() || "—")}</span>
-                  </div>
                   ${selectedCredential.rulebookUrl ? `
                   <div class="fides-kv-row fides-kv-row-wide">
                     <span class="fides-kv-key">Rulebook</span>
@@ -1624,6 +1630,8 @@
                 </div>
               </div>
             </div>
+
+            ${renderModalLastUpdatedHtml(selectedCredential)}
 
           </div>
         </div>

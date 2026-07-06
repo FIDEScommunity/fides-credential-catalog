@@ -2,13 +2,16 @@
 Contributors: fidescommunity
 Requires at least: 5.0
 Tested up to: 6.7
-Stable tag: 1.3.10
+Stable tag: 1.3.11
 License: Apache-2.0
 License URI: https://www.apache.org/licenses/LICENSE-2.0
 
 Interactive credential catalog with search, filters, and optional SSR/SEO via fides-community-tools-tiles.
 
 == Changelog ==
+
+= 1.3.11 =
+* Credential detail modal: restore subtle Last updated footer; dates use the browser locale.
 
 = 1.3.10 =
 * Ecosystem model modal section: add Explain link to the FIDES Ecosystem Explorer (same as RP catalog).
