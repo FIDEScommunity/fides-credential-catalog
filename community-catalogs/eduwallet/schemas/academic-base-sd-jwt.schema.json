@@ -1,0 +1,66 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://agent.dev.eduwallet.nl/vct/abc",
+  "title": "Academic Base Credential",
+  "description": "Basic credential indicating affiliation with an education institution in the Npuls/SURF eduwallet proeftuin. Attributes derived from the issuer OpenID4VCI credential_metadata and the SD-JWT VC type metadata (vct/abc).",
+  "type": "object",
+  "vct": "https://agent.dev.eduwallet.nl/vct/abc",
+  "properties": {
+    "sub": {
+      "type": "string",
+      "description": "Institute-specific identifier"
+    },
+    "eduperson_unique_id": {
+      "type": "string",
+      "description": "Unique personal identifier in the context of higher education and research"
+    },
+    "schac_home_organization": {
+      "type": "string",
+      "description": "Home organization"
+    },
+    "name": {
+      "type": "string",
+      "description": "Full name"
+    },
+    "given_name": {
+      "type": "string",
+      "description": "Given name or first name"
+    },
+    "family_name": {
+      "type": "string",
+      "description": "Family name or surname"
+    },
+    "email": {
+      "type": "string",
+      "description": "E-mail address"
+    },
+    "eduperson_affiliation": {
+      "type": "string",
+      "description": "Affiliation with the organization"
+    },
+    "eduperson_scoped_affiliation": {
+      "type": "string",
+      "description": "Affiliation scoped to the home organization"
+    },
+    "eduperson_entitlement": {
+      "type": "string",
+      "description": "Entitlements"
+    },
+    "eduperson_assurance": {
+      "type": "string",
+      "description": "Assurance level for receiving this credential"
+    }
+  },
+  "required": [
+    "sub",
+    "eduperson_unique_id",
+    "schac_home_organization",
+    "name",
+    "given_name",
+    "family_name",
+    "eduperson_affiliation",
+    "eduperson_scoped_affiliation",
+    "eduperson_assurance"
+  ],
+  "additionalProperties": true
+}

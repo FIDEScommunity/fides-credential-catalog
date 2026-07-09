@@ -1,0 +1,48 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://agent.dev.eduwallet.nl/schemas/academic-enrollment-sd-jwt.schema.json",
+  "title": "Academic Enrollment Credential",
+  "description": "Proof of enrollment in an education programme in the Npuls/SURF eduwallet proeftuin. Attributes derived from the issuer OpenID4VCI credential_metadata (AcademicEnrollmentCredential).",
+  "type": "object",
+  "properties": {
+    "crohoCreboCode": {
+      "type": "string",
+      "description": "Central Higher Education code (CROHO/CREBO)"
+    },
+    "name": {
+      "type": "string",
+      "description": "Major / programme name"
+    },
+    "phase": {
+      "type": "string",
+      "description": "Phase of study (e.g. doctoraal)"
+    },
+    "modeOfStudy": {
+      "type": "string",
+      "description": "Mode of study (e.g. voltijds)"
+    },
+    "institutionBRINCode": {
+      "type": "string",
+      "description": "Institution BRIN code"
+    },
+    "startDate": {
+      "type": "string",
+      "format": "date",
+      "description": "Start date"
+    },
+    "endDate": {
+      "type": "string",
+      "format": "date",
+      "description": "End date"
+    }
+  },
+  "required": [
+    "crohoCreboCode",
+    "name",
+    "phase",
+    "modeOfStudy",
+    "institutionBRINCode",
+    "startDate"
+  ],
+  "additionalProperties": true
+}
