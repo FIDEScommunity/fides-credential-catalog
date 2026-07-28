@@ -194,12 +194,25 @@
    */
   let viewMode = localStorage.getItem('fides-credential-view') || 'grid';
   const LIST_BREAKPOINT = 1024;
+  let mobileFiltersController = null;
+  function getMobileFilters() {
+    if (mobileFiltersController) return mobileFiltersController;
+    if (!window.FidesCatalogUI || typeof window.FidesCatalogUI.createMobileFiltersController !== 'function') {
+      return null;
+    }
+    mobileFiltersController = window.FidesCatalogUI.createMobileFiltersController({
+      root: () => root,
+      breakpoint: LIST_BREAKPOINT,
+    });
+    return mobileFiltersController;
+  }
   function effectiveView() {
     return window.innerWidth < LIST_BREAKPOINT ? 'grid' : viewMode;
   }
 
   let _lastEffective = effectiveView();
   window.addEventListener('resize', () => {
+    getMobileFilters()?.onLeavingMobileViewport();
     const cur = effectiveView();
     if (cur !== _lastEffective) {
       _lastEffective = cur;
@@ -1640,6 +1653,7 @@
   }
 
   function render() {
+    const wasOpen = getMobileFilters()?.captureOpenState() ?? false;
     const filtered = getFilteredCredentials();
     const metrics = computeMetrics();
 
@@ -1694,6 +1708,7 @@
     `;
 
     bindEvents();
+    getMobileFilters()?.applyAfterRender(wasOpen);
 
     if (selectedCredential) {
       openModal();
@@ -1715,7 +1730,11 @@
   function closeModal() {
     const existing = document.getElementById("fides-modal-overlay");
     if (existing) existing.remove();
-    document.body.style.overflow = "";
+    if (window.FidesCatalogUI && typeof window.FidesCatalogUI.syncCatalogBodyScrollLock === "function") {
+      window.FidesCatalogUI.syncCatalogBodyScrollLock({ root });
+    } else {
+      document.body.style.overflow = "";
+    }
   }
 
   function renderCredentialGridOnly() {
@@ -1907,39 +1926,9 @@
       });
     }
 
-    root.querySelectorAll(".fides-filter-label-toggle").forEach((toggle) => {
-      toggle.addEventListener("click", () => {
-        const group = toggle.closest(".fides-filter-group")?.dataset.filterGroup;
-        if (!group || !(group in filterGroupState)) return;
-        filterGroupState[group] = !filterGroupState[group];
-        render();
-      });
-    });
+    getMobileFilters()?.bindCollapsibleToggles(filterGroupState);
 
-    // Mobile filter drawer
-    const mobileFilterToggle = root.querySelector("#fides-mobile-filter-toggle");
-    const sidebar = root.querySelector(".fides-sidebar");
-    if (mobileFilterToggle && sidebar) {
-      mobileFilterToggle.addEventListener("click", () => {
-        sidebar.classList.add("mobile-open");
-        document.body.style.overflow = "hidden";
-      });
-    }
-    const sidebarClose = root.querySelector("#fides-sidebar-close");
-    if (sidebarClose && sidebar) {
-      sidebarClose.addEventListener("click", () => {
-        sidebar.classList.remove("mobile-open");
-        document.body.style.overflow = "";
-      });
-    }
-    if (sidebar) {
-      sidebar.addEventListener("click", (e) => {
-        if (e.target === sidebar && sidebar.classList.contains("mobile-open")) {
-          sidebar.classList.remove("mobile-open");
-          document.body.style.overflow = "";
-        }
-      });
-    }
+    getMobileFilters()?.bindShell();
 
     // Mobile search input — synced bidirectionally with sidebar search
     const mobileSearchInput = root.querySelector("#fides-mobile-search-input");

@@ -2,13 +2,16 @@
 Contributors: fidescommunity
 Requires at least: 5.0
 Tested up to: 6.7
-Stable tag: 1.3.11
+Stable tag: 1.3.12
 License: Apache-2.0
 License URI: https://www.apache.org/licenses/LICENSE-2.0
 
 Interactive credential catalog with search, filters, and optional SSR/SEO via fides-community-tools-tiles.
 
 == Changelog ==
+
+= 1.3.12 =
+* Mobile filters: keep the drawer open when expanding groups or selecting options; keep body scroll lock in sync. Bundle and enqueue shared fides-catalog-ui (tiles ≥ 1.8.28).
 
 = 1.3.11 =
 * Credential detail modal: restore subtle Last updated footer; dates use the browser locale.
