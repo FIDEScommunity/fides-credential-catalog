@@ -1488,7 +1488,7 @@
     const credentialCatalogUrl = (options && options.credentialCatalogUrl) || 'https://fides.community/ecosystem-explorer/credential-catalog/';
     const issuerCatalogUrl = (options && options.issuerCatalogUrl) || 'https://fides.community/ecosystem-explorer/issuer-catalog/';
     const walletCatalogUrl = (options && options.walletCatalogUrl) || '';
-    const useCaseCatalogUrl = (options && options.useCaseCatalogUrl) || 'https://fides.community/use-cases/';
+    const useCaseCatalogUrl = (options && options.useCaseCatalogUrl) || 'https://fides.community/ecosystem-explorer/use-cases/';
     const issuers = (options && Array.isArray(options.ecosystemIssuers)) ? options.ecosystemIssuers : [];
     const specificationsBody = buildRpSpecificationsBodyHtml(rp, options);
     const websiteDetailsBody = buildRpWebsiteDetailsBodyHtml(rp);
