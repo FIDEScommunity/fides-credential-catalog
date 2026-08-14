@@ -2,13 +2,16 @@
 Contributors: fidescommunity
 Requires at least: 5.0
 Tested up to: 6.7
-Stable tag: 1.4.0
+Stable tag: 1.4.1
 License: Apache-2.0
 License URI: https://www.apache.org/licenses/LICENSE-2.0
 
 Interactive credential catalog with search, filters, and optional SSR/SEO via fides-community-tools-tiles.
 
 == Changelog ==
+
+= 1.4.1 =
+* Preserve the published credential slug when submitting an update.
 
 = 1.4.0 =
 * Add logged-in create and update forms for moderated credential catalog submissions.

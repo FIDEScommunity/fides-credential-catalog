@@ -459,8 +459,8 @@
   }
 
   function updateGeneratedFields() {
-    credentialSlug.value = slugify(displayName.value);
     if (mode === "update") return;
+    credentialSlug.value = slugify(displayName.value);
     const key = normalizeKey(displayName.value);
     credentialKey.value = key;
     const authority = normalizeAuthority(authorityName.value);

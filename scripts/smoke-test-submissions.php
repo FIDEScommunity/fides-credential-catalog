@@ -160,6 +160,15 @@ credential_smoke('Update existing credential', static function () use ($existing
     credential_smoke_assert(is_array($item), 'Existing credential not found');
     $payload = Fides_Credential_Catalog_Submission_Adapter::catalog_item_to_payload($item);
     $payload['shortDescription'] = 'Temporary automated smoke-test update.';
+    $normalized = Fides_Credential_Catalog_Submission_Adapter::validate_payload(
+        $payload,
+        array('action' => 'update', 'item_id' => $existing_id)
+    );
+    credential_smoke_assert(! is_wp_error($normalized), is_wp_error($normalized) ? $normalized->get_error_message() : 'Update validation failed');
+    credential_smoke_assert(
+        ($normalized['slug'] ?? '') === ($item['slug'] ?? ''),
+        'Existing credential slug changed during update validation'
+    );
     $data = credential_smoke_post('update', $existing_id, $payload);
     credential_smoke_assert(($data['action'] ?? '') === 'update', 'Update action mismatch');
     return $existing_id;

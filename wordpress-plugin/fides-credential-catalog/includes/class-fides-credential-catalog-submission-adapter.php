@@ -294,6 +294,10 @@ if (! class_exists('Fides_Credential_Catalog_Submission_Adapter')) {
                 if ((string) ($existing['orgId'] ?? '') !== $org_id) {
                     return self::error(__('Organization cannot be changed on update.', 'fides-credential-catalog'));
                 }
+                $existing_slug = sanitize_title((string) ($existing['slug'] ?? ''));
+                if ($existing_slug !== '') {
+                    $slug = $existing_slug;
+                }
             }
 
             if (! self::organization_exists($org_id)) {
