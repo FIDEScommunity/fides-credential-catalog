@@ -12,6 +12,9 @@
     "copy-issuer-aggregated": "node scripts/copy-issuer-aggregated.js",
     "copy-rp-aggregated": "node scripts/copy-rp-aggregated.js",
     "check-links": "tsx scripts/check-links.ts",
+    "import-wp-submissions": "tsx scripts/import-wp-submissions.ts",
+    "import-wp-submissions:apply": "tsx scripts/import-wp-submissions.ts --apply",
+    "test:import-wp-submissions": "tsx --test scripts/import-wp-submissions.test.ts",
     "test": "node --import tsx --test src/crawler/schemaAttributes.test.ts"
   },
   "repository": {

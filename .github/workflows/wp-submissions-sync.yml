@@ -1,0 +1,98 @@
+name: WP Submissions Sync
+
+on:
+  repository_dispatch:
+    types: [fides-catalog-export]
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'data/wp-export/credential.json'
+
+jobs:
+  sync-wp-submissions:
+    if: github.repository == 'FIDEScommunity/fides-credential-catalog'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v6
+        with:
+          node-version: '24'
+          cache: npm
+
+      - run: npm ci
+
+      - name: Test WordPress importer
+        run: npm run test:import-wp-submissions
+
+      - name: Import published WordPress submissions
+        env:
+          FIDES_WP_EXPORT_URL: ${{ vars.WP_EXPORT_URL }}
+          FIDES_CATALOG_SECRET: ${{ secrets.WP_INVALIDATE_SECRET }}
+          FIDES_WP_EXPORT_JSON: ${{ github.event.client_payload.export_json }}
+        run: npm run import-wp-submissions:apply
+
+      - name: Validate catalog files
+        run: npm run validate
+
+      - name: Rebuild aggregated data
+        run: npm run crawl
+
+      - name: Check for changes
+        id: changes
+        run: |
+          paths=(
+            community-catalogs/
+            data/aggregated.json
+            data/credential-history-state.json
+            data/issuer-availability-index.json
+            data/wp-submission-state.json
+          )
+          plugin_data=wordpress-plugin/fides-credential-catalog/data/aggregated.json
+          if git ls-files --error-unmatch "$plugin_data" >/dev/null 2>&1; then
+            paths+=("$plugin_data")
+          fi
+          if [ -n "$(git status --porcelain -- "${paths[@]}")" ]; then
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Commit WP submission updates
+        if: steps.changes.outputs.changed == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add community-catalogs/ \
+            data/aggregated.json \
+            data/credential-history-state.json \
+            data/issuer-availability-index.json \
+            data/wp-submission-state.json
+          plugin_data=wordpress-plugin/fides-credential-catalog/data/aggregated.json
+          if git ls-files --error-unmatch "$plugin_data" >/dev/null 2>&1; then
+            git add "$plugin_data"
+          fi
+          git commit -m "chore: sync WordPress credential submissions [skip ci]"
+          git push
+
+      - name: Notify production WordPress
+        if: steps.changes.outputs.changed == 'true'
+        env:
+          WP_INVALIDATE_URL: ${{ vars.WP_INVALIDATE_URL }}
+          WP_INVALIDATE_SECRET: ${{ secrets.WP_INVALIDATE_SECRET }}
+        run: |
+          if [ -z "${WP_INVALIDATE_URL}" ] || [ -z "${WP_INVALIDATE_SECRET}" ]; then
+            echo "Skipping cache notification: URL or secret is not configured."
+            exit 0
+          fi
+          curl -fsS -X POST "${WP_INVALIDATE_URL}" \
+            -H "User-Agent: FIDES-Catalog-Automation/1.0" \
+            -H "X-FIDES-Catalog-Secret: ${WP_INVALIDATE_SECRET}" \
+            --data-urlencode "type=credential" \
+            -w '\nHTTP %{http_code}\n' \
+            || echo "WordPress cache notification failed (non-fatal)."
