@@ -1,0 +1,11 @@
+{
+  "source": "wordpress",
+  "slug": "fides",
+  "credentials": {
+    "cred:fides:verified-email:sd-jwt-vc": {
+      "itemId": "cred:fides:verified-email:sd-jwt-vc",
+      "publishedAt": "2026-08-14 05:22:31"
+    }
+  },
+  "importedAt": "2026-08-14T05:22:53.867Z"
+}
