@@ -3,7 +3,7 @@
  * Plugin Name: FIDES Credential Catalog
  * Plugin URI: https://github.com/FIDEScommunity/fides-credential-catalog
  * Description: Display an interactive catalog of credentials with search and filters. When the master fides_catalog_ssr_enabled flag (provided by FIDES Community Tools Tiles ≥ 1.6.3) is enabled, the plugin also emits a server-rendered listing fallback, per-deeplink SEO meta tags and a DigitalDocument JSON-LD payload so credential detail URLs become indexable by search engines.
- * Version: 1.4.1
+ * Version: 1.5.0
  * Author: FIDES Community
  * Author URI: https://fides.community
  * License: Apache-2.0
@@ -14,7 +14,7 @@ if (!defined('ABSPATH')) {
     exit;
 }
 
-define('FIDES_CREDENTIAL_CATALOG_VERSION', '1.4.1');
+define('FIDES_CREDENTIAL_CATALOG_VERSION', '1.5.0');
 define('FIDES_CREDENTIAL_CATALOG_PLUGIN_DIR', plugin_dir_path(__FILE__));
 define('FIDES_CREDENTIAL_CATALOG_PLUGIN_URL', plugin_dir_url(__FILE__));
 define('FIDES_CREDENTIAL_CATALOG_DEFAULT_UPDATE_FORM_PATH', '/credentials-update/');
@@ -173,6 +173,8 @@ function fides_credential_catalog_enqueue_assets() {
             'fides_credential_catalog_ecosystem_explorer_url',
             'https://fides.community/topics/ecosystem-explorer/'
         ),
+        'askFidesAvailable' => has_action('fides_assistant_enqueue_headless') !== false,
+        'askFidesPlaceholder' => __('Ask anything about credentials…', 'fides-credential-catalog'),
     ));
 }
 add_action('wp_enqueue_scripts', 'fides_credential_catalog_enqueue_assets');
@@ -238,6 +240,9 @@ function fides_credential_catalog_shortcode($atts) {
     $sector = sanitize_text_field((string) $atts['sector']);
     $taxonomy_theme = sanitize_text_field((string) $atts['taxonomy_theme']);
     $update_form_url = fides_credential_catalog_update_form_url((string) $atts['update_form_url']);
+    if (has_action('fides_assistant_enqueue_headless') !== false) {
+        do_action('fides_assistant_enqueue_headless');
+    }
     wp_add_inline_script(
         'fides-credential-catalog-script',
         'window.fidesCredentialCatalog = window.fidesCredentialCatalog || {}; window.fidesCredentialCatalog.updateFormUrl = ' . wp_json_encode($update_form_url) . ';',
