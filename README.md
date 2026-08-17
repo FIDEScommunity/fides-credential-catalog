@@ -233,7 +233,19 @@ A WordPress plugin is included in `wordpress-plugin/fides-credential-catalog/`.
 
 ```
 [fides_credential_catalog]
+[fides_credential_submit_form]
+[fides_credential_update_form]
 ```
+
+The submission forms require a logged-in user and the Catalog Submissions core
+from `fides-community-tools-tiles`. Create submissions select an organization;
+the credential ID and slug are generated automatically. Update links use
+`/credentials-update/?credential=…` by default and can be configured in the
+plugin settings. All source-schema fields are editable without plan-tier
+restrictions; crawler-derived provider, schema attributes, timestamps, and
+availability fields are never requested from users. Published submissions are
+merged into `community-catalogs/<org-slug>/credential-catalog.json` by
+`.github/workflows/wp-submissions-sync.yml`, preserving sibling credentials.
 
 ### Shortcode Options
 
@@ -243,6 +255,7 @@ A WordPress plugin is included in `wordpress-plugin/fides-credential-catalog/`.
 | `show_search` | `true`, `false` | `true` | Show/hide the search bar |
 | `columns` | `2`, `3`, `4` | `3` | Number of card columns |
 | `theme` | `fides`, `light`, `dark` | `fides` | Color theme |
+| `update_form_url` | URL | `/credentials-update/` | Override the update form page used by modal edit links |
 
 Example:
 ```

@@ -3,7 +3,7 @@
  * Plugin Name: FIDES Credential Catalog
  * Plugin URI: https://github.com/FIDEScommunity/fides-credential-catalog
  * Description: Display an interactive catalog of credentials with search and filters. When the master fides_catalog_ssr_enabled flag (provided by FIDES Community Tools Tiles ≥ 1.6.3) is enabled, the plugin also emits a server-rendered listing fallback, per-deeplink SEO meta tags and a DigitalDocument JSON-LD payload so credential detail URLs become indexable by search engines.
- * Version: 1.3.12
+ * Version: 1.5.0
  * Author: FIDES Community
  * Author URI: https://fides.community
  * License: Apache-2.0
@@ -14,12 +14,17 @@ if (!defined('ABSPATH')) {
     exit;
 }
 
-define('FIDES_CREDENTIAL_CATALOG_VERSION', '1.3.12');
+define('FIDES_CREDENTIAL_CATALOG_VERSION', '1.5.0');
 define('FIDES_CREDENTIAL_CATALOG_PLUGIN_DIR', plugin_dir_path(__FILE__));
 define('FIDES_CREDENTIAL_CATALOG_PLUGIN_URL', plugin_dir_url(__FILE__));
+define('FIDES_CREDENTIAL_CATALOG_DEFAULT_UPDATE_FORM_PATH', '/credentials-update/');
 
 require_once FIDES_CREDENTIAL_CATALOG_PLUGIN_DIR . 'includes/class-fides-credential-catalog-ssr.php';
+require_once FIDES_CREDENTIAL_CATALOG_PLUGIN_DIR . 'includes/class-fides-credential-catalog-submission-adapter.php';
+require_once FIDES_CREDENTIAL_CATALOG_PLUGIN_DIR . 'includes/class-fides-credential-catalog-submission-forms.php';
 Fides_Credential_Catalog_SSR::bootstrap();
+Fides_Credential_Catalog_Submission_Adapter::bootstrap();
+Fides_Credential_Catalog_Submission_Forms::bootstrap();
 
 /**
  * Detect if the site is running on a .local or localhost URL (local dev).
@@ -41,7 +46,32 @@ function fides_credential_catalog_is_local_site() {
     return ($host !== '' && (preg_match('/\.local$/i', $host) || $host === 'localhost'));
 }
 
+/**
+ * Enqueue frontend assets only when the credential catalog shortcode is present.
+ * A filter hook is provided for template-driven pages (same pattern as wallet /
+ * trust-scheme catalogs). Site-wide enqueue previously collided with other
+ * catalogs via the shared FidesCatalogUI singleton.
+ */
+function fides_credential_catalog_should_enqueue_assets() {
+    if (is_admin()) {
+        return false;
+    }
+
+    if (is_singular()) {
+        $post = get_post();
+        if ($post instanceof WP_Post && has_shortcode($post->post_content, 'fides_credential_catalog')) {
+            return true;
+        }
+    }
+
+    return (bool) apply_filters('fides_credential_catalog_force_enqueue_assets', false);
+}
+
 function fides_credential_catalog_enqueue_assets() {
+    if (!fides_credential_catalog_should_enqueue_assets()) {
+        return;
+    }
+
     $style_path = FIDES_CREDENTIAL_CATALOG_PLUGIN_DIR . 'assets/style.css';
     $script_path = FIDES_CREDENTIAL_CATALOG_PLUGIN_DIR . 'assets/credential-catalog.js';
     $ui_lib_css_path = FIDES_CREDENTIAL_CATALOG_PLUGIN_DIR . 'assets/lib/fides-catalog-ui.css';
@@ -135,10 +165,16 @@ function fides_credential_catalog_enqueue_assets() {
         'ratingsNonce' => wp_create_nonce('wp_rest'),
         'ratingsIsLoggedIn' => is_user_logged_in(),
         'ratingsLoginUrl' => $ratings_login_url,
+        'updateFormUrl' => fides_credential_catalog_update_form_url(),
+        'editAccess' => class_exists('Fides_Catalog_Org_Tier')
+            ? Fides_Catalog_Org_Tier::edit_access_for_user(get_current_user_id())
+            : array('isLoggedIn' => is_user_logged_in()),
         'ecosystemExplorerUrl' => get_option(
             'fides_credential_catalog_ecosystem_explorer_url',
             'https://fides.community/topics/ecosystem-explorer/'
         ),
+        'askFidesAvailable' => has_action('fides_assistant_enqueue_headless') !== false,
+        'askFidesPlaceholder' => __('Ask anything about credentials…', 'fides-credential-catalog'),
     ));
 }
 add_action('wp_enqueue_scripts', 'fides_credential_catalog_enqueue_assets');
@@ -174,6 +210,18 @@ function fides_credential_catalog_preserve_redirect_canonical($redirect_url) {
 }
 add_filter('redirect_canonical', 'fides_credential_catalog_preserve_redirect_canonical', 10, 1);
 
+/**
+ * Resolve the page containing [fides_credential_update_form].
+ */
+function fides_credential_catalog_update_form_url($override = '') {
+    $override = trim((string) $override);
+    if ($override !== '') {
+        return esc_url_raw($override);
+    }
+    $option = trim((string) get_option('fides_credential_catalog_update_form_url', ''));
+    return $option !== '' ? esc_url_raw($option) : home_url(FIDES_CREDENTIAL_CATALOG_DEFAULT_UPDATE_FORM_PATH);
+}
+
 function fides_credential_catalog_shortcode($atts) {
     $atts = shortcode_atts(array(
         'show_filters' => 'true',
@@ -182,6 +230,7 @@ function fides_credential_catalog_shortcode($atts) {
         'theme' => 'fides',
         'sector' => '',
         'taxonomy_theme' => '',
+        'update_form_url' => '',
     ), $atts, 'fides_credential_catalog');
 
     $show_filters = $atts['show_filters'] === 'true' ? 'true' : 'false';
@@ -190,6 +239,15 @@ function fides_credential_catalog_shortcode($atts) {
     $theme = in_array($atts['theme'], array('dark', 'light', 'fides')) ? $atts['theme'] : 'fides';
     $sector = sanitize_text_field((string) $atts['sector']);
     $taxonomy_theme = sanitize_text_field((string) $atts['taxonomy_theme']);
+    $update_form_url = fides_credential_catalog_update_form_url((string) $atts['update_form_url']);
+    if (has_action('fides_assistant_enqueue_headless') !== false) {
+        do_action('fides_assistant_enqueue_headless');
+    }
+    wp_add_inline_script(
+        'fides-credential-catalog-script',
+        'window.fidesCredentialCatalog = window.fidesCredentialCatalog || {}; window.fidesCredentialCatalog.updateFormUrl = ' . wp_json_encode($update_form_url) . ';',
+        'before'
+    );
 
     $initial_html = '';
     if (class_exists('Fides_Credential_Catalog_SSR')) {
@@ -260,6 +318,12 @@ function fides_credential_catalog_register_settings() {
         'default' => 'https://fides.community/ecosystem-explorer/organization-catalog/',
         'sanitize_callback' => 'esc_url_raw'
     ));
+
+    register_setting('fides_credential_catalog_settings', 'fides_credential_catalog_update_form_url', array(
+        'type' => 'string',
+        'default' => '',
+        'sanitize_callback' => 'esc_url_raw'
+    ));
 }
 add_action('admin_init', 'fides_credential_catalog_register_settings');
 
@@ -314,14 +378,23 @@ function fides_credential_catalog_settings_page() {
                         <p class="description">Base URL for organization deep links in the credential modal (query <code>?org=</code> is appended). On local <code>.local</code> / <code>localhost</code> sites this setting is ignored; the plugin uses <code>/organizations/</code> on the same site instead.</p>
                     </td>
                 </tr>
+                <tr>
+                    <th scope="row"><label for="fides_credential_catalog_update_form_url">Credential update form page URL</label></th>
+                    <td>
+                        <input type="url" id="fides_credential_catalog_update_form_url" name="fides_credential_catalog_update_form_url"
+                               value="<?php echo esc_attr(get_option('fides_credential_catalog_update_form_url', '')); ?>"
+                               class="regular-text" placeholder="<?php echo esc_attr(home_url(FIDES_CREDENTIAL_CATALOG_DEFAULT_UPDATE_FORM_PATH)); ?>">
+                        <p class="description">Page with <code>[fides_credential_update_form]</code>. Eligible logged-in users see a “Suggest an update” link in credential modals.</p>
+                    </td>
+                </tr>
             </table>
             <?php submit_button(); ?>
         </form>
 
         <hr>
         <h2>Shortcode</h2>
-        <code>[fides_credential_catalog]</code>
-        <p>Optional attributes: <code>show_filters</code>, <code>show_search</code>, <code>columns</code>, <code>theme</code> (UI color), <code>sector</code>, <code>taxonomy_theme</code> (preset taxonomy filter; URL uses <code>?theme=</code>).</p>
+        <p><code>[fides_credential_catalog]</code>, <code>[fides_credential_submit_form]</code>, <code>[fides_credential_update_form]</code></p>
+        <p>Catalog attributes: <code>show_filters</code>, <code>show_search</code>, <code>columns</code>, <code>theme</code> (UI color), <code>sector</code>, <code>taxonomy_theme</code> (preset taxonomy filter; URL uses <code>?theme=</code>), <code>update_form_url</code>.</p>
     </div>
     <?php
 }

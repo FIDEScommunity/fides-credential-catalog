@@ -1,0 +1,11 @@
+{
+  "schemaVersion": "1.0.0",
+  "catalogType": "credential",
+  "lastImportAt": "2026-08-14T05:22:53.867Z",
+  "managedCredentials": [
+    {
+      "slug": "fides",
+      "credentialId": "cred:fides:verified-email:sd-jwt-vc"
+    }
+  ]
+}

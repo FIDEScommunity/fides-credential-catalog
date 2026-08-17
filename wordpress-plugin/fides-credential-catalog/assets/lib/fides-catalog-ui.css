@@ -642,8 +642,26 @@
   border-radius: 9999px;
   font-size: 0.8125rem;
   font-weight: 500;
+  line-height: 1.25;
   white-space: nowrap;
   flex-shrink: 0;
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--fides-text-secondary, #94a3b8);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+/* Untyped tags (modal + catalogs that do not ship their own .fides-tag base). */
+.fides-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  font-size: 0.75rem;
+  line-height: 1.25;
+  padding: 0.25rem 0.5rem;
+  border-radius: 6px;
+  background: rgba(59, 130, 246, 0.1);
+  color: #93c5fd;
+  border: 1px solid rgba(59, 130, 246, 0.2);
 }
 
 .fides-modal-badge.type-personal {
@@ -1905,6 +1923,8 @@
 .fides-modal-overlay[data-theme="fides"] .fides-modal,
 .fides-modal-overlay[data-theme="light"] .fides-modal {
   background: #ffffff;
+  /* Host themes (e.g. FIDES WP) often set body { color: #fff }. Pin modal text. */
+  color: #0f172a;
 }
 
 .fides-modal-overlay[data-theme="fides"] .fides-modal-grid-item,
@@ -4203,4 +4223,149 @@ a.fides-eco-entity svg {
     justify-content: center;
     margin: 0;
   }
+}
+
+/* Trust scheme modal: nested trust registry cards. */
+.fides-modal-section-count {
+  display: inline-block;
+  margin-left: 0.35rem;
+  padding: 0.05rem 0.4rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.12);
+  font-size: 0.75em;
+  font-weight: 600;
+  vertical-align: middle;
+}
+
+.fides-trust-registry-card {
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 12px;
+  padding: 1rem 1.1rem;
+  margin-bottom: 0.85rem;
+}
+
+.fides-trust-registry-card:last-child {
+  margin-bottom: 0;
+}
+
+.fides-trust-registry-title {
+  margin: 0 0 0.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.35;
+  color: var(--fides-text-primary, #f1f5f9);
+}
+
+.fides-trust-registry-description {
+  margin: 0.6rem 0 0;
+  font-size: 0.9rem;
+  line-height: 1.55;
+  opacity: 0.85;
+  color: var(--fides-text-secondary, #94a3b8);
+}
+
+.fides-trust-registry-metas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 1.4rem;
+  margin-top: 0.7rem;
+  font-size: 0.85rem;
+  color: var(--fides-text-secondary, #94a3b8);
+}
+
+.fides-trust-registry-meta span {
+  display: inline-block;
+  margin-right: 0.4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  font-size: 0.7rem;
+  opacity: 0.6;
+}
+
+.fides-trust-registry-card .fides-modal-links {
+  margin-top: 0.85rem;
+}
+
+.fides-trust-registry-empty {
+  margin: 0;
+  padding: 1rem 1.1rem;
+  border: 1px dashed rgba(255, 255, 255, 0.18);
+  border-radius: 12px;
+  font-size: 0.9rem;
+  line-height: 1.55;
+  opacity: 0.8;
+  color: var(--fides-text-secondary, #94a3b8);
+}
+
+.fides-modal-badge.is-machine-readable {
+  border-color: rgba(52, 211, 153, 0.45);
+}
+
+/* Exact link: the credential names a registry of this scheme as trusted authority. */
+.fides-trust-scheme-ecosystem .fides-tag.is-exact-link {
+  border-color: rgba(52, 211, 153, 0.5);
+  font-weight: 600;
+}
+
+.fides-trust-scheme-ecosystem .fides-tag.is-more {
+  opacity: 0.65;
+}
+
+.fides-trust-scheme-ecosystem-note {
+  margin: 0.85rem 0 0;
+  font-size: 0.8rem;
+  line-height: 1.5;
+  opacity: 0.7;
+  color: var(--fides-text-secondary, #94a3b8);
+}
+
+.fides-modal-overlay[data-theme="fides"] .fides-modal-section-count,
+.fides-modal-overlay[data-theme="light"] .fides-modal-section-count {
+  background: rgba(15, 23, 42, 0.08);
+  color: #334155;
+}
+
+.fides-modal-overlay[data-theme="fides"] .fides-modal-badge,
+.fides-modal-overlay[data-theme="light"] .fides-modal-badge {
+  background: rgba(15, 23, 42, 0.06);
+  color: #334155;
+  border-color: rgba(15, 23, 42, 0.12);
+}
+
+.fides-modal-overlay[data-theme="fides"] .fides-trust-registry-card,
+.fides-modal-overlay[data-theme="light"] .fides-trust-registry-card {
+  border-color: rgba(15, 23, 42, 0.12);
+  background: #f8fafc;
+}
+
+.fides-modal-overlay[data-theme="fides"] .fides-trust-registry-title,
+.fides-modal-overlay[data-theme="light"] .fides-trust-registry-title {
+  color: #0f172a;
+}
+
+.fides-modal-overlay[data-theme="fides"] .fides-trust-registry-description,
+.fides-modal-overlay[data-theme="light"] .fides-trust-registry-description,
+.fides-modal-overlay[data-theme="fides"] .fides-trust-registry-metas,
+.fides-modal-overlay[data-theme="light"] .fides-trust-registry-metas,
+.fides-modal-overlay[data-theme="fides"] .fides-trust-registry-empty,
+.fides-modal-overlay[data-theme="light"] .fides-trust-registry-empty,
+.fides-modal-overlay[data-theme="fides"] .fides-trust-scheme-ecosystem-note,
+.fides-modal-overlay[data-theme="light"] .fides-trust-scheme-ecosystem-note {
+  color: #475569;
+}
+
+.fides-modal-overlay[data-theme="fides"] .fides-trust-registry-meta span,
+.fides-modal-overlay[data-theme="light"] .fides-trust-registry-meta span {
+  color: #64748b;
+  opacity: 1;
+}
+
+.fides-modal-overlay[data-theme="fides"] .fides-trust-registry-empty,
+.fides-modal-overlay[data-theme="light"] .fides-trust-registry-empty {
+  border-color: rgba(15, 23, 42, 0.18);
+}
+
+.fides-modal-overlay[data-theme="fides"] .fides-trust-scheme-ecosystem .fides-tag.is-exact-link,
+.fides-modal-overlay[data-theme="light"] .fides-trust-scheme-ecosystem .fides-tag.is-exact-link {
+  border-color: rgba(5, 150, 105, 0.5);
 }

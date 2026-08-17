@@ -6,6 +6,8 @@
   const RATINGS_NONCE = config.ratingsNonce ? String(config.ratingsNonce) : "";
   const RATINGS_IS_LOGGED_IN = !!config.ratingsIsLoggedIn;
   const RATINGS_LOGIN_URL = config.ratingsLoginUrl ? String(config.ratingsLoginUrl) : "";
+  const ASK_FIDES_AVAILABLE = !!config.askFidesAvailable;
+  const ASK_FIDES_PLACEHOLDER = String(config.askFidesPlaceholder || "Ask anything about credentials…");
   const RATINGS_BATCH_LIMIT = 100;
   const ECOSYSTEM_EXPLORER_URL = config.ecosystemExplorerUrl
     ? String(config.ecosystemExplorerUrl).trim()
@@ -141,6 +143,7 @@
     wallet: '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12V7H5a2 2 0 0 1 0-4h14v4"/><path d="M3 5v14a2 2 0 0 0 2 2h16v-5"/><path d="M18 12a2 2 0 0 0 0 4h4v-4Z"/></svg>',
     eye: '<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg>',
     share: '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" x2="15.42" y1="13.51" y2="17.49"/><line x1="15.41" x2="8.59" y1="6.51" y2="10.49"/></svg>',
+    pencil: '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z"/><path d="m15 5 4 4"/></svg>',
     fileCheck: '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="m9 15 2 2 4-4"/></svg>',
     shield: '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/></svg>',
     tag: '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12.586 2.586A2 2 0 0 0 11.172 2H4a2 2 0 0 0-2 2v7.172a2 2 0 0 0 .586 1.414l8.704 8.704a2.426 2.426 0 0 0 3.42 0l6.58-6.58a2.426 2.426 0 0 0 0-3.42z"/><circle cx="7.5" cy="7.5" r=".5" fill="currentColor"/></svg>',
@@ -1312,6 +1315,22 @@
     `;
   }
 
+  function buildCredentialEditActionHtml(credential) {
+    const access = config.editAccess && typeof config.editAccess === "object" ? config.editAccess : {};
+    const base = String(config.updateFormUrl || "").trim();
+    const canEdit = window.FidesCatalogUI && typeof window.FidesCatalogUI.userCanEditCatalogItem === "function"
+      ? window.FidesCatalogUI.userCanEditCatalogItem(access, credential && credential.orgId, credential)
+      : Boolean(access.isLoggedIn);
+    if (!canEdit || !base || !credential || !credential.id) return "";
+    try {
+      const url = new URL(base, window.location.origin);
+      url.searchParams.set("credential", String(credential.id));
+      return `<a href="${escapeHtml(url.toString())}" class="fides-modal-copy-link fides-modal-edit-link" aria-label="Suggest an update" title="Suggest an update">${icons.pencil}</a>`;
+    } catch (_error) {
+      return "";
+    }
+  }
+
   function renderModal() {
     if (!selectedCredential) return "";
     const rpItems = rpUsageMap.get(selectedCredential.id) || [];
@@ -1372,6 +1391,7 @@
               </div>
             </div>
             <div class="fides-modal-header-actions">
+              ${buildCredentialEditActionHtml(selectedCredential)}
               <button type="button" class="fides-modal-copy-link" id="fides-modal-copy-link" aria-label="Copy link to this credential" title="Copy link to this credential">
                 ${icons.share}
               </button>
@@ -1664,12 +1684,17 @@
           <section class="fides-main-content">
             <div class="fides-results-bar">
               ${settings.showSearch ? `
-                <div class="fides-topbar-search">
-                  <div class="fides-search-wrapper">
-                    <span class="fides-search-icon">${icons.search}</span>
-                    <input id="fides-search-input" class="fides-search-input" type="text" placeholder="Search..." value="${escapeHtml(filters.search)}" autocomplete="off">
-                    <button class="fides-search-clear ${filters.search ? "" : "hidden"}" id="fides-search-clear" type="button" aria-label="Clear search">${icons.xSmall}</button>
+                <div class="fides-search-actions">
+                  <div class="fides-topbar-search">
+                    <div class="fides-search-wrapper">
+                      <span class="fides-search-icon">${icons.search}</span>
+                      <input id="fides-search-input" class="fides-search-input" type="text" placeholder="Search..." value="${escapeHtml(filters.search)}" autocomplete="off">
+                      <button class="fides-search-clear ${filters.search ? "" : "hidden"}" id="fides-search-clear" type="button" aria-label="Clear search">${icons.xSmall}</button>
+                    </div>
                   </div>
+                  ${ASK_FIDES_AVAILABLE
+                    ? '<div class="fides-ask-fides-option"><span class="fides-ask-fides-separator">or</span><button class="fides-ask-fides-trigger" id="fides-ask-fides-trigger" type="button">Ask <strong>FIDES</strong></button></div>'
+                    : ""}
                 </div>
               ` : ""}
               <div class="fides-results-bar-actions">
@@ -1825,6 +1850,7 @@
   function bindEvents() {
     const searchInput = root.querySelector("#fides-search-input");
     const searchClear = root.querySelector("#fides-search-clear");
+    const askFidesTrigger = root.querySelector("#fides-ask-fides-trigger");
 
     const syncMobileSearch = (value) => {
       const mobileInput = root.querySelector("#fides-mobile-search-input");
@@ -1851,6 +1877,15 @@
         searchClear.classList.add("hidden");
         syncMobileSearch("");
         renderCredentialGridOnly();
+      });
+    }
+    if (askFidesTrigger) {
+      askFidesTrigger.addEventListener("click", () => {
+        if (!window.FidesAssistant || typeof window.FidesAssistant.open !== "function") return;
+        window.FidesAssistant.open({
+          prefill: searchInput ? String(searchInput.value || "").trim() : filters.search,
+          placeholder: ASK_FIDES_PLACEHOLDER,
+        });
       });
     }
 
