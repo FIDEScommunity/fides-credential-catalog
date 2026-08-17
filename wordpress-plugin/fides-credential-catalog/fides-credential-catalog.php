@@ -3,7 +3,7 @@
  * Plugin Name: FIDES Credential Catalog
  * Plugin URI: https://github.com/FIDEScommunity/fides-credential-catalog
  * Description: Display an interactive catalog of credentials with search and filters. When the master fides_catalog_ssr_enabled flag (provided by FIDES Community Tools Tiles ≥ 1.6.3) is enabled, the plugin also emits a server-rendered listing fallback, per-deeplink SEO meta tags and a DigitalDocument JSON-LD payload so credential detail URLs become indexable by search engines.
- * Version: 1.5.0
+ * Version: 1.5.2
  * Author: FIDES Community
  * Author URI: https://fides.community
  * License: Apache-2.0
@@ -14,7 +14,7 @@ if (!defined('ABSPATH')) {
     exit;
 }
 
-define('FIDES_CREDENTIAL_CATALOG_VERSION', '1.5.0');
+define('FIDES_CREDENTIAL_CATALOG_VERSION', '1.5.2');
 define('FIDES_CREDENTIAL_CATALOG_PLUGIN_DIR', plugin_dir_path(__FILE__));
 define('FIDES_CREDENTIAL_CATALOG_PLUGIN_URL', plugin_dir_url(__FILE__));
 define('FIDES_CREDENTIAL_CATALOG_DEFAULT_UPDATE_FORM_PATH', '/credentials-update/');
@@ -145,6 +145,7 @@ function fides_credential_catalog_enqueue_assets() {
     wp_localize_script('fides-credential-catalog-script', 'fidesCredentialCatalog', array(
         'pluginUrl' => $plugin_url,
         'githubDataUrl' => $credential_data_url,
+        'cacheDataUrl' => rest_url('fides-catalog/v1/aggregated/credential'),
         'rpAggregatedUrl' => $rp_data_url,
         'rpCatalogUrl' => get_option('fides_credential_catalog_rp_catalog_url', 'https://fides.community/community-tools/relying-party-catalog/'),
         'issuerAggregatedUrl' => $issuer_data_url,

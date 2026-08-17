@@ -174,6 +174,16 @@
   }
 
   let credentials = [];
+  let catalogLoadMeta = { showStaleNotice: false, remoteFailed: false, snapshotDate: "" };
+
+  function applyStaleCatalogNotice() {
+    if (!window.FidesCatalogUI || typeof window.FidesCatalogUI.mountStaleCatalogNotice !== "function") return;
+    window.FidesCatalogUI.mountStaleCatalogNotice(root, {
+      showStaleNotice: catalogLoadMeta.showStaleNotice,
+      catalogType: "credential",
+      snapshotDate: catalogLoadMeta.snapshotDate
+    });
+  }
   let rpUsageMap = new Map();
   let issuerUsageMap = new Map();
   let walletUsageMap = new Map();
@@ -668,8 +678,24 @@
   async function loadCredentials() {
     const remote = config.githubDataUrl;
     const local = `${config.pluginUrl || ""}data/aggregated.json`;
-    const sources = (isFidesLocalDevHost() ? [local, remote] : [remote, local]).filter(Boolean);
+    const ui = window.FidesCatalogUI;
 
+    if (ui && typeof ui.loadCatalogAggregatedJson === "function") {
+      const loaded = await ui.loadCatalogAggregatedJson({
+        remoteUrl: remote,
+        cacheUrl: config.cacheDataUrl,
+        localUrl: local
+      });
+      catalogLoadMeta.showStaleNotice = !!loaded.showStaleNotice;
+      catalogLoadMeta.remoteFailed = !!loaded.remoteFailed;
+      catalogLoadMeta.snapshotDate = loaded.snapshotDate || "";
+      if (loaded.ok && loaded.data) {
+        credentials = Array.isArray(loaded.data.credentials) ? loaded.data.credentials : [];
+      }
+      return;
+    }
+
+    const sources = (isFidesLocalDevHost() ? [local, remote] : [remote, local]).filter(Boolean);
     for (const source of sources) {
       try {
         const data = await loadJson(source);
@@ -1734,6 +1760,7 @@
 
     bindEvents();
     getMobileFilters()?.applyAfterRender(wasOpen);
+    applyStaleCatalogNotice();
 
     if (selectedCredential) {
       openModal();
