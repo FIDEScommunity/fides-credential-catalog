@@ -2,13 +2,17 @@
 Contributors: fidescommunity
 Requires at least: 5.0
 Tested up to: 6.7
-Stable tag: 1.5.2
+Stable tag: 1.5.3
 License: Apache-2.0
 License URI: https://www.apache.org/licenses/LICENSE-2.0
 
 Interactive credential catalog with search, filters, and optional SSR/SEO via fides-community-tools-tiles.
 
 == Changelog ==
+
+= 1.5.3 =
+* After magic-link sign-in, Back reloads a cached logged-out catalog page so
+  the like star sees the new session.
 
 = 1.5.2 =
 * After GitHub fails, use a 12-hour browser cache and the WP last-known-good aggregated feed before the bundled plugin snapshot.
