@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-18T06:52:05.706Z",
+  "generatedAt": "2026-08-19T06:52:28.636Z",
   "byCredentialId": {
     "cred:iso:mdl-mdoc:mdoc": {
       "total": 6,
@@ -317,6 +317,56 @@
       "test": 1
     },
     "cred:ewc:pid-eudi-sd-jwt:sd-jwt-vc": {
+      "total": 1,
+      "production": 0,
+      "test": 1
+    },
+    "cred:verana:cexa-kyc:sd-jwt-vc": {
+      "total": 2,
+      "production": 0,
+      "test": 2
+    },
+    "cred:verana:ecs-badge:vcdm-2-0": {
+      "total": 3,
+      "production": 0,
+      "test": 3
+    },
+    "cred:verana:cexa-verified-counterparty:vcdm-2-0": {
+      "total": 1,
+      "production": 0,
+      "test": 1
+    },
+    "cred:verana:ecs-service:vcdm-2-0": {
+      "total": 7,
+      "production": 0,
+      "test": 7
+    },
+    "cred:verana:demo-credential:sd-jwt-vc": {
+      "total": 3,
+      "production": 0,
+      "test": 3
+    },
+    "cred:verana:verandia-citizen-id:sd-jwt-vc": {
+      "total": 1,
+      "production": 0,
+      "test": 1
+    },
+    "cred:verana:verandia-legal-representative:sd-jwt-vc": {
+      "total": 1,
+      "production": 0,
+      "test": 1
+    },
+    "cred:verana:ecs-organization:vcdm-2-0": {
+      "total": 2,
+      "production": 0,
+      "test": 2
+    },
+    "cred:verana:authorized-repairer:vcdm-2-0": {
+      "total": 2,
+      "production": 0,
+      "test": 2
+    },
+    "cred:verana:iso-9001-demo:vcdm-2-0": {
       "total": 1,
       "production": 0,
       "test": 1
