@@ -1,11 +1,19 @@
 {
   "schemaVersion": "1.0.0",
   "catalogType": "credential",
-  "lastImportAt": "2026-08-14T05:22:53.867Z",
+  "lastImportAt": "2026-08-20T17:03:59.800Z",
   "managedCredentials": [
     {
       "slug": "fides",
       "credentialId": "cred:fides:verified-email:sd-jwt-vc"
+    },
+    {
+      "slug": "igrant",
+      "credentialId": "cred:igrantio:payment-account:sd-jwt-vc"
+    },
+    {
+      "slug": "igrant",
+      "credentialId": "cred:igrantio:payment-card:sd-jwt-vc"
     }
   ]
 }
