@@ -158,7 +158,8 @@
     subjectSoftware: '<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="13" rx="2"></rect><path d="M8 20h8"></path><path d="M12 17v3"></path></svg>',
     subjectDocument: '<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H8a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V9z"></path><path d="M14 3v6h6"></path><path d="M10 13h6"></path><path d="M10 17h6"></path></svg>',
     viewGrid: '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>',
-    viewList: '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg>'
+    viewList: '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg>',
+    useCases: '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83z"/><path d="M2 12a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 12"/><path d="M2 17a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 17"/></svg>'
   };
 
   root.setAttribute("data-theme", settings.theme);
@@ -174,6 +175,7 @@
   }
 
   let credentials = [];
+  let useCasesByCredentialId = Object.create(null);
   let catalogLoadMeta = { showStaleNotice: false, remoteFailed: false, snapshotDate: "" };
 
   function applyStaleCatalogNotice() {
@@ -192,6 +194,7 @@
   let ratingSummariesByCredentialId = Object.create(null);
   let ratingSummariesByIssuerId = Object.create(null);
   let ratingSummariesByRpId = Object.create(null);
+  let ratingSummariesByUseCaseId = Object.create(null);
 
   /**
    * VIEW TOGGLE STATE
@@ -456,6 +459,7 @@
     if (type === "credential") return ratingSummariesByCredentialId;
     if (type === "issuer") return ratingSummariesByIssuerId;
     if (type === "rp") return ratingSummariesByRpId;
+    if (type === "usecase") return ratingSummariesByUseCaseId;
     return null;
   }
 
@@ -1357,6 +1361,89 @@
     }
   }
 
+  /**
+   * Build credential id → use cases[] from use case catalog aggregated.json
+   * (links.credentials[].refId). Runtime join — credential JSON has no use-case field.
+   */
+  async function loadUseCaseIndex() {
+    useCasesByCredentialId = Object.create(null);
+    const url = String(config.useCaseAggregatedDataUrl || "").trim()
+      || "https://raw.githubusercontent.com/FIDEScommunity/fides-use-case-catalog/main/data/aggregated.json";
+    try {
+      const response = await fetch(url);
+      if (!response.ok) return;
+      const data = await response.json();
+      const useCases = Array.isArray(data.useCases) ? data.useCases : [];
+      const allUseCaseIds = [];
+      useCases.forEach(function(uc) {
+        if (!uc || typeof uc.id !== "string") return;
+        const links = uc.links && typeof uc.links === "object" ? uc.links : {};
+        const credentialLinks = Array.isArray(links.credentials) ? links.credentials : [];
+        const entry = {
+          id: uc.id,
+          title: (uc.title || "").trim() || uc.id,
+        };
+        let linked = false;
+        credentialLinks.forEach(function(link) {
+          if (!link || typeof link !== "object") return;
+          const credentialId = link.refId ? String(link.refId).trim() : "";
+          if (!credentialId) return;
+          if (!useCasesByCredentialId[credentialId]) useCasesByCredentialId[credentialId] = [];
+          if (!useCasesByCredentialId[credentialId].some(function(e) { return e.id === entry.id; })) {
+            useCasesByCredentialId[credentialId].push(entry);
+            linked = true;
+          }
+        });
+        if (linked) allUseCaseIds.push(entry.id);
+      });
+      Object.keys(useCasesByCredentialId).forEach(function(credentialId) {
+        useCasesByCredentialId[credentialId].sort(function(a, b) {
+          return String(a.title || a.id).localeCompare(String(b.title || b.id), undefined, { sensitivity: "base" });
+        });
+      });
+      ratingSummariesByUseCaseId = Object.create(null);
+      await loadRatingSummariesForType("usecase", allUseCaseIds);
+    } catch (e) {
+      console.warn("Use case catalog index load failed:", e.message);
+    }
+  }
+
+  function getDerivedUseCasesForCredential(credential) {
+    if (!credential || !credential.id) return [];
+    return useCasesByCredentialId[credential.id] || [];
+  }
+
+  function renderUseCasesAccordion(useCases, sourceCredential) {
+    if (!Array.isArray(useCases) || useCases.length === 0) return "";
+    const base = String(config.useCaseCatalogUrl || "https://fides.community/ecosystem-explorer/use-cases/").replace(/\/$/, "");
+    let body = "";
+    if (window.FidesCatalogUI && typeof window.FidesCatalogUI.buildUseCasesCardsHtml === "function") {
+      body = window.FidesCatalogUI.buildUseCasesCardsHtml(useCases, base, {
+        matomoSourceId: sourceCredential && sourceCredential.id ? String(sourceCredential.id) : "",
+        renderUseCaseLikeHtml: function(itemId) {
+          const like = renderModalEntityLike("usecase", itemId);
+          return like ? `<span class="fides-modal-use-case-card__like">${like}</span>` : "";
+        }
+      });
+    }
+    if (!body) return "";
+    return `
+      <div class="fides-accordion" id="fides-accordion-use-cases">
+        <div class="fides-accordion-header-bar">
+          <button class="fides-accordion-header fides-accordion-toggle" type="button" aria-expanded="false">
+            <span class="fides-accordion-title">${icons.useCases} Use cases <span class="fides-accordion-count">${useCases.length}</span></span>
+          </button>
+          <button type="button" class="fides-accordion-chevron-btn fides-accordion-toggle" aria-expanded="false" aria-label="Toggle use cases">
+            <span class="fides-accordion-chevron">${icons.chevronDown}</span>
+          </button>
+        </div>
+        <div class="fides-accordion-body">
+          ${body}
+        </div>
+      </div>
+    `;
+  }
+
   function renderModal() {
     if (!selectedCredential) return "";
     const rpItems = rpUsageMap.get(selectedCredential.id) || [];
@@ -1430,6 +1517,8 @@
 
             <!-- Intro: description only -->
             ${(selectedCredential.schemaDescription || selectedCredential.shortDescription) ? `<div class="fides-modal-intro"><p class="fides-modal-description">${escapeHtml(selectedCredential.schemaDescription || selectedCredential.shortDescription)}</p></div>` : ""}
+
+            ${renderUseCasesAccordion(getDerivedUseCasesForCredential(selectedCredential), selectedCredential)}
 
             <!-- Ecosystem flow -->
             <div class="fides-accordion fides-modal-section">
@@ -2107,6 +2196,10 @@
         });
       });
     });
+
+    if (window.FidesCatalogUI && typeof window.FidesCatalogUI.bindModalUseCasesScroll === "function") {
+      window.FidesCatalogUI.bindModalUseCasesScroll(modalOverlay);
+    }
   }
 
   function bindCredentialCardEvents() {
@@ -2315,6 +2408,13 @@
   }
 
   async function init() {
+    if (window.FidesCatalogUI && window.FidesCatalogUI.initMatomoLinkTracking) {
+      window.FidesCatalogUI.initMatomoLinkTracking({
+        category: "Credential Catalog",
+        containerSelector: "#fides-credential-catalog-root",
+        modalOverlayId: "fides-modal-overlay"
+      });
+    }
     await loadCredentials();
     openFromQueryParam();
     try {
@@ -2324,7 +2424,7 @@
     }
     render();
 
-    Promise.all([loadRPUsage(), loadIssuerUsage()])
+    Promise.all([loadRPUsage(), loadIssuerUsage(), loadUseCaseIndex()])
       .then(async () => {
         const requiresReorder =
           sortBy === "issuers"

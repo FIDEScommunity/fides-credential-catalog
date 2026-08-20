@@ -3,7 +3,7 @@
  * Plugin Name: FIDES Credential Catalog
  * Plugin URI: https://github.com/FIDEScommunity/fides-credential-catalog
  * Description: Display an interactive catalog of credentials with search and filters. When the master fides_catalog_ssr_enabled flag (provided by FIDES Community Tools Tiles ≥ 1.6.3) is enabled, the plugin also emits a server-rendered listing fallback, per-deeplink SEO meta tags and a DigitalDocument JSON-LD payload so credential detail URLs become indexable by search engines.
- * Version: 1.5.5
+ * Version: 1.5.7
  * Author: FIDES Community
  * Author URI: https://fides.community
  * License: Apache-2.0
@@ -14,7 +14,7 @@ if (!defined('ABSPATH')) {
     exit;
 }
 
-define('FIDES_CREDENTIAL_CATALOG_VERSION', '1.5.5');
+define('FIDES_CREDENTIAL_CATALOG_VERSION', '1.5.7');
 define('FIDES_CREDENTIAL_CATALOG_PLUGIN_DIR', plugin_dir_path(__FILE__));
 define('FIDES_CREDENTIAL_CATALOG_PLUGIN_URL', plugin_dir_url(__FILE__));
 define('FIDES_CREDENTIAL_CATALOG_DEFAULT_UPDATE_FORM_PATH', '/credentials-update/');
@@ -173,6 +173,14 @@ function fides_credential_catalog_enqueue_assets() {
         'ecosystemExplorerUrl' => get_option(
             'fides_credential_catalog_ecosystem_explorer_url',
             'https://fides.community/topics/ecosystem-explorer/'
+        ),
+        'useCaseCatalogUrl' => get_option(
+            'fides_credential_catalog_use_case_catalog_url',
+            'https://fides.community/ecosystem-explorer/use-cases/'
+        ),
+        'useCaseAggregatedDataUrl' => get_option(
+            'fides_credential_catalog_use_case_aggregated_url',
+            'https://raw.githubusercontent.com/FIDEScommunity/fides-use-case-catalog/main/data/aggregated.json'
         ),
         'askFidesAvailable' => has_action('fides_assistant_enqueue_headless') !== false,
         'askFidesPlaceholder' => __('Ask anything about credentials…', 'fides-credential-catalog'),

@@ -2,13 +2,20 @@
 Contributors: fidescommunity
 Requires at least: 5.0
 Tested up to: 6.7
-Stable tag: 1.5.5
+Stable tag: 1.5.7
 License: Apache-2.0
 License URI: https://www.apache.org/licenses/LICENSE-2.0
 
 Interactive credential catalog with search, filters, and optional SSR/SEO via fides-community-tools-tiles.
 
 == Changelog ==
+
+= 1.5.7 =
+* Move Use cases accordion above the Ecosystem Model; enable Matomo tracking.
+
+= 1.5.6 =
+* Credential modal: Use cases accordion with shared card layout (closed by
+  default), reverse-linked from use-case catalog credentials refs.
 
 = 1.5.5 =
 * Official listing badge requires explicit catalogTier Pro; curated Community
