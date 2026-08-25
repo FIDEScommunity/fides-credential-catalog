@@ -2,13 +2,16 @@
 Contributors: fidescommunity
 Requires at least: 5.0
 Tested up to: 6.7
-Stable tag: 1.5.7
+Stable tag: 1.5.8
 License: Apache-2.0
 License URI: https://www.apache.org/licenses/LICENSE-2.0
 
 Interactive credential catalog with search, filters, and optional SSR/SEO via fides-community-tools-tiles.
 
 == Changelog ==
+
+= 1.5.8 =
+* Sync shared modal UI: Use cases accordion uses a two-column layout on narrow screens; a single linked case spans the full row (tiles ≥ 1.13.15).
 
 = 1.5.7 =
 * Move Use cases accordion above the Ecosystem Model; enable Matomo tracking.
