@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-12T10:25:47.517Z",
+  "generatedAt": "2026-09-13T11:29:03.493Z",
   "byCredentialId": {
     "cred:iso:mdl-mdoc:mdoc": {
       "total": 6,
@@ -176,12 +176,12 @@
       "production": 0,
       "test": 1
     },
-    "cred:fides:criminal-record-check:sd-jwt-vc": {
+    "cred:fides:verified-employee:sd-jwt-vc": {
       "total": 1,
       "production": 0,
       "test": 1
     },
-    "cred:fides:verified-employee:sd-jwt-vc": {
+    "cred:fides:criminal-record-check:sd-jwt-vc": {
       "total": 1,
       "production": 0,
       "test": 1
