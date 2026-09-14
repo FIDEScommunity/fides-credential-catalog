@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-06T10:39:34.569Z",
+  "generatedAt": "2026-09-13T11:29:03.493Z",
   "byCredentialId": {
     "cred:iso:mdl-mdoc:mdoc": {
       "total": 6,
@@ -7,14 +7,14 @@
       "test": 6
     },
     "cred:eu:pid-vc-sd-jwt:sd-jwt-vc": {
-      "total": 8,
-      "production": 0,
-      "test": 8
-    },
-    "cred:eu:pid-mdoc:mdoc": {
       "total": 9,
       "production": 0,
       "test": 9
+    },
+    "cred:eu:pid-mdoc:mdoc": {
+      "total": 10,
+      "production": 0,
+      "test": 10
     },
     "cred:eu:age-verification-mdoc:mdoc": {
       "total": 6,
