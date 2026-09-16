@@ -1,0 +1,11 @@
+{
+  "source": "wordpress",
+  "slug": "emvco",
+  "credentials": {
+    "cred:emvco:emv-digital-payment-credential:sd-jwt-vc": {
+      "itemId": "cred:emvco:emv-digital-payment-credential:sd-jwt-vc",
+      "publishedAt": "2026-09-16 21:13:05"
+    }
+  },
+  "importedAt": "2026-09-16T21:13:19.404Z"
+}
