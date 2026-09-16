@@ -1,11 +1,15 @@
 {
   "schemaVersion": "1.0.0",
   "catalogType": "credential",
-  "lastImportAt": "2026-08-20T17:03:59.800Z",
+  "lastImportAt": "2026-09-16T15:31:45.461Z",
   "managedCredentials": [
     {
       "slug": "fides",
       "credentialId": "cred:fides:verified-email:sd-jwt-vc"
+    },
+    {
+      "slug": "google",
+      "credentialId": "cred:google:google-id-pass:mdoc"
     },
     {
       "slug": "igrant",
