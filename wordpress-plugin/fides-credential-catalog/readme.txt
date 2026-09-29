@@ -2,13 +2,16 @@
 Contributors: fidescommunity
 Requires at least: 5.0
 Tested up to: 6.7
-Stable tag: 1.5.12
+Stable tag: 1.5.13
 License: Apache-2.0
 License URI: https://www.apache.org/licenses/LICENSE-2.0
 
 Interactive credential catalog with search, filters, and optional SSR/SEO via fides-community-tools-tiles.
 
 == Changelog ==
+
+= 1.5.13 =
+* Make the shared mobile filter drawer modal and keyboard-accessible (tiles ≥ 1.13.31).
 
 = 1.5.12 =
 * Sync shared modal UI: icon-only Official/Community listing badge on mobile; more reliable modal close after several opens (tiles ≥ 1.13.22).
