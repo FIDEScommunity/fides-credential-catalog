@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.0.0",
   "catalogType": "credential",
-  "lastImportAt": "2026-10-02T14:55:55.179Z",
+  "lastImportAt": "2026-10-02T15:35:02.034Z",
   "managedCredentials": [
     {
       "slug": "emvco",
@@ -22,6 +22,10 @@
     {
       "slug": "fido-alliance",
       "credentialId": "cred:fidoalliance:open-checkout-mandate:sd-jwt-vc"
+    },
+    {
+      "slug": "fido-alliance",
+      "credentialId": "cred:fidoalliance:open-payment-mandate:sd-jwt-vc"
     },
     {
       "slug": "google",

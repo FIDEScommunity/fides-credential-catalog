@@ -4,7 +4,7 @@
   "credentials": {
     "cred:fidoalliance:open-checkout-mandate:sd-jwt-vc": {
       "itemId": "cred:fidoalliance:open-checkout-mandate:sd-jwt-vc",
-      "publishedAt": "2026-10-02 14:42:06"
+      "publishedAt": "2026-10-02 15:34:43"
     },
     "cred:fidoalliance:closed-checkout-mandate:sd-jwt-vc": {
       "itemId": "cred:fidoalliance:closed-checkout-mandate:sd-jwt-vc",
@@ -13,7 +13,11 @@
     "cred:fidoalliance:closed-payment-mandate:sd-jwt-vc": {
       "itemId": "cred:fidoalliance:closed-payment-mandate:sd-jwt-vc",
       "publishedAt": "2026-10-02 14:55:35"
+    },
+    "cred:fidoalliance:open-payment-mandate:sd-jwt-vc": {
+      "itemId": "cred:fidoalliance:open-payment-mandate:sd-jwt-vc",
+      "publishedAt": "2026-10-02 14:55:44"
     }
   },
-  "importedAt": "2026-10-02T14:55:55.176Z"
+  "importedAt": "2026-10-02T15:35:02.030Z"
 }
