@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.0.0",
   "catalogType": "credential",
-  "lastImportAt": "2026-10-02T15:36:10.524Z",
+  "lastImportAt": "2026-10-02T15:39:48.619Z",
   "managedCredentials": [
     {
       "slug": "emvco",
