@@ -9,7 +9,11 @@
     "cred:fidoalliance:closed-checkout-mandate:sd-jwt-vc": {
       "itemId": "cred:fidoalliance:closed-checkout-mandate:sd-jwt-vc",
       "publishedAt": "2026-10-02 14:47:40"
+    },
+    "cred:fidoalliance:closed-payment-mandate:sd-jwt-vc": {
+      "itemId": "cred:fidoalliance:closed-payment-mandate:sd-jwt-vc",
+      "publishedAt": "2026-10-02 14:55:35"
     }
   },
-  "importedAt": "2026-10-02T14:47:55.145Z"
+  "importedAt": "2026-10-02T14:55:55.176Z"
 }
