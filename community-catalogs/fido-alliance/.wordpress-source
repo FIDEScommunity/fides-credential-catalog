@@ -1,0 +1,11 @@
+{
+  "source": "wordpress",
+  "slug": "fido-alliance",
+  "credentials": {
+    "cred:fidoalliance:open-checkout-mandate:sd-jwt-vc": {
+      "itemId": "cred:fidoalliance:open-checkout-mandate:sd-jwt-vc",
+      "publishedAt": "2026-10-02 14:42:06"
+    }
+  },
+  "importedAt": "2026-10-02T14:42:27.473Z"
+}
