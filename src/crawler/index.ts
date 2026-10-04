@@ -15,6 +15,7 @@ import type {
   SubjectType
 } from "../types/credential.js";
 import { extractAttributesFromSchema } from "./schemaAttributes.js";
+import { resolveSchemaReferences, type SchemaDocument } from "./schemaResolver.js";
 
 const CONFIG = {
   schemaPath: path.join(process.cwd(), "schemas/credential-catalog.schema.json"),
@@ -253,28 +254,48 @@ interface SchemaFetchResult {
   description?: string;
 }
 
+const MAX_SCHEMA_DOCUMENT_BYTES = 5 * 1024 * 1024;
+const SCHEMA_FETCH_TIMEOUT_MS = 15_000;
+
+async function fetchSchemaDocument(schemaUrl: string): Promise<SchemaDocument> {
+  const parsedUrl = new URL(schemaUrl);
+  if (parsedUrl.protocol !== "https:" && parsedUrl.protocol !== "http:") {
+    throw new Error(`Unsupported schema URL protocol: ${parsedUrl.protocol}`);
+  }
+
+  const isYaml = /\.(yaml|yml)(\?.*)?$/i.test(schemaUrl);
+  const headers = isYaml
+    ? { Accept: "text/yaml, application/yaml, application/json, text/plain" }
+    : { Accept: "application/json, application/yaml, text/yaml, text/plain" };
+  const response = await fetch(schemaUrl, {
+    headers,
+    signal: AbortSignal.timeout(SCHEMA_FETCH_TIMEOUT_MS)
+  });
+  if (!response.ok) throw new Error(`Schema request failed with HTTP ${response.status}`);
+
+  const declaredLength = Number(response.headers.get("content-length") || 0);
+  if (declaredLength > MAX_SCHEMA_DOCUMENT_BYTES) {
+    throw new Error(`Schema document exceeds ${MAX_SCHEMA_DOCUMENT_BYTES} bytes`);
+  }
+
+  const text = await response.text();
+  if (Buffer.byteLength(text, "utf8") > MAX_SCHEMA_DOCUMENT_BYTES) {
+    throw new Error(`Schema document exceeds ${MAX_SCHEMA_DOCUMENT_BYTES} bytes`);
+  }
+  const parsed = yaml.load(text);
+  if (!parsed || typeof parsed !== "object" || Array.isArray(parsed)) {
+    throw new Error("Schema document must contain a JSON object");
+  }
+  return parsed as SchemaDocument;
+}
+
 async function fetchSchemaData(schemaUrl: string): Promise<SchemaFetchResult> {
   try {
-    const isYaml = /\.(yaml|yml)(\?.*)?$/i.test(schemaUrl);
-    const headers = isYaml
-      ? { Accept: "text/yaml, application/yaml, text/plain" }
-      : { Accept: "application/json" };
-
-    const response = await fetch(schemaUrl, { headers });
-    if (!response.ok) return { attributes: [] };
-
-    let data: Record<string, unknown>;
-    if (isYaml) {
-      const text = await response.text();
-      data = yaml.load(text) as Record<string, unknown>;
-    } else {
-      data = (await response.json()) as Record<string, unknown>;
-    }
-
-    if (!data || typeof data !== "object") return { attributes: [] };
+    const data = await fetchSchemaDocument(schemaUrl);
+    const resolvedData = await resolveSchemaReferences(data, schemaUrl, fetchSchemaDocument);
 
     return {
-      attributes: extractAttributesFromSchema(data),
+      attributes: extractAttributesFromSchema(resolvedData),
       description: typeof data.description === "string" ? data.description : undefined
     };
   } catch {

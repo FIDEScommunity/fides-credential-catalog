@@ -6,6 +6,7 @@ import {
   SCHEMA_ATTRIBUTES_MAX_COUNT,
   SCHEMA_ATTRIBUTES_MAX_DEPTH
 } from "./schemaAttributes.js";
+import { resolveSchemaReferences, type SchemaDocument } from "./schemaResolver.js";
 
 test("flat root properties", () => {
   const attrs = extractAttributesFromSchema({
@@ -189,7 +190,7 @@ test("credentialSubject oneOf with $ref to $defs yields claim properties (Gaia-X
   assert.ok(!attrs.some((a) => a.name === "@context"), "VC envelope fields excluded when subject resolved");
 });
 
-test("nested oneOf: first object branch with $ref expands under parent path", () => {
+test("nested oneOf: object branch with $ref expands under parent path", () => {
   const attrs = extractAttributesFromSchema({
     properties: {
       holder: {
@@ -216,6 +217,185 @@ test("nested oneOf: first object branch with $ref expands under parent path", ()
   assert.ok(id);
   assert.equal(id!.required, true);
   assert.ok(attrs.some((a) => a.name === "holder/gx:ownedBy/sri"));
+});
+
+test("AP2 Open Checkout Mandate: all anyOf constraint variants are expanded", () => {
+  const attrs = extractAttributesFromSchema({
+    type: "object",
+    required: ["constraints"],
+    properties: {
+      constraints: {
+        type: "array",
+        items: {
+          anyOf: [
+            { $ref: "#/$defs/allowed_merchants" },
+            { $ref: "#/$defs/line_items" }
+          ]
+        }
+      }
+    },
+    $defs: {
+      allowed_merchants: {
+        type: "object",
+        required: ["type", "allowed"],
+        properties: {
+          type: { type: "string" },
+          allowed: {
+            type: "array",
+            items: {
+              type: "object",
+              properties: { id: { type: "string" }, name: { type: "string" } }
+            }
+          }
+        }
+      },
+      line_items: {
+        type: "object",
+        required: ["type", "items"],
+        properties: {
+          type: { type: "string" },
+          items: {
+            type: "array",
+            items: { $ref: "#/$defs/line_item_requirements" }
+          }
+        }
+      },
+      line_item_requirements: {
+        type: "object",
+        required: ["id", "acceptable_items", "quantity"],
+        properties: {
+          id: { type: "string" },
+          acceptable_items: {
+            type: "array",
+            items: { $ref: "#/$defs/item" }
+          },
+          quantity: { type: "integer" }
+        }
+      },
+      item: {
+        type: "object",
+        required: ["id", "title"],
+        properties: {
+          id: { type: "string" },
+          title: { type: "string" }
+        }
+      }
+    }
+  });
+
+  const names = new Set(attrs.map((attribute) => attribute.name));
+  assert.ok(names.has("constraints/item/allowed"), "allowed_merchants branch is present");
+  assert.ok(names.has("constraints/item/allowed/item/id"));
+  assert.ok(names.has("constraints/item/items"), "line_items branch is present");
+  assert.ok(names.has("constraints/item/items/item/id"));
+  assert.ok(names.has("constraints/item/items/item/acceptable_items"));
+  assert.ok(names.has("constraints/item/items/item/acceptable_items/item/id"));
+  assert.ok(names.has("constraints/item/items/item/acceptable_items/item/title"));
+  assert.ok(names.has("constraints/item/items/item/quantity"));
+  assert.equal(
+    attrs.filter((attribute) => attribute.name === "constraints/item/type").length,
+    1,
+    "shared variant fields are deduplicated"
+  );
+});
+
+test("AP2 Payment Mandate: external relative $refs resolve to nested attributes", async () => {
+  const rootUrl = "https://raw.example.test/ap2/payment_mandate.json";
+  const root: SchemaDocument = {
+    $id: "https://ap2-protocol.org/schemas/payment_mandate.json",
+    type: "object",
+    required: ["payee", "payment_amount", "payment_instrument"],
+    properties: {
+      payee: { description: "The merchant receiving the payment.", $ref: "types/merchant.json" },
+      payment_amount: { $ref: "types/amount.json" },
+      payment_instrument: { $ref: "types/payment_instrument.json" }
+    }
+  };
+  const documents = new Map<string, SchemaDocument>([
+    [
+      "https://raw.example.test/ap2/types/merchant.json",
+      {
+        type: "object",
+        required: ["id", "name"],
+        properties: {
+          id: { type: "string" },
+          name: { type: "string" },
+          website: { type: "string" }
+        }
+      }
+    ],
+    [
+      "https://raw.example.test/ap2/types/amount.json",
+      {
+        type: "object",
+        required: ["amount", "currency"],
+        properties: {
+          amount: { type: "integer" },
+          currency: { type: "string" }
+        }
+      }
+    ],
+    [
+      "https://raw.example.test/ap2/types/payment_instrument.json",
+      {
+        type: "object",
+        required: ["id", "type"],
+        properties: {
+          id: { type: "string" },
+          type: { type: "string" },
+          description: { type: "string" }
+        }
+      }
+    ]
+  ]);
+  const loaded: string[] = [];
+  const resolved = await resolveSchemaReferences(root, rootUrl, async (url) => {
+    loaded.push(url);
+    const document = documents.get(url);
+    if (!document) throw new Error(`Unexpected schema URL: ${url}`);
+    return document;
+  });
+  const attrs = extractAttributesFromSchema(resolved);
+  const names = new Set(attrs.map((attribute) => attribute.name));
+
+  for (const name of [
+    "payee/id",
+    "payee/name",
+    "payee/website",
+    "payment_amount/amount",
+    "payment_amount/currency",
+    "payment_instrument/id",
+    "payment_instrument/type",
+    "payment_instrument/description"
+  ]) {
+    assert.ok(names.has(name), `${name} is present`);
+  }
+  assert.equal(attrs.find((attribute) => attribute.name === "payee")?.description,
+    "The merchant receiving the payment.",
+    "$ref sibling metadata is retained");
+  assert.deepEqual(loaded.sort(), Array.from(documents.keys()).sort());
+});
+
+test("external $ref cycles terminate and retain unresolved ref fallback", async () => {
+  const root: SchemaDocument = {
+    properties: {
+      node: { $ref: "node.json" }
+    }
+  };
+  const resolved = await resolveSchemaReferences(
+    root,
+    "https://schemas.example.test/root.json",
+    async () => ({
+      type: "object",
+      properties: {
+        id: { type: "string" },
+        child: { $ref: "node.json" }
+      }
+    })
+  );
+  const attrs = extractAttributesFromSchema(resolved);
+  assert.ok(attrs.some((attribute) => attribute.name === "node/id"));
+  assert.ok(attrs.some((attribute) => attribute.name.endsWith("/child") && attribute.type === "ref"));
 });
 
 test("respects SCHEMA_ATTRIBUTES_MAX_COUNT", () => {
