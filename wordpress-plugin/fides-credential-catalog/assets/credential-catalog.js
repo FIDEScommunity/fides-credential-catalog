@@ -175,6 +175,9 @@
   }
 
   let credentials = [];
+  const LISTING_PAGE_PARAM = "catalog_page";
+  const LISTING_PAGE_SIZE = 30;
+  let listingPage = listingPageFromLocation();
   let useCasesByCredentialId = Object.create(null);
   let catalogLoadMeta = { showStaleNotice: false, remoteFailed: false, snapshotDate: "" };
 
@@ -1231,7 +1234,8 @@
   function renderCredentialRow(credential) {
     const { issuerCount, rpCount, activityDateLabel } = getCredentialDisplayData(credential);
     return `
-      <article class="fides-credential-card" data-credential-id="${escapeHtml(credential.id)}" role="button" tabindex="0">
+      <article class="fides-credential-card" data-credential-id="${escapeHtml(credential.id)}">
+        <a class="fides-catalog-card-link" href="${escapeHtml(credentialDetailHref(credential.id))}" aria-label="View ${escapeHtml(credential.displayName || credential.id)}"></a>
         <div class="fides-row-icon" aria-hidden="true" title="${escapeHtml(credential.subjectType || 'Document')}">
           ${getSubjectTypeIcon(credential.subjectType)}
         </div>
@@ -1310,7 +1314,8 @@
     const { issuerCount, rpCount } = getCredentialDisplayData(credential);
 
     return `
-      <article class="fides-credential-card" data-credential-id="${escapeHtml(credential.id)}" role="button" tabindex="0">
+      <article class="fides-credential-card" data-credential-id="${escapeHtml(credential.id)}">
+        <a class="fides-catalog-card-link" href="${escapeHtml(credentialDetailHref(credential.id))}" aria-label="View ${escapeHtml(credential.displayName || credential.id)}"></a>
         <header class="fides-credential-header">
           <div class="fides-credential-subject-icon" aria-hidden="true" title="${escapeHtml(credential.subjectType || "Document")}">
             ${getSubjectTypeIcon(credential.subjectType)}
@@ -1787,9 +1792,92 @@
     `;
   }
 
+  function listingPageFromLocation() {
+    const raw = Number.parseInt(new URLSearchParams(window.location.search).get(LISTING_PAGE_PARAM) || "1", 10);
+    return Number.isFinite(raw) && raw > 0 ? raw : 1;
+  }
+
+  function credentialDetailHref(id) {
+    const url = new URL(window.location.origin + window.location.pathname);
+    url.searchParams.set("credential", id);
+    return url.toString();
+  }
+
+  function listingHrefForPage(page) {
+    const url = new URL(window.location.href);
+    url.searchParams.delete("credential");
+    if (page > 1) url.searchParams.set(LISTING_PAGE_PARAM, String(page));
+    else url.searchParams.delete(LISTING_PAGE_PARAM);
+    url.hash = "";
+    return url.toString();
+  }
+
+  function pagedCredentials(filtered) {
+    const totalPages = Math.max(1, Math.ceil(filtered.length / LISTING_PAGE_SIZE));
+    listingPage = Math.min(Math.max(1, listingPage), totalPages);
+    const start = (listingPage - 1) * LISTING_PAGE_SIZE;
+    return filtered.slice(start, start + LISTING_PAGE_SIZE);
+  }
+
+  function renderPaginationBar(totalItems) {
+    const totalPages = Math.ceil(totalItems / LISTING_PAGE_SIZE);
+    if (totalPages <= 1) return "";
+    const page = Math.min(listingPage, totalPages);
+    const start = (page - 1) * LISTING_PAGE_SIZE + 1;
+    const end = Math.min(page * LISTING_PAGE_SIZE, totalItems);
+    const links = Array.from({ length: totalPages }, (_value, index) => index + 1)
+      .map((number) => `<li><a class="fides-catalog-page-link${number === page ? " is-current" : ""}" href="${escapeHtml(listingHrefForPage(number))}" data-catalog-page="${number}"${number === page ? ' aria-current="page"' : ""}>${number}</a></li>`)
+      .join("");
+    const previous = page > 1
+      ? `<a class="fides-catalog-pagination__prev" href="${escapeHtml(listingHrefForPage(page - 1))}" data-catalog-page="${page - 1}" rel="prev">Previous</a>`
+      : "";
+    const next = page < totalPages
+      ? `<a class="fides-catalog-pagination__next" href="${escapeHtml(listingHrefForPage(page + 1))}" data-catalog-page="${page + 1}" rel="next">Next</a>`
+      : "";
+    return `<nav class="fides-catalog-pagination" aria-label="Catalog pages">
+      <p class="fides-catalog-pagination__meta">Showing ${start}–${end} of ${totalItems}</p>
+      <div class="fides-catalog-pagination__nav">${previous}<ol class="fides-catalog-pagination__pages">${links}</ol>${next}</div>
+    </nav>`;
+  }
+
+  function bindPaginationLinks() {
+    root.querySelectorAll("[data-catalog-page]").forEach((link) => {
+      link.addEventListener("click", (event) => {
+        if (event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+        event.preventDefault();
+        listingPage = Number.parseInt(link.dataset.catalogPage || "1", 10) || 1;
+        window.history.pushState({}, "", link.href);
+        renderCredentialGridOnly();
+        root.querySelector(".fides-results")?.scrollIntoView({ block: "start" });
+      });
+    });
+  }
+
+  function retainStandaloneDetailPage() {
+    const detail = root.querySelector('[data-fides-ssr-page="detail"]');
+    if (!detail) return false;
+    const fallback = detail.closest('[data-fides-ssr="credential"]');
+    if (fallback) {
+      fallback.style.display = "";
+      fallback.removeAttribute("aria-hidden");
+    }
+    root.querySelector('[data-fides-ssr-spinner="1"]')?.remove();
+    return true;
+  }
+
+  function revealSsrFallback() {
+    const fallback = root.querySelector('[data-fides-ssr="credential"]');
+    if (!fallback) return false;
+    fallback.style.display = "";
+    fallback.removeAttribute("aria-hidden");
+    root.querySelector('[data-fides-ssr-spinner="1"]')?.remove();
+    return true;
+  }
+
   function render() {
     const wasOpen = getMobileFilters()?.captureOpenState() ?? false;
     const filtered = getFilteredCredentials();
+    const visibleCredentials = pagedCredentials(filtered);
     const metrics = computeMetrics();
 
     root.innerHTML = `
@@ -1837,10 +1925,11 @@
             <div class="fides-results">
               <div class="fides-credential-grid" data-view="${effectiveView()}" data-columns="${escapeHtml(settings.columns)}">
                 ${effectiveView() === 'list' ? renderCredentialListHeader() : ''}
-                ${filtered.length > 0
-                  ? filtered.map(effectiveView() === 'list' ? renderCredentialRow : renderCredentialCard).join("")
+                ${visibleCredentials.length > 0
+                  ? visibleCredentials.map(effectiveView() === 'list' ? renderCredentialRow : renderCredentialCard).join("")
                   : '<p class="fides-empty">No credentials found.</p>'}
               </div>
+              <div class="fides-catalog-pagination-slot">${renderPaginationBar(filtered.length)}</div>
             </div>
           </section>
         </div>
@@ -1848,6 +1937,7 @@
     `;
 
     bindEvents();
+    bindPaginationLinks();
     getMobileFilters()?.applyAfterRender(wasOpen);
     applyStaleCatalogNotice();
 
@@ -1887,12 +1977,16 @@
     const ev = effectiveView();
     grid.setAttribute('data-view', ev);
     const filtered = getFilteredCredentials();
+    const visibleCredentials = pagedCredentials(filtered);
     const header = ev === 'list' ? renderCredentialListHeader() : '';
-    const items = filtered.length > 0
-      ? filtered.map(ev === 'list' ? renderCredentialRow : renderCredentialCard).join("")
+    const items = visibleCredentials.length > 0
+      ? visibleCredentials.map(ev === 'list' ? renderCredentialRow : renderCredentialCard).join("")
       : '<p class="fides-empty">No credentials found.</p>';
     grid.innerHTML = header + items;
+    const paginationSlot = root.querySelector(".fides-catalog-pagination-slot");
+    if (paginationSlot) paginationSlot.innerHTML = renderPaginationBar(filtered.length);
     bindCredentialCardEvents();
+    bindPaginationLinks();
 
     const metrics = computeMetrics();
     const kpiValues = root.querySelectorAll(".fides-kpi-card .fides-kpi-value");
@@ -2214,7 +2308,10 @@
       };
 
       card.addEventListener("click", (event) => {
-        if (event.target.closest("a")) return;
+        const link = event.target.closest(".fides-catalog-card-link");
+        if (link && (event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey)) return;
+        if (event.target.closest("a") && !link) return;
+        if (link) event.preventDefault();
         open();
       });
 
@@ -2416,12 +2513,14 @@
       });
     }
     await loadCredentials();
+    if (credentials.length === 0 && revealSsrFallback()) return;
     openFromQueryParam();
     try {
       await loadCredentialRatingSummaries(credentials);
     } catch (ratingsError) {
       console.warn("Failed to load credential likes:", ratingsError.message);
     }
+    if (retainStandaloneDetailPage()) return;
     render();
 
     Promise.all([loadRPUsage(), loadIssuerUsage(), loadUseCaseIndex()])
@@ -2471,6 +2570,11 @@
         console.warn("Vocabulary load failed:", vocabError.message);
       });
   }
+
+  window.addEventListener("popstate", () => {
+    listingPage = listingPageFromLocation();
+    if (!retainStandaloneDetailPage()) renderCredentialGridOnly();
+  });
 
   init();
 })();
