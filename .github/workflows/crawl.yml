@@ -56,7 +56,18 @@ jobs:
           git config --local user.name "github-actions[bot]"
           git add data/aggregated.json data/credential-history-state.json data/issuer-availability-index.json
           git commit -m "chore: update aggregated credential data [skip ci]"
-          git push
+          # main may have moved while the crawl ran (PR merge / another crawl).
+          # Rebase and retry so we do not fail on a transient non-fast-forward.
+          for attempt in 1 2 3; do
+            if git push; then
+              exit 0
+            fi
+            echo "Push rejected (attempt ${attempt}); rebasing onto origin/main…"
+            git fetch origin main
+            git rebase origin/main
+          done
+          echo "Failed to push crawl results after 3 attempts" >&2
+          exit 1
 
       # Tells the production WordPress site to flush its aggregated.json cache
       # (Fides_Catalog_Source transient + options-backup) so freshly crawled
