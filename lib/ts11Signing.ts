@@ -9,13 +9,27 @@
  * - TS11_SIGNING_JWKS — optional public JWKS JSON array override for rotation
  *
  * When TS11_SIGNING_KEY is unset, endpoints stay unsigned (local/dev fallback).
+ *
+ * `jose` is loaded via dynamic import() so Vercel CJS serverless functions do not
+ * crash with ERR_REQUIRE_ESM on the ESM-only jose@6 package.
  */
 
-import { exportJWK, importJWK, SignJWT, jwtVerify, type JWK, type JWTPayload } from "jose";
+import type { JWK, JWTPayload } from "jose";
 
 const DEFAULT_ALG = "ES256";
 
 export type Ts11Signable = Record<string, unknown>;
+
+type JoseModule = typeof import("jose");
+
+let joseModulePromise: Promise<JoseModule> | undefined;
+
+function loadJose(): Promise<JoseModule> {
+  if (!joseModulePromise) {
+    joseModulePromise = import("jose");
+  }
+  return joseModulePromise;
+}
 
 function parseJsonEnv(name: string): unknown | undefined {
   const raw = process.env[name];
@@ -70,6 +84,7 @@ export async function getTs11Jwks(): Promise<{ keys: JWK[] }> {
   if (!isTs11SigningConfigured()) {
     return { keys: [] };
   }
+  const { exportJWK, importJWK } = await loadJose();
   const priv = privateJwk();
   const key = await importJWK(priv, getTs11SigningAlg());
   const pub = await exportJWK(key);
@@ -96,6 +111,7 @@ export async function getTs11Jwks(): Promise<{ keys: JWK[] }> {
  * Claims: iss, iat, plus the data fields (content/page or SchemaMeta fields).
  */
 export async function signTs11Payload(payload: Ts11Signable): Promise<string> {
+  const { importJWK, SignJWT } = await loadJose();
   const alg = getTs11SigningAlg();
   const kid = getTs11SigningKid();
   const iss = getTs11Issuer();
@@ -110,6 +126,7 @@ export async function signTs11Payload(payload: Ts11Signable): Promise<string> {
 
 /** Verify a compact JWS against the configured JWKS (tests / CI). */
 export async function verifyTs11Jws(jws: string): Promise<JWTPayload> {
+  const { importJWK, jwtVerify } = await loadJose();
   const { keys } = await getTs11Jwks();
   if (!keys.length) throw new Error("No JWKS keys configured");
   const alg = getTs11SigningAlg();
