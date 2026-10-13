@@ -2207,18 +2207,20 @@
               </div>
             </div>
 
-            ${hasSchemaMetadataFields(selectedCredential) ? `
-            <!-- Schema metadata (ARF TS11 SchemaMeta fields) -->
-            <div class="fides-accordion${isTs11SchemaMetaComplete(selectedCredential) ? " is-open" : ""}" id="fides-accordion-schema-metadata">
+            <!-- Schema metadata + other details (one accordion; TS11 fields above a divider when present) -->
+            <div class="fides-accordion is-open" id="fides-accordion-details">
               <div class="fides-accordion-header-bar">
-                <button class="fides-accordion-header fides-accordion-toggle" type="button" aria-expanded="${isTs11SchemaMetaComplete(selectedCredential) ? "true" : "false"}">
-                  <span class="fides-accordion-title">${icons.fileCheck} Schema metadata${isTs11SchemaMetaComplete(selectedCredential) ? ` ${renderTs11BadgeHtml(selectedCredential, "fides-tag-ts11--accordion")}` : ""}</span>
+                <button class="fides-accordion-header fides-accordion-toggle" type="button" aria-expanded="true">
+                  <span class="fides-accordion-title">${hasSchemaMetadataFields(selectedCredential)
+                    ? `${icons.fileCheck} Schema metadata${isTs11SchemaMetaComplete(selectedCredential) ? ` ${renderTs11BadgeHtml(selectedCredential, "fides-tag-ts11--accordion")}` : ""}`
+                    : `${icons.shield} Other details`}</span>
                 </button>
-                <button type="button" class="fides-accordion-chevron-btn fides-accordion-toggle" aria-expanded="${isTs11SchemaMetaComplete(selectedCredential) ? "true" : "false"}" aria-label="Toggle schema metadata section">
+                <button type="button" class="fides-accordion-chevron-btn fides-accordion-toggle" aria-expanded="true" aria-label="${hasSchemaMetadataFields(selectedCredential) ? "Toggle schema metadata section" : "Toggle other details section"}">
                   <span class="fides-accordion-chevron">${icons.chevronDown}</span>
                 </button>
               </div>
               <div class="fides-accordion-body">
+                ${hasSchemaMetadataFields(selectedCredential) ? `
                 <p class="fides-schema-metadata-intro">Machine-readable attestation catalogue fields (ARF TS11 SchemaMeta).</p>
                 <div class="fides-details-kv">
                   <div class="fides-kv-row">
@@ -2247,26 +2249,14 @@
                       : "—"}</span>
                   </div>
                   <div class="fides-kv-row">
-                    <span class="fides-kv-key">${trustedAuthorities.length === 1 ? "Trust registry" : "Trust registries"}</span>
+                    <span class="fides-kv-key">${trustedAuthorities.length === 1 ? "Trusted Authority" : "Trusted Authorities"}</span>
                     ${trustRegistryRowsHtml
                       ? `<span class="fides-kv-val-stack">${trustRegistryRowsHtml}</span>`
                       : `<span class="fides-kv-val">—</span>`}
                   </div>
                 </div>
-              </div>
-            </div>` : ""}
-
-            <!-- Other details accordion (open by default) -->
-            <div class="fides-accordion is-open" id="fides-accordion-details">
-              <div class="fides-accordion-header-bar">
-                <button class="fides-accordion-header fides-accordion-toggle" type="button" aria-expanded="true">
-                  <span class="fides-accordion-title">${icons.shield} Other details</span>
-                </button>
-                <button type="button" class="fides-accordion-chevron-btn fides-accordion-toggle" aria-expanded="true" aria-label="Toggle other details section">
-                  <span class="fides-accordion-chevron">${icons.chevronDown}</span>
-                </button>
-              </div>
-              <div class="fides-accordion-body">
+                <hr class="fides-details-divider" aria-hidden="true" />
+                ` : ""}
                 <div class="fides-details-kv">
                   <div class="fides-kv-row">
                     <span class="fides-kv-key">Credential ID</span>

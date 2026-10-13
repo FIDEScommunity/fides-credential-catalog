@@ -2813,6 +2813,12 @@ a.fides-eco-tag-purple:hover {
   color: var(--fides-text-muted, #64748b);
 }
 
+.fides-details-divider {
+  margin: 1rem 0;
+  border: 0;
+  border-top: 1px solid var(--fides-border, rgba(148, 163, 184, 0.35));
+}
+
 .fides-modal-overlay[data-theme="fides"] .fides-tag.credential-format,
 .fides-modal-overlay[data-theme="light"] .fides-tag.credential-format {
   background: rgba(10, 110, 243, 0.1);

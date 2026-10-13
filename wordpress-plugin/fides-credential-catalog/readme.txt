@@ -2,13 +2,17 @@
 Contributors: fidescommunity
 Requires at least: 5.0
 Tested up to: 6.7
-Stable tag: 1.6.3
+Stable tag: 1.6.4
 License: Apache-2.0
 License URI: https://www.apache.org/licenses/LICENSE-2.0
 
 Interactive credential catalog with search, filters, and optional SSR/SEO via fides-community-tools-tiles.
 
 == Changelog ==
+
+= 1.6.4 =
+* Rename Trust registries to Trusted Authorities (ARF TS11 wording).
+* Merge Schema metadata and Other details into one accordion, separated by a divider.
 
 = 1.6.3 =
 * Deep links use the listing spinner shell again (no visible SSR detail flash before the modal).

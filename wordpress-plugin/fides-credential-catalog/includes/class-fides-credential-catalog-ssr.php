@@ -323,7 +323,7 @@ if (! class_exists('Fides_Credential_Catalog_SSR')) {
             }
 
             /**
-             * Trust registries a verifier can use to establish that an issuer of
+             * Trusted authorities a verifier can use to establish that an issuer of
              * this credential is authorised (ARF TS11 trustedAuthorities). Resolved
              * by the crawler against fides-trust-scheme-catalog, so name, scheme and
              * access level are already present in the aggregated data.
@@ -337,7 +337,7 @@ if (! class_exists('Fides_Credential_Catalog_SSR')) {
                 ob_start();
                 ?>
                 <section class="fides-ssr-detail__section">
-                    <h2 class="fides-ssr-detail__section-title"><?php esc_html_e('Trust registries', $td); ?></h2>
+                    <h2 class="fides-ssr-detail__section-title"><?php esc_html_e('Trusted Authorities', $td); ?></h2>
                     <ul class="fides-ssr-detail__registries">
                         <?php foreach ($item['resolvedTrustedAuthorities'] as $authority) :
                             if (! is_array($authority)) {
