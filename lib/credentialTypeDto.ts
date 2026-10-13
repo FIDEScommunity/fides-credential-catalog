@@ -16,16 +16,32 @@ const CREDENTIAL_CATEGORIES = [
 ] as const;
 type CredentialCategory = (typeof CREDENTIAL_CATEGORIES)[number];
 
+export interface DtoTrustedAuthority {
+  frameworkType?: string;
+  registryId?: string;
+  registryName?: string;
+  registryUrl?: string;
+  schemeId?: string;
+  schemeName?: string;
+  isLoTE?: boolean;
+}
+
 export interface AggregatedCatalog {
   credentials: Array<{
     id: string;
+    attestationTypeId?: string;
     displayName?: string;
     shortDescription?: string;
     authority?: { name?: string; url?: string };
     subjectType?: string;
     vcFormat?: string;
+    formats?: Array<{ formatIdentifier?: string }>;
     schemaUrl?: string;
     rulebookUrl?: string;
+    rulebookIntegrity?: string;
+    resolvedTrustedAuthorities?: DtoTrustedAuthority[];
+    attestationLoS?: string;
+    bindingType?: string;
     updatedAt?: string;
     tags?: string[];
     sectors?: string[];
@@ -71,6 +87,29 @@ export function toCredentialTypeDto(
   if (c.schemaUrl) dto.schemaUrl = c.schemaUrl;
   if (c.shortDescription) dto.schemaInfo = c.shortDescription;
   if (c.rulebookUrl) dto.trustFrameworkUrl = c.rulebookUrl;
+
+  // TS11 additions; additive so existing consumers keep working.
+  if (c.attestationTypeId) dto.attestationTypeId = c.attestationTypeId;
+  const formats = (c.formats || [])
+    .map((format) => format?.formatIdentifier)
+    .filter((format): format is string => typeof format === "string" && format.length > 0);
+  if (formats.length) dto.formats = formats;
+  if (c.rulebookIntegrity) dto.rulebookIntegrity = c.rulebookIntegrity;
+  if (c.attestationLoS) dto.attestationLoS = c.attestationLoS;
+  if (c.bindingType) dto.bindingType = c.bindingType;
+  const trustedAuthorities = (c.resolvedTrustedAuthorities || []).filter((authority) => authority?.registryId);
+  if (trustedAuthorities.length) {
+    dto.trustedAuthorities = trustedAuthorities.map((authority) => ({
+      frameworkType: authority.frameworkType,
+      registryId: authority.registryId,
+      registryName: authority.registryName,
+      registryUrl: authority.registryUrl,
+      schemeId: authority.schemeId,
+      schemeName: authority.schemeName,
+      ...(authority.isLoTE === undefined ? {} : { isLoTE: authority.isLoTE })
+    }));
+  }
+
   dto.hasIssuers = Boolean(issuerAvailability?.hasIssuers);
   dto.issuerCount = Math.max(0, Number(issuerAvailability?.issuerCount || 0));
   return dto;

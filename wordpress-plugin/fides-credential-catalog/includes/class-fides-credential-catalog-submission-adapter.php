@@ -13,7 +13,8 @@ if (! class_exists('Fides_Credential_Catalog_Submission_Adapter')) {
     class Fides_Credential_Catalog_Submission_Adapter {
         const TYPE = 'credential';
         const SCHEMA = 'https://fides.community/schemas/credential-catalog/v1';
-        const ID_PATTERN = '/^cred:[a-z0-9]+:[a-z0-9-]+:[a-z0-9-]+$/';
+        /** Canonical type id is three segments; optional fourth kept for legacy aliases. */
+        const ID_PATTERN = '/^cred:[a-z0-9]+:[a-z0-9-]+(?::[a-z0-9-]+)?$/';
 
         /** @var string[] */
         const SUBJECT_TYPES = array('Person', 'Organization', 'Product', 'Dataset', 'Software', 'Document');
@@ -270,12 +271,16 @@ if (! class_exists('Fides_Credential_Catalog_Submission_Adapter')) {
                 ? sanitize_text_field((string) ($context['item_id'] ?? ''))
                 : sanitize_text_field((string) ($payload['id'] ?? ''));
             if (! preg_match(self::ID_PATTERN, $item_id)) {
-                return self::error(__('Credential id must use cred:<authorityCode>:<credentialKey>:<formatCode>.', 'fides-credential-catalog'));
+                return self::error(__('Credential id must use cred:<authorityCode>:<credentialKey> (attestation type id).', 'fides-credential-catalog'));
             }
             if ($action !== 'update') {
                 $parts = explode(':', $item_id);
-                if (($parts[1] ?? '') !== $authority_code || ($parts[3] ?? '') !== str_replace('_', '-', $vc_format)) {
-                    return self::error(__('Credential id must match the authority, credential key, and VC format.', 'fides-credential-catalog'));
+                // New submissions use the three-segment attestation type id.
+                if (count($parts) !== 3
+                    || ($parts[1] ?? '') !== $authority_code
+                    || ! preg_match('/^[a-z0-9-]+$/', (string) ($parts[2] ?? ''))
+                ) {
+                    return self::error(__('Credential id must match cred:<authorityCode>:<credentialKey>.', 'fides-credential-catalog'));
                 }
             }
 

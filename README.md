@@ -172,10 +172,11 @@ Top-level fields:
 
 | Field | Description |
 |-------|-------------|
-| `schemaVersion` | Schema version string |
+| `schemaVersion` | Schema version string (`2.0.0` since the TS11 alignment) |
 | `catalogType` | Always `"credential-catalog"` |
 | `lastUpdated` | ISO 8601 timestamp of last crawl |
 | `credentials` | Array of enriched credential entries |
+| `attestationTypes` | ARF TS11 projection: one entry per attestation type, formats merged, old ids kept as `aliasIds` |
 | `stats` | Summary counts |
 
 Each credential entry in `credentials[]` includes all source fields plus:
@@ -185,8 +186,14 @@ Each credential entry in `credentials[]` includes all source fields plus:
 | `orgId` | Copied from source catalog (same as organization catalog id) |
 | `provider` | Resolved by crawler from the organization catalog (`name`, `did`, `website`, `logo`, `contact`) |
 | `attributes` | Extracted by crawler from `schemaUrl` |
+| `attestationTypeId` | Authored, or derived by stripping the format segment from `id` |
+| `formats` | Authored `formats[]`, or derived from `vcFormat`, `nativeIdentifier`, `schemaUrl` |
+| `resolvedTrustedAuthorities` | Each `trustedAuthorities[].registryId` resolved against [fides-trust-scheme-catalog](https://github.com/FIDEScommunity/fides-trust-scheme-catalog) |
 | `firstSeenAt` | Persisted in `credential-history-state.json` (stable, not reset on re-crawl) |
 | `updatedAt` | Git last-commit date of the source file, or `lastUpdated` from the catalog |
+
+See [docs/TS11-ALIGNMENT.md](docs/TS11-ALIGNMENT.md) for the attestation type model,
+the trust registry references and the one-off migration script.
 
 ### Date Semantics
 

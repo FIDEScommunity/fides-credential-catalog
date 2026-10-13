@@ -2,16 +2,20 @@ import fs from "fs/promises";
 import { existsSync } from "fs";
 import path from "path";
 import { execFileSync } from "child_process";
-import { hostname } from "os";
 import Ajv2020 from "ajv/dist/2020.js";
 import addFormats from "ajv-formats";
 import yaml from "js-yaml";
 import type {
   AggregatedCredentialCatalog,
+  AttestationType,
   CredentialCatalogFile,
+  CredentialEntry,
+  CredentialFormat,
   EnrichedAttribute,
   NormalizedCredential,
   Provider,
+  ResolvedTrustedAuthority,
+  SchemaURI,
   SubjectType
 } from "../types/credential.js";
 import { extractAttributesFromSchema } from "./schemaAttributes.js";
@@ -40,6 +44,12 @@ const ISSUER_CATALOG_URL =
 const ISSUER_CATALOG_LOCAL_PATHS = [
   process.env.ISSUER_CATALOG_AGGREGATED_PATH,
   path.join(process.cwd(), "..", "issuer-catalog", "data", "aggregated.json")
+].filter(Boolean) as string[];
+const TRUST_SCHEME_CATALOG_URL =
+  "https://raw.githubusercontent.com/FIDEScommunity/fides-trust-scheme-catalog/main/data/aggregated.json";
+const TRUST_SCHEME_CATALOG_LOCAL_PATHS = [
+  process.env.TRUST_SCHEME_CATALOG_AGGREGATED_PATH,
+  path.join(process.cwd(), "..", "trust-scheme-catalog", "data", "aggregated.json")
 ].filter(Boolean) as string[];
 
 interface OrgCatalogEntry {
@@ -78,9 +88,20 @@ interface IssuerAvailabilityIndex {
   byCredentialId: Record<string, IssuerAvailabilityCounts>;
 }
 
+/** Sibling checkouts are only consulted outside CI, where they may exist. */
 function isLocalDevHost(): boolean {
-  const host = hostname();
-  return host !== "" && (host.endsWith(".local") || host === "localhost");
+  return !process.env.CI && !process.env.GITHUB_ACTIONS;
+}
+
+/**
+ * Opt-in preview of unpublished changes in a sibling catalog.
+ *
+ * Off by default on purpose: data/aggregated.json is committed, so a local crawl
+ * must not quietly bake in a sibling checkout that is ahead of or behind main.
+ * Set FIDES_PREFER_LOCAL_CATALOGS=1 when you are deliberately previewing.
+ */
+function preferLocalCatalogs(): boolean {
+  return isLocalDevHost() && process.env.FIDES_PREFER_LOCAL_CATALOGS === "1";
 }
 
 function orgEntryToProvider(entry: OrgCatalogEntry): Provider {
@@ -92,101 +113,397 @@ function orgEntryToProvider(entry: OrgCatalogEntry): Provider {
   return p;
 }
 
-async function loadOrganizationCatalogMap(): Promise<Map<string, OrgCatalogEntry>> {
-  const tryParse = (raw: string): Map<string, OrgCatalogEntry> => {
-    const data = JSON.parse(raw) as { organizations?: OrgCatalogEntry[] };
-    const map = new Map<string, OrgCatalogEntry>();
-    for (const o of data.organizations || []) {
-      if (o?.id) map.set(o.id, o);
-    }
-    return map;
-  };
-
-  if (isLocalDevHost()) {
-    for (const localPath of ORGANIZATION_CATALOG_LOCAL_PATHS) {
-      if (localPath && existsSync(localPath)) {
-        try {
-          const raw = await fs.readFile(localPath, "utf-8");
-          const map = tryParse(raw);
-          console.log(`Using local organization catalog (${localPath}), ${map.size} org(s)`);
-          return map;
-        } catch (e) {
-          console.warn("Could not parse local organization catalog:", (e as Error).message);
-        }
-      }
-    }
-  }
-
+/** Published catalog plus, outside CI, the first readable sibling checkout. */
+async function loadSiblingCatalog<T>(
+  url: string,
+  localPaths: string[],
+  label: string
+): Promise<{ remote: T | null; local: T | null }> {
+  let remote: T | null = null;
   try {
-    const res = await fetch(ORGANIZATION_CATALOG_URL);
+    const res = await fetch(url, { signal: AbortSignal.timeout(20_000) });
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
-    const data = (await res.json()) as { organizations?: OrgCatalogEntry[] };
-    const map = new Map<string, OrgCatalogEntry>();
-    for (const o of data.organizations || []) {
-      if (o?.id) map.set(o.id, o);
-    }
-    console.log(`Using organization catalog from GitHub, ${map.size} org(s)`);
-    return map;
+    remote = (await res.json()) as T;
   } catch (err) {
-    console.warn("Could not fetch organization catalog:", (err as Error).message);
-    for (const localPath of ORGANIZATION_CATALOG_LOCAL_PATHS) {
-      if (localPath && existsSync(localPath)) {
-        try {
-          const raw = await fs.readFile(localPath, "utf-8");
-          const map = tryParse(raw);
-          console.log(`Fallback local organization catalog (${localPath})`);
-          return map;
-        } catch (e) {
-          console.warn("Could not parse local organization catalog:", (e as Error).message);
-        }
+    console.warn(`Could not fetch ${label}:`, (err as Error).message);
+  }
+
+  let local: T | null = null;
+  if (isLocalDevHost()) {
+    for (const localPath of localPaths) {
+      if (!localPath || !existsSync(localPath)) continue;
+      try {
+        local = JSON.parse(await fs.readFile(localPath, "utf-8")) as T;
+        break;
+      } catch (err) {
+        console.warn(`Could not parse local ${label} (${localPath}):`, (err as Error).message);
       }
     }
-    return new Map();
   }
+
+  return { remote, local };
+}
+
+/**
+ * Union keyed by id of the published catalog and a local checkout.
+ *
+ * The published entry wins unless FIDES_PREFER_LOCAL_CATALOGS is set, so a sibling
+ * checkout that is behind main can never silently replace live data, while an entry
+ * that exists only locally still resolves during development.
+ */
+function mergeById<T extends { id?: string }>(
+  remote: T[] | undefined,
+  local: T[] | undefined,
+  label: string
+): T[] {
+  const localWins = preferLocalCatalogs();
+  const [winner, filler] = localWins ? [local, remote] : [remote, local];
+  const winnerLabel = localWins ? "local checkout" : "published";
+  const fillerLabel = localWins ? "published" : "local checkout";
+
+  const byId = new Map<string, T>();
+  for (const entry of winner || []) {
+    if (entry?.id) byId.set(entry.id, entry);
+  }
+  const winnerCount = byId.size;
+  let added = 0;
+  for (const entry of filler || []) {
+    if (!entry?.id || byId.has(entry.id)) continue;
+    byId.set(entry.id, entry);
+    added += 1;
+  }
+  console.log(
+    `Using ${label}: ${winnerCount} from ${winnerLabel}` +
+      (added > 0 ? `, ${added} added from ${fillerLabel}` : "")
+  );
+  return Array.from(byId.values());
+}
+
+async function loadOrganizationCatalogMap(): Promise<Map<string, OrgCatalogEntry>> {
+  const { remote, local } = await loadSiblingCatalog<{ organizations?: OrgCatalogEntry[] }>(
+    ORGANIZATION_CATALOG_URL,
+    ORGANIZATION_CATALOG_LOCAL_PATHS,
+    "organization catalog"
+  );
+  const organizations = mergeById(remote?.organizations, local?.organizations, "organization catalog");
+  return new Map(organizations.map((org) => [org.id, org]));
 }
 
 async function loadIssuerCatalogData(): Promise<IssuerCatalogData> {
-  const tryParse = (raw: string): IssuerCatalogData => JSON.parse(raw) as IssuerCatalogData;
+  const { remote, local } = await loadSiblingCatalog<IssuerCatalogData>(
+    ISSUER_CATALOG_URL,
+    ISSUER_CATALOG_LOCAL_PATHS,
+    "issuer catalog"
+  );
+  return { issuers: mergeById(remote?.issuers, local?.issuers, "issuer catalog") };
+}
 
-  if (isLocalDevHost()) {
-    for (const localPath of ISSUER_CATALOG_LOCAL_PATHS) {
-      if (localPath && existsSync(localPath)) {
-        try {
-          const raw = await fs.readFile(localPath, "utf-8");
-          const parsed = tryParse(raw);
-          const count = Array.isArray(parsed.issuers) ? parsed.issuers.length : 0;
-          console.log(`Using local issuer catalog (${localPath}), ${count} issuer(s)`);
-          return parsed;
-        } catch (e) {
-          console.warn("Could not parse local issuer catalog:", (e as Error).message);
-        }
-      }
-    }
+interface TrustRegistryIndexEntry {
+  registryId: string;
+  registryName: string;
+  registryUrl?: string;
+  registryProfile?: string;
+  machineReadable?: boolean;
+  access?: string;
+  schemeId: string;
+  schemeName: string;
+}
+
+/**
+ * Registry index from fides-trust-scheme-catalog, keyed by treg: id.
+ *
+ * Returns null when the catalog is unreachable, which is different from an empty
+ * index: an unknown treg: id must fail the crawl, but a network hiccup must not.
+ */
+async function loadTrustRegistryIndex(): Promise<Map<string, TrustRegistryIndexEntry> | null> {
+  interface TrustSchemeCatalog {
+    trustSchemes?: Array<{
+      id: string;
+      name: string;
+      trustRegistries?: Array<{
+        id: string;
+        name: string;
+        registryUrl?: string;
+        registryProfile?: string;
+        machineReadable?: boolean;
+        access?: string;
+      }>;
+    }>;
   }
 
-  try {
-    const res = await fetch(ISSUER_CATALOG_URL);
-    if (!res.ok) throw new Error(`HTTP ${res.status}`);
-    const parsed = (await res.json()) as IssuerCatalogData;
-    const count = Array.isArray(parsed.issuers) ? parsed.issuers.length : 0;
-    console.log(`Using issuer catalog from GitHub, ${count} issuer(s)`);
-    return parsed;
-  } catch (err) {
-    console.warn("Could not fetch issuer catalog:", (err as Error).message);
-    for (const localPath of ISSUER_CATALOG_LOCAL_PATHS) {
-      if (localPath && existsSync(localPath)) {
-        try {
-          const raw = await fs.readFile(localPath, "utf-8");
-          const parsed = tryParse(raw);
-          console.log(`Fallback local issuer catalog (${localPath})`);
-          return parsed;
-        } catch (e) {
-          console.warn("Could not parse fallback local issuer catalog:", (e as Error).message);
+  const { remote, local } = await loadSiblingCatalog<TrustSchemeCatalog>(
+    TRUST_SCHEME_CATALOG_URL,
+    TRUST_SCHEME_CATALOG_LOCAL_PATHS,
+    "trust scheme catalog"
+  );
+  if (remote === null && local === null) return null;
+
+  const schemes = mergeById(remote?.trustSchemes, local?.trustSchemes, "trust scheme catalog");
+  const index = new Map<string, TrustRegistryIndexEntry>();
+  for (const scheme of schemes) {
+    for (const registry of scheme.trustRegistries || []) {
+      if (!registry?.id) continue;
+      index.set(registry.id, {
+        registryId: registry.id,
+        registryName: registry.name || registry.id,
+        registryUrl: registry.registryUrl,
+        registryProfile: registry.registryProfile,
+        machineReadable: registry.machineReadable,
+        access: registry.access,
+        schemeId: scheme.id,
+        schemeName: scheme.name || scheme.id
+      });
+    }
+  }
+  return index;
+}
+
+/**
+ * TS11 formats[] for one entry.
+ *
+ * A v1 entry describes a single format in singular fields, so it collapses to a
+ * one-element array that carries its own id as alias. A v2 entry declares formats[]
+ * explicitly and the singular fields describe its primary format.
+ */
+function normalizeFormats(credential: CredentialEntry): CredentialFormat[] {
+  if (Array.isArray(credential.formats) && credential.formats.length > 0) {
+    return credential.formats.map((format) => ({
+      ...format,
+      credentialId: format.credentialId || (format.formatIdentifier === credential.vcFormat ? credential.id : undefined)
+    }));
+  }
+
+  const schemaURIs: SchemaURI[] = credential.schemaUrl
+    ? [
+        {
+          formatIdentifier: credential.vcFormat,
+          uri: credential.schemaUrl,
+          schemaType: credential.schemaType
         }
+      ]
+    : [];
+
+  return [
+    {
+      formatIdentifier: credential.vcFormat,
+      ...(credential.nativeIdentifier ? { nativeIdentifier: credential.nativeIdentifier } : {}),
+      ...(credential.nativeIdentifierType ? { nativeIdentifierType: credential.nativeIdentifierType } : {}),
+      ...(schemaURIs.length ? { schemaURIs } : {}),
+      credentialId: credential.id
+    }
+  ];
+}
+
+/** cred:<authority>:<key>[:<format>] → cred:<authority>:<key>. */
+function deriveAttestationTypeId(credential: CredentialEntry): string {
+  if (credential.attestationTypeId) return credential.attestationTypeId;
+  const parts = credential.id.split(":");
+  return parts.length > 3 ? parts.slice(0, 3).join(":") : credential.id;
+}
+
+/** Legacy per-format ids for deeplinks (seed aliasIds + formats[].credentialId + old 4-segment id). */
+function collectAliasIds(credential: CredentialEntry, attestationTypeId: string): string[] {
+  const aliases = new Set<string>();
+  for (const alias of credential.aliasIds || []) {
+    if (alias && alias !== attestationTypeId) aliases.add(alias);
+  }
+  for (const format of credential.formats || []) {
+    if (format.credentialId && format.credentialId !== attestationTypeId) {
+      aliases.add(format.credentialId);
+    }
+  }
+  if (credential.id !== attestationTypeId) aliases.add(credential.id);
+  return [...aliases].sort();
+}
+
+function collectSchemaURIs(credential: NormalizedCredential): SchemaURI[] {
+  const out: SchemaURI[] = [];
+  const seen = new Set<string>();
+  const push = (uri: SchemaURI | undefined) => {
+    if (!uri?.uri) return;
+    const key = `${uri.formatIdentifier}|${uri.uri}`;
+    if (seen.has(key)) return;
+    seen.add(key);
+    out.push(uri);
+  };
+  for (const uri of credential.schemaURIs || []) push(uri);
+  for (const format of credential.formats) {
+    for (const uri of format.schemaURIs || []) push(uri);
+  }
+  return out;
+}
+
+/**
+ * Resolves declared trust registries against the trust scheme catalog.
+ * An unknown treg: id is a hard error: a dangling trust anchor reference is worse
+ * than no reference, because a verifier cannot tell the difference.
+ */
+function resolveTrustedAuthorities(
+  credential: CredentialEntry,
+  index: Map<string, TrustRegistryIndexEntry> | null,
+  problems: string[]
+): ResolvedTrustedAuthority[] {
+  const declared = credential.trustedAuthorities || [];
+  if (declared.length === 0) return [];
+  if (index === null) {
+    console.warn(
+      `  Trust scheme catalog unavailable; leaving ${declared.length} trusted authority reference(s) on ${credential.id} unresolved.`
+    );
+    return [];
+  }
+
+  const resolved: ResolvedTrustedAuthority[] = [];
+  for (const authority of declared) {
+    const entry = index.get(authority.registryId);
+    if (!entry) {
+      problems.push(
+        `Unknown registryId ${authority.registryId} on ${credential.id} — add the registry to fides-trust-scheme-catalog first.`
+      );
+      continue;
+    }
+    if (authority.schemeId && authority.schemeId !== entry.schemeId) {
+      problems.push(
+        `schemeId ${authority.schemeId} on ${credential.id} does not match ${entry.schemeId}, the scheme that publishes ${authority.registryId}.`
+      );
+      continue;
+    }
+    resolved.push({
+      ...authority,
+      schemeId: entry.schemeId,
+      schemeName: entry.schemeName,
+      registryName: entry.registryName,
+      ...(entry.registryUrl ? { registryUrl: entry.registryUrl } : {}),
+      ...(entry.registryProfile ? { registryProfile: entry.registryProfile } : {}),
+      ...(entry.machineReadable !== undefined ? { machineReadable: entry.machineReadable } : {}),
+      ...(entry.access ? { access: entry.access } : {}),
+      // TS11 isLoTE is a property of the registry, so derive it instead of asking
+      // every credential author to repeat it.
+      ...(authority.frameworkType === "etsi_tl"
+        ? { isLoTE: entry.registryProfile === "etsi_ts_119_602_lote" }
+        : {})
+    });
+  }
+  return resolved;
+}
+
+/**
+ * FIDES vcFormat → TS11 formatIdentifier.
+ *
+ * aggregated.json stays in FIDES codes (see docs/TS11-ALIGNMENT.md); the TS11
+ * projection maps them here. Formats without a TS11 counterpart are omitted from
+ * the projection rather than mapped to something close.
+ */
+export const TS11_FORMAT_IDENTIFIERS: Record<string, string> = {
+  sd_jwt_vc: "dc+sd-jwt",
+  mdoc: "mso_mdoc",
+  jwt_vc: "jwt_vc_json",
+  vcdm_1_1: "ldp_vc",
+  vcdm_2_0: "ldp_vc"
+};
+
+/** TS11 requires SemVer, while authored versions are often "1" or "1.0". */
+function toSemVer(version: string): string | undefined {
+  const match = /^v?(\d+)(?:\.(\d+))?(?:\.(\d+))?(?:[-+].*)?$/.exec(version.trim());
+  if (!match) return undefined;
+  return `${match[1]}.${match[2] ?? "0"}.${match[3] ?? "0"}`;
+}
+
+// Trailing parentheticals that name a format, e.g. "PID (MSO Mdoc)".
+const FORMAT_NAME_SUFFIX =
+  /\s*\((?:sd-jwt(?:\s+vc)?|mso\s+mdoc|mdoc|jwt\s+vc(?:\s+json)?|ldp\s+vc|vcdm(?:\s+\d(?:\.\d)?)?)\)\s*$/i;
+
+/** An attestation type spans formats, so its name must not claim one. */
+function attestationTypeDisplayName(displayName: string): string {
+  const stripped = displayName.replace(FORMAT_NAME_SUFFIX, "").trim();
+  return stripped.length > 0 ? stripped : displayName;
+}
+
+/** One entry per attestation type, formats merged, per-format ids kept as aliases. */
+function buildAttestationTypes(credentials: NormalizedCredential[]): AttestationType[] {
+  const byId = new Map<string, AttestationType>();
+
+  for (const credential of credentials) {
+    const id = credential.attestationTypeId;
+    const existing = byId.get(id);
+    const schemaURIs = collectSchemaURIs(credential);
+
+    if (!existing) {
+      byId.set(id, {
+        id,
+        displayName: attestationTypeDisplayName(credential.displayName),
+        shortDescription: credential.shortDescription,
+        orgId: credential.orgId,
+        provider: credential.provider,
+        authority: credential.authority,
+        subjectType: credential.subjectType,
+        version: credential.version,
+        semverVersion: toSemVer(credential.version),
+        formats: [...credential.formats],
+        schemaURIs,
+        rulebookUrl: credential.rulebookUrl,
+        rulebookIntegrity: credential.rulebookIntegrity,
+        trustedAuthorities: [...(credential.resolvedTrustedAuthorities || [])],
+        attestationLoS: credential.attestationLoS,
+        bindingType: credential.bindingType,
+        sectors: [...(credential.sectors || [])],
+        ecosystems: [...(credential.ecosystems || [])],
+        themes: credential.themes ? [...credential.themes] : undefined,
+        category: credential.category,
+        aliasIds: collectAliasIds(credential, id),
+        updatedAt: credential.updatedAt
+      });
+      continue;
+    }
+
+    // Merge a sibling format entry into the attestation type it belongs to.
+    for (const alias of collectAliasIds(credential, id)) {
+      if (!existing.aliasIds.includes(alias)) existing.aliasIds.push(alias);
+    }
+    for (const format of credential.formats) {
+      if (!existing.formats.some((f) => f.formatIdentifier === format.formatIdentifier)) {
+        existing.formats.push(format);
       }
     }
-    return { issuers: [] };
+    for (const uri of schemaURIs) {
+      if (!existing.schemaURIs.some((u) => u.formatIdentifier === uri.formatIdentifier && u.uri === uri.uri)) {
+        existing.schemaURIs.push(uri);
+      }
+    }
+    for (const authority of credential.resolvedTrustedAuthorities || []) {
+      if (
+        !existing.trustedAuthorities.some(
+          (a) => a.registryId === authority.registryId && a.frameworkType === authority.frameworkType
+        )
+      ) {
+        existing.trustedAuthorities.push(authority);
+      }
+    }
+    for (const sector of credential.sectors || []) {
+      if (!existing.sectors.includes(sector)) existing.sectors.push(sector);
+    }
+    for (const ecosystem of credential.ecosystems || []) {
+      if (!existing.ecosystems.includes(ecosystem)) existing.ecosystems.push(ecosystem);
+    }
+    if (credential.themes?.length) {
+      existing.themes = existing.themes || [];
+      for (const theme of credential.themes) {
+        if (!existing.themes.includes(theme)) existing.themes.push(theme);
+      }
+    }
+    if (!existing.rulebookUrl && credential.rulebookUrl) {
+      existing.rulebookUrl = credential.rulebookUrl;
+      existing.rulebookIntegrity = credential.rulebookIntegrity;
+    }
+    if (credential.updatedAt > existing.updatedAt) existing.updatedAt = credential.updatedAt;
   }
+
+  const types = Array.from(byId.values());
+  for (const type of types) {
+    type.aliasIds.sort();
+    type.formats.sort((a, b) => a.formatIdentifier.localeCompare(b.formatIdentifier));
+  }
+  types.sort((a, b) => a.displayName.localeCompare(b.displayName));
+  return types;
 }
 
 function normalizeIssuerEnvironment(value: string | undefined): "production" | "test" | "unknown" {
@@ -303,7 +620,10 @@ async function fetchSchemaData(schemaUrl: string): Promise<SchemaFetchResult> {
   }
 }
 
-function calculateStats(credentials: NormalizedCredential[]): AggregatedCredentialCatalog["stats"] {
+function calculateStats(
+  credentials: NormalizedCredential[],
+  attestationTypes: AttestationType[]
+): AggregatedCredentialCatalog["stats"] {
   const byFormat: Record<string, number> = {};
   const bySubjectType: Record<SubjectType, number> = {
     Person: 0,
@@ -340,6 +660,8 @@ function calculateStats(credentials: NormalizedCredential[]): AggregatedCredenti
 
   return {
     totalCredentials: credentials.length,
+    totalAttestationTypes: attestationTypes.length,
+    withTrustedAuthorities: credentials.filter((c) => (c.resolvedTrustedAuthorities || []).length > 0).length,
     byFormat,
     bySubjectType,
     withSchemaAttributes,
@@ -429,9 +751,11 @@ async function crawl(): Promise<void> {
   console.log("Starting credential catalog crawl...");
   const validateCatalog = await initValidator();
   const organizationById = await loadOrganizationCatalogMap();
+  const trustRegistryIndex = await loadTrustRegistryIndex();
   const historyState = await loadHistoryState();
   const now = new Date().toISOString();
   const normalized: NormalizedCredential[] = [];
+  const problems: string[] = [];
 
   const sourceDirs = await fs.readdir(CONFIG.sourceDir).catch(() => []);
 
@@ -471,9 +795,31 @@ async function crawl(): Promise<void> {
           lastSeenAt: now
         };
 
+        const resolvedTrustedAuthorities = resolveTrustedAuthorities(
+          credential,
+          trustRegistryIndex,
+          problems
+        );
+
+        const attestationTypeId = deriveAttestationTypeId(credential);
+        const aliasIds = collectAliasIds(credential, attestationTypeId);
+        const formats = normalizeFormats(credential).map((format) => {
+          const legacyId =
+            format.credentialId ||
+            (credential.id !== attestationTypeId && format.formatIdentifier === credential.vcFormat
+              ? credential.id
+              : undefined);
+          return legacyId ? { ...format, credentialId: legacyId } : format;
+        });
+
         normalized.push({
           ...credential,
+          id: attestationTypeId,
           orgId: catalog.orgId,
+          attestationTypeId,
+          aliasIds: aliasIds.length ? aliasIds : undefined,
+          formats,
+          ...(resolvedTrustedAuthorities.length ? { resolvedTrustedAuthorities } : {}),
           provider,
           catalogUrl: catalogPath,
           source: "local",
@@ -497,12 +843,21 @@ async function crawl(): Promise<void> {
   }
   const deduped = Array.from(dedupeMap.values());
 
+  if (problems.length > 0) {
+    for (const problem of problems) console.error(`  ERROR ${problem}`);
+    console.error(`\nCrawl aborted: ${problems.length} trust anchor reference problem(s) must be fixed first.`);
+    process.exit(1);
+  }
+
+  const attestationTypes = buildAttestationTypes(deduped);
+
   const aggregated: AggregatedCredentialCatalog = {
-    schemaVersion: "1.4.0",
+    schemaVersion: "2.0.0",
     catalogType: "credential",
     lastUpdated: now,
     credentials: deduped,
-    stats: calculateStats(deduped)
+    attestationTypes,
+    stats: calculateStats(deduped, attestationTypes)
   };
 
   await fs.mkdir(path.dirname(CONFIG.outputPath), { recursive: true });
@@ -515,7 +870,11 @@ async function crawl(): Promise<void> {
   await fs.mkdir(path.dirname(CONFIG.wpPluginDataPath), { recursive: true });
   await fs.writeFile(CONFIG.wpPluginDataPath, JSON.stringify(aggregated, null, 2));
 
-  console.log(`Credential aggregation complete. Total credentials: ${aggregated.stats.totalCredentials}`);
+  console.log(
+    `Credential aggregation complete. ${aggregated.stats.totalCredentials} credential(s), ` +
+      `${aggregated.stats.totalAttestationTypes} attestation type(s), ` +
+      `${aggregated.stats.withTrustedAuthorities} with a resolved trust registry reference.`
+  );
 }
 
 crawl().catch((error) => {

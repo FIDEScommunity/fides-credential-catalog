@@ -47,6 +47,10 @@ if (! class_exists('Fides_Credential_Catalog_SSR')) {
             const OPTION_CATALOG_URL   = 'fides_credential_catalog_page_url';
             const MAX_LISTING_ITEMS    = 30;
 
+            /** Shared with the front-end script config, see the main plugin file. */
+            const OPTION_TRUST_SCHEME_URL  = 'fides_credential_catalog_trust_scheme_catalog_url';
+            const DEFAULT_TRUST_SCHEME_URL = 'https://fides.community/ecosystem-explorer/trust-scheme-catalog/';
+
             /** @var self|null */
             private static $instance = null;
 
@@ -72,7 +76,12 @@ if (! class_exists('Fides_Credential_Catalog_SSR')) {
             protected function shortcode_root_id(): string { return 'fides-credential-catalog-root'; }
             protected function loading_label(): string    { return __('Loading credential catalog…', 'fides-credential-catalog'); }
             protected function max_listing_items(): int   { return self::MAX_LISTING_ITEMS; }
-            protected function supports_standalone_detail_page(): bool { return true; }
+            /**
+             * Keep the listing shell (hidden SSR + spinner) on ?credential= deep links.
+             * Visible standalone detail flashed before JS mounts the modal; SEO still
+             * gets detail HTML in the hidden SSR block + noscript reveal.
+             */
+            protected function supports_standalone_detail_page(): bool { return false; }
 
             public function register_with_core(): void {
                 if (! class_exists('Fides_Catalog_Registry')) {
@@ -85,7 +94,7 @@ if (! class_exists('Fides_Credential_Catalog_SSR')) {
                     'collection_key'    => 'credentials',
                     'id_field'          => 'id',
                     'name_field'        => 'displayName',
-                    'description_field' => 'schemaDescription',
+                    'description_field' => 'shortDescription',
                     'logo_field'        => null,
                     'detail_param'      => 'credential',
                     'pages'             => array(
@@ -93,6 +102,19 @@ if (! class_exists('Fides_Credential_Catalog_SSR')) {
                     ),
                     'jsonld_type'       => 'DigitalDocument',
                 ));
+            }
+
+            /**
+             * Prefer authored shortDescription; fall back to schemaDescription
+             * from the primary schema file (legacy EUDI generated copy).
+             */
+            protected function item_description(array $item): string {
+                foreach (array('shortDescription', 'schemaDescription', 'description') as $field) {
+                    if (! empty($item[$field]) && is_string($item[$field])) {
+                        return (string) $item[$field];
+                    }
+                }
+                return '';
             }
 
             /* --------------------------------------------------------------
@@ -236,6 +258,43 @@ if (! class_exists('Fides_Credential_Catalog_SSR')) {
                         ),
                     );
                 }
+                if (! empty($item['attestationLoS'])) {
+                    $rows[] = array(
+                        'label' => __('Attestation LoS', $td),
+                        'html'  => '<code>' . esc_html((string) $item['attestationLoS']) . '</code>',
+                    );
+                }
+                if (! empty($item['bindingType'])) {
+                    $rows[] = array(
+                        'label' => __('Holder binding', $td),
+                        'html'  => '<code>' . esc_html((string) $item['bindingType']) . '</code>',
+                    );
+                }
+                if (! empty($item['rulebookUrl'])) {
+                    $rows[] = array(
+                        'label' => __('Rulebook', $td),
+                        'html'  => sprintf(
+                            '<a href="%1$s" rel="nofollow noopener" target="_blank">%2$s</a>',
+                            esc_url((string) $item['rulebookUrl']),
+                            esc_html__('View rulebook', $td)
+                        ),
+                    );
+                }
+                $has_ts11_format = ! empty($item['vcFormat']) || ( ! empty($item['formats']) && is_array($item['formats']) );
+                $has_ts11_schema = ! empty($item['schemaUrl'])
+                    || ( ! empty($item['schemaURIs']) && is_array($item['schemaURIs']) );
+                if (
+                    ! empty($item['attestationLoS'])
+                    && ! empty($item['bindingType'])
+                    && ! empty($item['rulebookUrl'])
+                    && $has_ts11_format
+                    && $has_ts11_schema
+                ) {
+                    $rows[] = array(
+                        'label' => __('Catalogue conformance', $td),
+                        'html'  => '<span class="fides-tag fides-tag-ts11" title="' . esc_attr__('Has the required ARF TS11 SchemaMeta fields for a catalogue-of-attestations entry.', $td) . '">TS11</span>',
+                    );
+                }
                 if (! empty($item['updatedAt']) && is_string($item['updatedAt'])) {
                     $ts = strtotime($item['updatedAt']);
                     if ($ts) {
@@ -258,7 +317,71 @@ if (! class_exists('Fides_Credential_Catalog_SSR')) {
                 echo $this->render_chip_section($this->list_field($item, 'sectors'),    __('Sectors', $td));
                 echo $this->render_chip_section($this->list_field($item, 'themes'),     __('Themes', $td));
                 echo $this->render_chip_section($this->list_field($item, 'ecosystems'), __('Ecosystems', $td));
+                echo $this->render_trust_registry_section($item);
                 echo $this->render_attribute_section($item);
+                return (string) ob_get_clean();
+            }
+
+            /**
+             * Trusted authorities a verifier can use to establish that an issuer of
+             * this credential is authorised (ARF TS11 trustedAuthorities). Resolved
+             * by the crawler against fides-trust-scheme-catalog, so name, scheme and
+             * access level are already present in the aggregated data.
+             */
+            protected function render_trust_registry_section(array $item): string {
+                if (empty($item['resolvedTrustedAuthorities']) || ! is_array($item['resolvedTrustedAuthorities'])) {
+                    return '';
+                }
+                $td            = 'fides-credential-catalog';
+                $scheme_base   = rtrim((string) get_option(self::OPTION_TRUST_SCHEME_URL, self::DEFAULT_TRUST_SCHEME_URL), '/');
+                ob_start();
+                ?>
+                <section class="fides-ssr-detail__section">
+                    <h2 class="fides-ssr-detail__section-title"><?php esc_html_e('Trusted Authorities', $td); ?></h2>
+                    <ul class="fides-ssr-detail__registries">
+                        <?php foreach ($item['resolvedTrustedAuthorities'] as $authority) :
+                            if (! is_array($authority)) {
+                                continue;
+                            }
+                            $registry_name = isset($authority['registryName']) ? (string) $authority['registryName'] : '';
+                            $registry_id   = isset($authority['registryId']) ? (string) $authority['registryId'] : '';
+                            $label         = $registry_name !== '' ? $registry_name : $registry_id;
+                            if ($label === '') {
+                                continue;
+                            }
+                            $registry_url = isset($authority['registryUrl']) ? (string) $authority['registryUrl'] : '';
+                            $scheme_id    = isset($authority['schemeId']) ? (string) $authority['schemeId'] : '';
+                            $scheme_name  = isset($authority['schemeName']) ? (string) $authority['schemeName'] : $scheme_id;
+                            $scheme_url   = ($scheme_base !== '' && $scheme_id !== '')
+                                ? $scheme_base . '/?scheme=' . rawurlencode($scheme_id)
+                                : '';
+                            $access       = isset($authority['access']) ? (string) $authority['access'] : '';
+                            ?>
+                            <li>
+                                <?php if ($registry_url !== '') : ?>
+                                    <a href="<?php echo esc_url($registry_url); ?>" rel="nofollow noopener" target="_blank"><?php echo esc_html($label); ?></a>
+                                <?php else : ?>
+                                    <strong><?php echo esc_html($label); ?></strong>
+                                <?php endif; ?>
+                                <?php if ($scheme_name !== '') : ?>
+                                    —
+                                    <?php if ($scheme_url !== '') : ?>
+                                        <a href="<?php echo esc_url($scheme_url); ?>"><?php echo esc_html($scheme_name); ?></a>
+                                    <?php else : ?>
+                                        <?php echo esc_html($scheme_name); ?>
+                                    <?php endif; ?>
+                                <?php endif; ?>
+                                <?php if (! empty($authority['machineReadable'])) : ?>
+                                    <em>(<?php esc_html_e('machine-readable', $td); ?>)</em>
+                                <?php endif; ?>
+                                <?php if ($access !== '' && $access !== 'public') : ?>
+                                    <em>(<?php echo esc_html(str_replace('_', ' ', $access)); ?>)</em>
+                                <?php endif; ?>
+                            </li>
+                        <?php endforeach; ?>
+                    </ul>
+                </section>
+                <?php
                 return (string) ob_get_clean();
             }
 
