@@ -14,8 +14,9 @@ import { mkdirSync, writeFileSync } from "fs";
 import { resolve } from "path";
 
 const kid = process.env.TS11_SIGNING_KID?.trim() || "fides-cat-2026-v1";
+// Must match getTs11Issuer() in lib/ts11Signing.ts (stable iss, independent of host).
 const issuer =
-  process.env.TS11_ISSUER?.trim() || "https://fides-credential-catalog.vercel.app";
+  process.env.TS11_ISSUER?.trim() || "https://credentials.fides.community";
 const writeDirArg = process.argv.find((a) => a.startsWith("--write-dir="));
 const writeDir = writeDirArg ? writeDirArg.slice("--write-dir=".length) : "";
 
