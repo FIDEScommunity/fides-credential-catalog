@@ -2,7 +2,11 @@
 Contributors: fidescommunity
 Requires at least: 5.0
 Tested up to: 6.7
+<<<<<<< Updated upstream
 Stable tag: 1.6.4
+=======
+Stable tag: 1.6.6
+>>>>>>> Stashed changes
 License: Apache-2.0
 License URI: https://www.apache.org/licenses/LICENSE-2.0
 
@@ -10,6 +14,15 @@ Interactive credential catalog with search, filters, and optional SSR/SEO via fi
 
 == Changelog ==
 
+<<<<<<< Updated upstream
+=======
+= 1.6.6 =
+* Add a “TS11 compliant” quick filter (same SchemaMeta field set as the TS11 badge).
+
+= 1.6.5 =
+* Credential submit/update forms: add ARF TS11 Schema metadata (attestationLoS, bindingType, rulebook URL/integrity, Trusted Authorities), grouped in a dedicated section.
+
+>>>>>>> Stashed changes
 = 1.6.4 =
 * Rename Trust registries to Trusted Authorities (ARF TS11 wording).
 * Merge Schema metadata and Other details into one accordion, separated by a divider.
