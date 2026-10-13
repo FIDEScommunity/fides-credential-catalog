@@ -28,6 +28,408 @@
     acdc: "ACDC",
   };
 
+  /** ARF TS11 attestationLoS, expressed as ISO/IEC 18045 attack potential. */
+  const ATTESTATION_LOS_LABELS = {
+    iso_18045_basic: "Basic (ISO/IEC 18045)",
+    "iso_18045_enhanced-basic": "Enhanced basic (ISO/IEC 18045)",
+    iso_18045_moderate: "Moderate (ISO/IEC 18045)",
+    iso_18045_high: "High (ISO/IEC 18045)",
+  };
+
+  /** ARF TS11 bindingType. */
+  const BINDING_TYPE_LABELS = {
+    claim: "Claim-based",
+    key: "Key-bound",
+    biometric: "Biometric",
+    none: "Not bound",
+  };
+
+  function attestationLoSLabel(code) {
+    return ATTESTATION_LOS_LABELS[code] || String(code || "");
+  }
+
+  function bindingTypeLabel(code) {
+    return BINDING_TYPE_LABELS[code] || String(code || "");
+  }
+
+  /**
+   * FIDES vcFormat / formats[].formatIdentifier → TS11 formatIdentifier.
+   * Formats without a TS11 counterpart are omitted from SchemaMeta checks.
+   */
+  /** FIDES vcFormat → TS11 formatIdentifier (and identity for already-TS11 codes). */
+  const TS11_FORMAT_IDENTIFIERS = {
+    sd_jwt_vc: "dc+sd-jwt",
+    mdoc: "mso_mdoc",
+    jwt_vc: "jwt_vc_json",
+    vcdm_1_1: "ldp_vc",
+    vcdm_2_0: "ldp_vc",
+    "dc+sd-jwt": "dc+sd-jwt",
+    mso_mdoc: "mso_mdoc",
+    jwt_vc_json: "jwt_vc_json",
+    "jwt_vc_json-ld": "jwt_vc_json-ld",
+    ldp_vc: "ldp_vc",
+  };
+
+  /** Preferred FIDES vcFormat label for a TS11 formatIdentifier (tooltip only). */
+  const TS11_TO_FIDES_FORMAT_LABEL = {
+    "dc+sd-jwt": "SD-JWT VC",
+    mso_mdoc: "ISO mDoc",
+    jwt_vc_json: "JWT VC",
+    "jwt_vc_json-ld": "JWT VC JSON-LD",
+    ldp_vc: "LDP VC",
+  };
+
+  const TS11_BADGE_TITLE =
+    "Has the required ARF TS11 SchemaMeta fields for a catalogue-of-attestations entry.";
+
+  function toTs11FormatIdentifier(formatIdentifier) {
+    if (!formatIdentifier) return "";
+    return TS11_FORMAT_IDENTIFIERS[formatIdentifier] || "";
+  }
+
+  function credentialFormatIdentifiers(credential) {
+    if (!credential) return [];
+    if (Array.isArray(credential.formats) && credential.formats.length > 0) {
+      return credential.formats
+        .map((format) => format && format.formatIdentifier)
+        .filter(Boolean);
+    }
+    return credential.vcFormat ? [credential.vcFormat] : [];
+  }
+
+  /** TS11 SchemaMeta supportedFormats only (unmappable formats omitted — for badge / conformance). */
+  function credentialTs11Formats(credential) {
+    const seen = new Set();
+    const out = [];
+    for (const id of credentialFormatIdentifiers(credential)) {
+      const ts11 = toTs11FormatIdentifier(id);
+      if (!ts11 || seen.has(ts11)) continue;
+      seen.add(ts11);
+      out.push(ts11);
+    }
+    return out;
+  }
+
+  /**
+   * Formats shown in Schema metadata: TS11 wire codes when available, otherwise the
+   * FIDES vcFormat label (AnonCreds, ACDC, …) so non-TS11 credentials keep a format.
+   */
+  function credentialSupportedFormatsForDisplay(credential) {
+    const seen = new Set();
+    const out = [];
+    for (const id of credentialFormatIdentifiers(credential)) {
+      const ts11 = toTs11FormatIdentifier(id);
+      const code = ts11 || id;
+      if (seen.has(code)) continue;
+      seen.add(code);
+      out.push({
+        code,
+        label: ts11
+          ? ts11
+          : (VC_FORMAT_LABELS[id] || id),
+        title: ts11
+          ? (TS11_TO_FIDES_FORMAT_LABEL[ts11] ? `${ts11} (${TS11_TO_FIDES_FORMAT_LABEL[ts11]})` : ts11)
+          : (VC_FORMAT_LABELS[id] || id),
+        isTs11: Boolean(ts11),
+      });
+    }
+    return out;
+  }
+
+  /** Short labels for the list Format column (avoid wrapping "SD-JWT VC"). */
+  const LIST_FORMAT_SHORT_LABELS = {
+    sd_jwt_vc: "SD-JWT",
+    mdoc: "mDoc",
+    jwt_vc: "JWT VC",
+    vcdm_1_1: "VCDM1.1",
+    vcdm_2_0: "VCDM2.0",
+    anoncreds: "AnonCreds",
+    idemix: "Idemix",
+    apple_wallet_pass: "Apple Pass",
+    google_wallet_pass: "Google Pass",
+    acdc: "ACDC",
+    "dc+sd-jwt": "SD-JWT",
+    mso_mdoc: "mDoc",
+    jwt_vc_json: "JWT VC",
+    "jwt_vc_json-ld": "JWT VC",
+    ldp_vc: "LDP VC",
+  };
+
+  function credentialFormatsForList(credential) {
+    const seen = new Set();
+    const out = [];
+    for (const id of credentialFormatIdentifiers(credential)) {
+      const ts11 = toTs11FormatIdentifier(id);
+      const short = LIST_FORMAT_SHORT_LABELS[id]
+        || (ts11 && LIST_FORMAT_SHORT_LABELS[ts11])
+        || VC_FORMAT_LABELS[id]
+        || id;
+      if (!short || seen.has(short)) continue;
+      seen.add(short);
+      out.push({
+        short,
+        title: VC_FORMAT_LABELS[id]
+          || (ts11 && TS11_TO_FIDES_FORMAT_LABEL[ts11])
+          || short,
+      });
+    }
+    return out;
+  }
+
+  function renderCredentialFormatCell(credential) {
+    const formats = credentialFormatsForList(credential);
+    if (!formats.length) {
+      return `<div class="fides-row-format">—</div>`;
+    }
+    const title = formats.map((f) => f.title).join(", ");
+    return `<div class="fides-row-format" title="${escapeHtml(title)}">${formats.map((f) =>
+      `<span class="fides-tag credential-format fides-tag-format-list">${escapeHtml(f.short)}</span>`
+    ).join("")}</div>`;
+  }
+
+  /**
+   * Per-format schema links for Schema metadata (formats[].schemaURIs, then top-level).
+   */
+  function credentialSchemaLinksForDisplay(credential) {
+    if (!credential) return [];
+    const out = [];
+    const seen = new Set();
+    const add = (uri, schemaType, formatId) => {
+      const u = trimStr(uri);
+      if (!u || seen.has(u)) return;
+      seen.add(u);
+      const fid = trimStr(formatId);
+      const ts11 = toTs11FormatIdentifier(fid);
+      out.push({
+        uri: u,
+        schemaType: trimStr(schemaType) || "",
+        formatCode: ts11 || fid,
+        formatTitle: ts11
+          ? (TS11_TO_FIDES_FORMAT_LABEL[ts11] ? `${ts11} (${TS11_TO_FIDES_FORMAT_LABEL[ts11]})` : ts11)
+          : (VC_FORMAT_LABELS[fid] || fid),
+      });
+    };
+    if (Array.isArray(credential.formats)) {
+      for (const format of credential.formats) {
+        if (!format || typeof format !== "object") continue;
+        const fid = format.formatIdentifier || "";
+        if (Array.isArray(format.schemaURIs)) {
+          for (const entry of format.schemaURIs) {
+            if (!entry || typeof entry !== "object") continue;
+            add(entry.uri, entry.schemaType, entry.formatIdentifier || fid);
+          }
+        }
+      }
+    }
+    if (Array.isArray(credential.schemaURIs)) {
+      for (const entry of credential.schemaURIs) {
+        if (!entry || typeof entry !== "object") continue;
+        add(entry.uri, entry.schemaType, entry.formatIdentifier || credential.vcFormat);
+      }
+    }
+    if (trimStr(credential.schemaUrl)) {
+      add(credential.schemaUrl, credential.schemaType, credential.vcFormat);
+    }
+    return out;
+  }
+
+  /**
+   * Supported formats + per-format schema links in one row.
+   * Format stays a plain chip; "Schema" is a separate labeled link (clearer than
+   * turning the chip itself into a deeplink).
+   */
+  function renderSupportedFormatsWithSchemasHtml(credential) {
+    const formats = credentialSupportedFormatsForDisplay(credential);
+    const schemas = credentialSchemaLinksForDisplay(credential);
+    const schemaByCode = new Map();
+    for (const schema of schemas) {
+      if (schema.formatCode && !schemaByCode.has(schema.formatCode)) {
+        schemaByCode.set(schema.formatCode, schema);
+      }
+    }
+    const usedUris = new Set();
+    const pairs = [];
+    for (const format of formats) {
+      const schema = schemaByCode.get(format.code) || null;
+      if (schema) usedUris.add(schema.uri);
+      pairs.push({ format, schema });
+    }
+    for (const schema of schemas) {
+      if (usedUris.has(schema.uri)) continue;
+      pairs.push({
+        format: {
+          code: schema.formatCode || "schema",
+          label: schema.formatCode || "Schema",
+          title: schema.formatTitle || schema.formatCode || "Schema",
+          isTs11: Boolean(toTs11FormatIdentifier(schema.formatCode)),
+        },
+        schema,
+      });
+    }
+    let html = "";
+    if (pairs.length > 0) {
+      const wide = pairs.length > 1;
+      html += `
+                  <div class="fides-kv-row${wide ? " fides-kv-row-wide" : ""}">
+                    <span class="fides-kv-key">Supported formats</span>
+                    <span class="fides-kv-val fides-kv-tags">${pairs.map(({ format, schema }) => {
+                      const tagClass = `fides-tag credential-format${format.isTs11 ? "" : " credential-format--other"}`;
+                      const chip = `<span class="${tagClass}" title="${escapeHtml(format.title)}">${escapeHtml(format.label)}</span>`;
+                      if (!schema) return chip;
+                      return `<span class="fides-format-with-schema">${chip}<a href="${escapeHtml(schema.uri)}" target="_blank" rel="noopener" class="fides-modal-link-inline fides-schema-link" title="${escapeHtml(`Open JSON Schema for ${format.title}`)}" onclick="event.stopPropagation();">${icons.externalLinkSmall} Schema</a></span>`;
+                    }).join("")}</span>
+                  </div>`;
+    } else if (credential.schemaType) {
+      html += `
+                  <div class="fides-kv-row">
+                    <span class="fides-kv-key">Schema type</span>
+                    <span class="fides-kv-val">${escapeHtml(credential.schemaType)}</span>
+                  </div>`;
+    }
+    return html;
+  }
+
+  function credentialHasSchemaUri(credential) {
+    if (!credential) return false;
+    if (trimStr(credential.schemaUrl)) return true;
+    if (Array.isArray(credential.schemaURIs) && credential.schemaURIs.some((u) => u && trimStr(u.uri))) {
+      return true;
+    }
+    if (Array.isArray(credential.formats)) {
+      return credential.formats.some(
+        (f) => Array.isArray(f.schemaURIs) && f.schemaURIs.some((u) => u && trimStr(u.uri))
+      );
+    }
+    return false;
+  }
+
+  /** True when the credential has the required ARF TS11 SchemaMeta field set (plan §4.3 "full"). */
+  function isTs11SchemaMetaComplete(credential) {
+    if (!credential) return false;
+    const rulebook = trimStr(credential.rulebookUrl || credential.rulebookURI);
+    return !!(
+      trimStr(credential.attestationLoS) &&
+      trimStr(credential.bindingType) &&
+      rulebook &&
+      credentialTs11Formats(credential).length > 0 &&
+      credentialHasSchemaUri(credential)
+    );
+  }
+
+  function hasSchemaMetadataFields(credential) {
+    if (!credential) return false;
+    const ta = Array.isArray(credential.resolvedTrustedAuthorities)
+      ? credential.resolvedTrustedAuthorities
+      : Array.isArray(credential.trustedAuthorities)
+        ? credential.trustedAuthorities
+        : [];
+    return !!(
+      trimStr(credential.attestationLoS) ||
+      trimStr(credential.bindingType) ||
+      trimStr(credential.rulebookUrl || credential.rulebookURI) ||
+      credentialHasSchemaUri(credential) ||
+      credentialFormatIdentifiers(credential).length > 0 ||
+      ta.length > 0
+    );
+  }
+
+  function renderTs11BadgeHtml(credential, extraClass) {
+    if (!isTs11SchemaMetaComplete(credential)) return "";
+    const cls = extraClass ? ` fides-tag-ts11 ${extraClass}` : " fides-tag-ts11";
+    return `<span class="fides-tag${cls}" role="img" aria-label="TS11" title="${escapeHtml(TS11_BADGE_TITLE)}">TS11</span>`;
+  }
+
+  /**
+   * Same namespace + UUID v5 construction as lib/ts11SchemaMeta.ts (RFC 4122 §4.3).
+   * Kept in sync so the modal Schema ID matches GET /schemas/{id}.
+   */
+  const FIDES_UUID_NAMESPACE = "b9f0f0e2-3f3a-4a4f-9a1a-2c2f6d5e7a10";
+
+  function sha1Bytes(bytes) {
+    // Compact SHA-1 (FIPS 180-1) for UUID v5 only — not for security use.
+    const H = new Uint32Array([0x67452301, 0xefcdab89, 0x98badcfe, 0x10325476, 0xc3d2e1f0]);
+    const ml = bytes.length;
+    const bitLenHi = Math.floor(ml / 0x20000000);
+    const bitLenLo = (ml << 3) >>> 0;
+    const withOne = ml + 1;
+    const padLen = (withOne % 64 <= 56 ? 56 : 120) - (withOne % 64);
+    const total = withOne + padLen + 8;
+    const buf = new Uint8Array(total);
+    buf.set(bytes);
+    buf[ml] = 0x80;
+    const view = new DataView(buf.buffer);
+    view.setUint32(total - 8, bitLenHi, false);
+    view.setUint32(total - 4, bitLenLo, false);
+    const w = new Uint32Array(80);
+    const rotl = (x, n) => (x << n) | (x >>> (32 - n));
+    for (let i = 0; i < total; i += 64) {
+      for (let j = 0; j < 16; j++) w[j] = view.getUint32(i + j * 4, false);
+      for (let j = 16; j < 80; j++) w[j] = rotl(w[j - 3] ^ w[j - 8] ^ w[j - 14] ^ w[j - 16], 1);
+      let [a, b, c, d, e] = H;
+      for (let j = 0; j < 80; j++) {
+        const f =
+          j < 20 ? (b & c) | (~b & d) :
+          j < 40 ? b ^ c ^ d :
+          j < 60 ? (b & c) | (b & d) | (c & d) :
+          b ^ c ^ d;
+        const k = j < 20 ? 0x5a827999 : j < 40 ? 0x6ed9eba1 : j < 60 ? 0x8f1bbcdc : 0xca62c1d6;
+        const temp = (rotl(a, 5) + f + e + k + w[j]) >>> 0;
+        e = d; d = c; c = rotl(b, 30); b = a; a = temp;
+      }
+      H[0] = (H[0] + a) >>> 0;
+      H[1] = (H[1] + b) >>> 0;
+      H[2] = (H[2] + c) >>> 0;
+      H[3] = (H[3] + d) >>> 0;
+      H[4] = (H[4] + e) >>> 0;
+    }
+    const out = new Uint8Array(20);
+    const outView = new DataView(out.buffer);
+    for (let i = 0; i < 5; i++) outView.setUint32(i * 4, H[i], false);
+    return out;
+  }
+
+  function deterministicSchemaId(attestationTypeId) {
+    const nsHex = FIDES_UUID_NAMESPACE.replace(/-/g, "");
+    const ns = new Uint8Array(16);
+    for (let i = 0; i < 16; i++) ns[i] = parseInt(nsHex.slice(i * 2, i * 2 + 2), 16);
+    const name = new TextEncoder().encode(String(attestationTypeId || ""));
+    const input = new Uint8Array(ns.length + name.length);
+    input.set(ns, 0);
+    input.set(name, ns.length);
+    const hash = sha1Bytes(input);
+    const bytes = hash.slice(0, 16);
+    bytes[6] = (bytes[6] & 0x0f) | 0x50;
+    bytes[8] = (bytes[8] & 0x3f) | 0x80;
+    const hex = Array.from(bytes, (b) => b.toString(16).padStart(2, "0")).join("");
+    return [hex.slice(0, 8), hex.slice(8, 12), hex.slice(12, 16), hex.slice(16, 20), hex.slice(20, 32)].join("-");
+  }
+
+  /** Attestation type id used for SchemaMeta.id (strip per-format segment when needed). */
+  function credentialAttestationTypeId(credential) {
+    if (!credential) return "";
+    if (trimStr(credential.attestationTypeId)) return trimStr(credential.attestationTypeId);
+    const parts = String(credential.id || "").split(":");
+    return parts.length > 3 ? parts.slice(0, 3).join(":") : String(credential.id || "");
+  }
+
+  /** TS11 requires SemVer; authored "1" / "1.0" → "1.0.0". Same rules as crawler toSemVer(). */
+  function toSemVer(version) {
+    const match = /^v?(\d+)(?:\.(\d+))?(?:\.(\d+))?(?:[-+].*)?$/.exec(String(version || "").trim());
+    if (!match) return "";
+    return `${match[1]}.${match[2] ?? "0"}.${match[3] ?? "0"}`;
+  }
+
+  function credentialSchemaMetaVersion(credential) {
+    if (!credential) return "";
+    if (trimStr(credential.semverVersion)) return trimStr(credential.semverVersion);
+    return toSemVer(credential.version);
+  }
+
+  function credentialSchemaMetaId(credential) {
+    const typeId = credentialAttestationTypeId(credential);
+    return typeId ? deterministicSchemaId(typeId) : "";
+  }
+
   /** Same codes as organization catalog (English labels). */
   const SECTOR_LABELS = {
     public_sector: 'Public Sector',
@@ -745,6 +1147,47 @@
     return existingId;
   }
 
+  /** All ids that resolve to this credential (canonical type id + legacy format aliases). */
+  function credentialResolvableIds(credential) {
+    if (!credential || typeof credential.id !== "string") return [];
+    const ids = new Set([credential.id]);
+    for (const alias of credential.aliasIds || []) {
+      if (alias) ids.add(alias);
+    }
+    for (const format of credential.formats || []) {
+      if (format && format.credentialId) ids.add(format.credentialId);
+    }
+    return [...ids];
+  }
+
+  function findCredentialByIdOrAlias(credentialId) {
+    const wanted = String(credentialId || "").trim();
+    if (!wanted) return null;
+    return (
+      credentials.find((credential) => credentialResolvableIds(credential).includes(wanted)) || null
+    );
+  }
+
+  /** Map any catalog ref (type id or legacy format id) → canonical credential id. */
+  function buildCredentialAliasResolutionMap() {
+    const map = new Map();
+    for (const credential of credentials) {
+      if (!credential || typeof credential.id !== "string") continue;
+      for (const id of credentialResolvableIds(credential)) {
+        map.set(id, credential.id);
+      }
+    }
+    return map;
+  }
+
+  function credentialFormatIdentifiersForFilter(credential) {
+    if (!credential) return [];
+    if (Array.isArray(credential.formats) && credential.formats.length > 0) {
+      return credential.formats.map((format) => format && format.formatIdentifier).filter(Boolean);
+    }
+    return credential.vcFormat ? [credential.vcFormat] : [];
+  }
+
   function buildCredentialLookupMap() {
     const lookup = new Map();
     for (const credential of credentials) {
@@ -805,33 +1248,39 @@
     try {
       const relyingParties = Array.isArray(data.relyingParties) ? data.relyingParties : [];
       const credentialLookup = buildCredentialLookupMap();
+      const aliasToCanonical = buildCredentialAliasResolutionMap();
       const rpMap = new Map();
       // Intermediate map: credentialId -> Map<walletCatalogId, {id, name}> to deduplicate wallets
       const walletMapIntermediate = new Map();
       for (const rp of relyingParties) {
         const refs = extractCredentialRefs(rp, credentialLookup);
         for (const credentialId of refs) {
+          const canonicalId = aliasToCanonical.get(credentialId) || credentialId;
           // RP usage
-          const existingRPs = rpMap.get(credentialId) || [];
-          const rpOrg =
-            trimStr(rp.organization?.name) ||
-            trimStr(rp.provider?.name) ||
-            "";
-          existingRPs.push({
-            id: rp.id,
-            name: trimStr(rp.name) || rp.id,
-            organization: rpOrg
-          });
-          rpMap.set(credentialId, existingRPs);
+          const existingRPs = rpMap.get(canonicalId) || [];
+          if (existingRPs.some((row) => row.id === rp.id)) {
+            // already counted via another legacy format alias
+          } else {
+            const rpOrg =
+              trimStr(rp.organization?.name) ||
+              trimStr(rp.provider?.name) ||
+              "";
+            existingRPs.push({
+              id: rp.id,
+              name: trimStr(rp.name) || rp.id,
+              organization: rpOrg
+            });
+            rpMap.set(canonicalId, existingRPs);
+          }
           // Wallet usage: collect unique wallets from this RP for this credential
           if (Array.isArray(rp.supportedWallets)) {
-            const walletById = walletMapIntermediate.get(credentialId) || new Map();
+            const walletById = walletMapIntermediate.get(canonicalId) || new Map();
             for (const w of rp.supportedWallets) {
               if (w && w.walletCatalogId && !walletById.has(w.walletCatalogId)) {
                 walletById.set(w.walletCatalogId, { id: w.walletCatalogId, name: w.name || w.walletCatalogId });
               }
             }
-            walletMapIntermediate.set(credentialId, walletById);
+            walletMapIntermediate.set(canonicalId, walletById);
           }
         }
       }
@@ -865,16 +1314,24 @@
       const issuers = Array.isArray(data.issuers) ? data.issuers : [];
 
       // Build a lookup from nativeIdentifier → credential.id for vct-based fallback matching
+      const aliasToCanonical = buildCredentialAliasResolutionMap();
       const vctToCredentialId = new Map();
       for (const cred of credentials) {
-        if (!cred.nativeIdentifier) continue;
-        const prev = vctToCredentialId.get(cred.nativeIdentifier);
-        vctToCredentialId.set(cred.nativeIdentifier, pickCredentialIdForLookupKey(prev, cred.id));
+        const natives = new Set();
+        if (cred.nativeIdentifier) natives.add(cred.nativeIdentifier);
+        for (const format of cred.formats || []) {
+          if (format && format.nativeIdentifier) natives.add(format.nativeIdentifier);
+        }
+        for (const native of natives) {
+          const prev = vctToCredentialId.get(native);
+          vctToCredentialId.set(native, pickCredentialIdForLookupKey(prev, cred.id));
+        }
       }
 
       const map = new Map();
       const addToMap = (credentialId, issuer) => {
-        const existing = map.get(credentialId) || [];
+        const canonicalId = aliasToCanonical.get(credentialId) || credentialId;
+        const existing = map.get(canonicalId) || [];
         if (!existing.some((e) => e.id === issuer.id)) {
           existing.push({
             id: issuer.id,
@@ -882,7 +1339,7 @@
             organization: trimStr(issuer.organization?.name)
           });
         }
-        map.set(credentialId, existing);
+        map.set(canonicalId, existing);
       };
 
       for (const issuer of issuers) {
@@ -931,7 +1388,9 @@
     };
 
     for (const credential of items) {
-      facets.vcFormat[credential.vcFormat] = (facets.vcFormat[credential.vcFormat] || 0) + 1;
+      for (const format of credentialFormatIdentifiersForFilter(credential)) {
+        facets.vcFormat[format] = (facets.vcFormat[format] || 0) + 1;
+      }
       facets.subjectType[credential.subjectType] = (facets.subjectType[credential.subjectType] || 0) + 1;
       const authorityName = credential.authority?.name || "Unknown";
       facets.authority[authorityName] = (facets.authority[authorityName] || 0) + 1;
@@ -988,7 +1447,7 @@
 
       const searchTarget = [
         credential.displayName,
-        credential.schemaDescription || credential.shortDescription,
+        credential.shortDescription || credential.schemaDescription,
         credential.nativeIdentifier,
         credential.authority?.name,
         ...(credential.tags || []),
@@ -1005,7 +1464,12 @@
         .toLowerCase();
 
       if (filters.search && !searchTarget.includes(filters.search.toLowerCase())) return false;
-      if (filters.vcFormat.length > 0 && !filters.vcFormat.includes(credential.vcFormat)) return false;
+      if (
+        filters.vcFormat.length > 0 &&
+        !filters.vcFormat.some((format) => credentialFormatIdentifiersForFilter(credential).includes(format))
+      ) {
+        return false;
+      }
       if (filters.subjectType.length > 0 && !filters.subjectType.includes(credential.subjectType)) return false;
       if (filters.authority.length > 0 && !filters.authority.includes(credential.authority?.name || "")) return false;
       if (filters.schemaType.length > 0 && !filters.schemaType.includes(credential.schemaType)) return false;
@@ -1125,7 +1589,10 @@
 
   function renderFiltersPanel() {
     if (!settings.showFilters) return "";
-    const formatOptions = uniqueValues(credentials, (c) => c.vcFormat);
+    const formatOptions = uniqueValues(
+      credentials.flatMap((c) => credentialFormatIdentifiersForFilter(c)),
+      (format) => format
+    );
     const subjectOptions = uniqueValues(credentials, (c) => c.subjectType);
     const authorityOptions = uniqueValues(credentials, (c) => c.authority?.name);
     const schemaTypeOptions = uniqueValues(credentials, (c) => c.schemaType);
@@ -1240,14 +1707,14 @@
           ${getSubjectTypeIcon(credential.subjectType)}
         </div>
         <div class="fides-row-name">
-          <span class="fides-row-name-text" title="${escapeHtml(credential.displayName)}">${escapeHtml(credential.displayName)}</span>
+          <span class="fides-row-name-text" title="${escapeHtml(credential.displayName)}">${escapeHtml(credential.displayName)}${renderTs11BadgeHtml(credential, "fides-tag-ts11--row")}</span>
           ${credential.nativeIdentifier
             ? `<span class="fides-row-name-id" title="${escapeHtml(credential.nativeIdentifier)}">${escapeHtml(credential.nativeIdentifier)}</span>`
             : ''}
         </div>
         <div class="fides-row-likes">${renderCredentialListLikeSummary(credential.id)}</div>
         <div class="fides-row-authority" title="${escapeHtml(credential.authority?.name || '')}">${escapeHtml(credential.authority?.name || '—')}</div>
-        <div class="fides-row-format">${escapeHtml(vcFormatDisplayLabel(credential.vcFormat))}</div>
+        ${renderCredentialFormatCell(credential)}
         <div class="fides-row-count" title="${issuerCount} ${issuerCount === 1 ? 'issuer' : 'issuers'}">${issuerCount}</div>
         <div class="fides-row-count" title="${rpCount} ${rpCount === 1 ? 'relying party' : 'relying parties'}">${rpCount}</div>
         <div class="fides-row-updated">${escapeHtml(activityDateLabel || '—')}</div>
@@ -1321,7 +1788,7 @@
             ${getSubjectTypeIcon(credential.subjectType)}
           </div>
           <div class="fides-credential-header-text">
-            <h3 class="fides-credential-name" title="${escapeHtml(credential.displayName)}">${escapeHtml(credential.displayName)}</h3>
+            <h3 class="fides-credential-name" title="${escapeHtml(credential.displayName)}">${escapeHtml(credential.displayName)}${renderTs11BadgeHtml(credential, "fides-tag-ts11--card")}</h3>
             <div class="fides-credential-meta-row">
               <p class="fides-credential-provider">${escapeHtml(credential.authority?.name || "Unknown authority")}</p>
             </div>
@@ -1489,6 +1956,40 @@
       orgCatBase && credentialOrgId.startsWith("org:")
         ? `${orgCatBase}/?org=${encodeURIComponent(credentialOrgId)}`
         : "";
+    const trustSchemeBase = (config.trustSchemeCatalogUrl || "").replace(/\/$/, "");
+    const trustedAuthorities = Array.isArray(selectedCredential.resolvedTrustedAuthorities)
+      ? selectedCredential.resolvedTrustedAuthorities
+      : [];
+    const trustRegistryRowsHtml = trustedAuthorities
+      .map((authority) => {
+        const label = authority.registryName || authority.registryId || "";
+        if (!label) return "";
+        const schemeHref =
+          trustSchemeBase && authority.schemeId
+            ? `${trustSchemeBase}/?scheme=${encodeURIComponent(authority.schemeId)}`
+            : "";
+        const scheme = authority.schemeName || authority.schemeId || "";
+        const schemeHtml = scheme
+          ? schemeHref
+            ? ` <a href="${escapeHtml(schemeHref)}" target="_blank" rel="noopener" class="fides-modal-link-inline" onclick="event.stopPropagation();">${escapeHtml(scheme)} ${icons.externalLinkSmall}</a>`
+            : ` <span>${escapeHtml(scheme)}</span>`
+          : "";
+        const registryHtml = authority.registryUrl
+          ? `<a href="${escapeHtml(authority.registryUrl)}" target="_blank" rel="noopener" class="fides-modal-link-inline" onclick="event.stopPropagation();">${icons.externalLinkSmall} ${escapeHtml(label)}</a>`
+          : `<span>${escapeHtml(label)}</span>`;
+        const badges = [
+          authority.machineReadable ? "machine-readable" : "",
+          authority.access && authority.access !== "public" ? String(authority.access).replace(/_/g, " ") : "",
+          authority.isLoTE ? "LoTE" : ""
+        ].filter(Boolean);
+        const badgeHtml = badges.length
+          ? ` ${badges.map((badge) => `<span class="fides-tag-chip">${escapeHtml(badge)}</span>`).join(" ")}`
+          : "";
+        return `<span class="fides-trust-registry-line">${registryHtml}${schemeHtml ? ` &middot;${schemeHtml}` : ""}${badgeHtml}</span>`;
+      })
+      .filter(Boolean)
+      .join("");
+
     const authorityDisplay = selectedCredential.authority?.name || "Unknown authority";
     const modalAuthorityLine = orgCatalogHref
       ? `<p class="fides-modal-provider">${icons.building} <a href="${escapeHtml(orgCatalogHref)}" class="fides-modal-link-inline" aria-label="View organization in organization catalog" title="Organization catalog" onclick="event.stopPropagation();"><span>${escapeHtml(authorityDisplay)}</span></a></p>`
@@ -1504,7 +2005,7 @@
                 ${getSubjectTypeIcon(selectedCredential.subjectType)}
               </div>
               <div class="fides-modal-title-wrap">
-                <h2 class="fides-modal-title" id="fides-modal-title">${escapeHtml(selectedCredential.displayName)}</h2>
+                <h2 class="fides-modal-title" id="fides-modal-title">${escapeHtml(selectedCredential.displayName)}${renderTs11BadgeHtml(selectedCredential, "fides-tag-ts11--modal")}</h2>
                 ${modalAuthorityLine}
               </div>
             </div>
@@ -1521,7 +2022,7 @@
             <div id="fides-modal-rating-slot"></div>
 
             <!-- Intro: description only -->
-            ${(selectedCredential.schemaDescription || selectedCredential.shortDescription) ? `<div class="fides-modal-intro"><p class="fides-modal-description">${escapeHtml(selectedCredential.schemaDescription || selectedCredential.shortDescription)}</p></div>` : ""}
+            ${(selectedCredential.shortDescription || selectedCredential.schemaDescription) ? `<div class="fides-modal-intro"><p class="fides-modal-description">${escapeHtml(selectedCredential.shortDescription || selectedCredential.schemaDescription)}</p></div>` : ""}
 
             ${renderUseCasesAccordion(getDerivedUseCasesForCredential(selectedCredential), selectedCredential)}
 
@@ -1706,6 +2207,55 @@
               </div>
             </div>
 
+            ${hasSchemaMetadataFields(selectedCredential) ? `
+            <!-- Schema metadata (ARF TS11 SchemaMeta fields) -->
+            <div class="fides-accordion${isTs11SchemaMetaComplete(selectedCredential) ? " is-open" : ""}" id="fides-accordion-schema-metadata">
+              <div class="fides-accordion-header-bar">
+                <button class="fides-accordion-header fides-accordion-toggle" type="button" aria-expanded="${isTs11SchemaMetaComplete(selectedCredential) ? "true" : "false"}">
+                  <span class="fides-accordion-title">${icons.fileCheck} Schema metadata${isTs11SchemaMetaComplete(selectedCredential) ? ` ${renderTs11BadgeHtml(selectedCredential, "fides-tag-ts11--accordion")}` : ""}</span>
+                </button>
+                <button type="button" class="fides-accordion-chevron-btn fides-accordion-toggle" aria-expanded="${isTs11SchemaMetaComplete(selectedCredential) ? "true" : "false"}" aria-label="Toggle schema metadata section">
+                  <span class="fides-accordion-chevron">${icons.chevronDown}</span>
+                </button>
+              </div>
+              <div class="fides-accordion-body">
+                <p class="fides-schema-metadata-intro">Machine-readable attestation catalogue fields (ARF TS11 SchemaMeta).</p>
+                <div class="fides-details-kv">
+                  <div class="fides-kv-row">
+                    <span class="fides-kv-key">Schema ID</span>
+                    <span class="fides-kv-val fides-modal-identifier" style="font-size:0.8125rem;" title="Deterministic UUID v5 for GET /schemas/{id}">${escapeHtml(credentialSchemaMetaId(selectedCredential) || "—")}</span>
+                  </div>
+                  <div class="fides-kv-row">
+                    <span class="fides-kv-key">Version</span>
+                    <span class="fides-kv-val" title="${credentialSchemaMetaVersion(selectedCredential) && credentialSchemaMetaVersion(selectedCredential) !== String(selectedCredential.version || "").trim() ? `Authored version: ${escapeHtml(String(selectedCredential.version || ""))}` : "SemVer (TS11)"}">${escapeHtml(credentialSchemaMetaVersion(selectedCredential) || "—")}</span>
+                  </div>
+                  ${selectedCredential.attestationLoS ? `
+                  <div class="fides-kv-row">
+                    <span class="fides-kv-key">Attestation LoS</span>
+                    <span class="fides-kv-val">${escapeHtml(attestationLoSLabel(selectedCredential.attestationLoS))}</span>
+                  </div>` : ""}
+                  ${selectedCredential.bindingType ? `
+                  <div class="fides-kv-row">
+                    <span class="fides-kv-key">Holder binding</span>
+                    <span class="fides-kv-val">${escapeHtml(bindingTypeLabel(selectedCredential.bindingType))}</span>
+                  </div>` : ""}
+                  ${renderSupportedFormatsWithSchemasHtml(selectedCredential)}
+                  <div class="fides-kv-row">
+                    <span class="fides-kv-key">Rulebook</span>
+                    <span class="fides-kv-val">${selectedCredential.rulebookUrl || selectedCredential.rulebookURI
+                      ? `<a href="${escapeHtml(selectedCredential.rulebookUrl || selectedCredential.rulebookURI)}" target="_blank" rel="noopener" class="fides-modal-link-inline" onclick="event.stopPropagation();">${icons.externalLinkSmall} View rulebook</a>`
+                      : "—"}</span>
+                  </div>
+                  <div class="fides-kv-row">
+                    <span class="fides-kv-key">${trustedAuthorities.length === 1 ? "Trust registry" : "Trust registries"}</span>
+                    ${trustRegistryRowsHtml
+                      ? `<span class="fides-kv-val-stack">${trustRegistryRowsHtml}</span>`
+                      : `<span class="fides-kv-val">—</span>`}
+                  </div>
+                </div>
+              </div>
+            </div>` : ""}
+
             <!-- Other details accordion (open by default) -->
             <div class="fides-accordion is-open" id="fides-accordion-details">
               <div class="fides-accordion-header-bar">
@@ -1718,42 +2268,14 @@
               </div>
               <div class="fides-accordion-body">
                 <div class="fides-details-kv">
-                  <!-- left col: row 1 -->
                   <div class="fides-kv-row">
                     <span class="fides-kv-key">Credential ID</span>
                     <span class="fides-kv-val fides-modal-identifier" style="font-size:0.8125rem;">${escapeHtml(selectedCredential.nativeIdentifier || selectedCredential.id)}</span>
                   </div>
-                  <!-- right col: row 1 -->
-                  ${selectedCredential.schemaType ? `<div class="fides-kv-row">
-                    <span class="fides-kv-key">Schema type</span>
-                    <span class="fides-kv-val">${escapeHtml(selectedCredential.schemaType)}${selectedCredential.schemaUrl ? ` <a href="${escapeHtml(selectedCredential.schemaUrl)}" target="_blank" rel="noopener" class="fides-modal-link-inline" onclick="event.stopPropagation();">${icons.externalLinkSmall} View schema</a>` : ""}</span>
-                  </div>` : selectedCredential.schemaUrl ? `<div class="fides-kv-row">
-                    <span class="fides-kv-key">Schema</span>
-                    <span class="fides-kv-val"><a href="${escapeHtml(selectedCredential.schemaUrl)}" target="_blank" rel="noopener" class="fides-modal-link-inline" onclick="event.stopPropagation();">${icons.externalLinkSmall} View schema</a></span>
-                  </div>` : `<div class="fides-kv-row">
-                    <span class="fides-kv-key">Schema</span>
-                    <span class="fides-kv-val">—</span>
-                  </div>`}
-                  <!-- left col: row 2 -->
-                  <div class="fides-kv-row">
-                    <span class="fides-kv-key">VC Format</span>
-                    <span class="fides-kv-val fides-kv-tags">${selectedCredential.vcFormat ? vcFormatTagHtml(selectedCredential.vcFormat) : "—"}</span>
-                  </div>
-                  <!-- right col: row 2 -->
-                  <div class="fides-kv-row">
-                    <span class="fides-kv-key">Version</span>
-                    <span class="fides-kv-val">${escapeHtml(selectedCredential.version || "—")}</span>
-                  </div>
-                  <!-- left col: row 3 -->
                   <div class="fides-kv-row">
                     <span class="fides-kv-key">Authority</span>
                     <span class="fides-kv-val">${escapeHtml(selectedCredential.authority?.name || "—")}</span>
                   </div>
-                  ${selectedCredential.rulebookUrl ? `
-                  <div class="fides-kv-row fides-kv-row-wide">
-                    <span class="fides-kv-key">Rulebook</span>
-                    <span class="fides-kv-val"><a href="${escapeHtml(selectedCredential.rulebookUrl)}" target="_blank" rel="noopener" class="fides-modal-link-inline" onclick="event.stopPropagation();">${icons.externalLinkSmall} View rulebook</a></span>
-                  </div>` : ""}
                   ${(selectedCredential.vocabularies?.length > 0) ? `
                   <div class="fides-kv-row fides-kv-row-wide">
                     <span class="fides-kv-key">${selectedCredential.vocabularies.length === 1 ? "Vocabulary" : "Vocabularies"}</span>
@@ -1853,16 +2375,13 @@
     });
   }
 
+  /**
+   * Standalone SSR detail is for no-JS / fetch-fail only. With live data, always
+   * mount the interactive catalog + modal so ?credential= deep links match
+   * in-catalog open (retaining SSR alone left an unstyled detail shell).
+   */
   function retainStandaloneDetailPage() {
-    const detail = root.querySelector('[data-fides-ssr-page="detail"]');
-    if (!detail) return false;
-    const fallback = detail.closest('[data-fides-ssr="credential"]');
-    if (fallback) {
-      fallback.style.display = "";
-      fallback.removeAttribute("aria-hidden");
-    }
-    root.querySelector('[data-fides-ssr-spinner="1"]')?.remove();
-    return true;
+    return false;
   }
 
   function revealSsrFallback() {
@@ -2300,9 +2819,9 @@
     root.querySelectorAll(".fides-credential-card").forEach((card) => {
       const open = () => {
         const id = card.dataset.credentialId;
-        selectedCredential = credentials.find((item) => item.id === id) || null;
+        selectedCredential = findCredentialByIdOrAlias(id);
         const url = new URL(window.location.href);
-        url.searchParams.set("credential", id || "");
+        url.searchParams.set("credential", selectedCredential ? selectedCredential.id : id || "");
         window.history.replaceState({}, "", url.toString());
         openModal();
       };
@@ -2340,13 +2859,24 @@
     const params = new URLSearchParams(window.location.search);
     const credentialId = params.get("credential");
     if (credentialId) {
-      selectedCredential = credentials.find((credential) => credential.id === credentialId) || null;
+      selectedCredential = findCredentialByIdOrAlias(credentialId);
+      // Canonicalize the URL to the type-level id when an alias was used.
+      if (selectedCredential && selectedCredential.id !== credentialId) {
+        const url = new URL(window.location.href);
+        url.searchParams.set("credential", selectedCredential.id);
+        window.history.replaceState({}, "", url.toString());
+      }
     }
     const credentialsParam = params.get("credentials");
     if (credentialsParam) {
-      const ids = credentialsParam.split(",").map((id) => decodeURIComponent(id.trim())).filter(Boolean);
-      originalCredentialIds = ids;
-      filters.ids = [...ids];
+      const aliasToCanonical = buildCredentialAliasResolutionMap();
+      const ids = credentialsParam
+        .split(",")
+        .map((id) => decodeURIComponent(id.trim()))
+        .filter(Boolean)
+        .map((id) => aliasToCanonical.get(id) || id);
+      originalCredentialIds = [...new Set(ids)];
+      filters.ids = [...originalCredentialIds];
     }
     const sectorFromUrl = normalizeSectorFilterCode(params.get("sector"));
     const sectorFromData = normalizeSectorFilterCode(root.dataset.sector || "");

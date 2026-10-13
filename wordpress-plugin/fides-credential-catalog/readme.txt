@@ -2,13 +2,23 @@
 Contributors: fidescommunity
 Requires at least: 5.0
 Tested up to: 6.7
-Stable tag: 1.6.1
+Stable tag: 1.6.3
 License: Apache-2.0
 License URI: https://www.apache.org/licenses/LICENSE-2.0
 
 Interactive credential catalog with search, filters, and optional SSR/SEO via fides-community-tools-tiles.
 
 == Changelog ==
+
+= 1.6.3 =
+* Deep links use the listing spinner shell again (no visible SSR detail flash before the modal).
+* Schema metadata: plain format chips with a separate “Schema” link per format (clearer than chip-as-link).
+* List Format column uses compact short-label chips (e.g. mDoc, SD-JWT).
+
+= 1.6.2 =
+* Credential deep links (?credential=) open the interactive catalog modal again instead of retaining the standalone SSR shell (fixes broken layout on direct open).
+* Schema metadata lists every per-format schema URI (e.g. both PID mdoc and SD-JWT JSON Schema files).
+* List view Format column shows all formats from formats[], not only primary vcFormat.
 
 = 1.6.1 =
 * Align pagination structure and styling with the wallet catalog, including result range and Previous/Next links.
@@ -20,59 +30,18 @@ Interactive credential catalog with search, filters, and optional SSR/SEO via fi
 = 1.5.13 =
 * Make the shared mobile filter drawer modal and keyboard-accessible (tiles ≥ 1.13.31).
 
-= 1.5.12 =
-* Sync shared modal UI: icon-only Official/Community listing badge on mobile; more reliable modal close after several opens (tiles ≥ 1.13.22).
-
-= 1.5.11 =
-* Sync shared catalog analytics for uniform wallet and organization detail/outbound events with Matomo outlink deduplication (tiles ≥ 1.13.21).
-
-= 1.5.10 =
-* Sync shared modal UI: Use cases accordion scroll arrows overlay cards on narrow screens (tiles ≥ 1.13.18).
-
-= 1.5.9 =
-* Sync shared modal UI: Use cases accordion scrolls horizontally when more than two cases are linked (tiles ≥ 1.13.17).
-
-= 1.5.8 =
-* Sync shared modal UI: Use cases accordion uses a two-column layout on narrow screens; a single linked case spans the full row (tiles ≥ 1.13.15).
-
-= 1.5.7 =
-* Move Use cases accordion above the Ecosystem Model; enable Matomo tracking.
-
-= 1.5.6 =
-* Credential modal: Use cases accordion with shared card layout (closed by
-  default), reverse-linked from use-case catalog credentials refs.
-
-= 1.5.5 =
-* Official listing badge requires explicit catalogTier Pro; curated Community
-  can keep full fields via catalogListingDepth (tiles ≥ 1.10.0).
-
-= 1.5.4 =
-* After sign-in, Back from the logged-in page reloads a stale guest catalog
-  snapshot so the like star sees the session (needs tiles ≥ 1.9.23).
-
-= 1.5.3 =
-* After magic-link sign-in, Back reloads a cached logged-out catalog page so
-  the like star sees the new session.
-
-= 1.5.2 =
-* After GitHub fails, use a 12-hour browser cache and the WP last-known-good aggregated feed before the bundled plugin snapshot.
-
-= 1.5.1 =
-* Show a dismissible notice when GitHub catalog data is unreachable and the plugin snapshot is used.
-
 = 1.5.0 =
 * Add an “or Ask FIDES” button beside credential search when FIDES Assistant
   0.6.1 or newer is active.
-* Reuse the headless assistant modal, prefill the current search without
-  submitting it, and show a credential-specific chat placeholder.
 
 = 1.4.1 =
 * Preserve the published credential slug when submitting an update.
 
 = 1.4.0 =
+* ARF TS11 alignment: credential modal and SSR show resolved trust registries (trustedAuthorities[]), level of assurance and holder binding when known.
+* Add Trust Scheme Catalog Base URL for ?scheme= deep links; on .local sites /trust-schemes/ is used.
 * Add logged-in create and update forms for moderated credential catalog submissions.
-* Add source-schema validation, organization and credential lookups, GitHub publication mapping, and automatic credential IDs and slugs.
-* Add a configurable credential update form URL and ownership-aware modal edit link; all source fields are available without plan-tier restrictions.
+* Data: aggregated.json schemaVersion 2.0.0 with attestationTypes[] projection.
 
 = 1.3.13 =
 * Enqueue assets only when the credential catalog shortcode is present (wallet/trust-scheme pattern), so other catalog pages are not affected by the shared FidesCatalogUI singleton.

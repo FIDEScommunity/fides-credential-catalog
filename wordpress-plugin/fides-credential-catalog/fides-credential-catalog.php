@@ -3,7 +3,7 @@
  * Plugin Name: FIDES Credential Catalog
  * Plugin URI: https://github.com/FIDEScommunity/fides-credential-catalog
  * Description: Display an interactive catalog of credentials with search and filters. When the master fides_catalog_ssr_enabled flag (provided by FIDES Community Tools Tiles ≥ 1.6.3) is enabled, the plugin also emits a server-rendered listing fallback, per-deeplink SEO meta tags and a DigitalDocument JSON-LD payload so credential detail URLs become indexable by search engines.
- * Version: 1.6.1
+ * Version: 1.6.3
  * Author: FIDES Community
  * Author URI: https://fides.community
  * License: Apache-2.0
@@ -14,7 +14,7 @@ if (!defined('ABSPATH')) {
     exit;
 }
 
-define('FIDES_CREDENTIAL_CATALOG_VERSION', '1.6.1');
+define('FIDES_CREDENTIAL_CATALOG_VERSION', '1.6.3');
 define('FIDES_CREDENTIAL_CATALOG_PLUGIN_DIR', plugin_dir_path(__FILE__));
 define('FIDES_CREDENTIAL_CATALOG_PLUGIN_URL', plugin_dir_url(__FILE__));
 define('FIDES_CREDENTIAL_CATALOG_DEFAULT_UPDATE_FORM_PATH', '/credentials-update/');
@@ -154,6 +154,12 @@ function fides_credential_catalog_enqueue_assets() {
             'https://fides.community/ecosystem-explorer/issuer-catalog/'
         ),
         'walletCatalogUrl' => $wallet_catalog_url,
+        'trustSchemeCatalogUrl' => $use_local
+            ? rtrim(get_site_url(), '/') . '/trust-schemes/'
+            : get_option(
+                'fides_credential_catalog_trust_scheme_catalog_url',
+                'https://fides.community/ecosystem-explorer/trust-scheme-catalog/'
+            ),
         'organizationCatalogUrl' => $use_local
             ? rtrim(get_site_url(), '/') . '/organizations/'
             : get_option(
@@ -333,6 +339,12 @@ function fides_credential_catalog_register_settings() {
         'default' => '',
         'sanitize_callback' => 'esc_url_raw'
     ));
+
+    register_setting('fides_credential_catalog_settings', 'fides_credential_catalog_trust_scheme_catalog_url', array(
+        'type' => 'string',
+        'default' => 'https://fides.community/ecosystem-explorer/trust-scheme-catalog/',
+        'sanitize_callback' => 'esc_url_raw'
+    ));
 }
 add_action('admin_init', 'fides_credential_catalog_register_settings');
 
@@ -394,6 +406,15 @@ function fides_credential_catalog_settings_page() {
                                value="<?php echo esc_attr(get_option('fides_credential_catalog_update_form_url', '')); ?>"
                                class="regular-text" placeholder="<?php echo esc_attr(home_url(FIDES_CREDENTIAL_CATALOG_DEFAULT_UPDATE_FORM_PATH)); ?>">
                         <p class="description">Page with <code>[fides_credential_update_form]</code>. Eligible logged-in users see a “Suggest an update” link in credential modals.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row"><label for="fides_credential_catalog_trust_scheme_catalog_url">Trust Scheme Catalog Base URL</label></th>
+                    <td>
+                        <input type="url" id="fides_credential_catalog_trust_scheme_catalog_url" name="fides_credential_catalog_trust_scheme_catalog_url"
+                               value="<?php echo esc_attr(get_option('fides_credential_catalog_trust_scheme_catalog_url', 'https://fides.community/ecosystem-explorer/trust-scheme-catalog/')); ?>"
+                               class="regular-text">
+                        <p class="description">Base URL for trust scheme deep links behind the trust registries of a credential (query <code>?scheme=</code> is appended). On local <code>.local</code> / <code>localhost</code> sites this setting is ignored; the plugin uses <code>/trust-schemes/</code> on the same site instead.</p>
                     </td>
                 </tr>
             </table>

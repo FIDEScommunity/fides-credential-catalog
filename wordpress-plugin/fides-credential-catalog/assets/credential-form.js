@@ -190,10 +190,8 @@
                 </div>
                 <div class="fides-form-row">
                   <label for="fides-credential-vc-format">VC format *</label>
-                  <p class="fides-help">${mode === "update"
-                    ? "The format is part of the credential ID and cannot be changed in an update."
-                    : "The credential representation format."}</p>
-                  <select id="fides-credential-vc-format" required ${mode === "update" ? 'disabled aria-disabled="true"' : ""}>
+                  <p class="fides-help">The primary credential representation format for this attestation type.</p>
+                  <select id="fides-credential-vc-format" required>
                     ${options("vcFormats", "", true)}
                   </select>
                 </div>
@@ -371,7 +369,8 @@
   /** WP REST item_id route allows [a-zA-Z0-9:._-]+; encoded colons do not match that route. */
   function itemIdPathSegment(itemId) {
     const id = String(itemId || "").trim();
-    return /^cred:[a-z0-9]+:[a-z0-9-]+:[a-z0-9-]+$/.test(id) ? id : "";
+    // Canonical attestation type id is three segments; optional fourth for legacy aliases.
+    return /^cred:[a-z0-9]+:[a-z0-9-]+(?::[a-z0-9-]+)?$/.test(id) ? id : "";
   }
 
   function submissionItemUrl(itemId) {
@@ -464,8 +463,8 @@
     const key = normalizeKey(displayName.value);
     credentialKey.value = key;
     const authority = normalizeAuthority(authorityName.value);
-    const format = String(vcFormat.value || "").replaceAll("_", "-");
-    credentialId.value = authority && key && format ? `cred:${authority}:${key}:${format}` : "";
+    // Canonical catalog id is the attestation type (no format segment).
+    credentialId.value = authority && key ? `cred:${authority}:${key}` : "";
   }
 
   function updateDescriptionCounter() {
