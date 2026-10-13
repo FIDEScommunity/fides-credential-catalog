@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-13T13:55:22.650Z",
+  "generatedAt": "2026-10-13T14:59:28.327Z",
   "byCredentialId": {
     "cred:iso:mdl": {
       "total": 7,
@@ -56,11 +56,6 @@
       "production": 0,
       "test": 2
     },
-    "cred:fides:vat": {
-      "total": 2,
-      "production": 0,
-      "test": 2
-    },
     "cred:gleif:legal-entity-vlei": {
       "total": 8,
       "production": 8,
@@ -75,11 +70,6 @@
       "total": 8,
       "production": 8,
       "test": 0
-    },
-    "cred:fides:iban": {
-      "total": 2,
-      "production": 0,
-      "test": 2
     },
     "cred:eu:diploma": {
       "total": 2,
@@ -121,42 +111,12 @@
       "production": 0,
       "test": 1
     },
-    "cred:fides:lpid": {
-      "total": 1,
-      "production": 0,
-      "test": 1
-    },
-    "cred:fides:pid": {
-      "total": 1,
-      "production": 0,
-      "test": 1
-    },
     "cred:fides:organization-profile": {
       "total": 1,
       "production": 0,
       "test": 1
     },
-    "cred:fides:criminal-record-check": {
-      "total": 1,
-      "production": 0,
-      "test": 1
-    },
     "cred:fides:verified-employee": {
-      "total": 1,
-      "production": 0,
-      "test": 1
-    },
-    "cred:fides:higher-education-diploma": {
-      "total": 1,
-      "production": 0,
-      "test": 1
-    },
-    "cred:fides:iso-certificate": {
-      "total": 1,
-      "production": 0,
-      "test": 1
-    },
-    "cred:fides:upper-secondary-education": {
       "total": 1,
       "production": 0,
       "test": 1
@@ -177,11 +137,6 @@
       "test": 1
     },
     "cred:fides:verified-email": {
-      "total": 1,
-      "production": 0,
-      "test": 1
-    },
-    "cred:findynet:pension-credential": {
       "total": 1,
       "production": 0,
       "test": 1
