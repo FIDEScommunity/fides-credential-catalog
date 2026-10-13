@@ -123,7 +123,7 @@ credential_smoke('Credential prefill', static function () use ($existing_id): st
 
 credential_smoke('Create credential', static function () use ($org_id, $suffix): string {
     credential_smoke_assert($org_id !== '', 'Organization lookup unavailable');
-    $id = "cred:smokeauthority:smoke-{$suffix}:sd-jwt-vc";
+    $id = "cred:smokeauthority:smoke-{$suffix}";
     $data = credential_smoke_post('create', '', array(
         'orgId' => $org_id,
         'id' => $id,
@@ -133,33 +133,132 @@ credential_smoke('Create credential', static function () use ($org_id, $suffix):
         'vcFormat' => 'sd_jwt_vc',
         'schemaUrl' => 'https://example.test/schema.json',
         'schemaType' => 'JSON Schema',
-        'version' => '1',
+        'version' => '1.0.0',
         'sectors' => array('digital'),
         'ecosystems' => array('eudi_wallet'),
+        'attestationLoS' => 'iso_18045_high',
+        'bindingType' => 'key',
+        'rulebookUrl' => 'https://example.test/rulebook',
+        'rulebookIntegrity' => 'sha256-dGVzdGhhc2g=',
+        'trustedAuthorities' => array(
+            array(
+                'frameworkType' => 'aki',
+                'registryId' => 'treg:aamva-mdl:dts-vical',
+                'schemeId' => 'scheme:aamva-mdl',
+            ),
+        ),
     ));
     credential_smoke_assert(($data['status'] ?? '') === 'received', 'Create was not received');
+    return $id;
+});
+
+credential_smoke('Create stores TS11 fields in submission payload', static function () use ($org_id, $suffix): string {
+    credential_smoke_assert($org_id !== '', 'Organization lookup unavailable');
+    $id = "cred:smokeauthority:smoke-ts11-{$suffix}";
+    $data = credential_smoke_post('create', '', array(
+        'orgId' => $org_id,
+        'id' => $id,
+        'displayName' => "Smoke TS11 {$suffix}",
+        'authority' => array('name' => 'Smoke Authority', 'url' => 'https://example.test'),
+        'subjectType' => 'Person',
+        'vcFormat' => 'sd_jwt_vc',
+        'schemaUrl' => 'https://example.test/schema.json',
+        'schemaType' => 'JSON Schema',
+        'version' => '1.0.0',
+        'sectors' => array('digital'),
+        'ecosystems' => array('eudi_wallet'),
+        'attestationLoS' => 'iso_18045_moderate',
+        'bindingType' => 'claim',
+        'rulebookUrl' => 'https://example.test/rulebook-ts11',
+        'rulebookIntegrity' => 'sha256-YWJjZGVmZ2hpams=',
+        'trustedAuthorities' => array(
+            array(
+                'frameworkType' => 'openid_federation',
+                'registryId' => 'treg:findynet:federation-trust-anchor',
+            ),
+        ),
+    ));
+    credential_smoke_assert(($data['status'] ?? '') === 'received', 'TS11 create was not received');
+    $row_id = (int) ($data['id'] ?? 0);
+    credential_smoke_assert($row_id > 0, 'TS11 create missing submission id');
+    $row = Fides_Catalog_Submissions::get_by_id($row_id);
+    credential_smoke_assert(is_array($row), 'TS11 submission row not found');
+    $payload = is_array($row['payload'] ?? null) ? $row['payload'] : array();
+    credential_smoke_assert(($payload['attestationLoS'] ?? '') === 'iso_18045_moderate', 'attestationLoS not stored');
+    credential_smoke_assert(($payload['bindingType'] ?? '') === 'claim', 'bindingType not stored');
+    credential_smoke_assert(($payload['rulebookUrl'] ?? '') === 'https://example.test/rulebook-ts11', 'rulebookUrl not stored');
+    credential_smoke_assert(($payload['rulebookIntegrity'] ?? '') === 'sha256-YWJjZGVmZ2hpams=', 'rulebookIntegrity not stored');
+    credential_smoke_assert(
+        is_array($payload['trustedAuthorities'] ?? null) && count($payload['trustedAuthorities']) === 1,
+        'trustedAuthorities not stored'
+    );
     return $id;
 });
 
 credential_smoke('Validation rejects invalid payloads', static function () use ($org_id, $suffix): string {
     $invalid = Fides_Credential_Catalog_Submission_Adapter::validate_payload(array(
         'orgId' => $org_id,
-        'id' => "cred:smokeauthority:invalid-{$suffix}:sd-jwt-vc",
+        'id' => "cred:smokeauthority:invalid-{$suffix}",
         'displayName' => 'Invalid credential',
         'subjectType' => 'Person',
         'vcFormat' => 'sd_jwt_vc',
         'version' => '1',
     ), array('action' => 'create'));
     credential_smoke_assert(is_wp_error($invalid), 'Invalid credential payload was accepted');
-    return 'required schema fields enforced';
+
+    $bad_los = Fides_Credential_Catalog_Submission_Adapter::validate_payload(array(
+        'orgId' => $org_id,
+        'id' => "cred:smokeauthority:badlos-{$suffix}",
+        'displayName' => 'Bad LoS',
+        'authority' => array('name' => 'Smoke Authority'),
+        'subjectType' => 'Person',
+        'vcFormat' => 'sd_jwt_vc',
+        'schemaUrl' => 'https://example.test/schema.json',
+        'schemaType' => 'JSON Schema',
+        'version' => '1.0.0',
+        'sectors' => array('digital'),
+        'ecosystems' => array('eudi_wallet'),
+        'attestationLoS' => 'eidas_high',
+    ), array('action' => 'create'));
+    credential_smoke_assert(is_wp_error($bad_los), 'Invalid attestationLoS was accepted');
+
+    $bad_trust = Fides_Credential_Catalog_Submission_Adapter::validate_payload(array(
+        'orgId' => $org_id,
+        'id' => "cred:smokeauthority:badtrust-{$suffix}",
+        'displayName' => 'Bad trust',
+        'authority' => array('name' => 'Smoke Authority'),
+        'subjectType' => 'Person',
+        'vcFormat' => 'sd_jwt_vc',
+        'schemaUrl' => 'https://example.test/schema.json',
+        'schemaType' => 'JSON Schema',
+        'version' => '1.0.0',
+        'sectors' => array('digital'),
+        'ecosystems' => array('eudi_wallet'),
+        'trustedAuthorities' => array(
+            array('frameworkType' => 'aki', 'registryId' => 'not-a-registry'),
+        ),
+    ), array('action' => 'create'));
+    credential_smoke_assert(is_wp_error($bad_trust), 'Invalid trustedAuthorities was accepted');
+
+    return 'required schema and TS11 fields enforced';
 });
 
-credential_smoke('Update existing credential', static function () use ($existing_id): string {
+credential_smoke('Update existing credential with TS11 fields', static function () use ($existing_id): string {
     credential_smoke_assert($existing_id !== '', 'No credential available for update');
     $item = Fides_Catalog_Submission_Lookups::find_item_by_id('credential', $existing_id);
     credential_smoke_assert(is_array($item), 'Existing credential not found');
     $payload = Fides_Credential_Catalog_Submission_Adapter::catalog_item_to_payload($item);
     $payload['shortDescription'] = 'Temporary automated smoke-test update.';
+    $payload['attestationLoS'] = 'iso_18045_basic';
+    $payload['bindingType'] = 'biometric';
+    $payload['rulebookUrl'] = 'https://example.test/updated-rulebook';
+    $payload['rulebookIntegrity'] = 'sha256-dXBkYXRlZGhhc2g=';
+    $payload['trustedAuthorities'] = array(
+        array(
+            'frameworkType' => 'etsi_tl',
+            'registryId' => 'treg:aamva-mdl:dts-vical',
+        ),
+    );
     $normalized = Fides_Credential_Catalog_Submission_Adapter::validate_payload(
         $payload,
         array('action' => 'update', 'item_id' => $existing_id)
@@ -169,6 +268,8 @@ credential_smoke('Update existing credential', static function () use ($existing
         ($normalized['slug'] ?? '') === ($item['slug'] ?? ''),
         'Existing credential slug changed during update validation'
     );
+    credential_smoke_assert(($normalized['attestationLoS'] ?? '') === 'iso_18045_basic', 'Update LoS not normalized');
+    credential_smoke_assert(($normalized['bindingType'] ?? '') === 'biometric', 'Update binding not normalized');
     $data = credential_smoke_post('update', $existing_id, $payload);
     credential_smoke_assert(($data['action'] ?? '') === 'update', 'Update action mismatch');
     return $existing_id;
@@ -177,7 +278,7 @@ credential_smoke('Update existing credential', static function () use ($existing
 credential_smoke('Adapter export roundtrip', static function () use ($org_id, $suffix): string {
     $payload = array(
         'orgId' => $org_id,
-        'id' => "cred:smokeauthority:roundtrip-{$suffix}:sd-jwt-vc",
+        'id' => "cred:smokeauthority:roundtrip-{$suffix}",
         'displayName' => "Roundtrip {$suffix}",
         'shortDescription' => 'Roundtrip description',
         'authority' => array('name' => 'Smoke Authority', 'url' => 'https://example.test'),
@@ -187,7 +288,18 @@ credential_smoke('Adapter export roundtrip', static function () use ($org_id, $s
         'nativeIdentifierType' => 'vct',
         'schemaUrl' => 'https://example.test/schema.json',
         'schemaType' => 'JSON Schema',
-        'version' => '1',
+        'version' => '1.0.0',
+        'rulebookUrl' => 'https://example.test/rb',
+        'rulebookIntegrity' => 'sha256-cm91bmR0cmlw',
+        'attestationLoS' => 'iso_18045_high',
+        'bindingType' => 'key',
+        'trustedAuthorities' => array(
+            array(
+                'frameworkType' => 'aki',
+                'registryId' => 'treg:aamva-mdl:dts-vical',
+                'values' => array('AB:CD'),
+            ),
+        ),
         'tags' => array('smoke', 'roundtrip'),
         'sectors' => array('digital'),
         'ecosystems' => array('eudi_wallet'),
@@ -197,17 +309,28 @@ credential_smoke('Adapter export roundtrip', static function () use ($org_id, $s
     $normalized = Fides_Credential_Catalog_Submission_Adapter::validate_payload($payload, array('action' => 'create'));
     credential_smoke_assert(! is_wp_error($normalized), is_wp_error($normalized) ? $normalized->get_error_message() : 'Validation failed');
     $export = Fides_Credential_Catalog_Submission_Adapter::payload_to_export($normalized);
+    credential_smoke_assert(
+        ($export['$schema'] ?? '') === 'https://fides.community/schemas/credential-catalog/v2',
+        'Export schema is not v2'
+    );
     $roundtrip = Fides_Credential_Catalog_Submission_Adapter::catalog_item_to_payload(array_merge(
         array('orgId' => $export['orgId']),
         $export['credentials'][0]
     ));
     credential_smoke_assert($roundtrip['id'] === $payload['id'], 'Credential id did not roundtrip');
+    credential_smoke_assert(($roundtrip['attestationLoS'] ?? '') === 'iso_18045_high', 'attestationLoS did not roundtrip');
+    credential_smoke_assert(($roundtrip['bindingType'] ?? '') === 'key', 'bindingType did not roundtrip');
+    credential_smoke_assert(($roundtrip['rulebookIntegrity'] ?? '') === 'sha256-cm91bmR0cmlw', 'rulebookIntegrity did not roundtrip');
+    credential_smoke_assert(
+        is_array($roundtrip['trustedAuthorities'] ?? null) && count($roundtrip['trustedAuthorities']) === 1,
+        'trustedAuthorities did not roundtrip'
+    );
     $roundtrip_tags = $roundtrip['tags'];
     $payload_tags   = $payload['tags'];
     sort($roundtrip_tags);
     sort($payload_tags);
     credential_smoke_assert($roundtrip_tags === $payload_tags, 'Credential tags did not roundtrip');
-    return 'all source fields preserved';
+    return 'all source fields including TS11 preserved';
 });
 
 credential_smoke('Form assets and shortcodes', static function (): string {
@@ -216,7 +339,17 @@ credential_smoke('Form assets and shortcodes', static function (): string {
     $base = dirname(__DIR__) . '/wordpress-plugin/fides-credential-catalog/assets/';
     credential_smoke_assert(is_readable($base . 'credential-form.js'), 'Form JavaScript missing');
     credential_smoke_assert(is_readable($base . 'credential-form.css'), 'Form CSS missing');
-    return 'assets and shortcodes available';
+    $js = (string) file_get_contents($base . 'credential-form.js');
+    credential_smoke_assert(str_contains($js, 'TS11 Schema metadata'), 'Form JS missing TS11 section');
+    credential_smoke_assert(str_contains($js, 'fides-credential-attestation-los'), 'Form JS missing attestationLoS field');
+    credential_smoke_assert(str_contains($js, 'fides-credential-add-trusted-authority'), 'Form JS missing trusted authority controls');
+    credential_smoke_assert(! str_contains($js, 'Coming soon'), 'Form JS still shows Coming soon note');
+    $html = do_shortcode('[fides_credential_submit_form]');
+    credential_smoke_assert(
+        str_contains($html, 'fides-credential-submit-form-root') || str_contains($html, 'Sign in to continue'),
+        'Submit shortcode did not render'
+    );
+    return 'assets, shortcodes and TS11 form markup available';
 });
 
 echo "\nSummary: {$failures} failed\n";
