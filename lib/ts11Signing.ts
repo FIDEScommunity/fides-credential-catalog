@@ -151,5 +151,6 @@ export function resolveTs11JkuUrl(baseUrl: string): string {
   const configured = process.env.TS11_JKU_URL?.trim();
   if (configured) return configured;
   const base = baseUrl.replace(/\/$/, "");
-  return `${base}/api/.well-known/jwks.json`;
+  // Canonical handler is /api/jwks; /.well-known and /api/.well-known rewrite there.
+  return `${base}/api/jwks`;
 }

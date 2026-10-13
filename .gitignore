@@ -44,3 +44,5 @@ scripts/generate-taxonomy-matrix.mjs
 scripts/import-taxonomy-matrix.mjs
 scripts/inject-credential-themes.mjs
 data/credential-taxonomy-matrix.tsv
+.vercel
+.env*

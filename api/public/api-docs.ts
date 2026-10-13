@@ -475,14 +475,41 @@ const OPENAPI_SPEC_BASE = {
         },
       },
     },
-    "/api/.well-known/jwks.json": {
+    "/api/jwks": {
       get: {
         tags: ["TS11"],
         summary: "JWKS for verifying signed TS11 /schemas responses",
+        description:
+          "Canonical JWKS endpoint. `/api/.well-known/jwks.json` and `/.well-known/jwks.json` rewrite here.",
         operationId: "getTs11Jwks",
         responses: {
           "200": {
             description: "OK",
+            content: {
+              "application/json": {
+                schema: {
+                  type: "object",
+                  properties: {
+                    keys: {
+                      type: "array",
+                      items: { type: "object", additionalProperties: true },
+                    },
+                  },
+                },
+              },
+            },
+          },
+        },
+      },
+    },
+    "/api/.well-known/jwks.json": {
+      get: {
+        tags: ["TS11"],
+        summary: "JWKS (rewrite to /api/jwks)",
+        operationId: "getTs11JwksWellKnown",
+        responses: {
+          "200": {
+            description: "OK — same body as /api/jwks",
             content: {
               "application/json": {
                 schema: {
