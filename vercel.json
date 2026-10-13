@@ -3,7 +3,12 @@
   "installCommand": "npm ci",
   "framework": null,
   "outputDirectory": "public",
-  "rewrites": [],
+  "rewrites": [
+    { "source": "/schemas", "destination": "/api/public/schemas" },
+    { "source": "/schemas/:id", "destination": "/api/public/schemas/:id" },
+    { "source": "/api/.well-known/jwks.json", "destination": "/api/jwks" },
+    { "source": "/.well-known/jwks.json", "destination": "/api/jwks" }
+  ],
   "functions": {
     "api/**/*.ts": {
       "memory": 256,
