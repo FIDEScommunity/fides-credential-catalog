@@ -1,7 +1,7 @@
 {
   "schemaVersion": "2.0.0",
   "catalogType": "credential",
-  "lastUpdated": "2026-10-13T10:20:12.240Z",
+  "lastUpdated": "2026-10-13T10:23:53.360Z",
   "credentials": [
     {
       "id": "cred:uidai:aadhaar",
@@ -73,9 +73,9 @@
         "website": "https://uidai.gov.in/en",
         "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Aadhaar.svg/960px-Aadhaar.svg.png"
       },
-      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/UIDAI/credential-catalog.json",
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/UIDAI/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-13T10:20:12.240Z",
+      "fetchedAt": "2026-10-13T10:23:53.360Z",
       "updatedAt": "2026-05-26T00:00:00.000Z",
       "firstSeenAt": "2026-05-26T00:00:00.000Z",
       "attributes": [
@@ -455,9 +455,9 @@
         "website": "https://www.surf.nl/en",
         "logo": "https://www.surf.nl/themes/surf/logo.svg"
       },
-      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/eduwallet/credential-catalog.json",
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eduwallet/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-13T10:20:12.240Z",
+      "fetchedAt": "2026-10-13T10:23:53.360Z",
       "updatedAt": "2026-07-09T13:05:00.000Z",
       "firstSeenAt": "2026-07-09T13:05:00.000Z",
       "attributes": [
@@ -597,9 +597,9 @@
         "website": "https://www.surf.nl/en",
         "logo": "https://www.surf.nl/themes/surf/logo.svg"
       },
-      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/eduwallet/credential-catalog.json",
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eduwallet/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-13T10:20:12.240Z",
+      "fetchedAt": "2026-10-13T10:23:53.360Z",
       "updatedAt": "2026-07-09T13:05:00.000Z",
       "firstSeenAt": "2026-07-09T13:05:00.000Z",
       "attributes": [
@@ -712,9 +712,9 @@
         "website": "https://www.surf.nl/en",
         "logo": "https://www.surf.nl/themes/surf/logo.svg"
       },
-      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/eduwallet/credential-catalog.json",
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eduwallet/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-13T10:20:12.240Z",
+      "fetchedAt": "2026-10-13T10:23:53.360Z",
       "updatedAt": "2026-07-09T13:05:00.000Z",
       "firstSeenAt": "2026-07-09T13:05:00.000Z",
       "attributes": []
@@ -779,9 +779,9 @@
         "website": "https://www.surf.nl/en",
         "logo": "https://www.surf.nl/themes/surf/logo.svg"
       },
-      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/eduwallet/credential-catalog.json",
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eduwallet/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-13T10:20:12.240Z",
+      "fetchedAt": "2026-10-13T10:23:53.360Z",
       "updatedAt": "2026-07-09T13:05:00.000Z",
       "firstSeenAt": "2026-07-09T13:05:00.000Z",
       "attributes": []
@@ -844,9 +844,9 @@
         "website": "https://www.surf.nl/en",
         "logo": "https://www.surf.nl/themes/surf/logo.svg"
       },
-      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/eduwallet/credential-catalog.json",
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eduwallet/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-13T10:20:12.240Z",
+      "fetchedAt": "2026-10-13T10:23:53.360Z",
       "updatedAt": "2026-07-09T13:05:00.000Z",
       "firstSeenAt": "2026-07-09T13:05:00.000Z",
       "attributes": []
@@ -907,9 +907,9 @@
         "website": "https://www.surf.nl/en",
         "logo": "https://www.surf.nl/themes/surf/logo.svg"
       },
-      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/eduwallet/credential-catalog.json",
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eduwallet/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-13T10:20:12.240Z",
+      "fetchedAt": "2026-10-13T10:23:53.360Z",
       "updatedAt": "2026-07-09T13:05:00.000Z",
       "firstSeenAt": "2026-07-09T13:05:00.000Z",
       "attributes": []
@@ -971,9 +971,9 @@
         "website": "https://www.surf.nl/en",
         "logo": "https://www.surf.nl/themes/surf/logo.svg"
       },
-      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/eduwallet/credential-catalog.json",
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eduwallet/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-13T10:20:12.240Z",
+      "fetchedAt": "2026-10-13T10:23:53.360Z",
       "updatedAt": "2026-07-09T13:05:00.000Z",
       "firstSeenAt": "2026-07-09T13:05:00.000Z",
       "attributes": []
@@ -1036,9 +1036,9 @@
         "name": "EMVCo",
         "logo": "https://www.emvco.com/wp-content/uploads/2025/04/EMVCo_logo.svg"
       },
-      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/emvco/credential-catalog.json",
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/emvco/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-13T10:20:12.240Z",
+      "fetchedAt": "2026-10-13T10:23:53.360Z",
       "updatedAt": "2026-09-16T21:13:05.000Z",
       "firstSeenAt": "2026-09-16T21:13:05.000Z",
       "attributes": []
@@ -1104,9 +1104,9 @@
         "website": "https://commission.europa.eu/",
         "logo": "https://www.google.com/s2/favicons?domain=ec.europa.eu&sz=128"
       },
-      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/eu/credential-catalog.json",
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-13T10:20:12.240Z",
+      "fetchedAt": "2026-10-13T10:23:53.360Z",
       "updatedAt": "2026-10-13T06:37:06.000Z",
       "firstSeenAt": "2026-05-04T20:18:48.000Z",
       "attributes": [
@@ -1234,9 +1234,9 @@
         "website": "https://commission.europa.eu/",
         "logo": "https://www.google.com/s2/favicons?domain=ec.europa.eu&sz=128"
       },
-      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/eu/credential-catalog.json",
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-13T10:20:12.240Z",
+      "fetchedAt": "2026-10-13T10:23:53.360Z",
       "updatedAt": "2026-10-13T06:37:06.000Z",
       "firstSeenAt": "2026-05-04T20:18:48.000Z",
       "attributes": [
@@ -1396,9 +1396,9 @@
         "website": "https://commission.europa.eu/",
         "logo": "https://www.google.com/s2/favicons?domain=ec.europa.eu&sz=128"
       },
-      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/eu/credential-catalog.json",
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-13T10:20:12.240Z",
+      "fetchedAt": "2026-10-13T10:23:53.360Z",
       "updatedAt": "2026-10-13T06:37:06.000Z",
       "firstSeenAt": "2026-05-04T20:18:48.000Z",
       "attributes": [
@@ -1591,9 +1591,9 @@
         "website": "https://commission.europa.eu/",
         "logo": "https://www.google.com/s2/favicons?domain=ec.europa.eu&sz=128"
       },
-      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/eu/credential-catalog.json",
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-13T10:20:12.240Z",
+      "fetchedAt": "2026-10-13T10:23:53.360Z",
       "updatedAt": "2026-10-13T06:37:06.000Z",
       "firstSeenAt": "2026-05-04T20:18:48.000Z",
       "attributes": [
@@ -1751,9 +1751,9 @@
         "website": "https://commission.europa.eu/",
         "logo": "https://www.google.com/s2/favicons?domain=ec.europa.eu&sz=128"
       },
-      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/eu/credential-catalog.json",
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-13T10:20:12.240Z",
+      "fetchedAt": "2026-10-13T10:23:53.360Z",
       "updatedAt": "2026-10-13T06:37:06.000Z",
       "firstSeenAt": "2026-05-04T20:18:48.000Z",
       "attributes": [
@@ -1894,9 +1894,9 @@
         "website": "https://commission.europa.eu/",
         "logo": "https://www.google.com/s2/favicons?domain=ec.europa.eu&sz=128"
       },
-      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/eu/credential-catalog.json",
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-13T10:20:12.240Z",
+      "fetchedAt": "2026-10-13T10:23:53.360Z",
       "updatedAt": "2026-10-13T06:37:06.000Z",
       "firstSeenAt": "2026-05-04T20:18:48.000Z",
       "attributes": [
@@ -2106,9 +2106,9 @@
         "website": "https://commission.europa.eu/",
         "logo": "https://www.google.com/s2/favicons?domain=ec.europa.eu&sz=128"
       },
-      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/eu/credential-catalog.json",
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-13T10:20:12.240Z",
+      "fetchedAt": "2026-10-13T10:23:53.360Z",
       "updatedAt": "2026-10-13T06:37:06.000Z",
       "firstSeenAt": "2026-05-04T20:18:48.000Z",
       "attributes": [
@@ -2311,9 +2311,9 @@
         "website": "https://commission.europa.eu/",
         "logo": "https://www.google.com/s2/favicons?domain=ec.europa.eu&sz=128"
       },
-      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/eu/credential-catalog.json",
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-13T10:20:12.240Z",
+      "fetchedAt": "2026-10-13T10:23:53.360Z",
       "updatedAt": "2026-10-13T06:37:06.000Z",
       "firstSeenAt": "2026-05-04T20:18:48.000Z",
       "attributes": [
@@ -2441,9 +2441,9 @@
         "website": "https://commission.europa.eu/",
         "logo": "https://www.google.com/s2/favicons?domain=ec.europa.eu&sz=128"
       },
-      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/eu/credential-catalog.json",
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-13T10:20:12.240Z",
+      "fetchedAt": "2026-10-13T10:23:53.360Z",
       "updatedAt": "2026-10-13T06:37:06.000Z",
       "firstSeenAt": "2026-05-04T20:18:48.000Z",
       "attributes": [
@@ -2611,9 +2611,9 @@
         "website": "https://commission.europa.eu/",
         "logo": "https://www.google.com/s2/favicons?domain=ec.europa.eu&sz=128"
       },
-      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/eu/credential-catalog.json",
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-13T10:20:12.240Z",
+      "fetchedAt": "2026-10-13T10:23:53.360Z",
       "updatedAt": "2026-10-13T06:37:06.000Z",
       "firstSeenAt": "2026-05-04T20:18:48.000Z",
       "attributes": [
@@ -2988,9 +2988,9 @@
         "website": "https://commission.europa.eu/",
         "logo": "https://www.google.com/s2/favicons?domain=ec.europa.eu&sz=128"
       },
-      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/eu/credential-catalog.json",
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-13T10:20:12.240Z",
+      "fetchedAt": "2026-10-13T10:23:53.360Z",
       "updatedAt": "2026-10-13T06:37:06.000Z",
       "firstSeenAt": "2026-05-04T20:18:48.000Z",
       "attributes": [
@@ -3256,9 +3256,9 @@
         "website": "https://commission.europa.eu/",
         "logo": "https://www.google.com/s2/favicons?domain=ec.europa.eu&sz=128"
       },
-      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/eu/credential-catalog.json",
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-13T10:20:12.240Z",
+      "fetchedAt": "2026-10-13T10:23:53.360Z",
       "updatedAt": "2026-10-13T06:37:06.000Z",
       "firstSeenAt": "2026-05-04T20:18:48.000Z",
       "attributes": [
@@ -3541,9 +3541,9 @@
         "website": "https://commission.europa.eu/",
         "logo": "https://www.google.com/s2/favicons?domain=ec.europa.eu&sz=128"
       },
-      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/eu/credential-catalog.json",
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-13T10:20:12.240Z",
+      "fetchedAt": "2026-10-13T10:23:53.360Z",
       "updatedAt": "2026-10-13T06:37:06.000Z",
       "firstSeenAt": "2026-05-04T20:18:48.000Z",
       "attributes": [
@@ -3688,9 +3688,9 @@
         "website": "https://commission.europa.eu/",
         "logo": "https://www.google.com/s2/favicons?domain=ec.europa.eu&sz=128"
       },
-      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/eu/credential-catalog.json",
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-13T10:20:12.240Z",
+      "fetchedAt": "2026-10-13T10:23:53.360Z",
       "updatedAt": "2026-10-13T06:37:06.000Z",
       "firstSeenAt": "2026-05-04T20:18:48.000Z",
       "attributes": [
@@ -3914,9 +3914,9 @@
         "website": "https://commission.europa.eu/",
         "logo": "https://www.google.com/s2/favicons?domain=ec.europa.eu&sz=128"
       },
-      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/eu/credential-catalog.json",
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-13T10:20:12.240Z",
+      "fetchedAt": "2026-10-13T10:23:53.360Z",
       "updatedAt": "2026-10-13T06:37:06.000Z",
       "firstSeenAt": "2026-05-04T20:18:48.000Z",
       "attributes": [
@@ -4090,9 +4090,9 @@
         "website": "https://commission.europa.eu/",
         "logo": "https://www.google.com/s2/favicons?domain=ec.europa.eu&sz=128"
       },
-      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/eu/credential-catalog.json",
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-13T10:20:12.240Z",
+      "fetchedAt": "2026-10-13T10:23:53.360Z",
       "updatedAt": "2026-10-13T06:37:06.000Z",
       "firstSeenAt": "2026-05-04T20:18:48.000Z",
       "attributes": [
@@ -4217,9 +4217,9 @@
         "name": "EWC - European Wallet Consortium",
         "logo": "https://avatars.githubusercontent.com/u/140810559?v=4"
       },
-      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/ewc/credential-catalog.json",
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/ewc/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-13T10:20:12.240Z",
+      "fetchedAt": "2026-10-13T10:23:53.360Z",
       "updatedAt": "2026-10-13T06:37:06.000Z",
       "firstSeenAt": "2026-05-04T20:18:48.000Z",
       "attributes": [
@@ -4295,9 +4295,9 @@
         "name": "EWC - European Wallet Consortium",
         "logo": "https://avatars.githubusercontent.com/u/140810559?v=4"
       },
-      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/ewc/credential-catalog.json",
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/ewc/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-13T10:20:12.240Z",
+      "fetchedAt": "2026-10-13T10:23:53.360Z",
       "updatedAt": "2026-10-13T06:37:06.000Z",
       "firstSeenAt": "2026-05-04T20:18:48.000Z",
       "attributes": [
@@ -4422,9 +4422,9 @@
         "name": "EWC - European Wallet Consortium",
         "logo": "https://avatars.githubusercontent.com/u/140810559?v=4"
       },
-      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/ewc/credential-catalog.json",
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/ewc/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-13T10:20:12.240Z",
+      "fetchedAt": "2026-10-13T10:23:53.360Z",
       "updatedAt": "2026-10-13T06:37:06.000Z",
       "firstSeenAt": "2026-05-04T20:18:48.000Z",
       "attributes": [
@@ -4540,9 +4540,9 @@
         "name": "EWC - European Wallet Consortium",
         "logo": "https://avatars.githubusercontent.com/u/140810559?v=4"
       },
-      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/ewc/credential-catalog.json",
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/ewc/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-13T10:20:12.240Z",
+      "fetchedAt": "2026-10-13T10:23:53.360Z",
       "updatedAt": "2026-10-13T06:37:06.000Z",
       "firstSeenAt": "2026-05-04T20:18:48.000Z",
       "attributes": [
@@ -4647,9 +4647,9 @@
         "name": "EWC - European Wallet Consortium",
         "logo": "https://avatars.githubusercontent.com/u/140810559?v=4"
       },
-      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/ewc/credential-catalog.json",
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/ewc/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-13T10:20:12.240Z",
+      "fetchedAt": "2026-10-13T10:23:53.360Z",
       "updatedAt": "2026-10-13T06:37:06.000Z",
       "firstSeenAt": "2026-05-04T20:18:48.000Z",
       "attributes": [
@@ -4730,9 +4730,9 @@
         "name": "EWC - European Wallet Consortium",
         "logo": "https://avatars.githubusercontent.com/u/140810559?v=4"
       },
-      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/ewc/credential-catalog.json",
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/ewc/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-13T10:20:12.240Z",
+      "fetchedAt": "2026-10-13T10:23:53.360Z",
       "updatedAt": "2026-10-13T06:37:06.000Z",
       "firstSeenAt": "2026-05-04T20:18:48.000Z",
       "attributes": [
@@ -4807,9 +4807,9 @@
         "name": "EWC - European Wallet Consortium",
         "logo": "https://avatars.githubusercontent.com/u/140810559?v=4"
       },
-      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/ewc/credential-catalog.json",
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/ewc/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-13T10:20:12.240Z",
+      "fetchedAt": "2026-10-13T10:23:53.360Z",
       "updatedAt": "2026-10-13T06:37:06.000Z",
       "firstSeenAt": "2026-05-04T20:18:48.000Z",
       "attributes": [
@@ -4885,9 +4885,9 @@
         "name": "EWC - European Wallet Consortium",
         "logo": "https://avatars.githubusercontent.com/u/140810559?v=4"
       },
-      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/ewc/credential-catalog.json",
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/ewc/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-13T10:20:12.240Z",
+      "fetchedAt": "2026-10-13T10:23:53.360Z",
       "updatedAt": "2026-10-13T06:37:06.000Z",
       "firstSeenAt": "2026-05-04T20:18:48.000Z",
       "attributes": [
@@ -4998,9 +4998,9 @@
         "name": "EWC - European Wallet Consortium",
         "logo": "https://avatars.githubusercontent.com/u/140810559?v=4"
       },
-      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/ewc/credential-catalog.json",
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/ewc/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-13T10:20:12.240Z",
+      "fetchedAt": "2026-10-13T10:23:53.360Z",
       "updatedAt": "2026-10-13T06:37:06.000Z",
       "firstSeenAt": "2026-05-04T20:18:48.000Z",
       "attributes": [
@@ -5083,9 +5083,9 @@
         "name": "EWC - European Wallet Consortium",
         "logo": "https://avatars.githubusercontent.com/u/140810559?v=4"
       },
-      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/ewc/credential-catalog.json",
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/ewc/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-13T10:20:12.240Z",
+      "fetchedAt": "2026-10-13T10:23:53.360Z",
       "updatedAt": "2026-10-13T06:37:06.000Z",
       "firstSeenAt": "2026-05-04T20:18:48.000Z",
       "attributes": [
@@ -5220,9 +5220,9 @@
         "name": "EWC - European Wallet Consortium",
         "logo": "https://avatars.githubusercontent.com/u/140810559?v=4"
       },
-      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/ewc/credential-catalog.json",
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/ewc/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-13T10:20:12.240Z",
+      "fetchedAt": "2026-10-13T10:23:53.360Z",
       "updatedAt": "2026-10-13T06:37:06.000Z",
       "firstSeenAt": "2026-05-04T20:18:48.000Z",
       "attributes": [
@@ -5340,9 +5340,9 @@
         "name": "EWC - European Wallet Consortium",
         "logo": "https://avatars.githubusercontent.com/u/140810559?v=4"
       },
-      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/ewc/credential-catalog.json",
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/ewc/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-13T10:20:12.240Z",
+      "fetchedAt": "2026-10-13T10:23:53.360Z",
       "updatedAt": "2026-10-13T06:37:06.000Z",
       "firstSeenAt": "2026-05-04T20:18:48.000Z",
       "attributes": [
@@ -5483,9 +5483,9 @@
         "name": "EWC - European Wallet Consortium",
         "logo": "https://avatars.githubusercontent.com/u/140810559?v=4"
       },
-      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/ewc/credential-catalog.json",
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/ewc/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-13T10:20:12.240Z",
+      "fetchedAt": "2026-10-13T10:23:53.360Z",
       "updatedAt": "2026-10-13T06:37:06.000Z",
       "firstSeenAt": "2026-05-04T20:18:48.000Z",
       "attributes": [
@@ -5586,9 +5586,9 @@
           "email": "info@fides-labs.io"
         }
       },
-      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/fides/credential-catalog.json",
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-13T10:20:12.240Z",
+      "fetchedAt": "2026-10-13T10:23:53.360Z",
       "updatedAt": "2026-05-17T00:00:00.000Z",
       "firstSeenAt": "2026-05-17T00:00:00.000Z",
       "attributes": [
@@ -5773,9 +5773,9 @@
           "email": "info@fides-labs.io"
         }
       },
-      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/fides/credential-catalog.json",
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-13T10:20:12.240Z",
+      "fetchedAt": "2026-10-13T10:23:53.360Z",
       "updatedAt": "2026-05-17T00:00:00.000Z",
       "firstSeenAt": "2026-05-17T00:00:00.000Z",
       "attributes": [
@@ -5953,9 +5953,9 @@
           "email": "info@fides-labs.io"
         }
       },
-      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/fides/credential-catalog.json",
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-13T10:20:12.240Z",
+      "fetchedAt": "2026-10-13T10:23:53.360Z",
       "updatedAt": "2026-05-17T00:00:00.000Z",
       "firstSeenAt": "2026-05-17T00:00:00.000Z",
       "attributes": [
@@ -6125,9 +6125,9 @@
           "email": "info@fides-labs.io"
         }
       },
-      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/fides/credential-catalog.json",
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-13T10:20:12.240Z",
+      "fetchedAt": "2026-10-13T10:23:53.360Z",
       "updatedAt": "2026-05-17T00:00:00.000Z",
       "firstSeenAt": "2026-05-17T00:00:00.000Z",
       "attributes": [
@@ -6275,9 +6275,9 @@
           "email": "info@fides-labs.io"
         }
       },
-      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/fides/credential-catalog.json",
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-13T10:20:12.240Z",
+      "fetchedAt": "2026-10-13T10:23:53.360Z",
       "updatedAt": "2026-05-17T00:00:00.000Z",
       "firstSeenAt": "2026-05-17T00:00:00.000Z",
       "attributes": [
@@ -6390,9 +6390,9 @@
           "email": "info@fides-labs.io"
         }
       },
-      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/fides/credential-catalog.json",
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-13T10:20:12.240Z",
+      "fetchedAt": "2026-10-13T10:23:53.360Z",
       "updatedAt": "2026-05-17T00:00:00.000Z",
       "firstSeenAt": "2026-05-17T00:00:00.000Z",
       "attributes": [
@@ -6555,9 +6555,9 @@
           "email": "info@fides-labs.io"
         }
       },
-      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/fides/credential-catalog.json",
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-13T10:20:12.240Z",
+      "fetchedAt": "2026-10-13T10:23:53.360Z",
       "updatedAt": "2026-05-17T00:00:00.000Z",
       "firstSeenAt": "2026-05-17T00:00:00.000Z",
       "attributes": [
@@ -6756,9 +6756,9 @@
           "email": "info@fides-labs.io"
         }
       },
-      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/fides/credential-catalog.json",
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-13T10:20:12.240Z",
+      "fetchedAt": "2026-10-13T10:23:53.360Z",
       "updatedAt": "2026-05-17T00:00:00.000Z",
       "firstSeenAt": "2026-05-17T00:00:00.000Z",
       "attributes": [
@@ -6866,9 +6866,9 @@
           "email": "info@fides-labs.io"
         }
       },
-      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/fides/credential-catalog.json",
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-13T10:20:12.240Z",
+      "fetchedAt": "2026-10-13T10:23:53.360Z",
       "updatedAt": "2026-05-17T00:00:00.000Z",
       "firstSeenAt": "2026-05-17T00:00:00.000Z",
       "attributes": [
@@ -7053,9 +7053,9 @@
           "email": "info@fides-labs.io"
         }
       },
-      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/fides/credential-catalog.json",
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-13T10:20:12.240Z",
+      "fetchedAt": "2026-10-13T10:23:53.360Z",
       "updatedAt": "2026-05-17T00:00:00.000Z",
       "firstSeenAt": "2026-05-17T00:00:00.000Z",
       "attributes": [
@@ -7206,9 +7206,9 @@
           "email": "info@fides-labs.io"
         }
       },
-      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/fides/credential-catalog.json",
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-13T10:20:12.240Z",
+      "fetchedAt": "2026-10-13T10:23:53.360Z",
       "updatedAt": "2026-05-17T00:00:00.000Z",
       "firstSeenAt": "2026-05-17T00:00:00.000Z",
       "attributes": [
@@ -7346,9 +7346,9 @@
           "email": "info@fides-labs.io"
         }
       },
-      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/fides/credential-catalog.json",
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-13T10:20:12.240Z",
+      "fetchedAt": "2026-10-13T10:23:53.360Z",
       "updatedAt": "2026-05-17T00:00:00.000Z",
       "firstSeenAt": "2026-05-17T00:00:00.000Z",
       "attributes": [
@@ -7451,9 +7451,9 @@
           "email": "info@fides-labs.io"
         }
       },
-      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/fides/credential-catalog.json",
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-13T10:20:12.240Z",
+      "fetchedAt": "2026-10-13T10:23:53.360Z",
       "updatedAt": "2026-05-17T00:00:00.000Z",
       "firstSeenAt": "2026-05-17T00:00:00.000Z",
       "attributes": [
@@ -7534,9 +7534,9 @@
           "email": "info@fides-labs.io"
         }
       },
-      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/fides/credential-catalog.json",
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-13T10:20:12.240Z",
+      "fetchedAt": "2026-10-13T10:23:53.360Z",
       "updatedAt": "2026-05-17T00:00:00.000Z",
       "firstSeenAt": "2026-05-17T00:00:00.000Z",
       "attributes": [
@@ -7778,9 +7778,9 @@
           "email": "info@fides-labs.io"
         }
       },
-      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/fides/credential-catalog.json",
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-13T10:20:12.240Z",
+      "fetchedAt": "2026-10-13T10:23:53.360Z",
       "updatedAt": "2026-05-17T00:00:00.000Z",
       "firstSeenAt": "2026-05-17T00:00:00.000Z",
       "attributes": [
@@ -7910,9 +7910,9 @@
           "email": "info@fides-labs.io"
         }
       },
-      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/fides/credential-catalog.json",
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-13T10:20:12.240Z",
+      "fetchedAt": "2026-10-13T10:23:53.360Z",
       "updatedAt": "2026-05-17T00:00:00.000Z",
       "firstSeenAt": "2026-05-17T00:00:00.000Z",
       "attributes": [
@@ -8049,9 +8049,9 @@
           "email": "info@fides-labs.io"
         }
       },
-      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/fides/credential-catalog.json",
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-13T10:20:12.240Z",
+      "fetchedAt": "2026-10-13T10:23:53.360Z",
       "updatedAt": "2026-05-17T00:00:00.000Z",
       "firstSeenAt": "2026-05-17T00:00:00.000Z",
       "attributes": [
@@ -8429,9 +8429,9 @@
           "email": "info@fides-labs.io"
         }
       },
-      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/fides/credential-catalog.json",
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-13T10:20:12.240Z",
+      "fetchedAt": "2026-10-13T10:23:53.360Z",
       "updatedAt": "2026-05-17T00:00:00.000Z",
       "firstSeenAt": "2026-05-17T00:00:00.000Z",
       "attributes": [
@@ -8568,9 +8568,9 @@
           "email": "info@fides-labs.io"
         }
       },
-      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/fides/credential-catalog.json",
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-13T10:20:12.240Z",
+      "fetchedAt": "2026-10-13T10:23:53.360Z",
       "updatedAt": "2026-05-17T00:00:00.000Z",
       "firstSeenAt": "2026-05-17T00:00:00.000Z",
       "attributes": [
@@ -8840,9 +8840,9 @@
           "email": "info@fides-labs.io"
         }
       },
-      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/fides/credential-catalog.json",
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-13T10:20:12.240Z",
+      "fetchedAt": "2026-10-13T10:23:53.360Z",
       "updatedAt": "2026-05-17T00:00:00.000Z",
       "firstSeenAt": "2026-05-17T00:00:00.000Z",
       "attributes": [
@@ -8951,9 +8951,9 @@
           "email": "info@fides-labs.io"
         }
       },
-      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/fides/credential-catalog.json",
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-13T10:20:12.240Z",
+      "fetchedAt": "2026-10-13T10:23:53.360Z",
       "updatedAt": "2026-05-17T00:00:00.000Z",
       "firstSeenAt": "2026-05-17T00:00:00.000Z",
       "attributes": [
@@ -9058,9 +9058,9 @@
           "email": "info@fides-labs.io"
         }
       },
-      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/fides/credential-catalog.json",
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-13T10:20:12.240Z",
+      "fetchedAt": "2026-10-13T10:23:53.360Z",
       "updatedAt": "2026-05-17T00:00:00.000Z",
       "firstSeenAt": "2026-05-17T00:00:00.000Z",
       "attributes": [
@@ -9402,9 +9402,9 @@
           "email": "info@fides-labs.io"
         }
       },
-      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/fides/credential-catalog.json",
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-13T10:20:12.240Z",
+      "fetchedAt": "2026-10-13T10:23:53.360Z",
       "updatedAt": "2026-05-17T00:00:00.000Z",
       "firstSeenAt": "2026-05-17T00:00:00.000Z",
       "attributes": [
@@ -9739,9 +9739,9 @@
           "email": "info@fides-labs.io"
         }
       },
-      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/fides/credential-catalog.json",
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-13T10:20:12.240Z",
+      "fetchedAt": "2026-10-13T10:23:53.360Z",
       "updatedAt": "2026-05-17T00:00:00.000Z",
       "firstSeenAt": "2026-05-17T00:00:00.000Z",
       "attributes": [
@@ -10073,9 +10073,9 @@
           "email": "info@fides-labs.io"
         }
       },
-      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/fides/credential-catalog.json",
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-13T10:20:12.240Z",
+      "fetchedAt": "2026-10-13T10:23:53.360Z",
       "updatedAt": "2026-05-17T00:00:00.000Z",
       "firstSeenAt": "2026-05-17T00:00:00.000Z",
       "attributes": [
@@ -10154,9 +10154,9 @@
           "email": "info@fides-labs.io"
         }
       },
-      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/fides/credential-catalog.json",
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-13T10:20:12.240Z",
+      "fetchedAt": "2026-10-13T10:23:53.360Z",
       "updatedAt": "2026-05-17T00:00:00.000Z",
       "firstSeenAt": "2026-05-17T00:00:00.000Z",
       "attributes": [
@@ -10248,9 +10248,9 @@
         "name": "FIDO Alliance",
         "logo": "https://fidoalliance.org/wp-content/themes/frost/assets/images/fido-logo-v2.svg"
       },
-      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/fido-alliance/credential-catalog.json",
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fido-alliance/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-13T10:20:12.240Z",
+      "fetchedAt": "2026-10-13T10:23:53.360Z",
       "updatedAt": "2026-10-02T15:39:30.000Z",
       "firstSeenAt": "2026-10-02T15:39:30.000Z",
       "attributes": [
@@ -10352,9 +10352,9 @@
         "name": "FIDO Alliance",
         "logo": "https://fidoalliance.org/wp-content/themes/frost/assets/images/fido-logo-v2.svg"
       },
-      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/fido-alliance/credential-catalog.json",
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fido-alliance/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-13T10:20:12.240Z",
+      "fetchedAt": "2026-10-13T10:23:53.360Z",
       "updatedAt": "2026-10-02T15:39:30.000Z",
       "firstSeenAt": "2026-10-02T15:39:30.000Z",
       "attributes": [
@@ -10568,9 +10568,9 @@
         "name": "FIDO Alliance",
         "logo": "https://fidoalliance.org/wp-content/themes/frost/assets/images/fido-logo-v2.svg"
       },
-      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/fido-alliance/credential-catalog.json",
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fido-alliance/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-13T10:20:12.240Z",
+      "fetchedAt": "2026-10-13T10:23:53.360Z",
       "updatedAt": "2026-10-02T15:39:30.000Z",
       "firstSeenAt": "2026-10-02T15:39:30.000Z",
       "attributes": [
@@ -10749,9 +10749,9 @@
         "name": "FIDO Alliance",
         "logo": "https://fidoalliance.org/wp-content/themes/frost/assets/images/fido-logo-v2.svg"
       },
-      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/fido-alliance/credential-catalog.json",
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fido-alliance/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-13T10:20:12.240Z",
+      "fetchedAt": "2026-10-13T10:23:53.360Z",
       "updatedAt": "2026-10-02T15:39:30.000Z",
       "firstSeenAt": "2026-10-02T15:39:30.000Z",
       "attributes": [
@@ -11102,26 +11102,14 @@
       ],
       "category": "health",
       "orgId": "org:findynet",
-      "resolvedTrustedAuthorities": [
-        {
-          "frameworkType": "openid_federation",
-          "registryId": "treg:findynet:federation-trust-anchor",
-          "schemeId": "scheme:findynet",
-          "schemeName": "Findynet Trust Network",
-          "registryName": "Findynet federation trust anchor",
-          "registryUrl": "https://github.com/findynet",
-          "registryProfile": "other",
-          "access": "registration_required"
-        }
-      ],
       "provider": {
         "name": "Findynet",
         "website": "https://findynet.fi/en/",
         "logo": "https://www.google.com/s2/favicons?domain=findynet.fi&sz=128"
       },
-      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/findynet/credential-catalog.json",
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/findynet/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-13T10:20:12.240Z",
+      "fetchedAt": "2026-10-13T10:23:53.360Z",
       "updatedAt": "2026-10-13T06:37:06.000Z",
       "firstSeenAt": "2026-05-13T11:19:59.000Z",
       "attributes": [
@@ -11356,26 +11344,14 @@
       ],
       "category": "finance",
       "orgId": "org:findynet",
-      "resolvedTrustedAuthorities": [
-        {
-          "frameworkType": "openid_federation",
-          "registryId": "treg:findynet:federation-trust-anchor",
-          "schemeId": "scheme:findynet",
-          "schemeName": "Findynet Trust Network",
-          "registryName": "Findynet federation trust anchor",
-          "registryUrl": "https://github.com/findynet",
-          "registryProfile": "other",
-          "access": "registration_required"
-        }
-      ],
       "provider": {
         "name": "Findynet",
         "website": "https://findynet.fi/en/",
         "logo": "https://www.google.com/s2/favicons?domain=findynet.fi&sz=128"
       },
-      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/findynet/credential-catalog.json",
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/findynet/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-13T10:20:12.240Z",
+      "fetchedAt": "2026-10-13T10:23:53.360Z",
       "updatedAt": "2026-10-13T06:37:06.000Z",
       "firstSeenAt": "2026-05-13T11:19:59.000Z",
       "attributes": [
@@ -11517,9 +11493,9 @@
         "website": "https://www.gleif.org",
         "logo": "https://www.gleif.org/assets/build/img/logo/gleif-logo-new.svg"
       },
-      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/gleif/credential-catalog.json",
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/gleif/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-13T10:20:12.240Z",
+      "fetchedAt": "2026-10-13T10:23:53.360Z",
       "updatedAt": "2026-04-21T06:00:00.000Z",
       "firstSeenAt": "2026-04-21T06:00:00.000Z",
       "attributes": [
@@ -11774,9 +11750,9 @@
         "website": "https://www.gleif.org",
         "logo": "https://www.gleif.org/assets/build/img/logo/gleif-logo-new.svg"
       },
-      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/gleif/credential-catalog.json",
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/gleif/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-13T10:20:12.240Z",
+      "fetchedAt": "2026-10-13T10:23:53.360Z",
       "updatedAt": "2026-04-21T06:00:00.000Z",
       "firstSeenAt": "2026-04-21T06:00:00.000Z",
       "attributes": [
@@ -12058,9 +12034,9 @@
         "website": "https://www.gleif.org",
         "logo": "https://www.gleif.org/assets/build/img/logo/gleif-logo-new.svg"
       },
-      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/gleif/credential-catalog.json",
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/gleif/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-13T10:20:12.240Z",
+      "fetchedAt": "2026-10-13T10:23:53.360Z",
       "updatedAt": "2026-04-21T06:00:00.000Z",
       "firstSeenAt": "2026-04-21T06:00:00.000Z",
       "attributes": [
@@ -12278,9 +12254,9 @@
         "website": "https://www.gleif.org",
         "logo": "https://www.gleif.org/assets/build/img/logo/gleif-logo-new.svg"
       },
-      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/gleif/credential-catalog.json",
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/gleif/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-13T10:20:12.240Z",
+      "fetchedAt": "2026-10-13T10:23:53.360Z",
       "updatedAt": "2026-04-21T06:00:00.000Z",
       "firstSeenAt": "2026-04-21T06:00:00.000Z",
       "attributes": [
@@ -12519,9 +12495,9 @@
         "website": "https://www.gleif.org",
         "logo": "https://www.gleif.org/assets/build/img/logo/gleif-logo-new.svg"
       },
-      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/gleif/credential-catalog.json",
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/gleif/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-13T10:20:12.240Z",
+      "fetchedAt": "2026-10-13T10:23:53.360Z",
       "updatedAt": "2026-04-21T06:00:00.000Z",
       "firstSeenAt": "2026-04-21T06:00:00.000Z",
       "attributes": [
@@ -12760,9 +12736,9 @@
         "website": "https://www.gleif.org",
         "logo": "https://www.gleif.org/assets/build/img/logo/gleif-logo-new.svg"
       },
-      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/gleif/credential-catalog.json",
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/gleif/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-13T10:20:12.240Z",
+      "fetchedAt": "2026-10-13T10:23:53.360Z",
       "updatedAt": "2026-04-21T06:00:00.000Z",
       "firstSeenAt": "2026-04-21T06:00:00.000Z",
       "attributes": [
@@ -12953,9 +12929,9 @@
         "website": "https://www.google.com",
         "logo": "https://www.google.com/s2/favicons?domain=google.com&sz=128"
       },
-      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/google/credential-catalog.json",
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/google/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-13T10:20:12.240Z",
+      "fetchedAt": "2026-10-13T10:23:53.360Z",
       "updatedAt": "2026-09-16T15:31:28.000Z",
       "firstSeenAt": "2026-09-16T15:31:28.000Z",
       "attributes": []
@@ -13024,9 +13000,9 @@
           "email": "info@gaia-x.eu"
         }
       },
-      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/gx/credential-catalog.json",
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/gx/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-13T10:20:12.240Z",
+      "fetchedAt": "2026-10-13T10:23:53.360Z",
       "updatedAt": "2026-04-09T12:00:00.000Z",
       "firstSeenAt": "2026-04-09T12:00:00.000Z",
       "attributes": [
@@ -13151,9 +13127,9 @@
           "email": "info@gaia-x.eu"
         }
       },
-      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/gx/credential-catalog.json",
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/gx/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-13T10:20:12.240Z",
+      "fetchedAt": "2026-10-13T10:23:53.360Z",
       "updatedAt": "2026-04-09T12:00:00.000Z",
       "firstSeenAt": "2026-04-09T12:00:00.000Z",
       "attributes": [
@@ -13326,9 +13302,9 @@
           "email": "info@gaia-x.eu"
         }
       },
-      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/gx/credential-catalog.json",
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/gx/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-13T10:20:12.240Z",
+      "fetchedAt": "2026-10-13T10:23:53.360Z",
       "updatedAt": "2026-04-09T12:00:00.000Z",
       "firstSeenAt": "2026-04-09T12:00:00.000Z",
       "attributes": [
@@ -13531,9 +13507,9 @@
           "email": "info@gaia-x.eu"
         }
       },
-      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/gx/credential-catalog.json",
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/gx/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-13T10:20:12.240Z",
+      "fetchedAt": "2026-10-13T10:23:53.360Z",
       "updatedAt": "2026-04-09T12:00:00.000Z",
       "firstSeenAt": "2026-04-09T12:00:00.000Z",
       "attributes": [
@@ -13640,9 +13616,9 @@
           "email": "info@gaia-x.eu"
         }
       },
-      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/gx/credential-catalog.json",
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/gx/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-13T10:20:12.240Z",
+      "fetchedAt": "2026-10-13T10:23:53.360Z",
       "updatedAt": "2026-04-09T12:00:00.000Z",
       "firstSeenAt": "2026-04-09T12:00:00.000Z",
       "attributes": [
@@ -13839,9 +13815,9 @@
           "email": "info@gaia-x.eu"
         }
       },
-      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/gx/credential-catalog.json",
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/gx/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-13T10:20:12.240Z",
+      "fetchedAt": "2026-10-13T10:23:53.360Z",
       "updatedAt": "2026-04-09T12:00:00.000Z",
       "firstSeenAt": "2026-04-09T12:00:00.000Z",
       "attributes": [
@@ -13996,9 +13972,9 @@
           "email": "info@gaia-x.eu"
         }
       },
-      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/gx/credential-catalog.json",
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/gx/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-13T10:20:12.240Z",
+      "fetchedAt": "2026-10-13T10:23:53.360Z",
       "updatedAt": "2026-04-09T12:00:00.000Z",
       "firstSeenAt": "2026-04-09T12:00:00.000Z",
       "attributes": [
@@ -14201,9 +14177,9 @@
           "email": "info@gaia-x.eu"
         }
       },
-      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/gx/credential-catalog.json",
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/gx/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-13T10:20:12.240Z",
+      "fetchedAt": "2026-10-13T10:23:53.360Z",
       "updatedAt": "2026-04-09T12:00:00.000Z",
       "firstSeenAt": "2026-04-09T12:00:00.000Z",
       "attributes": [
@@ -14364,9 +14340,9 @@
           "email": "info@gaia-x.eu"
         }
       },
-      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/gx/credential-catalog.json",
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/gx/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-13T10:20:12.240Z",
+      "fetchedAt": "2026-10-13T10:23:53.360Z",
       "updatedAt": "2026-04-09T12:00:00.000Z",
       "firstSeenAt": "2026-04-09T12:00:00.000Z",
       "attributes": [
@@ -14460,9 +14436,9 @@
         "website": "https://www.iata.org",
         "logo": "https://www.iata.org/contentassets/3e83770142a040d688e269bb2f709b7b/iata-logo-header.svg"
       },
-      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/iata/credential-catalog.json",
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/iata/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-13T10:20:12.240Z",
+      "fetchedAt": "2026-10-13T10:23:53.360Z",
       "updatedAt": "2026-04-22T11:30:00.000Z",
       "firstSeenAt": "2026-04-22T11:30:00.000Z",
       "attributes": [
@@ -14679,9 +14655,9 @@
         "website": "https://www.iata.org",
         "logo": "https://www.iata.org/contentassets/3e83770142a040d688e269bb2f709b7b/iata-logo-header.svg"
       },
-      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/iata/credential-catalog.json",
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/iata/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-13T10:20:12.240Z",
+      "fetchedAt": "2026-10-13T10:23:53.360Z",
       "updatedAt": "2026-04-22T11:30:00.000Z",
       "firstSeenAt": "2026-04-22T11:30:00.000Z",
       "attributes": [
@@ -14861,9 +14837,9 @@
         "name": "iGrant.io",
         "logo": "https://www.google.com/s2/favicons?domain=igrant.io&sz=128"
       },
-      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/igrant/credential-catalog.json",
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/igrant/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-13T10:20:12.240Z",
+      "fetchedAt": "2026-10-13T10:23:53.360Z",
       "updatedAt": "2026-08-20T16:06:17.000Z",
       "firstSeenAt": "2026-08-20T16:06:17.000Z",
       "attributes": [
@@ -14945,9 +14921,9 @@
         "name": "iGrant.io",
         "logo": "https://www.google.com/s2/favicons?domain=igrant.io&sz=128"
       },
-      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/igrant/credential-catalog.json",
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/igrant/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-13T10:20:12.240Z",
+      "fetchedAt": "2026-10-13T10:23:53.360Z",
       "updatedAt": "2026-08-20T16:06:17.000Z",
       "firstSeenAt": "2026-08-20T16:06:17.000Z",
       "attributes": [
@@ -15036,26 +15012,14 @@
       ],
       "category": "travel",
       "orgId": "org:iso",
-      "resolvedTrustedAuthorities": [
-        {
-          "frameworkType": "aki",
-          "registryId": "treg:aamva-mdl:dts-vical",
-          "schemeId": "scheme:aamva-mdl",
-          "schemeName": "AAMVA mobile Driver's Licence",
-          "registryName": "AAMVA Digital Trust Service (VICAL)",
-          "registryUrl": "https://www.aamva.org/technology/systems/identity-management-systems/digital-trust-service",
-          "registryProfile": "iso_18013_5_vical",
-          "access": "restricted"
-        }
-      ],
       "provider": {
         "name": "ISO",
         "website": "https://www.iso.org/",
         "logo": "https://logolook.net/wp-content/uploads/2023/03/ISO-Logo-225x127.png"
       },
-      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/iso/credential-catalog.json",
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/iso/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-13T10:20:12.240Z",
+      "fetchedAt": "2026-10-13T10:23:53.360Z",
       "updatedAt": "2026-04-22T11:00:00.000Z",
       "firstSeenAt": "2026-04-22T11:00:00.000Z",
       "attributes": [
@@ -15352,9 +15316,9 @@
         "website": "https://www.iso.org/",
         "logo": "https://logolook.net/wp-content/uploads/2023/03/ISO-Logo-225x127.png"
       },
-      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/iso/credential-catalog.json",
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/iso/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-13T10:20:12.240Z",
+      "fetchedAt": "2026-10-13T10:23:53.360Z",
       "updatedAt": "2026-04-22T11:00:00.000Z",
       "firstSeenAt": "2026-04-22T11:00:00.000Z",
       "attributes": [
@@ -15515,9 +15479,9 @@
         "website": "https://www.iso.org/",
         "logo": "https://logolook.net/wp-content/uploads/2023/03/ISO-Logo-225x127.png"
       },
-      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/iso/credential-catalog.json",
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/iso/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-13T10:20:12.240Z",
+      "fetchedAt": "2026-10-13T10:23:53.360Z",
       "updatedAt": "2026-04-22T11:00:00.000Z",
       "firstSeenAt": "2026-04-22T11:00:00.000Z",
       "attributes": [
@@ -15703,7 +15667,7 @@
           "depth": 1
         }
       ],
-      "schemaDescription": "ISO/IEC 23220-2 Photo ID mDoc attribute map. Schema derived from issuer metadata."
+      "schemaDescription": "ISO/IEC TS 23220-4 Photo ID (doctype org.iso.23220.photoid.1). Attribute names follow issuer metadata for that doctype."
     },
     {
       "id": "cred:iso:reservation",
@@ -15774,9 +15738,9 @@
         "website": "https://www.iso.org/",
         "logo": "https://logolook.net/wp-content/uploads/2023/03/ISO-Logo-225x127.png"
       },
-      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/iso/credential-catalog.json",
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/iso/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-13T10:20:12.240Z",
+      "fetchedAt": "2026-10-13T10:23:53.360Z",
       "updatedAt": "2026-04-22T11:00:00.000Z",
       "firstSeenAt": "2026-04-22T11:00:00.000Z",
       "attributes": [
@@ -15939,9 +15903,9 @@
         "website": "https://www.eid.admin.ch/en",
         "logo": "https://play-lh.googleusercontent.com/24M9nEXiuSVZAfEnkDzJ2koRLLfd7s_sSw3CgfzVeNfQjALW800TPcVB_mwDrKpJhz0V"
       },
-      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/swiyu/credential-catalog.json",
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/swiyu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-13T10:20:12.240Z",
+      "fetchedAt": "2026-10-13T10:23:53.360Z",
       "updatedAt": "2026-10-13T06:37:06.000Z",
       "firstSeenAt": "2026-05-04T20:18:48.000Z",
       "attributes": [
@@ -16158,9 +16122,9 @@
         "website": "https://untp.unece.org",
         "logo": "https://untp.unece.org/img/social-card.png"
       },
-      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/uncefact/credential-catalog.json",
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/uncefact/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-13T10:20:12.240Z",
+      "fetchedAt": "2026-10-13T10:23:53.360Z",
       "updatedAt": "2026-05-18T00:00:00.000Z",
       "firstSeenAt": "2026-05-18T00:00:00.000Z",
       "attributes": [
@@ -17198,9 +17162,9 @@
         "website": "https://untp.unece.org",
         "logo": "https://untp.unece.org/img/social-card.png"
       },
-      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/uncefact/credential-catalog.json",
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/uncefact/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-13T10:20:12.240Z",
+      "fetchedAt": "2026-10-13T10:23:53.360Z",
       "updatedAt": "2026-05-18T00:00:00.000Z",
       "firstSeenAt": "2026-05-18T00:00:00.000Z",
       "attributes": [
@@ -17985,9 +17949,9 @@
         "website": "https://untp.unece.org",
         "logo": "https://untp.unece.org/img/social-card.png"
       },
-      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/uncefact/credential-catalog.json",
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/uncefact/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-13T10:20:12.240Z",
+      "fetchedAt": "2026-10-13T10:23:53.360Z",
       "updatedAt": "2026-05-18T00:00:00.000Z",
       "firstSeenAt": "2026-05-18T00:00:00.000Z",
       "attributes": [
@@ -18842,9 +18806,9 @@
         "website": "https://untp.unece.org",
         "logo": "https://untp.unece.org/img/social-card.png"
       },
-      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/uncefact/credential-catalog.json",
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/uncefact/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-13T10:20:12.240Z",
+      "fetchedAt": "2026-10-13T10:23:53.360Z",
       "updatedAt": "2026-05-18T00:00:00.000Z",
       "firstSeenAt": "2026-05-18T00:00:00.000Z",
       "attributes": [
@@ -19786,9 +19750,9 @@
         "website": "https://untp.unece.org",
         "logo": "https://untp.unece.org/img/social-card.png"
       },
-      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/uncefact/credential-catalog.json",
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/uncefact/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-13T10:20:12.240Z",
+      "fetchedAt": "2026-10-13T10:23:53.360Z",
       "updatedAt": "2026-05-18T00:00:00.000Z",
       "firstSeenAt": "2026-05-18T00:00:00.000Z",
       "attributes": [
@@ -20998,9 +20962,9 @@
         "website": "https://untp.unece.org",
         "logo": "https://untp.unece.org/img/social-card.png"
       },
-      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/uncefact/credential-catalog.json",
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/uncefact/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-13T10:20:12.240Z",
+      "fetchedAt": "2026-10-13T10:23:53.360Z",
       "updatedAt": "2026-05-18T00:00:00.000Z",
       "firstSeenAt": "2026-05-18T00:00:00.000Z",
       "attributes": [
@@ -21190,9 +21154,9 @@
         "website": "https://untp.unece.org",
         "logo": "https://untp.unece.org/img/social-card.png"
       },
-      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/uncefact/credential-catalog.json",
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/uncefact/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-13T10:20:12.240Z",
+      "fetchedAt": "2026-10-13T10:23:53.360Z",
       "updatedAt": "2026-05-18T00:00:00.000Z",
       "firstSeenAt": "2026-05-18T00:00:00.000Z",
       "attributes": [
@@ -23312,9 +23276,9 @@
         "website": "https://untp.unece.org",
         "logo": "https://untp.unece.org/img/social-card.png"
       },
-      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/uncefact/credential-catalog.json",
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/uncefact/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-13T10:20:12.240Z",
+      "fetchedAt": "2026-10-13T10:23:53.360Z",
       "updatedAt": "2026-05-18T00:00:00.000Z",
       "firstSeenAt": "2026-05-18T00:00:00.000Z",
       "attributes": [
@@ -24698,9 +24662,9 @@
         "website": "https://untp.unece.org",
         "logo": "https://untp.unece.org/img/social-card.png"
       },
-      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/uncefact/credential-catalog.json",
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/uncefact/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-13T10:20:12.240Z",
+      "fetchedAt": "2026-10-13T10:23:53.360Z",
       "updatedAt": "2026-05-18T00:00:00.000Z",
       "firstSeenAt": "2026-05-18T00:00:00.000Z",
       "attributes": [
@@ -25555,9 +25519,9 @@
         "website": "https://untp.unece.org",
         "logo": "https://untp.unece.org/img/social-card.png"
       },
-      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/uncefact/credential-catalog.json",
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/uncefact/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-13T10:20:12.240Z",
+      "fetchedAt": "2026-10-13T10:23:53.360Z",
       "updatedAt": "2026-05-18T00:00:00.000Z",
       "firstSeenAt": "2026-05-18T00:00:00.000Z",
       "attributes": [
@@ -26477,9 +26441,9 @@
         "website": "https://untp.unece.org",
         "logo": "https://untp.unece.org/img/social-card.png"
       },
-      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/uncefact/credential-catalog.json",
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/uncefact/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-13T10:20:12.240Z",
+      "fetchedAt": "2026-10-13T10:23:53.360Z",
       "updatedAt": "2026-05-18T00:00:00.000Z",
       "firstSeenAt": "2026-05-18T00:00:00.000Z",
       "attributes": [
@@ -27383,9 +27347,9 @@
         "website": "https://untp.unece.org",
         "logo": "https://untp.unece.org/img/social-card.png"
       },
-      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/uncefact/credential-catalog.json",
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/uncefact/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-13T10:20:12.240Z",
+      "fetchedAt": "2026-10-13T10:23:53.360Z",
       "updatedAt": "2026-05-18T00:00:00.000Z",
       "firstSeenAt": "2026-05-18T00:00:00.000Z",
       "attributes": [
@@ -27924,9 +27888,9 @@
         "website": "https://untp.unece.org",
         "logo": "https://untp.unece.org/img/social-card.png"
       },
-      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/uncefact/credential-catalog.json",
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/uncefact/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-13T10:20:12.240Z",
+      "fetchedAt": "2026-10-13T10:23:53.360Z",
       "updatedAt": "2026-05-18T00:00:00.000Z",
       "firstSeenAt": "2026-05-18T00:00:00.000Z",
       "attributes": [
@@ -28456,9 +28420,9 @@
         "name": "Verana",
         "logo": "https://verana.io/logo.svg"
       },
-      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/verana/credential-catalog.json",
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/verana/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-13T10:20:12.240Z",
+      "fetchedAt": "2026-10-13T10:23:53.360Z",
       "updatedAt": "2026-08-17T00:00:00.000Z",
       "firstSeenAt": "2026-08-17T00:00:00.000Z",
       "attributes": [
@@ -28553,9 +28517,9 @@
         "name": "Verana",
         "logo": "https://verana.io/logo.svg"
       },
-      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/verana/credential-catalog.json",
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/verana/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-13T10:20:12.240Z",
+      "fetchedAt": "2026-10-13T10:23:53.360Z",
       "updatedAt": "2026-08-17T00:00:00.000Z",
       "firstSeenAt": "2026-08-17T00:00:00.000Z",
       "attributes": [
@@ -28685,9 +28649,9 @@
         "name": "Verana",
         "logo": "https://verana.io/logo.svg"
       },
-      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/verana/credential-catalog.json",
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/verana/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-13T10:20:12.240Z",
+      "fetchedAt": "2026-10-13T10:23:53.360Z",
       "updatedAt": "2026-08-17T00:00:00.000Z",
       "firstSeenAt": "2026-08-17T00:00:00.000Z",
       "attributes": [
@@ -28800,9 +28764,9 @@
         "name": "Verana",
         "logo": "https://verana.io/logo.svg"
       },
-      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/verana/credential-catalog.json",
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/verana/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-13T10:20:12.240Z",
+      "fetchedAt": "2026-10-13T10:23:53.360Z",
       "updatedAt": "2026-08-17T00:00:00.000Z",
       "firstSeenAt": "2026-08-17T00:00:00.000Z",
       "attributes": [
@@ -28881,9 +28845,9 @@
         "name": "Verana",
         "logo": "https://verana.io/logo.svg"
       },
-      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/verana/credential-catalog.json",
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/verana/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-13T10:20:12.240Z",
+      "fetchedAt": "2026-10-13T10:23:53.360Z",
       "updatedAt": "2026-08-17T00:00:00.000Z",
       "firstSeenAt": "2026-08-17T00:00:00.000Z",
       "attributes": [
@@ -28996,9 +28960,9 @@
         "name": "Verana",
         "logo": "https://verana.io/logo.svg"
       },
-      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/verana/credential-catalog.json",
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/verana/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-13T10:20:12.240Z",
+      "fetchedAt": "2026-10-13T10:23:53.360Z",
       "updatedAt": "2026-08-17T00:00:00.000Z",
       "firstSeenAt": "2026-08-17T00:00:00.000Z",
       "attributes": [
@@ -29123,9 +29087,9 @@
         "name": "Verana",
         "logo": "https://verana.io/logo.svg"
       },
-      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/verana/credential-catalog.json",
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/verana/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-13T10:20:12.240Z",
+      "fetchedAt": "2026-10-13T10:23:53.360Z",
       "updatedAt": "2026-08-17T00:00:00.000Z",
       "firstSeenAt": "2026-08-17T00:00:00.000Z",
       "attributes": [
@@ -29232,9 +29196,9 @@
         "name": "Verana",
         "logo": "https://verana.io/logo.svg"
       },
-      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/verana/credential-catalog.json",
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/verana/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-13T10:20:12.240Z",
+      "fetchedAt": "2026-10-13T10:23:53.360Z",
       "updatedAt": "2026-08-17T00:00:00.000Z",
       "firstSeenAt": "2026-08-17T00:00:00.000Z",
       "attributes": [
@@ -29366,9 +29330,9 @@
         "name": "Verana",
         "logo": "https://verana.io/logo.svg"
       },
-      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/verana/credential-catalog.json",
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/verana/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-13T10:20:12.240Z",
+      "fetchedAt": "2026-10-13T10:23:53.360Z",
       "updatedAt": "2026-08-17T00:00:00.000Z",
       "firstSeenAt": "2026-08-17T00:00:00.000Z",
       "attributes": [
@@ -29452,9 +29416,9 @@
         "name": "Verana",
         "logo": "https://verana.io/logo.svg"
       },
-      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/verana/credential-catalog.json",
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/verana/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-13T10:20:12.240Z",
+      "fetchedAt": "2026-10-13T10:23:53.360Z",
       "updatedAt": "2026-08-17T00:00:00.000Z",
       "firstSeenAt": "2026-08-17T00:00:00.000Z",
       "attributes": [
@@ -29555,9 +29519,9 @@
         "name": "Verana",
         "logo": "https://verana.io/logo.svg"
       },
-      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/verana/credential-catalog.json",
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/verana/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-13T10:20:12.240Z",
+      "fetchedAt": "2026-10-13T10:23:53.360Z",
       "updatedAt": "2026-08-17T00:00:00.000Z",
       "firstSeenAt": "2026-08-17T00:00:00.000Z",
       "attributes": [
@@ -29678,9 +29642,9 @@
         "name": "Verana",
         "logo": "https://verana.io/logo.svg"
       },
-      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/verana/credential-catalog.json",
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/verana/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-13T10:20:12.240Z",
+      "fetchedAt": "2026-10-13T10:23:53.360Z",
       "updatedAt": "2026-08-17T00:00:00.000Z",
       "firstSeenAt": "2026-08-17T00:00:00.000Z",
       "attributes": [
@@ -29799,9 +29763,9 @@
         "website": "https://www.webuildconsortium.eu/",
         "logo": "https://github.com/webuild-consortium.png"
       },
-      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/webuild/credential-catalog.json",
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/webuild/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-13T10:20:12.240Z",
+      "fetchedAt": "2026-10-13T10:23:53.360Z",
       "updatedAt": "2026-09-14T08:50:00.000Z",
       "firstSeenAt": "2026-09-14T08:50:00.000Z",
       "attributes": [
@@ -30110,9 +30074,9 @@
         "website": "https://www.webuildconsortium.eu/",
         "logo": "https://github.com/webuild-consortium.png"
       },
-      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/webuild/credential-catalog.json",
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/webuild/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-13T10:20:12.240Z",
+      "fetchedAt": "2026-10-13T10:23:53.360Z",
       "updatedAt": "2026-09-14T08:50:00.000Z",
       "firstSeenAt": "2026-09-14T08:50:00.000Z",
       "attributes": [
@@ -30601,9 +30565,9 @@
         "website": "https://www.webuildconsortium.eu/",
         "logo": "https://github.com/webuild-consortium.png"
       },
-      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/webuild/credential-catalog.json",
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/webuild/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-13T10:20:12.240Z",
+      "fetchedAt": "2026-10-13T10:23:53.360Z",
       "updatedAt": "2026-09-14T08:50:00.000Z",
       "firstSeenAt": "2026-09-14T08:50:00.000Z",
       "attributes": [
@@ -30920,9 +30884,9 @@
         "website": "https://www.webuildconsortium.eu/",
         "logo": "https://github.com/webuild-consortium.png"
       },
-      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/webuild/credential-catalog.json",
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/webuild/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-13T10:20:12.240Z",
+      "fetchedAt": "2026-10-13T10:23:53.360Z",
       "updatedAt": "2026-09-14T08:50:00.000Z",
       "firstSeenAt": "2026-09-14T08:50:00.000Z",
       "attributes": [
@@ -31321,9 +31285,9 @@
         "website": "https://www.webuildconsortium.eu/",
         "logo": "https://github.com/webuild-consortium.png"
       },
-      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/webuild/credential-catalog.json",
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/webuild/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-13T10:20:12.240Z",
+      "fetchedAt": "2026-10-13T10:23:53.360Z",
       "updatedAt": "2026-09-14T08:50:00.000Z",
       "firstSeenAt": "2026-09-14T08:50:00.000Z",
       "attributes": [
@@ -31673,9 +31637,9 @@
         "website": "https://www.webuildconsortium.eu/",
         "logo": "https://github.com/webuild-consortium.png"
       },
-      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/webuild/credential-catalog.json",
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/webuild/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-13T10:20:12.240Z",
+      "fetchedAt": "2026-10-13T10:23:53.360Z",
       "updatedAt": "2026-09-14T08:50:00.000Z",
       "firstSeenAt": "2026-09-14T08:50:00.000Z",
       "attributes": [
@@ -32103,9 +32067,9 @@
         "website": "https://www.webuildconsortium.eu/",
         "logo": "https://github.com/webuild-consortium.png"
       },
-      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/webuild/credential-catalog.json",
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/webuild/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-13T10:20:12.240Z",
+      "fetchedAt": "2026-10-13T10:23:53.360Z",
       "updatedAt": "2026-09-14T08:50:00.000Z",
       "firstSeenAt": "2026-09-14T08:50:00.000Z",
       "attributes": [
@@ -32362,9 +32326,9 @@
         "website": "https://www.webuildconsortium.eu/",
         "logo": "https://github.com/webuild-consortium.png"
       },
-      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/webuild/credential-catalog.json",
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/webuild/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-13T10:20:12.240Z",
+      "fetchedAt": "2026-10-13T10:23:53.360Z",
       "updatedAt": "2026-09-14T08:50:00.000Z",
       "firstSeenAt": "2026-09-14T08:50:00.000Z",
       "attributes": [
@@ -32574,9 +32538,9 @@
         "website": "https://www.webuildconsortium.eu/",
         "logo": "https://github.com/webuild-consortium.png"
       },
-      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/webuild/credential-catalog.json",
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/webuild/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-13T10:20:12.240Z",
+      "fetchedAt": "2026-10-13T10:23:53.360Z",
       "updatedAt": "2026-09-14T08:50:00.000Z",
       "firstSeenAt": "2026-09-14T08:50:00.000Z",
       "attributes": [
@@ -33086,9 +33050,9 @@
         "website": "https://www.webuildconsortium.eu/",
         "logo": "https://github.com/webuild-consortium.png"
       },
-      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/webuild/credential-catalog.json",
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/webuild/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-13T10:20:12.240Z",
+      "fetchedAt": "2026-10-13T10:23:53.360Z",
       "updatedAt": "2026-09-14T08:50:00.000Z",
       "firstSeenAt": "2026-09-14T08:50:00.000Z",
       "attributes": [
@@ -33871,9 +33835,9 @@
         "website": "https://www.webuildconsortium.eu/",
         "logo": "https://github.com/webuild-consortium.png"
       },
-      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/webuild/credential-catalog.json",
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/webuild/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-13T10:20:12.240Z",
+      "fetchedAt": "2026-10-13T10:23:53.360Z",
       "updatedAt": "2026-09-14T08:50:00.000Z",
       "firstSeenAt": "2026-09-14T08:50:00.000Z",
       "attributes": [
@@ -34346,9 +34310,9 @@
         "website": "https://www.webuildconsortium.eu/",
         "logo": "https://github.com/webuild-consortium.png"
       },
-      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/webuild/credential-catalog.json",
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/webuild/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-13T10:20:12.240Z",
+      "fetchedAt": "2026-10-13T10:23:53.360Z",
       "updatedAt": "2026-09-14T08:50:00.000Z",
       "firstSeenAt": "2026-09-14T08:50:00.000Z",
       "attributes": [
@@ -34780,9 +34744,9 @@
         "website": "https://www.webuildconsortium.eu/",
         "logo": "https://github.com/webuild-consortium.png"
       },
-      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/webuild/credential-catalog.json",
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/webuild/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-13T10:20:12.240Z",
+      "fetchedAt": "2026-10-13T10:23:53.360Z",
       "updatedAt": "2026-09-14T08:50:00.000Z",
       "firstSeenAt": "2026-09-14T08:50:00.000Z",
       "attributes": [
@@ -35305,9 +35269,9 @@
         "website": "https://www.webuildconsortium.eu/",
         "logo": "https://github.com/webuild-consortium.png"
       },
-      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/webuild/credential-catalog.json",
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/webuild/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-13T10:20:12.240Z",
+      "fetchedAt": "2026-10-13T10:23:53.360Z",
       "updatedAt": "2026-09-14T08:50:00.000Z",
       "firstSeenAt": "2026-09-14T08:50:00.000Z",
       "attributes": [
@@ -35467,9 +35431,9 @@
         "website": "https://www.webuildconsortium.eu/",
         "logo": "https://github.com/webuild-consortium.png"
       },
-      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/webuild/credential-catalog.json",
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/webuild/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-13T10:20:12.240Z",
+      "fetchedAt": "2026-10-13T10:23:53.360Z",
       "updatedAt": "2026-09-14T08:50:00.000Z",
       "firstSeenAt": "2026-09-14T08:50:00.000Z",
       "attributes": [
@@ -35827,9 +35791,9 @@
         "website": "https://www.webuildconsortium.eu/",
         "logo": "https://github.com/webuild-consortium.png"
       },
-      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/webuild/credential-catalog.json",
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/webuild/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-13T10:20:12.240Z",
+      "fetchedAt": "2026-10-13T10:23:53.360Z",
       "updatedAt": "2026-09-14T08:50:00.000Z",
       "firstSeenAt": "2026-09-14T08:50:00.000Z",
       "attributes": [
@@ -36288,9 +36252,9 @@
         "website": "https://www.webuildconsortium.eu/",
         "logo": "https://github.com/webuild-consortium.png"
       },
-      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/webuild/credential-catalog.json",
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/webuild/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-13T10:20:12.240Z",
+      "fetchedAt": "2026-10-13T10:23:53.360Z",
       "updatedAt": "2026-09-14T08:50:00.000Z",
       "firstSeenAt": "2026-09-14T08:50:00.000Z",
       "attributes": [
@@ -36618,9 +36582,9 @@
         "website": "https://www.webuildconsortium.eu/",
         "logo": "https://github.com/webuild-consortium.png"
       },
-      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/webuild/credential-catalog.json",
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/webuild/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-13T10:20:12.240Z",
+      "fetchedAt": "2026-10-13T10:23:53.360Z",
       "updatedAt": "2026-09-14T08:50:00.000Z",
       "firstSeenAt": "2026-09-14T08:50:00.000Z",
       "attributes": [
@@ -37027,9 +36991,9 @@
         "website": "https://www.webuildconsortium.eu/",
         "logo": "https://github.com/webuild-consortium.png"
       },
-      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/webuild/credential-catalog.json",
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/webuild/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-13T10:20:12.240Z",
+      "fetchedAt": "2026-10-13T10:23:53.360Z",
       "updatedAt": "2026-09-14T08:50:00.000Z",
       "firstSeenAt": "2026-09-14T08:50:00.000Z",
       "attributes": [
@@ -37379,9 +37343,9 @@
         "website": "https://www.webuildconsortium.eu/",
         "logo": "https://github.com/webuild-consortium.png"
       },
-      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/webuild/credential-catalog.json",
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/webuild/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-13T10:20:12.240Z",
+      "fetchedAt": "2026-10-13T10:23:53.360Z",
       "updatedAt": "2026-09-14T08:50:00.000Z",
       "firstSeenAt": "2026-09-14T08:50:00.000Z",
       "attributes": [
@@ -37805,9 +37769,9 @@
         "website": "https://www.webuildconsortium.eu/",
         "logo": "https://github.com/webuild-consortium.png"
       },
-      "catalogUrl": "/Users/victorvanderhulst/Projects/credential-catalog/community-catalogs/webuild/credential-catalog.json",
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/webuild/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-13T10:20:12.240Z",
+      "fetchedAt": "2026-10-13T10:23:53.360Z",
       "updatedAt": "2026-09-14T08:50:00.000Z",
       "firstSeenAt": "2026-09-14T08:50:00.000Z",
       "attributes": [
@@ -43082,18 +43046,7 @@
           "schemaType": "JSON Schema"
         }
       ],
-      "trustedAuthorities": [
-        {
-          "frameworkType": "aki",
-          "registryId": "treg:aamva-mdl:dts-vical",
-          "schemeId": "scheme:aamva-mdl",
-          "schemeName": "AAMVA mobile Driver's Licence",
-          "registryName": "AAMVA Digital Trust Service (VICAL)",
-          "registryUrl": "https://www.aamva.org/technology/systems/identity-management-systems/digital-trust-service",
-          "registryProfile": "iso_18013_5_vical",
-          "access": "restricted"
-        }
-      ],
+      "trustedAuthorities": [],
       "bindingType": "key",
       "sectors": [
         "mobility",
@@ -43763,18 +43716,7 @@
           "schemaType": "JSON Schema"
         }
       ],
-      "trustedAuthorities": [
-        {
-          "frameworkType": "openid_federation",
-          "registryId": "treg:findynet:federation-trust-anchor",
-          "schemeId": "scheme:findynet",
-          "schemeName": "Findynet Trust Network",
-          "registryName": "Findynet federation trust anchor",
-          "registryUrl": "https://github.com/findynet",
-          "registryProfile": "other",
-          "access": "registration_required"
-        }
-      ],
+      "trustedAuthorities": [],
       "sectors": [
         "healthcare"
       ],
@@ -44136,18 +44078,7 @@
           "schemaType": "JSON Schema"
         }
       ],
-      "trustedAuthorities": [
-        {
-          "frameworkType": "openid_federation",
-          "registryId": "treg:findynet:federation-trust-anchor",
-          "schemeId": "scheme:findynet",
-          "schemeName": "Findynet Trust Network",
-          "registryName": "Findynet federation trust anchor",
-          "registryUrl": "https://github.com/findynet",
-          "registryProfile": "other",
-          "access": "registration_required"
-        }
-      ],
+      "trustedAuthorities": [],
       "sectors": [
         "finance",
         "public_sector"
@@ -46701,7 +46632,7 @@
   "stats": {
     "totalCredentials": 141,
     "totalAttestationTypes": 141,
-    "withTrustedAuthorities": 3,
+    "withTrustedAuthorities": 0,
     "byFormat": {
       "mdoc": 14,
       "sd_jwt_vc": 90,
