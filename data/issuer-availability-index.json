@@ -1,332 +1,292 @@
 {
-  "generatedAt": "2026-10-12T19:46:48.656Z",
+  "generatedAt": "2026-10-13T07:34:23.897Z",
   "byCredentialId": {
-    "cred:iso:mdl-mdoc:mdoc": {
+    "cred:iso:mdl": {
       "total": 7,
       "production": 0,
       "test": 7
     },
-    "cred:eu:hiid-mdoc:mdoc": {
+    "cred:eu:hiid": {
       "total": 4,
       "production": 0,
       "test": 4
     },
-    "cred:iso:photoid-mdoc-alt:mdoc": {
+    "cred:iso:photoid-mdoc-alt": {
       "total": 2,
       "production": 0,
       "test": 2
     },
-    "cred:eu:pid-mdoc:mdoc": {
+    "cred:eu:pid": {
       "total": 10,
       "production": 0,
       "test": 10
     },
-    "cred:eu:pid-vc-sd-jwt:sd-jwt-vc": {
-      "total": 10,
-      "production": 0,
-      "test": 10
-    },
-    "cred:eu:age-verification-mdoc:mdoc": {
+    "cred:eu:age-verification": {
       "total": 7,
       "production": 0,
       "test": 7
     },
-    "cred:iso:mvrc-mdoc:mdoc": {
+    "cred:iso:mvrc": {
       "total": 1,
       "production": 0,
       "test": 1
     },
-    "cred:eu:msisdn-mdoc:mdoc": {
+    "cred:eu:msisdn": {
       "total": 2,
       "production": 0,
       "test": 2
     },
-    "cred:eu:hiid-sd-jwt-vc:sd-jwt-vc": {
-      "total": 2,
-      "production": 0,
-      "test": 2
-    },
-    "cred:eu:iban-sd-jwt-vc:sd-jwt-vc": {
+    "cred:eu:iban": {
       "total": 3,
       "production": 0,
       "test": 3
     },
-    "cred:eu:ehic-sd-jwt-vc:sd-jwt-vc": {
+    "cred:eu:ehic": {
       "total": 3,
       "production": 0,
       "test": 3
     },
-    "cred:eu:ehic-mdoc:mdoc": {
-      "total": 2,
-      "production": 0,
-      "test": 2
-    },
-    "cred:eu:cor-mdoc:mdoc": {
+    "cred:eu:cor": {
       "total": 3,
       "production": 0,
       "test": 3
     },
-    "cred:eu:iban-mdoc:mdoc": {
+    "cred:eu:loyalty": {
       "total": 2,
       "production": 0,
       "test": 2
     },
-    "cred:eu:loyalty-mdoc:mdoc": {
+    "cred:fides:vat": {
       "total": 2,
       "production": 0,
       "test": 2
     },
-    "cred:fides:vat:sd-jwt-vc": {
-      "total": 2,
-      "production": 0,
-      "test": 2
-    },
-    "cred:gleif:legal-entity-vlei:acdc": {
+    "cred:gleif:legal-entity-vlei": {
       "total": 8,
       "production": 8,
       "test": 0
     },
-    "cred:gleif:official-organizational-role-vlei:acdc": {
+    "cred:gleif:official-organizational-role-vlei": {
       "total": 8,
       "production": 8,
       "test": 0
     },
-    "cred:gleif:engagement-context-role-vlei:acdc": {
+    "cred:gleif:engagement-context-role-vlei": {
       "total": 8,
       "production": 8,
       "test": 0
     },
-    "cred:fides:iban:sd-jwt-vc": {
+    "cred:fides:iban": {
       "total": 2,
       "production": 0,
       "test": 2
     },
-    "cred:eu:diploma-vc-sd-jwt:sd-jwt-vc": {
+    "cred:eu:diploma": {
       "total": 2,
       "production": 0,
       "test": 2
     },
-    "cred:eu:employee-mdoc:mdoc": {
+    "cred:eu:employee": {
       "total": 2,
       "production": 0,
       "test": 2
     },
-    "cred:eu:msisdn-sd-jwt-vc:sd-jwt-vc": {
+    "cred:eu:pda1": {
       "total": 1,
       "production": 0,
       "test": 1
     },
-    "cred:eu:pda1-mdoc:mdoc": {
+    "cred:iso:photoid": {
       "total": 1,
       "production": 0,
       "test": 1
     },
-    "cred:eu:pda1-sd-jwt-vc:sd-jwt-vc": {
-      "total": 1,
-      "production": 0,
-      "test": 1
-    },
-    "cred:iso:photoid-mdoc:mdoc": {
-      "total": 1,
-      "production": 0,
-      "test": 1
-    },
-    "cred:eu:por-mdoc:mdoc": {
-      "total": 1,
-      "production": 0,
-      "test": 1
-    },
-    "cred:eu:por-sd-jwt-vc:sd-jwt-vc": {
+    "cred:eu:por": {
       "total": 2,
       "production": 0,
       "test": 2
     },
-    "cred:eu:seafarer-mdoc:mdoc": {
+    "cred:eu:seafarer": {
       "total": 1,
       "production": 0,
       "test": 1
     },
-    "cred:eu:tax-mdoc:mdoc": {
-      "total": 1,
-      "production": 0,
-      "test": 1
-    },
-    "cred:eu:tax-residency-vc-sd-jwt:sd-jwt-vc": {
-      "total": 1,
-      "production": 0,
-      "test": 1
-    },
-    "cred:eu:tax-sd-jwt-vc:sd-jwt-vc": {
+    "cred:eu:tax": {
       "total": 2,
       "production": 0,
       "test": 2
     },
-    "cred:iso:reservation-mdoc:mdoc": {
+    "cred:eu:tax-residency": {
       "total": 1,
       "production": 0,
       "test": 1
     },
-    "cred:fides:lpid:sd-jwt-vc": {
+    "cred:iso:reservation": {
       "total": 1,
       "production": 0,
       "test": 1
     },
-    "cred:fides:pid:sd-jwt-vc": {
+    "cred:fides:lpid": {
       "total": 1,
       "production": 0,
       "test": 1
     },
-    "cred:fides:organization-profile:sd-jwt-vc": {
+    "cred:fides:pid": {
       "total": 1,
       "production": 0,
       "test": 1
     },
-    "cred:fides:criminal-record-check:sd-jwt-vc": {
+    "cred:fides:organization-profile": {
       "total": 1,
       "production": 0,
       "test": 1
     },
-    "cred:fides:verified-employee:sd-jwt-vc": {
+    "cred:fides:criminal-record-check": {
       "total": 1,
       "production": 0,
       "test": 1
     },
-    "cred:fides:higher-education-diploma:sd-jwt-vc": {
+    "cred:fides:verified-employee": {
       "total": 1,
       "production": 0,
       "test": 1
     },
-    "cred:fides:iso-certificate:sd-jwt-vc": {
+    "cred:fides:higher-education-diploma": {
       "total": 1,
       "production": 0,
       "test": 1
     },
-    "cred:fides:upper-secondary-education:sd-jwt-vc": {
+    "cred:fides:iso-certificate": {
       "total": 1,
       "production": 0,
       "test": 1
     },
-    "cred:fides:brp:sd-jwt-vc": {
+    "cred:fides:upper-secondary-education": {
       "total": 1,
       "production": 0,
       "test": 1
     },
-    "cred:fides:contact-details:sd-jwt-vc": {
+    "cred:fides:brp": {
       "total": 1,
       "production": 0,
       "test": 1
     },
-    "cred:fides:bri:sd-jwt-vc": {
+    "cred:fides:contact-details": {
       "total": 1,
       "production": 0,
       "test": 1
     },
-    "cred:fides:verified-email:sd-jwt-vc": {
+    "cred:fides:bri": {
       "total": 1,
       "production": 0,
       "test": 1
     },
-    "cred:findynet:pension-credential:sd-jwt-vc": {
+    "cred:fides:verified-email": {
       "total": 1,
       "production": 0,
       "test": 1
     },
-    "cred:gleif:qualified-vlei-issuer:acdc": {
+    "cred:findynet:pension-credential": {
+      "total": 1,
+      "production": 0,
+      "test": 1
+    },
+    "cred:gleif:qualified-vlei-issuer": {
       "total": 1,
       "production": 1,
       "test": 0
     },
-    "cred:webuild:eucc:sd-jwt-vc": {
+    "cred:webuild:eucc": {
       "total": 1,
       "production": 0,
       "test": 1
     },
-    "cred:iata:boarding-pass-mdoc:mdoc": {
+    "cred:iata:boarding-pass": {
       "total": 4,
       "production": 0,
       "test": 4
     },
-    "cred:iata:booking-order-mdoc:mdoc": {
+    "cred:iata:booking-order": {
       "total": 4,
       "production": 0,
       "test": 4
     },
-    "cred:uncefact:dpp:vcdm-2-0": {
+    "cred:uncefact:dpp": {
       "total": 1,
       "production": 0,
       "test": 1
     },
-    "cred:uncefact:dte:vcdm-2-0": {
+    "cred:uncefact:dte": {
       "total": 1,
       "production": 0,
       "test": 1
     },
-    "cred:uncefact:dfr:vcdm-2-0": {
+    "cred:uncefact:dfr": {
       "total": 1,
       "production": 0,
       "test": 1
     },
-    "cred:uncefact:dia:vcdm-2-0": {
+    "cred:uncefact:dia": {
       "total": 1,
       "production": 0,
       "test": 1
     },
-    "cred:uncefact:dcc:vcdm-2-0": {
+    "cred:uncefact:dcc": {
       "total": 1,
       "production": 0,
       "test": 1
     },
-    "cred:webuild:ebw-oid:sd-jwt-vc": {
+    "cred:webuild:ebw-oid": {
       "total": 1,
       "production": 0,
       "test": 1
     },
-    "cred:verana:cexa-kyc:sd-jwt-vc": {
+    "cred:verana:cexa-kyc": {
       "total": 2,
       "production": 0,
       "test": 2
     },
-    "cred:verana:ecs-badge:vcdm-2-0": {
+    "cred:verana:ecs-badge": {
       "total": 3,
       "production": 0,
       "test": 3
     },
-    "cred:verana:cexa-verified-counterparty:vcdm-2-0": {
+    "cred:verana:cexa-verified-counterparty": {
       "total": 1,
       "production": 0,
       "test": 1
     },
-    "cred:verana:ecs-service:vcdm-2-0": {
+    "cred:verana:ecs-service": {
       "total": 7,
       "production": 0,
       "test": 7
     },
-    "cred:verana:demo-credential:sd-jwt-vc": {
+    "cred:verana:demo-credential": {
       "total": 3,
       "production": 0,
       "test": 3
     },
-    "cred:verana:verandia-citizen-id:sd-jwt-vc": {
+    "cred:verana:verandia-citizen-id": {
       "total": 1,
       "production": 0,
       "test": 1
     },
-    "cred:verana:verandia-legal-representative:sd-jwt-vc": {
+    "cred:verana:verandia-legal-representative": {
       "total": 1,
       "production": 0,
       "test": 1
     },
-    "cred:verana:ecs-organization:vcdm-2-0": {
+    "cred:verana:ecs-organization": {
       "total": 2,
       "production": 0,
       "test": 2
     },
-    "cred:verana:authorized-repairer:vcdm-2-0": {
+    "cred:verana:authorized-repairer": {
       "total": 2,
       "production": 0,
       "test": 2
     },
-    "cred:verana:iso-9001-demo:vcdm-2-0": {
+    "cred:verana:iso-9001-demo": {
       "total": 1,
       "production": 0,
       "test": 1
