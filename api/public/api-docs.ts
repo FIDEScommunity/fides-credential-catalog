@@ -34,7 +34,14 @@ const OPENAPI_SPEC_BASE = {
     },
     version: "2.5",
   },
-  tags: [{ name: "Search API", description: "Search in the catalog" }],
+  tags: [
+    { name: "Search API", description: "Search in the catalog" },
+    {
+      name: "TS11",
+      description:
+        "EUDI ARF TS11 catalogue of attestations, projected from the same data. When TS11_SIGNING_KEY is configured, successful responses are compact JWS (application/jwt) with an x-jku-url header; otherwise unsigned JSON with signed:false. See the conformance field per record.",
+    },
+  ],
   paths: {
     "/api/public/credentialtype/{id}": {
       get: {
@@ -312,9 +319,264 @@ const OPENAPI_SPEC_BASE = {
         },
       },
     },
+    "/api/public/schemas": {
+      get: {
+        tags: ["TS11"],
+        summary: "ARF TS11 catalogue of attestations",
+        description:
+          "One record per attestation type, in the TS11 SchemaMeta shape. Every record carries a `conformance` object naming the TS11 fields that are not populated. Query parameter names follow TS11 (lowercase). With signing configured the body is application/jwt (compact JWS); otherwise application/json with signed:false.",
+        operationId: "findSchemas",
+        parameters: [
+          { name: "id", in: "query", required: false, schema: { type: "string" } },
+          {
+            name: "supportedformat",
+            in: "query",
+            required: false,
+            description: "TS11 format identifier, e.g. dc+sd-jwt or mso_mdoc.",
+            schema: { type: "string" },
+          },
+          {
+            name: "attestationlos",
+            in: "query",
+            required: false,
+            schema: {
+              type: "string",
+              enum: [
+                "iso_18045_basic",
+                "iso_18045_enhanced-basic",
+                "iso_18045_moderate",
+                "iso_18045_high",
+              ],
+            },
+          },
+          {
+            name: "bindingtype",
+            in: "query",
+            required: false,
+            schema: { type: "string", enum: ["claim", "key", "biometric", "none"] },
+          },
+          {
+            name: "trustedauthoritiesframeworktype",
+            in: "query",
+            required: false,
+            schema: { type: "string", enum: ["aki", "etsi_tl", "openid_federation"] },
+          },
+          {
+            name: "trustedauthoritiesvalue",
+            in: "query",
+            required: false,
+            description: "Matches the TS11 value (registry URL) or the FIDES treg: identifier.",
+            schema: { type: "string" },
+          },
+          { name: "schemauri", in: "query", required: false, schema: { type: "string" } },
+          { name: "rulebookuri", in: "query", required: false, schema: { type: "string" } },
+          {
+            name: "conformance",
+            in: "query",
+            required: false,
+            description:
+              "full = every TS11 field populated; partial = some fields missing; compatible = no format with a TS11 counterpart.",
+            schema: { type: "string", enum: ["full", "partial", "compatible"] },
+          },
+          { name: "page", in: "query", required: false, schema: { type: "integer", default: 0 } },
+          { name: "size", in: "query", required: false, schema: { type: "integer", default: 200 } },
+        ],
+        responses: {
+          "200": {
+            description:
+              "OK. Signed deployments return application/jwt (compact JWS). Unsigned local/dev returns application/json.",
+            headers: {
+              "x-jku-url": {
+                description: "Absolute JWKS URL used to verify the JWS (present when signed).",
+                schema: { type: "string", format: "uri" },
+              },
+            },
+            content: {
+              "application/jwt": {
+                schema: {
+                  type: "string",
+                  description: "Compact JWS whose payload is the paginated SchemaMeta list plus iss/iat.",
+                },
+              },
+              "application/json": {
+                schema: {
+                  type: "object",
+                  properties: {
+                    content: {
+                      type: "array",
+                      items: { $ref: "#/components/schemas/Ts11SchemaMeta" },
+                    },
+                    page: { $ref: "#/components/schemas/PageMetadata" },
+                    signed: {
+                      type: "boolean",
+                      description: "false when TS11_SIGNING_KEY is not configured.",
+                    },
+                  },
+                },
+              },
+            },
+          },
+          "500": {
+            description: "Internal Server Error",
+            content: {
+              "application/json": { schema: { $ref: "#/components/schemas/ErrorMessage" } },
+            },
+          },
+        },
+      },
+    },
+    "/api/public/schemas/{id}": {
+      get: {
+        tags: ["TS11"],
+        summary: "One ARF TS11 SchemaMeta record",
+        operationId: "getSchemaById",
+        parameters: [
+          {
+            name: "id",
+            in: "path",
+            required: true,
+            description:
+              "TS11 UUID, a cred: attestation type id, or a legacy per-format cred: id (URL-encoded).",
+            schema: { type: "string" },
+          },
+        ],
+        responses: {
+          "200": {
+            description:
+              "OK. Signed deployments return application/jwt; unsigned local/dev returns application/json.",
+            headers: {
+              "x-jku-url": {
+                description: "Absolute JWKS URL used to verify the JWS (present when signed).",
+                schema: { type: "string", format: "uri" },
+              },
+            },
+            content: {
+              "application/jwt": {
+                schema: {
+                  type: "string",
+                  description: "Compact JWS whose payload is the SchemaMeta plus iss/iat.",
+                },
+              },
+              "application/json": { schema: { $ref: "#/components/schemas/Ts11SchemaMeta" } },
+            },
+          },
+          "404": {
+            description: "Not found",
+            content: {
+              "application/json": { schema: { $ref: "#/components/schemas/ErrorMessage" } },
+            },
+          },
+          "500": {
+            description: "Internal Server Error",
+            content: {
+              "application/json": { schema: { $ref: "#/components/schemas/ErrorMessage" } },
+            },
+          },
+        },
+      },
+    },
+    "/api/.well-known/jwks.json": {
+      get: {
+        tags: ["TS11"],
+        summary: "JWKS for verifying signed TS11 /schemas responses",
+        operationId: "getTs11Jwks",
+        responses: {
+          "200": {
+            description: "OK",
+            content: {
+              "application/json": {
+                schema: {
+                  type: "object",
+                  properties: {
+                    keys: {
+                      type: "array",
+                      items: { type: "object", additionalProperties: true },
+                    },
+                  },
+                },
+              },
+            },
+          },
+        },
+      },
+    },
   },
   components: {
     schemas: {
+      Ts11SchemaMeta: {
+        type: "object",
+        description:
+          "ARF TS11 SchemaMeta projected from the credential catalog. Deviation from TS11: each trusted authority also carries the FIDES `registryId` (treg:…) that resolves in the FIDES Trust Scheme Catalog, and FIDES-specific fields live under `fides`.",
+        properties: {
+          id: { type: "string", format: "uuid", description: "Stable UUID v5 over the attestation type id" },
+          attestationType: { type: "string", description: "FIDES attestation type id (cred:authority:key)" },
+          title: { type: "string" },
+          description: { type: "string" },
+          version: { type: "string", description: "SemVer" },
+          supportedFormats: {
+            type: "array",
+            items: { type: "string" },
+            description: "TS11 format identifiers; formats without a TS11 counterpart are omitted",
+          },
+          schemaURIs: {
+            type: "array",
+            items: {
+              type: "object",
+              properties: {
+                formatIdentifier: { type: "string" },
+                uri: { type: "string" },
+                integrity: { type: "string" },
+              },
+            },
+          },
+          rulebookURI: { type: "string" },
+          rulebookIntegrity: { type: "string" },
+          attestationLoS: { type: "string" },
+          bindingType: { type: "string" },
+          trustedAuthorities: {
+            type: "array",
+            items: {
+              type: "object",
+              properties: {
+                frameworkType: { type: "string", enum: ["aki", "etsi_tl", "openid_federation"] },
+                value: { type: "string", description: "Registry URL, per TS11" },
+                isLoTE: { type: "boolean", description: "Derived from the registry profile" },
+                registryId: { type: "string", description: "FIDES treg: identifier" },
+                schemeId: { type: "string", description: "FIDES scheme: identifier" },
+              },
+            },
+          },
+          conformance: {
+            type: "object",
+            properties: {
+              level: { type: "string", enum: ["full", "partial", "compatible"] },
+              missing: { type: "array", items: { type: "string" } },
+            },
+          },
+          fides: {
+            type: "object",
+            description: "FIDES extensions, namespaced so a strict TS11 consumer can ignore them.",
+            properties: {
+              attestationTypeId: { type: "string" },
+              aliasIds: { type: "array", items: { type: "string" } },
+              sectors: { type: "array", items: { type: "string" } },
+              ecosystems: { type: "array", items: { type: "string" } },
+              themes: { type: "array", items: { type: "string" } },
+              category: { type: "string" },
+              updatedAt: { type: "string", format: "date-time" },
+            },
+          },
+        },
+      },
+      PageMetadata: {
+        type: "object",
+        properties: {
+          size: { type: "integer" },
+          number: { type: "integer" },
+          totalElements: { type: "integer" },
+          totalPages: { type: "integer" },
+        },
+      },
       CredentialTypeDto: {
         type: "object",
         description:
