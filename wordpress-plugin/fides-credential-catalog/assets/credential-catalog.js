@@ -81,6 +81,8 @@
 
   const TS11_BADGE_TITLE =
     "Has the required ARF TS11 SchemaMeta fields for a catalogue-of-attestations entry.";
+  const TS11_SPEC_URL =
+    "https://github.com/eu-digital-identity-wallet/eudi-doc-standards-and-technical-specifications/blob/main/docs/technical-specifications/ts11-interfaces-and-formats-for-catalogue-of-attributes-and-catalogue-of-schemes.md";
 
   function toTs11FormatIdentifier(formatIdentifier) {
     if (!formatIdentifier) return "";
@@ -678,6 +680,14 @@
       '<a href="' +
       escapeHtml(ECOSYSTEM_EXPLORER_URL) +
       '" class="fides-eco-explain-link" target="_blank" rel="noopener" onclick="event.stopPropagation();" aria-label="Explain the FIDES Ecosystem Model">Explain</a>'
+    );
+  }
+
+  function buildTs11ExplainLinkHtml() {
+    return (
+      '<a href="' +
+      escapeHtml(TS11_SPEC_URL) +
+      '" class="fides-eco-explain-link" target="_blank" rel="noopener" onclick="event.stopPropagation();" aria-label="Explain ARF TS11 (catalogue of attributes and schemes)">Explain</a>'
     );
   }
 
@@ -2214,7 +2224,7 @@
               <div class="fides-accordion-header-bar">
                 <button class="fides-accordion-header fides-accordion-toggle" type="button" aria-expanded="true">
                   <span class="fides-accordion-title">${hasSchemaMetadataFields(selectedCredential)
-                    ? `${icons.fileCheck} Schema metadata${isTs11SchemaMetaComplete(selectedCredential) ? ` ${renderTs11BadgeHtml(selectedCredential, "fides-tag-ts11--accordion")}` : ""}`
+                    ? `${icons.fileCheck} Schema metadata${isTs11SchemaMetaComplete(selectedCredential) ? ` ${renderTs11BadgeHtml(selectedCredential, "fides-tag-ts11--accordion")}${buildTs11ExplainLinkHtml()}` : ""}`
                     : `${icons.shield} Other details`}</span>
                 </button>
                 <button type="button" class="fides-accordion-chevron-btn fides-accordion-toggle" aria-expanded="true" aria-label="${hasSchemaMetadataFields(selectedCredential) ? "Toggle schema metadata section" : "Toggle other details section"}">
