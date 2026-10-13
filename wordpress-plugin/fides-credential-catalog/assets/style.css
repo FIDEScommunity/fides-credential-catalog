@@ -864,9 +864,16 @@
   font-weight: 600;
   line-height: 1.25;
   color: var(--fides-text-primary);
-  display: block;
-  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  min-width: 0;
+  max-width: 100%;
+}
+
+.fides-credential-name-text {
+  min-width: 0;
   overflow: hidden;
+  white-space: nowrap;
   text-overflow: ellipsis;
 }
 
@@ -3688,14 +3695,27 @@ a.fides-eco-tag-purple:hover {
   align-items: flex-start;
 }
 
+.fides-row-name-title {
+  display: flex;
+  align-items: center;
+  min-width: 0;
+  max-width: 100%;
+}
+
 .fides-row-name-text {
   font-size: 0.875rem;
   font-weight: 600;
   line-height: 1.2;
   color: var(--fides-text-primary);
+  min-width: 0;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+}
+
+.fides-tag.fides-tag-ts11--row,
+.fides-tag.fides-tag-ts11--card {
+  flex: 0 0 auto;
 }
 
 .fides-row-name-id {

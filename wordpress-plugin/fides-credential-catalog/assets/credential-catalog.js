@@ -1707,7 +1707,9 @@
           ${getSubjectTypeIcon(credential.subjectType)}
         </div>
         <div class="fides-row-name">
-          <span class="fides-row-name-text" title="${escapeHtml(credential.displayName)}">${escapeHtml(credential.displayName)}${renderTs11BadgeHtml(credential, "fides-tag-ts11--row")}</span>
+          <span class="fides-row-name-title">
+            <span class="fides-row-name-text" title="${escapeHtml(credential.displayName)}">${escapeHtml(credential.displayName)}</span>${renderTs11BadgeHtml(credential, "fides-tag-ts11--row")}
+          </span>
           ${credential.nativeIdentifier
             ? `<span class="fides-row-name-id" title="${escapeHtml(credential.nativeIdentifier)}">${escapeHtml(credential.nativeIdentifier)}</span>`
             : ''}
@@ -1788,7 +1790,7 @@
             ${getSubjectTypeIcon(credential.subjectType)}
           </div>
           <div class="fides-credential-header-text">
-            <h3 class="fides-credential-name" title="${escapeHtml(credential.displayName)}">${escapeHtml(credential.displayName)}${renderTs11BadgeHtml(credential, "fides-tag-ts11--card")}</h3>
+            <h3 class="fides-credential-name" title="${escapeHtml(credential.displayName)}"><span class="fides-credential-name-text">${escapeHtml(credential.displayName)}</span>${renderTs11BadgeHtml(credential, "fides-tag-ts11--card")}</h3>
             <div class="fides-credential-meta-row">
               <p class="fides-credential-provider">${escapeHtml(credential.authority?.name || "Unknown authority")}</p>
             </div>

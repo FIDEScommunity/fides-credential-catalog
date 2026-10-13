@@ -13,6 +13,7 @@ Interactive credential catalog with search, filters, and optional SSR/SEO via fi
 = 1.6.4 =
 * Rename Trust registries to Trusted Authorities (ARF TS11 wording).
 * Merge Schema metadata and Other details into one accordion, separated by a divider.
+* Keep the TS11 list/card badge fully visible (no longer clipped by the name ellipsis).
 
 = 1.6.3 =
 * Deep links use the listing spinner shell again (no visible SSR detail flash before the modal).
