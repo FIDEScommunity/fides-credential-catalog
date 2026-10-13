@@ -12,9 +12,12 @@ if (! defined('ABSPATH')) {
 if (! class_exists('Fides_Credential_Catalog_Submission_Adapter')) {
     class Fides_Credential_Catalog_Submission_Adapter {
         const TYPE = 'credential';
-        const SCHEMA = 'https://fides.community/schemas/credential-catalog/v1';
+        const SCHEMA = 'https://fides.community/schemas/credential-catalog/v2';
         /** Canonical type id is three segments; optional fourth kept for legacy aliases. */
         const ID_PATTERN = '/^cred:[a-z0-9]+:[a-z0-9-]+(?::[a-z0-9-]+)?$/';
+        const REGISTRY_ID_PATTERN = '/^treg:[a-z0-9]+(?:-[a-z0-9]+)*:[a-z0-9]+(?:-[a-z0-9]+)*$/';
+        const SCHEME_ID_PATTERN = '/^scheme:[a-z0-9]+(?:-[a-z0-9]+)*$/';
+        const INTEGRITY_HASH_PATTERN = '/^sha(?:256|384|512)-[A-Za-z0-9+\/]+={0,2}$/';
 
         /** @var string[] */
         const SUBJECT_TYPES = array('Person', 'Organization', 'Product', 'Dataset', 'Software', 'Document');
@@ -32,6 +35,20 @@ if (! class_exists('Fides_Credential_Catalog_Submission_Adapter')) {
             'google_wallet_pass',
             'acdc',
         );
+
+        /** @var string[] ARF TS11 attestationLoS (ISO/IEC 18045 attack potential). */
+        const ATTESTATION_LOS = array(
+            'iso_18045_basic',
+            'iso_18045_enhanced-basic',
+            'iso_18045_moderate',
+            'iso_18045_high',
+        );
+
+        /** @var string[] ARF TS11 bindingType. */
+        const BINDING_TYPES = array('claim', 'key', 'biometric', 'none');
+
+        /** @var string[] ARF TS11 trustedAuthorities.frameworkType. */
+        const FRAMEWORK_TYPES = array('aki', 'etsi_tl', 'openid_federation');
 
         /** @var string[] */
         const NATIVE_IDENTIFIER_TYPES = array('vct', 'docType', 'type', 'schema_said', 'other');
@@ -100,7 +117,11 @@ if (! class_exists('Fides_Credential_Catalog_Submission_Adapter')) {
             'schemaUrl',
             'schemaType',
             'rulebookUrl',
+            'rulebookIntegrity',
             'version',
+            'attestationLoS',
+            'bindingType',
+            'trustedAuthorities',
             'extends',
             'vocabularies',
             'tags',
@@ -148,7 +169,11 @@ if (! class_exists('Fides_Credential_Catalog_Submission_Adapter')) {
                         'schemaUrl'            => 'Schema URL',
                         'schemaType'           => 'Schema type',
                         'rulebookUrl'          => 'Rulebook URL',
+                        'rulebookIntegrity'    => 'Rulebook integrity',
                         'version'              => 'Version',
+                        'attestationLoS'       => 'Attestation LoS',
+                        'bindingType'          => 'Binding type',
+                        'trustedAuthorities'   => 'Trusted Authorities',
                         'extends'              => 'Extends',
                         'vocabularies'         => 'Vocabularies',
                         'tags'                 => 'Tags',
@@ -350,6 +375,36 @@ if (! class_exists('Fides_Credential_Catalog_Submission_Adapter')) {
             if ($rulebook_url !== '') {
                 $normalized['rulebookUrl'] = $rulebook_url;
             }
+            $rulebook_integrity = sanitize_text_field((string) ($payload['rulebookIntegrity'] ?? ''));
+            if ($rulebook_integrity !== '') {
+                if (! preg_match(self::INTEGRITY_HASH_PATTERN, $rulebook_integrity)) {
+                    return self::error(__('Rulebook integrity must be an SRI hash (sha256|384|512-<base64>).', 'fides-credential-catalog'));
+                }
+                $normalized['rulebookIntegrity'] = $rulebook_integrity;
+            }
+
+            $attestation_los = sanitize_text_field((string) ($payload['attestationLoS'] ?? ''));
+            if ($attestation_los !== '') {
+                if (! in_array($attestation_los, self::ATTESTATION_LOS, true)) {
+                    return self::error(__('Select a valid attestation level of assurance.', 'fides-credential-catalog'));
+                }
+                $normalized['attestationLoS'] = $attestation_los;
+            }
+            $binding_type = sanitize_key((string) ($payload['bindingType'] ?? ''));
+            if ($binding_type !== '') {
+                if (! in_array($binding_type, self::BINDING_TYPES, true)) {
+                    return self::error(__('Select a valid binding type.', 'fides-credential-catalog'));
+                }
+                $normalized['bindingType'] = $binding_type;
+            }
+
+            $trusted = self::normalize_trusted_authorities($payload['trustedAuthorities'] ?? array());
+            if (is_wp_error($trusted)) {
+                return $trusted;
+            }
+            if (! empty($trusted)) {
+                $normalized['trustedAuthorities'] = $trusted;
+            }
 
             $extends = self::normalize_credential_refs($payload['extends'] ?? array());
             if (! empty($extends)) {
@@ -424,6 +479,17 @@ if (! class_exists('Fides_Credential_Catalog_Submission_Adapter')) {
             if (isset($payload['vocabularies'])) {
                 $payload['vocabularies'] = self::normalize_vocabularies($payload['vocabularies']);
                 usort($payload['vocabularies'], static fn ($a, $b) => strcmp((string) $a['name'], (string) $b['name']));
+            }
+            if (isset($payload['trustedAuthorities'])) {
+                $trusted = self::normalize_trusted_authorities($payload['trustedAuthorities']);
+                $payload['trustedAuthorities'] = is_wp_error($trusted) ? array() : $trusted;
+                usort(
+                    $payload['trustedAuthorities'],
+                    static fn ($a, $b) => strcmp(
+                        (string) ($a['registryId'] ?? ''),
+                        (string) ($b['registryId'] ?? '')
+                    )
+                );
             }
             return $payload;
         }
@@ -528,6 +594,64 @@ if (! class_exists('Fides_Credential_Catalog_Submission_Adapter')) {
                     $entry['displayName'] = $name;
                 }
                 $out[ $id ] = $entry;
+            }
+            return array_values($out);
+        }
+
+        /**
+         * @param mixed $raw Trusted authority references.
+         * @return array<int, array<string, mixed>>|WP_Error
+         */
+        private static function normalize_trusted_authorities($raw) {
+            if ($raw === null || $raw === '' || $raw === array()) {
+                return array();
+            }
+            if (! is_array($raw)) {
+                return self::error(__('Trusted Authorities must be a list.', 'fides-credential-catalog'));
+            }
+            $out = array();
+            foreach ($raw as $entry) {
+                if (! is_array($entry)) {
+                    continue;
+                }
+                $framework = sanitize_key((string) ($entry['frameworkType'] ?? ''));
+                $registry_id = sanitize_text_field((string) ($entry['registryId'] ?? ''));
+                $scheme_id = sanitize_text_field((string) ($entry['schemeId'] ?? ''));
+                $values_raw = $entry['values'] ?? array();
+                $has_values = is_array($values_raw)
+                    ? ! empty(array_filter(array_map('strval', $values_raw)))
+                    : trim((string) $values_raw) !== '';
+                if ($framework === '' && $registry_id === '' && $scheme_id === '' && ! $has_values) {
+                    continue;
+                }
+                if (! in_array($framework, self::FRAMEWORK_TYPES, true)) {
+                    return self::error(__('Select a valid trust framework type for each Trusted Authority.', 'fides-credential-catalog'));
+                }
+                if (! preg_match(self::REGISTRY_ID_PATTERN, $registry_id)) {
+                    return self::error(__('Each Trusted Authority needs a valid registry id (treg:scheme:registry).', 'fides-credential-catalog'));
+                }
+                $normalized = array(
+                    'frameworkType' => $framework,
+                    'registryId'    => $registry_id,
+                );
+                if ($scheme_id !== '') {
+                    if (! preg_match(self::SCHEME_ID_PATTERN, $scheme_id)) {
+                        return self::error(__('Scheme id must use scheme:<code>.', 'fides-credential-catalog'));
+                    }
+                    $normalized['schemeId'] = $scheme_id;
+                }
+                $values = array();
+                if (is_array($values_raw)) {
+                    $values = self::normalize_text_list($values_raw);
+                } elseif (is_string($values_raw) && trim($values_raw) !== '') {
+                    $values = self::normalize_text_list(
+                        array_map('trim', explode(',', $values_raw))
+                    );
+                }
+                if (! empty($values)) {
+                    $normalized['values'] = $values;
+                }
+                $out[ $registry_id . '|' . $framework ] = $normalized;
             }
             return array_values($out);
         }

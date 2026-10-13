@@ -16,6 +16,7 @@
   let selectedOrg = null;
   let extendedCredentials = [];
   let vocabularies = [];
+  let trustedAuthorities = [];
 
   const FALLBACKS = {
     subjectTypes: ["Person", "Organization", "Product", "Dataset", "Software", "Document"],
@@ -33,6 +34,14 @@
     ],
     nativeIdentifierTypes: ["vct", "docType", "type", "schema_said", "other"],
     schemaTypes: ["JSON Schema", "JSON-LD Context", "ISO Data Model", "ACDC Schema", "Other"],
+    attestationLoS: [
+      "iso_18045_basic",
+      "iso_18045_enhanced-basic",
+      "iso_18045_moderate",
+      "iso_18045_high",
+    ],
+    bindingTypes: ["claim", "key", "biometric", "none"],
+    frameworkTypes: ["aki", "etsi_tl", "openid_federation"],
     sectors: [
       "public_sector", "finance", "trade", "supply_chain", "manufacturing", "energy", "agriculture",
       "food", "retail", "healthcare", "education", "construction", "mobility", "digital",
@@ -56,6 +65,17 @@
     apple_wallet_pass: "Apple Wallet Pass",
     google_wallet_pass: "Google Wallet Pass",
     acdc: "ACDC",
+    iso_18045_basic: "Basic (ISO/IEC 18045)",
+    "iso_18045_enhanced-basic": "Enhanced basic (ISO/IEC 18045)",
+    iso_18045_moderate: "Moderate (ISO/IEC 18045)",
+    iso_18045_high: "High (ISO/IEC 18045)",
+    claim: "Claim-based",
+    key: "Key-bound",
+    biometric: "Biometric",
+    none: "Not bound",
+    aki: "Authority Key Identifier (AKI)",
+    etsi_tl: "ETSI Trust List",
+    openid_federation: "OpenID Federation",
     eudi_wallet: "EUDI Wallet",
     uncefact: "UN/CEFACT",
     gaia_x: "Gaia-X",
@@ -220,20 +240,59 @@
                   <select id="fides-credential-schema-type" required>${options("schemaTypes", "", true)}</select>
                 </div>
               </div>
-              <div class="fides-form-grid fides-form-grid-pair">
-                <div class="fides-form-row">
-                  <label for="fides-credential-version">Version *</label>
-                  <p class="fides-help">The version assigned to this credential definition or schema.</p>
-                  <input id="fides-credential-version" required maxlength="80" placeholder="1.0" />
-                </div>
-                <div class="fides-form-row">
-                  <label for="fides-credential-rulebook-url">Rulebook URL</label>
-                  <p class="fides-help">A public link to the governance, policy, or rulebook for this credential.</p>
-                  <input id="fides-credential-rulebook-url" type="url" placeholder="https://…" />
-                </div>
+              <div class="fides-form-row">
+                <label for="fides-credential-version">Version *</label>
+                <p class="fides-help">The version assigned to this credential definition or schema. Prefer SemVer (e.g. 1.0.0) for TS11.</p>
+                <input id="fides-credential-version" required maxlength="80" placeholder="1.0.0" />
               </div>
             </div>
-            <p class="fides-form-note"><strong>Coming soon:</strong> support for submitting ARF TS11 conformance metadata.</p>
+          </section>
+
+          <section class="fides-form-section" aria-labelledby="fides-credential-ts11-title">
+            <h3 id="fides-credential-ts11-title" class="fides-form-section-title">TS11 Schema metadata</h3>
+            <p class="fides-form-section-intro">Optional ARF TS11 fields for the machine-readable SchemaMeta projection. Leave blank when unknown; missing values lower conformance rather than blocking publication.</p>
+            <div class="fides-form-section-body">
+              <div class="fides-form-subsection">
+                <h4 class="fides-form-subsection-title">Assurance and binding</h4>
+                <div class="fides-form-grid fides-form-grid-pair">
+                  <div class="fides-form-row">
+                    <label for="fides-credential-attestation-los">Attestation level of assurance</label>
+                    <p class="fides-help">TS11 attestationLoS using ISO/IEC 18045 attack potential — not eIDAS LoA.</p>
+                    <select id="fides-credential-attestation-los">${options("attestationLoS", "", true)}</select>
+                  </div>
+                  <div class="fides-form-row">
+                    <label for="fides-credential-binding-type">Holder binding</label>
+                    <p class="fides-help">TS11 bindingType: how the attestation binds to its holder.</p>
+                    <select id="fides-credential-binding-type">${options("bindingTypes", "", true)}</select>
+                  </div>
+                </div>
+              </div>
+              <div class="fides-form-subsection">
+                <h4 class="fides-form-subsection-title">Attestation Rulebook</h4>
+                <div class="fides-form-grid fides-form-grid-pair">
+                  <div class="fides-form-row">
+                    <label for="fides-credential-rulebook-url">Rulebook URL</label>
+                    <p class="fides-help">Public URL of the human-readable Attestation Rulebook (TS11 rulebookURI).</p>
+                    <input id="fides-credential-rulebook-url" type="url" placeholder="https://…" />
+                  </div>
+                  <div class="fides-form-row">
+                    <label for="fides-credential-rulebook-integrity">Rulebook integrity</label>
+                    <p class="fides-help">Optional Subresource Integrity hash, for example sha256- followed by a base64 digest.</p>
+                    <input id="fides-credential-rulebook-integrity" maxlength="200" placeholder="sha256-…" spellcheck="false" />
+                  </div>
+                </div>
+              </div>
+              <div class="fides-form-subsection">
+                <div class="fides-repeatable-heading">
+                  <div>
+                    <h4 class="fides-form-subsection-title">Trusted Authorities</h4>
+                    <p class="fides-help">Trust registries a verifier can use (treg: ids from the FIDES trust scheme catalog). Only add factual anchors.</p>
+                  </div>
+                  <button type="button" class="fides-secondary-btn" id="fides-credential-add-trusted-authority">Add trusted authority</button>
+                </div>
+                <div id="fides-credential-trusted-authorities" class="fides-repeatable-list"></div>
+              </div>
+            </div>
           </section>
 
           <section class="fides-form-section" aria-labelledby="fides-credential-classification-title">
@@ -561,6 +620,76 @@
     });
   }
 
+  function renderTrustedAuthorities() {
+    const mount = root.querySelector("#fides-credential-trusted-authorities");
+    if (!trustedAuthorities.length) {
+      mount.innerHTML = '<p class="fides-form-empty-hint">No trusted authorities added yet.</p>';
+      return;
+    }
+    mount.innerHTML = trustedAuthorities
+      .map((entry, index) => `
+        <div class="fides-repeatable-item" data-trusted-index="${index}">
+          <div class="fides-repeatable-item-heading">
+            <strong>Trusted Authority ${index + 1}</strong>
+            <button type="button" class="fides-repeatable-remove" data-remove-trusted="${index}">Remove</button>
+          </div>
+          <div class="fides-form-grid fides-form-grid-pair">
+            <div class="fides-form-row">
+              <label for="fides-trusted-framework-${index}">Framework type *</label>
+              <p class="fides-help">TS11 frameworkType for this trust anchor.</p>
+              <select id="fides-trusted-framework-${index}" data-trusted-field="frameworkType" required>
+                ${options("frameworkTypes", entry.frameworkType || "", true)}
+              </select>
+            </div>
+            <div class="fides-form-row">
+              <label for="fides-trusted-registry-${index}">Registry id *</label>
+              <p class="fides-help">Trust scheme catalog id, e.g. treg:aamva-mdl:dts-vical.</p>
+              <input id="fides-trusted-registry-${index}" data-trusted-field="registryId" required maxlength="200"
+                value="${escapeHtml(entry.registryId || "")}" placeholder="treg:scheme:registry" spellcheck="false" />
+            </div>
+          </div>
+          <div class="fides-form-grid fides-form-grid-pair">
+            <div class="fides-form-row">
+              <label for="fides-trusted-scheme-${index}">Scheme id</label>
+              <p class="fides-help">Optional. Derived from the registry when omitted.</p>
+              <input id="fides-trusted-scheme-${index}" data-trusted-field="schemeId" maxlength="120"
+                value="${escapeHtml(entry.schemeId || "")}" placeholder="scheme:…" spellcheck="false" />
+            </div>
+            <div class="fides-form-row">
+              <label for="fides-trusted-values-${index}">Anchor values</label>
+              <p class="fides-help">Optional public anchor values (comma-separated), e.g. an AKI.</p>
+              <input id="fides-trusted-values-${index}" data-trusted-field="values" maxlength="500"
+                value="${escapeHtml(Array.isArray(entry.values) ? entry.values.join(", ") : "")}"
+                placeholder="optional, comma-separated" spellcheck="false" />
+            </div>
+          </div>
+        </div>`)
+      .join("");
+    mount.querySelectorAll("[data-remove-trusted]").forEach((button) => {
+      button.addEventListener("click", () => {
+        collectTrustedAuthorities();
+        trustedAuthorities.splice(Number(button.dataset.removeTrusted), 1);
+        renderTrustedAuthorities();
+      });
+    });
+  }
+
+  function collectTrustedAuthorities() {
+    trustedAuthorities = Array.from(root.querySelectorAll("[data-trusted-index]")).map((item) => {
+      const value = (field) => item.querySelector(`[data-trusted-field="${field}"]`)?.value.trim() || "";
+      const values = value("values")
+        .split(",")
+        .map((part) => part.trim())
+        .filter((part, index, all) => part && all.indexOf(part) === index);
+      return {
+        frameworkType: value("frameworkType"),
+        registryId: value("registryId"),
+        ...(value("schemeId") ? { schemeId: value("schemeId") } : {}),
+        ...(values.length ? { values } : {}),
+      };
+    });
+  }
+
   async function prefillAuthorityFromOrganization(item) {
     authorityName.value = String(item.label || item.id || "");
     root.querySelector("#fides-credential-authority-url").value = "";
@@ -621,6 +750,9 @@
     root.querySelector("#fides-credential-schema-url").value = payload.schemaUrl || "";
     root.querySelector("#fides-credential-schema-type").value = payload.schemaType || "";
     root.querySelector("#fides-credential-rulebook-url").value = payload.rulebookUrl || "";
+    root.querySelector("#fides-credential-rulebook-integrity").value = payload.rulebookIntegrity || "";
+    root.querySelector("#fides-credential-attestation-los").value = payload.attestationLoS || "";
+    root.querySelector("#fides-credential-binding-type").value = payload.bindingType || "";
     root.querySelector("#fides-credential-category").value = payload.category || "";
     root.querySelector("#fides-credential-tags").value = Array.isArray(payload.tags) ? payload.tags.join(", ") : "";
     setSelectedValues("sectors", payload.sectors);
@@ -628,8 +760,19 @@
     setSelectedValues("themes", payload.themes);
     extendedCredentials = Array.isArray(payload.extends) ? payload.extends : [];
     vocabularies = Array.isArray(payload.vocabularies) ? payload.vocabularies : [];
+    trustedAuthorities = Array.isArray(payload.trustedAuthorities)
+      ? payload.trustedAuthorities.map((entry) => ({
+          frameworkType: String(entry?.frameworkType || ""),
+          registryId: String(entry?.registryId || ""),
+          ...(entry?.schemeId ? { schemeId: String(entry.schemeId) } : {}),
+          ...(Array.isArray(entry?.values) && entry.values.length
+            ? { values: entry.values.map(String) }
+            : {}),
+        }))
+      : [];
     renderExtendedCredentials();
     renderVocabularies();
+    renderTrustedAuthorities();
     updateDescriptionCounter();
     updateNativeIdentifierUi();
   }
@@ -648,6 +791,7 @@
 
   function buildPayload() {
     collectVocabularies();
+    collectTrustedAuthorities();
     const authority = { name: authorityName.value.trim() };
     const authorityUrl = root.querySelector("#fides-credential-authority-url").value.trim();
     if (authorityUrl) authority.url = authorityUrl;
@@ -655,7 +799,7 @@
       .split(",")
       .map((tag) => tag.trim())
       .filter((tag, index, all) => tag && all.indexOf(tag) === index);
-    return {
+    const payload = {
       orgId: String(selectedOrg?.id || ""),
       id: credentialId.value.trim(),
       slug: credentialSlug.value.trim(),
@@ -670,6 +814,9 @@
       schemaUrl: root.querySelector("#fides-credential-schema-url").value.trim(),
       schemaType: root.querySelector("#fides-credential-schema-type").value,
       rulebookUrl: root.querySelector("#fides-credential-rulebook-url").value.trim(),
+      rulebookIntegrity: root.querySelector("#fides-credential-rulebook-integrity").value.trim(),
+      attestationLoS: root.querySelector("#fides-credential-attestation-los").value,
+      bindingType: root.querySelector("#fides-credential-binding-type").value,
       sectors: selectedValues("sectors"),
       ecosystems: selectedValues("ecosystems"),
       themes: selectedValues("themes"),
@@ -677,7 +824,9 @@
       tags,
       extends: extendedCredentials,
       vocabularies,
+      trustedAuthorities,
     };
+    return payload;
   }
 
   wireLookup(primarySearch, mode === "update" ? "credential" : "organization", async (item) => {
@@ -703,16 +852,25 @@
     root.querySelector("[data-vocabulary-index]:last-child input")?.focus();
   });
 
+  root.querySelector("#fides-credential-add-trusted-authority").addEventListener("click", () => {
+    collectTrustedAuthorities();
+    trustedAuthorities.push({ frameworkType: "", registryId: "" });
+    renderTrustedAuthorities();
+    root.querySelector("[data-trusted-index]:last-child select, [data-trusted-index]:last-child input")?.focus();
+  });
+
   root.querySelector("#fides-credential-change").addEventListener("click", () => {
     selectedCredentialId = "";
     selectedOrg = null;
     extendedCredentials = [];
     vocabularies = [];
+    trustedAuthorities = [];
     form.reset();
     credentialId.value = "";
     credentialSlug.value = "";
     renderExtendedCredentials();
     renderVocabularies();
+    renderTrustedAuthorities();
     updateDescriptionCounter();
     selection.hidden = true;
     primary.hidden = false;
@@ -738,6 +896,7 @@
   });
   updateDescriptionCounter();
   updateNativeIdentifierUi();
+  renderTrustedAuthorities();
 
   form.addEventListener("submit", async (event) => {
     event.preventDefault();
