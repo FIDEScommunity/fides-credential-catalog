@@ -2,6 +2,7 @@ import assert from "node:assert/strict";
 import test from "node:test";
 import {
   ARRAY_ITEM_PATH_SEGMENT,
+  extractAttributesFromOid4vciMetadata,
   extractAttributesFromSchema,
   SCHEMA_ATTRIBUTES_MAX_COUNT,
   SCHEMA_ATTRIBUTES_MAX_DEPTH
@@ -420,4 +421,43 @@ test("respects SCHEMA_ATTRIBUTES_MAX_DEPTH", () => {
   });
   const deepest = attrs.reduce((m, a) => Math.max(m, a.name.split("/").length), 0);
   assert.ok(deepest <= SCHEMA_ATTRIBUTES_MAX_DEPTH);
+});
+
+test("OID4VCI metadata claims become attributes, English description preferred", () => {
+  const attrs = extractAttributesFromOid4vciMetadata({
+    vct: "https://example.test/pension",
+    PensionCredential_SD_JWT_VC: {
+      format: "dc+sd-jwt",
+      claims: [
+        {
+          path: ["Pension"],
+          mandatory: true,
+          display: [
+            { lang: "fi", label: "Eläke", description: "Eläkkeen tiedot" },
+            { lang: "en", label: "Pension", description: "Pension information" }
+          ]
+        },
+        {
+          path: ["Pension", "startDate"],
+          mandatory: true,
+          display: [{ lang: "en", label: "Start Date", description: "First payment date" }]
+        },
+        {
+          path: ["Person", "family_name"],
+          display: [{ lang: "en", label: "Family name" }]
+        }
+      ]
+    }
+  });
+  assert.deepEqual(
+    attrs.map((attribute) => attribute.name),
+    ["Pension", "Pension/startDate", "Person/family_name"]
+  );
+  assert.equal(attrs[0].required, true);
+  assert.equal(attrs[0].description, "Pension information");
+  assert.equal(attrs[0].depth, 0);
+  assert.equal(attrs[1].depth, 1);
+  assert.equal(attrs[1].type, "unknown");
+  assert.equal(attrs[2].required, false);
+  assert.equal(attrs[2].description, "Family name");
 });

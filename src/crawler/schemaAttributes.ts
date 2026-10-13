@@ -391,3 +391,82 @@ export function extractAttributesFromSchema(schemaData: Record<string, unknown>)
   }
   return out;
 }
+
+type Oid4vciClaim = {
+  path?: unknown;
+  display?: unknown;
+  mandatory?: unknown;
+};
+
+function isOid4vciClaim(value: unknown): value is Oid4vciClaim {
+  if (!value || typeof value !== "object" || Array.isArray(value)) return false;
+  const path = (value as Oid4vciClaim).path;
+  return (
+    Array.isArray(path) &&
+    path.length > 0 &&
+    path.every((segment) => typeof segment === "string" && segment.length > 0)
+  );
+}
+
+function claimListsIn(node: unknown): Oid4vciClaim[][] {
+  if (!node || typeof node !== "object" || Array.isArray(node)) return [];
+  const record = node as Record<string, unknown>;
+  const lists: Oid4vciClaim[][] = [];
+  const claims = record.claims;
+  if (Array.isArray(claims) && claims.length > 0 && claims.every(isOid4vciClaim)) {
+    lists.push(claims);
+  }
+  return lists;
+}
+
+function englishClaimText(claim: Oid4vciClaim): string | undefined {
+  if (!Array.isArray(claim.display)) return undefined;
+  const entries = claim.display.filter(
+    (entry) => entry && typeof entry === "object" && !Array.isArray(entry)
+  ) as Record<string, unknown>[];
+  const english =
+    entries.find((entry) => entry.lang === "en" || entry.locale === "en") ?? entries[0];
+  if (!english) return undefined;
+  if (typeof english.description === "string" && english.description.length > 0) {
+    return english.description;
+  }
+  if (typeof english.label === "string" && english.label.length > 0) return english.label;
+  return undefined;
+}
+
+/**
+ * OID4VCI credential metadata (claims[].path) is not a JSON Schema.
+ * Findynet publishes this shape at the URL catalog entries use as schemaUrl.
+ */
+export function extractAttributesFromOid4vciMetadata(
+  document: Record<string, unknown>
+): EnrichedAttribute[] {
+  const lists = [
+    ...claimListsIn(document),
+    ...Object.values(document).flatMap((value) => claimListsIn(value))
+  ];
+  if (lists.length === 0) return [];
+
+  const out: EnrichedAttribute[] = [];
+  const limits = {
+    maxDepth: SCHEMA_ATTRIBUTES_MAX_DEPTH,
+    maxRows: SCHEMA_ATTRIBUTES_MAX_COUNT
+  };
+
+  for (const claims of lists) {
+    for (const claim of claims) {
+      if (out.length >= limits.maxRows) return out;
+      const path = claim.path as string[];
+      if (path.length > limits.maxDepth) continue;
+      addOrMergeAttribute(out, {
+        name: path.join("/"),
+        type: "unknown",
+        required: claim.mandatory === true,
+        description: englishClaimText(claim),
+        depth: path.length - 1
+      });
+    }
+  }
+
+  return out;
+}

@@ -119,7 +119,7 @@
   "additionalProperties": true,
   "$id": "https://raw.githubusercontent.com/FIDEScommunity/fides-credential-catalog/main/community-catalogs/iso/schemas/photoid-mdoc.schema.json",
   "title": "Photo ID (MSO Mdoc)",
-  "description": "ISO/IEC 23220-2 Photo ID mDoc attribute map. Schema derived from issuer metadata.",
-  "docType": "org.iso.23220.2.photoid.1",
-  "$comment": "Originally generated from EUDI issuer metadata; canonical path for the ISO catalog entry."
+  "description": "ISO/IEC TS 23220-4 Photo ID (doctype org.iso.23220.photoid.1). Attribute names follow issuer metadata for that doctype.",
+  "docType": "org.iso.23220.photoid.1",
+  "$comment": "Canonical Photo ID schema. Doctype is ISO/IEC TS 23220-4 Annex C (org.iso.23220.photoid.1), not org.iso.23220.2.photoid.1."
 }

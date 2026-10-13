@@ -18,7 +18,10 @@ import type {
   SchemaURI,
   SubjectType
 } from "../types/credential.js";
-import { extractAttributesFromSchema } from "./schemaAttributes.js";
+import {
+  extractAttributesFromOid4vciMetadata,
+  extractAttributesFromSchema
+} from "./schemaAttributes.js";
 import { resolveSchemaReferences, type SchemaDocument } from "./schemaResolver.js";
 
 const CONFIG = {
@@ -611,8 +614,14 @@ async function fetchSchemaData(schemaUrl: string): Promise<SchemaFetchResult> {
     const data = await fetchSchemaDocument(schemaUrl);
     const resolvedData = await resolveSchemaReferences(data, schemaUrl, fetchSchemaDocument);
 
+    const schemaAttributes = extractAttributesFromSchema(resolvedData);
+    const attributes =
+      schemaAttributes.length > 0
+        ? schemaAttributes
+        : extractAttributesFromOid4vciMetadata(data);
+
     return {
-      attributes: extractAttributesFromSchema(resolvedData),
+      attributes,
       description: typeof data.description === "string" ? data.description : undefined
     };
   } catch {
@@ -672,17 +681,51 @@ function calculateStats(
   };
 }
 
-function buildNativeIdentifierMap(credentials: NormalizedCredential[]): Map<string, string> {
-  const map = new Map<string, string>();
+function buildCredentialResolvers(credentials: NormalizedCredential[]): {
+  ids: Set<string>;
+  aliasToId: Map<string, string>;
+  nativeToId: Map<string, string>;
+} {
+  const ids = new Set<string>();
+  const aliasToId = new Map<string, string>();
+  const nativeToId = new Map<string, string>();
+  const rememberNative = (credentialId: string, value: unknown) => {
+    const key = String(value || "").trim();
+    if (key && !nativeToId.has(key)) nativeToId.set(key, credentialId);
+  };
+
   for (const credential of credentials) {
-    if (!credential.nativeIdentifier) continue;
-    const key = String(credential.nativeIdentifier).trim();
-    if (!key) continue;
-    if (!map.has(key)) {
-      map.set(key, credential.id);
+    ids.add(credential.id);
+    for (const alias of credential.aliasIds || []) {
+      if (alias && alias !== credential.id && !aliasToId.has(alias)) {
+        aliasToId.set(alias, credential.id);
+      }
+    }
+    rememberNative(credential.id, credential.nativeIdentifier);
+    for (const format of credential.formats || []) {
+      rememberNative(credential.id, format.nativeIdentifier);
     }
   }
-  return map;
+
+  return { ids, aliasToId, nativeToId };
+}
+
+function resolveIssuerCredentialId(
+  configuration: {
+    credentialCatalogRef?: { id?: string };
+    docType?: string;
+    doctype?: string;
+    vct?: string;
+  },
+  resolvers: ReturnType<typeof buildCredentialResolvers>
+): string {
+  const byRefId = String(configuration?.credentialCatalogRef?.id || "").trim();
+  if (resolvers.ids.has(byRefId)) return byRefId;
+  const aliased = byRefId ? resolvers.aliasToId.get(byRefId) : undefined;
+  if (aliased) return aliased;
+
+  const native = String(configuration?.docType || configuration?.doctype || configuration?.vct || "").trim();
+  return native ? resolvers.nativeToId.get(native) || "" : "";
 }
 
 async function buildIssuerAvailabilityIndex(
@@ -691,7 +734,7 @@ async function buildIssuerAvailabilityIndex(
 ): Promise<IssuerAvailabilityIndex> {
   const data = await loadIssuerCatalogData();
   const issuers = Array.isArray(data.issuers) ? data.issuers : [];
-  const nativeIdentifierToCredentialId = buildNativeIdentifierMap(credentials);
+  const resolvers = buildCredentialResolvers(credentials);
   const byCredentialIdSets = new Map<string, { total: Set<string>; production: Set<string>; test: Set<string> }>();
 
   const ensureBucket = (credentialId: string) => {
@@ -712,9 +755,7 @@ async function buildIssuerAvailabilityIndex(
     const configs = Array.isArray(issuer.credentialConfigurations) ? issuer.credentialConfigurations : [];
 
     for (const configuration of configs) {
-      const byRefId = String(configuration?.credentialCatalogRef?.id || "").trim();
-      const byVctId = String(configuration?.vct || "").trim();
-      const credentialId = byRefId || (byVctId ? nativeIdentifierToCredentialId.get(byVctId) || "" : "");
+      const credentialId = resolveIssuerCredentialId(configuration, resolvers);
       if (!credentialId) continue;
 
       const bucket = ensureBucket(credentialId);

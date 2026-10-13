@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-13T07:34:23.897Z",
+  "generatedAt": "2026-10-13T10:20:12.240Z",
   "byCredentialId": {
     "cred:iso:mdl": {
       "total": 7,
@@ -11,10 +11,10 @@
       "production": 0,
       "test": 4
     },
-    "cred:iso:photoid-mdoc-alt": {
-      "total": 2,
+    "cred:iso:photoid": {
+      "total": 3,
       "production": 0,
-      "test": 2
+      "test": 3
     },
     "cred:eu:pid": {
       "total": 10,
@@ -92,11 +92,6 @@
       "test": 2
     },
     "cred:eu:pda1": {
-      "total": 1,
-      "production": 0,
-      "test": 1
-    },
-    "cred:iso:photoid": {
       "total": 1,
       "production": 0,
       "test": 1
