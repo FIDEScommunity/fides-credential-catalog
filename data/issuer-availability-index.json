@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-15T11:10:37.397Z",
+  "generatedAt": "2026-10-16T11:05:08.342Z",
   "byCredentialId": {
     "cred:iso:mdl": {
       "total": 11,
@@ -132,6 +132,11 @@
       "test": 1
     },
     "cred:fides:bri": {
+      "total": 1,
+      "production": 0,
+      "test": 1
+    },
+    "cred:fidoalliance:open-checkout-mandate": {
       "total": 1,
       "production": 0,
       "test": 1
