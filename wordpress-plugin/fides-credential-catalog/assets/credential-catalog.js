@@ -658,6 +658,8 @@
     hasIssuersOnly: false,
     addedLast30Days: false,
     updatedLast30Days: false,
+    /** Same practical SchemaMeta set as the TS11 list/card badge. */
+    ts11CompliantOnly: false,
     ids: []
   };
 
@@ -1394,7 +1396,8 @@
       theme: {},
       usedByRPsOnly: 0,
       addedLast30Days: 0,
-      updatedLast30Days: 0
+      updatedLast30Days: 0,
+      ts11CompliantOnly: 0,
     };
 
     for (const credential of items) {
@@ -1423,6 +1426,7 @@
       if ((rpUsageMap.get(credential.id) || []).length > 0) facets.usedByRPsOnly += 1;
       if (isWithinLastDays(credential.firstSeenAt, 30)) facets.addedLast30Days += 1;
       if (isWithinLastDays(credential.updatedAt, 30)) facets.updatedLast30Days += 1;
+      if (isTs11SchemaMetaComplete(credential)) facets.ts11CompliantOnly += 1;
     }
 
     return facets;
@@ -1490,6 +1494,7 @@
       if (filters.hasIssuersOnly && !(issuerUsageMap.get(credential.id) || []).length) return false;
       if (filters.addedLast30Days && !isWithinLastDays(credential.firstSeenAt, 30)) return false;
       if (filters.updatedLast30Days && !isWithinLastDays(credential.updatedAt, 30)) return false;
+      if (filters.ts11CompliantOnly && !isTs11SchemaMetaComplete(credential)) return false;
       return true;
     });
 
@@ -1636,6 +1641,10 @@
           <label class="fides-filter-checkbox">
             <input type="checkbox" id="fides-used-by-rps" ${filters.usedByRPsOnly ? "checked" : ""}>
             <span>Used by relying parties<span class="fides-filter-option-count">(${filterFacets.usedByRPsOnly})</span></span>
+          </label>
+          <label class="fides-filter-checkbox" title="${escapeHtml(TS11_BADGE_TITLE)}">
+            <input type="checkbox" id="fides-ts11-compliant" ${filters.ts11CompliantOnly ? "checked" : ""}>
+            <span>TS11 compliant<span class="fides-filter-option-count">(${filterFacets.ts11CompliantOnly})</span></span>
           </label>
           ${originalCredentialIds.length > 0 ? `
           <label class="fides-filter-checkbox">
@@ -2575,6 +2584,7 @@
     if (filters.hasIssuersOnly) count += 1;
     if (filters.addedLast30Days) count += 1;
     if (filters.updatedLast30Days) count += 1;
+    if (filters.ts11CompliantOnly) count += 1;
     return count;
   }
 
@@ -2644,6 +2654,7 @@
         filters.usedByRPsOnly = false;
         filters.addedLast30Days = false;
         filters.updatedLast30Days = false;
+        filters.ts11CompliantOnly = false;
         filters.ids = [];
         originalCredentialIds = [];
         const url = new URL(window.location.href);
@@ -2688,6 +2699,14 @@
     if (addedLast30Input) {
       addedLast30Input.addEventListener("change", (event) => {
         filters.addedLast30Days = event.target.checked;
+        render();
+      });
+    }
+
+    const ts11CompliantInput = root.querySelector("#fides-ts11-compliant");
+    if (ts11CompliantInput) {
+      ts11CompliantInput.addEventListener("change", (event) => {
+        filters.ts11CompliantOnly = event.target.checked;
         render();
       });
     }
