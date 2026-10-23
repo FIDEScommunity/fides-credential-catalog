@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-22T11:30:09.954Z",
+  "generatedAt": "2026-10-23T08:31:04.193Z",
   "byCredentialId": {
     "cred:iso:mdl": {
       "total": 12,
@@ -170,6 +170,11 @@
       "total": 4,
       "production": 0,
       "test": 4
+    },
+    "cred:webuild:ereceipt": {
+      "total": 1,
+      "production": 1,
+      "test": 0
     },
     "cred:webuild:ebw-oid": {
       "total": 2,

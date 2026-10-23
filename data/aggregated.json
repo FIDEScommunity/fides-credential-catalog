@@ -1,7 +1,7 @@
 {
   "schemaVersion": "2.0.0",
   "catalogType": "credential",
-  "lastUpdated": "2026-10-22T11:30:09.954Z",
+  "lastUpdated": "2026-10-23T08:31:04.193Z",
   "credentials": [
     {
       "id": "cred:uidai:aadhaar",
@@ -75,7 +75,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/UIDAI/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-22T11:30:09.954Z",
+      "fetchedAt": "2026-10-23T08:31:04.193Z",
       "updatedAt": "2026-05-26T00:00:00.000Z",
       "firstSeenAt": "2026-05-26T00:00:00.000Z",
       "attributes": [
@@ -457,7 +457,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eduwallet/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-22T11:30:09.954Z",
+      "fetchedAt": "2026-10-23T08:31:04.193Z",
       "updatedAt": "2026-07-09T13:05:00.000Z",
       "firstSeenAt": "2026-07-09T13:05:00.000Z",
       "attributes": [
@@ -599,7 +599,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eduwallet/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-22T11:30:09.954Z",
+      "fetchedAt": "2026-10-23T08:31:04.193Z",
       "updatedAt": "2026-07-09T13:05:00.000Z",
       "firstSeenAt": "2026-07-09T13:05:00.000Z",
       "attributes": [
@@ -714,7 +714,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eduwallet/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-22T11:30:09.954Z",
+      "fetchedAt": "2026-10-23T08:31:04.193Z",
       "updatedAt": "2026-07-09T13:05:00.000Z",
       "firstSeenAt": "2026-07-09T13:05:00.000Z",
       "attributes": []
@@ -781,7 +781,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eduwallet/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-22T11:30:09.954Z",
+      "fetchedAt": "2026-10-23T08:31:04.193Z",
       "updatedAt": "2026-07-09T13:05:00.000Z",
       "firstSeenAt": "2026-07-09T13:05:00.000Z",
       "attributes": []
@@ -846,7 +846,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eduwallet/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-22T11:30:09.954Z",
+      "fetchedAt": "2026-10-23T08:31:04.193Z",
       "updatedAt": "2026-07-09T13:05:00.000Z",
       "firstSeenAt": "2026-07-09T13:05:00.000Z",
       "attributes": []
@@ -909,7 +909,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eduwallet/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-22T11:30:09.954Z",
+      "fetchedAt": "2026-10-23T08:31:04.193Z",
       "updatedAt": "2026-07-09T13:05:00.000Z",
       "firstSeenAt": "2026-07-09T13:05:00.000Z",
       "attributes": []
@@ -973,7 +973,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eduwallet/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-22T11:30:09.954Z",
+      "fetchedAt": "2026-10-23T08:31:04.193Z",
       "updatedAt": "2026-07-09T13:05:00.000Z",
       "firstSeenAt": "2026-07-09T13:05:00.000Z",
       "attributes": []
@@ -1038,7 +1038,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/emvco/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-22T11:30:09.954Z",
+      "fetchedAt": "2026-10-23T08:31:04.193Z",
       "updatedAt": "2026-09-16T21:13:05.000Z",
       "firstSeenAt": "2026-09-16T21:13:05.000Z",
       "attributes": []
@@ -1106,7 +1106,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-22T11:30:09.954Z",
+      "fetchedAt": "2026-10-23T08:31:04.193Z",
       "updatedAt": "2026-10-13T06:37:06.000Z",
       "firstSeenAt": "2026-05-04T20:18:48.000Z",
       "attributes": [
@@ -1236,7 +1236,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-22T11:30:09.954Z",
+      "fetchedAt": "2026-10-23T08:31:04.193Z",
       "updatedAt": "2026-10-13T06:37:06.000Z",
       "firstSeenAt": "2026-05-04T20:18:48.000Z",
       "attributes": [
@@ -1398,7 +1398,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-22T11:30:09.954Z",
+      "fetchedAt": "2026-10-23T08:31:04.193Z",
       "updatedAt": "2026-10-13T06:37:06.000Z",
       "firstSeenAt": "2026-05-04T20:18:48.000Z",
       "attributes": [
@@ -1593,7 +1593,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-22T11:30:09.954Z",
+      "fetchedAt": "2026-10-23T08:31:04.193Z",
       "updatedAt": "2026-10-13T06:37:06.000Z",
       "firstSeenAt": "2026-05-04T20:18:48.000Z",
       "attributes": [
@@ -1753,7 +1753,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-22T11:30:09.954Z",
+      "fetchedAt": "2026-10-23T08:31:04.193Z",
       "updatedAt": "2026-10-13T06:37:06.000Z",
       "firstSeenAt": "2026-05-04T20:18:48.000Z",
       "attributes": [
@@ -1896,7 +1896,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-22T11:30:09.954Z",
+      "fetchedAt": "2026-10-23T08:31:04.193Z",
       "updatedAt": "2026-10-13T06:37:06.000Z",
       "firstSeenAt": "2026-05-04T20:18:48.000Z",
       "attributes": [
@@ -2108,7 +2108,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-22T11:30:09.954Z",
+      "fetchedAt": "2026-10-23T08:31:04.193Z",
       "updatedAt": "2026-10-13T06:37:06.000Z",
       "firstSeenAt": "2026-05-04T20:18:48.000Z",
       "attributes": [
@@ -2313,7 +2313,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-22T11:30:09.954Z",
+      "fetchedAt": "2026-10-23T08:31:04.193Z",
       "updatedAt": "2026-10-13T06:37:06.000Z",
       "firstSeenAt": "2026-05-04T20:18:48.000Z",
       "attributes": [
@@ -2443,7 +2443,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-22T11:30:09.954Z",
+      "fetchedAt": "2026-10-23T08:31:04.193Z",
       "updatedAt": "2026-10-13T06:37:06.000Z",
       "firstSeenAt": "2026-05-04T20:18:48.000Z",
       "attributes": [
@@ -2613,7 +2613,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-22T11:30:09.954Z",
+      "fetchedAt": "2026-10-23T08:31:04.193Z",
       "updatedAt": "2026-10-13T06:37:06.000Z",
       "firstSeenAt": "2026-05-04T20:18:48.000Z",
       "attributes": [
@@ -2990,7 +2990,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-22T11:30:09.954Z",
+      "fetchedAt": "2026-10-23T08:31:04.193Z",
       "updatedAt": "2026-10-13T06:37:06.000Z",
       "firstSeenAt": "2026-05-04T20:18:48.000Z",
       "attributes": [
@@ -3258,7 +3258,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-22T11:30:09.954Z",
+      "fetchedAt": "2026-10-23T08:31:04.193Z",
       "updatedAt": "2026-10-13T06:37:06.000Z",
       "firstSeenAt": "2026-05-04T20:18:48.000Z",
       "attributes": [
@@ -3543,7 +3543,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-22T11:30:09.954Z",
+      "fetchedAt": "2026-10-23T08:31:04.193Z",
       "updatedAt": "2026-10-13T06:37:06.000Z",
       "firstSeenAt": "2026-05-04T20:18:48.000Z",
       "attributes": [
@@ -3690,7 +3690,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-22T11:30:09.954Z",
+      "fetchedAt": "2026-10-23T08:31:04.193Z",
       "updatedAt": "2026-10-13T06:37:06.000Z",
       "firstSeenAt": "2026-05-04T20:18:48.000Z",
       "attributes": [
@@ -3916,7 +3916,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-22T11:30:09.954Z",
+      "fetchedAt": "2026-10-23T08:31:04.193Z",
       "updatedAt": "2026-10-13T06:37:06.000Z",
       "firstSeenAt": "2026-05-04T20:18:48.000Z",
       "attributes": [
@@ -4092,7 +4092,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-22T11:30:09.954Z",
+      "fetchedAt": "2026-10-23T08:31:04.193Z",
       "updatedAt": "2026-10-13T06:37:06.000Z",
       "firstSeenAt": "2026-05-04T20:18:48.000Z",
       "attributes": [
@@ -4223,7 +4223,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-22T11:30:09.954Z",
+      "fetchedAt": "2026-10-23T08:31:04.193Z",
       "updatedAt": "2026-05-17T00:00:00.000Z",
       "firstSeenAt": "2026-05-17T00:00:00.000Z",
       "attributes": [
@@ -4410,7 +4410,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-22T11:30:09.954Z",
+      "fetchedAt": "2026-10-23T08:31:04.193Z",
       "updatedAt": "2026-05-17T00:00:00.000Z",
       "firstSeenAt": "2026-05-17T00:00:00.000Z",
       "attributes": [
@@ -4590,7 +4590,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-22T11:30:09.954Z",
+      "fetchedAt": "2026-10-23T08:31:04.193Z",
       "updatedAt": "2026-05-17T00:00:00.000Z",
       "firstSeenAt": "2026-05-17T00:00:00.000Z",
       "attributes": [
@@ -4762,7 +4762,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-22T11:30:09.954Z",
+      "fetchedAt": "2026-10-23T08:31:04.193Z",
       "updatedAt": "2026-05-17T00:00:00.000Z",
       "firstSeenAt": "2026-05-17T00:00:00.000Z",
       "attributes": [
@@ -4911,7 +4911,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-22T11:30:09.954Z",
+      "fetchedAt": "2026-10-23T08:31:04.193Z",
       "updatedAt": "2026-05-17T00:00:00.000Z",
       "firstSeenAt": "2026-05-17T00:00:00.000Z",
       "attributes": [
@@ -5076,7 +5076,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-22T11:30:09.954Z",
+      "fetchedAt": "2026-10-23T08:31:04.193Z",
       "updatedAt": "2026-05-17T00:00:00.000Z",
       "firstSeenAt": "2026-05-17T00:00:00.000Z",
       "attributes": [
@@ -5278,7 +5278,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-22T11:30:09.954Z",
+      "fetchedAt": "2026-10-23T08:31:04.193Z",
       "updatedAt": "2026-05-17T00:00:00.000Z",
       "firstSeenAt": "2026-05-17T00:00:00.000Z",
       "attributes": [
@@ -5431,7 +5431,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-22T11:30:09.954Z",
+      "fetchedAt": "2026-10-23T08:31:04.193Z",
       "updatedAt": "2026-05-17T00:00:00.000Z",
       "firstSeenAt": "2026-05-17T00:00:00.000Z",
       "attributes": [
@@ -5571,7 +5571,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-22T11:30:09.954Z",
+      "fetchedAt": "2026-10-23T08:31:04.193Z",
       "updatedAt": "2026-05-17T00:00:00.000Z",
       "firstSeenAt": "2026-05-17T00:00:00.000Z",
       "attributes": [
@@ -5676,7 +5676,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-22T11:30:09.954Z",
+      "fetchedAt": "2026-10-23T08:31:04.193Z",
       "updatedAt": "2026-05-17T00:00:00.000Z",
       "firstSeenAt": "2026-05-17T00:00:00.000Z",
       "attributes": [
@@ -5759,7 +5759,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-22T11:30:09.954Z",
+      "fetchedAt": "2026-10-23T08:31:04.193Z",
       "updatedAt": "2026-05-17T00:00:00.000Z",
       "firstSeenAt": "2026-05-17T00:00:00.000Z",
       "attributes": [
@@ -6004,7 +6004,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-22T11:30:09.954Z",
+      "fetchedAt": "2026-10-23T08:31:04.193Z",
       "updatedAt": "2026-05-17T00:00:00.000Z",
       "firstSeenAt": "2026-05-17T00:00:00.000Z",
       "attributes": [
@@ -6384,7 +6384,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-22T11:30:09.954Z",
+      "fetchedAt": "2026-10-23T08:31:04.193Z",
       "updatedAt": "2026-05-17T00:00:00.000Z",
       "firstSeenAt": "2026-05-17T00:00:00.000Z",
       "attributes": [
@@ -6526,7 +6526,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-22T11:30:09.954Z",
+      "fetchedAt": "2026-10-23T08:31:04.193Z",
       "updatedAt": "2026-05-17T00:00:00.000Z",
       "firstSeenAt": "2026-05-17T00:00:00.000Z",
       "attributes": [
@@ -6870,7 +6870,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-22T11:30:09.954Z",
+      "fetchedAt": "2026-10-23T08:31:04.193Z",
       "updatedAt": "2026-05-17T00:00:00.000Z",
       "firstSeenAt": "2026-05-17T00:00:00.000Z",
       "attributes": [
@@ -7207,7 +7207,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-22T11:30:09.954Z",
+      "fetchedAt": "2026-10-23T08:31:04.193Z",
       "updatedAt": "2026-05-17T00:00:00.000Z",
       "firstSeenAt": "2026-05-17T00:00:00.000Z",
       "attributes": [
@@ -7541,7 +7541,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-22T11:30:09.954Z",
+      "fetchedAt": "2026-10-23T08:31:04.193Z",
       "updatedAt": "2026-05-17T00:00:00.000Z",
       "firstSeenAt": "2026-05-17T00:00:00.000Z",
       "attributes": [
@@ -7622,7 +7622,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-22T11:30:09.954Z",
+      "fetchedAt": "2026-10-23T08:31:04.193Z",
       "updatedAt": "2026-05-17T00:00:00.000Z",
       "firstSeenAt": "2026-05-17T00:00:00.000Z",
       "attributes": [
@@ -7716,7 +7716,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fido-alliance/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-22T11:30:09.954Z",
+      "fetchedAt": "2026-10-23T08:31:04.193Z",
       "updatedAt": "2026-10-02T15:39:30.000Z",
       "firstSeenAt": "2026-10-02T15:39:30.000Z",
       "attributes": [
@@ -7820,7 +7820,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fido-alliance/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-22T11:30:09.954Z",
+      "fetchedAt": "2026-10-23T08:31:04.193Z",
       "updatedAt": "2026-10-02T15:39:30.000Z",
       "firstSeenAt": "2026-10-02T15:39:30.000Z",
       "attributes": [
@@ -8036,7 +8036,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fido-alliance/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-22T11:30:09.954Z",
+      "fetchedAt": "2026-10-23T08:31:04.193Z",
       "updatedAt": "2026-10-02T15:39:30.000Z",
       "firstSeenAt": "2026-10-02T15:39:30.000Z",
       "attributes": [
@@ -8217,7 +8217,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fido-alliance/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-22T11:30:09.954Z",
+      "fetchedAt": "2026-10-23T08:31:04.193Z",
       "updatedAt": "2026-10-02T15:39:30.000Z",
       "firstSeenAt": "2026-10-02T15:39:30.000Z",
       "attributes": [
@@ -8565,7 +8565,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/gleif/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-22T11:30:09.954Z",
+      "fetchedAt": "2026-10-23T08:31:04.193Z",
       "updatedAt": "2026-04-21T06:00:00.000Z",
       "firstSeenAt": "2026-04-21T06:00:00.000Z",
       "attributes": [
@@ -8822,7 +8822,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/gleif/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-22T11:30:09.954Z",
+      "fetchedAt": "2026-10-23T08:31:04.193Z",
       "updatedAt": "2026-04-21T06:00:00.000Z",
       "firstSeenAt": "2026-04-21T06:00:00.000Z",
       "attributes": [
@@ -9106,7 +9106,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/gleif/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-22T11:30:09.954Z",
+      "fetchedAt": "2026-10-23T08:31:04.193Z",
       "updatedAt": "2026-04-21T06:00:00.000Z",
       "firstSeenAt": "2026-04-21T06:00:00.000Z",
       "attributes": [
@@ -9326,7 +9326,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/gleif/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-22T11:30:09.954Z",
+      "fetchedAt": "2026-10-23T08:31:04.193Z",
       "updatedAt": "2026-04-21T06:00:00.000Z",
       "firstSeenAt": "2026-04-21T06:00:00.000Z",
       "attributes": [
@@ -9567,7 +9567,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/gleif/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-22T11:30:09.954Z",
+      "fetchedAt": "2026-10-23T08:31:04.193Z",
       "updatedAt": "2026-04-21T06:00:00.000Z",
       "firstSeenAt": "2026-04-21T06:00:00.000Z",
       "attributes": [
@@ -9808,7 +9808,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/gleif/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-22T11:30:09.954Z",
+      "fetchedAt": "2026-10-23T08:31:04.193Z",
       "updatedAt": "2026-04-21T06:00:00.000Z",
       "firstSeenAt": "2026-04-21T06:00:00.000Z",
       "attributes": [
@@ -10001,7 +10001,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/google/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-22T11:30:09.954Z",
+      "fetchedAt": "2026-10-23T08:31:04.193Z",
       "updatedAt": "2026-09-16T15:31:28.000Z",
       "firstSeenAt": "2026-09-16T15:31:28.000Z",
       "attributes": []
@@ -10072,7 +10072,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/gx/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-22T11:30:09.954Z",
+      "fetchedAt": "2026-10-23T08:31:04.193Z",
       "updatedAt": "2026-04-09T12:00:00.000Z",
       "firstSeenAt": "2026-04-09T12:00:00.000Z",
       "attributes": [
@@ -10199,7 +10199,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/gx/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-22T11:30:09.954Z",
+      "fetchedAt": "2026-10-23T08:31:04.193Z",
       "updatedAt": "2026-04-09T12:00:00.000Z",
       "firstSeenAt": "2026-04-09T12:00:00.000Z",
       "attributes": [
@@ -10374,7 +10374,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/gx/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-22T11:30:09.954Z",
+      "fetchedAt": "2026-10-23T08:31:04.193Z",
       "updatedAt": "2026-04-09T12:00:00.000Z",
       "firstSeenAt": "2026-04-09T12:00:00.000Z",
       "attributes": [
@@ -10579,7 +10579,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/gx/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-22T11:30:09.954Z",
+      "fetchedAt": "2026-10-23T08:31:04.193Z",
       "updatedAt": "2026-04-09T12:00:00.000Z",
       "firstSeenAt": "2026-04-09T12:00:00.000Z",
       "attributes": [
@@ -10688,7 +10688,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/gx/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-22T11:30:09.954Z",
+      "fetchedAt": "2026-10-23T08:31:04.193Z",
       "updatedAt": "2026-04-09T12:00:00.000Z",
       "firstSeenAt": "2026-04-09T12:00:00.000Z",
       "attributes": [
@@ -10887,7 +10887,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/gx/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-22T11:30:09.954Z",
+      "fetchedAt": "2026-10-23T08:31:04.193Z",
       "updatedAt": "2026-04-09T12:00:00.000Z",
       "firstSeenAt": "2026-04-09T12:00:00.000Z",
       "attributes": [
@@ -11044,7 +11044,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/gx/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-22T11:30:09.954Z",
+      "fetchedAt": "2026-10-23T08:31:04.193Z",
       "updatedAt": "2026-04-09T12:00:00.000Z",
       "firstSeenAt": "2026-04-09T12:00:00.000Z",
       "attributes": [
@@ -11249,7 +11249,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/gx/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-22T11:30:09.954Z",
+      "fetchedAt": "2026-10-23T08:31:04.193Z",
       "updatedAt": "2026-04-09T12:00:00.000Z",
       "firstSeenAt": "2026-04-09T12:00:00.000Z",
       "attributes": [
@@ -11412,7 +11412,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/gx/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-22T11:30:09.954Z",
+      "fetchedAt": "2026-10-23T08:31:04.193Z",
       "updatedAt": "2026-04-09T12:00:00.000Z",
       "firstSeenAt": "2026-04-09T12:00:00.000Z",
       "attributes": [
@@ -11508,7 +11508,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/iata/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-22T11:30:09.954Z",
+      "fetchedAt": "2026-10-23T08:31:04.193Z",
       "updatedAt": "2026-04-22T11:30:00.000Z",
       "firstSeenAt": "2026-04-22T11:30:00.000Z",
       "attributes": [
@@ -11727,7 +11727,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/iata/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-22T11:30:09.954Z",
+      "fetchedAt": "2026-10-23T08:31:04.193Z",
       "updatedAt": "2026-04-22T11:30:00.000Z",
       "firstSeenAt": "2026-04-22T11:30:00.000Z",
       "attributes": [
@@ -11909,7 +11909,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/igrant/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-22T11:30:09.954Z",
+      "fetchedAt": "2026-10-23T08:31:04.193Z",
       "updatedAt": "2026-08-20T16:06:17.000Z",
       "firstSeenAt": "2026-08-20T16:06:17.000Z",
       "attributes": [
@@ -11993,7 +11993,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/igrant/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-22T11:30:09.954Z",
+      "fetchedAt": "2026-10-23T08:31:04.193Z",
       "updatedAt": "2026-08-20T16:06:17.000Z",
       "firstSeenAt": "2026-08-20T16:06:17.000Z",
       "attributes": [
@@ -12089,7 +12089,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/iso/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-22T11:30:09.954Z",
+      "fetchedAt": "2026-10-23T08:31:04.193Z",
       "updatedAt": "2026-04-22T11:00:00.000Z",
       "firstSeenAt": "2026-04-22T11:00:00.000Z",
       "attributes": [
@@ -12388,7 +12388,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/iso/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-22T11:30:09.954Z",
+      "fetchedAt": "2026-10-23T08:31:04.193Z",
       "updatedAt": "2026-04-22T11:00:00.000Z",
       "firstSeenAt": "2026-04-22T11:00:00.000Z",
       "attributes": [
@@ -12551,7 +12551,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/iso/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-22T11:30:09.954Z",
+      "fetchedAt": "2026-10-23T08:31:04.193Z",
       "updatedAt": "2026-04-22T11:00:00.000Z",
       "firstSeenAt": "2026-04-22T11:00:00.000Z",
       "attributes": [
@@ -12810,7 +12810,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/iso/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-22T11:30:09.954Z",
+      "fetchedAt": "2026-10-23T08:31:04.193Z",
       "updatedAt": "2026-04-22T11:00:00.000Z",
       "firstSeenAt": "2026-04-22T11:00:00.000Z",
       "attributes": [
@@ -12915,6 +12915,919 @@
       "schemaDescription": "ISO/IEC 18013-5 reservation mDoc attribute map. Schema derived from issuer metadata."
     },
     {
+      "id": "cred:privacybydesign:idcard",
+      "aliasIds": [
+        "cred:privacybydesign:idcard:idemix"
+      ],
+      "slug": "pbdf-idcard",
+      "displayName": "ID-card",
+      "shortDescription": "Personal details derived from an ICAO machine-readable ID card and issued as a Yivi Idemix credential by the Privacy by Design Foundation. Includes name, document data, nationality, age-over flags, EU citizenship, and an optional portrait.",
+      "authority": {
+        "name": "Privacy by Design Foundation",
+        "url": "https://privacybydesign.foundation"
+      },
+      "subjectType": "Person",
+      "vcFormat": "idemix",
+      "nativeIdentifier": "pbdf.pbdf.idcard",
+      "nativeIdentifierType": "other",
+      "schemaUrl": "https://raw.githubusercontent.com/FIDEScommunity/fides-credential-catalog/main/community-catalogs/privacybydesign/schemas/idcard-idemix.schema.json",
+      "schemaType": "JSON Schema",
+      "rulebookUrl": "https://portal.yivi.app/attribute-index/credentials/production/pbdf/idcard",
+      "version": "1",
+      "attestationTypeId": "cred:privacybydesign:idcard",
+      "formats": [
+        {
+          "formatIdentifier": "idemix",
+          "nativeIdentifier": "pbdf.pbdf.idcard",
+          "nativeIdentifierType": "other",
+          "schemaURIs": [
+            {
+              "formatIdentifier": "idemix",
+              "uri": "https://raw.githubusercontent.com/FIDEScommunity/fides-credential-catalog/main/community-catalogs/privacybydesign/schemas/idcard-idemix.schema.json",
+              "schemaType": "JSON Schema"
+            }
+          ],
+          "credentialId": "cred:privacybydesign:idcard:idemix"
+        }
+      ],
+      "bindingType": "key",
+      "tags": [
+        "age verification",
+        "idemix",
+        "identity",
+        "pbdf",
+        "yivi"
+      ],
+      "sectors": [
+        "digital",
+        "public_sector"
+      ],
+      "ecosystems": [
+        "yivi"
+      ],
+      "themes": [
+        "person_identity"
+      ],
+      "category": "identity",
+      "orgId": "org:privacybydesign",
+      "provider": {
+        "name": "Privacy by Design Foundation",
+        "website": "https://privacybydesign.foundation",
+        "logo": "https://www.google.com/s2/favicons?domain=yivi.app&sz=128"
+      },
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/privacybydesign/credential-catalog.json",
+      "source": "local",
+      "fetchedAt": "2026-10-23T08:31:04.193Z",
+      "updatedAt": "2026-10-23T08:30:45.000Z",
+      "firstSeenAt": "2026-10-23T08:30:45.000Z",
+      "attributes": [
+        {
+          "name": "photo",
+          "type": "string",
+          "required": false,
+          "description": "Portrait photo of the person",
+          "depth": 0
+        },
+        {
+          "name": "documentNumber",
+          "type": "string",
+          "required": true,
+          "description": "ID-card number",
+          "depth": 0
+        },
+        {
+          "name": "documentType",
+          "type": "string",
+          "required": true,
+          "description": "Type of document (e.g., I for ID-card)",
+          "depth": 0
+        },
+        {
+          "name": "firstName",
+          "type": "string",
+          "required": true,
+          "description": "Given name(s) from ID-card",
+          "depth": 0
+        },
+        {
+          "name": "lastName",
+          "type": "string",
+          "required": true,
+          "description": "Surname from ID-card",
+          "depth": 0
+        },
+        {
+          "name": "nationality",
+          "type": "string",
+          "required": true,
+          "description": "Nationality from ID-card",
+          "depth": 0
+        },
+        {
+          "name": "dateOfBirth",
+          "type": "string",
+          "required": true,
+          "description": "Birthdate from ID-card",
+          "depth": 0
+        },
+        {
+          "name": "yearOfBirth",
+          "type": "string",
+          "required": true,
+          "description": "Year of birth from ID-card",
+          "depth": 0
+        },
+        {
+          "name": "dateOfExpiry",
+          "type": "string",
+          "required": true,
+          "description": "Expiry date of the ID-card",
+          "depth": 0
+        },
+        {
+          "name": "gender",
+          "type": "string",
+          "required": true,
+          "description": "Gender as recorded in ID-card",
+          "depth": 0
+        },
+        {
+          "name": "country",
+          "type": "string",
+          "required": true,
+          "description": "Country that issued the document",
+          "depth": 0
+        },
+        {
+          "name": "over12",
+          "type": "string",
+          "required": true,
+          "description": "Whether you are over 12. Disclosed as yes or no.",
+          "depth": 0
+        },
+        {
+          "name": "over16",
+          "type": "string",
+          "required": true,
+          "description": "Whether you are over 16. Disclosed as yes or no.",
+          "depth": 0
+        },
+        {
+          "name": "over18",
+          "type": "string",
+          "required": true,
+          "description": "Whether you are over 18. Disclosed as yes or no.",
+          "depth": 0
+        },
+        {
+          "name": "over21",
+          "type": "string",
+          "required": true,
+          "description": "Whether you are over 21. Disclosed as yes or no.",
+          "depth": 0
+        },
+        {
+          "name": "over65",
+          "type": "string",
+          "required": true,
+          "description": "Whether you are over 65. Disclosed as yes or no.",
+          "depth": 0
+        },
+        {
+          "name": "isEuCitizen",
+          "type": "string",
+          "required": true,
+          "description": "Whether you are an EU citizen. Disclosed as yes or no.",
+          "depth": 0
+        },
+        {
+          "name": "activeAuthentication",
+          "type": "string",
+          "required": true,
+          "description": "Whether active authentication was performed. Disclosed as yes or no.",
+          "depth": 0
+        }
+      ],
+      "schemaDescription": "Derived JSON Schema for the production Yivi credential pbdf.pbdf.idcard. Attribute names, optionality, and descriptions follow the Privacy by Design Foundation scheme definition."
+    },
+    {
+      "id": "cred:privacybydesign:passport",
+      "aliasIds": [
+        "cred:privacybydesign:passport:idemix"
+      ],
+      "slug": "pbdf-passport",
+      "displayName": "Passport",
+      "shortDescription": "Personal details derived from an ICAO machine-readable passport and issued as a Yivi Idemix credential by the Privacy by Design Foundation. Includes name, document data, nationality, age-over flags, EU citizenship, and an optional portrait.",
+      "authority": {
+        "name": "Privacy by Design Foundation",
+        "url": "https://privacybydesign.foundation"
+      },
+      "subjectType": "Person",
+      "vcFormat": "idemix",
+      "nativeIdentifier": "pbdf.pbdf.passport",
+      "nativeIdentifierType": "other",
+      "schemaUrl": "https://raw.githubusercontent.com/FIDEScommunity/fides-credential-catalog/main/community-catalogs/privacybydesign/schemas/passport-idemix.schema.json",
+      "schemaType": "JSON Schema",
+      "rulebookUrl": "https://portal.yivi.app/attribute-index/credentials/production/pbdf/passport",
+      "version": "1",
+      "attestationTypeId": "cred:privacybydesign:passport",
+      "formats": [
+        {
+          "formatIdentifier": "idemix",
+          "nativeIdentifier": "pbdf.pbdf.passport",
+          "nativeIdentifierType": "other",
+          "schemaURIs": [
+            {
+              "formatIdentifier": "idemix",
+              "uri": "https://raw.githubusercontent.com/FIDEScommunity/fides-credential-catalog/main/community-catalogs/privacybydesign/schemas/passport-idemix.schema.json",
+              "schemaType": "JSON Schema"
+            }
+          ],
+          "credentialId": "cred:privacybydesign:passport:idemix"
+        }
+      ],
+      "bindingType": "key",
+      "tags": [
+        "age verification",
+        "idemix",
+        "identity",
+        "passport",
+        "pbdf",
+        "yivi"
+      ],
+      "sectors": [
+        "digital",
+        "public_sector"
+      ],
+      "ecosystems": [
+        "yivi"
+      ],
+      "themes": [
+        "person_identity"
+      ],
+      "category": "identity",
+      "orgId": "org:privacybydesign",
+      "provider": {
+        "name": "Privacy by Design Foundation",
+        "website": "https://privacybydesign.foundation",
+        "logo": "https://www.google.com/s2/favicons?domain=yivi.app&sz=128"
+      },
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/privacybydesign/credential-catalog.json",
+      "source": "local",
+      "fetchedAt": "2026-10-23T08:31:04.193Z",
+      "updatedAt": "2026-10-23T08:30:45.000Z",
+      "firstSeenAt": "2026-10-23T08:30:45.000Z",
+      "attributes": [
+        {
+          "name": "photo",
+          "type": "string",
+          "required": false,
+          "description": "Portrait photo of the person",
+          "depth": 0
+        },
+        {
+          "name": "documentNumber",
+          "type": "string",
+          "required": true,
+          "description": "Passport number",
+          "depth": 0
+        },
+        {
+          "name": "documentType",
+          "type": "string",
+          "required": true,
+          "description": "Type of document (e.g., P for Passport)",
+          "depth": 0
+        },
+        {
+          "name": "firstName",
+          "type": "string",
+          "required": true,
+          "description": "Given name(s) from passport",
+          "depth": 0
+        },
+        {
+          "name": "lastName",
+          "type": "string",
+          "required": true,
+          "description": "Surname from passport",
+          "depth": 0
+        },
+        {
+          "name": "nationality",
+          "type": "string",
+          "required": true,
+          "description": "Nationality stated in passport",
+          "depth": 0
+        },
+        {
+          "name": "dateOfBirth",
+          "type": "string",
+          "required": true,
+          "description": "Birthdate from passport",
+          "depth": 0
+        },
+        {
+          "name": "yearOfBirth",
+          "type": "string",
+          "required": true,
+          "description": "Year of birth from passport",
+          "depth": 0
+        },
+        {
+          "name": "dateOfExpiry",
+          "type": "string",
+          "required": true,
+          "description": "Expiry date of passport",
+          "depth": 0
+        },
+        {
+          "name": "gender",
+          "type": "string",
+          "required": true,
+          "description": "Gender as recorded in passport",
+          "depth": 0
+        },
+        {
+          "name": "country",
+          "type": "string",
+          "required": true,
+          "description": "Country that issued the document",
+          "depth": 0
+        },
+        {
+          "name": "over12",
+          "type": "string",
+          "required": true,
+          "description": "Whether you are over 12. Disclosed as yes or no.",
+          "depth": 0
+        },
+        {
+          "name": "over16",
+          "type": "string",
+          "required": true,
+          "description": "Whether you are over 16. Disclosed as yes or no.",
+          "depth": 0
+        },
+        {
+          "name": "over18",
+          "type": "string",
+          "required": true,
+          "description": "Whether you are over 18. Disclosed as yes or no.",
+          "depth": 0
+        },
+        {
+          "name": "over21",
+          "type": "string",
+          "required": true,
+          "description": "Whether you are over 21. Disclosed as yes or no.",
+          "depth": 0
+        },
+        {
+          "name": "over65",
+          "type": "string",
+          "required": true,
+          "description": "Whether you are over 65. Disclosed as yes or no.",
+          "depth": 0
+        },
+        {
+          "name": "isEuCitizen",
+          "type": "string",
+          "required": true,
+          "description": "Whether you are an EU citizen. Disclosed as yes or no.",
+          "depth": 0
+        },
+        {
+          "name": "activeAuthentication",
+          "type": "string",
+          "required": true,
+          "description": "Whether active authentication was performed. Disclosed as yes or no.",
+          "depth": 0
+        }
+      ],
+      "schemaDescription": "Derived JSON Schema for the production Yivi credential pbdf.pbdf.passport. Attribute names, optionality, and descriptions follow the Privacy by Design Foundation scheme definition."
+    },
+    {
+      "id": "cred:privacybydesign:driving-licence",
+      "aliasIds": [
+        "cred:privacybydesign:driving-licence:idemix"
+      ],
+      "slug": "pbdf-driving-licence",
+      "displayName": "Dutch Driving Licence",
+      "shortDescription": "Personal details and driving-licence categories derived from a Dutch driving licence and issued as a Yivi Idemix credential by the Privacy by Design Foundation. Includes name, document data, age-over flags, an optional portrait, and optional category issue and expiry dates.",
+      "authority": {
+        "name": "Privacy by Design Foundation",
+        "url": "https://privacybydesign.foundation"
+      },
+      "subjectType": "Person",
+      "vcFormat": "idemix",
+      "nativeIdentifier": "pbdf.pbdf.drivinglicence",
+      "nativeIdentifierType": "other",
+      "schemaUrl": "https://raw.githubusercontent.com/FIDEScommunity/fides-credential-catalog/main/community-catalogs/privacybydesign/schemas/driving-licence-idemix.schema.json",
+      "schemaType": "JSON Schema",
+      "rulebookUrl": "https://portal.yivi.app/attribute-index/credentials/production/pbdf/drivinglicence",
+      "version": "1",
+      "attestationTypeId": "cred:privacybydesign:driving-licence",
+      "formats": [
+        {
+          "formatIdentifier": "idemix",
+          "nativeIdentifier": "pbdf.pbdf.drivinglicence",
+          "nativeIdentifierType": "other",
+          "schemaURIs": [
+            {
+              "formatIdentifier": "idemix",
+              "uri": "https://raw.githubusercontent.com/FIDEScommunity/fides-credential-catalog/main/community-catalogs/privacybydesign/schemas/driving-licence-idemix.schema.json",
+              "schemaType": "JSON Schema"
+            }
+          ],
+          "credentialId": "cred:privacybydesign:driving-licence:idemix"
+        }
+      ],
+      "bindingType": "key",
+      "tags": [
+        "age verification",
+        "driving licence",
+        "idemix",
+        "identity",
+        "pbdf",
+        "yivi"
+      ],
+      "sectors": [
+        "digital",
+        "mobility",
+        "public_sector"
+      ],
+      "ecosystems": [
+        "yivi"
+      ],
+      "themes": [
+        "person_identity"
+      ],
+      "category": "identity",
+      "orgId": "org:privacybydesign",
+      "provider": {
+        "name": "Privacy by Design Foundation",
+        "website": "https://privacybydesign.foundation",
+        "logo": "https://www.google.com/s2/favicons?domain=yivi.app&sz=128"
+      },
+      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/privacybydesign/credential-catalog.json",
+      "source": "local",
+      "fetchedAt": "2026-10-23T08:31:04.193Z",
+      "updatedAt": "2026-10-23T08:30:45.000Z",
+      "firstSeenAt": "2026-10-23T08:30:45.000Z",
+      "attributes": [
+        {
+          "name": "documentNumber",
+          "type": "string",
+          "required": true,
+          "description": "Document number",
+          "depth": 0
+        },
+        {
+          "name": "firstName",
+          "type": "string",
+          "required": true,
+          "description": "Given name(s) from driving licence",
+          "depth": 0
+        },
+        {
+          "name": "lastName",
+          "type": "string",
+          "required": true,
+          "description": "Surname from driving licence",
+          "depth": 0
+        },
+        {
+          "name": "issuingAuthority",
+          "type": "string",
+          "required": true,
+          "description": "Municipality responsible for issuing this driving licence",
+          "depth": 0
+        },
+        {
+          "name": "issuingMemberState",
+          "type": "string",
+          "required": true,
+          "description": "European state issuing this driving licence",
+          "depth": 0
+        },
+        {
+          "name": "dateOfBirth",
+          "type": "string",
+          "required": true,
+          "description": "Birthdate from the driving licence",
+          "depth": 0
+        },
+        {
+          "name": "placeOfBirth",
+          "type": "string",
+          "required": true,
+          "description": "Place of birth from the driving licence",
+          "depth": 0
+        },
+        {
+          "name": "yearOfBirth",
+          "type": "string",
+          "required": true,
+          "description": "Year of birth from the driving licence",
+          "depth": 0
+        },
+        {
+          "name": "dateOfExpiry",
+          "type": "string",
+          "required": true,
+          "description": "Expiry date of the driving licence",
+          "depth": 0
+        },
+        {
+          "name": "over12",
+          "type": "string",
+          "required": true,
+          "description": "Whether you are over 12. Disclosed as yes or no.",
+          "depth": 0
+        },
+        {
+          "name": "over16",
+          "type": "string",
+          "required": true,
+          "description": "Whether you are over 16. Disclosed as yes or no.",
+          "depth": 0
+        },
+        {
+          "name": "over18",
+          "type": "string",
+          "required": true,
+          "description": "Whether you are over 18. Disclosed as yes or no.",
+          "depth": 0
+        },
+        {
+          "name": "over21",
+          "type": "string",
+          "required": true,
+          "description": "Whether you are over 21. Disclosed as yes or no.",
+          "depth": 0
+        },
+        {
+          "name": "over65",
+          "type": "string",
+          "required": true,
+          "description": "Whether you are over 65. Disclosed as yes or no.",
+          "depth": 0
+        },
+        {
+          "name": "activeAuthentication",
+          "type": "string",
+          "required": true,
+          "description": "Whether active authentication was performed. Disclosed as yes or no.",
+          "depth": 0
+        },
+        {
+          "name": "photo",
+          "type": "string",
+          "required": false,
+          "description": "Portrait photo of the person",
+          "depth": 0
+        },
+        {
+          "name": "categoryAM",
+          "type": "string",
+          "required": false,
+          "description": "Whether category AM is on the driving licence. Disclosed as yes or no.",
+          "depth": 0
+        },
+        {
+          "name": "categoryAMDateOfIssue",
+          "type": "string",
+          "required": false,
+          "description": "Date category AM was issued",
+          "depth": 0
+        },
+        {
+          "name": "categoryAMDateOfExpiry",
+          "type": "string",
+          "required": false,
+          "description": "Expiry date of category AM",
+          "depth": 0
+        },
+        {
+          "name": "categoryA1",
+          "type": "string",
+          "required": false,
+          "description": "Whether category A1 is on the driving licence. Disclosed as yes or no.",
+          "depth": 0
+        },
+        {
+          "name": "categoryA1DateOfIssue",
+          "type": "string",
+          "required": false,
+          "description": "Date category A1 was issued",
+          "depth": 0
+        },
+        {
+          "name": "categoryA1DateOfExpiry",
+          "type": "string",
+          "required": false,
+          "description": "Expiry date of category A1",
+          "depth": 0
+        },
+        {
+          "name": "categoryA2",
+          "type": "string",
+          "required": false,
+          "description": "Whether category A2 is on the driving licence. Disclosed as yes or no.",
+          "depth": 0
+        },
+        {
+          "name": "categoryA2DateOfIssue",
+          "type": "string",
+          "required": false,
+          "description": "Date category A2 was issued",
+          "depth": 0
+        },
+        {
+          "name": "categoryA2DateOfExpiry",
+          "type": "string",
+          "required": false,
+          "description": "Expiry date of category A2",
+          "depth": 0
+        },
+        {
+          "name": "categoryA",
+          "type": "string",
+          "required": false,
+          "description": "Whether category A is on the driving licence. Disclosed as yes or no.",
+          "depth": 0
+        },
+        {
+          "name": "categoryADateOfIssue",
+          "type": "string",
+          "required": false,
+          "description": "Date category A was issued",
+          "depth": 0
+        },
+        {
+          "name": "categoryADateOfExpiry",
+          "type": "string",
+          "required": false,
+          "description": "Expiry date of category A",
+          "depth": 0
+        },
+        {
+          "name": "categoryB1",
+          "type": "string",
+          "required": false,
+          "description": "Whether category B1 is on the driving licence. Disclosed as yes or no.",
+          "depth": 0
+        },
+        {
+          "name": "categoryB1DateOfIssue",
+          "type": "string",
+          "required": false,
+          "description": "Date category B1 was issued",
+          "depth": 0
+        },
+        {
+          "name": "categoryB1DateOfExpiry",
+          "type": "string",
+          "required": false,
+          "description": "Expiry date of category B1",
+          "depth": 0
+        },
+        {
+          "name": "categoryB",
+          "type": "string",
+          "required": false,
+          "description": "Whether category B is on the driving licence. Disclosed as yes or no.",
+          "depth": 0
+        },
+        {
+          "name": "categoryBDateOfIssue",
+          "type": "string",
+          "required": false,
+          "description": "Date category B was issued",
+          "depth": 0
+        },
+        {
+          "name": "categoryBDateOfExpiry",
+          "type": "string",
+          "required": false,
+          "description": "Expiry date of category B",
+          "depth": 0
+        },
+        {
+          "name": "categoryC1",
+          "type": "string",
+          "required": false,
+          "description": "Whether category C1 is on the driving licence. Disclosed as yes or no.",
+          "depth": 0
+        },
+        {
+          "name": "categoryC1DateOfIssue",
+          "type": "string",
+          "required": false,
+          "description": "Date category C1 was issued",
+          "depth": 0
+        },
+        {
+          "name": "categoryC1DateOfExpiry",
+          "type": "string",
+          "required": false,
+          "description": "Expiry date of category C1",
+          "depth": 0
+        },
+        {
+          "name": "categoryC",
+          "type": "string",
+          "required": false,
+          "description": "Whether category C is on the driving licence. Disclosed as yes or no.",
+          "depth": 0
+        },
+        {
+          "name": "categoryCDateOfIssue",
+          "type": "string",
+          "required": false,
+          "description": "Date category C was issued",
+          "depth": 0
+        },
+        {
+          "name": "categoryCDateOfExpiry",
+          "type": "string",
+          "required": false,
+          "description": "Expiry date of category C",
+          "depth": 0
+        },
+        {
+          "name": "categoryD1",
+          "type": "string",
+          "required": false,
+          "description": "Whether category D1 is on the driving licence. Disclosed as yes or no.",
+          "depth": 0
+        },
+        {
+          "name": "categoryD1DateOfIssue",
+          "type": "string",
+          "required": false,
+          "description": "Date category D1 was issued",
+          "depth": 0
+        },
+        {
+          "name": "categoryD1DateOfExpiry",
+          "type": "string",
+          "required": false,
+          "description": "Expiry date of category D1",
+          "depth": 0
+        },
+        {
+          "name": "categoryD",
+          "type": "string",
+          "required": false,
+          "description": "Whether category D is on the driving licence. Disclosed as yes or no.",
+          "depth": 0
+        },
+        {
+          "name": "categoryDDateOfIssue",
+          "type": "string",
+          "required": false,
+          "description": "Date category D was issued",
+          "depth": 0
+        },
+        {
+          "name": "categoryDDateOfExpiry",
+          "type": "string",
+          "required": false,
+          "description": "Expiry date of category D",
+          "depth": 0
+        },
+        {
+          "name": "categoryBE",
+          "type": "string",
+          "required": false,
+          "description": "Whether category BE is on the driving licence. Disclosed as yes or no.",
+          "depth": 0
+        },
+        {
+          "name": "categoryBEDateOfIssue",
+          "type": "string",
+          "required": false,
+          "description": "Date category BE was issued",
+          "depth": 0
+        },
+        {
+          "name": "categoryBEDateOfExpiry",
+          "type": "string",
+          "required": false,
+          "description": "Expiry date of category BE",
+          "depth": 0
+        },
+        {
+          "name": "categoryC1E",
+          "type": "string",
+          "required": false,
+          "description": "Whether category C1E is on the driving licence. Disclosed as yes or no.",
+          "depth": 0
+        },
+        {
+          "name": "categoryC1EDateOfIssue",
+          "type": "string",
+          "required": false,
+          "description": "Date category C1E was issued",
+          "depth": 0
+        },
+        {
+          "name": "categoryC1EDateOfExpiry",
+          "type": "string",
+          "required": false,
+          "description": "Expiry date of category C1E",
+          "depth": 0
+        },
+        {
+          "name": "categoryCE",
+          "type": "string",
+          "required": false,
+          "description": "Whether category CE is on the driving licence. Disclosed as yes or no.",
+          "depth": 0
+        },
+        {
+          "name": "categoryCEDateOfIssue",
+          "type": "string",
+          "required": false,
+          "description": "Date category CE was issued",
+          "depth": 0
+        },
+        {
+          "name": "categoryCEDateOfExpiry",
+          "type": "string",
+          "required": false,
+          "description": "Expiry date of category CE",
+          "depth": 0
+        },
+        {
+          "name": "categoryD1E",
+          "type": "string",
+          "required": false,
+          "description": "Whether category D1E is on the driving licence. Disclosed as yes or no.",
+          "depth": 0
+        },
+        {
+          "name": "categoryD1EDateOfIssue",
+          "type": "string",
+          "required": false,
+          "description": "Date category D1E was issued",
+          "depth": 0
+        },
+        {
+          "name": "categoryD1EDateOfExpiry",
+          "type": "string",
+          "required": false,
+          "description": "Expiry date of category D1E",
+          "depth": 0
+        },
+        {
+          "name": "categoryDE",
+          "type": "string",
+          "required": false,
+          "description": "Whether category DE is on the driving licence. Disclosed as yes or no.",
+          "depth": 0
+        },
+        {
+          "name": "categoryDEDateOfIssue",
+          "type": "string",
+          "required": false,
+          "description": "Date category DE was issued",
+          "depth": 0
+        },
+        {
+          "name": "categoryDEDateOfExpiry",
+          "type": "string",
+          "required": false,
+          "description": "Expiry date of category DE",
+          "depth": 0
+        },
+        {
+          "name": "categoryT",
+          "type": "string",
+          "required": false,
+          "description": "Whether category T is on the driving licence. Disclosed as yes or no.",
+          "depth": 0
+        },
+        {
+          "name": "categoryTDateOfIssue",
+          "type": "string",
+          "required": false,
+          "description": "Date category T was issued",
+          "depth": 0
+        },
+        {
+          "name": "categoryTDateOfExpiry",
+          "type": "string",
+          "required": false,
+          "description": "Expiry date of category T",
+          "depth": 0
+        }
+      ],
+      "schemaDescription": "Derived JSON Schema for the production Yivi credential pbdf.pbdf.drivinglicence. Attribute names, optionality, and descriptions follow the Privacy by Design Foundation scheme definition."
+    },
+    {
       "id": "cred:swiyu:betaid-sdjwt",
       "aliasIds": [
         "cred:swiyu:betaid-sdjwt:sd-jwt-vc"
@@ -12975,7 +13888,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/swiyu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-22T11:30:09.954Z",
+      "fetchedAt": "2026-10-23T08:31:04.193Z",
       "updatedAt": "2026-10-13T06:37:06.000Z",
       "firstSeenAt": "2026-05-04T20:18:48.000Z",
       "attributes": [
@@ -13194,7 +14107,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/uncefact/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-22T11:30:09.954Z",
+      "fetchedAt": "2026-10-23T08:31:04.193Z",
       "updatedAt": "2026-05-18T00:00:00.000Z",
       "firstSeenAt": "2026-05-18T00:00:00.000Z",
       "attributes": [
@@ -14234,7 +15147,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/uncefact/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-22T11:30:09.954Z",
+      "fetchedAt": "2026-10-23T08:31:04.193Z",
       "updatedAt": "2026-05-18T00:00:00.000Z",
       "firstSeenAt": "2026-05-18T00:00:00.000Z",
       "attributes": [
@@ -15021,7 +15934,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/uncefact/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-22T11:30:09.954Z",
+      "fetchedAt": "2026-10-23T08:31:04.193Z",
       "updatedAt": "2026-05-18T00:00:00.000Z",
       "firstSeenAt": "2026-05-18T00:00:00.000Z",
       "attributes": [
@@ -15878,7 +16791,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/uncefact/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-22T11:30:09.954Z",
+      "fetchedAt": "2026-10-23T08:31:04.193Z",
       "updatedAt": "2026-05-18T00:00:00.000Z",
       "firstSeenAt": "2026-05-18T00:00:00.000Z",
       "attributes": [
@@ -16822,7 +17735,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/uncefact/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-22T11:30:09.954Z",
+      "fetchedAt": "2026-10-23T08:31:04.193Z",
       "updatedAt": "2026-05-18T00:00:00.000Z",
       "firstSeenAt": "2026-05-18T00:00:00.000Z",
       "attributes": [
@@ -18034,7 +18947,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/uncefact/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-22T11:30:09.954Z",
+      "fetchedAt": "2026-10-23T08:31:04.193Z",
       "updatedAt": "2026-05-18T00:00:00.000Z",
       "firstSeenAt": "2026-05-18T00:00:00.000Z",
       "attributes": [
@@ -18226,7 +19139,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/uncefact/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-22T11:30:09.954Z",
+      "fetchedAt": "2026-10-23T08:31:04.193Z",
       "updatedAt": "2026-05-18T00:00:00.000Z",
       "firstSeenAt": "2026-05-18T00:00:00.000Z",
       "attributes": [
@@ -20348,7 +21261,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/uncefact/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-22T11:30:09.954Z",
+      "fetchedAt": "2026-10-23T08:31:04.193Z",
       "updatedAt": "2026-05-18T00:00:00.000Z",
       "firstSeenAt": "2026-05-18T00:00:00.000Z",
       "attributes": [
@@ -21734,7 +22647,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/uncefact/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-22T11:30:09.954Z",
+      "fetchedAt": "2026-10-23T08:31:04.193Z",
       "updatedAt": "2026-05-18T00:00:00.000Z",
       "firstSeenAt": "2026-05-18T00:00:00.000Z",
       "attributes": [
@@ -22591,7 +23504,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/uncefact/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-22T11:30:09.954Z",
+      "fetchedAt": "2026-10-23T08:31:04.193Z",
       "updatedAt": "2026-05-18T00:00:00.000Z",
       "firstSeenAt": "2026-05-18T00:00:00.000Z",
       "attributes": [
@@ -23513,7 +24426,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/uncefact/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-22T11:30:09.954Z",
+      "fetchedAt": "2026-10-23T08:31:04.193Z",
       "updatedAt": "2026-05-18T00:00:00.000Z",
       "firstSeenAt": "2026-05-18T00:00:00.000Z",
       "attributes": [
@@ -24419,7 +25332,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/uncefact/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-22T11:30:09.954Z",
+      "fetchedAt": "2026-10-23T08:31:04.193Z",
       "updatedAt": "2026-05-18T00:00:00.000Z",
       "firstSeenAt": "2026-05-18T00:00:00.000Z",
       "attributes": [
@@ -24960,7 +25873,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/uncefact/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-22T11:30:09.954Z",
+      "fetchedAt": "2026-10-23T08:31:04.193Z",
       "updatedAt": "2026-05-18T00:00:00.000Z",
       "firstSeenAt": "2026-05-18T00:00:00.000Z",
       "attributes": [
@@ -25492,7 +26405,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/verana/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-22T11:30:09.954Z",
+      "fetchedAt": "2026-10-23T08:31:04.193Z",
       "updatedAt": "2026-08-17T00:00:00.000Z",
       "firstSeenAt": "2026-08-17T00:00:00.000Z",
       "attributes": []
@@ -25559,7 +26472,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/verana/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-22T11:30:09.954Z",
+      "fetchedAt": "2026-10-23T08:31:04.193Z",
       "updatedAt": "2026-08-17T00:00:00.000Z",
       "firstSeenAt": "2026-08-17T00:00:00.000Z",
       "attributes": []
@@ -25626,7 +26539,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/verana/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-22T11:30:09.954Z",
+      "fetchedAt": "2026-10-23T08:31:04.193Z",
       "updatedAt": "2026-08-17T00:00:00.000Z",
       "firstSeenAt": "2026-08-17T00:00:00.000Z",
       "attributes": []
@@ -25690,7 +26603,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/verana/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-22T11:30:09.954Z",
+      "fetchedAt": "2026-10-23T08:31:04.193Z",
       "updatedAt": "2026-08-17T00:00:00.000Z",
       "firstSeenAt": "2026-08-17T00:00:00.000Z",
       "attributes": []
@@ -25755,7 +26668,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/verana/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-22T11:30:09.954Z",
+      "fetchedAt": "2026-10-23T08:31:04.193Z",
       "updatedAt": "2026-08-17T00:00:00.000Z",
       "firstSeenAt": "2026-08-17T00:00:00.000Z",
       "attributes": []
@@ -25820,7 +26733,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/verana/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-22T11:30:09.954Z",
+      "fetchedAt": "2026-10-23T08:31:04.193Z",
       "updatedAt": "2026-08-17T00:00:00.000Z",
       "firstSeenAt": "2026-08-17T00:00:00.000Z",
       "attributes": []
@@ -25885,7 +26798,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/verana/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-22T11:30:09.954Z",
+      "fetchedAt": "2026-10-23T08:31:04.193Z",
       "updatedAt": "2026-08-17T00:00:00.000Z",
       "firstSeenAt": "2026-08-17T00:00:00.000Z",
       "attributes": []
@@ -25950,7 +26863,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/verana/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-22T11:30:09.954Z",
+      "fetchedAt": "2026-10-23T08:31:04.193Z",
       "updatedAt": "2026-08-17T00:00:00.000Z",
       "firstSeenAt": "2026-08-17T00:00:00.000Z",
       "attributes": []
@@ -26016,7 +26929,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/verana/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-22T11:30:09.954Z",
+      "fetchedAt": "2026-10-23T08:31:04.193Z",
       "updatedAt": "2026-08-17T00:00:00.000Z",
       "firstSeenAt": "2026-08-17T00:00:00.000Z",
       "attributes": []
@@ -26082,7 +26995,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/verana/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-22T11:30:09.954Z",
+      "fetchedAt": "2026-10-23T08:31:04.193Z",
       "updatedAt": "2026-08-17T00:00:00.000Z",
       "firstSeenAt": "2026-08-17T00:00:00.000Z",
       "attributes": []
@@ -26148,7 +27061,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/verana/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-22T11:30:09.954Z",
+      "fetchedAt": "2026-10-23T08:31:04.193Z",
       "updatedAt": "2026-08-17T00:00:00.000Z",
       "firstSeenAt": "2026-08-17T00:00:00.000Z",
       "attributes": []
@@ -26213,7 +27126,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/verana/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-22T11:30:09.954Z",
+      "fetchedAt": "2026-10-23T08:31:04.193Z",
       "updatedAt": "2026-08-17T00:00:00.000Z",
       "firstSeenAt": "2026-08-17T00:00:00.000Z",
       "attributes": []
@@ -26283,7 +27196,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/webuild/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-22T11:30:09.954Z",
+      "fetchedAt": "2026-10-23T08:31:04.193Z",
       "updatedAt": "2026-09-14T08:50:00.000Z",
       "firstSeenAt": "2026-09-14T08:50:00.000Z",
       "attributes": [
@@ -26594,7 +27507,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/webuild/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-22T11:30:09.954Z",
+      "fetchedAt": "2026-10-23T08:31:04.193Z",
       "updatedAt": "2026-09-14T08:50:00.000Z",
       "firstSeenAt": "2026-09-14T08:50:00.000Z",
       "attributes": [
@@ -27085,7 +27998,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/webuild/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-22T11:30:09.954Z",
+      "fetchedAt": "2026-10-23T08:31:04.193Z",
       "updatedAt": "2026-09-14T08:50:00.000Z",
       "firstSeenAt": "2026-09-14T08:50:00.000Z",
       "attributes": [
@@ -27404,7 +28317,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/webuild/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-22T11:30:09.954Z",
+      "fetchedAt": "2026-10-23T08:31:04.193Z",
       "updatedAt": "2026-09-14T08:50:00.000Z",
       "firstSeenAt": "2026-09-14T08:50:00.000Z",
       "attributes": [
@@ -27805,7 +28718,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/webuild/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-22T11:30:09.954Z",
+      "fetchedAt": "2026-10-23T08:31:04.193Z",
       "updatedAt": "2026-09-14T08:50:00.000Z",
       "firstSeenAt": "2026-09-14T08:50:00.000Z",
       "attributes": [
@@ -28157,7 +29070,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/webuild/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-22T11:30:09.954Z",
+      "fetchedAt": "2026-10-23T08:31:04.193Z",
       "updatedAt": "2026-09-14T08:50:00.000Z",
       "firstSeenAt": "2026-09-14T08:50:00.000Z",
       "attributes": [
@@ -28587,7 +29500,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/webuild/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-22T11:30:09.954Z",
+      "fetchedAt": "2026-10-23T08:31:04.193Z",
       "updatedAt": "2026-09-14T08:50:00.000Z",
       "firstSeenAt": "2026-09-14T08:50:00.000Z",
       "attributes": [
@@ -28846,7 +29759,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/webuild/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-22T11:30:09.954Z",
+      "fetchedAt": "2026-10-23T08:31:04.193Z",
       "updatedAt": "2026-09-14T08:50:00.000Z",
       "firstSeenAt": "2026-09-14T08:50:00.000Z",
       "attributes": [
@@ -29058,7 +29971,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/webuild/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-22T11:30:09.954Z",
+      "fetchedAt": "2026-10-23T08:31:04.193Z",
       "updatedAt": "2026-09-14T08:50:00.000Z",
       "firstSeenAt": "2026-09-14T08:50:00.000Z",
       "attributes": [
@@ -29570,7 +30483,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/webuild/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-22T11:30:09.954Z",
+      "fetchedAt": "2026-10-23T08:31:04.193Z",
       "updatedAt": "2026-09-14T08:50:00.000Z",
       "firstSeenAt": "2026-09-14T08:50:00.000Z",
       "attributes": [
@@ -30355,7 +31268,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/webuild/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-22T11:30:09.954Z",
+      "fetchedAt": "2026-10-23T08:31:04.193Z",
       "updatedAt": "2026-09-14T08:50:00.000Z",
       "firstSeenAt": "2026-09-14T08:50:00.000Z",
       "attributes": [
@@ -30830,7 +31743,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/webuild/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-22T11:30:09.954Z",
+      "fetchedAt": "2026-10-23T08:31:04.193Z",
       "updatedAt": "2026-09-14T08:50:00.000Z",
       "firstSeenAt": "2026-09-14T08:50:00.000Z",
       "attributes": [
@@ -31264,7 +32177,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/webuild/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-22T11:30:09.954Z",
+      "fetchedAt": "2026-10-23T08:31:04.193Z",
       "updatedAt": "2026-09-14T08:50:00.000Z",
       "firstSeenAt": "2026-09-14T08:50:00.000Z",
       "attributes": [
@@ -31789,7 +32702,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/webuild/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-22T11:30:09.954Z",
+      "fetchedAt": "2026-10-23T08:31:04.193Z",
       "updatedAt": "2026-09-14T08:50:00.000Z",
       "firstSeenAt": "2026-09-14T08:50:00.000Z",
       "attributes": [
@@ -31951,7 +32864,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/webuild/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-22T11:30:09.954Z",
+      "fetchedAt": "2026-10-23T08:31:04.193Z",
       "updatedAt": "2026-09-14T08:50:00.000Z",
       "firstSeenAt": "2026-09-14T08:50:00.000Z",
       "attributes": [
@@ -32311,7 +33224,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/webuild/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-22T11:30:09.954Z",
+      "fetchedAt": "2026-10-23T08:31:04.193Z",
       "updatedAt": "2026-09-14T08:50:00.000Z",
       "firstSeenAt": "2026-09-14T08:50:00.000Z",
       "attributes": [
@@ -32772,7 +33685,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/webuild/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-22T11:30:09.954Z",
+      "fetchedAt": "2026-10-23T08:31:04.193Z",
       "updatedAt": "2026-09-14T08:50:00.000Z",
       "firstSeenAt": "2026-09-14T08:50:00.000Z",
       "attributes": [
@@ -33102,7 +34015,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/webuild/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-22T11:30:09.954Z",
+      "fetchedAt": "2026-10-23T08:31:04.193Z",
       "updatedAt": "2026-09-14T08:50:00.000Z",
       "firstSeenAt": "2026-09-14T08:50:00.000Z",
       "attributes": [
@@ -33511,7 +34424,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/webuild/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-22T11:30:09.954Z",
+      "fetchedAt": "2026-10-23T08:31:04.193Z",
       "updatedAt": "2026-09-14T08:50:00.000Z",
       "firstSeenAt": "2026-09-14T08:50:00.000Z",
       "attributes": [
@@ -33863,7 +34776,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/webuild/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-22T11:30:09.954Z",
+      "fetchedAt": "2026-10-23T08:31:04.193Z",
       "updatedAt": "2026-09-14T08:50:00.000Z",
       "firstSeenAt": "2026-09-14T08:50:00.000Z",
       "attributes": [
@@ -34289,7 +35202,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/webuild/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-10-22T11:30:09.954Z",
+      "fetchedAt": "2026-10-23T08:31:04.193Z",
       "updatedAt": "2026-09-14T08:50:00.000Z",
       "firstSeenAt": "2026-09-14T08:50:00.000Z",
       "attributes": [
@@ -36743,6 +37656,65 @@
       "updatedAt": "2026-09-14T08:50:00.000Z"
     },
     {
+      "id": "cred:privacybydesign:driving-licence",
+      "displayName": "Dutch Driving Licence",
+      "shortDescription": "Personal details and driving-licence categories derived from a Dutch driving licence and issued as a Yivi Idemix credential by the Privacy by Design Foundation. Includes name, document data, age-over flags, an optional portrait, and optional category issue and expiry dates.",
+      "orgId": "org:privacybydesign",
+      "provider": {
+        "name": "Privacy by Design Foundation",
+        "website": "https://privacybydesign.foundation",
+        "logo": "https://www.google.com/s2/favicons?domain=yivi.app&sz=128"
+      },
+      "authority": {
+        "name": "Privacy by Design Foundation",
+        "url": "https://privacybydesign.foundation"
+      },
+      "subjectType": "Person",
+      "version": "1",
+      "semverVersion": "1.0.0",
+      "formats": [
+        {
+          "formatIdentifier": "idemix",
+          "nativeIdentifier": "pbdf.pbdf.drivinglicence",
+          "nativeIdentifierType": "other",
+          "schemaURIs": [
+            {
+              "formatIdentifier": "idemix",
+              "uri": "https://raw.githubusercontent.com/FIDEScommunity/fides-credential-catalog/main/community-catalogs/privacybydesign/schemas/driving-licence-idemix.schema.json",
+              "schemaType": "JSON Schema"
+            }
+          ],
+          "credentialId": "cred:privacybydesign:driving-licence:idemix"
+        }
+      ],
+      "schemaURIs": [
+        {
+          "formatIdentifier": "idemix",
+          "uri": "https://raw.githubusercontent.com/FIDEScommunity/fides-credential-catalog/main/community-catalogs/privacybydesign/schemas/driving-licence-idemix.schema.json",
+          "schemaType": "JSON Schema"
+        }
+      ],
+      "rulebookUrl": "https://portal.yivi.app/attribute-index/credentials/production/pbdf/drivinglicence",
+      "trustedAuthorities": [],
+      "bindingType": "key",
+      "sectors": [
+        "digital",
+        "mobility",
+        "public_sector"
+      ],
+      "ecosystems": [
+        "yivi"
+      ],
+      "themes": [
+        "person_identity"
+      ],
+      "category": "identity",
+      "aliasIds": [
+        "cred:privacybydesign:driving-licence:idemix"
+      ],
+      "updatedAt": "2026-10-23T08:30:45.000Z"
+    },
+    {
       "id": "cred:webuild:ebw-oid",
       "displayName": "EBW Owner Identification Data (EBW-OID)",
       "shortDescription": "ds001 owner identification data for a European Business Wallet.",
@@ -38669,6 +39641,64 @@
       "updatedAt": "2026-09-14T08:50:00.000Z"
     },
     {
+      "id": "cred:privacybydesign:idcard",
+      "displayName": "ID-card",
+      "shortDescription": "Personal details derived from an ICAO machine-readable ID card and issued as a Yivi Idemix credential by the Privacy by Design Foundation. Includes name, document data, nationality, age-over flags, EU citizenship, and an optional portrait.",
+      "orgId": "org:privacybydesign",
+      "provider": {
+        "name": "Privacy by Design Foundation",
+        "website": "https://privacybydesign.foundation",
+        "logo": "https://www.google.com/s2/favicons?domain=yivi.app&sz=128"
+      },
+      "authority": {
+        "name": "Privacy by Design Foundation",
+        "url": "https://privacybydesign.foundation"
+      },
+      "subjectType": "Person",
+      "version": "1",
+      "semverVersion": "1.0.0",
+      "formats": [
+        {
+          "formatIdentifier": "idemix",
+          "nativeIdentifier": "pbdf.pbdf.idcard",
+          "nativeIdentifierType": "other",
+          "schemaURIs": [
+            {
+              "formatIdentifier": "idemix",
+              "uri": "https://raw.githubusercontent.com/FIDEScommunity/fides-credential-catalog/main/community-catalogs/privacybydesign/schemas/idcard-idemix.schema.json",
+              "schemaType": "JSON Schema"
+            }
+          ],
+          "credentialId": "cred:privacybydesign:idcard:idemix"
+        }
+      ],
+      "schemaURIs": [
+        {
+          "formatIdentifier": "idemix",
+          "uri": "https://raw.githubusercontent.com/FIDEScommunity/fides-credential-catalog/main/community-catalogs/privacybydesign/schemas/idcard-idemix.schema.json",
+          "schemaType": "JSON Schema"
+        }
+      ],
+      "rulebookUrl": "https://portal.yivi.app/attribute-index/credentials/production/pbdf/idcard",
+      "trustedAuthorities": [],
+      "bindingType": "key",
+      "sectors": [
+        "digital",
+        "public_sector"
+      ],
+      "ecosystems": [
+        "yivi"
+      ],
+      "themes": [
+        "person_identity"
+      ],
+      "category": "identity",
+      "aliasIds": [
+        "cred:privacybydesign:idcard:idemix"
+      ],
+      "updatedAt": "2026-10-23T08:30:45.000Z"
+    },
+    {
       "id": "cred:uncefact:insurance-certificate",
       "displayName": "Insurance Certificate",
       "shortDescription": "Trade document evidencing insurance coverage for goods or shipment.",
@@ -39739,6 +40769,64 @@
         "cred:uncefact:packing-list:vcdm-2-0"
       ],
       "updatedAt": "2026-05-18T00:00:00.000Z"
+    },
+    {
+      "id": "cred:privacybydesign:passport",
+      "displayName": "Passport",
+      "shortDescription": "Personal details derived from an ICAO machine-readable passport and issued as a Yivi Idemix credential by the Privacy by Design Foundation. Includes name, document data, nationality, age-over flags, EU citizenship, and an optional portrait.",
+      "orgId": "org:privacybydesign",
+      "provider": {
+        "name": "Privacy by Design Foundation",
+        "website": "https://privacybydesign.foundation",
+        "logo": "https://www.google.com/s2/favicons?domain=yivi.app&sz=128"
+      },
+      "authority": {
+        "name": "Privacy by Design Foundation",
+        "url": "https://privacybydesign.foundation"
+      },
+      "subjectType": "Person",
+      "version": "1",
+      "semverVersion": "1.0.0",
+      "formats": [
+        {
+          "formatIdentifier": "idemix",
+          "nativeIdentifier": "pbdf.pbdf.passport",
+          "nativeIdentifierType": "other",
+          "schemaURIs": [
+            {
+              "formatIdentifier": "idemix",
+              "uri": "https://raw.githubusercontent.com/FIDEScommunity/fides-credential-catalog/main/community-catalogs/privacybydesign/schemas/passport-idemix.schema.json",
+              "schemaType": "JSON Schema"
+            }
+          ],
+          "credentialId": "cred:privacybydesign:passport:idemix"
+        }
+      ],
+      "schemaURIs": [
+        {
+          "formatIdentifier": "idemix",
+          "uri": "https://raw.githubusercontent.com/FIDEScommunity/fides-credential-catalog/main/community-catalogs/privacybydesign/schemas/passport-idemix.schema.json",
+          "schemaType": "JSON Schema"
+        }
+      ],
+      "rulebookUrl": "https://portal.yivi.app/attribute-index/credentials/production/pbdf/passport",
+      "trustedAuthorities": [],
+      "bindingType": "key",
+      "sectors": [
+        "digital",
+        "public_sector"
+      ],
+      "ecosystems": [
+        "yivi"
+      ],
+      "themes": [
+        "person_identity"
+      ],
+      "category": "identity",
+      "aliasIds": [
+        "cred:privacybydesign:passport:idemix"
+      ],
+      "updatedAt": "2026-10-23T08:30:45.000Z"
     },
     {
       "id": "cred:igrantio:payment-account",
@@ -41835,34 +42923,35 @@
     }
   ],
   "stats": {
-    "totalCredentials": 118,
-    "totalAttestationTypes": 118,
+    "totalCredentials": 121,
+    "totalAttestationTypes": 121,
     "withTrustedAuthorities": 0,
     "byFormat": {
       "mdoc": 14,
       "sd_jwt_vc": 68,
       "acdc": 6,
       "vcdm_1_1": 9,
+      "idemix": 3,
       "vcdm_2_0": 20,
       "anoncreds": 1
     },
     "bySubjectType": {
-      "Person": 57,
+      "Person": 60,
       "Organization": 36,
       "Product": 4,
       "Dataset": 1,
       "Software": 3,
       "Document": 17
     },
-    "withSchemaAttributes": 99,
+    "withSchemaAttributes": 102,
     "bySector": {
-      "public_sector": 60,
+      "public_sector": 63,
       "education": 22,
-      "digital": 66,
+      "digital": 69,
       "finance": 45,
       "retail": 31,
       "healthcare": 18,
-      "mobility": 21,
+      "mobility": 22,
       "construction": 19,
       "energy": 23,
       "food": 21,
@@ -41878,12 +42967,13 @@
       "open_badges": 1,
       "vlei": 6,
       "gaia_x": 9,
+      "yivi": 3,
       "swiyu": 1,
       "uncefact": 13,
       "verana": 12
     },
     "byTheme": {
-      "person_identity": 33,
+      "person_identity": 36,
       "education": 12,
       "payments": 22,
       "compliance_reporting": 27,
@@ -41894,7 +42984,7 @@
       "digital_product_passports": 9
     },
     "byCategory": {
-      "identity": 23,
+      "identity": 26,
       "professional": 8,
       "finance": 15,
       "compliance": 12,
