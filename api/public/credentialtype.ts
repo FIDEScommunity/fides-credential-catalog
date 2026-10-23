@@ -47,6 +47,7 @@ const ECOSYSTEM_CODES = [
   "iso_mdl",
   "india_stack",
   "swiyu",
+  "yivi",
 ] as const;
 
 const THEME_CODES = [

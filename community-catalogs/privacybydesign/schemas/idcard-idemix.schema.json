@@ -1,0 +1,103 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://fides.community/schemas/credentials/pbdf-idcard-idemix.json",
+  "title": "Yivi ID-card Idemix Claims Schema",
+  "description": "Derived JSON Schema for the production Yivi credential pbdf.pbdf.idcard. Attribute names, optionality, and descriptions follow the Privacy by Design Foundation scheme definition.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "documentNumber",
+    "documentType",
+    "firstName",
+    "lastName",
+    "nationality",
+    "dateOfBirth",
+    "yearOfBirth",
+    "dateOfExpiry",
+    "gender",
+    "country",
+    "over12",
+    "over16",
+    "over18",
+    "over21",
+    "over65",
+    "isEuCitizen",
+    "activeAuthentication"
+  ],
+  "properties": {
+    "photo": {
+      "type": "string",
+      "description": "Portrait photo of the person",
+      "contentEncoding": "base64",
+      "contentMediaType": "image/jpeg"
+    },
+    "documentNumber": {
+      "type": "string",
+      "description": "ID-card number"
+    },
+    "documentType": {
+      "type": "string",
+      "description": "Type of document (e.g., I for ID-card)"
+    },
+    "firstName": {
+      "type": "string",
+      "description": "Given name(s) from ID-card"
+    },
+    "lastName": {
+      "type": "string",
+      "description": "Surname from ID-card"
+    },
+    "nationality": {
+      "type": "string",
+      "description": "Nationality from ID-card"
+    },
+    "dateOfBirth": {
+      "type": "string",
+      "description": "Birthdate from ID-card"
+    },
+    "yearOfBirth": {
+      "type": "string",
+      "description": "Year of birth from ID-card"
+    },
+    "dateOfExpiry": {
+      "type": "string",
+      "description": "Expiry date of the ID-card"
+    },
+    "gender": {
+      "type": "string",
+      "description": "Gender as recorded in ID-card"
+    },
+    "country": {
+      "type": "string",
+      "description": "Country that issued the document"
+    },
+    "over12": {
+      "type": "string",
+      "description": "Whether you are over 12. Disclosed as yes or no."
+    },
+    "over16": {
+      "type": "string",
+      "description": "Whether you are over 16. Disclosed as yes or no."
+    },
+    "over18": {
+      "type": "string",
+      "description": "Whether you are over 18. Disclosed as yes or no."
+    },
+    "over21": {
+      "type": "string",
+      "description": "Whether you are over 21. Disclosed as yes or no."
+    },
+    "over65": {
+      "type": "string",
+      "description": "Whether you are over 65. Disclosed as yes or no."
+    },
+    "isEuCitizen": {
+      "type": "string",
+      "description": "Whether you are an EU citizen. Disclosed as yes or no."
+    },
+    "activeAuthentication": {
+      "type": "string",
+      "description": "Whether active authentication was performed. Disclosed as yes or no."
+    }
+  }
+}
