@@ -46,7 +46,7 @@
       "public_sector", "finance", "trade", "supply_chain", "manufacturing", "energy", "agriculture",
       "food", "retail", "healthcare", "education", "construction", "mobility", "digital",
     ],
-    ecosystems: ["eudi_wallet", "uncefact", "gaia_x", "open_badges", "iso_mdl", "india_stack", "swiyu", "vlei", "verana"],
+    ecosystems: ["eudi_wallet", "uncefact", "gaia_x", "open_badges", "iso_mdl", "india_stack", "swiyu", "vlei", "verana", "yivi"],
     themes: [
       "person_identity", "organizational_identity", "payments", "compliance_reporting", "trade_documents",
       "education", "digital_product_passports", "dataspaces", "agentic_ai",
@@ -83,6 +83,7 @@
     iso_mdl: "ISO mDL",
     india_stack: "India Stack",
     swiyu: "Swiyu",
+    yivi: "Yivi",
     vlei: "vLEI",
     verana: "Verana",
   };

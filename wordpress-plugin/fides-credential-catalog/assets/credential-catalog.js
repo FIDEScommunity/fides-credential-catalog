@@ -496,6 +496,7 @@
     iso_mdl: 'ISO mDL',
     india_stack: 'India Stack',
     swiyu: 'Swiyu',
+    yivi: 'Yivi',
   };
 
   const ECOSYSTEM_CODES_ALPHABETIC = Object.keys(ECOSYSTEM_LABELS).sort((a, b) =>

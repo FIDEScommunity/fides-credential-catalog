@@ -42,7 +42,8 @@ export type CredentialEcosystemCode =
   | "open_badges"
   | "iso_mdl"
   | "india_stack"
-  | "swiyu";
+  | "swiyu"
+  | "yivi";
 
 /** Cross-sector use-case themes (optional on each credential). */
 export type CredentialThemeCode =

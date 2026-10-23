@@ -1,0 +1,285 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://fides.community/schemas/credentials/pbdf-driving-licence-idemix.json",
+  "title": "Yivi Dutch Driving Licence Idemix Claims Schema",
+  "description": "Derived JSON Schema for the production Yivi credential pbdf.pbdf.drivinglicence. Attribute names, optionality, and descriptions follow the Privacy by Design Foundation scheme definition.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "documentNumber",
+    "firstName",
+    "lastName",
+    "issuingAuthority",
+    "issuingMemberState",
+    "dateOfBirth",
+    "placeOfBirth",
+    "yearOfBirth",
+    "dateOfExpiry",
+    "over12",
+    "over16",
+    "over18",
+    "over21",
+    "over65",
+    "activeAuthentication"
+  ],
+  "properties": {
+    "documentNumber": {
+      "type": "string",
+      "description": "Document number"
+    },
+    "firstName": {
+      "type": "string",
+      "description": "Given name(s) from driving licence"
+    },
+    "lastName": {
+      "type": "string",
+      "description": "Surname from driving licence"
+    },
+    "issuingAuthority": {
+      "type": "string",
+      "description": "Municipality responsible for issuing this driving licence"
+    },
+    "issuingMemberState": {
+      "type": "string",
+      "description": "European state issuing this driving licence"
+    },
+    "dateOfBirth": {
+      "type": "string",
+      "description": "Birthdate from the driving licence"
+    },
+    "placeOfBirth": {
+      "type": "string",
+      "description": "Place of birth from the driving licence"
+    },
+    "yearOfBirth": {
+      "type": "string",
+      "description": "Year of birth from the driving licence"
+    },
+    "dateOfExpiry": {
+      "type": "string",
+      "description": "Expiry date of the driving licence"
+    },
+    "over12": {
+      "type": "string",
+      "description": "Whether you are over 12. Disclosed as yes or no."
+    },
+    "over16": {
+      "type": "string",
+      "description": "Whether you are over 16. Disclosed as yes or no."
+    },
+    "over18": {
+      "type": "string",
+      "description": "Whether you are over 18. Disclosed as yes or no."
+    },
+    "over21": {
+      "type": "string",
+      "description": "Whether you are over 21. Disclosed as yes or no."
+    },
+    "over65": {
+      "type": "string",
+      "description": "Whether you are over 65. Disclosed as yes or no."
+    },
+    "activeAuthentication": {
+      "type": "string",
+      "description": "Whether active authentication was performed. Disclosed as yes or no."
+    },
+    "photo": {
+      "type": "string",
+      "description": "Portrait photo of the person",
+      "contentEncoding": "base64",
+      "contentMediaType": "image/jpeg"
+    },
+    "categoryAM": {
+      "type": "string",
+      "description": "Whether category AM is on the driving licence. Disclosed as yes or no."
+    },
+    "categoryAMDateOfIssue": {
+      "type": "string",
+      "description": "Date category AM was issued"
+    },
+    "categoryAMDateOfExpiry": {
+      "type": "string",
+      "description": "Expiry date of category AM"
+    },
+    "categoryA1": {
+      "type": "string",
+      "description": "Whether category A1 is on the driving licence. Disclosed as yes or no."
+    },
+    "categoryA1DateOfIssue": {
+      "type": "string",
+      "description": "Date category A1 was issued"
+    },
+    "categoryA1DateOfExpiry": {
+      "type": "string",
+      "description": "Expiry date of category A1"
+    },
+    "categoryA2": {
+      "type": "string",
+      "description": "Whether category A2 is on the driving licence. Disclosed as yes or no."
+    },
+    "categoryA2DateOfIssue": {
+      "type": "string",
+      "description": "Date category A2 was issued"
+    },
+    "categoryA2DateOfExpiry": {
+      "type": "string",
+      "description": "Expiry date of category A2"
+    },
+    "categoryA": {
+      "type": "string",
+      "description": "Whether category A is on the driving licence. Disclosed as yes or no."
+    },
+    "categoryADateOfIssue": {
+      "type": "string",
+      "description": "Date category A was issued"
+    },
+    "categoryADateOfExpiry": {
+      "type": "string",
+      "description": "Expiry date of category A"
+    },
+    "categoryB1": {
+      "type": "string",
+      "description": "Whether category B1 is on the driving licence. Disclosed as yes or no."
+    },
+    "categoryB1DateOfIssue": {
+      "type": "string",
+      "description": "Date category B1 was issued"
+    },
+    "categoryB1DateOfExpiry": {
+      "type": "string",
+      "description": "Expiry date of category B1"
+    },
+    "categoryB": {
+      "type": "string",
+      "description": "Whether category B is on the driving licence. Disclosed as yes or no."
+    },
+    "categoryBDateOfIssue": {
+      "type": "string",
+      "description": "Date category B was issued"
+    },
+    "categoryBDateOfExpiry": {
+      "type": "string",
+      "description": "Expiry date of category B"
+    },
+    "categoryC1": {
+      "type": "string",
+      "description": "Whether category C1 is on the driving licence. Disclosed as yes or no."
+    },
+    "categoryC1DateOfIssue": {
+      "type": "string",
+      "description": "Date category C1 was issued"
+    },
+    "categoryC1DateOfExpiry": {
+      "type": "string",
+      "description": "Expiry date of category C1"
+    },
+    "categoryC": {
+      "type": "string",
+      "description": "Whether category C is on the driving licence. Disclosed as yes or no."
+    },
+    "categoryCDateOfIssue": {
+      "type": "string",
+      "description": "Date category C was issued"
+    },
+    "categoryCDateOfExpiry": {
+      "type": "string",
+      "description": "Expiry date of category C"
+    },
+    "categoryD1": {
+      "type": "string",
+      "description": "Whether category D1 is on the driving licence. Disclosed as yes or no."
+    },
+    "categoryD1DateOfIssue": {
+      "type": "string",
+      "description": "Date category D1 was issued"
+    },
+    "categoryD1DateOfExpiry": {
+      "type": "string",
+      "description": "Expiry date of category D1"
+    },
+    "categoryD": {
+      "type": "string",
+      "description": "Whether category D is on the driving licence. Disclosed as yes or no."
+    },
+    "categoryDDateOfIssue": {
+      "type": "string",
+      "description": "Date category D was issued"
+    },
+    "categoryDDateOfExpiry": {
+      "type": "string",
+      "description": "Expiry date of category D"
+    },
+    "categoryBE": {
+      "type": "string",
+      "description": "Whether category BE is on the driving licence. Disclosed as yes or no."
+    },
+    "categoryBEDateOfIssue": {
+      "type": "string",
+      "description": "Date category BE was issued"
+    },
+    "categoryBEDateOfExpiry": {
+      "type": "string",
+      "description": "Expiry date of category BE"
+    },
+    "categoryC1E": {
+      "type": "string",
+      "description": "Whether category C1E is on the driving licence. Disclosed as yes or no."
+    },
+    "categoryC1EDateOfIssue": {
+      "type": "string",
+      "description": "Date category C1E was issued"
+    },
+    "categoryC1EDateOfExpiry": {
+      "type": "string",
+      "description": "Expiry date of category C1E"
+    },
+    "categoryCE": {
+      "type": "string",
+      "description": "Whether category CE is on the driving licence. Disclosed as yes or no."
+    },
+    "categoryCEDateOfIssue": {
+      "type": "string",
+      "description": "Date category CE was issued"
+    },
+    "categoryCEDateOfExpiry": {
+      "type": "string",
+      "description": "Expiry date of category CE"
+    },
+    "categoryD1E": {
+      "type": "string",
+      "description": "Whether category D1E is on the driving licence. Disclosed as yes or no."
+    },
+    "categoryD1EDateOfIssue": {
+      "type": "string",
+      "description": "Date category D1E was issued"
+    },
+    "categoryD1EDateOfExpiry": {
+      "type": "string",
+      "description": "Expiry date of category D1E"
+    },
+    "categoryDE": {
+      "type": "string",
+      "description": "Whether category DE is on the driving licence. Disclosed as yes or no."
+    },
+    "categoryDEDateOfIssue": {
+      "type": "string",
+      "description": "Date category DE was issued"
+    },
+    "categoryDEDateOfExpiry": {
+      "type": "string",
+      "description": "Expiry date of category DE"
+    },
+    "categoryT": {
+      "type": "string",
+      "description": "Whether category T is on the driving licence. Disclosed as yes or no."
+    },
+    "categoryTDateOfIssue": {
+      "type": "string",
+      "description": "Date category T was issued"
+    },
+    "categoryTDateOfExpiry": {
+      "type": "string",
+      "description": "Expiry date of category T"
+    }
+  }
+}

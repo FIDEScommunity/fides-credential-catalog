@@ -290,6 +290,9 @@
     "swiyu": {
       "description": "Swiss national digital identity and trustworthy data exchange programme (Swiyu): credentials aligned with that ecosystem."
     },
+    "yivi": {
+      "description": "Yivi attribute-based identity ecosystem of the Privacy by Design Foundation. Credentials are Idemix attributes issued under the pbdf scheme."
+    },
     "credentialTheme": {
       "description": "Cross-sector use-case themes for discovering credential types (for example identity, payments, or trade documents). Themes complement sector and ecosystem tags and describe why a credential might be used, not only which industry it belongs to."
     },

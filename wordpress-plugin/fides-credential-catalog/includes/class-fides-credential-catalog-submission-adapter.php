@@ -85,6 +85,7 @@ if (! class_exists('Fides_Credential_Catalog_Submission_Adapter')) {
             'swiyu',
             'vlei',
             'verana',
+            'yivi',
         );
 
         /** @var string[] */
