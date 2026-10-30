@@ -38,6 +38,8 @@ const pidLinked = (catalog) => {
   const pid = catalog.credentials.find((c) => c.id === "cred:eu:pid");
   return (
     pid?.rulebookUrl === PID_RULEBOOK &&
+    pid?.attestationLoS === "iso_18045_high" &&
+    pid?.bindingType === "key" &&
     !catalog.credentials.find((c) => c.id === "cred:eu:pid-mdoc-deferred")
   );
 };
@@ -101,6 +103,11 @@ pass(
   !data.credentials.find((c) => c.id === "cred:eu:pid-mdoc-deferred")
 );
 pass("pid rulebook", pidLinked(data));
+pass(
+  "mdl rulebook",
+  data.credentials.find((c) => c.id === "cred:iso:mdl")?.rulebookUrl ===
+    "https://github.com/eu-digital-identity-wallet/eudi-doc-attestation-rulebooks-catalog/blob/main/rulebooks/mdl/mdl-rulebook.md"
+);
 
 pass("singles = 112", data.credentials.filter((c) => (c.formats || []).length <= 1).length === 112);
 

@@ -24,6 +24,7 @@ assert(
     "https://github.com/eu-digital-identity-wallet/eudi-doc-attestation-rulebooks-catalog/blob/main/rulebooks/pid/pid-rulebook.md",
   "WP PID missing EUDI rulebook"
 );
+assert(wpPid?.attestationLoS === "iso_18045_high" && wpPid?.bindingType === "key", "WP PID missing TS11 LoS or binding");
 assert(
   !wp.credentials.find((c) => c.id === "cred:eu:pid-mdoc-deferred"),
   "WP still lists deferred PID"
@@ -50,6 +51,14 @@ assert(
   pid.rulebookUrl ===
     "https://github.com/eu-digital-identity-wallet/eudi-doc-attestation-rulebooks-catalog/blob/main/rulebooks/pid/pid-rulebook.md",
   "PID missing EUDI rulebook"
+);
+assert(pid.attestationLoS === "iso_18045_high", `PID LoS ${pid.attestationLoS}`);
+assert(pid.bindingType === "key", `PID binding ${pid.bindingType}`);
+const mdl = data.credentials.find((c) => c.id === "cred:iso:mdl");
+assert(
+  mdl?.rulebookUrl ===
+    "https://github.com/eu-digital-identity-wallet/eudi-doc-attestation-rulebooks-catalog/blob/main/rulebooks/mdl/mdl-rulebook.md",
+  "mDL missing EUDI rulebook"
 );
 assert(
   !data.credentials.find((c) => c.id === "cred:eu:pid-mdoc-deferred"),
