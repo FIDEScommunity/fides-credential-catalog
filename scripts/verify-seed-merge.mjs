@@ -16,8 +16,8 @@ function assert(cond, msg) {
   if (!cond) throw new Error(msg);
 }
 
-assert(data.credentials.length === 120, `expected 120 credentials, got ${data.credentials.length}`);
-assert(data.attestationTypes.length === 120, `expected 120 attestationTypes`);
+assert(data.credentials.length === 121, `expected 121 credentials, got ${data.credentials.length}`);
+assert(data.attestationTypes.length === 121, `expected 121 attestationTypes`);
 const wpPid = wp.credentials.find((c) => c.id === "cred:eu:pid");
 assert(
   wpPid?.rulebookUrl ===

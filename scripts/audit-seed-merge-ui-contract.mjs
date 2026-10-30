@@ -42,7 +42,7 @@ const pidLinked = (catalog) => {
   );
 };
 
-pass("count 120", data.credentials.length === 120, String(data.credentials.length));
+pass("count 121", data.credentials.length === 121, String(data.credentials.length));
 pass("wp pid rulebook", pidLinked(wp));
 pass("local wp pid rulebook", !localWp || pidLinked(localWp), localWp ? "checked" : "skip");
 
@@ -102,7 +102,7 @@ pass(
 );
 pass("pid rulebook", pidLinked(data));
 
-pass("singles = 111", data.credentials.filter((c) => (c.formats || []).length <= 1).length === 111);
+pass("singles = 112", data.credentials.filter((c) => (c.formats || []).length <= 1).length === 112);
 
 if (fails.length) {
   console.error("\nFAILS:");

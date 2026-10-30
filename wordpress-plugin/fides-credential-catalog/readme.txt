@@ -2,13 +2,16 @@
 Contributors: fidescommunity
 Requires at least: 5.0
 Tested up to: 6.7
-Stable tag: 1.6.7
+Stable tag: 1.6.8
 License: Apache-2.0
 License URI: https://www.apache.org/licenses/LICENSE-2.0
 
 Interactive credential catalog with search, filters, and optional SSR/SEO via fides-community-tools-tiles.
 
 == Changelog ==
+
+= 1.6.8 =
+* Show linked use cases for merged credential types by resolving legacy format IDs, including on direct modal deep links.
 
 = 1.6.7 =
 * Add the Yivi ecosystem so Privacy by Design Foundation Idemix credentials can be filtered and submitted.

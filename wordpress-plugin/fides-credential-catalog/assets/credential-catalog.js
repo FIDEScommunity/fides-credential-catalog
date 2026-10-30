@@ -1868,6 +1868,7 @@
       if (!response.ok) return;
       const data = await response.json();
       const useCases = Array.isArray(data.useCases) ? data.useCases : [];
+      const aliasToCanonical = buildCredentialAliasResolutionMap();
       const allUseCaseIds = [];
       useCases.forEach(function(uc) {
         if (!uc || typeof uc.id !== "string") return;
@@ -1882,9 +1883,10 @@
           if (!link || typeof link !== "object") return;
           const credentialId = link.refId ? String(link.refId).trim() : "";
           if (!credentialId) return;
-          if (!useCasesByCredentialId[credentialId]) useCasesByCredentialId[credentialId] = [];
-          if (!useCasesByCredentialId[credentialId].some(function(e) { return e.id === entry.id; })) {
-            useCasesByCredentialId[credentialId].push(entry);
+          const canonicalId = aliasToCanonical.get(credentialId) || credentialId;
+          if (!useCasesByCredentialId[canonicalId]) useCasesByCredentialId[canonicalId] = [];
+          if (!useCasesByCredentialId[canonicalId].some(function(e) { return e.id === entry.id; })) {
+            useCasesByCredentialId[canonicalId].push(entry);
             linked = true;
           }
         });
@@ -3085,6 +3087,10 @@
 
         if (requiresReorder) renderCredentialGridOnly();
         else updateVisibleUsageData();
+
+        if (selectedCredential && document.getElementById("fides-modal-overlay")) {
+          openModal();
+        }
 
         try {
           ratingSummariesByIssuerId = Object.create(null);
