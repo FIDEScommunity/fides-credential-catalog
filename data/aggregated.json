@@ -2951,6 +2951,8 @@
           "credentialId": "cred:eu:pid-vc-sd-jwt:sd-jwt-vc"
         }
       ],
+      "attestationLoS": "iso_18045_high",
+      "bindingType": "key",
       "tags": [
         "eu",
         "eudi",
@@ -11770,6 +11772,7 @@
       "nativeIdentifierType": "docType",
       "schemaUrl": "https://raw.githubusercontent.com/FIDEScommunity/fides-credential-catalog/main/community-catalogs/iso/schemas/mdl-mdoc.schema.json",
       "schemaType": "JSON Schema",
+      "rulebookUrl": "https://github.com/eu-digital-identity-wallet/eudi-doc-attestation-rulebooks-catalog/blob/main/rulebooks/mdl/mdl-rulebook.md",
       "version": "1",
       "attestationTypeId": "cred:iso:mdl",
       "formats": [
@@ -40142,6 +40145,7 @@
           "schemaType": "JSON Schema"
         }
       ],
+      "rulebookUrl": "https://github.com/eu-digital-identity-wallet/eudi-doc-attestation-rulebooks-catalog/blob/main/rulebooks/mdl/mdl-rulebook.md",
       "trustedAuthorities": [],
       "bindingType": "key",
       "sectors": [
@@ -41280,6 +41284,8 @@
       ],
       "rulebookUrl": "https://github.com/eu-digital-identity-wallet/eudi-doc-attestation-rulebooks-catalog/blob/main/rulebooks/pid/pid-rulebook.md",
       "trustedAuthorities": [],
+      "attestationLoS": "iso_18045_high",
+      "bindingType": "key",
       "sectors": [
         "agriculture",
         "construction",
