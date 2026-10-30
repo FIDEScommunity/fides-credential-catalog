@@ -16,9 +16,18 @@ function assert(cond, msg) {
   if (!cond) throw new Error(msg);
 }
 
-assert(data.credentials.length === 142, `expected 142 credentials, got ${data.credentials.length}`);
-assert(data.attestationTypes.length === 142, `expected 142 attestationTypes`);
-assert(wp.credentials.length === 142, `WP aggregated out of sync`);
+assert(data.credentials.length === 120, `expected 120 credentials, got ${data.credentials.length}`);
+assert(data.attestationTypes.length === 120, `expected 120 attestationTypes`);
+const wpPid = wp.credentials.find((c) => c.id === "cred:eu:pid");
+assert(
+  wpPid?.rulebookUrl ===
+    "https://github.com/eu-digital-identity-wallet/eudi-doc-attestation-rulebooks-catalog/blob/main/rulebooks/pid/pid-rulebook.md",
+  "WP PID missing EUDI rulebook"
+);
+assert(
+  !wp.credentials.find((c) => c.id === "cred:eu:pid-mdoc-deferred"),
+  "WP still lists deferred PID"
+);
 
 for (const credential of data.credentials) {
   assert(credential.id.split(":").length === 3, `bad id ${credential.id}`);
@@ -37,6 +46,15 @@ assert(
 );
 assert((pid.aliasIds || []).includes("cred:eu:pid-mdoc:mdoc"), "PID missing mdoc alias");
 assert((pid.aliasIds || []).includes("cred:eu:pid-vc-sd-jwt:sd-jwt-vc"), "PID missing sd-jwt alias");
+assert(
+  pid.rulebookUrl ===
+    "https://github.com/eu-digital-identity-wallet/eudi-doc-attestation-rulebooks-catalog/blob/main/rulebooks/pid/pid-rulebook.md",
+  "PID missing EUDI rulebook"
+);
+assert(
+  !data.credentials.find((c) => c.id === "cred:eu:pid-mdoc-deferred"),
+  "deferred PID should be removed"
+);
 
 const edu = data.credentials.find((c) => c.id === "cred:eduwallet:academic-base");
 assert(edu, "missing eduwallet academic-base");

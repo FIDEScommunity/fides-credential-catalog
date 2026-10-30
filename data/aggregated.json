@@ -2920,6 +2920,7 @@
       "nativeIdentifierType": "vct",
       "schemaUrl": "https://raw.githubusercontent.com/FIDEScommunity/fides-credential-catalog/main/community-catalogs/eu/schemas/pid-vc-sd-jwt.schema.json",
       "schemaType": "JSON Schema",
+      "rulebookUrl": "https://github.com/eu-digital-identity-wallet/eudi-doc-attestation-rulebooks-catalog/blob/main/rulebooks/pid/pid-rulebook.md",
       "version": "1",
       "attestationTypeId": "cred:eu:pid",
       "formats": [
@@ -3184,274 +3185,6 @@
         }
       ],
       "schemaDescription": "EUDI Wallet credential: PID. Schema generated from issuer metadata."
-    },
-    {
-      "id": "cred:eu:pid-mdoc-deferred",
-      "aliasIds": [
-        "cred:eu:pid-mdoc-deferred-mdoc:mdoc"
-      ],
-      "slug": "eu-pid-mdoc-deferred",
-      "displayName": "PID (MSO Mdoc Deferred)",
-      "authority": {
-        "name": "European Commission",
-        "url": "https://digital-strategy.ec.europa.eu/en/policies/eudi-wallet"
-      },
-      "subjectType": "Person",
-      "vcFormat": "mdoc",
-      "nativeIdentifier": "eu.europa.ec.eudi.pid.1",
-      "nativeIdentifierType": "docType",
-      "schemaUrl": "https://raw.githubusercontent.com/FIDEScommunity/fides-credential-catalog/main/community-catalogs/eu/schemas/pid-mdoc-deferred-mdoc.schema.json",
-      "schemaType": "JSON Schema",
-      "version": "1",
-      "attestationTypeId": "cred:eu:pid-mdoc-deferred",
-      "formats": [
-        {
-          "formatIdentifier": "mdoc",
-          "nativeIdentifier": "eu.europa.ec.eudi.pid.1",
-          "nativeIdentifierType": "docType",
-          "schemaURIs": [
-            {
-              "formatIdentifier": "mdoc",
-              "uri": "https://raw.githubusercontent.com/FIDEScommunity/fides-credential-catalog/main/community-catalogs/eu/schemas/pid-mdoc-deferred-mdoc.schema.json",
-              "schemaType": "JSON Schema"
-            }
-          ],
-          "credentialId": "cred:eu:pid-mdoc-deferred-mdoc:mdoc"
-        }
-      ],
-      "tags": [
-        "eu",
-        "eudi",
-        "mdoc",
-        "pid-mdoc-deferred"
-      ],
-      "sectors": [
-        "agriculture",
-        "construction",
-        "digital",
-        "education",
-        "energy",
-        "finance",
-        "food",
-        "healthcare",
-        "manufacturing",
-        "mobility",
-        "public_sector",
-        "retail",
-        "supply_chain",
-        "trade"
-      ],
-      "ecosystems": [
-        "eudi_wallet"
-      ],
-      "themes": [
-        "education",
-        "payments",
-        "person_identity"
-      ],
-      "category": "identity",
-      "orgId": "org:eu",
-      "provider": {
-        "name": "European Commission",
-        "website": "https://commission.europa.eu/",
-        "logo": "https://www.google.com/s2/favicons?domain=ec.europa.eu&sz=128"
-      },
-      "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
-      "source": "local",
-      "fetchedAt": "2026-10-25T11:03:37.403Z",
-      "updatedAt": "2026-10-13T06:37:06.000Z",
-      "firstSeenAt": "2026-05-04T20:18:48.000Z",
-      "attributes": [
-        {
-          "name": "eu.europa.ec.eudi.pid.1",
-          "type": "object",
-          "required": false,
-          "depth": 0
-        },
-        {
-          "name": "eu.europa.ec.eudi.pid.1/family_name",
-          "type": "string",
-          "required": false,
-          "description": "Family Name(s)",
-          "depth": 1
-        },
-        {
-          "name": "eu.europa.ec.eudi.pid.1/given_name",
-          "type": "string",
-          "required": false,
-          "description": "Given Name(s)",
-          "depth": 1
-        },
-        {
-          "name": "eu.europa.ec.eudi.pid.1/birth_date",
-          "type": "string",
-          "required": false,
-          "description": "Birth Date",
-          "depth": 1
-        },
-        {
-          "name": "eu.europa.ec.eudi.pid.1/family_name_birth",
-          "type": "string",
-          "required": false,
-          "description": "Birth Family Name(s)",
-          "depth": 1
-        },
-        {
-          "name": "eu.europa.ec.eudi.pid.1/given_name_birth",
-          "type": "string",
-          "required": false,
-          "description": "Birth Given Name(s)",
-          "depth": 1
-        },
-        {
-          "name": "eu.europa.ec.eudi.pid.1/place_of_birth",
-          "type": "object",
-          "required": false,
-          "description": "Birth Place",
-          "depth": 1
-        },
-        {
-          "name": "eu.europa.ec.eudi.pid.1/resident_address",
-          "type": "string",
-          "required": false,
-          "description": "Resident Address",
-          "depth": 1
-        },
-        {
-          "name": "eu.europa.ec.eudi.pid.1/resident_country",
-          "type": "string",
-          "required": false,
-          "description": "Resident Country",
-          "depth": 1
-        },
-        {
-          "name": "eu.europa.ec.eudi.pid.1/resident_state",
-          "type": "string",
-          "required": false,
-          "description": "Resident State",
-          "depth": 1
-        },
-        {
-          "name": "eu.europa.ec.eudi.pid.1/resident_city",
-          "type": "string",
-          "required": false,
-          "description": "Resident City",
-          "depth": 1
-        },
-        {
-          "name": "eu.europa.ec.eudi.pid.1/resident_postal_code",
-          "type": "string",
-          "required": false,
-          "description": "Resident Postal Code",
-          "depth": 1
-        },
-        {
-          "name": "eu.europa.ec.eudi.pid.1/resident_street",
-          "type": "string",
-          "required": false,
-          "description": "Resident Street",
-          "depth": 1
-        },
-        {
-          "name": "eu.europa.ec.eudi.pid.1/resident_house_number",
-          "type": "string",
-          "required": false,
-          "description": "Resident House Number",
-          "depth": 1
-        },
-        {
-          "name": "eu.europa.ec.eudi.pid.1/personal_administrative_number",
-          "type": "string",
-          "required": false,
-          "description": "Personal Administrative Number",
-          "depth": 1
-        },
-        {
-          "name": "eu.europa.ec.eudi.pid.1/sex",
-          "type": "integer",
-          "required": false,
-          "description": "Sex",
-          "depth": 1
-        },
-        {
-          "name": "eu.europa.ec.eudi.pid.1/email_address",
-          "type": "string",
-          "required": false,
-          "description": "Email Address",
-          "depth": 1
-        },
-        {
-          "name": "eu.europa.ec.eudi.pid.1/mobile_phone_number",
-          "type": "string",
-          "required": false,
-          "description": "Mobile Phone Number",
-          "depth": 1
-        },
-        {
-          "name": "eu.europa.ec.eudi.pid.1/nationality",
-          "type": "object",
-          "required": false,
-          "description": "Nationality",
-          "depth": 1
-        },
-        {
-          "name": "eu.europa.ec.eudi.pid.1/issuance_date",
-          "type": "string",
-          "required": false,
-          "description": "Issuance Date",
-          "depth": 1
-        },
-        {
-          "name": "eu.europa.ec.eudi.pid.1/expiry_date",
-          "type": "string",
-          "required": false,
-          "description": "Expiry Date",
-          "depth": 1
-        },
-        {
-          "name": "eu.europa.ec.eudi.pid.1/issuing_authority",
-          "type": "string",
-          "required": false,
-          "description": "Issuance Authority",
-          "depth": 1
-        },
-        {
-          "name": "eu.europa.ec.eudi.pid.1/document_number",
-          "type": "string",
-          "required": false,
-          "description": "Document Number",
-          "depth": 1
-        },
-        {
-          "name": "eu.europa.ec.eudi.pid.1/trust_anchor",
-          "type": "string",
-          "required": false,
-          "description": "Trust Anchor",
-          "depth": 1
-        },
-        {
-          "name": "eu.europa.ec.eudi.pid.1/issuing_country",
-          "type": "string",
-          "required": false,
-          "description": "Issuing Country",
-          "depth": 1
-        },
-        {
-          "name": "eu.europa.ec.eudi.pid.1/portrait",
-          "type": "string",
-          "required": false,
-          "description": "Portrait Image",
-          "depth": 1
-        },
-        {
-          "name": "eu.europa.ec.eudi.pid.1/issuing_jurisdiction",
-          "type": "string",
-          "required": false,
-          "description": "Issuing Jurisdiction",
-          "depth": 1
-        }
-      ],
-      "schemaDescription": "EUDI Wallet credential: PID (MSO Mdoc Deferred). Schema generated from issuer metadata."
     },
     {
       "id": "cred:eu:por",
@@ -41219,6 +40952,7 @@
           "schemaType": "JSON Schema"
         }
       ],
+      "rulebookUrl": "https://github.com/eu-digital-identity-wallet/eudi-doc-attestation-rulebooks-catalog/blob/main/rulebooks/pid/pid-rulebook.md",
       "trustedAuthorities": [],
       "sectors": [
         "agriculture",
@@ -41248,75 +40982,6 @@
       "aliasIds": [
         "cred:eu:pid-mdoc:mdoc",
         "cred:eu:pid-vc-sd-jwt:sd-jwt-vc"
-      ],
-      "updatedAt": "2026-10-13T06:37:06.000Z"
-    },
-    {
-      "id": "cred:eu:pid-mdoc-deferred",
-      "displayName": "PID (MSO Mdoc Deferred)",
-      "orgId": "org:eu",
-      "provider": {
-        "name": "European Commission",
-        "website": "https://commission.europa.eu/",
-        "logo": "https://www.google.com/s2/favicons?domain=ec.europa.eu&sz=128"
-      },
-      "authority": {
-        "name": "European Commission",
-        "url": "https://digital-strategy.ec.europa.eu/en/policies/eudi-wallet"
-      },
-      "subjectType": "Person",
-      "version": "1",
-      "semverVersion": "1.0.0",
-      "formats": [
-        {
-          "formatIdentifier": "mdoc",
-          "nativeIdentifier": "eu.europa.ec.eudi.pid.1",
-          "nativeIdentifierType": "docType",
-          "schemaURIs": [
-            {
-              "formatIdentifier": "mdoc",
-              "uri": "https://raw.githubusercontent.com/FIDEScommunity/fides-credential-catalog/main/community-catalogs/eu/schemas/pid-mdoc-deferred-mdoc.schema.json",
-              "schemaType": "JSON Schema"
-            }
-          ],
-          "credentialId": "cred:eu:pid-mdoc-deferred-mdoc:mdoc"
-        }
-      ],
-      "schemaURIs": [
-        {
-          "formatIdentifier": "mdoc",
-          "uri": "https://raw.githubusercontent.com/FIDEScommunity/fides-credential-catalog/main/community-catalogs/eu/schemas/pid-mdoc-deferred-mdoc.schema.json",
-          "schemaType": "JSON Schema"
-        }
-      ],
-      "trustedAuthorities": [],
-      "sectors": [
-        "agriculture",
-        "construction",
-        "digital",
-        "education",
-        "energy",
-        "finance",
-        "food",
-        "healthcare",
-        "manufacturing",
-        "mobility",
-        "public_sector",
-        "retail",
-        "supply_chain",
-        "trade"
-      ],
-      "ecosystems": [
-        "eudi_wallet"
-      ],
-      "themes": [
-        "education",
-        "payments",
-        "person_identity"
-      ],
-      "category": "identity",
-      "aliasIds": [
-        "cred:eu:pid-mdoc-deferred-mdoc:mdoc"
       ],
       "updatedAt": "2026-10-13T06:37:06.000Z"
     },
@@ -42923,11 +42588,11 @@
     }
   ],
   "stats": {
-    "totalCredentials": 121,
-    "totalAttestationTypes": 121,
+    "totalCredentials": 120,
+    "totalAttestationTypes": 120,
     "withTrustedAuthorities": 0,
     "byFormat": {
-      "mdoc": 14,
+      "mdoc": 13,
       "sd_jwt_vc": 68,
       "acdc": 6,
       "vcdm_1_1": 9,
@@ -42936,34 +42601,34 @@
       "anoncreds": 1
     },
     "bySubjectType": {
-      "Person": 60,
+      "Person": 59,
       "Organization": 36,
       "Product": 4,
       "Dataset": 1,
       "Software": 3,
       "Document": 17
     },
-    "withSchemaAttributes": 102,
+    "withSchemaAttributes": 101,
     "bySector": {
-      "public_sector": 63,
-      "education": 22,
-      "digital": 69,
-      "finance": 45,
-      "retail": 31,
-      "healthcare": 18,
-      "mobility": 22,
-      "construction": 19,
-      "energy": 23,
-      "food": 21,
-      "agriculture": 22,
-      "manufacturing": 27,
-      "supply_chain": 41,
-      "trade": 52
+      "public_sector": 62,
+      "education": 21,
+      "digital": 68,
+      "finance": 44,
+      "retail": 30,
+      "healthcare": 17,
+      "mobility": 21,
+      "construction": 18,
+      "energy": 22,
+      "food": 20,
+      "agriculture": 21,
+      "manufacturing": 26,
+      "supply_chain": 40,
+      "trade": 51
     },
     "byEcosystem": {
       "india_stack": 1,
       "iso_mdl": 6,
-      "eudi_wallet": 83,
+      "eudi_wallet": 82,
       "open_badges": 1,
       "vlei": 6,
       "gaia_x": 9,
@@ -42973,9 +42638,9 @@
       "verana": 12
     },
     "byTheme": {
-      "person_identity": 36,
-      "education": 12,
-      "payments": 22,
+      "person_identity": 35,
+      "education": 11,
+      "payments": 21,
       "compliance_reporting": 27,
       "agentic_ai": 7,
       "organizational_identity": 36,
@@ -42984,7 +42649,7 @@
       "digital_product_passports": 9
     },
     "byCategory": {
-      "identity": 26,
+      "identity": 25,
       "professional": 8,
       "finance": 15,
       "compliance": 12,

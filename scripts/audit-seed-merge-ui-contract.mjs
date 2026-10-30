@@ -32,9 +32,19 @@ const pass = (name, cond, detail = "") => {
   else console.log("OK ", name, detail);
 };
 
-pass("count 142", data.credentials.length === 142, String(data.credentials.length));
-pass("wp sync", wp.credentials.length === 142);
-pass("local wp sync", !localWp || localWp.credentials.length === 142, localWp ? String(localWp.credentials.length) : "skip");
+const PID_RULEBOOK =
+  "https://github.com/eu-digital-identity-wallet/eudi-doc-attestation-rulebooks-catalog/blob/main/rulebooks/pid/pid-rulebook.md";
+const pidLinked = (catalog) => {
+  const pid = catalog.credentials.find((c) => c.id === "cred:eu:pid");
+  return (
+    pid?.rulebookUrl === PID_RULEBOOK &&
+    !catalog.credentials.find((c) => c.id === "cred:eu:pid-mdoc-deferred")
+  );
+};
+
+pass("count 120", data.credentials.length === 120, String(data.credentials.length));
+pass("wp pid rulebook", pidLinked(wp));
+pass("local wp pid rulebook", !localWp || pidLinked(localWp), localWp ? "checked" : "skip");
 
 const multi = data.credentials.filter((c) => (c.formats || []).length > 1);
 pass("9 multi-format", multi.length === 9, String(multi.length));
@@ -83,11 +93,16 @@ for (const c of data.credentials) {
   }
 }
 
-for (const id of ["cred:eu:pid-mdoc-deferred", "cred:webuild:pid", "cred:ewc:pid", "cred:fides:pid"]) {
+for (const id of ["cred:webuild:pid", "cred:ewc:pid", "cred:fides:pid"]) {
   pass(`kept separate ${id}`, !!data.credentials.find((c) => c.id === id));
 }
+pass(
+  "deferred pid removed",
+  !data.credentials.find((c) => c.id === "cred:eu:pid-mdoc-deferred")
+);
+pass("pid rulebook", pidLinked(data));
 
-pass("singles = 133", data.credentials.filter((c) => (c.formats || []).length <= 1).length === 133);
+pass("singles = 111", data.credentials.filter((c) => (c.formats || []).length <= 1).length === 111);
 
 if (fails.length) {
   console.error("\nFAILS:");
