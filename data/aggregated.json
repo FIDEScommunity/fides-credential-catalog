@@ -11790,6 +11790,7 @@
           "credentialId": "cred:iso:mdl-mdoc:mdoc"
         }
       ],
+      "attestationLoS": "iso_18045_high",
       "bindingType": "key",
       "trustedAuthorities": [
         {
@@ -40147,6 +40148,7 @@
       ],
       "rulebookUrl": "https://github.com/eu-digital-identity-wallet/eudi-doc-attestation-rulebooks-catalog/blob/main/rulebooks/mdl/mdl-rulebook.md",
       "trustedAuthorities": [],
+      "attestationLoS": "iso_18045_high",
       "bindingType": "key",
       "sectors": [
         "mobility",
