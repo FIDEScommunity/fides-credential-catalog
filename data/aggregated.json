@@ -1,7 +1,7 @@
 {
   "schemaVersion": "2.0.0",
   "catalogType": "credential",
-  "lastUpdated": "2026-11-02T15:18:17.493Z",
+  "lastUpdated": "2026-11-03T13:55:13.184Z",
   "credentials": [
     {
       "id": "cred:uidai:aadhaar",
@@ -75,7 +75,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/UIDAI/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-11-02T15:18:17.493Z",
+      "fetchedAt": "2026-11-03T13:55:13.184Z",
       "updatedAt": "2026-05-26T00:00:00.000Z",
       "firstSeenAt": "2026-05-26T00:00:00.000Z",
       "attributes": [
@@ -457,7 +457,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eduwallet/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-11-02T15:18:17.493Z",
+      "fetchedAt": "2026-11-03T13:55:13.184Z",
       "updatedAt": "2026-07-09T13:05:00.000Z",
       "firstSeenAt": "2026-07-09T13:05:00.000Z",
       "attributes": [
@@ -599,7 +599,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eduwallet/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-11-02T15:18:17.493Z",
+      "fetchedAt": "2026-11-03T13:55:13.184Z",
       "updatedAt": "2026-07-09T13:05:00.000Z",
       "firstSeenAt": "2026-07-09T13:05:00.000Z",
       "attributes": [
@@ -714,7 +714,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eduwallet/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-11-02T15:18:17.493Z",
+      "fetchedAt": "2026-11-03T13:55:13.184Z",
       "updatedAt": "2026-07-09T13:05:00.000Z",
       "firstSeenAt": "2026-07-09T13:05:00.000Z",
       "attributes": []
@@ -781,7 +781,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eduwallet/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-11-02T15:18:17.493Z",
+      "fetchedAt": "2026-11-03T13:55:13.184Z",
       "updatedAt": "2026-07-09T13:05:00.000Z",
       "firstSeenAt": "2026-07-09T13:05:00.000Z",
       "attributes": []
@@ -846,7 +846,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eduwallet/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-11-02T15:18:17.493Z",
+      "fetchedAt": "2026-11-03T13:55:13.184Z",
       "updatedAt": "2026-07-09T13:05:00.000Z",
       "firstSeenAt": "2026-07-09T13:05:00.000Z",
       "attributes": []
@@ -909,7 +909,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eduwallet/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-11-02T15:18:17.493Z",
+      "fetchedAt": "2026-11-03T13:55:13.184Z",
       "updatedAt": "2026-07-09T13:05:00.000Z",
       "firstSeenAt": "2026-07-09T13:05:00.000Z",
       "attributes": []
@@ -973,7 +973,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eduwallet/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-11-02T15:18:17.493Z",
+      "fetchedAt": "2026-11-03T13:55:13.184Z",
       "updatedAt": "2026-07-09T13:05:00.000Z",
       "firstSeenAt": "2026-07-09T13:05:00.000Z",
       "attributes": []
@@ -1038,7 +1038,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/emvco/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-11-02T15:18:17.493Z",
+      "fetchedAt": "2026-11-03T13:55:13.184Z",
       "updatedAt": "2026-09-16T21:13:05.000Z",
       "firstSeenAt": "2026-09-16T21:13:05.000Z",
       "attributes": []
@@ -1106,7 +1106,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-11-02T15:18:17.493Z",
+      "fetchedAt": "2026-11-03T13:55:13.184Z",
       "updatedAt": "2026-10-30T12:57:09.000Z",
       "firstSeenAt": "2026-05-04T20:18:48.000Z",
       "attributes": [
@@ -1236,7 +1236,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-11-02T15:18:17.493Z",
+      "fetchedAt": "2026-11-03T13:55:13.184Z",
       "updatedAt": "2026-10-30T12:57:09.000Z",
       "firstSeenAt": "2026-05-04T20:18:48.000Z",
       "attributes": [
@@ -1398,7 +1398,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-11-02T15:18:17.493Z",
+      "fetchedAt": "2026-11-03T13:55:13.184Z",
       "updatedAt": "2026-10-30T12:57:09.000Z",
       "firstSeenAt": "2026-05-04T20:18:48.000Z",
       "attributes": [
@@ -1593,7 +1593,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-11-02T15:18:17.493Z",
+      "fetchedAt": "2026-11-03T13:55:13.184Z",
       "updatedAt": "2026-10-30T12:57:09.000Z",
       "firstSeenAt": "2026-05-04T20:18:48.000Z",
       "attributes": [
@@ -1753,7 +1753,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-11-02T15:18:17.493Z",
+      "fetchedAt": "2026-11-03T13:55:13.184Z",
       "updatedAt": "2026-10-30T12:57:09.000Z",
       "firstSeenAt": "2026-05-04T20:18:48.000Z",
       "attributes": [
@@ -1896,7 +1896,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-11-02T15:18:17.493Z",
+      "fetchedAt": "2026-11-03T13:55:13.184Z",
       "updatedAt": "2026-10-30T12:57:09.000Z",
       "firstSeenAt": "2026-05-04T20:18:48.000Z",
       "attributes": [
@@ -2108,7 +2108,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-11-02T15:18:17.493Z",
+      "fetchedAt": "2026-11-03T13:55:13.184Z",
       "updatedAt": "2026-10-30T12:57:09.000Z",
       "firstSeenAt": "2026-05-04T20:18:48.000Z",
       "attributes": [
@@ -2313,7 +2313,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-11-02T15:18:17.493Z",
+      "fetchedAt": "2026-11-03T13:55:13.184Z",
       "updatedAt": "2026-10-30T12:57:09.000Z",
       "firstSeenAt": "2026-05-04T20:18:48.000Z",
       "attributes": [
@@ -2443,7 +2443,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-11-02T15:18:17.493Z",
+      "fetchedAt": "2026-11-03T13:55:13.184Z",
       "updatedAt": "2026-10-30T12:57:09.000Z",
       "firstSeenAt": "2026-05-04T20:18:48.000Z",
       "attributes": [
@@ -2613,7 +2613,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-11-02T15:18:17.493Z",
+      "fetchedAt": "2026-11-03T13:55:13.184Z",
       "updatedAt": "2026-10-30T12:57:09.000Z",
       "firstSeenAt": "2026-05-04T20:18:48.000Z",
       "attributes": [
@@ -2993,7 +2993,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-11-02T15:18:17.493Z",
+      "fetchedAt": "2026-11-03T13:55:13.184Z",
       "updatedAt": "2026-10-30T12:57:09.000Z",
       "firstSeenAt": "2026-05-04T20:18:48.000Z",
       "attributes": [
@@ -3278,7 +3278,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-11-02T15:18:17.493Z",
+      "fetchedAt": "2026-11-03T13:55:13.184Z",
       "updatedAt": "2026-10-30T12:57:09.000Z",
       "firstSeenAt": "2026-05-04T20:18:48.000Z",
       "attributes": [
@@ -3425,7 +3425,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-11-02T15:18:17.493Z",
+      "fetchedAt": "2026-11-03T13:55:13.184Z",
       "updatedAt": "2026-10-30T12:57:09.000Z",
       "firstSeenAt": "2026-05-04T20:18:48.000Z",
       "attributes": [
@@ -3651,7 +3651,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-11-02T15:18:17.493Z",
+      "fetchedAt": "2026-11-03T13:55:13.184Z",
       "updatedAt": "2026-10-30T12:57:09.000Z",
       "firstSeenAt": "2026-05-04T20:18:48.000Z",
       "attributes": [
@@ -3827,7 +3827,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/eu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-11-02T15:18:17.493Z",
+      "fetchedAt": "2026-11-03T13:55:13.184Z",
       "updatedAt": "2026-10-30T12:57:09.000Z",
       "firstSeenAt": "2026-05-04T20:18:48.000Z",
       "attributes": [
@@ -3958,7 +3958,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-11-02T15:18:17.493Z",
+      "fetchedAt": "2026-11-03T13:55:13.184Z",
       "updatedAt": "2026-05-17T00:00:00.000Z",
       "firstSeenAt": "2026-05-17T00:00:00.000Z",
       "attributes": [
@@ -4145,7 +4145,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-11-02T15:18:17.493Z",
+      "fetchedAt": "2026-11-03T13:55:13.184Z",
       "updatedAt": "2026-05-17T00:00:00.000Z",
       "firstSeenAt": "2026-05-17T00:00:00.000Z",
       "attributes": [
@@ -4325,7 +4325,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-11-02T15:18:17.493Z",
+      "fetchedAt": "2026-11-03T13:55:13.184Z",
       "updatedAt": "2026-05-17T00:00:00.000Z",
       "firstSeenAt": "2026-05-17T00:00:00.000Z",
       "attributes": [
@@ -4497,7 +4497,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-11-02T15:18:17.493Z",
+      "fetchedAt": "2026-11-03T13:55:13.184Z",
       "updatedAt": "2026-05-17T00:00:00.000Z",
       "firstSeenAt": "2026-05-17T00:00:00.000Z",
       "attributes": [
@@ -4646,7 +4646,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-11-02T15:18:17.493Z",
+      "fetchedAt": "2026-11-03T13:55:13.184Z",
       "updatedAt": "2026-05-17T00:00:00.000Z",
       "firstSeenAt": "2026-05-17T00:00:00.000Z",
       "attributes": [
@@ -4811,7 +4811,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-11-02T15:18:17.493Z",
+      "fetchedAt": "2026-11-03T13:55:13.184Z",
       "updatedAt": "2026-05-17T00:00:00.000Z",
       "firstSeenAt": "2026-05-17T00:00:00.000Z",
       "attributes": [
@@ -5013,7 +5013,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-11-02T15:18:17.493Z",
+      "fetchedAt": "2026-11-03T13:55:13.184Z",
       "updatedAt": "2026-05-17T00:00:00.000Z",
       "firstSeenAt": "2026-05-17T00:00:00.000Z",
       "attributes": [
@@ -5166,7 +5166,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-11-02T15:18:17.493Z",
+      "fetchedAt": "2026-11-03T13:55:13.184Z",
       "updatedAt": "2026-05-17T00:00:00.000Z",
       "firstSeenAt": "2026-05-17T00:00:00.000Z",
       "attributes": [
@@ -5306,7 +5306,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-11-02T15:18:17.493Z",
+      "fetchedAt": "2026-11-03T13:55:13.184Z",
       "updatedAt": "2026-05-17T00:00:00.000Z",
       "firstSeenAt": "2026-05-17T00:00:00.000Z",
       "attributes": [
@@ -5411,7 +5411,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-11-02T15:18:17.493Z",
+      "fetchedAt": "2026-11-03T13:55:13.184Z",
       "updatedAt": "2026-05-17T00:00:00.000Z",
       "firstSeenAt": "2026-05-17T00:00:00.000Z",
       "attributes": [
@@ -5494,7 +5494,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-11-02T15:18:17.493Z",
+      "fetchedAt": "2026-11-03T13:55:13.184Z",
       "updatedAt": "2026-05-17T00:00:00.000Z",
       "firstSeenAt": "2026-05-17T00:00:00.000Z",
       "attributes": [
@@ -5739,7 +5739,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-11-02T15:18:17.493Z",
+      "fetchedAt": "2026-11-03T13:55:13.184Z",
       "updatedAt": "2026-05-17T00:00:00.000Z",
       "firstSeenAt": "2026-05-17T00:00:00.000Z",
       "attributes": [
@@ -6119,7 +6119,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-11-02T15:18:17.493Z",
+      "fetchedAt": "2026-11-03T13:55:13.184Z",
       "updatedAt": "2026-05-17T00:00:00.000Z",
       "firstSeenAt": "2026-05-17T00:00:00.000Z",
       "attributes": [
@@ -6261,7 +6261,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-11-02T15:18:17.493Z",
+      "fetchedAt": "2026-11-03T13:55:13.184Z",
       "updatedAt": "2026-05-17T00:00:00.000Z",
       "firstSeenAt": "2026-05-17T00:00:00.000Z",
       "attributes": [
@@ -6605,7 +6605,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-11-02T15:18:17.493Z",
+      "fetchedAt": "2026-11-03T13:55:13.184Z",
       "updatedAt": "2026-05-17T00:00:00.000Z",
       "firstSeenAt": "2026-05-17T00:00:00.000Z",
       "attributes": [
@@ -6942,7 +6942,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-11-02T15:18:17.493Z",
+      "fetchedAt": "2026-11-03T13:55:13.184Z",
       "updatedAt": "2026-05-17T00:00:00.000Z",
       "firstSeenAt": "2026-05-17T00:00:00.000Z",
       "attributes": [
@@ -7276,7 +7276,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-11-02T15:18:17.493Z",
+      "fetchedAt": "2026-11-03T13:55:13.184Z",
       "updatedAt": "2026-05-17T00:00:00.000Z",
       "firstSeenAt": "2026-05-17T00:00:00.000Z",
       "attributes": [
@@ -7357,7 +7357,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fides/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-11-02T15:18:17.493Z",
+      "fetchedAt": "2026-11-03T13:55:13.184Z",
       "updatedAt": "2026-05-17T00:00:00.000Z",
       "firstSeenAt": "2026-05-17T00:00:00.000Z",
       "attributes": [
@@ -7451,7 +7451,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fido-alliance/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-11-02T15:18:17.493Z",
+      "fetchedAt": "2026-11-03T13:55:13.184Z",
       "updatedAt": "2026-10-02T15:39:30.000Z",
       "firstSeenAt": "2026-10-02T15:39:30.000Z",
       "attributes": [
@@ -7555,7 +7555,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fido-alliance/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-11-02T15:18:17.493Z",
+      "fetchedAt": "2026-11-03T13:55:13.184Z",
       "updatedAt": "2026-10-02T15:39:30.000Z",
       "firstSeenAt": "2026-10-02T15:39:30.000Z",
       "attributes": [
@@ -7771,7 +7771,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fido-alliance/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-11-02T15:18:17.493Z",
+      "fetchedAt": "2026-11-03T13:55:13.184Z",
       "updatedAt": "2026-10-02T15:39:30.000Z",
       "firstSeenAt": "2026-10-02T15:39:30.000Z",
       "attributes": [
@@ -7952,7 +7952,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/fido-alliance/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-11-02T15:18:17.493Z",
+      "fetchedAt": "2026-11-03T13:55:13.184Z",
       "updatedAt": "2026-10-02T15:39:30.000Z",
       "firstSeenAt": "2026-10-02T15:39:30.000Z",
       "attributes": [
@@ -8300,7 +8300,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/gleif/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-11-02T15:18:17.493Z",
+      "fetchedAt": "2026-11-03T13:55:13.184Z",
       "updatedAt": "2026-04-21T06:00:00.000Z",
       "firstSeenAt": "2026-04-21T06:00:00.000Z",
       "attributes": [
@@ -8557,7 +8557,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/gleif/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-11-02T15:18:17.493Z",
+      "fetchedAt": "2026-11-03T13:55:13.184Z",
       "updatedAt": "2026-04-21T06:00:00.000Z",
       "firstSeenAt": "2026-04-21T06:00:00.000Z",
       "attributes": [
@@ -8841,7 +8841,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/gleif/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-11-02T15:18:17.493Z",
+      "fetchedAt": "2026-11-03T13:55:13.184Z",
       "updatedAt": "2026-04-21T06:00:00.000Z",
       "firstSeenAt": "2026-04-21T06:00:00.000Z",
       "attributes": [
@@ -9061,7 +9061,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/gleif/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-11-02T15:18:17.493Z",
+      "fetchedAt": "2026-11-03T13:55:13.184Z",
       "updatedAt": "2026-04-21T06:00:00.000Z",
       "firstSeenAt": "2026-04-21T06:00:00.000Z",
       "attributes": [
@@ -9302,7 +9302,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/gleif/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-11-02T15:18:17.493Z",
+      "fetchedAt": "2026-11-03T13:55:13.184Z",
       "updatedAt": "2026-04-21T06:00:00.000Z",
       "firstSeenAt": "2026-04-21T06:00:00.000Z",
       "attributes": [
@@ -9543,7 +9543,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/gleif/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-11-02T15:18:17.493Z",
+      "fetchedAt": "2026-11-03T13:55:13.184Z",
       "updatedAt": "2026-04-21T06:00:00.000Z",
       "firstSeenAt": "2026-04-21T06:00:00.000Z",
       "attributes": [
@@ -9736,7 +9736,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/google/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-11-02T15:18:17.493Z",
+      "fetchedAt": "2026-11-03T13:55:13.184Z",
       "updatedAt": "2026-09-16T15:31:28.000Z",
       "firstSeenAt": "2026-09-16T15:31:28.000Z",
       "attributes": []
@@ -9807,7 +9807,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/gx/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-11-02T15:18:17.493Z",
+      "fetchedAt": "2026-11-03T13:55:13.184Z",
       "updatedAt": "2026-04-09T12:00:00.000Z",
       "firstSeenAt": "2026-04-09T12:00:00.000Z",
       "attributes": [
@@ -9934,7 +9934,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/gx/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-11-02T15:18:17.493Z",
+      "fetchedAt": "2026-11-03T13:55:13.184Z",
       "updatedAt": "2026-04-09T12:00:00.000Z",
       "firstSeenAt": "2026-04-09T12:00:00.000Z",
       "attributes": [
@@ -10109,7 +10109,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/gx/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-11-02T15:18:17.493Z",
+      "fetchedAt": "2026-11-03T13:55:13.184Z",
       "updatedAt": "2026-04-09T12:00:00.000Z",
       "firstSeenAt": "2026-04-09T12:00:00.000Z",
       "attributes": [
@@ -10314,7 +10314,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/gx/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-11-02T15:18:17.493Z",
+      "fetchedAt": "2026-11-03T13:55:13.184Z",
       "updatedAt": "2026-04-09T12:00:00.000Z",
       "firstSeenAt": "2026-04-09T12:00:00.000Z",
       "attributes": [
@@ -10423,7 +10423,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/gx/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-11-02T15:18:17.493Z",
+      "fetchedAt": "2026-11-03T13:55:13.184Z",
       "updatedAt": "2026-04-09T12:00:00.000Z",
       "firstSeenAt": "2026-04-09T12:00:00.000Z",
       "attributes": [
@@ -10622,7 +10622,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/gx/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-11-02T15:18:17.493Z",
+      "fetchedAt": "2026-11-03T13:55:13.184Z",
       "updatedAt": "2026-04-09T12:00:00.000Z",
       "firstSeenAt": "2026-04-09T12:00:00.000Z",
       "attributes": [
@@ -10779,7 +10779,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/gx/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-11-02T15:18:17.493Z",
+      "fetchedAt": "2026-11-03T13:55:13.184Z",
       "updatedAt": "2026-04-09T12:00:00.000Z",
       "firstSeenAt": "2026-04-09T12:00:00.000Z",
       "attributes": [
@@ -10984,7 +10984,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/gx/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-11-02T15:18:17.493Z",
+      "fetchedAt": "2026-11-03T13:55:13.184Z",
       "updatedAt": "2026-04-09T12:00:00.000Z",
       "firstSeenAt": "2026-04-09T12:00:00.000Z",
       "attributes": [
@@ -11147,7 +11147,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/gx/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-11-02T15:18:17.493Z",
+      "fetchedAt": "2026-11-03T13:55:13.184Z",
       "updatedAt": "2026-04-09T12:00:00.000Z",
       "firstSeenAt": "2026-04-09T12:00:00.000Z",
       "attributes": [
@@ -11243,7 +11243,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/iata/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-11-02T15:18:17.493Z",
+      "fetchedAt": "2026-11-03T13:55:13.184Z",
       "updatedAt": "2026-04-22T11:30:00.000Z",
       "firstSeenAt": "2026-04-22T11:30:00.000Z",
       "attributes": [
@@ -11462,7 +11462,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/iata/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-11-02T15:18:17.493Z",
+      "fetchedAt": "2026-11-03T13:55:13.184Z",
       "updatedAt": "2026-04-22T11:30:00.000Z",
       "firstSeenAt": "2026-04-22T11:30:00.000Z",
       "attributes": [
@@ -11644,7 +11644,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/igrant/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-11-02T15:18:17.493Z",
+      "fetchedAt": "2026-11-03T13:55:13.184Z",
       "updatedAt": "2026-08-20T16:06:17.000Z",
       "firstSeenAt": "2026-08-20T16:06:17.000Z",
       "attributes": [
@@ -11728,7 +11728,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/igrant/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-11-02T15:18:17.493Z",
+      "fetchedAt": "2026-11-03T13:55:13.184Z",
       "updatedAt": "2026-08-20T16:06:17.000Z",
       "firstSeenAt": "2026-08-20T16:06:17.000Z",
       "attributes": [
@@ -11825,7 +11825,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/iso/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-11-02T15:18:17.493Z",
+      "fetchedAt": "2026-11-03T13:55:13.184Z",
       "updatedAt": "2026-04-22T11:00:00.000Z",
       "firstSeenAt": "2026-04-22T11:00:00.000Z",
       "attributes": [
@@ -12124,7 +12124,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/iso/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-11-02T15:18:17.493Z",
+      "fetchedAt": "2026-11-03T13:55:13.184Z",
       "updatedAt": "2026-04-22T11:00:00.000Z",
       "firstSeenAt": "2026-04-22T11:00:00.000Z",
       "attributes": [
@@ -12287,7 +12287,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/iso/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-11-02T15:18:17.493Z",
+      "fetchedAt": "2026-11-03T13:55:13.184Z",
       "updatedAt": "2026-04-22T11:00:00.000Z",
       "firstSeenAt": "2026-04-22T11:00:00.000Z",
       "attributes": [
@@ -12546,7 +12546,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/iso/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-11-02T15:18:17.493Z",
+      "fetchedAt": "2026-11-03T13:55:13.184Z",
       "updatedAt": "2026-04-22T11:00:00.000Z",
       "firstSeenAt": "2026-04-22T11:00:00.000Z",
       "attributes": [
@@ -12713,7 +12713,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/privacybydesign/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-11-02T15:18:17.493Z",
+      "fetchedAt": "2026-11-03T13:55:13.184Z",
       "updatedAt": "2026-10-23T08:30:45.000Z",
       "firstSeenAt": "2026-10-23T08:30:45.000Z",
       "attributes": [
@@ -12910,7 +12910,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/privacybydesign/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-11-02T15:18:17.493Z",
+      "fetchedAt": "2026-11-03T13:55:13.184Z",
       "updatedAt": "2026-10-23T08:30:45.000Z",
       "firstSeenAt": "2026-10-23T08:30:45.000Z",
       "attributes": [
@@ -13108,7 +13108,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/privacybydesign/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-11-02T15:18:17.493Z",
+      "fetchedAt": "2026-11-03T13:55:13.184Z",
       "updatedAt": "2026-10-23T08:30:45.000Z",
       "firstSeenAt": "2026-10-23T08:30:45.000Z",
       "attributes": [
@@ -13624,7 +13624,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/swiyu/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-11-02T15:18:17.493Z",
+      "fetchedAt": "2026-11-03T13:55:13.184Z",
       "updatedAt": "2026-10-13T06:37:06.000Z",
       "firstSeenAt": "2026-05-04T20:18:48.000Z",
       "attributes": [
@@ -13843,10 +13843,17 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/uncefact/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-11-02T15:18:17.493Z",
+      "fetchedAt": "2026-11-03T13:55:13.184Z",
       "updatedAt": "2026-05-18T00:00:00.000Z",
       "firstSeenAt": "2026-05-18T00:00:00.000Z",
       "attributes": [
+        {
+          "name": "type",
+          "type": "string",
+          "required": true,
+          "description": "Type of the business document.",
+          "depth": 0
+        },
         {
           "name": "billOfLadingNumber",
           "type": "string",
@@ -13857,7 +13864,7 @@
         {
           "name": "documentIdentifier",
           "type": "string",
-          "required": false,
+          "required": true,
           "description": "Reference number identifying a specific document.",
           "depth": 0
         },
@@ -13878,7 +13885,7 @@
         {
           "name": "consignmentLoadingDate",
           "type": "string",
-          "required": false,
+          "required": true,
           "description": "Date when a consignment is loaded onto a means of transport.",
           "depth": 0
         },
@@ -14199,7 +14206,7 @@
         {
           "name": "freightPayer",
           "type": "object",
-          "required": false,
+          "required": true,
           "description": "Party responsible for the payment of freight charges.",
           "depth": 0
         },
@@ -14554,7 +14561,7 @@
         {
           "name": "transportMeansIdentifier",
           "type": "string",
-          "required": false,
+          "required": true,
           "description": "Name of a specific means of transport such as the vessel name.",
           "depth": 0
         },
@@ -14596,9 +14603,15 @@
         {
           "name": "grossWeight",
           "type": "object",
-          "required": false,
+          "required": true,
           "description": "Total gross weight including packaging.",
           "depth": 0
+        },
+        {
+          "name": "grossWeight/type",
+          "type": "string",
+          "required": false,
+          "depth": 1
         },
         {
           "name": "grossWeight/amount",
@@ -14617,9 +14630,15 @@
         {
           "name": "volume",
           "type": "object",
-          "required": false,
+          "required": true,
           "description": "Total volume measurement.",
           "depth": 0
+        },
+        {
+          "name": "volume/type",
+          "type": "string",
+          "required": false,
+          "depth": 1
         },
         {
           "name": "volume/amount",
@@ -14638,14 +14657,14 @@
         {
           "name": "numberOfPackages",
           "type": "number",
-          "required": false,
+          "required": true,
           "description": "Number of packages.",
           "depth": 0
         },
         {
           "name": "descriptionOfGoods",
           "type": "string",
-          "required": false,
+          "required": true,
           "description": "Plain language description of the nature of a goods item.",
           "depth": 0
         },
@@ -14666,7 +14685,7 @@
         {
           "name": "transportContractConditions",
           "type": "string",
-          "required": false,
+          "required": true,
           "description": "Reference to carrier's conditions of carriage.",
           "depth": 0
         },
@@ -14676,6 +14695,12 @@
           "required": false,
           "description": "Monetary amount of charges which have been paid in advance.",
           "depth": 0
+        },
+        {
+          "name": "prepaidAmount/type",
+          "type": "string",
+          "required": false,
+          "depth": 1
         },
         {
           "name": "prepaidAmount/amount",
@@ -14699,6 +14724,12 @@
           "depth": 0
         },
         {
+          "name": "collectCharges/type",
+          "type": "string",
+          "required": false,
+          "depth": 1
+        },
+        {
           "name": "collectCharges/amount",
           "type": "number",
           "required": false,
@@ -14715,7 +14746,7 @@
         {
           "name": "contractNumber",
           "type": "string",
-          "required": false,
+          "required": true,
           "description": "Identifier of a contract concluded between parties.",
           "depth": 0
         },
@@ -14755,6 +14786,12 @@
           "depth": 2
         },
         {
+          "name": "goods/item/quantity/type",
+          "type": "string",
+          "required": false,
+          "depth": 3
+        },
+        {
           "name": "goods/item/quantity/amount",
           "type": "number",
           "required": false,
@@ -14774,6 +14811,12 @@
           "required": false,
           "description": "Gross weight including packaging.",
           "depth": 2
+        },
+        {
+          "name": "goods/item/grossWeight/type",
+          "type": "string",
+          "required": false,
+          "depth": 3
         },
         {
           "name": "goods/item/grossWeight/amount",
@@ -14883,10 +14926,17 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/uncefact/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-11-02T15:18:17.493Z",
+      "fetchedAt": "2026-11-03T13:55:13.184Z",
       "updatedAt": "2026-05-18T00:00:00.000Z",
       "firstSeenAt": "2026-05-18T00:00:00.000Z",
       "attributes": [
+        {
+          "name": "type",
+          "type": "string",
+          "required": true,
+          "description": "Type of the business document.",
+          "depth": 0
+        },
         {
           "name": "certificateNumber",
           "type": "string",
@@ -15510,6 +15560,12 @@
           "depth": 2
         },
         {
+          "name": "goods/item/quantity/type",
+          "type": "string",
+          "required": false,
+          "depth": 3
+        },
+        {
           "name": "goods/item/quantity/amount",
           "type": "number",
           "required": false,
@@ -15529,6 +15585,12 @@
           "required": false,
           "description": "Total net weight of the goods.",
           "depth": 2
+        },
+        {
+          "name": "goods/item/netWeight/type",
+          "type": "string",
+          "required": false,
+          "depth": 3
         },
         {
           "name": "goods/item/netWeight/amount",
@@ -15552,6 +15614,12 @@
           "depth": 2
         },
         {
+          "name": "goods/item/grossWeight/type",
+          "type": "string",
+          "required": false,
+          "depth": 3
+        },
+        {
           "name": "goods/item/grossWeight/amount",
           "type": "number",
           "required": false,
@@ -15571,6 +15639,12 @@
           "required": false,
           "description": "Value of the goods",
           "depth": 2
+        },
+        {
+          "name": "goods/item/value/type",
+          "type": "string",
+          "required": false,
+          "depth": 3
         },
         {
           "name": "goods/item/value/amount",
@@ -15670,10 +15744,17 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/uncefact/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-11-02T15:18:17.493Z",
+      "fetchedAt": "2026-11-03T13:55:13.184Z",
       "updatedAt": "2026-05-18T00:00:00.000Z",
       "firstSeenAt": "2026-05-18T00:00:00.000Z",
       "attributes": [
+        {
+          "name": "type",
+          "type": "string",
+          "required": true,
+          "description": "Type of the business document.",
+          "depth": 0
+        },
         {
           "name": "declarationNumber",
           "type": "string",
@@ -16241,6 +16322,12 @@
           "depth": 2
         },
         {
+          "name": "declarationGoods/item/quantity/type",
+          "type": "string",
+          "required": false,
+          "depth": 3
+        },
+        {
           "name": "declarationGoods/item/quantity/amount",
           "type": "number",
           "required": false,
@@ -16262,6 +16349,12 @@
           "depth": 2
         },
         {
+          "name": "declarationGoods/item/netWeight/type",
+          "type": "string",
+          "required": false,
+          "depth": 3
+        },
+        {
           "name": "declarationGoods/item/netWeight/amount",
           "type": "number",
           "required": false,
@@ -16281,6 +16374,12 @@
           "required": false,
           "description": "Total gross weight including packaging.",
           "depth": 2
+        },
+        {
+          "name": "declarationGoods/item/grossWeight/type",
+          "type": "string",
+          "required": false,
+          "depth": 3
         },
         {
           "name": "declarationGoods/item/grossWeight/amount",
@@ -16325,6 +16424,12 @@
           "depth": 2
         },
         {
+          "name": "declarationGoods/item/customsValue/type",
+          "type": "string",
+          "required": false,
+          "depth": 3
+        },
+        {
           "name": "declarationGoods/item/customsValue/amount",
           "type": "number",
           "required": false,
@@ -16344,6 +16449,12 @@
           "required": false,
           "description": "Value declared for statistical purposes",
           "depth": 2
+        },
+        {
+          "name": "declarationGoods/item/statisticalValue/type",
+          "type": "string",
+          "required": false,
+          "depth": 3
         },
         {
           "name": "declarationGoods/item/statisticalValue/amount",
@@ -16374,6 +16485,12 @@
           "depth": 0
         },
         {
+          "name": "totalInvoiceAmount/type",
+          "type": "string",
+          "required": false,
+          "depth": 1
+        },
+        {
           "name": "totalInvoiceAmount/amount",
           "type": "number",
           "required": false,
@@ -16395,6 +16512,12 @@
           "depth": 0
         },
         {
+          "name": "totalGrossWeight/type",
+          "type": "string",
+          "required": false,
+          "depth": 1
+        },
+        {
           "name": "totalGrossWeight/amount",
           "type": "number",
           "required": false,
@@ -16414,6 +16537,12 @@
           "required": false,
           "description": "Total net weight of all goods.",
           "depth": 0
+        },
+        {
+          "name": "totalNetWeight/type",
+          "type": "string",
+          "required": false,
+          "depth": 1
         },
         {
           "name": "totalNetWeight/amount",
@@ -16527,7 +16656,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/uncefact/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-11-02T15:18:17.493Z",
+      "fetchedAt": "2026-11-03T13:55:13.184Z",
       "updatedAt": "2026-05-18T00:00:00.000Z",
       "firstSeenAt": "2026-05-18T00:00:00.000Z",
       "attributes": [
@@ -17471,7 +17600,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/uncefact/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-11-02T15:18:17.493Z",
+      "fetchedAt": "2026-11-03T13:55:13.184Z",
       "updatedAt": "2026-05-18T00:00:00.000Z",
       "firstSeenAt": "2026-05-18T00:00:00.000Z",
       "attributes": [
@@ -18683,7 +18812,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/uncefact/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-11-02T15:18:17.493Z",
+      "fetchedAt": "2026-11-03T13:55:13.184Z",
       "updatedAt": "2026-05-18T00:00:00.000Z",
       "firstSeenAt": "2026-05-18T00:00:00.000Z",
       "attributes": [
@@ -18875,7 +19004,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/uncefact/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-11-02T15:18:17.493Z",
+      "fetchedAt": "2026-11-03T13:55:13.184Z",
       "updatedAt": "2026-05-18T00:00:00.000Z",
       "firstSeenAt": "2026-05-18T00:00:00.000Z",
       "attributes": [
@@ -20997,7 +21126,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/uncefact/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-11-02T15:18:17.493Z",
+      "fetchedAt": "2026-11-03T13:55:13.184Z",
       "updatedAt": "2026-05-18T00:00:00.000Z",
       "firstSeenAt": "2026-05-18T00:00:00.000Z",
       "attributes": [
@@ -22383,10 +22512,17 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/uncefact/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-11-02T15:18:17.493Z",
+      "fetchedAt": "2026-11-03T13:55:13.184Z",
       "updatedAt": "2026-05-18T00:00:00.000Z",
       "firstSeenAt": "2026-05-18T00:00:00.000Z",
       "attributes": [
+        {
+          "name": "type",
+          "type": "string",
+          "required": true,
+          "description": "Type of the business document.",
+          "depth": 0
+        },
         {
           "name": "certificateNumber",
           "type": "string",
@@ -22561,7 +22697,7 @@
         {
           "name": "insuranceClaimsAdjuster",
           "type": "object",
-          "required": false,
+          "required": true,
           "description": "Name and address of the insurance claims adjuster.",
           "depth": 0
         },
@@ -22652,7 +22788,7 @@
         {
           "name": "invoiceNumber",
           "type": "string",
-          "required": false,
+          "required": true,
           "description": "Reference number to identify an invoice.",
           "depth": 0
         },
@@ -22919,7 +23055,7 @@
         {
           "name": "estimatedTimeOfDeparture",
           "type": "string",
-          "required": false,
+          "required": true,
           "description": "Date and time when a transport means is scheduled to depart.",
           "depth": 0
         },
@@ -23017,7 +23153,7 @@
         {
           "name": "placeOfDeparture",
           "type": "object",
-          "required": false,
+          "required": true,
           "description": "Port from which a means of transport is scheduled to depart.",
           "depth": 0
         },
@@ -23092,6 +23228,12 @@
           "depth": 0
         },
         {
+          "name": "insuredValueAmount/type",
+          "type": "string",
+          "required": false,
+          "depth": 1
+        },
+        {
           "name": "insuredValueAmount/amount",
           "type": "number",
           "required": false,
@@ -23113,6 +23255,12 @@
           "depth": 0
         },
         {
+          "name": "insuranceAmount/type",
+          "type": "string",
+          "required": false,
+          "depth": 1
+        },
+        {
           "name": "insuranceAmount/amount",
           "type": "number",
           "required": false,
@@ -23129,14 +23277,14 @@
         {
           "name": "insuranceConditions",
           "type": "string",
-          "required": false,
+          "required": true,
           "description": "Reference to the general conditions of contract under which insurance is issued.",
           "depth": 0
         },
         {
           "name": "goodsDescription",
           "type": "string",
-          "required": false,
+          "required": true,
           "description": "Plain language description of the nature of goods.",
           "depth": 0
         },
@@ -23240,10 +23388,17 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/uncefact/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-11-02T15:18:17.493Z",
+      "fetchedAt": "2026-11-03T13:55:13.184Z",
       "updatedAt": "2026-05-18T00:00:00.000Z",
       "firstSeenAt": "2026-05-18T00:00:00.000Z",
       "attributes": [
+        {
+          "name": "type",
+          "type": "string",
+          "required": true,
+          "description": "Type of the business document.",
+          "depth": 0
+        },
         {
           "name": "purchaseOrderNumber",
           "type": "string",
@@ -23261,29 +23416,50 @@
         {
           "name": "invoiceNumber",
           "type": "string",
-          "required": false,
+          "required": true,
           "description": "Reference number to identify an invoice.",
+          "depth": 0
+        },
+        {
+          "name": "invoiceType",
+          "type": "string",
+          "required": false,
+          "description": "Type of invoice, e.g. Commercial Invoice, Proforma Invoice, Credit Note, Corrected Invoice. For code-based systems these correspond to UNTDID 1001 codes 380, 325, 381 and 384.",
+          "depth": 0
+        },
+        {
+          "name": "currency",
+          "type": "string",
+          "required": false,
+          "description": "Currency of the invoice (ISO 4217). All amounts in the invoice are stated in this currency.",
           "depth": 0
         },
         {
           "name": "issueDate",
           "type": "string",
-          "required": false,
+          "required": true,
           "description": "Date that a document was issued and when appropriate, signed or otherwise authenticated.",
           "depth": 0
         },
         {
           "name": "invoiceDate",
           "type": "string",
-          "required": false,
+          "required": true,
           "description": "Date of issue of an invoice.",
           "depth": 0
         },
         {
           "name": "paymentDueDate",
           "type": "string",
-          "required": false,
+          "required": true,
           "description": "Date when an amount due should be made available to the creditor under the terms of payment.",
+          "depth": 0
+        },
+        {
+          "name": "deliveryDate",
+          "type": "string",
+          "required": false,
+          "description": "Date on which the goods were delivered, as defined by the trade terms (e.g. loaded on board for FOB).",
           "depth": 0
         },
         {
@@ -23338,7 +23514,7 @@
         {
           "name": "buyer",
           "type": "object",
-          "required": false,
+          "required": true,
           "description": "Party to which merchandise or services are sold.",
           "depth": 0
         },
@@ -23413,7 +23589,7 @@
         {
           "name": "invoicee",
           "type": "object",
-          "required": false,
+          "required": true,
           "description": "Party to whom an invoice is issued.",
           "depth": 0
         },
@@ -23563,7 +23739,7 @@
         {
           "name": "sellersBank",
           "type": "object",
-          "required": false,
+          "required": true,
           "description": "Bank designated by the seller to receive payment.",
           "depth": 0
         },
@@ -23638,7 +23814,7 @@
         {
           "name": "seller",
           "type": "object",
-          "required": false,
+          "required": true,
           "description": "Party selling merchandise or services to a buyer.",
           "depth": 0
         },
@@ -23713,7 +23889,7 @@
         {
           "name": "sellerBankAccountNumber",
           "type": "string",
-          "required": false,
+          "required": true,
           "description": "Identifier of an account with the bank designated to receive payment.",
           "depth": 0
         },
@@ -23831,7 +24007,7 @@
           "name": "paymentMethod",
           "type": "string",
           "required": false,
-          "description": "Code specifying a method of payment.",
+          "description": "Method of payment, e.g. Credit Transfer, Direct Debit, Card Payment, Cash, Cheque. For code-based systems these correspond to UNTDID 4461 codes 30, 49, 48, 10 and 20.",
           "depth": 0
         },
         {
@@ -23842,11 +24018,30 @@
           "depth": 0
         },
         {
+          "name": "itemsShipped/item/type",
+          "type": "string",
+          "required": false,
+          "depth": 2
+        },
+        {
+          "name": "itemsShipped/item/lineId",
+          "type": "string",
+          "required": true,
+          "description": "Identifier of the invoice line, unique within the invoice. Lets a credit note, dispute or customs query refer to the line.",
+          "depth": 2
+        },
+        {
           "name": "itemsShipped/item/product",
           "type": "object",
           "required": false,
           "description": "Plain language description of the nature of a goods item sufficient to identify it for customs, statistical or transport purposes.",
           "depth": 2
+        },
+        {
+          "name": "itemsShipped/item/product/type",
+          "type": "string",
+          "required": false,
+          "depth": 3
         },
         {
           "name": "itemsShipped/item/product/id",
@@ -23891,6 +24086,12 @@
           "depth": 2
         },
         {
+          "name": "itemsShipped/item/netWeight/type",
+          "type": "string",
+          "required": false,
+          "depth": 3
+        },
+        {
           "name": "itemsShipped/item/netWeight/amount",
           "type": "number",
           "required": false,
@@ -23912,6 +24113,12 @@
           "depth": 2
         },
         {
+          "name": "itemsShipped/item/grossWeight/type",
+          "type": "string",
+          "required": false,
+          "depth": 3
+        },
+        {
           "name": "itemsShipped/item/grossWeight/amount",
           "type": "number",
           "required": false,
@@ -23926,21 +24133,27 @@
           "depth": 3
         },
         {
-          "name": "itemsShipped/item/productPrice",
+          "name": "itemsShipped/item/unitPrice",
           "type": "object",
           "required": false,
-          "description": "",
+          "description": "Price per unit of quantity (itemCount) on which the line amount is calculated.",
           "depth": 2
         },
         {
-          "name": "itemsShipped/item/productPrice/amount",
+          "name": "itemsShipped/item/unitPrice/type",
+          "type": "string",
+          "required": false,
+          "depth": 3
+        },
+        {
+          "name": "itemsShipped/item/unitPrice/amount",
           "type": "number",
           "required": false,
           "description": "",
           "depth": 3
         },
         {
-          "name": "itemsShipped/item/productPrice/currency",
+          "name": "itemsShipped/item/unitPrice/currency",
           "type": "string",
           "required": false,
           "description": "",
@@ -23954,25 +24167,58 @@
           "depth": 2
         },
         {
-          "name": "itemsShipped/item/price",
+          "name": "itemsShipped/item/lineTotal",
           "type": "object",
           "required": false,
-          "description": "",
+          "description": "Net amount of the line: quantity multiplied by unit price, after any line allowances and charges.",
           "depth": 2
         },
         {
-          "name": "itemsShipped/item/price/amount",
+          "name": "itemsShipped/item/lineTotal/type",
+          "type": "string",
+          "required": false,
+          "depth": 3
+        },
+        {
+          "name": "itemsShipped/item/lineTotal/amount",
           "type": "number",
           "required": false,
           "description": "",
           "depth": 3
         },
         {
-          "name": "itemsShipped/item/price/currency",
+          "name": "itemsShipped/item/lineTotal/currency",
           "type": "string",
           "required": false,
           "description": "",
           "depth": 3
+        },
+        {
+          "name": "subtotal",
+          "type": "object",
+          "required": false,
+          "description": "Sum of the line totals, before allowances, charges, freight, insurance and tax.",
+          "depth": 0
+        },
+        {
+          "name": "subtotal/type",
+          "type": "string",
+          "required": false,
+          "depth": 1
+        },
+        {
+          "name": "subtotal/amount",
+          "type": "number",
+          "required": false,
+          "description": "Sum of the lineTotal amounts of all lines.",
+          "depth": 1
+        },
+        {
+          "name": "subtotal/currency",
+          "type": "string",
+          "required": false,
+          "description": "Currency code (ISO 4217).",
+          "depth": 1
         },
         {
           "name": "freightCost",
@@ -23980,6 +24226,12 @@
           "required": false,
           "description": "Cost of freight/shipping charges.",
           "depth": 0
+        },
+        {
+          "name": "freightCost/type",
+          "type": "string",
+          "required": false,
+          "depth": 1
         },
         {
           "name": "freightCost/amount",
@@ -24001,6 +24253,12 @@
           "required": false,
           "description": "Cost of insurance for the shipment.",
           "depth": 0
+        },
+        {
+          "name": "insuranceCost/type",
+          "type": "string",
+          "required": false,
+          "depth": 1
         },
         {
           "name": "insuranceCost/amount",
@@ -24034,14 +24292,7 @@
           "name": "allowanceCharges/item/description",
           "type": "string",
           "required": false,
-          "description": "Free text explanation of the allowance or charge.",
-          "depth": 2
-        },
-        {
-          "name": "allowanceCharges/item/reasonCode",
-          "type": "string",
-          "required": false,
-          "description": "Code list with allowed values: https://test.uncefact.org/vocabulary/allowance-charge-reason-code-list",
+          "description": "Reason for the allowance or charge, e.g. Volume discount, Early payment discount, Handling charge. For code-based systems, reasons correspond to UNTDID 5189 (allowances) and UNTDID 7161 (charges).",
           "depth": 2
         },
         {
@@ -24049,6 +24300,12 @@
           "type": "object",
           "required": false,
           "depth": 2
+        },
+        {
+          "name": "allowanceCharges/item/amount/type",
+          "type": "string",
+          "required": false,
+          "depth": 3
         },
         {
           "name": "allowanceCharges/item/amount/amount",
@@ -24067,22 +24324,28 @@
         {
           "name": "totalAmount",
           "type": "object",
-          "required": false,
-          "description": "Total monetary amount charged in respect of one or more invoices.",
+          "required": true,
+          "description": "Total amount of the invoice: subtotal, less allowances, plus charges, freight and insurance.",
           "depth": 0
+        },
+        {
+          "name": "totalAmount/type",
+          "type": "string",
+          "required": false,
+          "depth": 1
         },
         {
           "name": "totalAmount/amount",
           "type": "number",
           "required": false,
-          "description": "",
+          "description": "Total invoice amount.",
           "depth": 1
         },
         {
           "name": "totalAmount/currency",
           "type": "string",
           "required": false,
-          "description": "",
+          "description": "Currency code (ISO 4217).",
           "depth": 1
         }
       ],
@@ -24162,10 +24425,17 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/uncefact/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-11-02T15:18:17.493Z",
+      "fetchedAt": "2026-11-03T13:55:13.184Z",
       "updatedAt": "2026-05-18T00:00:00.000Z",
       "firstSeenAt": "2026-05-18T00:00:00.000Z",
       "attributes": [
+        {
+          "name": "type",
+          "type": "string",
+          "required": true,
+          "description": "Type of the business document.",
+          "depth": 0
+        },
         {
           "name": "issueDate",
           "type": "string",
@@ -24211,7 +24481,7 @@
         {
           "name": "buyer",
           "type": "object",
-          "required": false,
+          "required": true,
           "description": "Party to which merchandise or services are sold.",
           "depth": 0
         },
@@ -24286,7 +24556,7 @@
         {
           "name": "seller",
           "type": "object",
-          "required": false,
+          "required": true,
           "description": "Party selling merchandise or services to a buyer.",
           "depth": 0
         },
@@ -24361,7 +24631,7 @@
         {
           "name": "consignee",
           "type": "object",
-          "required": false,
+          "required": true,
           "description": "Party to which goods are consigned.",
           "depth": 0
         },
@@ -24511,7 +24781,7 @@
         {
           "name": "deliveryLocation",
           "type": "object",
-          "required": false,
+          "required": true,
           "description": "Location to which a consignment is to be delivered.",
           "depth": 0
         },
@@ -24677,6 +24947,12 @@
           "depth": 0
         },
         {
+          "name": "totalGrossWeight/type",
+          "type": "string",
+          "required": false,
+          "depth": 1
+        },
+        {
           "name": "totalGrossWeight/amount",
           "type": "number",
           "required": false,
@@ -24693,9 +24969,15 @@
         {
           "name": "totalNetWeight",
           "type": "object",
-          "required": false,
+          "required": true,
           "description": "Total net weight of all items.",
           "depth": 0
+        },
+        {
+          "name": "totalNetWeight/type",
+          "type": "string",
+          "required": false,
+          "depth": 1
         },
         {
           "name": "totalNetWeight/amount",
@@ -24714,16 +24996,22 @@
         {
           "name": "totalPackages",
           "type": "number",
-          "required": false,
+          "required": true,
           "description": "Total number of packages.",
           "depth": 0
         },
         {
           "name": "totalVolume",
           "type": "object",
-          "required": false,
+          "required": true,
           "description": "Total volume of all packages.",
           "depth": 0
+        },
+        {
+          "name": "totalVolume/type",
+          "type": "string",
+          "required": false,
+          "depth": 1
         },
         {
           "name": "totalVolume/amount",
@@ -24803,6 +25091,12 @@
           "depth": 2
         },
         {
+          "name": "packages/item/length/type",
+          "type": "string",
+          "required": false,
+          "depth": 3
+        },
+        {
           "name": "packages/item/length/amount",
           "type": "number",
           "required": false,
@@ -24822,6 +25116,12 @@
           "required": false,
           "description": "Package width measurement.",
           "depth": 2
+        },
+        {
+          "name": "packages/item/width/type",
+          "type": "string",
+          "required": false,
+          "depth": 3
         },
         {
           "name": "packages/item/width/amount",
@@ -24845,6 +25145,12 @@
           "depth": 2
         },
         {
+          "name": "packages/item/height/type",
+          "type": "string",
+          "required": false,
+          "depth": 3
+        },
+        {
           "name": "packages/item/height/amount",
           "type": "number",
           "required": false,
@@ -24864,6 +25170,12 @@
           "required": false,
           "description": "Gross weight of the package.",
           "depth": 2
+        },
+        {
+          "name": "packages/item/grossWeight/type",
+          "type": "string",
+          "required": false,
+          "depth": 3
         },
         {
           "name": "packages/item/grossWeight/amount",
@@ -24887,6 +25199,12 @@
           "depth": 2
         },
         {
+          "name": "packages/item/netWeight/type",
+          "type": "string",
+          "required": false,
+          "depth": 3
+        },
+        {
           "name": "packages/item/netWeight/amount",
           "type": "number",
           "required": false,
@@ -24906,6 +25224,12 @@
           "required": false,
           "description": "Volume of the package.",
           "depth": 2
+        },
+        {
+          "name": "packages/item/volume/type",
+          "type": "string",
+          "required": false,
+          "depth": 3
         },
         {
           "name": "packages/item/volume/amount",
@@ -24969,6 +25293,12 @@
           "required": false,
           "description": "Weight per unit.",
           "depth": 4
+        },
+        {
+          "name": "packages/item/items/item/unitWeight/type",
+          "type": "string",
+          "required": false,
+          "depth": 5
         },
         {
           "name": "packages/item/items/item/unitWeight/amount",
@@ -25068,10 +25398,17 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/uncefact/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-11-02T15:18:17.493Z",
+      "fetchedAt": "2026-11-03T13:55:13.184Z",
       "updatedAt": "2026-05-18T00:00:00.000Z",
       "firstSeenAt": "2026-05-18T00:00:00.000Z",
       "attributes": [
+        {
+          "name": "type",
+          "type": "string",
+          "required": true,
+          "description": "Type of the business document.",
+          "depth": 0
+        },
         {
           "name": "purchaseOrderNumber",
           "type": "string",
@@ -25409,6 +25746,12 @@
           "depth": 1
         },
         {
+          "name": "allowanceCharge/amount/type",
+          "type": "string",
+          "required": false,
+          "depth": 2
+        },
+        {
           "name": "allowanceCharge/amount/amount",
           "type": "number",
           "required": false,
@@ -25428,6 +25771,12 @@
           "required": false,
           "description": "Total amount of an order.",
           "depth": 0
+        },
+        {
+          "name": "totalOrderAmount/type",
+          "type": "string",
+          "required": false,
+          "depth": 1
         },
         {
           "name": "totalOrderAmount/amount",
@@ -25451,6 +25800,12 @@
           "depth": 0
         },
         {
+          "name": "orderedItems/item/type",
+          "type": "string",
+          "required": false,
+          "depth": 2
+        },
+        {
           "name": "orderedItems/item/productIdentifier",
           "type": "string",
           "required": true,
@@ -25463,6 +25818,12 @@
           "required": false,
           "description": "Product details",
           "depth": 2
+        },
+        {
+          "name": "orderedItems/item/product/type",
+          "type": "string",
+          "required": false,
+          "depth": 3
         },
         {
           "name": "orderedItems/item/product/id",
@@ -25500,6 +25861,12 @@
           "depth": 2
         },
         {
+          "name": "orderedItems/item/unitPrice/type",
+          "type": "string",
+          "required": false,
+          "depth": 3
+        },
+        {
           "name": "orderedItems/item/unitPrice/amount",
           "type": "number",
           "required": false,
@@ -25519,6 +25886,12 @@
           "required": false,
           "description": "Total amount for this line item.",
           "depth": 2
+        },
+        {
+          "name": "orderedItems/item/lineTotal/type",
+          "type": "string",
+          "required": false,
+          "depth": 3
         },
         {
           "name": "orderedItems/item/lineTotal/amount",
@@ -25609,10 +25982,17 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/uncefact/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-11-02T15:18:17.493Z",
+      "fetchedAt": "2026-11-03T13:55:13.184Z",
       "updatedAt": "2026-05-18T00:00:00.000Z",
       "firstSeenAt": "2026-05-18T00:00:00.000Z",
       "attributes": [
+        {
+          "name": "type",
+          "type": "string",
+          "required": true,
+          "description": "Type of the business document.",
+          "depth": 0
+        },
         {
           "name": "documentIdentifier",
           "type": "string",
@@ -25941,9 +26321,15 @@
         {
           "name": "totalGrossWeight",
           "type": "object",
-          "required": false,
+          "required": true,
           "description": "Total gross weight of stored goods.",
           "depth": 0
+        },
+        {
+          "name": "totalGrossWeight/type",
+          "type": "string",
+          "required": false,
+          "depth": 1
         },
         {
           "name": "totalGrossWeight/amount",
@@ -25967,6 +26353,12 @@
           "depth": 0
         },
         {
+          "name": "totalVolume/type",
+          "type": "string",
+          "required": false,
+          "depth": 1
+        },
+        {
           "name": "totalVolume/amount",
           "type": "number",
           "required": false,
@@ -25983,7 +26375,7 @@
         {
           "name": "totalPackages",
           "type": "number",
-          "required": false,
+          "required": true,
           "description": "Total number of packages.",
           "depth": 0
         },
@@ -26007,6 +26399,12 @@
           "required": false,
           "description": "Number of units",
           "depth": 2
+        },
+        {
+          "name": "storedGoods/item/quantity/type",
+          "type": "string",
+          "required": false,
+          "depth": 3
         },
         {
           "name": "storedGoods/item/quantity/amount",
@@ -26049,6 +26447,12 @@
           "required": false,
           "description": "Gross weight including packaging.",
           "depth": 2
+        },
+        {
+          "name": "storedGoods/item/grossWeight/type",
+          "type": "string",
+          "required": false,
+          "depth": 3
         },
         {
           "name": "storedGoods/item/grossWeight/amount",
@@ -26141,7 +26545,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/verana/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-11-02T15:18:17.493Z",
+      "fetchedAt": "2026-11-03T13:55:13.184Z",
       "updatedAt": "2026-08-17T00:00:00.000Z",
       "firstSeenAt": "2026-08-17T00:00:00.000Z",
       "attributes": []
@@ -26208,7 +26612,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/verana/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-11-02T15:18:17.493Z",
+      "fetchedAt": "2026-11-03T13:55:13.184Z",
       "updatedAt": "2026-08-17T00:00:00.000Z",
       "firstSeenAt": "2026-08-17T00:00:00.000Z",
       "attributes": []
@@ -26275,7 +26679,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/verana/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-11-02T15:18:17.493Z",
+      "fetchedAt": "2026-11-03T13:55:13.184Z",
       "updatedAt": "2026-08-17T00:00:00.000Z",
       "firstSeenAt": "2026-08-17T00:00:00.000Z",
       "attributes": []
@@ -26339,7 +26743,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/verana/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-11-02T15:18:17.493Z",
+      "fetchedAt": "2026-11-03T13:55:13.184Z",
       "updatedAt": "2026-08-17T00:00:00.000Z",
       "firstSeenAt": "2026-08-17T00:00:00.000Z",
       "attributes": []
@@ -26404,7 +26808,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/verana/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-11-02T15:18:17.493Z",
+      "fetchedAt": "2026-11-03T13:55:13.184Z",
       "updatedAt": "2026-08-17T00:00:00.000Z",
       "firstSeenAt": "2026-08-17T00:00:00.000Z",
       "attributes": []
@@ -26469,7 +26873,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/verana/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-11-02T15:18:17.493Z",
+      "fetchedAt": "2026-11-03T13:55:13.184Z",
       "updatedAt": "2026-08-17T00:00:00.000Z",
       "firstSeenAt": "2026-08-17T00:00:00.000Z",
       "attributes": []
@@ -26534,7 +26938,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/verana/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-11-02T15:18:17.493Z",
+      "fetchedAt": "2026-11-03T13:55:13.184Z",
       "updatedAt": "2026-08-17T00:00:00.000Z",
       "firstSeenAt": "2026-08-17T00:00:00.000Z",
       "attributes": []
@@ -26599,7 +27003,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/verana/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-11-02T15:18:17.493Z",
+      "fetchedAt": "2026-11-03T13:55:13.184Z",
       "updatedAt": "2026-08-17T00:00:00.000Z",
       "firstSeenAt": "2026-08-17T00:00:00.000Z",
       "attributes": []
@@ -26665,7 +27069,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/verana/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-11-02T15:18:17.493Z",
+      "fetchedAt": "2026-11-03T13:55:13.184Z",
       "updatedAt": "2026-08-17T00:00:00.000Z",
       "firstSeenAt": "2026-08-17T00:00:00.000Z",
       "attributes": []
@@ -26731,7 +27135,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/verana/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-11-02T15:18:17.493Z",
+      "fetchedAt": "2026-11-03T13:55:13.184Z",
       "updatedAt": "2026-08-17T00:00:00.000Z",
       "firstSeenAt": "2026-08-17T00:00:00.000Z",
       "attributes": []
@@ -26797,7 +27201,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/verana/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-11-02T15:18:17.493Z",
+      "fetchedAt": "2026-11-03T13:55:13.184Z",
       "updatedAt": "2026-08-17T00:00:00.000Z",
       "firstSeenAt": "2026-08-17T00:00:00.000Z",
       "attributes": []
@@ -26862,7 +27266,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/verana/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-11-02T15:18:17.493Z",
+      "fetchedAt": "2026-11-03T13:55:13.184Z",
       "updatedAt": "2026-08-17T00:00:00.000Z",
       "firstSeenAt": "2026-08-17T00:00:00.000Z",
       "attributes": []
@@ -26932,7 +27336,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/webuild/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-11-02T15:18:17.493Z",
+      "fetchedAt": "2026-11-03T13:55:13.184Z",
       "updatedAt": "2026-10-26T11:12:00.000Z",
       "firstSeenAt": "2026-09-14T08:50:00.000Z",
       "attributes": [
@@ -27243,7 +27647,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/webuild/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-11-02T15:18:17.493Z",
+      "fetchedAt": "2026-11-03T13:55:13.184Z",
       "updatedAt": "2026-10-26T11:12:00.000Z",
       "firstSeenAt": "2026-09-14T08:50:00.000Z",
       "attributes": [
@@ -27734,7 +28138,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/webuild/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-11-02T15:18:17.493Z",
+      "fetchedAt": "2026-11-03T13:55:13.184Z",
       "updatedAt": "2026-10-26T11:12:00.000Z",
       "firstSeenAt": "2026-09-14T08:50:00.000Z",
       "attributes": [
@@ -28053,7 +28457,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/webuild/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-11-02T15:18:17.493Z",
+      "fetchedAt": "2026-11-03T13:55:13.184Z",
       "updatedAt": "2026-10-26T11:12:00.000Z",
       "firstSeenAt": "2026-09-14T08:50:00.000Z",
       "attributes": [
@@ -28454,7 +28858,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/webuild/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-11-02T15:18:17.493Z",
+      "fetchedAt": "2026-11-03T13:55:13.184Z",
       "updatedAt": "2026-10-26T11:12:00.000Z",
       "firstSeenAt": "2026-09-14T08:50:00.000Z",
       "attributes": [
@@ -28806,7 +29210,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/webuild/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-11-02T15:18:17.493Z",
+      "fetchedAt": "2026-11-03T13:55:13.184Z",
       "updatedAt": "2026-10-26T11:12:00.000Z",
       "firstSeenAt": "2026-09-14T08:50:00.000Z",
       "attributes": [
@@ -29236,7 +29640,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/webuild/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-11-02T15:18:17.493Z",
+      "fetchedAt": "2026-11-03T13:55:13.184Z",
       "updatedAt": "2026-10-26T11:12:00.000Z",
       "firstSeenAt": "2026-09-14T08:50:00.000Z",
       "attributes": [
@@ -29495,7 +29899,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/webuild/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-11-02T15:18:17.493Z",
+      "fetchedAt": "2026-11-03T13:55:13.184Z",
       "updatedAt": "2026-10-26T11:12:00.000Z",
       "firstSeenAt": "2026-09-14T08:50:00.000Z",
       "attributes": [
@@ -29707,7 +30111,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/webuild/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-11-02T15:18:17.493Z",
+      "fetchedAt": "2026-11-03T13:55:13.184Z",
       "updatedAt": "2026-10-26T11:12:00.000Z",
       "firstSeenAt": "2026-09-14T08:50:00.000Z",
       "attributes": [
@@ -30219,7 +30623,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/webuild/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-11-02T15:18:17.493Z",
+      "fetchedAt": "2026-11-03T13:55:13.184Z",
       "updatedAt": "2026-10-26T11:12:00.000Z",
       "firstSeenAt": "2026-09-14T08:50:00.000Z",
       "attributes": [
@@ -31004,7 +31408,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/webuild/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-11-02T15:18:17.493Z",
+      "fetchedAt": "2026-11-03T13:55:13.184Z",
       "updatedAt": "2026-10-26T11:12:00.000Z",
       "firstSeenAt": "2026-09-14T08:50:00.000Z",
       "attributes": [
@@ -31479,7 +31883,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/webuild/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-11-02T15:18:17.493Z",
+      "fetchedAt": "2026-11-03T13:55:13.184Z",
       "updatedAt": "2026-10-26T11:12:00.000Z",
       "firstSeenAt": "2026-09-14T08:50:00.000Z",
       "attributes": [
@@ -31913,7 +32317,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/webuild/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-11-02T15:18:17.493Z",
+      "fetchedAt": "2026-11-03T13:55:13.184Z",
       "updatedAt": "2026-10-26T11:12:00.000Z",
       "firstSeenAt": "2026-09-14T08:50:00.000Z",
       "attributes": [
@@ -32438,7 +32842,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/webuild/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-11-02T15:18:17.493Z",
+      "fetchedAt": "2026-11-03T13:55:13.184Z",
       "updatedAt": "2026-10-26T11:12:00.000Z",
       "firstSeenAt": "2026-09-14T08:50:00.000Z",
       "attributes": [
@@ -32600,7 +33004,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/webuild/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-11-02T15:18:17.493Z",
+      "fetchedAt": "2026-11-03T13:55:13.184Z",
       "updatedAt": "2026-10-26T11:12:00.000Z",
       "firstSeenAt": "2026-09-14T08:50:00.000Z",
       "attributes": [
@@ -32954,7 +33358,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/webuild/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-11-02T15:18:17.493Z",
+      "fetchedAt": "2026-11-03T13:55:13.184Z",
       "updatedAt": "2026-10-26T11:12:00.000Z",
       "firstSeenAt": "2026-10-26T11:12:00.000Z",
       "attributes": [
@@ -33230,7 +33634,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/webuild/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-11-02T15:18:17.493Z",
+      "fetchedAt": "2026-11-03T13:55:13.184Z",
       "updatedAt": "2026-10-26T11:12:00.000Z",
       "firstSeenAt": "2026-09-14T08:50:00.000Z",
       "attributes": [
@@ -33691,7 +34095,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/webuild/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-11-02T15:18:17.493Z",
+      "fetchedAt": "2026-11-03T13:55:13.184Z",
       "updatedAt": "2026-10-26T11:12:00.000Z",
       "firstSeenAt": "2026-09-14T08:50:00.000Z",
       "attributes": [
@@ -34021,7 +34425,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/webuild/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-11-02T15:18:17.493Z",
+      "fetchedAt": "2026-11-03T13:55:13.184Z",
       "updatedAt": "2026-10-26T11:12:00.000Z",
       "firstSeenAt": "2026-09-14T08:50:00.000Z",
       "attributes": [
@@ -34430,7 +34834,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/webuild/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-11-02T15:18:17.493Z",
+      "fetchedAt": "2026-11-03T13:55:13.184Z",
       "updatedAt": "2026-10-26T11:12:00.000Z",
       "firstSeenAt": "2026-09-14T08:50:00.000Z",
       "attributes": [
@@ -34782,7 +35186,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/webuild/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-11-02T15:18:17.493Z",
+      "fetchedAt": "2026-11-03T13:55:13.184Z",
       "updatedAt": "2026-10-26T11:12:00.000Z",
       "firstSeenAt": "2026-09-14T08:50:00.000Z",
       "attributes": [
@@ -35208,7 +35612,7 @@
       },
       "catalogUrl": "/home/runner/work/fides-credential-catalog/fides-credential-catalog/community-catalogs/webuild/credential-catalog.json",
       "source": "local",
-      "fetchedAt": "2026-11-02T15:18:17.493Z",
+      "fetchedAt": "2026-11-03T13:55:13.184Z",
       "updatedAt": "2026-10-26T11:12:00.000Z",
       "firstSeenAt": "2026-09-14T08:50:00.000Z",
       "attributes": [
