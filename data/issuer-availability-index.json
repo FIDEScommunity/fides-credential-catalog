@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-04T14:06:40.686Z",
+  "generatedAt": "2026-11-05T14:25:04.642Z",
   "byCredentialId": {
     "cred:iso:mdl": {
       "total": 12,
@@ -22,9 +22,9 @@
       "test": 15
     },
     "cred:eu:age-verification": {
-      "total": 11,
+      "total": 12,
       "production": 0,
-      "test": 11
+      "test": 12
     },
     "cred:iso:mvrc": {
       "total": 2,
