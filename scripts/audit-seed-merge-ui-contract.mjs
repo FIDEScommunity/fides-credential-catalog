@@ -106,7 +106,8 @@ pass("pid rulebook", pidLinked(data));
 pass(
   "mdl rulebook",
   data.credentials.find((c) => c.id === "cred:iso:mdl")?.rulebookUrl ===
-    "https://github.com/eu-digital-identity-wallet/eudi-doc-attestation-rulebooks-catalog/blob/main/rulebooks/mdl/mdl-rulebook.md"
+    "https://github.com/eu-digital-identity-wallet/eudi-doc-attestation-rulebooks-catalog/blob/main/rulebooks/mdl/mdl-rulebook.md" &&
+    data.credentials.find((c) => c.id === "cred:iso:mdl")?.attestationLoS === "iso_18045_high"
 );
 
 pass("singles = 112", data.credentials.filter((c) => (c.formats || []).length <= 1).length === 112);
