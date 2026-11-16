@@ -34363,7 +34363,7 @@
       ],
       "slug": "webuild-pid",
       "displayName": "PID (WE BUILD SD-JWT VC)",
-      "shortDescription": "WE BUILD ds002 encoding of Person Identification Data (same VCT as the EUDI PID).",
+      "shortDescription": "WE BUILD PID 2.0 profile (ds002) of Person Identification Data, same VCT as the EUDI PID. personal_administrative_number and nonce are mandatory in this profile; a portrait is not issued.",
       "authority": {
         "name": "WE BUILD Consortium",
         "url": "https://www.webuildconsortium.eu/"
@@ -34375,7 +34375,7 @@
       "schemaUrl": "https://raw.githubusercontent.com/webuild-consortium/webuild-attestation-rulebooks-catalog/main/data-schemas/sd-jwt/ds002-pid-sd-jwt.json",
       "schemaType": "JSON Schema",
       "rulebookUrl": "https://registry.siros.org/webuild-consortium/pid/rulebook.html",
-      "version": "0.1.0",
+      "version": "2.0.0",
       "attestationTypeId": "cred:webuild:pid",
       "formats": [
         {
@@ -41731,7 +41731,7 @@
     {
       "id": "cred:webuild:pid",
       "displayName": "PID (WE BUILD SD-JWT VC)",
-      "shortDescription": "WE BUILD ds002 encoding of Person Identification Data (same VCT as the EUDI PID).",
+      "shortDescription": "WE BUILD PID 2.0 profile (ds002) of Person Identification Data, same VCT as the EUDI PID. personal_administrative_number and nonce are mandatory in this profile; a portrait is not issued.",
       "orgId": "org:webuild",
       "provider": {
         "name": "WE BUILD Consortium",
@@ -41743,8 +41743,8 @@
         "url": "https://www.webuildconsortium.eu/"
       },
       "subjectType": "Person",
-      "version": "0.1.0",
-      "semverVersion": "0.1.0",
+      "version": "2.0.0",
+      "semverVersion": "2.0.0",
       "formats": [
         {
           "formatIdentifier": "sd_jwt_vc",

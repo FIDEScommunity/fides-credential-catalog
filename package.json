@@ -16,7 +16,7 @@
     "import-wp-submissions:apply": "tsx scripts/import-wp-submissions.ts --apply",
     "test:import-wp-submissions": "tsx --test scripts/import-wp-submissions.test.ts",
     "migrate-attestation-type-ids": "node scripts/migrate-attestation-type-ids.mjs",
-    "test": "node --import tsx --test src/crawler/schemaAttributes.test.ts lib/ts11SchemaMeta.test.ts lib/ts11Signing.test.ts"
+    "test": "node --import tsx --test src/crawler/schemaAttributes.test.ts src/crawler/webuildPidProfile.test.ts lib/ts11SchemaMeta.test.ts lib/ts11Signing.test.ts"
   },
   "repository": {
     "type": "git",
