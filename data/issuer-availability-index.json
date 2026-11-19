@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-11-18T15:25:58.196Z",
+  "generatedAt": "2026-11-19T15:31:01.882Z",
   "byCredentialId": {
     "cred:iso:mdl": {
-      "total": 13,
+      "total": 12,
       "production": 0,
-      "test": 13
+      "test": 12
     },
     "cred:eu:hiid": {
       "total": 5,
@@ -17,14 +17,14 @@
       "test": 6
     },
     "cred:eu:pid": {
-      "total": 16,
+      "total": 15,
       "production": 0,
-      "test": 16
+      "test": 15
     },
     "cred:eu:age-verification": {
-      "total": 13,
+      "total": 12,
       "production": 0,
-      "test": 13
+      "test": 12
     },
     "cred:iso:mvrc": {
       "total": 2,
