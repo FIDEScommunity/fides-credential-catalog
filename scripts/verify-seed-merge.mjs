@@ -60,6 +60,7 @@ assert(
     "https://github.com/eu-digital-identity-wallet/eudi-doc-attestation-rulebooks-catalog/blob/main/rulebooks/mdl/mdl-rulebook.md",
   "mDL missing EUDI rulebook"
 );
+assert(mdl?.attestationLoS === "iso_18045_high", `mDL LoS ${mdl?.attestationLoS}`);
 assert(
   !data.credentials.find((c) => c.id === "cred:eu:pid-mdoc-deferred"),
   "deferred PID should be removed"
