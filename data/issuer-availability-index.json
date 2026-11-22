@@ -1,30 +1,30 @@
 {
-  "generatedAt": "2026-11-21T14:27:25.599Z",
+  "generatedAt": "2026-11-22T14:22:35.167Z",
   "byCredentialId": {
     "cred:iso:mdl": {
-      "total": 13,
+      "total": 12,
       "production": 0,
-      "test": 13
+      "test": 12
     },
     "cred:eu:hiid": {
+      "total": 4,
+      "production": 0,
+      "test": 4
+    },
+    "cred:iso:photoid": {
       "total": 5,
       "production": 0,
       "test": 5
     },
-    "cred:iso:photoid": {
-      "total": 6,
-      "production": 0,
-      "test": 6
-    },
     "cred:eu:pid": {
-      "total": 16,
+      "total": 15,
       "production": 0,
-      "test": 16
+      "test": 15
     },
     "cred:eu:age-verification": {
-      "total": 13,
+      "total": 12,
       "production": 0,
-      "test": 13
+      "test": 12
     },
     "cred:iso:mvrc": {
       "total": 2,
@@ -32,29 +32,29 @@
       "test": 2
     },
     "cred:eu:msisdn": {
-      "total": 3,
+      "total": 2,
       "production": 0,
-      "test": 3
+      "test": 2
     },
     "cred:eu:iban": {
-      "total": 4,
-      "production": 0,
-      "test": 4
-    },
-    "cred:eu:ehic": {
-      "total": 5,
-      "production": 0,
-      "test": 5
-    },
-    "cred:eu:cor": {
-      "total": 4,
-      "production": 0,
-      "test": 4
-    },
-    "cred:eu:loyalty": {
       "total": 3,
       "production": 0,
       "test": 3
+    },
+    "cred:eu:ehic": {
+      "total": 4,
+      "production": 0,
+      "test": 4
+    },
+    "cred:eu:cor": {
+      "total": 3,
+      "production": 0,
+      "test": 3
+    },
+    "cred:eu:loyalty": {
+      "total": 2,
+      "production": 0,
+      "test": 2
     },
     "cred:gleif:legal-entity-vlei": {
       "total": 8,
@@ -72,44 +72,44 @@
       "test": 0
     },
     "cred:eu:diploma": {
-      "total": 3,
+      "total": 2,
       "production": 0,
-      "test": 3
+      "test": 2
     },
     "cred:eu:employee": {
-      "total": 3,
+      "total": 2,
       "production": 0,
-      "test": 3
+      "test": 2
     },
     "cred:eu:pda1": {
-      "total": 2,
+      "total": 1,
       "production": 0,
-      "test": 2
+      "test": 1
     },
     "cred:eu:por": {
-      "total": 3,
+      "total": 2,
       "production": 0,
-      "test": 3
+      "test": 2
     },
     "cred:eu:seafarer": {
-      "total": 2,
+      "total": 1,
       "production": 0,
-      "test": 2
+      "test": 1
     },
     "cred:eu:tax": {
-      "total": 3,
+      "total": 2,
       "production": 0,
-      "test": 3
+      "test": 2
     },
     "cred:eu:tax-residency": {
-      "total": 2,
+      "total": 1,
       "production": 0,
-      "test": 2
+      "test": 1
     },
     "cred:iso:reservation": {
-      "total": 2,
+      "total": 1,
       "production": 0,
-      "test": 2
+      "test": 1
     },
     "cred:fides:organization-profile": {
       "total": 1,
@@ -157,9 +157,9 @@
       "test": 0
     },
     "cred:webuild:eucc": {
-      "total": 2,
+      "total": 1,
       "production": 0,
-      "test": 2
+      "test": 1
     },
     "cred:iata:boarding-pass": {
       "total": 4,
@@ -175,16 +175,6 @@
       "total": 1,
       "production": 1,
       "test": 0
-    },
-    "cred:webuild:ebw-oid": {
-      "total": 2,
-      "production": 0,
-      "test": 2
-    },
-    "cred:webuild:authorised-signatories": {
-      "total": 1,
-      "production": 0,
-      "test": 1
     },
     "cred:uncefact:dpp": {
       "total": 1,
@@ -207,6 +197,11 @@
       "test": 1
     },
     "cred:uncefact:dcc": {
+      "total": 1,
+      "production": 0,
+      "test": 1
+    },
+    "cred:webuild:ebw-oid": {
       "total": 1,
       "production": 0,
       "test": 1
