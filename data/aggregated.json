@@ -33078,7 +33078,7 @@
       ],
       "slug": "webuild-iban-ov",
       "displayName": "IBAN Ownership Verification",
-      "shortDescription": "IBAN-OV attestation that a legal entity owns a given IBAN.",
+      "shortDescription": "IBAN-OV attestation that a legal entity or natural person (including a sole trader) owns a given IBAN.",
       "authority": {
         "name": "WE BUILD Consortium",
         "url": "https://www.webuildconsortium.eu/"
@@ -40166,7 +40166,7 @@
     {
       "id": "cred:webuild:iban-ov",
       "displayName": "IBAN Ownership Verification",
-      "shortDescription": "IBAN-OV attestation that a legal entity owns a given IBAN.",
+      "shortDescription": "IBAN-OV attestation that a legal entity or natural person (including a sole trader) owns a given IBAN.",
       "orgId": "org:webuild",
       "provider": {
         "name": "WE BUILD Consortium",
